@@ -17,7 +17,10 @@ LDFLAGS     := -s -w \
 
 export CGO_ENABLED=0
 
-.PHONY: all web build run dev test lint scan docker release clean tidy
+# Go packages, excluding any vendored Go files inside web/node_modules.
+GO_PKGS := $(shell go list ./... 2>/dev/null | grep -v /node_modules/)
+
+.PHONY: all web build build-go run dev test lint scan docker release clean tidy
 
 all: build
 
@@ -45,12 +48,12 @@ dev:
 
 ## test: go tests (race) + frontend tests
 test:
-	go test ./... -race -coverprofile=coverage.out
+	go test $(GO_PKGS) -race -coverprofile=coverage.out
 	cd $(WEB_DIR) && npm run test --if-present
 
 ## lint: golangci-lint + eslint
 lint:
-	golangci-lint run ./...
+	golangci-lint run
 	cd $(WEB_DIR) && npm run lint --if-present
 
 ## scan: security scans -> scans/ (gitignored)

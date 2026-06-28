@@ -1,0 +1,36 @@
+# Runs before every commit. Reports go to gitignored scans/. Install with:
+#   pip install pre-commit && pre-commit install
+repos:
+  - repo: local
+    hooks:
+      - id: gitleaks
+        name: gitleaks (secret scan)
+        entry: bash -c 'mkdir -p scans && gitleaks detect --no-banner --redact --report-path scans/gitleaks.json'
+        language: system
+        pass_filenames: false
+
+      - id: govulncheck
+        name: govulncheck (Go vuln DB)
+        entry: bash -c 'mkdir -p scans && govulncheck ./... | tee scans/govulncheck.txt'
+        language: system
+        pass_filenames: false
+
+      - id: gosec
+        name: gosec (Go static security)
+        entry: bash -c 'mkdir -p scans && gosec -quiet -fmt=json -out=scans/gosec.json ./... || true'
+        language: system
+        pass_filenames: false
+
+      - id: golangci-lint
+        name: golangci-lint
+        entry: golangci-lint run ./...
+        language: system
+        pass_filenames: false
+        types: [go]
+
+      - id: go-test
+        name: go test
+        entry: go test ./...
+        language: system
+        pass_filenames: false
+        types: [go]

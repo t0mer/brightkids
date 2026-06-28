@@ -1,0 +1,25 @@
+version: "2"
+
+linters:
+  enable:
+    - errcheck
+    - govet
+    - ineffassign
+    - staticcheck
+    - unused
+    - misspell
+    - unconvert
+  exclusions:
+    paths:
+      # Some npm packages vendor Go files (e.g. flatted); never lint them.
+      - web/node_modules
+    rules:
+      # Tests may ignore errors for brevity.
+      - path: _test\.go
+        linters:
+          - errcheck
+
+formatters:
+  enable:
+    - gofmt
+    - goimports
