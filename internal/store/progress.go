@@ -65,7 +65,7 @@ func (s *Store) GetProgress(profileID string) (ProgressSummary, error) {
 	if err != nil {
 		return ProgressSummary{}, fmt.Errorf("querying progress: %w", err)
 	}
-	defer rows.Close()
+	defer func() { _ = rows.Close() }()
 
 	summary := ProgressSummary{
 		ProfileID:   profileID,
@@ -104,7 +104,7 @@ func (s *Store) dailyStreak(profileID string) (int, error) {
 	if err != nil {
 		return 0, fmt.Errorf("querying streak: %w", err)
 	}
-	defer rows.Close()
+	defer func() { _ = rows.Close() }()
 
 	var days []time.Time
 	for rows.Next() {

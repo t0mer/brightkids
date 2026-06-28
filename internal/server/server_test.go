@@ -183,6 +183,9 @@ func TestProfileProgressFlow(t *testing.T) {
 		t.Fatalf("update settings status %d", rec.Code)
 	}
 	rec, body = doJSON(t, h, http.MethodGet, "/api/v1/profiles/"+profile.ID+"/settings", nil)
+	if rec.Code != http.StatusOK {
+		t.Fatalf("get settings status %d", rec.Code)
+	}
 	var set store.Settings
 	if err := json.Unmarshal(body, &set); err != nil || set.SoundEnabled || !set.DyslexiaFont {
 		t.Fatalf("settings: %v %s", err, body)

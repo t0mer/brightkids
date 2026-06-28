@@ -127,7 +127,7 @@ func (s *Store) ListProfiles() ([]Profile, error) {
 	if err != nil {
 		return nil, fmt.Errorf("listing profiles: %w", err)
 	}
-	defer rows.Close()
+	defer func() { _ = rows.Close() }()
 
 	out := make([]Profile, 0)
 	for rows.Next() {
