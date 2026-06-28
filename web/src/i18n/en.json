@@ -1,0 +1,75 @@
+{
+  "app": {
+    "title": "BrightKids",
+    "tagline": "Space Academy for Learning",
+    "start": "Let's go!",
+    "loading": "Loading…",
+    "back": "Back",
+    "continue": "Keep going",
+    "tryAgain": "Try again",
+    "listen": "Listen",
+    "next": "Next",
+    "done": "I'm done"
+  },
+  "profiles": {
+    "who": "Who's playing today?",
+    "add": "New player",
+    "namePlaceholder": "What's your name?",
+    "pickAvatar": "Pick a buddy",
+    "create": "Let's go!",
+    "delete": "Delete"
+  },
+  "subjects": {
+    "choose": "What shall we learn?",
+    "hebrew": "Hebrew",
+    "english": "English",
+    "math": "Math"
+  },
+  "grades": {
+    "choose": "Which grade?",
+    "grade": "Grade {{n}}"
+  },
+  "lessons": {
+    "choose": "Pick a lesson",
+    "empty": "New lessons are landing here soon!"
+  },
+  "activity": {
+    "letter-recognition": "Find the letter",
+    "tracing": "Trace it",
+    "matching": "Match them",
+    "multiple-choice": "Choose one",
+    "counting": "Count them",
+    "arithmetic": "Solve it",
+    "drag-drop": "Put in order",
+    "great": "Great job!",
+    "almost": "Almost! Try again",
+    "tapToHear": "Tap to hear",
+    "checkAnswer": "Check",
+    "yourAnswer": "Your answer",
+    "traceHint": "Trace the line with your finger",
+    "clear": "Clear"
+  },
+  "rewards": {
+    "title": "My stars",
+    "stars": "stars",
+    "streak": "day streak",
+    "completed": "Lessons done",
+    "empty": "Play a lesson to collect stars!"
+  },
+  "settings": {
+    "title": "Settings",
+    "sound": "Sound effects",
+    "voice": "Read aloud",
+    "reduceMotion": "Less motion",
+    "dyslexia": "Friendly font",
+    "language": "Menu language",
+    "theme": "Dark mode",
+    "deleteProfile": "Delete profile"
+  },
+  "parentGate": {
+    "title": "Ask a grown-up",
+    "prompt": "What is {{a}} × {{b}}?",
+    "wrong": "Not quite, try again",
+    "cancel": "Cancel"
+  }
+}
