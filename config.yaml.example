@@ -1,0 +1,24 @@
+# BrightKids configuration example.
+# Copy to config.yaml (gitignored) and edit. Precedence: flags > env > YAML.
+# Every key can be overridden by an env var prefixed BRIGHTKIDS_, e.g.
+#   BRIGHTKIDS_SERVER_PORT=9000  BRIGHTKIDS_LOG_LEVEL=debug
+
+server:
+  host: "0.0.0.0"
+  port: 8080
+
+db:
+  # Path to the SQLite database. Use ":memory:" for an ephemeral store.
+  path: "./brightkids.db"
+
+log:
+  level: "info"    # debug | info | warn | error
+  format: "json"   # json (prod) | text (dev)
+
+content:
+  # Leave empty to use the content embedded in the binary.
+  # Set to a directory to hot-iterate lesson YAML without rebuilding.
+  dir: ""
+
+metrics:
+  enabled: true
