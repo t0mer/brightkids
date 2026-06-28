@@ -1,0 +1,17 @@
+id: math-g1-counting-01
+subject: math
+grade: 1
+difficulty: 1
+locale: en-US
+direction: ltr
+title: "Count the Apples"
+activity: counting
+prompt_tts: "How many apples do you see?"
+glyph: "🍎"
+problem:
+  operator: count
+  answer: 3
+reward:
+  stars: 1
+  sfx: ding
+  effect: confetti
