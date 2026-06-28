@@ -1,0 +1,95 @@
+/* Bundled fonts (no external runtime calls — works offline as a PWA). */
+@import "@fontsource/fredoka/400.css";
+@import "@fontsource/fredoka/500.css";
+@import "@fontsource/fredoka/600.css";
+@import "@fontsource/fredoka/700.css";
+@import "@fontsource/rubik/400.css";
+@import "@fontsource/rubik/500.css";
+@import "@fontsource/rubik/700.css";
+@import "@fontsource/varela-round/400.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* OpenDyslexic — optional accessibility face. Drop the woff2 into
+   public/fonts/ to enable; the toggle falls back to Rubik if absent. */
+@font-face {
+  font-family: "OpenDyslexic";
+  src: url("/fonts/opendyslexic.woff2") format("woff2");
+  font-weight: 400 700;
+  font-display: swap;
+}
+
+@layer base {
+  html {
+    -webkit-tap-highlight-color: transparent;
+  }
+  body {
+    @apply bg-cream text-ink font-body antialiased;
+    margin: 0;
+    min-height: 100dvh;
+  }
+  .dark body {
+    @apply bg-ink text-cream;
+  }
+  /* Dyslexia-friendly mode: swap both faces. */
+  .dyslexic body,
+  .dyslexic .font-display,
+  .dyslexic .font-body {
+    font-family: theme("fontFamily.dyslexic");
+  }
+  h1, h2, h3 {
+    @apply font-display;
+  }
+  /* Numbers and equations stay LTR even inside RTL screens (BiDi safety). */
+  .ltr-num {
+    direction: ltr;
+    unicode-bidi: isolate;
+    display: inline-block;
+  }
+  :focus-visible {
+    outline: 3px solid theme("colors.sun.DEFAULT");
+    outline-offset: 3px;
+    border-radius: 0.5rem;
+  }
+}
+
+@layer components {
+  /* Starfield backdrop for the cosmic-academy theme. */
+  .starfield {
+    background:
+      radial-gradient(1.5px 1.5px at 20% 30%, #fff 50%, transparent),
+      radial-gradient(1.5px 1.5px at 70% 60%, #fff 50%, transparent),
+      radial-gradient(2px 2px at 40% 80%, #fff 50%, transparent),
+      radial-gradient(1px 1px at 85% 25%, #fff 50%, transparent),
+      radial-gradient(1.5px 1.5px at 55% 15%, #fff 50%, transparent);
+    background-repeat: repeat;
+    background-size: 100% 100%;
+  }
+  /* Minimum 48px tap target helper for kid-sized touch. */
+  .tap {
+    min-width: 48px;
+    min-height: 48px;
+  }
+}
+
+/* Respect the OS reduced-motion preference globally. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+/* App-level reduced-motion (settings toggle adds .reduce-motion on <html>). */
+.reduce-motion *,
+.reduce-motion *::before,
+.reduce-motion *::after {
+  animation-duration: 0.001ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.001ms !important;
+}
