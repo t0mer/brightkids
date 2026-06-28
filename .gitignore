@@ -24,6 +24,7 @@ go.work.sum
 /config.yaml
 
 # Frontend
+*.tsbuildinfo
 web/node_modules/
 web/dist/
 internal/server/dist/*
