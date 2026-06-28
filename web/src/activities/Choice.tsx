@@ -30,16 +30,14 @@ export function Choice({ lesson, locale, onCorrect, onWrong, solved }: ActivityP
     }
   }
 
-  const big = items.length <= 4;
+  // Single glyphs (letters/digits) get the big playful size; multi-character
+  // word labels scale down and wrap so they never clip — important for the wider
+  // OpenDyslexic glyphs too.
+  const hasWords = items.some((i) => !i.emoji && (i.label?.length ?? 0) > 2);
+  const textSize = hasWords ? "text-2xl sm:text-3xl" : "text-6xl sm:text-7xl";
 
   return (
-    <div
-      dir={lesson.direction}
-      className={cn(
-        "grid w-full gap-4",
-        items.length <= 2 ? "grid-cols-2" : "grid-cols-2 sm:grid-cols-2",
-      )}
-    >
+    <div dir={lesson.direction} className="grid w-full grid-cols-2 gap-4">
       {items.map((item) => (
         <motion.button
           key={item.id}
@@ -48,16 +46,16 @@ export function Choice({ lesson, locale, onCorrect, onWrong, solved }: ActivityP
           onClick={() => choose(item)}
           disabled={solved}
           className={cn(
-            "tap flex min-h-[7rem] items-center justify-center rounded-blob bg-white/95 p-4 text-ink shadow-tile transition-transform",
+            "tap flex min-h-[7rem] items-center justify-center rounded-blob bg-white/95 p-4 text-center text-ink shadow-tile transition-transform",
             "dark:bg-nebula dark:text-cream",
-            big ? "text-6xl sm:text-7xl" : "text-4xl",
+            textSize,
             item.correct && solved && "ring-4 ring-mint",
           )}
         >
           {item.emoji ? (
             <span className="text-6xl sm:text-7xl">{item.emoji}</span>
           ) : (
-            <span className="font-display">{item.label}</span>
+            <span className="font-display leading-tight break-words">{item.label}</span>
           )}
         </motion.button>
       ))}

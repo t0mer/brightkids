@@ -7,19 +7,14 @@
 @import "@fontsource/rubik/500.css";
 @import "@fontsource/rubik/700.css";
 @import "@fontsource/varela-round/400.css";
+/* OpenDyslexic accessibility face (Latin only — Hebrew falls back to the
+   rounded Varela Round). Bundled, so it works offline. */
+@import "@fontsource/opendyslexic/400.css";
+@import "@fontsource/opendyslexic/700.css";
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-/* OpenDyslexic — optional accessibility face. Drop the woff2 into
-   public/fonts/ to enable; the toggle falls back to Rubik if absent. */
-@font-face {
-  font-family: "OpenDyslexic";
-  src: url("/fonts/opendyslexic.woff2") format("woff2");
-  font-weight: 400 700;
-  font-display: swap;
-}
 
 @layer base {
   html {
@@ -33,11 +28,11 @@
   .dark body {
     @apply bg-ink text-cream;
   }
-  /* Dyslexia-friendly mode: swap both faces. */
-  .dyslexic body,
-  .dyslexic .font-display,
-  .dyslexic .font-body {
-    font-family: theme("fontFamily.dyslexic");
+  /* Dyslexia-friendly mode: force OpenDyslexic everywhere (Hebrew falls back to
+     Varela Round). !important overrides the font-display/font-body utilities and
+     the heading rule below. Emoji/icons are unaffected. */
+  .dyslexic * {
+    font-family: theme("fontFamily.dyslexic") !important;
   }
   h1, h2, h3 {
     @apply font-display;

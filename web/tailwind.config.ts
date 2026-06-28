@@ -24,7 +24,7 @@ export default {
       fontFamily: {
         display: ['"Fredoka"', '"Varela Round"', "system-ui", "sans-serif"],
         body: ['"Rubik"', '"Varela Round"', "system-ui", "sans-serif"],
-        dyslexic: ['"OpenDyslexic"', '"Rubik"', "sans-serif"],
+        dyslexic: ['"OpenDyslexic"', '"Varela Round"', '"Rubik"', "sans-serif"],
       },
       borderRadius: {
         xl2: "1.75rem",

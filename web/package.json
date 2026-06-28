@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@fontsource/fredoka": "^5.2.5",
+    "@fontsource/opendyslexic": "^5.2.5",
     "@fontsource/rubik": "^5.2.5",
     "@fontsource/varela-round": "^5.2.5",
     "@radix-ui/react-dialog": "^1.1.6",
