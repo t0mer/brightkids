@@ -1,0 +1,26 @@
+id: he-g4-match-03
+subject: hebrew
+grade: 4
+difficulty: 3
+locale: he-IL
+direction: rtl
+title: "מַתְאִימִים הֲפָכִים"
+activity: matching
+prompt_tts: "חַבְּרוּ כָּל מִילָּה לַהֵפֶךְ שֶׁלָּהּ"
+pairs:
+  - id: p-gadol
+    left: "גָּדוֹל"
+    right: "קָטָן"
+    left_tts: "גָּדוֹל"
+    right_tts: "קָטָן"
+  - id: p-cham
+    left: "חַם"
+    right: "קַר"
+    left_tts: "חַם"
+    right_tts: "קַר"
+  - id: p-yom
+    left: "יוֹם"
+    right: "לַיְלָה"
+    left_tts: "יוֹם"
+    right_tts: "לַיְלָה"
+reward: { stars: 1, sfx: ding, effect: sparkle }

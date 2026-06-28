@@ -1,0 +1,21 @@
+id: en-g2-build-01
+subject: english
+grade: 2
+difficulty: 2
+locale: en-US
+direction: ltr
+title: "Build the Word CAT"
+activity: drag-drop
+prompt_tts: "Drag the letters to spell the word cat"
+items:
+  - id: c1
+    label: "C"
+    tts: "C"
+  - id: c2
+    label: "A"
+    tts: "A"
+  - id: c3
+    label: "T"
+    tts: "T"
+solution: [c1, c2, c3]
+reward: { stars: 1, sfx: pop, effect: stars }

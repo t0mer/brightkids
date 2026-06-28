@@ -1,0 +1,11 @@
+id: en-g3-trace-01
+subject: english
+grade: 3
+difficulty: 2
+locale: en-US
+direction: ltr
+title: "Trace the Letter g"
+activity: tracing
+prompt_tts: "Trace the lowercase letter g"
+glyph: "g"
+reward: { stars: 1, sfx: pop, effect: stars }

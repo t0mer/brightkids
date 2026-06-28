@@ -4,14 +4,14 @@ grade: 1
 difficulty: 1
 locale: en-US
 direction: ltr
-title: "The Letter A"
+title: "Find the Letter A"
 activity: letter-recognition
 prompt_tts: "Find the letter A"
 items:
   - id: a
     label: "A"
-    tts: "A"
     correct: true
+    tts: "A"
   - id: b
     label: "B"
     tts: "B"
@@ -21,7 +21,4 @@ items:
   - id: d
     label: "D"
     tts: "D"
-reward:
-  stars: 1
-  sfx: ding
-  effect: confetti
+reward: { stars: 1, sfx: ding, effect: confetti }

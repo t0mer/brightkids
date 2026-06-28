@@ -1,0 +1,29 @@
+id: en-g3-match-01
+subject: english
+grade: 3
+difficulty: 2
+locale: en-US
+direction: ltr
+title: "Match Words to Pictures"
+activity: matching
+prompt_tts: "Match each word to the right picture"
+pairs:
+  - id: sun
+    left: "Sun"
+    right: "Sun"
+    emoji: "☀️"
+    left_tts: "sun"
+    right_tts: "sun"
+  - id: dog
+    left: "Dog"
+    right: "Dog"
+    emoji: "🐶"
+    left_tts: "dog"
+    right_tts: "dog"
+  - id: fish
+    left: "Fish"
+    right: "Fish"
+    emoji: "🐟"
+    left_tts: "fish"
+    right_tts: "fish"
+reward: { stars: 1, sfx: chime, effect: sparkle }

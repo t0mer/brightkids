@@ -1,0 +1,24 @@
+id: he-g2-word-01
+subject: hebrew
+grade: 2
+difficulty: 2
+locale: he-IL
+direction: rtl
+title: "אֵיזוֹ מִילָּה אוֹמֶרֶת כֶּלֶב?"
+activity: multiple-choice
+prompt_tts: "אֵיזוֹ מִילָּה אוֹמֶרֶת כֶּלֶב?"
+items:
+  - id: kelev
+    label: "כֶּלֶב"
+    correct: true
+    tts: "כֶּלֶב"
+    emoji: "🐶"
+  - id: chatul
+    label: "חָתוּל"
+    tts: "חָתוּל"
+    emoji: "🐱"
+  - id: para
+    label: "פָּרָה"
+    tts: "פָּרָה"
+    emoji: "🐮"
+reward: { stars: 1, sfx: pop, effect: confetti }

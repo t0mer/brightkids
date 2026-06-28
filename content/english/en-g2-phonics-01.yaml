@@ -1,0 +1,24 @@
+id: en-g2-phonics-01
+subject: english
+grade: 2
+difficulty: 2
+locale: en-US
+direction: ltr
+title: "The /k/ Sound"
+activity: multiple-choice
+prompt_tts: "Which word starts with the /k/ sound?"
+items:
+  - id: cat
+    label: "Cat"
+    correct: true
+    tts: "cat"
+    emoji: "🐱"
+  - id: dog
+    label: "Dog"
+    tts: "dog"
+    emoji: "🐶"
+  - id: sun
+    label: "Sun"
+    tts: "sun"
+    emoji: "☀️"
+reward: { stars: 1, sfx: ding, effect: confetti }

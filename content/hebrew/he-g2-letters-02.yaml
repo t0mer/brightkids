@@ -1,0 +1,24 @@
+id: he-g2-letters-02
+subject: hebrew
+grade: 2
+difficulty: 2
+locale: he-IL
+direction: rtl
+title: "מֵם סוֹפִית"
+activity: letter-recognition
+prompt_tts: "מִצְאוּ אֶת הַמֵּם הַסּוֹפִית"
+items:
+  - id: mem-sofit
+    label: "ם"
+    correct: true
+    tts: "מֵם סוֹפִית"
+  - id: nun
+    label: "נ"
+    tts: "נוּן"
+  - id: lamed
+    label: "ל"
+    tts: "לָמֶד"
+  - id: samech
+    label: "ס"
+    tts: "סָמֶךְ"
+reward: { stars: 1, sfx: ding, effect: confetti }

@@ -4,14 +4,14 @@ grade: 1
 difficulty: 1
 locale: he-IL
 direction: rtl
-title: "האות א"
+title: "הָאוֹת אָלֶף"
 activity: letter-recognition
 prompt_tts: "מִצְאוּ אֶת הָאוֹת אָלֶף"
 items:
   - id: alef
     label: "א"
-    tts: "אָלֶף"
     correct: true
+    tts: "אָלֶף"
   - id: bet
     label: "ב"
     tts: "בֵּית"
@@ -21,7 +21,4 @@ items:
   - id: dalet
     label: "ד"
     tts: "דָּלֶת"
-reward:
-  stars: 1
-  sfx: ding
-  effect: confetti
+reward: { stars: 1, sfx: ding, effect: confetti }

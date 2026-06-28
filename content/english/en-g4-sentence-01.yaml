@@ -1,0 +1,24 @@
+id: en-g4-sentence-01
+subject: english
+grade: 4
+difficulty: 3
+locale: en-US
+direction: ltr
+title: "Build the Sentence"
+activity: drag-drop
+prompt_tts: "Drag the words to make the sentence The cat is big"
+items:
+  - id: w1
+    label: "The"
+    tts: "the"
+  - id: w2
+    label: "cat"
+    tts: "cat"
+  - id: w3
+    label: "is"
+    tts: "is"
+  - id: w4
+    label: "big"
+    tts: "big"
+solution: [w1, w2, w3, w4]
+reward: { stars: 1, sfx: pop, effect: stars }

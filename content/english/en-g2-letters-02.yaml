@@ -1,0 +1,24 @@
+id: en-g2-letters-02
+subject: english
+grade: 2
+difficulty: 2
+locale: en-US
+direction: ltr
+title: "Find Lowercase m"
+activity: letter-recognition
+prompt_tts: "Find the lowercase letter m"
+items:
+  - id: m
+    label: "m"
+    correct: true
+    tts: "m"
+  - id: n
+    label: "n"
+    tts: "n"
+  - id: w
+    label: "w"
+    tts: "w"
+  - id: u
+    label: "u"
+    tts: "u"
+reward: { stars: 1, sfx: ding, effect: confetti }

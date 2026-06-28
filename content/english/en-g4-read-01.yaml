@@ -1,0 +1,21 @@
+id: en-g4-read-01
+subject: english
+grade: 4
+difficulty: 3
+locale: en-US
+direction: ltr
+title: "Read and Answer"
+activity: multiple-choice
+prompt_tts: "The dog is red. What color is the dog?"
+items:
+  - id: red
+    label: "Red"
+    correct: true
+    tts: "red"
+  - id: blue
+    label: "Blue"
+    tts: "blue"
+  - id: green
+    label: "Green"
+    tts: "green"
+reward: { stars: 1, sfx: ding, effect: confetti }

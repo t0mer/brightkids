@@ -1,0 +1,29 @@
+id: en-g1-match-01
+subject: english
+grade: 1
+difficulty: 1
+locale: en-US
+direction: ltr
+title: "Match Letters to Pictures"
+activity: matching
+prompt_tts: "Match each letter to the right picture"
+pairs:
+  - id: a
+    left: "A"
+    right: "Apple"
+    emoji: "🍎"
+    left_tts: "A"
+    right_tts: "Apple"
+  - id: b
+    left: "B"
+    right: "Balloon"
+    emoji: "🎈"
+    left_tts: "B"
+    right_tts: "Balloon"
+  - id: c
+    left: "C"
+    right: "Cat"
+    emoji: "🐱"
+    left_tts: "C"
+    right_tts: "Cat"
+reward: { stars: 1, sfx: chime, effect: sparkle }

@@ -1,0 +1,27 @@
+id: math-g4-equation-01
+subject: math
+grade: 4
+difficulty: 3
+locale: en-US
+direction: ltr
+title: "Build the Equation"
+activity: drag-drop
+prompt_tts: "Build the equation 4 plus 5 equals 9."
+items:
+  - id: t1
+    label: "4"
+    tts: "four"
+  - id: t2
+    label: "+"
+    tts: "plus"
+  - id: t3
+    label: "5"
+    tts: "five"
+  - id: t4
+    label: "="
+    tts: "equals"
+  - id: t5
+    label: "9"
+    tts: "nine"
+solution: [t1, t2, t3, t4, t5]
+reward: { stars: 1, sfx: ding, effect: confetti }

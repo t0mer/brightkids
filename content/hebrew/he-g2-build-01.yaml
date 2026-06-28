@@ -1,0 +1,21 @@
+id: he-g2-build-01
+subject: hebrew
+grade: 2
+difficulty: 2
+locale: he-IL
+direction: rtl
+title: "בּוֹנִים אֶת הַמִּילָּה אִמָּא"
+activity: drag-drop
+prompt_tts: "סַדְּרוּ אֶת הָאוֹתִיּוֹת וּבְנוּ אֶת הַמִּילָּה אִמָּא"
+items:
+  - id: l1
+    label: "א"
+    tts: "אָלֶף"
+  - id: l2
+    label: "מ"
+    tts: "מֵם"
+  - id: l3
+    label: "א"
+    tts: "אָלֶף"
+solution: [l1, l2, l3]
+reward: { stars: 1, sfx: chime, effect: stars }

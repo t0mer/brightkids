@@ -1,0 +1,26 @@
+id: en-g4-match-02
+subject: english
+grade: 4
+difficulty: 3
+locale: en-US
+direction: ltr
+title: "Match the Rhymes"
+activity: matching
+prompt_tts: "Match each word to the word it rhymes with"
+pairs:
+  - id: cat
+    left: "Cat"
+    right: "Hat"
+    left_tts: "cat"
+    right_tts: "hat"
+  - id: dog
+    left: "Dog"
+    right: "Log"
+    left_tts: "dog"
+    right_tts: "log"
+  - id: sun
+    left: "Sun"
+    right: "Bun"
+    left_tts: "sun"
+    right_tts: "bun"
+reward: { stars: 1, sfx: chime, effect: sparkle }

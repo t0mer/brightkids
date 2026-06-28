@@ -1,0 +1,26 @@
+id: math-g3-match-01
+subject: math
+grade: 3
+difficulty: 2
+locale: en-US
+direction: ltr
+title: "Match the Answer"
+activity: matching
+prompt_tts: "Match each problem to its answer."
+pairs:
+  - id: p1
+    left: "1+1"
+    right: "2"
+    left_tts: "one plus one"
+    right_tts: "two"
+  - id: p2
+    left: "2+2"
+    right: "4"
+    left_tts: "two plus two"
+    right_tts: "four"
+  - id: p3
+    left: "3+3"
+    right: "6"
+    left_tts: "three plus three"
+    right_tts: "six"
+reward: { stars: 1, sfx: ding, effect: confetti }

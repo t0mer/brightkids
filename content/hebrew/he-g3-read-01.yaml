@@ -1,0 +1,24 @@
+id: he-g3-read-01
+subject: hebrew
+grade: 3
+difficulty: 2
+locale: he-IL
+direction: rtl
+title: "קוֹרְאִים אֶת הַמִּילָּה בַּיִת"
+activity: multiple-choice
+prompt_tts: "קִרְאוּ אֶת הַמִּילָּה בַּיִת וּבַחֲרוּ אֶת הַתְּמוּנָה הַמַּתְאִימָה"
+items:
+  - id: bayit
+    label: ""
+    correct: true
+    tts: "בַּיִת"
+    emoji: "🏠"
+  - id: chatul
+    label: ""
+    tts: "חָתוּל"
+    emoji: "🐱"
+  - id: tapuach
+    label: ""
+    tts: "תַּפּוּחַ"
+    emoji: "🍎"
+reward: { stars: 1, sfx: pop, effect: confetti }

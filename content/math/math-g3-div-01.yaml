@@ -1,0 +1,14 @@
+id: math-g3-div-01
+subject: math
+grade: 3
+difficulty: 2
+locale: en-US
+direction: ltr
+title: "Dividing Numbers"
+activity: arithmetic
+prompt_tts: "What is 6 divided by 2?"
+problem:
+  operands: [6, 2]
+  operator: "/"
+  answer: 3
+reward: { stars: 1, sfx: ding, effect: confetti }

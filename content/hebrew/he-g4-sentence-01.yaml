@@ -1,0 +1,21 @@
+id: he-g4-sentence-01
+subject: hebrew
+grade: 4
+difficulty: 3
+locale: he-IL
+direction: rtl
+title: "בּוֹנִים מִשְׁפָּט"
+activity: drag-drop
+prompt_tts: "סַדְּרוּ אֶת הַמִּילִּים לְמִשְׁפָּט: הַיֶּלֶד אוֹכֵל תַּפּוּחַ"
+items:
+  - id: w1
+    label: "הַיֶּלֶד"
+    tts: "הַיֶּלֶד"
+  - id: w2
+    label: "אוֹכֵל"
+    tts: "אוֹכֵל"
+  - id: w3
+    label: "תַּפּוּחַ"
+    tts: "תַּפּוּחַ"
+solution: [w1, w2, w3]
+reward: { stars: 1, sfx: chime, effect: stars }

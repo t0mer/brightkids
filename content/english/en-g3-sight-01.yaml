@@ -1,0 +1,21 @@
+id: en-g3-sight-01
+subject: english
+grade: 3
+difficulty: 2
+locale: en-US
+direction: ltr
+title: "Pick the Sight Word"
+activity: multiple-choice
+prompt_tts: "Pick the word the"
+items:
+  - id: the
+    label: "the"
+    correct: true
+    tts: "the"
+  - id: they
+    label: "they"
+    tts: "they"
+  - id: then
+    label: "then"
+    tts: "then"
+reward: { stars: 1, sfx: chime, effect: sparkle }

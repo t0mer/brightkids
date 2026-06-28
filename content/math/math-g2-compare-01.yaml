@@ -1,0 +1,21 @@
+id: math-g2-compare-01
+subject: math
+grade: 2
+difficulty: 2
+locale: en-US
+direction: ltr
+title: "Compare the Numbers"
+activity: multiple-choice
+prompt_tts: "Which sign makes it true: 4 blank 7?"
+items:
+  - id: less
+    label: "<"
+    correct: true
+    tts: "less than"
+  - id: greater
+    label: ">"
+    tts: "greater than"
+  - id: equal
+    label: "="
+    tts: "equal to"
+reward: { stars: 1, sfx: ding, effect: confetti }

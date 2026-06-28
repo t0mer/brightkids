@@ -1,0 +1,23 @@
+id: he-g3-match-02
+subject: hebrew
+grade: 3
+difficulty: 2
+locale: he-IL
+direction: rtl
+title: "מַתְאִימִים תְּמוּנָה לַמִּילָּה"
+activity: matching
+prompt_tts: "חַבְּרוּ כָּל מִילָּה לַתְּמוּנָה הַמַּתְאִימָה"
+pairs:
+  - id: p-tapuach
+    left: "תַּפּוּחַ"
+    left_tts: "תַּפּוּחַ"
+    emoji: "🍎"
+  - id: p-chatul
+    left: "חָתוּל"
+    left_tts: "חָתוּל"
+    emoji: "🐱"
+  - id: p-bayit
+    left: "בַּיִת"
+    left_tts: "בַּיִת"
+    emoji: "🏠"
+reward: { stars: 1, sfx: ding, effect: sparkle }

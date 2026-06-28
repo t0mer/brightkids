@@ -1,0 +1,11 @@
+id: he-g1-trace-01
+subject: hebrew
+grade: 1
+difficulty: 1
+locale: he-IL
+direction: rtl
+title: "כּוֹתְבִים אֶת הָאוֹת שִׁין"
+activity: tracing
+prompt_tts: "עִקְבוּ עִם הָאֶצְבַּע אַחֲרֵי הָאוֹת שִׁין"
+glyph: "ש"
+reward: { stars: 1, sfx: chime, effect: sparkle }

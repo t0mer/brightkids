@@ -1,0 +1,14 @@
+id: math-g2-sub-01
+subject: math
+grade: 2
+difficulty: 2
+locale: en-US
+direction: ltr
+title: "Subtracting Numbers"
+activity: arithmetic
+prompt_tts: "What is 5 minus 2?"
+problem:
+  operands: [5, 2]
+  operator: "-"
+  answer: 3
+reward: { stars: 1, sfx: ding, effect: confetti }
