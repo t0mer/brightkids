@@ -31,9 +31,9 @@ BrightKids is audio-first, mobile-first, and zero-PII: profiles are just a name 
 |---|---|---|
 | ![Math](assets/screenshots/lesson-math.png) | ![Rewards](assets/screenshots/rewards.png) | ![Settings](assets/screenshots/settings.png) |
 
-| Lesson list | Dark mode |
-|---|---|
-| ![Lessons](assets/screenshots/lessons.png) | ![Dark mode](assets/screenshots/subjects-dark.png) |
+| Lesson list | Dark mode | OpenDyslexic font |
+|---|---|---|
+| ![Lessons](assets/screenshots/lessons.png) | ![Dark mode](assets/screenshots/subjects-dark.png) | ![OpenDyslexic](assets/screenshots/lesson-dyslexic.png) |
 
 ## Quick start
 
