@@ -76,7 +76,14 @@ export function Subjects() {
               </span>
               <span className="flex-1">
                 <span className="block font-display text-3xl">{t(`subjects.${s.subject}`)}</span>
-                <span className="text-cream/70">{s.grades.length} ×</span>
+                {s.grades.length > 0 && (
+                  <span className="text-cream/70">
+                    {t("subjects.gradeRange", {
+                      from: Math.min(...s.grades),
+                      to: Math.max(...s.grades),
+                    })}
+                  </span>
+                )}
               </span>
             </motion.button>
           );

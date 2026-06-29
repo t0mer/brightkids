@@ -23,7 +23,8 @@
     "choose": "What shall we learn?",
     "hebrew": "Hebrew",
     "english": "English",
-    "math": "Math"
+    "math": "Math",
+    "gradeRange": "Grades {{from}}–{{to}}"
   },
   "grades": {
     "choose": "Which grade?",
