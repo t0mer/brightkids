@@ -40,8 +40,10 @@ type Lesson struct {
 	Items []Item `yaml:"items,omitempty" json:"items,omitempty"`
 	// Pairs: matching activity (left <-> right).
 	Pairs []Pair `yaml:"pairs,omitempty" json:"pairs,omitempty"`
-	// Problem: arithmetic and counting activities.
+	// Problem: a single arithmetic or counting problem.
 	Problem *Problem `yaml:"problem,omitempty" json:"problem,omitempty"`
+	// Problems: an arithmetic practice set — the activity steps through each.
+	Problems []Problem `yaml:"problems,omitempty" json:"problems,omitempty"`
 	// Glyph: tracing (the character) and counting (the object emoji to render).
 	Glyph string `yaml:"glyph,omitempty" json:"glyph,omitempty"`
 	// Solution: drag-drop ordered list of item IDs forming the correct answer.

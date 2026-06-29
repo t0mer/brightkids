@@ -1,7 +1,8 @@
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import { motion } from "framer-motion";
 import { Delete } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import type { Problem } from "@/lib/types";
 import type { ActivityProps } from "./types";
 import { cn } from "@/lib/utils";
 import { play } from "@/lib/sfx";
@@ -15,23 +16,41 @@ const OP_LABEL: Record<string, string> = {
   "÷": "÷",
 };
 
-// Arithmetic shows an equation and a numeric keypad. The equation always renders
-// LTR (BiDi-isolated) even inside an RTL screen.
+// Arithmetic shows an equation and a numeric keypad. A lesson may carry a single
+// `problem` or a `problems` set (a practice run); the activity steps through the
+// set and only completes the lesson once every problem is solved. Equations
+// always render LTR (BiDi-isolated) even inside an RTL screen.
 export function Arithmetic({ lesson, onCorrect, onWrong, solved }: ActivityProps) {
   const { t } = useTranslation();
-  const p = lesson.problem;
+
+  const problems = useMemo<Problem[]>(
+    () => (lesson.problems?.length ? lesson.problems : lesson.problem ? [lesson.problem] : []),
+    [lesson.id],
+  );
+
+  const [index, setIndex] = useState(0);
   const [entry, setEntry] = useState("");
   const [shake, setShake] = useState(false);
 
+  const p = problems[index];
   if (!p || !p.operands || p.operands.length < 2) return null;
+
   const op = OP_LABEL[p.operator] ?? p.operator;
   const equation = `${p.operands.join(` ${op} `)} = `;
+  const isLast = index === problems.length - 1;
+  const showProgress = problems.length > 1;
 
   function check() {
     if (solved || entry === "") return;
     if (Number(entry) === p!.answer) {
-      play("ding");
-      onCorrect(lesson.reward.stars);
+      if (isLast) {
+        play("ding");
+        onCorrect(lesson.reward.stars);
+      } else {
+        play("pop");
+        setIndex((i) => i + 1);
+        setEntry("");
+      }
     } else {
       play("wrong");
       setShake(true);
@@ -44,7 +63,21 @@ export function Arithmetic({ lesson, onCorrect, onWrong, solved }: ActivityProps
   const keys = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "del", "0", "ok"];
 
   return (
-    <div className="flex w-full flex-col items-center gap-6">
+    <div className="flex w-full flex-col items-center gap-5">
+      {showProgress && (
+        <div className="flex w-full max-w-xs flex-col gap-1">
+          <span className="ltr-num text-center text-sm text-cream/70">
+            {index + (solved ? 1 : 0)} / {problems.length}
+          </span>
+          <div className="h-2 w-full overflow-hidden rounded-full bg-white/15">
+            <div
+              className="h-full rounded-full bg-mint transition-all"
+              style={{ width: `${((index + (solved ? 1 : 0)) / problems.length) * 100}%` }}
+            />
+          </div>
+        </div>
+      )}
+
       <motion.div
         animate={shake ? { x: [0, -8, 8, -6, 0] } : {}}
         className="ltr-num flex items-center gap-3 rounded-blob bg-white/95 px-8 py-6 font-display text-5xl text-ink shadow-tile dark:bg-nebula dark:text-cream"

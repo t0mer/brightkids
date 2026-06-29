@@ -72,6 +72,7 @@ export interface Lesson {
   items?: Item[];
   pairs?: Pair[];
   problem?: Problem;
+  problems?: Problem[];
   glyph?: string;
   solution?: string[];
   reward: Reward;

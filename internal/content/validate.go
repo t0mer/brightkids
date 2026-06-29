@@ -138,15 +138,29 @@ func validateCounting(l Lesson) error {
 }
 
 func validateArithmetic(l Lesson) error {
-	if l.Problem == nil {
-		return fmt.Errorf("arithmetic needs a problem")
+	if l.Problem == nil && len(l.Problems) == 0 {
+		return fmt.Errorf("arithmetic needs a problem or problems set")
 	}
-	switch l.Problem.Operator {
+	if l.Problem != nil {
+		if err := validateProblem(*l.Problem); err != nil {
+			return err
+		}
+	}
+	for i, p := range l.Problems {
+		if err := validateProblem(p); err != nil {
+			return fmt.Errorf("problems[%d]: %w", i, err)
+		}
+	}
+	return nil
+}
+
+func validateProblem(p Problem) error {
+	switch p.Operator {
 	case "+", "-", "x", "*", "/", "÷":
 	default:
-		return fmt.Errorf("arithmetic operator %q invalid", l.Problem.Operator)
+		return fmt.Errorf("arithmetic operator %q invalid", p.Operator)
 	}
-	if len(l.Problem.Operands) < 2 {
+	if len(p.Operands) < 2 {
 		return fmt.Errorf("arithmetic needs at least 2 operands")
 	}
 	return nil

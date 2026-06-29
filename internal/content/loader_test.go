@@ -85,6 +85,40 @@ func TestLoadEmptyFails(t *testing.T) {
 	}
 }
 
+const validProblemSet = `
+id: math-g2-add-set-99
+subject: math
+grade: 2
+difficulty: 2
+locale: en-US
+direction: ltr
+title: "Addition Set"
+activity: arithmetic
+prompt_tts: "Solve the addition problems."
+problems:
+  - { operands: [2, 3], operator: "+", answer: 5 }
+  - { operands: [4, 1], operator: "+", answer: 5 }
+reward: { stars: 3, sfx: ding, effect: confetti }
+`
+
+func TestArithmeticProblemSet(t *testing.T) {
+	lib, err := Load(mustFS(t, map[string]string{"math/set.yaml": validProblemSet}), "")
+	if err != nil {
+		t.Fatalf("Load problem set: %v", err)
+	}
+	ls, ok := lib.Lesson("math-g2-add-set-99")
+	if !ok || len(ls.Problems) != 2 {
+		t.Fatalf("expected 2 problems, got %+v", ls.Problems)
+	}
+}
+
+func TestArithmeticRejectsBadProblemInSet(t *testing.T) {
+	bad := `{id: x, subject: math, grade: 2, difficulty: 1, locale: en, direction: ltr, title: t, activity: arithmetic, prompt_tts: p, problems: [{operands: [2,3], operator: "+", answer: 5},{operands: [4], operator: "?", answer: 9}], reward: {stars: 1, sfx: d, effect: e}}`
+	if _, err := Load(mustFS(t, map[string]string{"x.yaml": bad}), ""); err == nil {
+		t.Fatal("expected error for invalid problem in set")
+	}
+}
+
 func TestLoadRejectsMalformed(t *testing.T) {
 	cases := map[string]string{
 		"bad-subject": `{id: x, subject: science, grade: 1, difficulty: 1, locale: en, direction: ltr, title: t, activity: letter-recognition, prompt_tts: p, items: [{id: a, label: A, correct: true},{id: b, label: B}], reward: {stars: 1, sfx: d, effect: e}}`,
