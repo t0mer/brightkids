@@ -103,6 +103,7 @@ type LessonSummary struct {
 	Title      string `json:"title"`
 	Activity   string `json:"activity"`
 	Direction  string `json:"direction"`
+	Locale     string `json:"locale"`
 }
 
 // Summary projects a Lesson onto its list descriptor.
@@ -115,5 +116,6 @@ func (l Lesson) Summary() LessonSummary {
 		Title:      l.Title,
 		Activity:   l.Activity,
 		Direction:  l.Direction,
+		Locale:     l.Locale,
 	}
 }

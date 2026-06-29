@@ -2,11 +2,11 @@ id: math-g2-sub-01
 subject: math
 grade: 2
 difficulty: 2
-locale: en-US
+locale: he-IL
 direction: ltr
-title: "Subtracting Numbers"
+title: "חִסּוּר מִסְפָּרִים"
 activity: arithmetic
-prompt_tts: "What is 5 minus 2?"
+prompt_tts: "כַּמָּה זֶה 5 פָּחוֹת 2?"
 problem:
   operands: [5, 2]
   operator: "-"

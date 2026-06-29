@@ -2,11 +2,11 @@ id: math-g2-sub-set-02
 subject: math
 grade: 2
 difficulty: 2
-locale: en-US
+locale: he-IL
 direction: ltr
-title: "Subtraction within 20 — Set 2"
+title: "חִסּוּר עַד 20 — סֵט 2"
 activity: arithmetic
-prompt_tts: "Solve the subtraction problems."
+prompt_tts: "פִּתְרוּ אֶת תַּרְגִּילֵי הַחִסּוּר"
 problems:
   - { operands: [14, 11], operator: "-", answer: 3 }
   - { operands: [14, 3], operator: "-", answer: 11 }

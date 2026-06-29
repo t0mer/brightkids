@@ -2,11 +2,11 @@ id: math-g3-div-set-01
 subject: math
 grade: 3
 difficulty: 2
-locale: en-US
+locale: he-IL
 direction: ltr
-title: "Division (2, 5, 10) — Set 1"
+title: "חִלּוּק (2, 5, 10) — סֵט 1"
 activity: arithmetic
-prompt_tts: "Solve the division problems."
+prompt_tts: "פִּתְרוּ אֶת תַּרְגִּילֵי הַחִלּוּק"
 problems:
   - { operands: [18, 2], operator: "/", answer: 9 }
   - { operands: [2, 2], operator: "/", answer: 1 }

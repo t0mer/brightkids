@@ -2,11 +2,11 @@ id: math-g1-add-set-01
 subject: math
 grade: 1
 difficulty: 1
-locale: en-US
+locale: he-IL
 direction: ltr
-title: "Addition to 10 — Set 1"
+title: "חִבּוּר עַד 10 — סֵט 1"
 activity: arithmetic
-prompt_tts: "Solve the addition problems."
+prompt_tts: "פִּתְרוּ אֶת תַּרְגִּילֵי הַחִבּוּר"
 problems:
   - { operands: [6, 4], operator: "+", answer: 10 }
   - { operands: [9, 1], operator: "+", answer: 10 }

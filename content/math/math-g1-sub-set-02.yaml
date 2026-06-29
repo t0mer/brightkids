@@ -2,11 +2,11 @@ id: math-g1-sub-set-02
 subject: math
 grade: 1
 difficulty: 1
-locale: en-US
+locale: he-IL
 direction: ltr
-title: "Subtraction within 10 — Set 2"
+title: "חִסּוּר עַד 10 — סֵט 2"
 activity: arithmetic
-prompt_tts: "Solve the subtraction problems."
+prompt_tts: "פִּתְרוּ אֶת תַּרְגִּילֵי הַחִסּוּר"
 problems:
   - { operands: [10, 6], operator: "-", answer: 4 }
   - { operands: [7, 2], operator: "-", answer: 5 }

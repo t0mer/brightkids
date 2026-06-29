@@ -2,20 +2,20 @@ id: math-g2-compare-01
 subject: math
 grade: 2
 difficulty: 2
-locale: en-US
+locale: he-IL
 direction: ltr
-title: "Compare the Numbers"
+title: "מַשְׁווִים מִסְפָּרִים"
 activity: multiple-choice
-prompt_tts: "Which sign makes it true: 4 blank 7?"
+prompt_tts: "אֵיזֶה סִימָן מַתְאִים: 4 וְ-7?"
 items:
   - id: less
     label: "<"
     correct: true
-    tts: "less than"
+    tts: "קָטָן מִ"
   - id: greater
     label: ">"
-    tts: "greater than"
+    tts: "גָּדוֹל מִ"
   - id: equal
     label: "="
-    tts: "equal to"
+    tts: "שָׁוֶה לְ"
 reward: { stars: 1, sfx: ding, effect: confetti }

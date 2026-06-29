@@ -11,12 +11,12 @@ import { Bibo, type BiboMood } from "@/components/Bibo";
 import { ListenButton } from "@/components/ListenButton";
 import { Button } from "@/components/ui/button";
 import { useStore } from "@/store/useStore";
-import { localeForSubject, speak } from "@/lib/tts";
+import { speak } from "@/lib/tts";
 import { play } from "@/lib/sfx";
 import { bigCelebrate, celebrate } from "@/lib/confetti";
 
 export function LessonPlayer() {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   const navigate = useNavigate();
   const { id = "" } = useParams();
   const { profile, settings } = useStore();
@@ -31,7 +31,10 @@ export function LessonPlayer() {
 
   const reduceMotion = settings?.reduce_motion ?? false;
   const voiceEnabled = settings?.voice_enabled ?? true;
-  const locale = lesson ? localeForSubject(lesson.subject, i18n.language) : "he-IL";
+  // TTS speaks the lesson's own language (Hebrew lessons and Math both narrate
+  // in Hebrew; English in English).
+  const locale = lesson?.locale || "he-IL";
+  const titleDir = locale.startsWith("he") ? "rtl" : "ltr";
 
   // Load the lesson + its grade siblings (for "next").
   useEffect(() => {
@@ -87,7 +90,7 @@ export function LessonPlayer() {
   const Renderer = ACTIVITY_RENDERERS[lesson.activity];
   const idx = siblings.findIndex((s) => s.id === lesson.id);
   const next = idx >= 0 && idx < siblings.length - 1 ? siblings[idx + 1] : null;
-  const lessonsPath = `/subject/${lesson.subject}/grade/${lesson.grade}`;
+  const lessonsPath = `/subject/${lesson.subject}`;
 
   return (
     <AppShell back={lessonsPath}>
@@ -95,7 +98,7 @@ export function LessonPlayer() {
         {/* Prompt + Bibo */}
         <div className="flex w-full items-center justify-center gap-3">
           <Bibo mood={mood} size={96} />
-          <h2 dir={lesson.direction} className="font-display text-2xl sm:text-3xl text-center">
+          <h2 dir={titleDir} className="font-display text-2xl sm:text-3xl text-center">
             {lesson.title}
           </h2>
         </div>

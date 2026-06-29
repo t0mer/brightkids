@@ -33,47 +33,47 @@ function shuffle(arr, rand) {
 }
 
 // A category produces a candidate pool of {operands, operator, answer}.
+// Instructions and titles are in Hebrew (the app's primary language); equations
+// themselves render LTR. `prompt` is the spoken Hebrew instruction.
 const categories = [
-  // op:     content operator written into YAML
-  // build:  returns the full candidate pool for the grade
   {
     key: "add",
-    word: "Addition",
+    prompt: "פִּתְרוּ אֶת תַּרְגִּילֵי הַחִבּוּר",
     op: "+",
     grades: {
-      1: { difficulty: 1, sets: 3, title: "Addition to 10", pool: addPool(1, 9, 10) },
-      2: { difficulty: 2, sets: 3, title: "Addition to 20", pool: addPool(2, 19, 20) },
-      3: { difficulty: 2, sets: 2, title: "Two-digit Addition", pool: addRange(10, 89, 99) },
-      4: { difficulty: 3, sets: 2, title: "Three-digit Addition", pool: addRange(100, 899, 999) },
+      1: { difficulty: 1, sets: 3, title: "חִבּוּר עַד 10", pool: addPool(1, 9, 10) },
+      2: { difficulty: 2, sets: 3, title: "חִבּוּר עַד 20", pool: addPool(2, 19, 20) },
+      3: { difficulty: 2, sets: 2, title: "חִבּוּר דּוּ־סִפְרָתִי", pool: addRange(10, 89, 99) },
+      4: { difficulty: 3, sets: 2, title: "חִבּוּר תְּלַת־סִפְרָתִי", pool: addRange(100, 899, 999) },
     },
   },
   {
     key: "sub",
-    word: "Subtraction",
+    prompt: "פִּתְרוּ אֶת תַּרְגִּילֵי הַחִסּוּר",
     op: "-",
     grades: {
-      1: { difficulty: 1, sets: 3, title: "Subtraction within 10", pool: subPool(2, 10) },
-      2: { difficulty: 2, sets: 3, title: "Subtraction within 20", pool: subPool(11, 20) },
-      3: { difficulty: 2, sets: 2, title: "Two-digit Subtraction", pool: subPool(20, 99) },
-      4: { difficulty: 3, sets: 2, title: "Three-digit Subtraction", pool: subPool(100, 999) },
+      1: { difficulty: 1, sets: 3, title: "חִסּוּר עַד 10", pool: subPool(2, 10) },
+      2: { difficulty: 2, sets: 3, title: "חִסּוּר עַד 20", pool: subPool(11, 20) },
+      3: { difficulty: 2, sets: 2, title: "חִסּוּר דּוּ־סִפְרָתִי", pool: subPool(20, 99) },
+      4: { difficulty: 3, sets: 2, title: "חִסּוּר תְּלַת־סִפְרָתִי", pool: subPool(100, 999) },
     },
   },
   {
     key: "mul",
-    word: "Multiplication",
+    prompt: "פִּתְרוּ אֶת תַּרְגִּילֵי הַכֶּפֶל",
     op: "x",
     grades: {
-      3: { difficulty: 2, sets: 3, title: "Times Tables (2, 5, 10)", pool: mulPool([2, 5, 10], 10) },
-      4: { difficulty: 3, sets: 3, title: "Times Tables to 12", pool: mulPool(range(2, 12), 12) },
+      3: { difficulty: 2, sets: 3, title: "לוּחַ הַכֶּפֶל (2, 5, 10)", pool: mulPool([2, 5, 10], 10) },
+      4: { difficulty: 3, sets: 3, title: "לוּחַ הַכֶּפֶל עַד 12", pool: mulPool(range(2, 12), 12) },
     },
   },
   {
     key: "div",
-    word: "Division",
+    prompt: "פִּתְרוּ אֶת תַּרְגִּילֵי הַחִלּוּק",
     op: "/",
     grades: {
-      3: { difficulty: 2, sets: 2, title: "Division (2, 5, 10)", pool: divPool([2, 5, 10], 10) },
-      4: { difficulty: 3, sets: 2, title: "Division to 12", pool: divPool(range(2, 12), 12) },
+      3: { difficulty: 2, sets: 2, title: "חִלּוּק (2, 5, 10)", pool: divPool([2, 5, 10], 10) },
+      4: { difficulty: 3, sets: 2, title: "חִלּוּק עַד 12", pool: divPool(range(2, 12), 12) },
     },
   },
 ];
@@ -156,17 +156,17 @@ for (const cat of categories) {
         chunk.push(...shuffled.slice(0, PER_SET - chunk.length));
       }
       const id = `math-g${grade}-${cat.key}-set-${pad(s + 1)}`;
-      const title = `${spec.title} — Set ${s + 1}`;
+      const title = `${spec.title} — סֵט ${s + 1}`;
       const body = [
         `id: ${id}`,
         `subject: math`,
         `grade: ${grade}`,
         `difficulty: ${spec.difficulty}`,
-        `locale: en-US`,
+        `locale: he-IL`,
         `direction: ltr`,
         `title: "${title}"`,
         `activity: arithmetic`,
-        `prompt_tts: "Solve the ${cat.word.toLowerCase()} problems."`,
+        `prompt_tts: "${cat.prompt}"`,
         `problems:`,
         ...chunk.map(yamlProblem),
         `reward: { stars: 3, sfx: ding, effect: confetti }`,

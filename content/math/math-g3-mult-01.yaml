@@ -2,11 +2,11 @@ id: math-g3-mult-01
 subject: math
 grade: 3
 difficulty: 2
-locale: en-US
+locale: he-IL
 direction: ltr
-title: "Multiplying Numbers"
+title: "כֶּפֶל מִסְפָּרִים"
 activity: arithmetic
-prompt_tts: "What is 3 times 2?"
+prompt_tts: "כַּמָּה זֶה 3 כָּפוּל 2?"
 problem:
   operands: [3, 2]
   operator: "x"

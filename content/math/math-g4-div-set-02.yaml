@@ -2,11 +2,11 @@ id: math-g4-div-set-02
 subject: math
 grade: 4
 difficulty: 3
-locale: en-US
+locale: he-IL
 direction: ltr
-title: "Division to 12 — Set 2"
+title: "חִלּוּק עַד 12 — סֵט 2"
 activity: arithmetic
-prompt_tts: "Solve the division problems."
+prompt_tts: "פִּתְרוּ אֶת תַּרְגִּילֵי הַחִלּוּק"
 problems:
   - { operands: [80, 8], operator: "/", answer: 10 }
   - { operands: [18, 9], operator: "/", answer: 2 }

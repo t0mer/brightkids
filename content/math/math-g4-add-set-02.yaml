@@ -2,11 +2,11 @@ id: math-g4-add-set-02
 subject: math
 grade: 4
 difficulty: 3
-locale: en-US
+locale: he-IL
 direction: ltr
-title: "Three-digit Addition — Set 2"
+title: "חִבּוּר תְּלַת־סִפְרָתִי — סֵט 2"
 activity: arithmetic
-prompt_tts: "Solve the addition problems."
+prompt_tts: "פִּתְרוּ אֶת תַּרְגִּילֵי הַחִבּוּר"
 problems:
   - { operands: [877, 782], operator: "+", answer: 1659 }
   - { operands: [835, 342], operator: "+", answer: 1177 }

@@ -2,11 +2,11 @@ id: math-g4-sub-set-01
 subject: math
 grade: 4
 difficulty: 3
-locale: en-US
+locale: he-IL
 direction: ltr
-title: "Three-digit Subtraction — Set 1"
+title: "חִסּוּר תְּלַת־סִפְרָתִי — סֵט 1"
 activity: arithmetic
-prompt_tts: "Solve the subtraction problems."
+prompt_tts: "פִּתְרוּ אֶת תַּרְגִּילֵי הַחִסּוּר"
 problems:
   - { operands: [415, 316], operator: "-", answer: 99 }
   - { operands: [968, 796], operator: "-", answer: 172 }

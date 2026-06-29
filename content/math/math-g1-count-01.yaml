@@ -2,11 +2,11 @@ id: math-g1-count-01
 subject: math
 grade: 1
 difficulty: 1
-locale: en-US
+locale: he-IL
 direction: ltr
-title: "Count the Apples"
+title: "סִפְרוּ אֶת הַתַּפּוּחִים"
 activity: counting
-prompt_tts: "How many apples?"
+prompt_tts: "כַּמָּה תַּפּוּחִים אַתֶּם רוֹאִים?"
 glyph: "🍎"
 problem:
   operator: count

@@ -2,10 +2,10 @@ id: math-g1-trace-01
 subject: math
 grade: 1
 difficulty: 1
-locale: en-US
+locale: he-IL
 direction: ltr
-title: "Trace the Number 3"
+title: "כִּתְבוּ אֶת הַסִּפְרָה 3"
 activity: tracing
-prompt_tts: "Trace the number three."
+prompt_tts: "עִקְבוּ אַחֲרֵי הַסִּפְרָה שָׁלוֹשׁ"
 glyph: "3"
 reward: { stars: 1, sfx: ding, effect: confetti }

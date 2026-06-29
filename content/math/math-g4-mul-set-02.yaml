@@ -2,11 +2,11 @@ id: math-g4-mul-set-02
 subject: math
 grade: 4
 difficulty: 3
-locale: en-US
+locale: he-IL
 direction: ltr
-title: "Times Tables to 12 — Set 2"
+title: "לוּחַ הַכֶּפֶל עַד 12 — סֵט 2"
 activity: arithmetic
-prompt_tts: "Solve the multiplication problems."
+prompt_tts: "פִּתְרוּ אֶת תַּרְגִּילֵי הַכֶּפֶל"
 problems:
   - { operands: [10, 5], operator: "x", answer: 50 }
   - { operands: [8, 4], operator: "x", answer: 32 }

@@ -2,20 +2,20 @@ id: math-g1-number-01
 subject: math
 grade: 1
 difficulty: 1
-locale: en-US
+locale: he-IL
 direction: ltr
-title: "Find the Number 5"
+title: "מִצְאוּ אֶת הַמִּסְפָּר 5"
 activity: multiple-choice
-prompt_tts: "Which one is the number 5?"
+prompt_tts: "אֵיזֶה מֵהֶם הוּא הַמִּסְפָּר חָמֵשׁ?"
 items:
   - id: five
     label: "5"
     correct: true
-    tts: "five"
+    tts: "חָמֵשׁ"
   - id: two
     label: "2"
-    tts: "two"
+    tts: "שְׁתַּיִם"
   - id: eight
     label: "8"
-    tts: "eight"
+    tts: "שְׁמוֹנֶה"
 reward: { stars: 1, sfx: ding, effect: confetti }

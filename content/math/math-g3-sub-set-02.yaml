@@ -2,11 +2,11 @@ id: math-g3-sub-set-02
 subject: math
 grade: 3
 difficulty: 2
-locale: en-US
+locale: he-IL
 direction: ltr
-title: "Two-digit Subtraction — Set 2"
+title: "חִסּוּר דּוּ־סִפְרָתִי — סֵט 2"
 activity: arithmetic
-prompt_tts: "Solve the subtraction problems."
+prompt_tts: "פִּתְרוּ אֶת תַּרְגִּילֵי הַחִסּוּר"
 problems:
   - { operands: [87, 39], operator: "-", answer: 48 }
   - { operands: [90, 16], operator: "-", answer: 74 }

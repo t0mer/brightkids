@@ -2,11 +2,11 @@ id: math-g3-div-01
 subject: math
 grade: 3
 difficulty: 2
-locale: en-US
+locale: he-IL
 direction: ltr
-title: "Dividing Numbers"
+title: "חִלּוּק מִסְפָּרִים"
 activity: arithmetic
-prompt_tts: "What is 6 divided by 2?"
+prompt_tts: "כַּמָּה זֶה 6 חֲלֵקֵי 2?"
 problem:
   operands: [6, 2]
   operator: "/"

@@ -2,20 +2,20 @@ id: math-g4-word-01
 subject: math
 grade: 4
 difficulty: 3
-locale: en-US
+locale: he-IL
 direction: ltr
-title: "Apple Word Problem"
+title: "חִידַת הַתַּפּוּחִים"
 activity: multiple-choice
-prompt_tts: "You have 2 apples and get 3 more. How many now?"
+prompt_tts: "יֵשׁ לָכֶם 2 תַּפּוּחִים וְקִבַּלְתֶּם עוֹד 3. כַּמָּה יֵשׁ עַכְשָׁיו?"
 items:
   - id: five
     label: "5"
     correct: true
-    tts: "five"
+    tts: "חָמֵשׁ"
   - id: four
     label: "4"
-    tts: "four"
+    tts: "אַרְבַּע"
   - id: six
     label: "6"
-    tts: "six"
+    tts: "שֵׁשׁ"
 reward: { stars: 1, sfx: ding, effect: confetti }

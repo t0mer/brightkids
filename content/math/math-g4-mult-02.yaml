@@ -2,11 +2,11 @@ id: math-g4-mult-02
 subject: math
 grade: 4
 difficulty: 3
-locale: en-US
+locale: he-IL
 direction: ltr
-title: "Multiplication Practice"
+title: "תַּרְגּוּל כֶּפֶל"
 activity: arithmetic
-prompt_tts: "What is 4 times 3?"
+prompt_tts: "כַּמָּה זֶה 4 כָּפוּל 3?"
 problem:
   operands: [4, 3]
   operator: "x"

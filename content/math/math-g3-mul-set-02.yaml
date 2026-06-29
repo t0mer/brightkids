@@ -2,11 +2,11 @@ id: math-g3-mul-set-02
 subject: math
 grade: 3
 difficulty: 2
-locale: en-US
+locale: he-IL
 direction: ltr
-title: "Times Tables (2, 5, 10) — Set 2"
+title: "לוּחַ הַכֶּפֶל (2, 5, 10) — סֵט 2"
 activity: arithmetic
-prompt_tts: "Solve the multiplication problems."
+prompt_tts: "פִּתְרוּ אֶת תַּרְגִּילֵי הַכֶּפֶל"
 problems:
   - { operands: [5, 7], operator: "x", answer: 35 }
   - { operands: [2, 9], operator: "x", answer: 18 }

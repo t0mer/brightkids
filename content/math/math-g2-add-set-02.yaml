@@ -2,11 +2,11 @@ id: math-g2-add-set-02
 subject: math
 grade: 2
 difficulty: 2
-locale: en-US
+locale: he-IL
 direction: ltr
-title: "Addition to 20 — Set 2"
+title: "חִבּוּר עַד 20 — סֵט 2"
 activity: arithmetic
-prompt_tts: "Solve the addition problems."
+prompt_tts: "פִּתְרוּ אֶת תַּרְגִּילֵי הַחִבּוּר"
 problems:
   - { operands: [3, 3], operator: "+", answer: 6 }
   - { operands: [4, 10], operator: "+", answer: 14 }

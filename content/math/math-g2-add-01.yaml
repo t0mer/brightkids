@@ -2,11 +2,11 @@ id: math-g2-add-01
 subject: math
 grade: 2
 difficulty: 2
-locale: en-US
+locale: he-IL
 direction: ltr
-title: "Adding Numbers"
+title: "חִבּוּר מִסְפָּרִים"
 activity: arithmetic
-prompt_tts: "What is 2 plus 3?"
+prompt_tts: "כַּמָּה זֶה 2 וְעוֹד 3?"
 problem:
   operands: [2, 3]
   operator: "+"

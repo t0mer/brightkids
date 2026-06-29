@@ -54,10 +54,3 @@ export function stopSpeaking(): void {
     window.speechSynthesis.cancel();
   }
 }
-
-/** localeForSubject returns the TTS locale for a subject. */
-export function localeForSubject(subject: string, uiLang: string): string {
-  if (subject === "hebrew") return "he-IL";
-  if (subject === "english") return "en-US";
-  return uiLang === "he" ? "he-IL" : "en-US";
-}

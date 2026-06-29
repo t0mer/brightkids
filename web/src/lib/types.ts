@@ -25,6 +25,7 @@ export interface LessonSummary {
   title: string;
   activity: Activity;
   direction: Direction;
+  locale: string;
 }
 
 export interface Item {
