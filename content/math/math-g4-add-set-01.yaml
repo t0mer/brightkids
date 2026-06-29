@@ -1,0 +1,23 @@
+id: math-g4-add-set-01
+subject: math
+grade: 4
+difficulty: 3
+locale: en-US
+direction: ltr
+title: "Three-digit Addition — Set 1"
+activity: arithmetic
+prompt_tts: "Solve the addition problems."
+problems:
+  - { operands: [450, 430], operator: "+", answer: 880 }
+  - { operands: [905, 265], operator: "+", answer: 1170 }
+  - { operands: [499, 584], operator: "+", answer: 1083 }
+  - { operands: [275, 551], operator: "+", answer: 826 }
+  - { operands: [863, 595], operator: "+", answer: 1458 }
+  - { operands: [653, 749], operator: "+", answer: 1402 }
+  - { operands: [401, 672], operator: "+", answer: 1073 }
+  - { operands: [142, 243], operator: "+", answer: 385 }
+  - { operands: [184, 540], operator: "+", answer: 724 }
+  - { operands: [723, 232], operator: "+", answer: 955 }
+  - { operands: [527, 551], operator: "+", answer: 1078 }
+  - { operands: [422, 606], operator: "+", answer: 1028 }
+reward: { stars: 3, sfx: ding, effect: confetti }

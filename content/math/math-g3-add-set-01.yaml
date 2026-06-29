@@ -1,0 +1,23 @@
+id: math-g3-add-set-01
+subject: math
+grade: 3
+difficulty: 2
+locale: en-US
+direction: ltr
+title: "Two-digit Addition — Set 1"
+activity: arithmetic
+prompt_tts: "Solve the addition problems."
+problems:
+  - { operands: [45, 65], operator: "+", answer: 110 }
+  - { operands: [94, 76], operator: "+", answer: 170 }
+  - { operands: [10, 76], operator: "+", answer: 86 }
+  - { operands: [24, 10], operator: "+", answer: 34 }
+  - { operands: [17, 21], operator: "+", answer: 38 }
+  - { operands: [17, 43], operator: "+", answer: 60 }
+  - { operands: [87, 98], operator: "+", answer: 185 }
+  - { operands: [59, 65], operator: "+", answer: 124 }
+  - { operands: [24, 54], operator: "+", answer: 78 }
+  - { operands: [45, 21], operator: "+", answer: 66 }
+  - { operands: [17, 76], operator: "+", answer: 93 }
+  - { operands: [80, 43], operator: "+", answer: 123 }
+reward: { stars: 3, sfx: ding, effect: confetti }

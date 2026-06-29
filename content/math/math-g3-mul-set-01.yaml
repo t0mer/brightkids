@@ -1,0 +1,23 @@
+id: math-g3-mul-set-01
+subject: math
+grade: 3
+difficulty: 2
+locale: en-US
+direction: ltr
+title: "Times Tables (2, 5, 10) — Set 1"
+activity: arithmetic
+prompt_tts: "Solve the multiplication problems."
+problems:
+  - { operands: [10, 9], operator: "x", answer: 90 }
+  - { operands: [10, 8], operator: "x", answer: 80 }
+  - { operands: [10, 7], operator: "x", answer: 70 }
+  - { operands: [2, 1], operator: "x", answer: 2 }
+  - { operands: [2, 8], operator: "x", answer: 16 }
+  - { operands: [5, 5], operator: "x", answer: 25 }
+  - { operands: [2, 2], operator: "x", answer: 4 }
+  - { operands: [10, 6], operator: "x", answer: 60 }
+  - { operands: [5, 3], operator: "x", answer: 15 }
+  - { operands: [5, 10], operator: "x", answer: 50 }
+  - { operands: [2, 10], operator: "x", answer: 20 }
+  - { operands: [10, 4], operator: "x", answer: 40 }
+reward: { stars: 3, sfx: ding, effect: confetti }

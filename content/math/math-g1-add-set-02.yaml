@@ -1,0 +1,23 @@
+id: math-g1-add-set-02
+subject: math
+grade: 1
+difficulty: 1
+locale: en-US
+direction: ltr
+title: "Addition to 10 — Set 2"
+activity: arithmetic
+prompt_tts: "Solve the addition problems."
+problems:
+  - { operands: [3, 5], operator: "+", answer: 8 }
+  - { operands: [1, 3], operator: "+", answer: 4 }
+  - { operands: [5, 4], operator: "+", answer: 9 }
+  - { operands: [1, 9], operator: "+", answer: 10 }
+  - { operands: [7, 2], operator: "+", answer: 9 }
+  - { operands: [1, 4], operator: "+", answer: 5 }
+  - { operands: [1, 6], operator: "+", answer: 7 }
+  - { operands: [5, 5], operator: "+", answer: 10 }
+  - { operands: [5, 2], operator: "+", answer: 7 }
+  - { operands: [2, 1], operator: "+", answer: 3 }
+  - { operands: [8, 2], operator: "+", answer: 10 }
+  - { operands: [4, 6], operator: "+", answer: 10 }
+reward: { stars: 3, sfx: ding, effect: confetti }

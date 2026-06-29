@@ -1,0 +1,23 @@
+id: math-g2-sub-set-02
+subject: math
+grade: 2
+difficulty: 2
+locale: en-US
+direction: ltr
+title: "Subtraction within 20 — Set 2"
+activity: arithmetic
+prompt_tts: "Solve the subtraction problems."
+problems:
+  - { operands: [14, 11], operator: "-", answer: 3 }
+  - { operands: [14, 3], operator: "-", answer: 11 }
+  - { operands: [19, 1], operator: "-", answer: 18 }
+  - { operands: [12, 5], operator: "-", answer: 7 }
+  - { operands: [18, 7], operator: "-", answer: 11 }
+  - { operands: [17, 13], operator: "-", answer: 4 }
+  - { operands: [17, 14], operator: "-", answer: 3 }
+  - { operands: [14, 4], operator: "-", answer: 10 }
+  - { operands: [16, 10], operator: "-", answer: 6 }
+  - { operands: [18, 14], operator: "-", answer: 4 }
+  - { operands: [11, 2], operator: "-", answer: 9 }
+  - { operands: [16, 1], operator: "-", answer: 15 }
+reward: { stars: 3, sfx: ding, effect: confetti }

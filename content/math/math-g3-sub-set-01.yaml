@@ -1,0 +1,23 @@
+id: math-g3-sub-set-01
+subject: math
+grade: 3
+difficulty: 2
+locale: en-US
+direction: ltr
+title: "Two-digit Subtraction — Set 1"
+activity: arithmetic
+prompt_tts: "Solve the subtraction problems."
+problems:
+  - { operands: [65, 60], operator: "-", answer: 5 }
+  - { operands: [96, 57], operator: "-", answer: 39 }
+  - { operands: [73, 18], operator: "-", answer: 55 }
+  - { operands: [39, 35], operator: "-", answer: 4 }
+  - { operands: [52, 2], operator: "-", answer: 50 }
+  - { operands: [27, 25], operator: "-", answer: 2 }
+  - { operands: [96, 60], operator: "-", answer: 36 }
+  - { operands: [38, 15], operator: "-", answer: 23 }
+  - { operands: [81, 11], operator: "-", answer: 70 }
+  - { operands: [51, 20], operator: "-", answer: 31 }
+  - { operands: [31, 1], operator: "-", answer: 30 }
+  - { operands: [84, 3], operator: "-", answer: 81 }
+reward: { stars: 3, sfx: ding, effect: confetti }

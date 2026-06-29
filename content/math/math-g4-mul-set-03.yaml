@@ -1,0 +1,23 @@
+id: math-g4-mul-set-03
+subject: math
+grade: 4
+difficulty: 3
+locale: en-US
+direction: ltr
+title: "Times Tables to 12 — Set 3"
+activity: arithmetic
+prompt_tts: "Solve the multiplication problems."
+problems:
+  - { operands: [4, 11], operator: "x", answer: 44 }
+  - { operands: [8, 11], operator: "x", answer: 88 }
+  - { operands: [3, 10], operator: "x", answer: 30 }
+  - { operands: [9, 1], operator: "x", answer: 9 }
+  - { operands: [9, 7], operator: "x", answer: 63 }
+  - { operands: [4, 1], operator: "x", answer: 4 }
+  - { operands: [7, 11], operator: "x", answer: 77 }
+  - { operands: [11, 2], operator: "x", answer: 22 }
+  - { operands: [6, 8], operator: "x", answer: 48 }
+  - { operands: [7, 3], operator: "x", answer: 21 }
+  - { operands: [3, 1], operator: "x", answer: 3 }
+  - { operands: [3, 11], operator: "x", answer: 33 }
+reward: { stars: 3, sfx: ding, effect: confetti }

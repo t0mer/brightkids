@@ -1,0 +1,23 @@
+id: math-g1-sub-set-03
+subject: math
+grade: 1
+difficulty: 1
+locale: en-US
+direction: ltr
+title: "Subtraction within 10 — Set 3"
+activity: arithmetic
+prompt_tts: "Solve the subtraction problems."
+problems:
+  - { operands: [5, 1], operator: "-", answer: 4 }
+  - { operands: [7, 4], operator: "-", answer: 3 }
+  - { operands: [7, 6], operator: "-", answer: 1 }
+  - { operands: [9, 8], operator: "-", answer: 1 }
+  - { operands: [10, 1], operator: "-", answer: 9 }
+  - { operands: [10, 7], operator: "-", answer: 3 }
+  - { operands: [6, 5], operator: "-", answer: 1 }
+  - { operands: [2, 1], operator: "-", answer: 1 }
+  - { operands: [8, 1], operator: "-", answer: 7 }
+  - { operands: [8, 5], operator: "-", answer: 3 }
+  - { operands: [8, 7], operator: "-", answer: 1 }
+  - { operands: [5, 3], operator: "-", answer: 2 }
+reward: { stars: 3, sfx: ding, effect: confetti }

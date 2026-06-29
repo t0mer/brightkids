@@ -1,0 +1,23 @@
+id: math-g2-add-set-02
+subject: math
+grade: 2
+difficulty: 2
+locale: en-US
+direction: ltr
+title: "Addition to 20 — Set 2"
+activity: arithmetic
+prompt_tts: "Solve the addition problems."
+problems:
+  - { operands: [3, 3], operator: "+", answer: 6 }
+  - { operands: [4, 10], operator: "+", answer: 14 }
+  - { operands: [7, 4], operator: "+", answer: 11 }
+  - { operands: [4, 6], operator: "+", answer: 10 }
+  - { operands: [6, 8], operator: "+", answer: 14 }
+  - { operands: [6, 3], operator: "+", answer: 9 }
+  - { operands: [8, 9], operator: "+", answer: 17 }
+  - { operands: [8, 10], operator: "+", answer: 18 }
+  - { operands: [11, 7], operator: "+", answer: 18 }
+  - { operands: [8, 5], operator: "+", answer: 13 }
+  - { operands: [13, 5], operator: "+", answer: 18 }
+  - { operands: [10, 3], operator: "+", answer: 13 }
+reward: { stars: 3, sfx: ding, effect: confetti }

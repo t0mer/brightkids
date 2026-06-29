@@ -1,0 +1,23 @@
+id: math-g3-div-set-02
+subject: math
+grade: 3
+difficulty: 2
+locale: en-US
+direction: ltr
+title: "Division (2, 5, 10) — Set 2"
+activity: arithmetic
+prompt_tts: "Solve the division problems."
+problems:
+  - { operands: [8, 2], operator: "/", answer: 4 }
+  - { operands: [25, 5], operator: "/", answer: 5 }
+  - { operands: [6, 2], operator: "/", answer: 3 }
+  - { operands: [5, 5], operator: "/", answer: 1 }
+  - { operands: [10, 5], operator: "/", answer: 2 }
+  - { operands: [16, 2], operator: "/", answer: 8 }
+  - { operands: [35, 5], operator: "/", answer: 7 }
+  - { operands: [10, 10], operator: "/", answer: 1 }
+  - { operands: [20, 2], operator: "/", answer: 10 }
+  - { operands: [50, 10], operator: "/", answer: 5 }
+  - { operands: [15, 5], operator: "/", answer: 3 }
+  - { operands: [4, 2], operator: "/", answer: 2 }
+reward: { stars: 3, sfx: ding, effect: confetti }
