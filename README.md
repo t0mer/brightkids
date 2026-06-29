@@ -14,7 +14,7 @@ BrightKids is audio-first, mobile-first, and zero-PII: profiles are just a name 
 
 - **Trilingual content** — Hebrew (RTL), English (LTR), and Math (numeric), grades 1–4, with proper BiDi isolation for mixed Hebrew/digit text.
 - **Seven activity types** — letter recognition, multiple choice, counting, arithmetic, matching, drag-to-order, and finger **tracing** (canvas with mask-coverage scoring).
-- **Math practice sets** — 350+ generated arithmetic problems (addition, subtraction, multiplication, division) across grades 1–4, served as stepped practice runs with a progress bar.
+- **Math built from the original app's categories** — addition, subtraction, multiplication, and division (450+ generated exercises) plus the **"Who is bigger?"** number-comparison game, served as stepped practice runs with a progress bar across grades 1–4.
 - **Audio-first** — tap-to-hear on every prompt plus auto-narration on load via the Web Speech API (he-IL / en-US), so pre-readers can play.
 - **Playful rewards** — confetti, synthesized sound effects, Bibo reactions, stars, and a daily streak. Mistakes get a gentle "try again," never a shaming buzzer.
 - **Accessible** — 48px tap targets, `prefers-reduced-motion` honored, OpenDyslexic toggle, dark mode, high-contrast palette.
@@ -28,13 +28,13 @@ BrightKids is audio-first, mobile-first, and zero-PII: profiles are just a name 
 |---|---|---|
 | ![Subjects](assets/screenshots/subjects.png) | ![Letter lesson](assets/screenshots/lesson-letter.png) | ![Tracing](assets/screenshots/lesson-trace.png) |
 
-| Arithmetic | Math practice set | Rewards | Settings (parent-gated) |
+| Arithmetic | Math practice set | Who is bigger? | Rewards |
 |---|---|---|---|
-| ![Math](assets/screenshots/lesson-math.png) | ![Math set](assets/screenshots/lesson-math-set.png) | ![Rewards](assets/screenshots/rewards.png) | ![Settings](assets/screenshots/settings.png) |
+| ![Math](assets/screenshots/lesson-math.png) | ![Math set](assets/screenshots/lesson-math-set.png) | ![Compare](assets/screenshots/lesson-compare.png) | ![Rewards](assets/screenshots/rewards.png) |
 
-| Lesson list | Dark mode | OpenDyslexic font |
-|---|---|---|
-| ![Lessons](assets/screenshots/lessons.png) | ![Dark mode](assets/screenshots/subjects-dark.png) | ![OpenDyslexic](assets/screenshots/lesson-dyslexic.png) |
+| Settings (parent-gated) | Lesson list | Dark mode | OpenDyslexic |
+|---|---|---|---|
+| ![Settings](assets/screenshots/settings.png) | ![Lessons](assets/screenshots/lessons.png) | ![Dark mode](assets/screenshots/subjects-dark.png) | ![OpenDyslexic](assets/screenshots/lesson-dyslexic.png) |
 
 ## Quick start
 
