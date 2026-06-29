@@ -179,4 +179,49 @@ for (const cat of categories) {
   }
 }
 
-console.log(`generated ${files} lessons, ${problems} problems into ${OUT}`);
+// "Who is bigger?" (מי גדול יותר?) — the original app's who_is_bigger game.
+// Two numbers; the child taps the larger. Difficulty scales the number range.
+const comparisonGrades = [
+  { grade: 1, difficulty: 1, max: 10, sets: 2 },
+  { grade: 2, difficulty: 2, max: 20, sets: 2 },
+  { grade: 3, difficulty: 2, max: 100, sets: 2 },
+  { grade: 4, difficulty: 3, max: 999, sets: 2 },
+];
+let comparisons = 0;
+for (const g of comparisonGrades) {
+  const rand = rng(seed++);
+  for (let s = 0; s < g.sets; s++) {
+    const pairs = [];
+    const seenPairs = new Set();
+    while (pairs.length < PER_SET) {
+      const a = 1 + Math.floor(rand() * g.max);
+      const b = 1 + Math.floor(rand() * g.max);
+      if (a === b) continue;
+      const key = a < b ? `${a},${b}` : `${b},${a}`;
+      if (seenPairs.has(key)) continue;
+      seenPairs.add(key);
+      pairs.push({ left: a, right: b });
+    }
+    const id = `math-g${g.grade}-cmp-set-${pad(s + 1)}`;
+    const body = [
+      `id: ${id}`,
+      `subject: math`,
+      `grade: ${g.grade}`,
+      `difficulty: ${g.difficulty}`,
+      `locale: he-IL`,
+      `direction: ltr`,
+      `title: "מִי גָּדוֹל יוֹתֵר? — סֵט ${s + 1}"`,
+      `activity: comparison`,
+      `prompt_tts: "הַקִּישׁוּ עַל הַמִּסְפָּר הַגָּדוֹל יוֹתֵר"`,
+      `comparisons:`,
+      ...pairs.map((p) => `  - { left: ${p.left}, right: ${p.right} }`),
+      `reward: { stars: 3, sfx: ding, effect: confetti }`,
+      ``,
+    ].join("\n");
+    writeFileSync(resolve(OUT, `${id}.yaml`), body);
+    files++;
+    comparisons += pairs.length;
+  }
+}
+
+console.log(`generated ${files} lessons, ${problems} problems, ${comparisons} comparisons into ${OUT}`);
