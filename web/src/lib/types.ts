@@ -10,7 +10,8 @@ export type Activity =
   | "multiple-choice"
   | "counting"
   | "arithmetic"
-  | "drag-drop";
+  | "drag-drop"
+  | "comparison";
 
 export interface SubjectSummary {
   subject: Subject;
@@ -53,6 +54,11 @@ export interface Problem {
   answer: number;
 }
 
+export interface Comparison {
+  left: number;
+  right: number;
+}
+
 export interface Reward {
   stars: number;
   sfx: string;
@@ -74,6 +80,7 @@ export interface Lesson {
   pairs?: Pair[];
   problem?: Problem;
   problems?: Problem[];
+  comparisons?: Comparison[];
   glyph?: string;
   solution?: string[];
   reward: Reward;

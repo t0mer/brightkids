@@ -119,6 +119,23 @@ func TestArithmeticRejectsBadProblemInSet(t *testing.T) {
 	}
 }
 
+func TestComparisonActivity(t *testing.T) {
+	good := `{id: c, subject: math, grade: 1, difficulty: 1, locale: he-IL, direction: ltr, title: t, activity: comparison, prompt_tts: p, comparisons: [{left: 7, right: 3},{left: 2, right: 9}], reward: {stars: 1, sfx: d, effect: e}}`
+	lib, err := Load(mustFS(t, map[string]string{"c.yaml": good}), "")
+	if err != nil {
+		t.Fatalf("Load comparison: %v", err)
+	}
+	if ls, ok := lib.Lesson("c"); !ok || len(ls.Comparisons) != 2 {
+		t.Fatalf("expected 2 comparisons, got %+v", ls.Comparisons)
+	}
+
+	// Equal numbers are invalid ("who is bigger?" needs a winner).
+	bad := `{id: c, subject: math, grade: 1, difficulty: 1, locale: he-IL, direction: ltr, title: t, activity: comparison, prompt_tts: p, comparisons: [{left: 5, right: 5}], reward: {stars: 1, sfx: d, effect: e}}`
+	if _, err := Load(mustFS(t, map[string]string{"c.yaml": bad}), ""); err == nil {
+		t.Fatal("expected error for equal comparison pair")
+	}
+}
+
 func TestLoadRejectsMalformed(t *testing.T) {
 	cases := map[string]string{
 		"bad-subject": `{id: x, subject: science, grade: 1, difficulty: 1, locale: en, direction: ltr, title: t, activity: letter-recognition, prompt_tts: p, items: [{id: a, label: A, correct: true},{id: b, label: B}], reward: {stars: 1, sfx: d, effect: e}}`,

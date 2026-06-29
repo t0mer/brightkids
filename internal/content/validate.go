@@ -18,6 +18,7 @@ var validActivities = map[string]bool{
 	ActivityCounting:          true,
 	ActivityArithmetic:        true,
 	ActivityDragDrop:          true,
+	ActivityComparison:        true,
 }
 
 var validDirections = map[string]bool{"rtl": true, "ltr": true}
@@ -66,6 +67,23 @@ func validateLesson(l Lesson) error {
 		return validateArithmetic(l)
 	case ActivityDragDrop:
 		return validateDragDrop(l)
+	case ActivityComparison:
+		return validateComparison(l)
+	}
+	return nil
+}
+
+func validateComparison(l Lesson) error {
+	if len(l.Comparisons) == 0 {
+		return fmt.Errorf("comparison needs at least one pair")
+	}
+	for i, c := range l.Comparisons {
+		if c.Left == c.Right {
+			return fmt.Errorf("comparisons[%d]: numbers must differ (who is bigger?)", i)
+		}
+		if c.Left < 0 || c.Right < 0 {
+			return fmt.Errorf("comparisons[%d]: numbers must be non-negative", i)
+		}
 	}
 	return nil
 }

@@ -6,6 +6,7 @@ import { Arithmetic } from "./Arithmetic";
 import { Matching } from "./Matching";
 import { Tracing } from "./Tracing";
 import { DragDrop } from "./DragDrop";
+import { Comparison } from "./Comparison";
 
 // Registry mapping each content activity type to its typed renderer.
 export const ACTIVITY_RENDERERS: Record<Activity, (props: ActivityProps) => JSX.Element | null> = {
@@ -16,6 +17,7 @@ export const ACTIVITY_RENDERERS: Record<Activity, (props: ActivityProps) => JSX.
   matching: Matching,
   tracing: Tracing,
   "drag-drop": DragDrop,
+  comparison: Comparison,
 };
 
 export type { ActivityProps };

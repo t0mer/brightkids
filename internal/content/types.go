@@ -12,6 +12,7 @@ const (
 	ActivityCounting          = "counting"
 	ActivityArithmetic        = "arithmetic"
 	ActivityDragDrop          = "drag-drop"
+	ActivityComparison        = "comparison" // "who is bigger?" — tap the larger number
 )
 
 // Subjects supported in v1.
@@ -44,6 +45,8 @@ type Lesson struct {
 	Problem *Problem `yaml:"problem,omitempty" json:"problem,omitempty"`
 	// Problems: an arithmetic practice set — the activity steps through each.
 	Problems []Problem `yaml:"problems,omitempty" json:"problems,omitempty"`
+	// Comparisons: a "who is bigger?" set — the child taps the larger number.
+	Comparisons []Comparison `yaml:"comparisons,omitempty" json:"comparisons,omitempty"`
 	// Glyph: tracing (the character) and counting (the object emoji to render).
 	Glyph string `yaml:"glyph,omitempty" json:"glyph,omitempty"`
 	// Solution: drag-drop ordered list of item IDs forming the correct answer.
@@ -71,6 +74,13 @@ type Pair struct {
 	LeftTTS  string `yaml:"left_tts,omitempty" json:"left_tts,omitempty"`
 	RightTTS string `yaml:"right_tts,omitempty" json:"right_tts,omitempty"`
 	Emoji    string `yaml:"emoji,omitempty" json:"emoji,omitempty"`
+}
+
+// Comparison is one "who is bigger?" pair. The two numbers are distinct; the
+// larger is the correct answer.
+type Comparison struct {
+	Left  int `yaml:"left" json:"left"`
+	Right int `yaml:"right" json:"right"`
 }
 
 // Problem describes a counting target or an arithmetic equation.

@@ -17,6 +17,7 @@ const ACTIVITY_ICON: Record<string, string> = {
   counting: "🔢",
   arithmetic: "➕",
   "drag-drop": "🔀",
+  comparison: "⚖️",
 };
 
 export function Lessons() {
