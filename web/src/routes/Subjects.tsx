@@ -9,6 +9,7 @@ import { AppShell } from "@/components/AppShell";
 import { useStore } from "@/store/useStore";
 import { play } from "@/lib/sfx";
 import { gradeLetter } from "@/lib/utils";
+import { useTitle } from "@/lib/useTitle";
 
 const SUBJECT_META: Record<string, { glyph: string; ring: string; chip: string }> = {
   hebrew: { glyph: "א", ring: "shadow-glow", chip: "bg-violet" },
@@ -21,6 +22,7 @@ export function Subjects() {
   const navigate = useNavigate();
   const profile = useStore((s) => s.profile);
   const [subjects, setSubjects] = useState<SubjectSummary[]>([]);
+  useTitle(t("subjects.choose"));
 
   useEffect(() => {
     api.subjects().then(setSubjects).catch(() => setSubjects([]));

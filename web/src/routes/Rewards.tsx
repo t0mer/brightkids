@@ -7,11 +7,13 @@ import type { ProgressSummary } from "@/lib/types";
 import { AppShell } from "@/components/AppShell";
 import { Bibo } from "@/components/Bibo";
 import { useStore } from "@/store/useStore";
+import { useTitle } from "@/lib/useTitle";
 
 export function Rewards() {
   const { t } = useTranslation();
   const profile = useStore((s) => s.profile);
   const [summary, setSummary] = useState<ProgressSummary | null>(null);
+  useTitle(t("rewards.title"));
 
   useEffect(() => {
     if (!profile) return;

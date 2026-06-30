@@ -15,6 +15,7 @@ import { useStore } from "@/store/useStore";
 import { speak } from "@/lib/tts";
 import { play } from "@/lib/sfx";
 import { bigCelebrate, celebrate } from "@/lib/confetti";
+import { useTitle } from "@/lib/useTitle";
 
 export function LessonPlayer() {
   const { t } = useTranslation();
@@ -32,6 +33,9 @@ export function LessonPlayer() {
   const [round, setRound] = useState(0);
   // The active sub-question's instruction, reported by stepped activities.
   const [prompt, setPrompt] = useState<{ text: string; tts: string } | null>(null);
+
+  // Browser tab title = the lesson's own title (brand-only while it loads).
+  useTitle(lesson?.title);
 
   const reduceMotion = settings?.reduce_motion ?? false;
   const voiceEnabled = settings?.voice_enabled ?? true;

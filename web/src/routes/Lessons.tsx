@@ -9,6 +9,7 @@ import { AppShell } from "@/components/AppShell";
 import { useStore } from "@/store/useStore";
 import { play } from "@/lib/sfx";
 import { gradeLetter } from "@/lib/utils";
+import { useTitle } from "@/lib/useTitle";
 
 const ACTIVITY_ICON: Record<string, string> = {
   "letter-recognition": "🔤",
@@ -30,6 +31,7 @@ export function Lessons() {
   const [lessons, setLessons] = useState<LessonSummary[]>([]);
   const [stars, setStars] = useState<Record<string, number>>({});
   const [loading, setLoading] = useState(true);
+  useTitle(`${t(`subjects.${subject}`)} ${t("grades.grade", { n: gradeLetter(gradeNum) })}`);
 
   // Fetch only the selected grade's lessons.
   useEffect(() => {

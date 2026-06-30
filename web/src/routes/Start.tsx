@@ -12,11 +12,13 @@ import { AppShell } from "@/components/AppShell";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { play } from "@/lib/sfx";
+import { useTitle, BRAND } from "@/lib/useTitle";
 
 export function Start() {
   const { t } = useTranslation();
   const navigate = useNavigate();
   const { setProfile, setSettings } = useStore();
+  useTitle(`${BRAND} - ${t("app.tagline")}`, { exact: true });
   const [profiles, setProfiles] = useState<Profile[]>([]);
   const [loading, setLoading] = useState(true);
 

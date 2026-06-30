@@ -9,11 +9,13 @@ import { Switch } from "@/components/ui/switch";
 import { Button } from "@/components/ui/button";
 import { useStore } from "@/store/useStore";
 import { setUiDirection } from "@/i18n";
+import { useTitle } from "@/lib/useTitle";
 
 export function Settings() {
   const { t } = useTranslation();
   const navigate = useNavigate();
   const { profile, settings, setSettings, setProfile, uiLang, setUiLang } = useStore();
+  useTitle(t("settings.title"));
 
   // No profile at all → back to the start screen.
   if (!profile) {

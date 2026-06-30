@@ -6,12 +6,14 @@ import { api } from "@/lib/api";
 import { AppShell } from "@/components/AppShell";
 import { play } from "@/lib/sfx";
 import { gradeLetter } from "@/lib/utils";
+import { useTitle } from "@/lib/useTitle";
 
 export function Grades() {
   const { t } = useTranslation();
   const navigate = useNavigate();
   const { subject = "" } = useParams();
   const [grades, setGrades] = useState<number[]>([]);
+  useTitle(t(`subjects.${subject}`));
 
   useEffect(() => {
     api
