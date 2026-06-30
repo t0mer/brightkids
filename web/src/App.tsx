@@ -6,6 +6,7 @@ import { setSfxMuted } from "@/lib/sfx";
 import { api } from "@/lib/api";
 import { Start } from "@/routes/Start";
 import { Subjects } from "@/routes/Subjects";
+import { Grades } from "@/routes/Grades";
 import { Lessons } from "@/routes/Lessons";
 import { LessonPlayer } from "@/routes/LessonPlayer";
 import { Rewards } from "@/routes/Rewards";
@@ -53,6 +54,14 @@ export default function App() {
         />
         <Route
           path="/subject/:subject"
+          element={
+            <RequireProfile>
+              <Grades />
+            </RequireProfile>
+          }
+        />
+        <Route
+          path="/subject/:subject/grade/:grade"
           element={
             <RequireProfile>
               <Lessons />
