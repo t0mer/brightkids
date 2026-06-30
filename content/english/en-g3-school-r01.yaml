@@ -7,6 +7,7 @@ direction: ltr
 title: "At School"
 activity: matching
 prompt_tts: "Match each school word to its picture"
+instruction: "הַתְאִימוּ כָּל מִלָּה מִבֵּית הַסֵּפֶר לַתְּמוּנָה שֶׁלָּהּ"
 pairs:
   - id: book
     left: "book"

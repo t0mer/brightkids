@@ -7,6 +7,7 @@ direction: ltr
 title: "Reading: Jim Has a Ball"
 activity: multiple-choice
 prompt_tts: "Jim has a big red ball. He plays in the park. What does Jim have?"
+instruction: "לְ-Jim יֵשׁ כַּדּוּר אָדֹם גָּדוֹל. הוּא מְשַׂחֵק בַּפַּארְק. מָה יֵשׁ לְ-Jim?"
 items:
   - id: ball
     label: "a red ball"

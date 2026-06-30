@@ -7,6 +7,7 @@ direction: ltr
 title: "The /k/ Sound"
 activity: multiple-choice
 prompt_tts: "Which word starts with the /k/ sound?"
+instruction: "אֵיזוֹ מִלָּה מַתְחִילָה בַּצְּלִיל /k/?"
 items:
   - id: cat
     label: "Cat"

@@ -7,6 +7,7 @@ direction: ltr
 title: "The -at Word Family"
 activity: matching
 prompt_tts: "These words rhyme. Match each -at word to its picture."
+instruction: "הַמִּלִּים הָאֵלֶּה מִתְחָרְזוֹת. הַתְאִימוּ כָּל מִלָּה בְּ-at לַתְּמוּנָה שֶׁלָּהּ."
 pairs:
   - id: cat
     left: "cat"

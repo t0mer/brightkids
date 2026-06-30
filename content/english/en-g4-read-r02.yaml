@@ -7,6 +7,7 @@ direction: ltr
 title: "Reading: Dan Swims"
 activity: multiple-choice
 prompt_tts: "Dan swims in the sea with his friends on Saturday. Where does Dan swim?"
+instruction: "Dan שׂוֹחֶה בַּיָּם עִם חֲבֵרָיו בְּשַׁבָּת. אֵיפֹה Dan שׂוֹחֶה?"
 items:
   - id: sea
     label: "in the sea"

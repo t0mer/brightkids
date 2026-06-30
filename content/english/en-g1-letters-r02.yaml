@@ -7,6 +7,7 @@ direction: ltr
 title: "Which Letter Says /b/?"
 activity: letter-recognition
 prompt_tts: "Which letter makes the sound buh?"
+instruction: "אֵיזוֹ אוֹת מַשְׁמִיעָה אֶת הַצְּלִיל buh?"
 items:
   - id: b
     label: "B"

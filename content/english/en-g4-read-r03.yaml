@@ -7,6 +7,7 @@ direction: ltr
 title: "Reading: Dan the Dog"
 activity: multiple-choice
 prompt_tts: "Dan is a small brown dog. He likes to run and jump in the garden. What does Dan like to do?"
+instruction: "Dan הוּא כֶּלֶב חוּם קָטָן. הוּא אוֹהֵב לָרוּץ וְלִקְפֹּץ בַּגִּנָּה. מָה Dan אוֹהֵב לַעֲשׂוֹת?"
 items:
   - id: run
     label: "run and jump"

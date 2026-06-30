@@ -7,6 +7,7 @@ direction: ltr
 title: "Match Letters to Pictures"
 activity: matching
 prompt_tts: "Match each letter to the right picture"
+instruction: "הַתְאִימוּ כָּל אוֹת לַתְּמוּנָה הַנְּכוֹנָה"
 pairs:
   - id: a
     left: "A"

@@ -7,6 +7,7 @@ direction: ltr
 title: "What Color Is the Balloon?"
 activity: multiple-choice
 prompt_tts: "This balloon is red. Tap the word red."
+instruction: "הַבָּלוֹן הַזֶּה אָדֹם. הַקִּישׁוּ עַל הַמִּלָּה red."
 items:
   - id: red
     label: "red"

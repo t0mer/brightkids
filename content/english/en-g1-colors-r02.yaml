@@ -7,6 +7,7 @@ direction: ltr
 title: "Match the Colors"
 activity: matching
 prompt_tts: "Match each color word to its dot"
+instruction: "הַתְאִימוּ כָּל מִלַּת צֶבַע לַנְּקֻדָּה שֶׁלָּהּ"
 pairs:
   - id: yellow
     left: "yellow"

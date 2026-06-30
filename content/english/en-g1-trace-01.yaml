@@ -7,5 +7,6 @@ direction: ltr
 title: "Trace the Letter B"
 activity: tracing
 prompt_tts: "Trace the letter B"
+instruction: "עִקְבוּ אַחֲרֵי הָאוֹת B"
 glyph: "B"
 reward: { stars: 1, sfx: pop, effect: stars }

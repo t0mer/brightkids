@@ -7,6 +7,7 @@ direction: ltr
 title: "About Me: My Name"
 activity: multiple-choice
 prompt_tts: "How do you tell someone your name? Pick the sentence."
+instruction: "אֵיךְ אוֹמְרִים לְמִישֶׁהוּ אֶת הַשֵּׁם שֶׁלָּכֶם? בַּחֲרוּ אֶת הַמִּשְׁפָּט."
 items:
   - id: my_name
     label: "My name is Dan."

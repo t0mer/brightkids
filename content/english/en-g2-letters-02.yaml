@@ -7,6 +7,7 @@ direction: ltr
 title: "Find Lowercase m"
 activity: letter-recognition
 prompt_tts: "Find the lowercase letter m"
+instruction: "מִצְאוּ אֶת הָאוֹת הַקְּטַנָּה m"
 items:
   - id: m
     label: "m"

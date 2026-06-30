@@ -7,6 +7,7 @@ direction: ltr
 title: "Build the Word CAT"
 activity: drag-drop
 prompt_tts: "Put the letters in order to spell cat"
+instruction: "סַדְּרוּ אֶת הָאוֹתִיּוֹת כְּדֵי לְאַיֵּת אֶת cat"
 items:
   - id: c
     label: "c"

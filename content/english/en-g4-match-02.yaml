@@ -7,6 +7,7 @@ direction: ltr
 title: "Match the Rhymes"
 activity: matching
 prompt_tts: "Match each word to the word it rhymes with"
+instruction: "הַתְאִימוּ כָּל מִלָּה לַמִּלָּה שֶׁמִּתְחָרֶזֶת אִתָּהּ"
 pairs:
   - id: cat
     left: "Cat"

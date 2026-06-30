@@ -7,6 +7,7 @@ direction: ltr
 title: "First Sound: Sun"
 activity: multiple-choice
 prompt_tts: "What is the first sound in the word sun?"
+instruction: "מַהוּ הַצְּלִיל הָרִאשׁוֹן בַּמִּלָּה sun?"
 items:
   - id: s
     label: "s"

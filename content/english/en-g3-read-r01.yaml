@@ -7,6 +7,7 @@ direction: ltr
 title: "Reading: Moki the Cat"
 activity: multiple-choice
 prompt_tts: "Moki is a cat. Moki is black. What color is Moki?"
+instruction: "Moki הוּא חָתוּל. Moki שָׁחֹר. בְּאֵיזֶה צֶבַע Moki?"
 items:
   - id: black
     label: "black"

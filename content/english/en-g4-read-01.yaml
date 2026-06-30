@@ -7,6 +7,7 @@ direction: ltr
 title: "Read and Answer"
 activity: multiple-choice
 prompt_tts: "The dog is red. What color is the dog?"
+instruction: "הַכֶּלֶב אָדֹם. בְּאֵיזֶה צֶבַע הַכֶּלֶב?"
 items:
   - id: red
     label: "Red"

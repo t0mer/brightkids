@@ -7,6 +7,7 @@ direction: ltr
 title: "Describe the Picture"
 activity: multiple-choice
 prompt_tts: "Look at the picture. A girl is riding a bike. What is the girl doing?"
+instruction: "הִסְתַּכְּלוּ עַל הַתְּמוּנָה. יַלְדָּה רוֹכֶבֶת עַל אוֹפַנַּיִם. מָה הַיַּלְדָּה עוֹשָׂה?"
 items:
   - id: riding
     label: "She is riding a bike."

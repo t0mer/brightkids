@@ -7,6 +7,7 @@ direction: ltr
 title: "Action Verbs"
 activity: matching
 prompt_tts: "Match each action word to its picture"
+instruction: "הַתְאִימוּ כָּל מִלַּת פְּעֻלָּה לַתְּמוּנָה שֶׁלָּהּ"
 pairs:
   - id: run
     left: "run"

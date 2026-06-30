@@ -7,6 +7,7 @@ direction: ltr
 title: "About Me: My Age"
 activity: multiple-choice
 prompt_tts: "You are eight years old. Pick the right sentence."
+instruction: "אַתֶּם בְּנֵי שְׁמוֹנֶה. בַּחֲרוּ אֶת הַמִּשְׁפָּט הַנָּכוֹן."
 items:
   - id: eight
     label: "I am eight years old."

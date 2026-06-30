@@ -7,6 +7,7 @@ direction: ltr
 title: "Question Words"
 activity: matching
 prompt_tts: "Match each question word to what it asks about"
+instruction: "הַתְאִימוּ כָּל מִלַּת שְׁאֵלָה לְמָה שֶׁהִיא שׁוֹאֶלֶת"
 pairs:
   - id: who
     left: "Who"

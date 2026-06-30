@@ -7,6 +7,7 @@ direction: ltr
 title: "Pick the Sight Word"
 activity: multiple-choice
 prompt_tts: "Pick the word the"
+instruction: "בַּחֲרוּ אֶת הַמִּלָּה the"
 items:
   - id: the
     label: "the"

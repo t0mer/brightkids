@@ -7,6 +7,7 @@ direction: ltr
 title: "Reading: Fred the Umbrella"
 activity: multiple-choice
 prompt_tts: "Fred is a red umbrella. He keeps the children dry in the rain. When do the children need Fred?"
+instruction: "Fred הוּא מִטְרִיָּה אֲדֻמָּה. הוּא שׁוֹמֵר עַל הַיְלָדִים יְבֵשִׁים בַּגֶּשֶׁם. מָתַי הַיְלָדִים צְרִיכִים אֶת Fred?"
 items:
   - id: rain
     label: "when it rains"

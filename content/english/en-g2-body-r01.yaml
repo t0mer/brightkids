@@ -7,6 +7,7 @@ direction: ltr
 title: "My Body"
 activity: matching
 prompt_tts: "Match each body word to its picture"
+instruction: "הַתְאִימוּ כָּל מִלַּת אֵיבָר לַתְּמוּנָה שֶׁלָּהּ"
 pairs:
   - id: hand
     left: "hand"

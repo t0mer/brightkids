@@ -7,6 +7,7 @@ direction: ltr
 title: "Match the Lowercase a"
 activity: letter-recognition
 prompt_tts: "The big letter is A. Tap the small letter a."
+instruction: "הָאוֹת הַגְּדוֹלָה הִיא A. הַקִּישׁוּ עַל הָאוֹת הַקְּטַנָּה a."
 items:
   - id: a_lower
     label: "a"

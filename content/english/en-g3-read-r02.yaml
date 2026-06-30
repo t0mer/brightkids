@@ -7,6 +7,7 @@ direction: ltr
 title: "Reading: Moki Runs"
 activity: multiple-choice
 prompt_tts: "Moki runs to the box. Where does Moki run?"
+instruction: "Moki רָץ אֶל הַקֻּפְסָה. לְאָן Moki רָץ?"
 items:
   - id: box
     label: "to the box"

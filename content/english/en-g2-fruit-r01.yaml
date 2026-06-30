@@ -7,6 +7,7 @@ direction: ltr
 title: "Fruits and Vegetables"
 activity: matching
 prompt_tts: "Match each food word to its picture"
+instruction: "הַתְאִימוּ כָּל מִלַּת מָזוֹן לַתְּמוּנָה שֶׁלָּהּ"
 pairs:
   - id: apple
     left: "apple"
