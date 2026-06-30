@@ -25,7 +25,37 @@ questions:
       - { id: o3, label: "יָרֹק" }
   - prompt: "אֵיזוֹ מִילָּה הִיא שֵׁם עֶצֶם?"
     items:
-      - { id: o1, label: "יֶלֶד", correct: true }
-      - { id: o2, label: "שָׁר" }
+      - { id: o1, label: "שָׁר" }
+      - { id: o2, label: "יֶלֶד", correct: true }
       - { id: o3, label: "מָהִיר" }
+  - prompt: "אֵיזוֹ מִילָּה הִיא שֵׁם עֶצֶם?"
+    items:
+      - { id: o1, label: "רָץ" }
+      - { id: o2, label: "מָתוֹק" }
+      - { id: o3, label: "חַלּוֹן", correct: true }
+  - prompt: "אֵיזוֹ מִילָּה הִיא שֵׁם עֶצֶם?"
+    items:
+      - { id: o1, label: "בַּיִת", correct: true }
+      - { id: o2, label: "כּוֹתֵב" }
+      - { id: o3, label: "חָכָם" }
+  - prompt: "אֵיזוֹ מִילָּה הִיא שֵׁם עֶצֶם?"
+    items:
+      - { id: o1, label: "שׂוֹחֶה" }
+      - { id: o2, label: "מְכוֹנִית", correct: true }
+      - { id: o3, label: "אָדֹם" }
+  - prompt: "אֵיזוֹ מִילָּה הִיא שֵׁם עֶצֶם?"
+    items:
+      - { id: o1, label: "מָהִיר" }
+      - { id: o2, label: "קוֹרֵא" }
+      - { id: o3, label: "צִיפּוֹר", correct: true }
+  - prompt: "אֵיזוֹ מִילָּה הִיא שֵׁם עֶצֶם?"
+    items:
+      - { id: o1, label: "פֶּרַח", correct: true }
+      - { id: o2, label: "שׁוֹתֶה" }
+      - { id: o3, label: "קָטָן" }
+  - prompt: "אֵיזוֹ מִילָּה הִיא שֵׁם עֶצֶם?"
+    items:
+      - { id: o1, label: "רוֹקֵד" }
+      - { id: o2, label: "סֵפֶר", correct: true }
+      - { id: o3, label: "חַם" }
 reward: { stars: 3, sfx: ding, effect: confetti }

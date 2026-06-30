@@ -23,4 +23,39 @@ pairs:
     right: "דּוֹהֵר"
     left_tts: "רָץ"
     right_tts: "דּוֹהֵר"
+  - id: gadol
+    left: "גָּדוֹל"
+    right: "עָצוּם"
+    left_tts: "גָּדוֹל"
+    right_tts: "עָצוּם"
+  - id: katan
+    left: "קָטָן"
+    right: "זָעִיר"
+    left_tts: "קָטָן"
+    right_tts: "זָעִיר"
+  - id: pachad
+    left: "פַּחַד"
+    right: "חֲרָדָה"
+    left_tts: "פַּחַד"
+    right_tts: "חֲרָדָה"
+  - id: derech
+    left: "דֶּרֶךְ"
+    right: "נָתִיב"
+    left_tts: "דֶּרֶךְ"
+    right_tts: "נָתִיב"
+  - id: chaver
+    left: "חָבֵר"
+    right: "יָדִיד"
+    left_tts: "חָבֵר"
+    right_tts: "יָדִיד"
+  - id: maher
+    left: "מָהִיר"
+    right: "זָרִיז"
+    left_tts: "מָהִיר"
+    right_tts: "זָרִיז"
+  - id: atsuv
+    left: "עָצוּב"
+    right: "נוּגֶה"
+    left_tts: "עָצוּב"
+    right_tts: "נוּגֶה"
 reward: { stars: 1, sfx: ding, effect: sparkle }

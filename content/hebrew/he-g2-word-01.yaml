@@ -28,4 +28,39 @@ questions:
       - { id: o1, label: "פִּיל", correct: true, emoji: "🐘" }
       - { id: o2, label: "אַרְנָב", emoji: "🐰" }
       - { id: o3, label: "דְּבוֹרָה", emoji: "🐝" }
+  - prompt: "אֵיזוֹ מִילָּה אוֹמֶרֶת פָּרָה?"
+    items:
+      - { id: o1, label: "כֶּבֶשׂ", emoji: "🐑" }
+      - { id: o2, label: "פָּרָה", correct: true, emoji: "🐮" }
+      - { id: o3, label: "חֲזִיר", emoji: "🐷" }
+  - prompt: "אֵיזוֹ מִילָּה אוֹמֶרֶת סוּס?"
+    items:
+      - { id: o1, label: "צְפַרְדֵּעַ", emoji: "🐸" }
+      - { id: o2, label: "עֵז", emoji: "🐐" }
+      - { id: o3, label: "סוּס", correct: true, emoji: "🐴" }
+  - prompt: "אֵיזוֹ מִילָּה אוֹמֶרֶת צִיפּוֹר?"
+    items:
+      - { id: o1, label: "צִיפּוֹר", correct: true, emoji: "🐦" }
+      - { id: o2, label: "נָחָשׁ", emoji: "🐍" }
+      - { id: o3, label: "צָב", emoji: "🐢" }
+  - prompt: "אֵיזוֹ מִילָּה אוֹמֶרֶת אַרְיֵה?"
+    items:
+      - { id: o1, label: "דֹּב", emoji: "🐻" }
+      - { id: o2, label: "אַרְיֵה", correct: true, emoji: "🦁" }
+      - { id: o3, label: "שׁוּעָל", emoji: "🦊" }
+  - prompt: "אֵיזוֹ מִילָּה אוֹמֶרֶת קוֹף?"
+    items:
+      - { id: o1, label: "פַּנְדָּה", emoji: "🐼" }
+      - { id: o2, label: "טִיגְרִיס", emoji: "🐯" }
+      - { id: o3, label: "קוֹף", correct: true, emoji: "🐵" }
+  - prompt: "אֵיזוֹ מִילָּה אוֹמֶרֶת אַרְנָב?"
+    items:
+      - { id: o1, label: "אַרְנָב", correct: true, emoji: "🐰" }
+      - { id: o2, label: "עַכְבָּר", emoji: "🐭" }
+      - { id: o3, label: "תַּרְנְגוֹל", emoji: "🐓" }
+  - prompt: "אֵיזוֹ מִילָּה אוֹמֶרֶת דְּבוֹרָה?"
+    items:
+      - { id: o1, label: "פַּרְפַּר", emoji: "🦋" }
+      - { id: o2, label: "נְמָלָה", emoji: "🐜" }
+      - { id: o3, label: "דְּבוֹרָה", correct: true, emoji: "🐝" }
 reward: { stars: 3, sfx: pop, effect: confetti }

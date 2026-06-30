@@ -28,4 +28,34 @@ questions:
       - { id: o1, label: "ש", correct: true }
       - { id: o2, label: "ס" }
       - { id: o3, label: "ז" }
+  - prompt: "בְּאֵיזוֹ אוֹת מַתְחִילָה הַמִּילָּה תַּפּוּחַ?"
+    items:
+      - { id: o1, label: "ט" }
+      - { id: o2, label: "ת", correct: true }
+      - { id: o3, label: "ד" }
+  - prompt: "בְּאֵיזוֹ אוֹת מַתְחִילָה הַמִּילָּה כֶּלֶב?"
+    items:
+      - { id: o1, label: "ג" }
+      - { id: o2, label: "ק" }
+      - { id: o3, label: "כ", correct: true }
+  - prompt: "בְּאֵיזוֹ אוֹת מַתְחִילָה הַמִּילָּה נָחָשׁ?"
+    items:
+      - { id: o1, label: "נ", correct: true }
+      - { id: o2, label: "מ" }
+      - { id: o3, label: "ל" }
+  - prompt: "בְּאֵיזוֹ אוֹת מַתְחִילָה הַמִּילָּה סֵפֶר?"
+    items:
+      - { id: o1, label: "ש" }
+      - { id: o2, label: "ס", correct: true }
+      - { id: o3, label: "ז" }
+  - prompt: "בְּאֵיזוֹ אוֹת מַתְחִילָה הַמִּילָּה עֵץ?"
+    items:
+      - { id: o1, label: "א" }
+      - { id: o2, label: "ח" }
+      - { id: o3, label: "ע", correct: true }
+  - prompt: "בְּאֵיזוֹ אוֹת מַתְחִילָה הַמִּילָּה רַכֶּבֶת?"
+    items:
+      - { id: o1, label: "ר", correct: true }
+      - { id: o2, label: "ד" }
+      - { id: o3, label: "ו" }
 reward: { stars: 3, sfx: ding, effect: confetti }

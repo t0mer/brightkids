@@ -23,4 +23,39 @@ pairs:
     right: "קַר"
     left_tts: "חַם"
     right_tts: "קַר"
+  - id: gavoha
+    left: "גָּבוֹהַּ"
+    right: "נָמוּךְ"
+    left_tts: "גָּבוֹהַּ"
+    right_tts: "נָמוּךְ"
+  - id: patuach
+    left: "פָּתוּחַ"
+    right: "סָגוּר"
+    left_tts: "פָּתוּחַ"
+    right_tts: "סָגוּר"
+  - id: maher
+    left: "מָהִיר"
+    right: "אִטִּי"
+    left_tts: "מָהִיר"
+    right_tts: "אִטִּי"
+  - id: sameach
+    left: "שָׂמֵחַ"
+    right: "עָצוּב"
+    left_tts: "שָׂמֵחַ"
+    right_tts: "עָצוּב"
+  - id: male
+    left: "מָלֵא"
+    right: "רֵיק"
+    left_tts: "מָלֵא"
+    right_tts: "רֵיק"
+  - id: naki
+    left: "נָקִי"
+    right: "מְלֻכְלָךְ"
+    left_tts: "נָקִי"
+    right_tts: "מְלֻכְלָךְ"
+  - id: chazak
+    left: "חָזָק"
+    right: "חַלָּשׁ"
+    left_tts: "חָזָק"
+    right_tts: "חַלָּשׁ"
 reward: { stars: 1, sfx: ding, effect: sparkle }

@@ -28,4 +28,34 @@ questions:
       - { id: o1, label: "שׁוֹמֵר", correct: true }
       - { id: o2, label: "סֵפֶר" }
       - { id: o3, label: "יֶלֶד" }
+  - prompt: "אֵיזוֹ מִילָּה שַׁיֶּכֶת לַמִּשְׁפָּחָה שֶׁל הַשּׁוֹרֶשׁ ז-מ-ר?"
+    items:
+      - { id: o1, label: "כִּיסֵּא" }
+      - { id: o2, label: "זַמָּר", correct: true }
+      - { id: o3, label: "חַלּוֹן" }
+  - prompt: "אֵיזוֹ מִילָּה שַׁיֶּכֶת לַמִּשְׁפָּחָה שֶׁל הַשּׁוֹרֶשׁ ר-ק-ד?"
+    items:
+      - { id: o1, label: "מַיִם" }
+      - { id: o2, label: "סֵפֶר" }
+      - { id: o3, label: "רַקְדָן", correct: true }
+  - prompt: "אֵיזוֹ מִילָּה שַׁיֶּכֶת לַמִּשְׁפָּחָה שֶׁל הַשּׁוֹרֶשׁ ס-פ-ר?"
+    items:
+      - { id: o1, label: "סִפְרִייָּה", correct: true }
+      - { id: o2, label: "כִּיסֵּא" }
+      - { id: o3, label: "דֶּלֶת" }
+  - prompt: "אֵיזוֹ מִילָּה שַׁיֶּכֶת לַמִּשְׁפָּחָה שֶׁל הַשּׁוֹרֶשׁ ר-פ-א?"
+    items:
+      - { id: o1, label: "גָּדֵר" }
+      - { id: o2, label: "רוֹפֵא", correct: true }
+      - { id: o3, label: "שֻׁלְחָן" }
+  - prompt: "אֵיזוֹ מִילָּה שַׁיֶּכֶת לַמִּשְׁפָּחָה שֶׁל הַשּׁוֹרֶשׁ נ-ג-ן?"
+    items:
+      - { id: o1, label: "עֵץ" }
+      - { id: o2, label: "חַלּוֹן" }
+      - { id: o3, label: "מַנְגִּינָה", correct: true }
+  - prompt: "אֵיזוֹ מִילָּה שַׁיֶּכֶת לַמִּשְׁפָּחָה שֶׁל הַשּׁוֹרֶשׁ צ-ב-ע?"
+    items:
+      - { id: o1, label: "צֶבַע", correct: true }
+      - { id: o2, label: "מַיִם" }
+      - { id: o3, label: "יֶלֶד" }
 reward: { stars: 3, sfx: ding, effect: confetti }

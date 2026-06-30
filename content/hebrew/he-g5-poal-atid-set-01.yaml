@@ -15,17 +15,47 @@ questions:
       - { id: o3, label: "שׁוֹמֵר" }
   - prompt: "אֵיזֶה פֹּעַל כָּתוּב בִּזְמַן עָתִיד?"
     items:
-      - { id: o1, label: "יִכְתֹּב", correct: true }
-      - { id: o2, label: "כָּתַב" }
+      - { id: o1, label: "כָּתַב" }
+      - { id: o2, label: "יִכְתֹּב", correct: true }
       - { id: o3, label: "כּוֹתֵב" }
   - prompt: "אֵיזֶה פֹּעַל כָּתוּב בִּזְמַן עָתִיד?"
     items:
-      - { id: o1, label: "יֵלֵךְ", correct: true }
+      - { id: o1, label: "הוֹלֵךְ" }
       - { id: o2, label: "הָלַךְ" }
-      - { id: o3, label: "הוֹלֵךְ" }
+      - { id: o3, label: "יֵלֵךְ", correct: true }
   - prompt: "אֵיזֶה פֹּעַל כָּתוּב בִּזְמַן עָתִיד?"
     items:
       - { id: o1, label: "יֹאכַל", correct: true }
       - { id: o2, label: "אָכַל" }
       - { id: o3, label: "אוֹכֵל" }
+  - prompt: "אֵיזֶה פֹּעַל כָּתוּב בִּזְמַן עָתִיד?"
+    items:
+      - { id: o1, label: "קוֹרֵא" }
+      - { id: o2, label: "יִקְרָא", correct: true }
+      - { id: o3, label: "קָרָא" }
+  - prompt: "אֵיזֶה פֹּעַל כָּתוּב בִּזְמַן עָתִיד?"
+    items:
+      - { id: o1, label: "שָׁתָה" }
+      - { id: o2, label: "שׁוֹתֶה" }
+      - { id: o3, label: "יִשְׁתֶּה", correct: true }
+  - prompt: "אֵיזֶה פֹּעַל כָּתוּב בִּזְמַן עָתִיד?"
+    items:
+      - { id: o1, label: "יִלְמַד", correct: true }
+      - { id: o2, label: "לָמַד" }
+      - { id: o3, label: "לוֹמֵד" }
+  - prompt: "אֵיזֶה פֹּעַל כָּתוּב בִּזְמַן עָתִיד?"
+    items:
+      - { id: o1, label: "שׁוֹמֵעַ" }
+      - { id: o2, label: "יִשְׁמַע", correct: true }
+      - { id: o3, label: "שָׁמַע" }
+  - prompt: "אֵיזֶה פֹּעַל כָּתוּב בִּזְמַן עָתִיד?"
+    items:
+      - { id: o1, label: "פָּתַח" }
+      - { id: o2, label: "פּוֹתֵחַ" }
+      - { id: o3, label: "יִפְתַּח", correct: true }
+  - prompt: "אֵיזֶה פֹּעַל כָּתוּב בִּזְמַן עָתִיד?"
+    items:
+      - { id: o1, label: "יִסְגֹּר", correct: true }
+      - { id: o2, label: "סָגַר" }
+      - { id: o3, label: "סוֹגֵר" }
 reward: { stars: 3, sfx: ding, effect: confetti }

@@ -28,4 +28,34 @@ questions:
       - { id: o1, label: "", correct: true, tts: "שֶׁמֶשׁ", emoji: "☀️" }
       - { id: o2, label: "", tts: "יָרֵחַ", emoji: "🌙" }
       - { id: o3, label: "", tts: "כּוֹכָב", emoji: "⭐" }
+  - prompt: "קִרְאוּ אֶת הַמִּילָּה כֶּלֶב וּבַחֲרוּ אֶת הַתְּמוּנָה הַמַּתְאִימָה"
+    items:
+      - { id: o1, label: "", tts: "חָתוּל", emoji: "🐱" }
+      - { id: o2, label: "", correct: true, tts: "כֶּלֶב", emoji: "🐶" }
+      - { id: o3, label: "", tts: "דָּג", emoji: "🐟" }
+  - prompt: "קִרְאוּ אֶת הַמִּילָּה פֶּרַח וּבַחֲרוּ אֶת הַתְּמוּנָה הַמַּתְאִימָה"
+    items:
+      - { id: o1, label: "", tts: "עֵץ", emoji: "🌳" }
+      - { id: o2, label: "", tts: "תַּפּוּחַ", emoji: "🍎" }
+      - { id: o3, label: "", correct: true, tts: "פֶּרַח", emoji: "🌸" }
+  - prompt: "קִרְאוּ אֶת הַמִּילָּה דָּג וּבַחֲרוּ אֶת הַתְּמוּנָה הַמַּתְאִימָה"
+    items:
+      - { id: o1, label: "", correct: true, tts: "דָּג", emoji: "🐟" }
+      - { id: o2, label: "", tts: "כֶּלֶב", emoji: "🐶" }
+      - { id: o3, label: "", tts: "חָתוּל", emoji: "🐱" }
+  - prompt: "קִרְאוּ אֶת הַמִּילָּה כּוֹכָב וּבַחֲרוּ אֶת הַתְּמוּנָה הַמַּתְאִימָה"
+    items:
+      - { id: o1, label: "", tts: "יָרֵחַ", emoji: "🌙" }
+      - { id: o2, label: "", correct: true, tts: "כּוֹכָב", emoji: "⭐" }
+      - { id: o3, label: "", tts: "שֶׁמֶשׁ", emoji: "☀️" }
+  - prompt: "קִרְאוּ אֶת הַמִּילָּה עֵץ וּבַחֲרוּ אֶת הַתְּמוּנָה הַמַּתְאִימָה"
+    items:
+      - { id: o1, label: "", tts: "פֶּרַח", emoji: "🌸" }
+      - { id: o2, label: "", tts: "בַּיִת", emoji: "🏠" }
+      - { id: o3, label: "", correct: true, tts: "עֵץ", emoji: "🌳" }
+  - prompt: "קִרְאוּ אֶת הַמִּילָּה סֵפֶר וּבַחֲרוּ אֶת הַתְּמוּנָה הַמַּתְאִימָה"
+    items:
+      - { id: o1, label: "", correct: true, tts: "סֵפֶר", emoji: "📖" }
+      - { id: o2, label: "", tts: "עִיפָּרוֹן", emoji: "✏️" }
+      - { id: o3, label: "", tts: "יַלְקוּט", emoji: "🎒" }
 reward: { stars: 3, sfx: pop, effect: confetti }

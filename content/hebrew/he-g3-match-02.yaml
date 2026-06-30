@@ -20,4 +20,32 @@ pairs:
     left: "בַּיִת"
     left_tts: "בַּיִת"
     emoji: "🏠"
+  - id: p-kelev
+    left: "כֶּלֶב"
+    left_tts: "כֶּלֶב"
+    emoji: "🐶"
+  - id: p-shemesh
+    left: "שֶׁמֶשׁ"
+    left_tts: "שֶׁמֶשׁ"
+    emoji: "☀️"
+  - id: p-perach
+    left: "פֶּרַח"
+    left_tts: "פֶּרַח"
+    emoji: "🌸"
+  - id: p-etz
+    left: "עֵץ"
+    left_tts: "עֵץ"
+    emoji: "🌳"
+  - id: p-dag
+    left: "דָּג"
+    left_tts: "דָּג"
+    emoji: "🐟"
+  - id: p-kochav
+    left: "כּוֹכָב"
+    left_tts: "כּוֹכָב"
+    emoji: "⭐"
+  - id: p-sefer
+    left: "סֵפֶר"
+    left_tts: "סֵפֶר"
+    emoji: "📖"
 reward: { stars: 1, sfx: ding, effect: sparkle }

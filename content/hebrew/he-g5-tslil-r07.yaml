@@ -23,4 +23,34 @@ pairs:
     right: "אִיר"
     left_tts: "עִיר"
     right_tts: "אִיר"
+  - id: or
+    left: "אוֹר"
+    right: "עוֹר"
+    left_tts: "אוֹר"
+    right_tts: "עוֹר"
+  - id: sam
+    left: "שָׂם"
+    right: "סָם"
+    left_tts: "שָׂם"
+    right_tts: "סָם"
+  - id: lo
+    left: "לוֹ"
+    right: "לֹא"
+    left_tts: "לוֹ"
+    right_tts: "לֹא"
+  - id: ala
+    left: "עָלָה"
+    right: "אָלָה"
+    left_tts: "עָלָה"
+    right_tts: "אָלָה"
+  - id: sara
+    left: "שָׂרָה"
+    right: "סָרָה"
+    left_tts: "שָׂרָה"
+    right_tts: "סָרָה"
+  - id: kara
+    left: "קָרָא"
+    right: "כָּרָה"
+    left_tts: "קָרָא"
+    right_tts: "כָּרָה"
 reward: { stars: 1, sfx: ding, effect: sparkle }

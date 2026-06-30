@@ -28,4 +28,34 @@ questions:
       - { id: o1, label: "כ", correct: true }
       - { id: o2, label: "כּ" }
       - { id: o3, label: "ק" }
+  - prompt: "אֵיזוֹ אוֹת נִשְׁמַעַת ב כְּמוֹ בְּמִילָּה שֶׁבַע?"
+    items:
+      - { id: o1, label: "בּ" }
+      - { id: o2, label: "ב", correct: true }
+      - { id: o3, label: "ו" }
+  - prompt: "אֵיזוֹ אוֹת נִשְׁמַעַת פ כְּמוֹ בְּמִילָּה סוּפָה?"
+    items:
+      - { id: o1, label: "פּ" }
+      - { id: o2, label: "בּ" }
+      - { id: o3, label: "פ", correct: true }
+  - prompt: "אֵיזוֹ אוֹת נִשְׁמַעַת בּ כְּמוֹ בְּמִילָּה בֶּגֶד?"
+    items:
+      - { id: o1, label: "ב" }
+      - { id: o2, label: "בּ", correct: true }
+      - { id: o3, label: "פּ" }
+  - prompt: "אֵיזוֹ אוֹת נִשְׁמַעַת כּ כְּמוֹ בְּמִילָּה כֶּתֶר?"
+    items:
+      - { id: o1, label: "כּ", correct: true }
+      - { id: o2, label: "כ" }
+      - { id: o3, label: "ק" }
+  - prompt: "אֵיזוֹ אוֹת נִשְׁמַעַת כ כְּמוֹ בְּמִילָּה בְּרָכָה?"
+    items:
+      - { id: o1, label: "כּ" }
+      - { id: o2, label: "ק" }
+      - { id: o3, label: "כ", correct: true }
+  - prompt: "אֵיזוֹ אוֹת נִשְׁמַעַת פּ כְּמוֹ בְּמִילָּה פֶּלֶא?"
+    items:
+      - { id: o1, label: "פ" }
+      - { id: o2, label: "פּ", correct: true }
+      - { id: o3, label: "בּ" }
 reward: { stars: 3, sfx: ding, effect: confetti }

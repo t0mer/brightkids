@@ -28,4 +28,34 @@ pairs:
     right: "גִּיל"
     left_tts: "שִׂמְחָה"
     right_tts: "גִּיל"
+  - id: yeled
+    left: "יֶלֶד"
+    right: "טַף"
+    left_tts: "יֶלֶד"
+    right_tts: "טַף"
+  - id: chaver
+    left: "חָבֵר"
+    right: "רֵעַ"
+    left_tts: "חָבֵר"
+    right_tts: "רֵעַ"
+  - id: ohel
+    left: "מָזוֹן"
+    right: "אֹכֶל"
+    left_tts: "מָזוֹן"
+    right_tts: "אֹכֶל"
+  - id: matana
+    left: "מַתָּנָה"
+    right: "שַׁי"
+    left_tts: "מַתָּנָה"
+    right_tts: "שַׁי"
+  - id: kaas
+    left: "כַּעַס"
+    right: "רֹגֶז"
+    left_tts: "כַּעַס"
+    right_tts: "רֹגֶז"
+  - id: generosity
+    left: "אֹמֶץ"
+    right: "גְּבוּרָה"
+    left_tts: "אֹמֶץ"
+    right_tts: "גְּבוּרָה"
 reward: { stars: 1, sfx: ding, effect: sparkle }

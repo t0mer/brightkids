@@ -15,17 +15,47 @@ questions:
       - { id: o3, label: "יָפָה" }
   - prompt: "הַיֶּלֶד ___ מַהֵר. אֵיזוֹ מִילָּה הִיא פֹּעַל?"
     items:
-      - { id: o1, label: "רָץ", correct: true }
-      - { id: o2, label: "שֻׁלְחָן" }
+      - { id: o1, label: "שֻׁלְחָן" }
+      - { id: o2, label: "רָץ", correct: true }
       - { id: o3, label: "גָּדוֹל" }
   - prompt: "אַבָּא ___ תַּפּוּחַ. אֵיזוֹ מִילָּה הִיא פֹּעַל?"
     items:
-      - { id: o1, label: "אוֹכֵל", correct: true }
-      - { id: o2, label: "תַּפּוּחַ" }
-      - { id: o3, label: "מָתוֹק" }
+      - { id: o1, label: "תַּפּוּחַ" }
+      - { id: o2, label: "מָתוֹק" }
+      - { id: o3, label: "אוֹכֵל", correct: true }
   - prompt: "הַקּוֹף ___ עַל הָעֵץ. אֵיזוֹ מִילָּה הִיא פֹּעַל?"
     items:
       - { id: o1, label: "קוֹפֵץ", correct: true }
       - { id: o2, label: "חָתוּל" }
       - { id: o3, label: "קָטָן" }
+  - prompt: "הַצִּיפּוֹר ___ בַּשָּׁמַיִם. אֵיזוֹ מִילָּה הִיא פֹּעַל?"
+    items:
+      - { id: o1, label: "כָּחֹל" }
+      - { id: o2, label: "עָפָה", correct: true }
+      - { id: o3, label: "קֵן" }
+  - prompt: "סָבָא ___ סֵפֶר. אֵיזוֹ מִילָּה הִיא פֹּעַל?"
+    items:
+      - { id: o1, label: "סֵפֶר" }
+      - { id: o2, label: "זָקֵן" }
+      - { id: o3, label: "קוֹרֵא", correct: true }
+  - prompt: "הַתִּינוֹק ___ בָּעֲרִיסָה. אֵיזוֹ מִילָּה הִיא פֹּעַל?"
+    items:
+      - { id: o1, label: "יָשֵׁן", correct: true }
+      - { id: o2, label: "קָטָן" }
+      - { id: o3, label: "מִיטָּה" }
+  - prompt: "אִמָּא ___ בַּמִּטְבָּח. אֵיזוֹ מִילָּה הִיא פֹּעַל?"
+    items:
+      - { id: o1, label: "סִיר" }
+      - { id: o2, label: "טְעִימָה" }
+      - { id: o3, label: "מְבַשֶּׁלֶת", correct: true }
+  - prompt: "הַכֶּלֶב ___ עַל הֶחָתוּל. אֵיזוֹ מִילָּה הִיא פֹּעַל?"
+    items:
+      - { id: o1, label: "נוֹבֵחַ", correct: true }
+      - { id: o2, label: "פַּרְוָה" }
+      - { id: o3, label: "נֶאֱמָן" }
+  - prompt: "הַתַּלְמִיד ___ עַל הַשְּׁאֵלָה. אֵיזוֹ מִילָּה הִיא פֹּעַל?"
+    items:
+      - { id: o1, label: "חָכָם" }
+      - { id: o2, label: "עוֹנֶה", correct: true }
+      - { id: o3, label: "כִּתָּה" }
 reward: { stars: 3, sfx: pop, effect: confetti }

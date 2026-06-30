@@ -28,4 +28,34 @@ questions:
       - { id: o1, label: "תַּרְנְגוֹל", correct: true, emoji: "🐓" }
       - { id: o2, label: "בַּרְוָז", emoji: "🦆" }
       - { id: o3, label: "חֲזִיר", emoji: "🐷" }
+  - prompt: "אֵיזֶה בַּעַל חַיִּים אוֹמֵר מֶהֶה?"
+    items:
+      - { id: o1, label: "אַרְיֵה", emoji: "🦁" }
+      - { id: o2, label: "כִּבְשָׂה", correct: true, emoji: "🐑" }
+      - { id: o3, label: "צְפַרְדֵּעַ", emoji: "🐸" }
+  - prompt: "אֵיזֶה בַּעַל חַיִּים אוֹמֵר קְוָואק קְוָואק?"
+    items:
+      - { id: o1, label: "תַּרְנְגֹלֶת", emoji: "🐔" }
+      - { id: o2, label: "יוֹנָה", emoji: "🕊️" }
+      - { id: o3, label: "בַּרְוָז", correct: true, emoji: "🦆" }
+  - prompt: "אֵיזֶה בַּעַל חַיִּים אוֹמֵר קְוָואק וְקוֹפֵץ בַּבִּצָּה?"
+    items:
+      - { id: o1, label: "צְפַרְדֵּעַ", correct: true, emoji: "🐸" }
+      - { id: o2, label: "דָּג", emoji: "🐟" }
+      - { id: o3, label: "אַרְנָב", emoji: "🐰" }
+  - prompt: "אֵיזֶה בַּעַל חַיִּים נוֹהֵם וְאוֹמֵר רְרְר וְהוּא מֶלֶךְ הַחַיּוֹת?"
+    items:
+      - { id: o1, label: "חֲתַלְתּוּל", emoji: "🐈" }
+      - { id: o2, label: "אַרְיֵה", correct: true, emoji: "🦁" }
+      - { id: o3, label: "עֵז", emoji: "🐐" }
+  - prompt: "אֵיזֶה בַּעַל חַיִּים אוֹמֵר אִיהָה?"
+    items:
+      - { id: o1, label: "סוּס", correct: true, emoji: "🐴" }
+      - { id: o2, label: "פִּיל", emoji: "🐘" }
+      - { id: o3, label: "דֻּבּוֹן", emoji: "🐻" }
+  - prompt: "אֵיזֶה בַּעַל חַיִּים מְצַיֵּץ צִיּוּ צִיּוּ עַל הָעֵץ?"
+    items:
+      - { id: o1, label: "חֲמוֹר", emoji: "🫏" }
+      - { id: o2, label: "תַּיִשׁ", emoji: "🐐" }
+      - { id: o3, label: "צִיפּוֹר", correct: true, emoji: "🐦" }
 reward: { stars: 3, sfx: pop, effect: confetti }

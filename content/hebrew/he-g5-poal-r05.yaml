@@ -15,17 +15,47 @@ questions:
       - { id: o3, label: "יִשְׁמוֹר" }
   - prompt: "אֵיזֶה פֹּעַל כָּתוּב בִּזְמַן עָבָר?"
     items:
-      - { id: o1, label: "כָּתַב", correct: true }
-      - { id: o2, label: "כּוֹתֵב" }
+      - { id: o1, label: "כּוֹתֵב" }
+      - { id: o2, label: "כָּתַב", correct: true }
       - { id: o3, label: "יִכְתֹּב" }
   - prompt: "אֵיזֶה פֹּעַל כָּתוּב בִּזְמַן עָבָר?"
     items:
-      - { id: o1, label: "הָלַךְ", correct: true }
-      - { id: o2, label: "הוֹלֵךְ" }
-      - { id: o3, label: "יֵלֵךְ" }
+      - { id: o1, label: "הוֹלֵךְ" }
+      - { id: o2, label: "יֵלֵךְ" }
+      - { id: o3, label: "הָלַךְ", correct: true }
   - prompt: "אֵיזֶה פֹּעַל כָּתוּב בִּזְמַן עָבָר?"
     items:
       - { id: o1, label: "אָכַל", correct: true }
       - { id: o2, label: "אוֹכֵל" }
       - { id: o3, label: "יֹאכַל" }
+  - prompt: "אֵיזֶה פֹּעַל כָּתוּב בִּזְמַן עָבָר?"
+    items:
+      - { id: o1, label: "קוֹרֵא" }
+      - { id: o2, label: "קָרָא", correct: true }
+      - { id: o3, label: "יִקְרָא" }
+  - prompt: "אֵיזֶה פֹּעַל כָּתוּב בִּזְמַן עָבָר?"
+    items:
+      - { id: o1, label: "שׁוֹתֶה" }
+      - { id: o2, label: "יִשְׁתֶּה" }
+      - { id: o3, label: "שָׁתָה", correct: true }
+  - prompt: "אֵיזֶה פֹּעַל כָּתוּב בִּזְמַן עָבָר?"
+    items:
+      - { id: o1, label: "לָמַד", correct: true }
+      - { id: o2, label: "לוֹמֵד" }
+      - { id: o3, label: "יִלְמַד" }
+  - prompt: "אֵיזֶה פֹּעַל כָּתוּב בִּזְמַן עָבָר?"
+    items:
+      - { id: o1, label: "שׁוֹמֵעַ" }
+      - { id: o2, label: "שָׁמַע", correct: true }
+      - { id: o3, label: "יִשְׁמַע" }
+  - prompt: "אֵיזֶה פֹּעַל כָּתוּב בִּזְמַן עָבָר?"
+    items:
+      - { id: o1, label: "פּוֹתֵחַ" }
+      - { id: o2, label: "יִפְתַּח" }
+      - { id: o3, label: "פָּתַח", correct: true }
+  - prompt: "אֵיזֶה פֹּעַל כָּתוּב בִּזְמַן עָבָר?"
+    items:
+      - { id: o1, label: "סָגַר", correct: true }
+      - { id: o2, label: "סוֹגֵר" }
+      - { id: o3, label: "יִסְגֹּר" }
 reward: { stars: 3, sfx: ding, effect: confetti }

@@ -25,7 +25,37 @@ questions:
       - { id: o3, label: "פִּרְחֵי" }
   - prompt: "מַהִי צוּרַת הָרַבִּים שֶׁל הַמִּילָּה בַּיִת?"
     items:
-      - { id: o1, label: "בָּתִּים", correct: true }
-      - { id: o2, label: "בַּיִת" }
+      - { id: o1, label: "בַּיִת" }
+      - { id: o2, label: "בָּתִּים", correct: true }
       - { id: o3, label: "בֵּיתִי" }
+  - prompt: "מַהִי צוּרַת הָרַבִּים שֶׁל הַמִּילָּה כֶּלֶב?"
+    items:
+      - { id: o1, label: "כְּלָבִים", correct: true }
+      - { id: o2, label: "כֶּלֶב" }
+      - { id: o3, label: "כַּלְבָּה" }
+  - prompt: "מַהִי צוּרַת הָרַבִּים שֶׁל הַמִּילָּה עֵץ?"
+    items:
+      - { id: o1, label: "עָלֶה" }
+      - { id: o2, label: "עֵצִים", correct: true }
+      - { id: o3, label: "עֵץ" }
+  - prompt: "מַהִי צוּרַת הָרַבִּים שֶׁל הַמִּילָּה חַלּוֹן?"
+    items:
+      - { id: o1, label: "חַלּוֹן" }
+      - { id: o2, label: "חַלּוֹנִית" }
+      - { id: o3, label: "חַלּוֹנוֹת", correct: true }
+  - prompt: "מַהִי צוּרַת הָרַבִּים שֶׁל הַמִּילָּה כּוֹכָב?"
+    items:
+      - { id: o1, label: "כּוֹכָבִים", correct: true }
+      - { id: o2, label: "כּוֹכָב" }
+      - { id: o3, label: "כּוֹכֶבֶת" }
+  - prompt: "מַהִי צוּרַת הָרַבִּים שֶׁל הַמִּילָּה תַּפּוּחַ?"
+    items:
+      - { id: o1, label: "תַּפּוּחַ" }
+      - { id: o2, label: "תַּפּוּחִים", correct: true }
+      - { id: o3, label: "תַּפּוּז" }
+  - prompt: "מַהִי צוּרַת הָרַבִּים שֶׁל הַמִּילָּה כִּסֵּא?"
+    items:
+      - { id: o1, label: "כִּסֵּא" }
+      - { id: o2, label: "כִּיסּוּי" }
+      - { id: o3, label: "כִּסְאוֹת", correct: true }
 reward: { stars: 3, sfx: ding, effect: confetti }

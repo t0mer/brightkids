@@ -28,4 +28,34 @@ questions:
       - { id: o1, label: "כּוֹס", correct: true }
       - { id: o2, label: "כּוּס" }
       - { id: o3, label: "כַּס" }
+  - prompt: "בַּחֲרוּ אֶת הַמִּילָּה שֶׁנִּקְרֵאת תּוֹר"
+    items:
+      - { id: o1, label: "תּוּר" }
+      - { id: o2, label: "תּוֹר", correct: true }
+      - { id: o3, label: "תַּר" }
+  - prompt: "בַּחֲרוּ אֶת הַמִּילָּה שֶׁנִּקְרֵאת שׁוּק"
+    items:
+      - { id: o1, label: "שׁוֹק" }
+      - { id: o2, label: "שַׁק" }
+      - { id: o3, label: "שׁוּק", correct: true }
+  - prompt: "בַּחֲרוּ אֶת הַמִּילָּה שֶׁנִּקְרֵאת חוֹל"
+    items:
+      - { id: o1, label: "חוֹל", correct: true }
+      - { id: o2, label: "חוּל" }
+      - { id: o3, label: "חַל" }
+  - prompt: "בַּחֲרוּ אֶת הַמִּילָּה שֶׁנִּקְרֵאת בּוֹר"
+    items:
+      - { id: o1, label: "בּוּר" }
+      - { id: o2, label: "בַּר" }
+      - { id: o3, label: "בּוֹר", correct: true }
+  - prompt: "בַּחֲרוּ אֶת הַמִּילָּה שֶׁנִּקְרֵאת סוּף"
+    items:
+      - { id: o1, label: "סוֹף" }
+      - { id: o2, label: "סוּף", correct: true }
+      - { id: o3, label: "סַף" }
+  - prompt: "בַּחֲרוּ אֶת הַמִּילָּה שֶׁנִּקְרֵאת שׁוֹר"
+    items:
+      - { id: o1, label: "שׁוֹר", correct: true }
+      - { id: o2, label: "שׁוּר" }
+      - { id: o3, label: "שַׁר" }
 reward: { stars: 3, sfx: ding, effect: confetti }

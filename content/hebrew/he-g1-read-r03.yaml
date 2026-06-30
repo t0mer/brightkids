@@ -13,19 +13,49 @@ questions:
       - { id: o1, label: "עַל הַכִּסֵּא", correct: true }
       - { id: o2, label: "עַל הַשֻּׁלְחָן" }
       - { id: o3, label: "עַל הַמִּטָּה" }
-  - prompt: "הַכֶּלֶב אָכַל עֶצֶם. מָה אָכַל הַכֶּלֶב?"
+  - prompt: "הֶחָתוּל אָכַל דָּג. מָה אָכַל הֶחָתוּל?"
     items:
-      - { id: o1, label: "עֶצֶם", correct: true }
+      - { id: o1, label: "דָּג", correct: true }
       - { id: o2, label: "תַּפּוּחַ" }
       - { id: o3, label: "לֶחֶם" }
-  - prompt: "רוּתִי חָבְשָׁה כּוֹבַע אָדֹם. אֵיזֶה צֶבַע הַכּוֹבַע?"
+  - prompt: "הֶחָתוּל שֶׁל רוּתִי לָבָן. אֵיזֶה צֶבַע הֶחָתוּל?"
     items:
-      - { id: o1, label: "אָדֹם", correct: true }
-      - { id: o2, label: "כָּחֹל" }
-      - { id: o3, label: "יָרֹק" }
-  - prompt: "הַיֶּלֶד שָׁתָה מַיִם. מָה שָׁתָה הַיֶּלֶד?"
+      - { id: o1, label: "שָׁחֹר" }
+      - { id: o2, label: "לָבָן", correct: true }
+      - { id: o3, label: "כָּתֹם" }
+  - prompt: "הֶחָתוּל שָׁתָה חָלָב. מָה שָׁתָה הֶחָתוּל?"
     items:
-      - { id: o1, label: "מַיִם", correct: true }
-      - { id: o2, label: "חָלָב" }
+      - { id: o1, label: "מַיִם" }
+      - { id: o2, label: "חָלָב", correct: true }
       - { id: o3, label: "מִיץ" }
+  - prompt: "הֶחָתוּל תָּפַס עַכְבָּר. מָה תָּפַס הֶחָתוּל?"
+    items:
+      - { id: o1, label: "עַכְבָּר", correct: true }
+      - { id: o2, label: "צִפּוֹר" }
+      - { id: o3, label: "דָּג" }
+  - prompt: "הֶחָתוּל שִׂחֵק עִם כַּדּוּר. עִם מָה שִׂחֵק הֶחָתוּל?"
+    items:
+      - { id: o1, label: "חֶבֶל" }
+      - { id: o2, label: "בֻּבָּה" }
+      - { id: o3, label: "כַּדּוּר", correct: true }
+  - prompt: "הֶחָתוּל טִפֵּס עַל הָעֵץ. עַל מָה טִפֵּס הֶחָתוּל?"
+    items:
+      - { id: o1, label: "הַגָּדֵר" }
+      - { id: o2, label: "הַגַּג" }
+      - { id: o3, label: "הָעֵץ", correct: true }
+  - prompt: "הֶחָתוּל רָץ אַחֲרֵי כַּדּוּר. אַחֲרֵי מָה רָץ הֶחָתוּל?"
+    items:
+      - { id: o1, label: "כַּדּוּר", correct: true }
+      - { id: o2, label: "פַּרְפַּר" }
+      - { id: o3, label: "אוֹפַנַּיִם" }
+  - prompt: "הֶחָתוּל יָשֵׁן בַּיּוֹם. מָתַי יָשֵׁן הֶחָתוּל?"
+    items:
+      - { id: o1, label: "בַּלַּיְלָה" }
+      - { id: o2, label: "בָּעֶרֶב" }
+      - { id: o3, label: "בַּיּוֹם", correct: true }
+  - prompt: "הֶחָתוּל אָמַר מִיאוּ. מָה אָמַר הֶחָתוּל?"
+    items:
+      - { id: o1, label: "מִיאוּ", correct: true }
+      - { id: o2, label: "הַב הַב" }
+      - { id: o3, label: "מוּ" }
 reward: { stars: 3, sfx: pop, effect: confetti }

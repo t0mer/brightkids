@@ -28,4 +28,34 @@ questions:
       - { id: o1, label: "שְׁבִיל", correct: true }
       - { id: o2, label: "בַּיִת" }
       - { id: o3, label: "גָּדֵר" }
+  - prompt: "אֵיזוֹ מִילָּה דּוֹמָה בְּמַשְׁמָעוּתָהּ לַמִּילָּה פַּחַד?"
+    items:
+      - { id: o1, label: "אֹמֶץ" }
+      - { id: o2, label: "אֵימָה", correct: true }
+      - { id: o3, label: "שִׂמְחָה" }
+  - prompt: "אֵיזוֹ מִילָּה דּוֹמָה בְּמַשְׁמָעוּתָהּ לַמִּילָּה גָּדוֹל?"
+    items:
+      - { id: o1, label: "קָטָן" }
+      - { id: o2, label: "צַר" }
+      - { id: o3, label: "עָצוּם", correct: true }
+  - prompt: "אֵיזוֹ מִילָּה דּוֹמָה בְּמַשְׁמָעוּתָהּ לַמִּילָּה רֵעַ?"
+    items:
+      - { id: o1, label: "חָבֵר", correct: true }
+      - { id: o2, label: "אוֹיֵב" }
+      - { id: o3, label: "זָר" }
+  - prompt: "אֵיזוֹ מִילָּה דּוֹמָה בְּמַשְׁמָעוּתָהּ לַמִּילָּה חָכָם?"
+    items:
+      - { id: o1, label: "כְּסִיל" }
+      - { id: o2, label: "נָבוֹן", correct: true }
+      - { id: o3, label: "עָצֵל" }
+  - prompt: "אֵיזוֹ מִילָּה דּוֹמָה בְּמַשְׁמָעוּתָהּ לַמִּילָּה בַּיִת?"
+    items:
+      - { id: o1, label: "מָעוֹן", correct: true }
+      - { id: o2, label: "רְחוֹב" }
+      - { id: o3, label: "שָׂדֶה" }
+  - prompt: "אֵיזוֹ מִילָּה דּוֹמָה בְּמַשְׁמָעוּתָהּ לַמִּילָּה הִתְחִיל?"
+    items:
+      - { id: o1, label: "סִיֵּם" }
+      - { id: o2, label: "עָצַר" }
+      - { id: o3, label: "פָּתַח", correct: true }
 reward: { stars: 3, sfx: ding, effect: confetti }

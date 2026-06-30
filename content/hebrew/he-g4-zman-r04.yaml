@@ -28,4 +28,34 @@ questions:
       - { id: o1, label: "שְׁנֵים עָשָׂר", correct: true }
       - { id: o2, label: "שִׁבְעָה" }
       - { id: o3, label: "שְׁלוֹשִׁים" }
+  - prompt: "כַּמָּה דַּקּוֹת יֵשׁ בְּשָׁעָה אַחַת?"
+    items:
+      - { id: o1, label: "שִׁשִּׁים", correct: true }
+      - { id: o2, label: "עֶשְׂרִים" }
+      - { id: o3, label: "מֵאָה" }
+  - prompt: "כַּמָּה יָמִים יֵשׁ בְּשָׁבוּעַ אֶחָד?"
+    items:
+      - { id: o1, label: "חֲמִשָּׁה" }
+      - { id: o2, label: "שִׁבְעָה", correct: true }
+      - { id: o3, label: "עֲשָׂרָה" }
+  - prompt: "אֵיזוֹ עוֹנָה הִיא הַחַמָּה בְּיוֹתֵר בַּשָּׁנָה?"
+    items:
+      - { id: o1, label: "הַחֹרֶף" }
+      - { id: o2, label: "הַקַּיִץ", correct: true }
+      - { id: o3, label: "הַסְּתָו" }
+  - prompt: "מָתַי זוֹרַחַת הַשֶּׁמֶשׁ?"
+    items:
+      - { id: o1, label: "בַּלַּיְלָה" }
+      - { id: o2, label: "בַּחֲצוֹת" }
+      - { id: o3, label: "בַּבֹּקֶר", correct: true }
+  - prompt: "אֵיזֶה חֵלֶק שֶׁל הַיּוֹם מַגִּיעַ אַחֲרֵי הַצָּהֳרַיִם?"
+    items:
+      - { id: o1, label: "הָעֶרֶב", correct: true }
+      - { id: o2, label: "הַבֹּקֶר" }
+      - { id: o3, label: "הַשַּׁחַר" }
+  - prompt: "כַּמָּה שָׁעוֹת יֵשׁ בְּיוֹם שָׁלֵם?"
+    items:
+      - { id: o1, label: "עֶשֶׂר" }
+      - { id: o2, label: "שֵׁשׁ עֶשְׂרֵה" }
+      - { id: o3, label: "עֶשְׂרִים וְאַרְבַּע", correct: true }
 reward: { stars: 3, sfx: pop, effect: confetti }

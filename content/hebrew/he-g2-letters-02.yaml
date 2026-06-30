@@ -40,4 +40,29 @@ questions:
       - { id: o1, label: "ץ", correct: true, tts: "צַדִי סוֹפִית" }
       - { id: o2, label: "צ", tts: "צַדִי" }
       - { id: o3, label: "ע", tts: "עַיִן" }
+  - prompt: "אֵיזוֹ אוֹת הִיא מֵם סוֹפִית?"
+    items:
+      - { id: o1, label: "ן", tts: "נוּן סוֹפִית" }
+      - { id: o2, label: "ם", correct: true, tts: "מֵם סוֹפִית" }
+      - { id: o3, label: "ך", tts: "כַף סוֹפִית" }
+  - prompt: "אֵיזוֹ אוֹת הִיא נוּן סוֹפִית?"
+    items:
+      - { id: o1, label: "ף", tts: "פֵא סוֹפִית" }
+      - { id: o2, label: "ץ", tts: "צַדִי סוֹפִית" }
+      - { id: o3, label: "ן", correct: true, tts: "נוּן סוֹפִית" }
+  - prompt: "אֵיזוֹ אוֹת הִיא כַף סוֹפִית?"
+    items:
+      - { id: o1, label: "ך", correct: true, tts: "כַף סוֹפִית" }
+      - { id: o2, label: "ם", tts: "מֵם סוֹפִית" }
+      - { id: o3, label: "ן", tts: "נוּן סוֹפִית" }
+  - prompt: "אֵיזוֹ אוֹת הִיא פֵא סוֹפִית?"
+    items:
+      - { id: o1, label: "ץ", tts: "צַדִי סוֹפִית" }
+      - { id: o2, label: "ף", correct: true, tts: "פֵא סוֹפִית" }
+      - { id: o3, label: "ך", tts: "כַף סוֹפִית" }
+  - prompt: "אֵיזוֹ אוֹת הִיא צַדִי סוֹפִית?"
+    items:
+      - { id: o1, label: "ם", tts: "מֵם סוֹפִית" }
+      - { id: o2, label: "ך", tts: "כַף סוֹפִית" }
+      - { id: o3, label: "ץ", correct: true, tts: "צַדִי סוֹפִית" }
 reward: { stars: 3, sfx: ding, effect: confetti }

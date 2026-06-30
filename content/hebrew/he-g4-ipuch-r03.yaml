@@ -28,4 +28,34 @@ pairs:
     right: "עָנִי"
     left_tts: "עָשִׁיר"
     right_tts: "עָנִי"
+  - id: shalom
+    left: "שָׁלוֹם"
+    right: "מִלְחָמָה"
+    left_tts: "שָׁלוֹם"
+    right_tts: "מִלְחָמָה"
+  - id: ahava
+    left: "אַהֲבָה"
+    right: "שִׂנְאָה"
+    left_tts: "אַהֲבָה"
+    right_tts: "שִׂנְאָה"
+  - id: zchut
+    left: "זְכוּת"
+    right: "חוֹבָה"
+    left_tts: "זְכוּת"
+    right_tts: "חוֹבָה"
+  - id: simcha
+    left: "שִׂמְחָה"
+    right: "עֶצֶב"
+    left_tts: "שִׂמְחָה"
+    right_tts: "עֶצֶב"
+  - id: bri'ut
+    left: "בְּרִיאוּת"
+    right: "מַחֲלָה"
+    left_tts: "בְּרִיאוּת"
+    right_tts: "מַחֲלָה"
+  - id: hatchala
+    left: "הַתְחָלָה"
+    right: "סִיּוּם"
+    left_tts: "הַתְחָלָה"
+    right_tts: "סִיּוּם"
 reward: { stars: 1, sfx: ding, effect: sparkle }

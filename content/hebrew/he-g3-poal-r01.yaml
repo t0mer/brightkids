@@ -28,4 +28,34 @@ questions:
       - { id: o1, label: "אָפְתָה", correct: true }
       - { id: o2, label: "אוֹפָה" }
       - { id: o3, label: "תֹּאפֶה" }
+  - prompt: "אֶתְמוֹל הַתַּלְמִיד ___ בַּמַּחְבֶּרֶת. אֵיזֶה פֹּעַל מַתְאִים לֶעָבָר?"
+    items:
+      - { id: o1, label: "כּוֹתֵב" }
+      - { id: o2, label: "כָּתַב", correct: true }
+      - { id: o3, label: "יִכְתֹּב" }
+  - prompt: "אֶתְמוֹל אֲנִי ___ תַּפּוּחַ. אֵיזֶה פֹּעַל מַתְאִים לֶעָבָר?"
+    items:
+      - { id: o1, label: "אוֹכֵל" }
+      - { id: o2, label: "אֹכַל" }
+      - { id: o3, label: "אָכַלְתִּי", correct: true }
+  - prompt: "אֶתְמוֹל הִיא ___ מַיִם קָרִים. אֵיזֶה פֹּעַל מַתְאִים לֶעָבָר?"
+    items:
+      - { id: o1, label: "שָׁתְתָה", correct: true }
+      - { id: o2, label: "שׁוֹתָה" }
+      - { id: o3, label: "תִּשְׁתֶּה" }
+  - prompt: "אֶתְמוֹל הַיְלָדִים ___ לְבֵית הַסֵּפֶר. אֵיזֶה פֹּעַל מַתְאִים לֶעָבָר?"
+    items:
+      - { id: o1, label: "הוֹלְכִים" }
+      - { id: o2, label: "הָלְכוּ", correct: true }
+      - { id: o3, label: "יֵלְכוּ" }
+  - prompt: "אֶתְמוֹל אֲנִי ___ צִיפּוֹר יָפָה. אֵיזֶה פֹּעַל מַתְאִים לֶעָבָר?"
+    items:
+      - { id: o1, label: "רוֹאֶה" }
+      - { id: o2, label: "אֶרְאֶה" }
+      - { id: o3, label: "רָאִיתִי", correct: true }
+  - prompt: "אֶתְמוֹל הַתִּינוֹק ___ הֵיטֵב. אֵיזֶה פֹּעַל מַתְאִים לֶעָבָר?"
+    items:
+      - { id: o1, label: "יָשַׁן", correct: true }
+      - { id: o2, label: "יָשֵׁן" }
+      - { id: o3, label: "יִישַׁן" }
 reward: { stars: 3, sfx: pop, effect: confetti }

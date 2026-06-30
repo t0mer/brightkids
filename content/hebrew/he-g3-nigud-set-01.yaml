@@ -15,17 +15,47 @@ questions:
       - { id: o3, label: "אָרֹךְ" }
   - prompt: "מָה הַהֵפֶךְ שֶׁל הַמִּילָּה חַם?"
     items:
-      - { id: o1, label: "קַר", correct: true }
-      - { id: o2, label: "רָטֹב" }
+      - { id: o1, label: "רָטֹב" }
+      - { id: o2, label: "קַר", correct: true }
       - { id: o3, label: "נָעִים" }
   - prompt: "מָה הַהֵפֶךְ שֶׁל הַמִּילָּה יוֹם?"
     items:
-      - { id: o1, label: "לַיְלָה", correct: true }
-      - { id: o2, label: "בֹּקֶר" }
-      - { id: o3, label: "שָׁבוּעַ" }
+      - { id: o1, label: "בֹּקֶר" }
+      - { id: o2, label: "שָׁבוּעַ" }
+      - { id: o3, label: "לַיְלָה", correct: true }
   - prompt: "מָה הַהֵפֶךְ שֶׁל הַמִּילָּה שָׂמֵחַ?"
     items:
       - { id: o1, label: "עָצוּב", correct: true }
       - { id: o2, label: "רָגוּעַ" }
       - { id: o3, label: "עָיֵף" }
+  - prompt: "מָה הַהֵפֶךְ שֶׁל הַמִּילָּה גָּבוֹהַּ?"
+    items:
+      - { id: o1, label: "רָחָב" }
+      - { id: o2, label: "נָמוּךְ", correct: true }
+      - { id: o3, label: "צַר" }
+  - prompt: "מָה הַהֵפֶךְ שֶׁל הַמִּילָּה מָהִיר?"
+    items:
+      - { id: o1, label: "כָּבֵד" }
+      - { id: o2, label: "חָזָק" }
+      - { id: o3, label: "אִטִּי", correct: true }
+  - prompt: "מָה הַהֵפֶךְ שֶׁל הַמִּילָּה פָּתוּחַ?"
+    items:
+      - { id: o1, label: "סָגוּר", correct: true }
+      - { id: o2, label: "שָׁבוּר" }
+      - { id: o3, label: "נָקִי" }
+  - prompt: "מָה הַהֵפֶךְ שֶׁל הַמִּילָּה חָדָשׁ?"
+    items:
+      - { id: o1, label: "יָקָר" }
+      - { id: o2, label: "יָשָׁן", correct: true }
+      - { id: o3, label: "גָּדוֹל" }
+  - prompt: "מָה הַהֵפֶךְ שֶׁל הַמִּילָּה מָלֵא?"
+    items:
+      - { id: o1, label: "כָּבֵד" }
+      - { id: o2, label: "רָחָב" }
+      - { id: o3, label: "רֵיק", correct: true }
+  - prompt: "מָה הַהֵפֶךְ שֶׁל הַמִּילָּה עָשִׁיר?"
+    items:
+      - { id: o1, label: "עָנִי", correct: true }
+      - { id: o2, label: "חָכָם" }
+      - { id: o3, label: "חָזָק" }
 reward: { stars: 3, sfx: ding, effect: confetti }
