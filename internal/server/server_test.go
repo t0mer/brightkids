@@ -5,6 +5,7 @@ package server
 import (
 	"bytes"
 	"encoding/json"
+	"encoding/xml"
 	"io"
 	"net/http"
 	"net/http/httptest"
@@ -130,6 +131,58 @@ func TestSubjectsAndLessons(t *testing.T) {
 	rec, _ = doJSON(t, h, http.MethodGet, "/api/v1/lessons/missing", nil)
 	if rec.Code != http.StatusNotFound {
 		t.Fatalf("missing lesson want 404, got %d", rec.Code)
+	}
+}
+
+func TestSEO(t *testing.T) {
+	h := newTestServer(t)
+
+	// robots.txt points to the sitemap on the request's own origin.
+	rec, body := doJSON(t, h, http.MethodGet, "/robots.txt", nil)
+	if rec.Code != http.StatusOK {
+		t.Fatalf("robots status %d", rec.Code)
+	}
+	if ct := rec.Header().Get("Content-Type"); ct != "text/plain; charset=utf-8" {
+		t.Fatalf("robots content-type %q", ct)
+	}
+	if !bytes.Contains(body, []byte("Sitemap: http://example.com/sitemap.xml")) {
+		t.Fatalf("robots missing sitemap line: %s", body)
+	}
+
+	// sitemap.xml is well-formed, rooted at the request origin, and lists lessons.
+	rec, body = doJSON(t, h, http.MethodGet, "/sitemap.xml", nil)
+	if rec.Code != http.StatusOK {
+		t.Fatalf("sitemap status %d", rec.Code)
+	}
+	var set struct {
+		URLs []struct {
+			Loc string `xml:"loc"`
+		} `xml:"url"`
+	}
+	if err := xml.Unmarshal(body, &set); err != nil {
+		t.Fatalf("sitemap not well-formed: %v", err)
+	}
+	var home, lesson bool
+	for _, u := range set.URLs {
+		switch u.Loc {
+		case "http://example.com/":
+			home = true
+		case "http://example.com/lesson/en-g1-letters-01":
+			lesson = true
+		}
+	}
+	if !home || !lesson {
+		t.Fatalf("sitemap missing expected urls (home=%v lesson=%v): %s", home, lesson, body)
+	}
+
+	// Reverse-proxy headers override the origin.
+	req := httptest.NewRequest(http.MethodGet, "/sitemap.xml", nil)
+	req.Header.Set("X-Forwarded-Proto", "https")
+	req.Header.Set("X-Forwarded-Host", "brightkids.example.org")
+	rec = httptest.NewRecorder()
+	h.ServeHTTP(rec, req)
+	if !bytes.Contains(rec.Body.Bytes(), []byte("https://brightkids.example.org/lesson/en-g1-letters-01")) {
+		t.Fatalf("sitemap did not honor forwarded headers: %s", rec.Body.Bytes())
 	}
 }
 

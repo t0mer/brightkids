@@ -42,6 +42,11 @@ func (s *Server) routes() http.Handler {
 	r.Get("/healthz", h.Healthz)
 	r.Get("/readyz", h.Readyz)
 
+	// SEO: auto-generated from the request's own origin (explicit routes so the
+	// SPA fallback doesn't 404 these extensioned paths).
+	r.Get("/robots.txt", h.Robots)
+	r.Get("/sitemap.xml", h.Sitemap)
+
 	// Metrics (optional).
 	if s.metrics != nil {
 		r.Handle("/metrics", promhttp.HandlerFor(s.metrics.Registry, promhttp.HandlerOpts{}))
