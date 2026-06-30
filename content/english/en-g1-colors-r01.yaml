@@ -12,25 +12,25 @@ questions:
   - prompt: "This balloon is red. Tap the word red."
     prompt_text: "הַבָּלוֹן הַזֶּה אָדֹם. הַקִּישׁוּ עַל הַמִּלָּה red."
     items:
-      - { id: o1, label: "red", correct: true, tts: "red", emoji: "🔴" }
-      - { id: o2, label: "blue", tts: "blue", emoji: "🔵" }
-      - { id: o3, label: "green", tts: "green", emoji: "🟢" }
+      - { id: o1, label: "red", correct: true, tts: "red" }
+      - { id: o2, label: "blue", tts: "blue" }
+      - { id: o3, label: "green", tts: "green" }
   - prompt: "This balloon is blue. Tap the word blue."
     prompt_text: "הַבָּלוֹן הַזֶּה כָּחֹל. הַקִּישׁוּ עַל הַמִּלָּה blue."
     items:
-      - { id: o1, label: "blue", correct: true, tts: "blue", emoji: "🔵" }
-      - { id: o2, label: "green", tts: "green", emoji: "🟢" }
-      - { id: o3, label: "red", tts: "red", emoji: "🔴" }
+      - { id: o1, label: "blue", correct: true, tts: "blue" }
+      - { id: o2, label: "green", tts: "green" }
+      - { id: o3, label: "red", tts: "red" }
   - prompt: "This balloon is green. Tap the word green."
     prompt_text: "הַבָּלוֹן הַזֶּה יָרֹק. הַקִּישׁוּ עַל הַמִּלָּה green."
     items:
-      - { id: o1, label: "green", correct: true, tts: "green", emoji: "🟢" }
-      - { id: o2, label: "red", tts: "red", emoji: "🔴" }
-      - { id: o3, label: "blue", tts: "blue", emoji: "🔵" }
+      - { id: o1, label: "green", correct: true, tts: "green" }
+      - { id: o2, label: "red", tts: "red" }
+      - { id: o3, label: "blue", tts: "blue" }
   - prompt: "This balloon is yellow. Tap the word yellow."
     prompt_text: "הַבָּלוֹן הַזֶּה צָהֹב. הַקִּישׁוּ עַל הַמִּלָּה yellow."
     items:
-      - { id: o1, label: "yellow", correct: true, tts: "yellow", emoji: "🟡" }
-      - { id: o2, label: "red", tts: "red", emoji: "🔴" }
-      - { id: o3, label: "blue", tts: "blue", emoji: "🔵" }
+      - { id: o1, label: "yellow", correct: true, tts: "yellow" }
+      - { id: o2, label: "red", tts: "red" }
+      - { id: o3, label: "blue", tts: "blue" }
 reward: { stars: 3, sfx: ding, effect: confetti }
