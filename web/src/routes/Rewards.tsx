@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Star, Flame } from "lucide-react";
 import { useTranslation } from "react-i18next";
-import { api } from "@/lib/api";
+import { data } from "@/lib/data";
 import type { ProgressSummary } from "@/lib/types";
 import { AppShell } from "@/components/AppShell";
 import { Bibo } from "@/components/Bibo";
@@ -15,7 +15,7 @@ export function Rewards() {
 
   useEffect(() => {
     if (!profile) return;
-    api.progress(profile.id).then(setSummary).catch(() => setSummary(null));
+    data.progress(profile.id).then(setSummary).catch(() => setSummary(null));
   }, [profile]);
 
   const total = summary?.total_stars ?? 0;

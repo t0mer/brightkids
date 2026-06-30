@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Trash2 } from "lucide-react";
 import { useTranslation } from "react-i18next";
-import { api } from "@/lib/api";
+import { data } from "@/lib/data";
 import type { Settings as SettingsT } from "@/lib/types";
 import { AppShell } from "@/components/AppShell";
 import { Card } from "@/components/ui/card";
@@ -37,7 +37,7 @@ export function Settings() {
   function patch(p: Partial<SettingsT>) {
     const next = { ...settings!, ...p };
     setSettings(next);
-    void api.updateSettings(next).catch(() => {});
+    void data.updateSettings(next).catch(() => {});
   }
 
   function changeLang(lang: string) {
@@ -47,7 +47,7 @@ export function Settings() {
   }
 
   async function remove() {
-    await api.deleteProfile(profile!.id).catch(() => {});
+    await data.deleteProfile(profile!.id).catch(() => {});
     setProfile(null);
     setSettings(null);
     navigate("/");

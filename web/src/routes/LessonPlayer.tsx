@@ -4,6 +4,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { Star, Shuffle } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { api } from "@/lib/api";
+import { data } from "@/lib/data";
 import type { Lesson, LessonSummary } from "@/lib/types";
 import { ACTIVITY_RENDERERS } from "@/activities";
 import { AppShell } from "@/components/AppShell";
@@ -80,7 +81,8 @@ export function LessonPlayer() {
       celebrate(lesson.reward.effect, reduceMotion);
       bigCelebrate(reduceMotion);
       speak(t("activity.great"), { locale, enabled: voiceEnabled });
-      if (profile) void api.recordProgress(profile.id, lesson.id, stars).catch(() => {});
+      if (profile)
+        void data.recordProgress(profile.id, lesson.id, stars, lesson.subject, lesson.grade).catch(() => {});
     },
     [lesson, solved, reduceMotion, locale, voiceEnabled, profile, t],
   );

@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Plus } from "lucide-react";
 import { useTranslation } from "react-i18next";
-import { api } from "@/lib/api";
+import { data } from "@/lib/data";
 import type { Profile } from "@/lib/types";
 import { AVATARS } from "@/lib/avatars";
 import { useStore } from "@/store/useStore";
@@ -21,7 +21,7 @@ export function Start() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    api
+    data
       .listProfiles()
       .then(setProfiles)
       .catch(() => setProfiles([]))
@@ -32,7 +32,7 @@ export function Start() {
     play("pop");
     setProfile(p);
     try {
-      const s = await api.getSettings(p.id);
+      const s = await data.getSettings(p.id);
       setSettings(s);
     } catch {
       /* settings fall back to defaults */
@@ -90,7 +90,7 @@ function NewPlayer({ onCreated }: { onCreated: (p: Profile) => void }) {
     if (!name.trim() || busy) return;
     setBusy(true);
     try {
-      const p = await api.createProfile(name.trim(), avatar, i18n.language);
+      const p = await data.createProfile(name.trim(), avatar, i18n.language);
       setOpen(false);
       setName("");
       onCreated(p);

@@ -3,7 +3,7 @@ import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import { useStore, applyTheme, applyAppearance } from "@/store/useStore";
 import { setUiDirection } from "@/i18n";
 import { setSfxMuted } from "@/lib/sfx";
-import { api } from "@/lib/api";
+import { data } from "@/lib/data";
 import { Start } from "@/routes/Start";
 import { Subjects } from "@/routes/Subjects";
 import { Grades } from "@/routes/Grades";
@@ -32,7 +32,7 @@ export default function App() {
       setSfxMuted(!settings.sound_enabled);
     }
     if (profile) {
-      api
+      data
         .getSettings(profile.id)
         .then(setSettings)
         .catch(() => {});
