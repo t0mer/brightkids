@@ -119,6 +119,23 @@ func TestArithmeticRejectsBadProblemInSet(t *testing.T) {
 	}
 }
 
+func TestMultipleChoiceQuestionSet(t *testing.T) {
+	good := `{id: q, subject: math, grade: 1, difficulty: 2, locale: he-IL, direction: ltr, title: t, activity: multiple-choice, prompt_tts: p, questions: [{glyph: "8", items: [{id: a, label: even, correct: true},{id: b, label: odd}]},{glyph: "7", items: [{id: a, label: even},{id: b, label: odd, correct: true}]}], reward: {stars: 3, sfx: ding, effect: confetti}}`
+	lib, err := Load(mustFS(t, map[string]string{"q.yaml": good}), "")
+	if err != nil {
+		t.Fatalf("Load question set: %v", err)
+	}
+	if ls, ok := lib.Lesson("q"); !ok || len(ls.Questions) != 2 {
+		t.Fatalf("expected 2 questions, got %+v", ls.Questions)
+	}
+
+	// A question with no correct item is rejected.
+	bad := `{id: q, subject: math, grade: 1, difficulty: 2, locale: he-IL, direction: ltr, title: t, activity: multiple-choice, prompt_tts: p, questions: [{glyph: "8", items: [{id: a, label: even},{id: b, label: odd}]}], reward: {stars: 3, sfx: d, effect: e}}`
+	if _, err := Load(mustFS(t, map[string]string{"q.yaml": bad}), ""); err == nil {
+		t.Fatal("expected error for question with no correct item")
+	}
+}
+
 func TestComparisonActivity(t *testing.T) {
 	good := `{id: c, subject: math, grade: 1, difficulty: 1, locale: he-IL, direction: ltr, title: t, activity: comparison, prompt_tts: p, comparisons: [{left: 7, right: 3},{left: 2, right: 9}], reward: {stars: 1, sfx: d, effect: e}}`
 	lib, err := Load(mustFS(t, map[string]string{"c.yaml": good}), "")

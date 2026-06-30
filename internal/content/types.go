@@ -46,6 +46,9 @@ type Lesson struct {
 
 	// Items: choices/tokens/objects depending on the activity.
 	Items []Item `yaml:"items,omitempty" json:"items,omitempty"`
+	// Questions: a multiple-choice practice set — the activity steps through each
+	// question (3-5 from the same category) in a randomized order.
+	Questions []Question `yaml:"questions,omitempty" json:"questions,omitempty"`
 	// Pairs: matching activity (left <-> right).
 	Pairs []Pair `yaml:"pairs,omitempty" json:"pairs,omitempty"`
 	// Problem: a single arithmetic or counting problem.
@@ -81,6 +84,19 @@ type Pair struct {
 	LeftTTS  string `yaml:"left_tts,omitempty" json:"left_tts,omitempty"`
 	RightTTS string `yaml:"right_tts,omitempty" json:"right_tts,omitempty"`
 	Emoji    string `yaml:"emoji,omitempty" json:"emoji,omitempty"`
+}
+
+// Question is one multiple-choice question within a set. Glyph is the optional
+// visible expression (a number, sequence, or equation); Prompt overrides the
+// lesson's spoken/shown instruction for questions whose wording differs (e.g.
+// word problems, "find the number N"). PromptText overrides only the on-screen
+// text when it must differ from what is spoken (e.g. number recognition, where
+// the target is heard, not shown). Exactly one item is correct.
+type Question struct {
+	Prompt     string `yaml:"prompt,omitempty" json:"prompt,omitempty"`
+	PromptText string `yaml:"prompt_text,omitempty" json:"prompt_text,omitempty"`
+	Glyph      string `yaml:"glyph,omitempty" json:"glyph,omitempty"`
+	Items      []Item `yaml:"items" json:"items"`
 }
 
 // Comparison is one "who is bigger?" pair. The two numbers are distinct; the

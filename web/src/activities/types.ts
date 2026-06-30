@@ -13,4 +13,7 @@ export interface ActivityProps {
   onWrong: () => void;
   /** True once solved, so the activity can lock further input. */
   solved: boolean;
+  /** Report the active sub-question's instruction so the LessonPlayer's text and
+   *  Listen button reflect it (used by stepped multiple-choice sets). */
+  onPrompt?: (p: { text: string; tts: string }) => void;
 }

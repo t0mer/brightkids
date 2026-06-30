@@ -59,6 +59,16 @@ export interface Comparison {
   right: number;
 }
 
+export interface Question {
+  /** Per-question spoken+shown Hebrew instruction (overrides the lesson prompt). */
+  prompt?: string;
+  /** On-screen text override when it must differ from what is spoken. */
+  prompt_text?: string;
+  /** Visible expression (number, sequence, equation). */
+  glyph?: string;
+  items: Item[];
+}
+
 export interface Reward {
   stars: number;
   sfx: string;
@@ -83,6 +93,7 @@ export interface Lesson {
   problem?: Problem;
   problems?: Problem[];
   comparisons?: Comparison[];
+  questions?: Question[];
   glyph?: string;
   solution?: string[];
   reward: Reward;

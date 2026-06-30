@@ -55,7 +55,11 @@ func validateLesson(l Lesson) error {
 	}
 
 	switch l.Activity {
-	case ActivityLetterRecognition, ActivityMultipleChoice:
+	case ActivityMultipleChoice, ActivityLetterRecognition:
+		// Both support either a single `items` set or a `questions` set.
+		if len(l.Questions) > 0 {
+			return validateQuestionSet(l)
+		}
 		return validateChoice(l)
 	case ActivityTracing:
 		return validateTracing(l)
@@ -89,12 +93,18 @@ func validateComparison(l Lesson) error {
 }
 
 func validateChoice(l Lesson) error {
-	if len(l.Items) < 2 {
-		return fmt.Errorf("%s needs at least 2 items", l.Activity)
+	return validateChoiceItems(l.Items, l.Activity)
+}
+
+// validateChoiceItems checks a single set of options: at least 2, unique ids,
+// each renderable, exactly one correct.
+func validateChoiceItems(items []Item, activity string) error {
+	if len(items) < 2 {
+		return fmt.Errorf("%s needs at least 2 items", activity)
 	}
 	correct := 0
 	seen := map[string]bool{}
-	for _, it := range l.Items {
+	for _, it := range items {
 		if it.ID == "" {
 			return fmt.Errorf("item missing id")
 		}
@@ -110,7 +120,21 @@ func validateChoice(l Lesson) error {
 		}
 	}
 	if correct != 1 {
-		return fmt.Errorf("%s needs exactly 1 correct item, found %d", l.Activity, correct)
+		return fmt.Errorf("%s needs exactly 1 correct item, found %d", activity, correct)
+	}
+	return nil
+}
+
+// validateQuestionSet checks a multiple-choice set: at least one question, each
+// with a valid set of options.
+func validateQuestionSet(l Lesson) error {
+	if len(l.Questions) == 0 {
+		return fmt.Errorf("multiple-choice set needs at least one question")
+	}
+	for i, q := range l.Questions {
+		if err := validateChoiceItems(q.Items, "multiple-choice"); err != nil {
+			return fmt.Errorf("questions[%d]: %w", i, err)
+		}
 	}
 	return nil
 }

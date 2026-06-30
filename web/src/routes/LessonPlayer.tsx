@@ -27,6 +27,8 @@ export function LessonPlayer() {
   const [earned, setEarned] = useState(0);
   const [mood, setMood] = useState<BiboMood>("idle");
   const [almost, setAlmost] = useState(false);
+  // The active sub-question's instruction, reported by stepped activities.
+  const [prompt, setPrompt] = useState<{ text: string; tts: string } | null>(null);
 
   const reduceMotion = settings?.reduce_motion ?? false;
   const voiceEnabled = settings?.voice_enabled ?? true;
@@ -40,6 +42,7 @@ export function LessonPlayer() {
     setSolved(false);
     setEarned(0);
     setMood("idle");
+    setPrompt(null);
     api.lesson(id).then((l) => {
       setLesson(l);
       api.lessons(l.subject, l.grade).then(setSiblings).catch(() => setSiblings([]));
@@ -47,6 +50,12 @@ export function LessonPlayer() {
   }, [id]);
 
   // No auto-narration — the prompt is only spoken when the child taps Listen.
+  const onPrompt = useCallback((p: { text: string; tts: string }) => setPrompt(p), []);
+
+  // Shown instruction text and spoken text: the active question overrides the
+  // lesson-level instruction when a set reports one.
+  const instructionText = prompt?.text || lesson?.instruction || lesson?.prompt_tts || "";
+  const spokenText = prompt?.tts || lesson?.prompt_tts || "";
 
   const onCorrect = useCallback(
     (stars: number) => {
@@ -83,7 +92,7 @@ export function LessonPlayer() {
   const Renderer = ACTIVITY_RENDERERS[lesson.activity];
   const idx = siblings.findIndex((s) => s.id === lesson.id);
   const next = idx >= 0 && idx < siblings.length - 1 ? siblings[idx + 1] : null;
-  const lessonsPath = `/subject/${lesson.subject}`;
+  const lessonsPath = `/subject/${lesson.subject}/grade/${lesson.grade}`;
 
   return (
     <AppShell back={lessonsPath}>
@@ -99,10 +108,10 @@ export function LessonPlayer() {
         {/* Instruction text — always Hebrew (RTL). Spoken narration may differ
             (English for English lessons); the text guides in Hebrew for all. */}
         <p dir="rtl" className="max-w-prose px-2 text-center text-lg text-cream/90">
-          {lesson.instruction || lesson.prompt_tts}
+          {instructionText}
         </p>
 
-        <ListenButton text={lesson.prompt_tts} locale={locale} />
+        <ListenButton text={spokenText} locale={locale} />
 
         {/* "Almost!" gentle nudge */}
         <AnimatePresence>
@@ -121,7 +130,14 @@ export function LessonPlayer() {
         {/* Activity */}
         <div className="flex w-full flex-1 items-center justify-center py-2">
           {Renderer ? (
-            <Renderer lesson={lesson} locale={locale} onCorrect={onCorrect} onWrong={onWrong} solved={solved} />
+            <Renderer
+              lesson={lesson}
+              locale={locale}
+              onCorrect={onCorrect}
+              onWrong={onWrong}
+              solved={solved}
+              onPrompt={onPrompt}
+            />
           ) : null}
         </div>
 
