@@ -84,6 +84,7 @@ Precedence: **flags > env > YAML > defaults**. Copy `config.yaml.example` to
 
 | Key | Flag | Env | Default | Notes |
 |---|---|---|---|---|
+| `mode` | `--mode` | `BRIGHTKIDS_MODE` | `private` | `private` (DB-backed) or `public` (browser-only) — see below |
 | `server.host` | `--host` | `BRIGHTKIDS_SERVER_HOST` | `0.0.0.0` | |
 | `server.port` | `--port` | `BRIGHTKIDS_SERVER_PORT` | `8080` | |
 | `db.path` | `--db-path` | `BRIGHTKIDS_DB_PATH` | `./brightkids.db` | `:memory:` allowed |
@@ -94,17 +95,40 @@ Precedence: **flags > env > YAML > defaults**. Copy `config.yaml.example` to
 
 `--version` prints build info and exits.
 
+### Storage mode: private vs public
+
+The same binary runs two ways, chosen by `mode`:
+
+- **`private`** (default, self-hosted) — child profiles, progress, and settings
+  are persisted **server-side** in pure-Go SQLite (`db.path`). Good for a home
+  lab or family device where progress should survive across browsers.
+- **`public`** — for a stateless public deployment. Profiles, progress, and
+  settings live **only in the browser's `localStorage`**; the server opens **no
+  database** and exposes no profile endpoints. Each visitor's data stays on
+  their own device, so the server holds zero personal data and scales without a
+  volume.
+
+```bash
+# Public web (no database, profiles in the browser):
+docker run -p 8080:8080 -e BRIGHTKIDS_MODE=public techblog/brightkids:latest
+```
+
+The SPA reads `GET /api/v1/config` at boot to learn the mode and routes profile
+storage accordingly — no rebuild needed to switch.
+
 ## HTTP API
 
-All endpoints are under `/api/v1` and return JSON. Content is read-only;
-profiles and progress are local to the device/server.
+All endpoints are under `/api/v1` and return JSON. Content is read-only. The
+profile/progress/settings endpoints exist **only in `private` mode**; in
+`public` mode that data lives in the browser instead.
 
 | Method | Path | Purpose |
 |---|---|---|
+| `GET` | `/api/v1/config` | client config — `{mode}` (private/public) |
 | `GET` | `/api/v1/subjects` | subjects and their grades |
 | `GET` | `/api/v1/lessons?subject=&grade=` | lesson summaries |
 | `GET` | `/api/v1/lessons/{id}` | full lesson (items, tts, reward) |
-| `GET` | `/api/v1/profiles` | list local profiles |
+| `GET` | `/api/v1/profiles` | list local profiles *(private mode)* |
 | `POST` | `/api/v1/profiles` | create a profile `{name, avatar, locale_pref}` |
 | `DELETE` | `/api/v1/profiles/{id}` | delete a profile |
 | `GET` | `/api/v1/profiles/{id}/progress` | progress, total stars, streak |
@@ -124,7 +148,8 @@ profiles and progress are local to the device/server.
 [ Go binary: chi ]  /api/v1  ·  /metrics  ·  /healthz /readyz  ·  SPA fallback
         |
         v
-[ modernc.org/sqlite ]  local profiles, progress, settings
+[ modernc.org/sqlite ]  profiles, progress, settings   (private mode only;
+                                                         public mode = browser localStorage)
 ```
 
 Lessons live as schema-validated YAML under `content/`, embedded into the binary
