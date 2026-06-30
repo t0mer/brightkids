@@ -1,6 +1,6 @@
 # BrightKids
 
-> A kid-friendly web app that teaches **Hebrew**, **English**, and **Math** to children in **grades 1–4** — shipped as a single Go binary serving an embedded, offline-capable PWA.
+> A kid-friendly web app that teaches **Hebrew**, **English**, and **Math** to children in **grades 1–6** — shipped as a single Go binary serving an embedded, offline-capable PWA.
 
 BrightKids is audio-first, mobile-first, and zero-PII: profiles are just a name and a buddy a child picks, stored locally. No accounts, no tracking, no external calls from the child's device. A friendly droid guide named **Bibo** narrates prompts and cheers every correct answer.
 
@@ -12,9 +12,9 @@ BrightKids is audio-first, mobile-first, and zero-PII: profiles are just a name 
 
 ## Features
 
-- **Trilingual content** — Hebrew (RTL), English (LTR), and Math (numeric), grades 1–4, with proper BiDi isolation for mixed Hebrew/digit text.
+- **Trilingual content** — Hebrew (RTL, grades 1–5), English (LTR, grades 1–4), and Math (grades 1–6), with proper BiDi isolation for mixed Hebrew/digit text.
 - **Seven activity types** — letter recognition, multiple choice, counting, arithmetic, matching, drag-to-order, and finger **tracing** (canvas with mask-coverage scoring).
-- **Math built from the original app's categories** — addition, subtraction, multiplication, and division (450+ generated exercises) plus the **"Who is bigger?"** number-comparison game, served as stepped practice runs with a progress bar across grades 1–4.
+- **Curriculum-based exercises** — built from a real graded worksheet curriculum. Math (g1–6) spans counting, comparison ("Who is bigger?"), number sense, place value, the four operations, sequences, even/odd, fractions, decimals, order of operations, rounding, word problems, and clock reading. Hebrew (g1–5) covers vowels, reading comprehension, synonyms/opposites, verbs, and sentence ordering; English (g1–4) covers ABC, phonics, word families, and graded reading. Math & Hebrew narrate in Hebrew; English in English.
 - **Audio-first** — tap-to-hear on every prompt plus auto-narration on load via the Web Speech API (he-IL / en-US), so pre-readers can play.
 - **Playful rewards** — confetti, synthesized sound effects, Bibo reactions, stars, and a daily streak. Mistakes get a gentle "try again," never a shaming buzzer.
 - **Accessible** — 48px tap targets, `prefers-reduced-motion` honored, OpenDyslexic toggle, dark mode, high-contrast palette.
@@ -28,9 +28,9 @@ BrightKids is audio-first, mobile-first, and zero-PII: profiles are just a name 
 |---|---|---|
 | ![Subjects](assets/screenshots/subjects.png) | ![Letter lesson](assets/screenshots/lesson-letter.png) | ![Tracing](assets/screenshots/lesson-trace.png) |
 
-| Arithmetic | Math practice set | Who is bigger? | Rewards |
+| Math concepts | Math practice set | Who is bigger? | Rewards |
 |---|---|---|---|
-| ![Math](assets/screenshots/lesson-math.png) | ![Math set](assets/screenshots/lesson-math-set.png) | ![Compare](assets/screenshots/lesson-compare.png) | ![Rewards](assets/screenshots/rewards.png) |
+| ![Math concept](assets/screenshots/lesson-math-concept.png) | ![Math set](assets/screenshots/lesson-math-set.png) | ![Compare](assets/screenshots/lesson-compare.png) | ![Rewards](assets/screenshots/rewards.png) |
 
 | Settings (parent-gated) | Lesson list | Dark mode | OpenDyslexic |
 |---|---|---|---|
