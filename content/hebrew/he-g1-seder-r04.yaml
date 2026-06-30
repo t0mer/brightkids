@@ -1,0 +1,24 @@
+id: he-g1-seder-r04
+subject: hebrew
+grade: 1
+difficulty: 1
+locale: he-IL
+direction: rtl
+title: "סֵדֶר הָאוֹתִיּוֹת"
+activity: drag-drop
+prompt_tts: "סַדְּרוּ אֶת הָאוֹתִיּוֹת לְפִי סֵדֶר הָאָלֶף בֵּית"
+items:
+  - id: alef
+    label: "א"
+    tts: "אָלֶף"
+  - id: bet
+    label: "ב"
+    tts: "בֵּית"
+  - id: gimel
+    label: "ג"
+    tts: "גִּימֶל"
+  - id: dalet
+    label: "ד"
+    tts: "דָּלֶת"
+solution: [alef, bet, gimel, dalet]
+reward: { stars: 1, sfx: chime, effect: stars }

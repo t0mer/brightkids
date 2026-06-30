@@ -1,0 +1,21 @@
+id: he-g4-poal-r01
+subject: hebrew
+grade: 4
+difficulty: 3
+locale: he-IL
+direction: rtl
+title: "פֹּעַל לְפִי גּוּף וּזְמַן"
+activity: multiple-choice
+prompt_tts: "מָחָר אֲנַחְנוּ ___ לְטִיּוּל. אֵיזֶה פֹּעַל מַתְאִים לְזְמַן עָתִיד וּלְגוּף רַבִּים"
+items:
+  - id: nelech
+    label: "נֵלֵךְ"
+    correct: true
+    tts: "נֵלֵךְ"
+  - id: halachnu
+    label: "הָלַכְנוּ"
+    tts: "הָלַכְנוּ"
+  - id: holech
+    label: "הוֹלֵךְ"
+    tts: "הוֹלֵךְ"
+reward: { stars: 1, sfx: pop, effect: confetti }

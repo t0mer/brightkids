@@ -1,0 +1,11 @@
+id: he-g2-trace-r07
+subject: hebrew
+grade: 2
+difficulty: 2
+locale: he-IL
+direction: rtl
+title: "כְּתָב רָהוּט: הָאוֹת נ"
+activity: tracing
+prompt_tts: "עִקְבוּ אֶת הָאוֹת נוּן בִּכְתָב רָהוּט"
+glyph: "נ"
+reward: { stars: 1, sfx: chime, effect: sparkle }

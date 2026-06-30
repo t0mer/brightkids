@@ -1,0 +1,21 @@
+id: he-g4-misparim-r05
+subject: hebrew
+grade: 4
+difficulty: 3
+locale: he-IL
+direction: rtl
+title: "מִסְפָּרִים בְּזָכָר וּנְקֵבָה"
+activity: multiple-choice
+prompt_tts: "כֵּיצַד נֹאמַר שָׁלוֹשׁ עִם הַמִּילָּה יְלָדוֹת"
+items:
+  - id: shalosh
+    label: "שָׁלוֹשׁ יְלָדוֹת"
+    correct: true
+    tts: "שָׁלוֹשׁ יְלָדוֹת"
+  - id: shlosha
+    label: "שְׁלוֹשָׁה יְלָדוֹת"
+    tts: "שְׁלוֹשָׁה יְלָדוֹת"
+  - id: shlishi
+    label: "שְׁלִישִׁי יְלָדוֹת"
+    tts: "שְׁלִישִׁי יְלָדוֹת"
+reward: { stars: 1, sfx: ding, effect: confetti }

@@ -1,0 +1,21 @@
+id: he-g5-siba-r02
+subject: hebrew
+grade: 5
+difficulty: 3
+locale: he-IL
+direction: rtl
+title: "סִיבָּה וְתוֹצָאָה"
+activity: multiple-choice
+prompt_tts: "הַיֶּלֶד לֹא לָמַד לַמִּבְחָן, לָכֵן ___ . מָה הַתּוֹצָאָה הַמַּתְאִימָה"
+items:
+  - id: nichshal
+    label: "הוּא נִכְשַׁל בַּמִּבְחָן"
+    correct: true
+    tts: "הוּא נִכְשַׁל בַּמִּבְחָן"
+  - id: hitslia
+    label: "הוּא הִצְלִיחַ בְּקַלּוּת"
+    tts: "הוּא הִצְלִיחַ בְּקַלּוּת"
+  - id: yashan
+    label: "הוּא קִיבֵּל פְּרָס"
+    tts: "הוּא קִיבֵּל פְּרָס"
+reward: { stars: 1, sfx: pop, effect: confetti }

@@ -1,0 +1,24 @@
+id: he-g4-shoresh-r06
+subject: hebrew
+grade: 4
+difficulty: 3
+locale: he-IL
+direction: rtl
+title: "מִשְׁפְּחוֹת מִילִּים לְפִי שׁוֹרֶשׁ"
+activity: multiple-choice
+prompt_tts: "אֵיזוֹ מִילָּה אֵינָהּ שַׁיֶּכֶת לַמִּשְׁפָּחָה שֶׁל הַשּׁוֹרֶשׁ ל-מ-ד"
+items:
+  - id: limon
+    label: "לִימוֹן"
+    correct: true
+    tts: "לִימוֹן"
+  - id: talmid
+    label: "תַּלְמִיד"
+    tts: "תַּלְמִיד"
+  - id: limud
+    label: "לִימּוּד"
+    tts: "לִימּוּד"
+  - id: melamed
+    label: "מְלַמֵּד"
+    tts: "מְלַמֵּד"
+reward: { stars: 1, sfx: pop, effect: confetti }

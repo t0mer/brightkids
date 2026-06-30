@@ -1,0 +1,26 @@
+id: he-g2-zachar-r04
+subject: hebrew
+grade: 2
+difficulty: 2
+locale: he-IL
+direction: rtl
+title: "זָכָר וּנְקֵבָה בְּבַעֲלֵי חַיִּים"
+activity: matching
+prompt_tts: "חַבְּרוּ כָּל זָכָר לַנְּקֵבָה הַמַּתְאִימָה"
+pairs:
+  - id: arie
+    left: "אַרְיֵה"
+    right: "לְבִיאָה"
+    left_tts: "אַרְיֵה"
+    right_tts: "לְבִיאָה"
+  - id: tarnegol
+    left: "תַּרְנְגוֹל"
+    right: "תַּרְנְגֹלֶת"
+    left_tts: "תַּרְנְגוֹל"
+    right_tts: "תַּרְנְגֹלֶת"
+  - id: par
+    left: "פַּר"
+    right: "פָּרָה"
+    left_tts: "פַּר"
+    right_tts: "פָּרָה"
+reward: { stars: 1, sfx: ding, effect: sparkle }

@@ -1,0 +1,24 @@
+id: he-g3-milon-r07
+subject: hebrew
+grade: 3
+difficulty: 2
+locale: he-IL
+direction: rtl
+title: "סִידּוּר מִילִּים לְפִי הָאָלֶף בֵּית"
+activity: drag-drop
+prompt_tts: "סַדְּרוּ אֶת הַמִּילִּים לְפִי סֵדֶר הָאָלֶף בֵּית כְּמוֹ בַּמִּילּוֹן"
+items:
+  - id: avocado
+    label: "אֲבוֹקָדוֹ"
+    tts: "אֲבוֹקָדוֹ"
+  - id: banana
+    label: "בָּנָנָה"
+    tts: "בָּנָנָה"
+  - id: gezer
+    label: "גֶּזֶר"
+    tts: "גֶּזֶר"
+  - id: dvash
+    label: "דְּבַשׁ"
+    tts: "דְּבַשׁ"
+solution: [avocado, banana, gezer, dvash]
+reward: { stars: 1, sfx: ding, effect: stars }

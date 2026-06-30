@@ -1,0 +1,31 @@
+id: he-g4-nirdafot-r02
+subject: hebrew
+grade: 4
+difficulty: 3
+locale: he-IL
+direction: rtl
+title: "מִילִּים נִרְדָּפוֹת"
+activity: matching
+prompt_tts: "חַבְּרוּ כָּל מִילָּה לַמִּילָּה הַנִּרְדֶּפֶת בְּמַשְׁמָעוּתָהּ"
+pairs:
+  - id: bait
+    left: "בַּיִת"
+    right: "מָעוֹן"
+    left_tts: "בַּיִת"
+    right_tts: "מָעוֹן"
+  - id: derech
+    left: "דֶּרֶךְ"
+    right: "נָתִיב"
+    left_tts: "דֶּרֶךְ"
+    right_tts: "נָתִיב"
+  - id: pachad
+    left: "פַּחַד"
+    right: "אֵימָה"
+    left_tts: "פַּחַד"
+    right_tts: "אֵימָה"
+  - id: simcha
+    left: "שִׂמְחָה"
+    right: "גִּיל"
+    left_tts: "שִׂמְחָה"
+    right_tts: "גִּיל"
+reward: { stars: 1, sfx: ding, effect: sparkle }

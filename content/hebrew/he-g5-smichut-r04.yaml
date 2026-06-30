@@ -1,0 +1,21 @@
+id: he-g5-smichut-r04
+subject: hebrew
+grade: 5
+difficulty: 3
+locale: he-IL
+direction: rtl
+title: "סְמִיכוּת"
+activity: multiple-choice
+prompt_tts: "אֵיזֶה צֵירוּף הוּא סְמִיכוּת תְּקִינָה לְבֵית שֶׁל סֵפֶר"
+items:
+  - id: bet-sefer
+    label: "בֵּית סֵפֶר"
+    correct: true
+    tts: "בֵּית סֵפֶר"
+  - id: bait-sefer
+    label: "בַּיִת סֵפֶר"
+    tts: "בַּיִת סֵפֶר"
+  - id: sefer-bait
+    label: "סֵפֶר בַּיִת"
+    tts: "סֵפֶר בַּיִת"
+reward: { stars: 1, sfx: pop, effect: confetti }

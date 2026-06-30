@@ -1,0 +1,24 @@
+id: he-g3-yamim-r03
+subject: hebrew
+grade: 3
+difficulty: 2
+locale: he-IL
+direction: rtl
+title: "יְמֵי הַשָּׁבוּעַ"
+activity: drag-drop
+prompt_tts: "סַדְּרוּ אֶת יְמֵי הַשָּׁבוּעַ לְפִי הַסֵּדֶר הַנָּכוֹן"
+items:
+  - id: rishon
+    label: "רִאשׁוֹן"
+    tts: "יוֹם רִאשׁוֹן"
+  - id: sheni
+    label: "שֵׁנִי"
+    tts: "יוֹם שֵׁנִי"
+  - id: shlishi
+    label: "שְׁלִישִׁי"
+    tts: "יוֹם שְׁלִישִׁי"
+  - id: revii
+    label: "רְבִיעִי"
+    tts: "יוֹם רְבִיעִי"
+solution: [rishon, sheni, shlishi, revii]
+reward: { stars: 1, sfx: chime, effect: stars }

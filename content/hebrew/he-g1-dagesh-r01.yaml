@@ -1,0 +1,21 @@
+id: he-g1-dagesh-r01
+subject: hebrew
+grade: 1
+difficulty: 1
+locale: he-IL
+direction: rtl
+title: "דְּגוּשׁוֹת וּרְפוּיוֹת: הָאוֹת בּ"
+activity: multiple-choice
+prompt_tts: "אֵיזוֹ אוֹת נִשְׁמַעַת בּ כְּמוֹ בְּמִילָּה בַּיִת"
+items:
+  - id: bet-dagesh
+    label: "בּ"
+    correct: true
+    tts: "בּ"
+  - id: vet-rafa
+    label: "ב"
+    tts: "ב"
+  - id: kaf
+    label: "כ"
+    tts: "כ"
+reward: { stars: 1, sfx: ding, effect: confetti }

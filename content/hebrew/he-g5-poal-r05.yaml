@@ -1,0 +1,21 @@
+id: he-g5-poal-r05
+subject: hebrew
+grade: 5
+difficulty: 3
+locale: he-IL
+direction: rtl
+title: "נִיתּוּחַ פְּעָלִים: זְמַן הֶעָבָר"
+activity: multiple-choice
+prompt_tts: "אֵיזֶה פֹּעַל כָּתוּב בִּזְמַן עָבָר"
+items:
+  - id: shamar
+    label: "שָׁמַר"
+    correct: true
+    tts: "שָׁמַר"
+  - id: shomer
+    label: "שׁוֹמֵר"
+    tts: "שׁוֹמֵר"
+  - id: yishmor
+    label: "יִשְׁמוֹר"
+    tts: "יִשְׁמוֹר"
+reward: { stars: 1, sfx: ding, effect: confetti }

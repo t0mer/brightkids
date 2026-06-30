@@ -1,0 +1,21 @@
+id: he-g2-yahid-r03
+subject: hebrew
+grade: 2
+difficulty: 2
+locale: he-IL
+direction: rtl
+title: "יָחִיד וְרַבִּים"
+activity: multiple-choice
+prompt_tts: "מַהוּ צוּרַת הָרַבִּים שֶׁל הַמִּילָּה סֵפֶר"
+items:
+  - id: sfarim
+    label: "סְפָרִים"
+    correct: true
+    tts: "סְפָרִים"
+  - id: sefer
+    label: "סֵפֶר"
+    tts: "סֵפֶר"
+  - id: sifria
+    label: "סִפְרִיָּה"
+    tts: "סִפְרִיָּה"
+reward: { stars: 1, sfx: ding, effect: confetti }

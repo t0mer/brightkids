@@ -1,0 +1,24 @@
+id: he-g2-retsef-r05
+subject: hebrew
+grade: 2
+difficulty: 2
+locale: he-IL
+direction: rtl
+title: "סִידּוּר מִשְׁפָּט לְפִי הָרֶצֶף"
+activity: drag-drop
+prompt_tts: "סַדְּרוּ אֶת הַמִּילִּים לְמִשְׁפָּט תָּקִין"
+items:
+  - id: w1
+    label: "אַבָּא"
+    tts: "אַבָּא"
+  - id: w2
+    label: "נָסַע"
+    tts: "נָסַע"
+  - id: w3
+    label: "לַעֲבוֹדָה"
+    tts: "לַעֲבוֹדָה"
+  - id: w4
+    label: "בַּבֹּקֶר"
+    tts: "בַּבֹּקֶר"
+solution: [w1, w2, w3, w4]
+reward: { stars: 1, sfx: chime, effect: stars }

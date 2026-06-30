@@ -1,0 +1,21 @@
+id: he-g3-shoresh-r04
+subject: hebrew
+grade: 3
+difficulty: 2
+locale: he-IL
+direction: rtl
+title: "שׁוֹרָשִׁים וּמִשְׁפְּחוֹת מִילִּים"
+activity: multiple-choice
+prompt_tts: "אֵיזוֹ מִילָּה שַׁיֶּכֶת לַמִּשְׁפָּחָה שֶׁל הַשּׁוֹרֶשׁ כ-ת-ב"
+items:
+  - id: michtav
+    label: "מִכְתָּב"
+    correct: true
+    tts: "מִכְתָּב"
+  - id: shulchan
+    label: "שֻׁלְחָן"
+    tts: "שֻׁלְחָן"
+  - id: gader
+    label: "גָּדֵר"
+    tts: "גָּדֵר"
+reward: { stars: 1, sfx: ding, effect: confetti }

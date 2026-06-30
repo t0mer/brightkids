@@ -1,0 +1,26 @@
+id: he-g5-chay-r03
+subject: hebrew
+grade: 5
+difficulty: 3
+locale: he-IL
+direction: rtl
+title: "חַי, צוֹמֵחַ, דּוֹמֵם"
+activity: matching
+prompt_tts: "חַבְּרוּ כָּל דֻּגְמָה לַקְּבוּצָה הַמַּתְאִימָה: חַי, צוֹמֵחַ אוֹ דּוֹמֵם"
+pairs:
+  - id: kelev
+    left: "כֶּלֶב"
+    right: "חַי"
+    left_tts: "כֶּלֶב"
+    right_tts: "חַי"
+  - id: etz
+    left: "עֵץ"
+    right: "צוֹמֵחַ"
+    left_tts: "עֵץ"
+    right_tts: "צוֹמֵחַ"
+  - id: even
+    left: "אֶבֶן"
+    right: "דּוֹמֵם"
+    left_tts: "אֶבֶן"
+    right_tts: "דּוֹמֵם"
+reward: { stars: 1, sfx: ding, effect: sparkle }

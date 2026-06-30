@@ -1,0 +1,31 @@
+id: he-g5-nirdafot-r01
+subject: hebrew
+grade: 5
+difficulty: 3
+locale: he-IL
+direction: rtl
+title: "מִילִּים נִרְדָּפוֹת"
+activity: matching
+prompt_tts: "חַבְּרוּ כָּל מִילָּה לַמִּילָּה הַנִּרְדֶּפֶת בְּמַשְׁמָעוּתָהּ"
+pairs:
+  - id: gibor
+    left: "גִּיבּוֹר"
+    right: "אַמִּיץ"
+    left_tts: "גִּיבּוֹר"
+    right_tts: "אַמִּיץ"
+  - id: yagon
+    left: "יָגוֹן"
+    right: "עֶצֶב"
+    left_tts: "יָגוֹן"
+    right_tts: "עֶצֶב"
+  - id: maher
+    left: "מָהִיר"
+    right: "זָרִיז"
+    left_tts: "מָהִיר"
+    right_tts: "זָרִיז"
+  - id: hadar
+    left: "הָדָר"
+    right: "פְּאֵר"
+    left_tts: "הָדָר"
+    right_tts: "פְּאֵר"
+reward: { stars: 1, sfx: ding, effect: sparkle }

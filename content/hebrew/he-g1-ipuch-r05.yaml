@@ -1,0 +1,26 @@
+id: he-g1-ipuch-r05
+subject: hebrew
+grade: 1
+difficulty: 1
+locale: he-IL
+direction: rtl
+title: "מִילָּה וְהִיפּוּכָהּ"
+activity: matching
+prompt_tts: "חַבְּרוּ כָּל מִילָּה לַמִּילָּה הַהֲפוּכָה לָהּ"
+pairs:
+  - id: gadol
+    left: "גָּדוֹל"
+    right: "קָטָן"
+    left_tts: "גָּדוֹל"
+    right_tts: "קָטָן"
+  - id: yom
+    left: "יוֹם"
+    right: "לַיְלָה"
+    left_tts: "יוֹם"
+    right_tts: "לַיְלָה"
+  - id: cham
+    left: "חַם"
+    right: "קַר"
+    left_tts: "חַם"
+    right_tts: "קַר"
+reward: { stars: 1, sfx: ding, effect: sparkle }

@@ -1,0 +1,21 @@
+id: he-g5-read-r06
+subject: hebrew
+grade: 5
+difficulty: 3
+locale: he-IL
+direction: rtl
+title: "הֲבָנַת הַנִּקְרָא: הַבַּרְוְזוֹן הַמְכֹעָר"
+activity: multiple-choice
+prompt_tts: "הַבַּרְוְזוֹן הַמְכֹעָר הָיָה שׁוֹנֶה מֵאֶחָיו, וּלְבַסּוֹף גָּדַל וְהָפַךְ לְבַרְבּוּר יָפֶה. לְמָה הָפַךְ הַבַּרְוְזוֹן בַּסּוֹף"
+items:
+  - id: barbur
+    label: "לְבַרְבּוּר יָפֶה"
+    correct: true
+    tts: "לְבַרְבּוּר יָפֶה"
+  - id: barvaz
+    label: "לְבַרְוָז מְכֹעָר"
+    tts: "לְבַרְוָז מְכֹעָר"
+  - id: tarnegol
+    label: "לְתַרְנְגוֹל"
+    tts: "לְתַרְנְגוֹל"
+reward: { stars: 1, sfx: pop, effect: confetti }

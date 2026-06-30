@@ -1,0 +1,31 @@
+id: he-g3-ipuch-r02
+subject: hebrew
+grade: 3
+difficulty: 2
+locale: he-IL
+direction: rtl
+title: "מִילָּה וְהִיפּוּכָהּ"
+activity: matching
+prompt_tts: "חַבְּרוּ כָּל מִילָּה לַהֲפוּכָה לָהּ"
+pairs:
+  - id: malei
+    left: "מָלֵא"
+    right: "רֵיק"
+    left_tts: "מָלֵא"
+    right_tts: "רֵיק"
+  - id: ohev
+    left: "אוֹהֵב"
+    right: "שׂוֹנֵא"
+    left_tts: "אוֹהֵב"
+    right_tts: "שׂוֹנֵא"
+  - id: rachok
+    left: "רָחוֹק"
+    right: "קָרוֹב"
+    left_tts: "רָחוֹק"
+    right_tts: "קָרוֹב"
+  - id: matchil
+    left: "מַתְחִיל"
+    right: "מְסַיֵּם"
+    left_tts: "מַתְחִיל"
+    right_tts: "מְסַיֵּם"
+reward: { stars: 1, sfx: ding, effect: sparkle }

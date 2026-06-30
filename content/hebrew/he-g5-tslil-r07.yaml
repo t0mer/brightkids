@@ -1,0 +1,26 @@
+id: he-g5-tslil-r07
+subject: hebrew
+grade: 5
+difficulty: 3
+locale: he-IL
+direction: rtl
+title: "מִילִּים עִם צְלִיל זֵהֶה"
+activity: matching
+prompt_tts: "חַבְּרוּ כָּל מִילָּה לַמִּילָּה שֶׁנִּשְׁמַעַת דּוֹמָה אַךְ נִכְתֶּבֶת אַחֶרֶת"
+pairs:
+  - id: kol
+    left: "קוֹל"
+    right: "כֹּל"
+    left_tts: "קוֹל"
+    right_tts: "כֹּל"
+  - id: shana
+    left: "שָׁנָה"
+    right: "שָׂנֵא"
+    left_tts: "שָׁנָה"
+    right_tts: "שָׂנֵא"
+  - id: ir
+    left: "עִיר"
+    right: "אִיר"
+    left_tts: "עִיר"
+    right_tts: "אִיר"
+reward: { stars: 1, sfx: ding, effect: sparkle }

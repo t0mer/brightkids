@@ -1,0 +1,21 @@
+id: he-g2-poal-r02
+subject: hebrew
+grade: 2
+difficulty: 2
+locale: he-IL
+direction: rtl
+title: "הַפֹּעַל בַּמִּשְׁפָּט"
+activity: multiple-choice
+prompt_tts: "הַיַּלְדָּה ___ בַּגַּן. אֵיזוֹ מִילָּה הִיא פֹּעַל"
+items:
+  - id: mesacheket
+    label: "מְשַׂחֶקֶת"
+    correct: true
+    tts: "מְשַׂחֶקֶת"
+  - id: kise
+    label: "כִּסֵּא"
+    tts: "כִּסֵּא"
+  - id: yafa
+    label: "יָפָה"
+    tts: "יָפָה"
+reward: { stars: 1, sfx: pop, effect: confetti }

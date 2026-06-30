@@ -1,0 +1,21 @@
+id: he-g1-read-r03
+subject: hebrew
+grade: 1
+difficulty: 1
+locale: he-IL
+direction: rtl
+title: "הֲבָנַת הַנִּקְרָא: הַחָתוּל"
+activity: multiple-choice
+prompt_tts: "הֶחָתוּל יָשַׁן עַל הַכִּסֵּא. אֵיפֹה יָשַׁן הֶחָתוּל"
+items:
+  - id: kise
+    label: "עַל הַכִּסֵּא"
+    correct: true
+    tts: "עַל הַכִּסֵּא"
+  - id: shulchan
+    label: "עַל הַשֻּׁלְחָן"
+    tts: "עַל הַשֻּׁלְחָן"
+  - id: mita
+    label: "עַל הַמִּטָּה"
+    tts: "עַל הַמִּטָּה"
+reward: { stars: 1, sfx: pop, effect: confetti }

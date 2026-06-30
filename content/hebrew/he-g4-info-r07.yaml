@@ -1,0 +1,21 @@
+id: he-g4-info-r07
+subject: hebrew
+grade: 4
+difficulty: 3
+locale: he-IL
+direction: rtl
+title: "קֶטַע אִינְפוֹרְמָטִיבִי: הַפִּיל"
+activity: multiple-choice
+prompt_tts: "הַפִּיל הוּא בַּעַל הַחַיִּים הַיַּבָּשָׁתִי הַגָּדוֹל בְּיוֹתֵר. הוּא מִשְׁתַּמֵּשׁ בַּחֵדֶק כְּדֵי לִשְׁתּוֹת. בְּמָה מִשְׁתַּמֵּשׁ הַפִּיל כְּדֵי לִשְׁתּוֹת"
+items:
+  - id: chedek
+    label: "בַּחֵדֶק"
+    correct: true
+    tts: "בַּחֵדֶק"
+  - id: oznayim
+    label: "בָּאָזְנַיִם"
+    tts: "בָּאָזְנַיִם"
+  - id: raglayim
+    label: "בָּרַגְלַיִם"
+    tts: "בָּרַגְלַיִם"
+reward: { stars: 1, sfx: pop, effect: confetti }
