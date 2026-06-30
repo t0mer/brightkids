@@ -1,0 +1,21 @@
+id: en-g4-self-r01
+subject: english
+grade: 4
+difficulty: 3
+locale: en-US
+direction: ltr
+title: "Describe Yourself"
+activity: multiple-choice
+prompt_tts: "You want to say where you live. Pick the correct sentence."
+items:
+  - id: live
+    label: "I live in a small town."
+    correct: true
+    tts: "I live in a small town."
+  - id: like
+    label: "I live a big apple."
+    tts: "I live a big apple."
+  - id: run
+    label: "I live very fast."
+    tts: "I live very fast."
+reward: { stars: 1, sfx: ding, effect: confetti }

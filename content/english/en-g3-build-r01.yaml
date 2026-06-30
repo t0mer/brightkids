@@ -1,0 +1,24 @@
+id: en-g3-build-r01
+subject: english
+grade: 3
+difficulty: 2
+locale: en-US
+direction: ltr
+title: "Build the Word FROG"
+activity: drag-drop
+prompt_tts: "Put the letters in order to spell frog"
+items:
+  - id: f
+    label: "f"
+    tts: "f"
+  - id: r
+    label: "r"
+    tts: "r"
+  - id: o
+    label: "o"
+    tts: "o"
+  - id: g
+    label: "g"
+    tts: "g"
+solution: [f, r, o, g]
+reward: { stars: 2, sfx: chime, effect: sparkle }

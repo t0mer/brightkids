@@ -1,0 +1,21 @@
+id: en-g1-letters-r03
+subject: english
+grade: 1
+difficulty: 1
+locale: en-US
+direction: ltr
+title: "Match the Lowercase a"
+activity: letter-recognition
+prompt_tts: "The big letter is A. Tap the small letter a."
+items:
+  - id: a_lower
+    label: "a"
+    correct: true
+    tts: "small a"
+  - id: e_lower
+    label: "e"
+    tts: "small e"
+  - id: o_lower
+    label: "o"
+    tts: "small o"
+reward: { stars: 1, sfx: pop, effect: stars }

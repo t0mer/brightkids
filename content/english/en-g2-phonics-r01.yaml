@@ -1,0 +1,21 @@
+id: en-g2-phonics-r01
+subject: english
+grade: 2
+difficulty: 2
+locale: en-US
+direction: ltr
+title: "First Sound: Sun"
+activity: multiple-choice
+prompt_tts: "What is the first sound in the word sun?"
+items:
+  - id: s
+    label: "s"
+    correct: true
+    tts: "s says sss"
+  - id: m
+    label: "m"
+    tts: "m says mmm"
+  - id: f
+    label: "f"
+    tts: "f says fff"
+reward: { stars: 1, sfx: pop, effect: confetti }

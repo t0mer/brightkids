@@ -1,0 +1,21 @@
+id: en-g2-build-r01
+subject: english
+grade: 2
+difficulty: 2
+locale: en-US
+direction: ltr
+title: "Build the Word SUN"
+activity: drag-drop
+prompt_tts: "Put the letters in order to spell sun"
+items:
+  - id: s
+    label: "s"
+    tts: "s"
+  - id: u
+    label: "u"
+    tts: "u"
+  - id: n
+    label: "n"
+    tts: "n"
+solution: [s, u, n]
+reward: { stars: 2, sfx: pop, effect: sparkle }

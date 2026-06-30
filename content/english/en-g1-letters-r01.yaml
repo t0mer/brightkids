@@ -1,0 +1,24 @@
+id: en-g1-letters-r01
+subject: english
+grade: 1
+difficulty: 1
+locale: en-US
+direction: ltr
+title: "Find the Letter A"
+activity: letter-recognition
+prompt_tts: "Find the letter A"
+items:
+  - id: a
+    label: "A"
+    correct: true
+    tts: "A"
+  - id: m
+    label: "M"
+    tts: "M"
+  - id: t
+    label: "T"
+    tts: "T"
+  - id: s
+    label: "S"
+    tts: "S"
+reward: { stars: 1, sfx: ding, effect: confetti }

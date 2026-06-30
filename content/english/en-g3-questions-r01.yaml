@@ -1,0 +1,31 @@
+id: en-g3-questions-r01
+subject: english
+grade: 3
+difficulty: 2
+locale: en-US
+direction: ltr
+title: "Question Words"
+activity: matching
+prompt_tts: "Match each question word to what it asks about"
+pairs:
+  - id: who
+    left: "Who"
+    left_tts: "Who"
+    right: "a person"
+    right_tts: "a person"
+  - id: what
+    left: "What"
+    left_tts: "What"
+    right: "a thing"
+    right_tts: "a thing"
+  - id: where
+    left: "Where"
+    left_tts: "Where"
+    right: "a place"
+    right_tts: "a place"
+  - id: when
+    left: "When"
+    left_tts: "When"
+    right: "a time"
+    right_tts: "a time"
+reward: { stars: 1, sfx: ding, effect: stars }

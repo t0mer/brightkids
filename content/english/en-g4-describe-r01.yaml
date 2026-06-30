@@ -1,0 +1,21 @@
+id: en-g4-describe-r01
+subject: english
+grade: 4
+difficulty: 3
+locale: en-US
+direction: ltr
+title: "Describe the Picture"
+activity: multiple-choice
+prompt_tts: "Look at the picture. A girl is riding a bike. What is the girl doing?"
+items:
+  - id: riding
+    label: "She is riding a bike."
+    correct: true
+    tts: "She is riding a bike."
+  - id: eating
+    label: "She is eating an apple."
+    tts: "She is eating an apple."
+  - id: sleeping
+    label: "She is sleeping in bed."
+    tts: "She is sleeping in bed."
+reward: { stars: 1, sfx: pop, effect: confetti }

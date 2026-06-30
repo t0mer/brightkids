@@ -1,0 +1,21 @@
+id: en-g4-read-r02
+subject: english
+grade: 4
+difficulty: 3
+locale: en-US
+direction: ltr
+title: "Reading: Dan Swims"
+activity: multiple-choice
+prompt_tts: "Dan swims in the sea with his friends on Saturday. Where does Dan swim?"
+items:
+  - id: sea
+    label: "in the sea"
+    correct: true
+    tts: "in the sea"
+  - id: pool
+    label: "in a pool"
+    tts: "in a pool"
+  - id: river
+    label: "in a river"
+    tts: "in a river"
+reward: { stars: 1, sfx: ding, effect: confetti }

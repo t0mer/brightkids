@@ -1,0 +1,27 @@
+id: en-g1-animals-r01
+subject: english
+grade: 1
+difficulty: 1
+locale: en-US
+direction: ltr
+title: "Match the Animals"
+activity: matching
+prompt_tts: "Match each animal to its picture"
+pairs:
+  - id: cat
+    left: "cat"
+    left_tts: "cat"
+    emoji: "🐱"
+  - id: dog
+    left: "dog"
+    left_tts: "dog"
+    emoji: "🐶"
+  - id: fish
+    left: "fish"
+    left_tts: "fish"
+    emoji: "🐟"
+  - id: cow
+    left: "cow"
+    left_tts: "cow"
+    emoji: "🐮"
+reward: { stars: 1, sfx: ding, effect: confetti }

@@ -1,0 +1,21 @@
+id: en-g2-family-r02
+subject: english
+grade: 2
+difficulty: 2
+locale: en-US
+direction: ltr
+title: "Build the Word CAT"
+activity: drag-drop
+prompt_tts: "Put the letters in order to spell cat"
+items:
+  - id: c
+    label: "c"
+    tts: "c"
+  - id: a
+    label: "a"
+    tts: "a"
+  - id: t
+    label: "t"
+    tts: "t"
+solution: [c, a, t]
+reward: { stars: 2, sfx: chime, effect: sparkle }

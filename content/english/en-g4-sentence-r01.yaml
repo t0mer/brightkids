@@ -1,0 +1,24 @@
+id: en-g4-sentence-r01
+subject: english
+grade: 4
+difficulty: 3
+locale: en-US
+direction: ltr
+title: "Build a Sentence"
+activity: drag-drop
+prompt_tts: "Put the words in order to make a sentence: I like to read"
+items:
+  - id: i
+    label: "I"
+    tts: "I"
+  - id: like
+    label: "like"
+    tts: "like"
+  - id: to
+    label: "to"
+    tts: "to"
+  - id: read
+    label: "read"
+    tts: "read"
+solution: [i, like, to, read]
+reward: { stars: 2, sfx: chime, effect: sparkle }

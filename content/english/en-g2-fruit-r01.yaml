@@ -1,0 +1,27 @@
+id: en-g2-fruit-r01
+subject: english
+grade: 2
+difficulty: 1
+locale: en-US
+direction: ltr
+title: "Fruits and Vegetables"
+activity: matching
+prompt_tts: "Match each food word to its picture"
+pairs:
+  - id: apple
+    left: "apple"
+    left_tts: "apple"
+    emoji: "🍎"
+  - id: banana
+    left: "banana"
+    left_tts: "banana"
+    emoji: "🍌"
+  - id: carrot
+    left: "carrot"
+    left_tts: "carrot"
+    emoji: "🥕"
+  - id: corn
+    left: "corn"
+    left_tts: "corn"
+    emoji: "🌽"
+reward: { stars: 1, sfx: chime, effect: stars }

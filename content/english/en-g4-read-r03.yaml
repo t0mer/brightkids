@@ -1,0 +1,21 @@
+id: en-g4-read-r03
+subject: english
+grade: 4
+difficulty: 3
+locale: en-US
+direction: ltr
+title: "Reading: Dan the Dog"
+activity: multiple-choice
+prompt_tts: "Dan is a small brown dog. He likes to run and jump in the garden. What does Dan like to do?"
+items:
+  - id: run
+    label: "run and jump"
+    correct: true
+    tts: "run and jump"
+  - id: sleep
+    label: "sleep all day"
+    tts: "sleep all day"
+  - id: swim
+    label: "swim in the sea"
+    tts: "swim in the sea"
+reward: { stars: 1, sfx: pop, effect: confetti }

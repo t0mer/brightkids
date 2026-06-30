@@ -1,0 +1,23 @@
+id: en-g1-colors-r02
+subject: english
+grade: 1
+difficulty: 1
+locale: en-US
+direction: ltr
+title: "Match the Colors"
+activity: matching
+prompt_tts: "Match each color word to its dot"
+pairs:
+  - id: yellow
+    left: "yellow"
+    left_tts: "yellow"
+    emoji: "🟡"
+  - id: purple
+    left: "purple"
+    left_tts: "purple"
+    emoji: "🟣"
+  - id: orange
+    left: "orange"
+    left_tts: "orange"
+    emoji: "🟠"
+reward: { stars: 1, sfx: chime, effect: stars }

@@ -1,0 +1,27 @@
+id: en-g2-body-r01
+subject: english
+grade: 2
+difficulty: 1
+locale: en-US
+direction: ltr
+title: "My Body"
+activity: matching
+prompt_tts: "Match each body word to its picture"
+pairs:
+  - id: hand
+    left: "hand"
+    left_tts: "hand"
+    emoji: "✋"
+  - id: eye
+    left: "eye"
+    left_tts: "eye"
+    emoji: "👁️"
+  - id: foot
+    left: "foot"
+    left_tts: "foot"
+    emoji: "🦶"
+  - id: ear
+    left: "ear"
+    left_tts: "ear"
+    emoji: "👂"
+reward: { stars: 1, sfx: ding, effect: confetti }

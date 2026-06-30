@@ -1,0 +1,23 @@
+id: en-g2-family-r01
+subject: english
+grade: 2
+difficulty: 1
+locale: en-US
+direction: ltr
+title: "The -at Word Family"
+activity: matching
+prompt_tts: "These words rhyme. Match each -at word to its picture."
+pairs:
+  - id: cat
+    left: "cat"
+    left_tts: "cat"
+    emoji: "🐱"
+  - id: hat
+    left: "hat"
+    left_tts: "hat"
+    emoji: "🎩"
+  - id: bat
+    left: "bat"
+    left_tts: "bat"
+    emoji: "🦇"
+reward: { stars: 1, sfx: ding, effect: confetti }

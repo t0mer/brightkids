@@ -1,0 +1,21 @@
+id: en-g3-self-r01
+subject: english
+grade: 3
+difficulty: 2
+locale: en-US
+direction: ltr
+title: "About Me: My Name"
+activity: multiple-choice
+prompt_tts: "How do you tell someone your name? Pick the sentence."
+items:
+  - id: my_name
+    label: "My name is Dan."
+    correct: true
+    tts: "My name is Dan."
+  - id: name_color
+    label: "My name is blue."
+    tts: "My name is blue."
+  - id: name_seven
+    label: "My name is seven."
+    tts: "My name is seven."
+reward: { stars: 1, sfx: ding, effect: stars }

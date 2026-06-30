@@ -1,0 +1,27 @@
+id: en-g3-school-r01
+subject: english
+grade: 3
+difficulty: 1
+locale: en-US
+direction: ltr
+title: "At School"
+activity: matching
+prompt_tts: "Match each school word to its picture"
+pairs:
+  - id: book
+    left: "book"
+    left_tts: "book"
+    emoji: "📕"
+  - id: pencil
+    left: "pencil"
+    left_tts: "pencil"
+    emoji: "✏️"
+  - id: bag
+    left: "bag"
+    left_tts: "bag"
+    emoji: "🎒"
+  - id: ruler
+    left: "ruler"
+    left_tts: "ruler"
+    emoji: "📏"
+reward: { stars: 1, sfx: pop, effect: confetti }

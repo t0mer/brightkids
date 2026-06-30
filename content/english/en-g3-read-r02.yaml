@@ -1,0 +1,21 @@
+id: en-g3-read-r02
+subject: english
+grade: 3
+difficulty: 2
+locale: en-US
+direction: ltr
+title: "Reading: Moki Runs"
+activity: multiple-choice
+prompt_tts: "Moki runs to the box. Where does Moki run?"
+items:
+  - id: box
+    label: "to the box"
+    correct: true
+    tts: "to the box"
+  - id: tree
+    label: "to the tree"
+    tts: "to the tree"
+  - id: car
+    label: "to the car"
+    tts: "to the car"
+reward: { stars: 1, sfx: pop, effect: confetti }

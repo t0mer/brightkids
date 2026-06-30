@@ -1,0 +1,27 @@
+id: en-g4-verbs-r01
+subject: english
+grade: 4
+difficulty: 2
+locale: en-US
+direction: ltr
+title: "Action Verbs"
+activity: matching
+prompt_tts: "Match each action word to its picture"
+pairs:
+  - id: run
+    left: "run"
+    left_tts: "run"
+    emoji: "🏃"
+  - id: eat
+    left: "eat"
+    left_tts: "eat"
+    emoji: "🍽️"
+  - id: sleep
+    left: "sleep"
+    left_tts: "sleep"
+    emoji: "😴"
+  - id: read
+    left: "read"
+    left_tts: "read"
+    emoji: "📖"
+reward: { stars: 1, sfx: chime, effect: stars }

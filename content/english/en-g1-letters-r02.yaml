@@ -1,0 +1,21 @@
+id: en-g1-letters-r02
+subject: english
+grade: 1
+difficulty: 1
+locale: en-US
+direction: ltr
+title: "Which Letter Says /b/?"
+activity: letter-recognition
+prompt_tts: "Which letter makes the sound buh?"
+items:
+  - id: b
+    label: "B"
+    correct: true
+    tts: "B says buh"
+  - id: d
+    label: "D"
+    tts: "D"
+  - id: p
+    label: "P"
+    tts: "P"
+reward: { stars: 1, sfx: ding, effect: confetti }

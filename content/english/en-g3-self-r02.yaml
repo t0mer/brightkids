@@ -1,0 +1,21 @@
+id: en-g3-self-r02
+subject: english
+grade: 3
+difficulty: 2
+locale: en-US
+direction: ltr
+title: "About Me: My Age"
+activity: multiple-choice
+prompt_tts: "You are eight years old. Pick the right sentence."
+items:
+  - id: eight
+    label: "I am eight years old."
+    correct: true
+    tts: "I am eight years old."
+  - id: green
+    label: "I am green years old."
+    tts: "I am green years old."
+  - id: cat
+    label: "I am a cat years old."
+    tts: "I am a cat years old."
+reward: { stars: 1, sfx: chime, effect: confetti }

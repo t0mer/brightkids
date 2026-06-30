@@ -1,0 +1,11 @@
+id: en-g1-trace-r01
+subject: english
+grade: 1
+difficulty: 1
+locale: en-US
+direction: ltr
+title: "Trace the Letter B"
+activity: tracing
+prompt_tts: "Trace the letter B"
+glyph: "B"
+reward: { stars: 1, sfx: chime, effect: sparkle }

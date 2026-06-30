@@ -1,0 +1,24 @@
+id: en-g1-colors-r01
+subject: english
+grade: 1
+difficulty: 1
+locale: en-US
+direction: ltr
+title: "What Color Is the Balloon?"
+activity: multiple-choice
+prompt_tts: "This balloon is red. Tap the word red."
+items:
+  - id: red
+    label: "red"
+    correct: true
+    tts: "red"
+    emoji: "🔴"
+  - id: blue
+    label: "blue"
+    tts: "blue"
+    emoji: "🔵"
+  - id: green
+    label: "green"
+    tts: "green"
+    emoji: "🟢"
+reward: { stars: 1, sfx: pop, effect: confetti }

@@ -1,0 +1,21 @@
+id: en-g4-read-r01
+subject: english
+grade: 4
+difficulty: 2
+locale: en-US
+direction: ltr
+title: "Reading: Ann Reads"
+activity: multiple-choice
+prompt_tts: "Ann reads a book every night before bed. When does Ann read?"
+items:
+  - id: night
+    label: "every night"
+    correct: true
+    tts: "every night"
+  - id: morning
+    label: "every morning"
+    tts: "every morning"
+  - id: never
+    label: "she never reads"
+    tts: "she never reads"
+reward: { stars: 1, sfx: chime, effect: confetti }

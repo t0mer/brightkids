@@ -1,0 +1,21 @@
+id: en-g4-read-r04
+subject: english
+grade: 4
+difficulty: 3
+locale: en-US
+direction: ltr
+title: "Reading: Fred the Umbrella"
+activity: multiple-choice
+prompt_tts: "Fred is a red umbrella. He keeps the children dry in the rain. When do the children need Fred?"
+items:
+  - id: rain
+    label: "when it rains"
+    correct: true
+    tts: "when it rains"
+  - id: sunny
+    label: "when it is sunny"
+    tts: "when it is sunny"
+  - id: snow
+    label: "when it snows"
+    tts: "when it snows"
+reward: { stars: 1, sfx: chime, effect: stars }
