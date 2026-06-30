@@ -6,7 +6,7 @@ locale: he-IL
 direction: rtl
 title: "חוֹלָם וְשׁוּרוּק"
 activity: multiple-choice
-prompt_tts: "בְּחֲרוּ אֶת הַמִּילָּה שֶׁנִּקְרֵאת סוּס"
+prompt_tts: "בַּחֲרוּ אֶת הַמִּילָּה שֶׁנִּקְרֵאת סוּס"
 items:
   - id: sus
     label: "סוּס"

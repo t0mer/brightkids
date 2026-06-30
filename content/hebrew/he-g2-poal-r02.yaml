@@ -6,7 +6,7 @@ locale: he-IL
 direction: rtl
 title: "הַפֹּעַל בַּמִּשְׁפָּט"
 activity: multiple-choice
-prompt_tts: "הַיַּלְדָּה ___ בַּגַּן. אֵיזוֹ מִילָּה הִיא פֹּעַל"
+prompt_tts: "הַיַּלְדָּה ___ בַּגַּן. אֵיזוֹ מִילָּה הִיא פֹּעַל?"
 items:
   - id: mesacheket
     label: "מְשַׂחֶקֶת"

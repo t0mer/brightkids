@@ -6,7 +6,7 @@ locale: he-IL
 direction: rtl
 title: "הַפֹּעַל וּזְמַנּוֹ"
 activity: multiple-choice
-prompt_tts: "אֶתְמוֹל אֲנִי ___ סֵפֶר. אֵיזֶה פֹּעַל מַתְאִים לֶעָבָר"
+prompt_tts: "אֶתְמוֹל אֲנִי ___ סֵפֶר. אֵיזֶה פֹּעַל מַתְאִים לֶעָבָר?"
 items:
   - id: karati
     label: "קָרָאתִי"

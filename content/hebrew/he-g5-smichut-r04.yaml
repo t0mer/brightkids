@@ -6,7 +6,7 @@ locale: he-IL
 direction: rtl
 title: "סְמִיכוּת"
 activity: multiple-choice
-prompt_tts: "אֵיזֶה צֵירוּף הוּא סְמִיכוּת תְּקִינָה לְבֵית שֶׁל סֵפֶר"
+prompt_tts: "אֵיזֶה צֵירוּף הוּא סְמִיכוּת תְּקִינָה לְבֵית שֶׁל סֵפֶר?"
 items:
   - id: bet-sefer
     label: "בֵּית סֵפֶר"

@@ -6,6 +6,6 @@ locale: he-IL
 direction: rtl
 title: "כְּתָב רָהוּט: הָאוֹת נ"
 activity: tracing
-prompt_tts: "עִקְבוּ אֶת הָאוֹת נוּן בִּכְתָב רָהוּט"
+prompt_tts: "עִקְבוּ אַחֲרֵי הָאוֹת נוּן בִּכְתָב רָהוּט"
 glyph: "נ"
 reward: { stars: 1, sfx: chime, effect: sparkle }

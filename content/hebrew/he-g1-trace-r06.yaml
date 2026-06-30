@@ -6,6 +6,6 @@ locale: he-IL
 direction: rtl
 title: "כּוֹתְבִים אֶת הָאוֹת חֵית"
 activity: tracing
-prompt_tts: "עִקְבוּ עִם הָאֶצְבַּע אֶת הָאוֹת חֵית"
+prompt_tts: "עִקְבוּ עִם הָאֶצְבַּע אַחֲרֵי הָאוֹת חֵית"
 glyph: "ח"
 reward: { stars: 1, sfx: chime, effect: sparkle }

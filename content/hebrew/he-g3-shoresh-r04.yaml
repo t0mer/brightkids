@@ -6,7 +6,7 @@ locale: he-IL
 direction: rtl
 title: "שׁוֹרָשִׁים וּמִשְׁפְּחוֹת מִילִּים"
 activity: multiple-choice
-prompt_tts: "אֵיזוֹ מִילָּה שַׁיֶּכֶת לַמִּשְׁפָּחָה שֶׁל הַשּׁוֹרֶשׁ כ-ת-ב"
+prompt_tts: "אֵיזוֹ מִילָּה שַׁיֶּכֶת לַמִּשְׁפָּחָה שֶׁל הַשּׁוֹרֶשׁ כ-ת-ב?"
 items:
   - id: michtav
     label: "מִכְתָּב"

@@ -6,7 +6,7 @@ locale: he-IL
 direction: rtl
 title: "דְּגוּשׁוֹת וּרְפוּיוֹת: הָאוֹת בּ"
 activity: multiple-choice
-prompt_tts: "אֵיזוֹ אוֹת נִשְׁמַעַת בּ כְּמוֹ בְּמִילָּה בַּיִת"
+prompt_tts: "אֵיזוֹ אוֹת נִשְׁמַעַת בּ כְּמוֹ בְּמִילָּה בַּיִת?"
 items:
   - id: bet-dagesh
     label: "בּ"

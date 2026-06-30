@@ -6,7 +6,7 @@ locale: he-IL
 direction: rtl
 title: "מוּשָּׂגֵי זְמַן"
 activity: multiple-choice
-prompt_tts: "הַיּוֹם יוֹם שְׁלִישִׁי. אֵיזֶה יוֹם יִהְיֶה מָחָר"
+prompt_tts: "הַיּוֹם יוֹם שְׁלִישִׁי. אֵיזֶה יוֹם יִהְיֶה מָחָר?"
 items:
   - id: revii
     label: "יוֹם רְבִיעִי"

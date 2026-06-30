@@ -6,7 +6,7 @@ locale: he-IL
 direction: rtl
 title: "נִיתּוּחַ פְּעָלִים: זְמַן הֶעָבָר"
 activity: multiple-choice
-prompt_tts: "אֵיזֶה פֹּעַל כָּתוּב בִּזְמַן עָבָר"
+prompt_tts: "אֵיזֶה פֹּעַל כָּתוּב בִּזְמַן עָבָר?"
 items:
   - id: shamar
     label: "שָׁמַר"

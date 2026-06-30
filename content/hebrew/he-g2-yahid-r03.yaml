@@ -6,7 +6,7 @@ locale: he-IL
 direction: rtl
 title: "יָחִיד וְרַבִּים"
 activity: multiple-choice
-prompt_tts: "מַהוּ צוּרַת הָרַבִּים שֶׁל הַמִּילָּה סֵפֶר"
+prompt_tts: "מַהִי צוּרַת הָרַבִּים שֶׁל הַמִּילָּה סֵפֶר?"
 items:
   - id: sfarim
     label: "סְפָרִים"

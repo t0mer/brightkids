@@ -4,9 +4,9 @@ grade: 1
 difficulty: 1
 locale: he-IL
 direction: rtl
-title: "הֲבָנַת הַנִּקְרָא: הַחָתוּל"
+title: "הֲבָנַת הַנִּקְרָא: הֶחָתוּל"
 activity: multiple-choice
-prompt_tts: "הֶחָתוּל יָשַׁן עַל הַכִּסֵּא. אֵיפֹה יָשַׁן הֶחָתוּל"
+prompt_tts: "הֶחָתוּל יָשַׁן עַל הַכִּסֵּא. אֵיפֹה יָשַׁן הֶחָתוּל?"
 items:
   - id: kise
     label: "עַל הַכִּסֵּא"
