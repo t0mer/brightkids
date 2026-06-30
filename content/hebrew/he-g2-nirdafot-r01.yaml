@@ -58,4 +58,44 @@ pairs:
     right: "נוּגֶה"
     left_tts: "עָצוּב"
     right_tts: "נוּגֶה"
+  - id: shemesh
+    left: "שֶׁמֶשׁ"
+    right: "חַמָּה"
+    left_tts: "שֶׁמֶשׁ"
+    right_tts: "חַמָּה"
+  - id: kar
+    left: "קַר"
+    right: "צוֹנֵן"
+    left_tts: "קַר"
+    right_tts: "צוֹנֵן"
+  - id: cham
+    left: "חַם"
+    right: "לוֹהֵט"
+    left_tts: "חַם"
+    right_tts: "לוֹהֵט"
+  - id: ba
+    left: "בָּא"
+    right: "מַגִּיעַ"
+    left_tts: "בָּא"
+    right_tts: "מַגִּיעַ"
+  - id: holech
+    left: "הוֹלֵךְ"
+    right: "צוֹעֵד"
+    left_tts: "הוֹלֵךְ"
+    right_tts: "צוֹעֵד"
+  - id: roeh
+    left: "רוֹאֶה"
+    right: "מַבִּיט"
+    left_tts: "רוֹאֶה"
+    right_tts: "מַבִּיט"
+  - id: ra
+    left: "רַע"
+    right: "גָּרוּעַ"
+    left_tts: "רַע"
+    right_tts: "גָּרוּעַ"
+  - id: ima
+    left: "אִמָּא"
+    right: "אֵם"
+    left_tts: "אִמָּא"
+    right_tts: "אֵם"
 reward: { stars: 1, sfx: ding, effect: sparkle }
