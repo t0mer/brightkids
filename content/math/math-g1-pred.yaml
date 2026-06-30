@@ -121,5 +121,245 @@ questions:
       - { id: o1, label: "19", correct: true }
       - { id: o2, label: "20" }
       - { id: o3, label: "18" }
-      - { id: o4, label: "17" }
+      - { id: o4, label: "21" }
+  - glyph: "21"
+    items:
+      - { id: o1, label: "20", correct: true }
+      - { id: o2, label: "21" }
+      - { id: o3, label: "19" }
+      - { id: o4, label: "22" }
+  - glyph: "22"
+    items:
+      - { id: o1, label: "21", correct: true }
+      - { id: o2, label: "22" }
+      - { id: o3, label: "20" }
+      - { id: o4, label: "23" }
+  - glyph: "23"
+    items:
+      - { id: o1, label: "22", correct: true }
+      - { id: o2, label: "23" }
+      - { id: o3, label: "21" }
+      - { id: o4, label: "24" }
+  - glyph: "24"
+    items:
+      - { id: o1, label: "23", correct: true }
+      - { id: o2, label: "24" }
+      - { id: o3, label: "22" }
+      - { id: o4, label: "25" }
+  - glyph: "25"
+    items:
+      - { id: o1, label: "24", correct: true }
+      - { id: o2, label: "25" }
+      - { id: o3, label: "23" }
+      - { id: o4, label: "26" }
+  - glyph: "26"
+    items:
+      - { id: o1, label: "25", correct: true }
+      - { id: o2, label: "26" }
+      - { id: o3, label: "24" }
+      - { id: o4, label: "27" }
+  - glyph: "27"
+    items:
+      - { id: o1, label: "26", correct: true }
+      - { id: o2, label: "27" }
+      - { id: o3, label: "25" }
+      - { id: o4, label: "28" }
+  - glyph: "28"
+    items:
+      - { id: o1, label: "27", correct: true }
+      - { id: o2, label: "28" }
+      - { id: o3, label: "26" }
+      - { id: o4, label: "29" }
+  - glyph: "29"
+    items:
+      - { id: o1, label: "28", correct: true }
+      - { id: o2, label: "29" }
+      - { id: o3, label: "27" }
+      - { id: o4, label: "30" }
+  - glyph: "30"
+    items:
+      - { id: o1, label: "29", correct: true }
+      - { id: o2, label: "30" }
+      - { id: o3, label: "28" }
+      - { id: o4, label: "31" }
+  - glyph: "31"
+    items:
+      - { id: o1, label: "30", correct: true }
+      - { id: o2, label: "31" }
+      - { id: o3, label: "29" }
+      - { id: o4, label: "32" }
+  - glyph: "32"
+    items:
+      - { id: o1, label: "31", correct: true }
+      - { id: o2, label: "32" }
+      - { id: o3, label: "30" }
+      - { id: o4, label: "33" }
+  - glyph: "33"
+    items:
+      - { id: o1, label: "32", correct: true }
+      - { id: o2, label: "33" }
+      - { id: o3, label: "31" }
+      - { id: o4, label: "34" }
+  - glyph: "34"
+    items:
+      - { id: o1, label: "33", correct: true }
+      - { id: o2, label: "34" }
+      - { id: o3, label: "32" }
+      - { id: o4, label: "35" }
+  - glyph: "35"
+    items:
+      - { id: o1, label: "34", correct: true }
+      - { id: o2, label: "35" }
+      - { id: o3, label: "33" }
+      - { id: o4, label: "36" }
+  - glyph: "36"
+    items:
+      - { id: o1, label: "35", correct: true }
+      - { id: o2, label: "36" }
+      - { id: o3, label: "34" }
+      - { id: o4, label: "37" }
+  - glyph: "37"
+    items:
+      - { id: o1, label: "36", correct: true }
+      - { id: o2, label: "37" }
+      - { id: o3, label: "35" }
+      - { id: o4, label: "38" }
+  - glyph: "38"
+    items:
+      - { id: o1, label: "37", correct: true }
+      - { id: o2, label: "38" }
+      - { id: o3, label: "36" }
+      - { id: o4, label: "39" }
+  - glyph: "39"
+    items:
+      - { id: o1, label: "38", correct: true }
+      - { id: o2, label: "39" }
+      - { id: o3, label: "37" }
+      - { id: o4, label: "40" }
+  - glyph: "40"
+    items:
+      - { id: o1, label: "39", correct: true }
+      - { id: o2, label: "40" }
+      - { id: o3, label: "38" }
+      - { id: o4, label: "41" }
+  - glyph: "41"
+    items:
+      - { id: o1, label: "40", correct: true }
+      - { id: o2, label: "41" }
+      - { id: o3, label: "39" }
+      - { id: o4, label: "42" }
+  - glyph: "42"
+    items:
+      - { id: o1, label: "41", correct: true }
+      - { id: o2, label: "42" }
+      - { id: o3, label: "40" }
+      - { id: o4, label: "43" }
+  - glyph: "43"
+    items:
+      - { id: o1, label: "42", correct: true }
+      - { id: o2, label: "43" }
+      - { id: o3, label: "41" }
+      - { id: o4, label: "44" }
+  - glyph: "44"
+    items:
+      - { id: o1, label: "43", correct: true }
+      - { id: o2, label: "44" }
+      - { id: o3, label: "42" }
+      - { id: o4, label: "45" }
+  - glyph: "45"
+    items:
+      - { id: o1, label: "44", correct: true }
+      - { id: o2, label: "45" }
+      - { id: o3, label: "43" }
+      - { id: o4, label: "46" }
+  - glyph: "46"
+    items:
+      - { id: o1, label: "45", correct: true }
+      - { id: o2, label: "46" }
+      - { id: o3, label: "44" }
+      - { id: o4, label: "47" }
+  - glyph: "47"
+    items:
+      - { id: o1, label: "46", correct: true }
+      - { id: o2, label: "47" }
+      - { id: o3, label: "45" }
+      - { id: o4, label: "48" }
+  - glyph: "48"
+    items:
+      - { id: o1, label: "47", correct: true }
+      - { id: o2, label: "48" }
+      - { id: o3, label: "46" }
+      - { id: o4, label: "49" }
+  - glyph: "49"
+    items:
+      - { id: o1, label: "48", correct: true }
+      - { id: o2, label: "49" }
+      - { id: o3, label: "47" }
+      - { id: o4, label: "50" }
+  - glyph: "50"
+    items:
+      - { id: o1, label: "49", correct: true }
+      - { id: o2, label: "50" }
+      - { id: o3, label: "48" }
+      - { id: o4, label: "51" }
+  - glyph: "51"
+    items:
+      - { id: o1, label: "50", correct: true }
+      - { id: o2, label: "51" }
+      - { id: o3, label: "49" }
+      - { id: o4, label: "52" }
+  - glyph: "52"
+    items:
+      - { id: o1, label: "51", correct: true }
+      - { id: o2, label: "52" }
+      - { id: o3, label: "50" }
+      - { id: o4, label: "53" }
+  - glyph: "53"
+    items:
+      - { id: o1, label: "52", correct: true }
+      - { id: o2, label: "53" }
+      - { id: o3, label: "51" }
+      - { id: o4, label: "54" }
+  - glyph: "54"
+    items:
+      - { id: o1, label: "53", correct: true }
+      - { id: o2, label: "54" }
+      - { id: o3, label: "52" }
+      - { id: o4, label: "55" }
+  - glyph: "55"
+    items:
+      - { id: o1, label: "54", correct: true }
+      - { id: o2, label: "55" }
+      - { id: o3, label: "53" }
+      - { id: o4, label: "56" }
+  - glyph: "56"
+    items:
+      - { id: o1, label: "55", correct: true }
+      - { id: o2, label: "56" }
+      - { id: o3, label: "54" }
+      - { id: o4, label: "57" }
+  - glyph: "57"
+    items:
+      - { id: o1, label: "56", correct: true }
+      - { id: o2, label: "57" }
+      - { id: o3, label: "55" }
+      - { id: o4, label: "58" }
+  - glyph: "58"
+    items:
+      - { id: o1, label: "57", correct: true }
+      - { id: o2, label: "58" }
+      - { id: o3, label: "56" }
+      - { id: o4, label: "59" }
+  - glyph: "59"
+    items:
+      - { id: o1, label: "58", correct: true }
+      - { id: o2, label: "59" }
+      - { id: o3, label: "57" }
+      - { id: o4, label: "60" }
+  - glyph: "60"
+    items:
+      - { id: o1, label: "59", correct: true }
+      - { id: o2, label: "60" }
+      - { id: o3, label: "58" }
+      - { id: o4, label: "57" }
 reward: { stars: 3, sfx: ding, effect: confetti }

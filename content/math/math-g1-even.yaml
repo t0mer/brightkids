@@ -48,4 +48,124 @@ questions:
     items:
       - { id: o1, label: "אִי־זוּגִי", correct: true }
       - { id: o2, label: "זוּגִי" }
+  - glyph: "12"
+    items:
+      - { id: o1, label: "זוּגִי", correct: true }
+      - { id: o2, label: "אִי־זוּגִי" }
+  - glyph: "11"
+    items:
+      - { id: o1, label: "אִי־זוּגִי", correct: true }
+      - { id: o2, label: "זוּגִי" }
+  - glyph: "14"
+    items:
+      - { id: o1, label: "זוּגִי", correct: true }
+      - { id: o2, label: "אִי־זוּגִי" }
+  - glyph: "13"
+    items:
+      - { id: o1, label: "אִי־זוּגִי", correct: true }
+      - { id: o2, label: "זוּגִי" }
+  - glyph: "16"
+    items:
+      - { id: o1, label: "זוּגִי", correct: true }
+      - { id: o2, label: "אִי־זוּגִי" }
+  - glyph: "15"
+    items:
+      - { id: o1, label: "אִי־זוּגִי", correct: true }
+      - { id: o2, label: "זוּגִי" }
+  - glyph: "18"
+    items:
+      - { id: o1, label: "זוּגִי", correct: true }
+      - { id: o2, label: "אִי־זוּגִי" }
+  - glyph: "17"
+    items:
+      - { id: o1, label: "אִי־זוּגִי", correct: true }
+      - { id: o2, label: "זוּגִי" }
+  - glyph: "20"
+    items:
+      - { id: o1, label: "זוּגִי", correct: true }
+      - { id: o2, label: "אִי־זוּגִי" }
+  - glyph: "19"
+    items:
+      - { id: o1, label: "אִי־זוּגִי", correct: true }
+      - { id: o2, label: "זוּגִי" }
+  - glyph: "22"
+    items:
+      - { id: o1, label: "זוּגִי", correct: true }
+      - { id: o2, label: "אִי־זוּגִי" }
+  - glyph: "21"
+    items:
+      - { id: o1, label: "אִי־זוּגִי", correct: true }
+      - { id: o2, label: "זוּגִי" }
+  - glyph: "24"
+    items:
+      - { id: o1, label: "זוּגִי", correct: true }
+      - { id: o2, label: "אִי־זוּגִי" }
+  - glyph: "23"
+    items:
+      - { id: o1, label: "אִי־זוּגִי", correct: true }
+      - { id: o2, label: "זוּגִי" }
+  - glyph: "26"
+    items:
+      - { id: o1, label: "זוּגִי", correct: true }
+      - { id: o2, label: "אִי־זוּגִי" }
+  - glyph: "25"
+    items:
+      - { id: o1, label: "אִי־זוּגִי", correct: true }
+      - { id: o2, label: "זוּגִי" }
+  - glyph: "28"
+    items:
+      - { id: o1, label: "זוּגִי", correct: true }
+      - { id: o2, label: "אִי־זוּגִי" }
+  - glyph: "27"
+    items:
+      - { id: o1, label: "אִי־זוּגִי", correct: true }
+      - { id: o2, label: "זוּגִי" }
+  - glyph: "30"
+    items:
+      - { id: o1, label: "זוּגִי", correct: true }
+      - { id: o2, label: "אִי־זוּגִי" }
+  - glyph: "29"
+    items:
+      - { id: o1, label: "אִי־זוּגִי", correct: true }
+      - { id: o2, label: "זוּגִי" }
+  - glyph: "32"
+    items:
+      - { id: o1, label: "זוּגִי", correct: true }
+      - { id: o2, label: "אִי־זוּגִי" }
+  - glyph: "31"
+    items:
+      - { id: o1, label: "אִי־זוּגִי", correct: true }
+      - { id: o2, label: "זוּגִי" }
+  - glyph: "34"
+    items:
+      - { id: o1, label: "זוּגִי", correct: true }
+      - { id: o2, label: "אִי־זוּגִי" }
+  - glyph: "33"
+    items:
+      - { id: o1, label: "אִי־זוּגִי", correct: true }
+      - { id: o2, label: "זוּגִי" }
+  - glyph: "36"
+    items:
+      - { id: o1, label: "זוּגִי", correct: true }
+      - { id: o2, label: "אִי־זוּגִי" }
+  - glyph: "35"
+    items:
+      - { id: o1, label: "אִי־זוּגִי", correct: true }
+      - { id: o2, label: "זוּגִי" }
+  - glyph: "38"
+    items:
+      - { id: o1, label: "זוּגִי", correct: true }
+      - { id: o2, label: "אִי־זוּגִי" }
+  - glyph: "37"
+    items:
+      - { id: o1, label: "אִי־זוּגִי", correct: true }
+      - { id: o2, label: "זוּגִי" }
+  - glyph: "40"
+    items:
+      - { id: o1, label: "זוּגִי", correct: true }
+      - { id: o2, label: "אִי־זוּגִי" }
+  - glyph: "39"
+    items:
+      - { id: o1, label: "אִי־זוּגִי", correct: true }
+      - { id: o2, label: "זוּגִי" }
 reward: { stars: 3, sfx: ding, effect: confetti }

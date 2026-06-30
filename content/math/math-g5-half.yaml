@@ -8,40 +8,243 @@ title: "חֲצִי"
 activity: multiple-choice
 prompt_tts: "כַּמָּה זֶה חֲצִי?"
 questions:
+  - glyph: "½ מ-2"
+    items:
+      - { id: o1, label: "1", correct: true }
+      - { id: o2, label: "2" }
+      - { id: o3, label: "0" }
+  - glyph: "½ מ-4"
+    items:
+      - { id: o1, label: "2", correct: true }
+      - { id: o2, label: "3" }
+      - { id: o3, label: "1" }
+      - { id: o4, label: "4" }
+  - glyph: "½ מ-6"
+    items:
+      - { id: o1, label: "3", correct: true }
+      - { id: o2, label: "4" }
+      - { id: o3, label: "2" }
+      - { id: o4, label: "5" }
+  - glyph: "½ מ-8"
+    items:
+      - { id: o1, label: "4", correct: true }
+      - { id: o2, label: "5" }
+      - { id: o3, label: "3" }
+      - { id: o4, label: "6" }
+  - glyph: "½ מ-10"
+    items:
+      - { id: o1, label: "5", correct: true }
+      - { id: o2, label: "6" }
+      - { id: o3, label: "4" }
+      - { id: o4, label: "7" }
+  - glyph: "½ מ-12"
+    items:
+      - { id: o1, label: "6", correct: true }
+      - { id: o2, label: "7" }
+      - { id: o3, label: "5" }
+      - { id: o4, label: "8" }
+  - glyph: "½ מ-14"
+    items:
+      - { id: o1, label: "7", correct: true }
+      - { id: o2, label: "8" }
+      - { id: o3, label: "6" }
+      - { id: o4, label: "9" }
+  - glyph: "½ מ-16"
+    items:
+      - { id: o1, label: "8", correct: true }
+      - { id: o2, label: "9" }
+      - { id: o3, label: "7" }
+      - { id: o4, label: "10" }
+  - glyph: "½ מ-18"
+    items:
+      - { id: o1, label: "9", correct: true }
+      - { id: o2, label: "10" }
+      - { id: o3, label: "8" }
+      - { id: o4, label: "11" }
+  - glyph: "½ מ-20"
+    items:
+      - { id: o1, label: "10", correct: true }
+      - { id: o2, label: "11" }
+      - { id: o3, label: "9" }
+      - { id: o4, label: "12" }
+  - glyph: "½ מ-22"
+    items:
+      - { id: o1, label: "11", correct: true }
+      - { id: o2, label: "12" }
+      - { id: o3, label: "10" }
+      - { id: o4, label: "13" }
   - glyph: "½ מ-24"
     items:
       - { id: o1, label: "12", correct: true }
       - { id: o2, label: "13" }
       - { id: o3, label: "11" }
       - { id: o4, label: "14" }
+  - glyph: "½ מ-26"
+    items:
+      - { id: o1, label: "13", correct: true }
+      - { id: o2, label: "14" }
+      - { id: o3, label: "12" }
+      - { id: o4, label: "15" }
+  - glyph: "½ מ-28"
+    items:
+      - { id: o1, label: "14", correct: true }
+      - { id: o2, label: "15" }
+      - { id: o3, label: "13" }
+      - { id: o4, label: "16" }
   - glyph: "½ מ-30"
     items:
       - { id: o1, label: "15", correct: true }
       - { id: o2, label: "16" }
       - { id: o3, label: "14" }
       - { id: o4, label: "17" }
+  - glyph: "½ מ-32"
+    items:
+      - { id: o1, label: "16", correct: true }
+      - { id: o2, label: "17" }
+      - { id: o3, label: "15" }
+      - { id: o4, label: "18" }
+  - glyph: "½ מ-34"
+    items:
+      - { id: o1, label: "17", correct: true }
+      - { id: o2, label: "18" }
+      - { id: o3, label: "16" }
+      - { id: o4, label: "19" }
+  - glyph: "½ מ-36"
+    items:
+      - { id: o1, label: "18", correct: true }
+      - { id: o2, label: "19" }
+      - { id: o3, label: "17" }
+      - { id: o4, label: "20" }
+  - glyph: "½ מ-38"
+    items:
+      - { id: o1, label: "19", correct: true }
+      - { id: o2, label: "20" }
+      - { id: o3, label: "18" }
+      - { id: o4, label: "21" }
+  - glyph: "½ מ-40"
+    items:
+      - { id: o1, label: "20", correct: true }
+      - { id: o2, label: "21" }
+      - { id: o3, label: "19" }
+      - { id: o4, label: "22" }
+  - glyph: "½ מ-42"
+    items:
+      - { id: o1, label: "21", correct: true }
+      - { id: o2, label: "22" }
+      - { id: o3, label: "20" }
+      - { id: o4, label: "23" }
+  - glyph: "½ מ-44"
+    items:
+      - { id: o1, label: "22", correct: true }
+      - { id: o2, label: "23" }
+      - { id: o3, label: "21" }
+      - { id: o4, label: "24" }
+  - glyph: "½ מ-46"
+    items:
+      - { id: o1, label: "23", correct: true }
+      - { id: o2, label: "24" }
+      - { id: o3, label: "22" }
+      - { id: o4, label: "25" }
+  - glyph: "½ מ-48"
+    items:
+      - { id: o1, label: "24", correct: true }
+      - { id: o2, label: "25" }
+      - { id: o3, label: "23" }
+      - { id: o4, label: "26" }
   - glyph: "½ מ-50"
     items:
       - { id: o1, label: "25", correct: true }
       - { id: o2, label: "26" }
       - { id: o3, label: "24" }
       - { id: o4, label: "27" }
+  - glyph: "½ מ-52"
+    items:
+      - { id: o1, label: "26", correct: true }
+      - { id: o2, label: "27" }
+      - { id: o3, label: "25" }
+      - { id: o4, label: "28" }
+  - glyph: "½ מ-54"
+    items:
+      - { id: o1, label: "27", correct: true }
+      - { id: o2, label: "28" }
+      - { id: o3, label: "26" }
+      - { id: o4, label: "29" }
+  - glyph: "½ מ-56"
+    items:
+      - { id: o1, label: "28", correct: true }
+      - { id: o2, label: "29" }
+      - { id: o3, label: "27" }
+      - { id: o4, label: "30" }
+  - glyph: "½ מ-58"
+    items:
+      - { id: o1, label: "29", correct: true }
+      - { id: o2, label: "30" }
+      - { id: o3, label: "28" }
+      - { id: o4, label: "31" }
+  - glyph: "½ מ-60"
+    items:
+      - { id: o1, label: "30", correct: true }
+      - { id: o2, label: "31" }
+      - { id: o3, label: "29" }
+      - { id: o4, label: "32" }
+  - glyph: "½ מ-62"
+    items:
+      - { id: o1, label: "31", correct: true }
+      - { id: o2, label: "32" }
+      - { id: o3, label: "30" }
+      - { id: o4, label: "33" }
+  - glyph: "½ מ-64"
+    items:
+      - { id: o1, label: "32", correct: true }
+      - { id: o2, label: "33" }
+      - { id: o3, label: "31" }
+      - { id: o4, label: "34" }
+  - glyph: "½ מ-66"
+    items:
+      - { id: o1, label: "33", correct: true }
+      - { id: o2, label: "34" }
+      - { id: o3, label: "32" }
+      - { id: o4, label: "35" }
+  - glyph: "½ מ-68"
+    items:
+      - { id: o1, label: "34", correct: true }
+      - { id: o2, label: "35" }
+      - { id: o3, label: "33" }
+      - { id: o4, label: "36" }
+  - glyph: "½ מ-70"
+    items:
+      - { id: o1, label: "35", correct: true }
+      - { id: o2, label: "36" }
+      - { id: o3, label: "34" }
+      - { id: o4, label: "37" }
+  - glyph: "½ מ-72"
+    items:
+      - { id: o1, label: "36", correct: true }
+      - { id: o2, label: "37" }
+      - { id: o3, label: "35" }
+      - { id: o4, label: "38" }
+  - glyph: "½ מ-74"
+    items:
+      - { id: o1, label: "37", correct: true }
+      - { id: o2, label: "38" }
+      - { id: o3, label: "36" }
+      - { id: o4, label: "39" }
+  - glyph: "½ מ-76"
+    items:
+      - { id: o1, label: "38", correct: true }
+      - { id: o2, label: "39" }
+      - { id: o3, label: "37" }
+      - { id: o4, label: "40" }
+  - glyph: "½ מ-78"
+    items:
+      - { id: o1, label: "39", correct: true }
+      - { id: o2, label: "40" }
+      - { id: o3, label: "38" }
+      - { id: o4, label: "41" }
   - glyph: "½ מ-80"
     items:
       - { id: o1, label: "40", correct: true }
       - { id: o2, label: "41" }
       - { id: o3, label: "39" }
       - { id: o4, label: "42" }
-  - glyph: "½ מ-100"
-    items:
-      - { id: o1, label: "50", correct: true }
-      - { id: o2, label: "51" }
-      - { id: o3, label: "49" }
-      - { id: o4, label: "52" }
-  - glyph: "½ מ-120"
-    items:
-      - { id: o1, label: "60", correct: true }
-      - { id: o2, label: "61" }
-      - { id: o3, label: "59" }
-      - { id: o4, label: "62" }
 reward: { stars: 3, sfx: ding, effect: confetti }

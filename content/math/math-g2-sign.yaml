@@ -8,44 +8,254 @@ title: "אֵיזֶה סִימָן מַתְאִים?"
 activity: multiple-choice
 prompt_tts: "אֵיזֶה סִימָן מַתְאִים בֵּין הַמִּסְפָּרִים?"
 questions:
-  - glyph: "4 _ 7"
+  - glyph: "24 _ 14"
+    items:
+      - { id: o1, label: ">", correct: true }
+      - { id: o2, label: "<" }
+      - { id: o3, label: "=" }
+  - glyph: "6 _ 27"
     items:
       - { id: o1, label: "<", correct: true }
       - { id: o2, label: ">" }
       - { id: o3, label: "=" }
-  - glyph: "9 _ 3"
-    items:
-      - { id: o1, label: ">", correct: true }
-      - { id: o2, label: "<" }
-      - { id: o3, label: "=" }
-  - glyph: "6 _ 6"
-    items:
-      - { id: o1, label: "=", correct: true }
-      - { id: o2, label: "<" }
-      - { id: o3, label: ">" }
-  - glyph: "12 _ 8"
-    items:
-      - { id: o1, label: ">", correct: true }
-      - { id: o2, label: "<" }
-      - { id: o3, label: "=" }
-  - glyph: "5 _ 11"
+  - glyph: "15 _ 22"
     items:
       - { id: o1, label: "<", correct: true }
       - { id: o2, label: ">" }
       - { id: o3, label: "=" }
-  - glyph: "10 _ 10"
+  - glyph: "23 _ 25"
     items:
-      - { id: o1, label: "=", correct: true }
-      - { id: o2, label: "<" }
-      - { id: o3, label: ">" }
-  - glyph: "15 _ 9"
+      - { id: o1, label: "<", correct: true }
+      - { id: o2, label: ">" }
+      - { id: o3, label: "=" }
+  - glyph: "16 _ 17"
+    items:
+      - { id: o1, label: "<", correct: true }
+      - { id: o2, label: ">" }
+      - { id: o3, label: "=" }
+  - glyph: "2 _ 3"
+    items:
+      - { id: o1, label: "<", correct: true }
+      - { id: o2, label: ">" }
+      - { id: o3, label: "=" }
+  - glyph: "15 _ 6"
     items:
       - { id: o1, label: ">", correct: true }
       - { id: o2, label: "<" }
       - { id: o3, label: "=" }
+  - glyph: "3 _ 6"
+    items:
+      - { id: o1, label: "<", correct: true }
+      - { id: o2, label: ">" }
+      - { id: o3, label: "=" }
+  - glyph: "28 _ 22"
+    items:
+      - { id: o1, label: ">", correct: true }
+      - { id: o2, label: "<" }
+      - { id: o3, label: "=" }
+  - glyph: "20 _ 29"
+    items:
+      - { id: o1, label: "<", correct: true }
+      - { id: o2, label: ">" }
+      - { id: o3, label: "=" }
+  - glyph: "28 _ 20"
+    items:
+      - { id: o1, label: ">", correct: true }
+      - { id: o2, label: "<" }
+      - { id: o3, label: "=" }
+  - glyph: "15 _ 28"
+    items:
+      - { id: o1, label: "<", correct: true }
+      - { id: o2, label: ">" }
+      - { id: o3, label: "=" }
+  - glyph: "3 _ 16"
+    items:
+      - { id: o1, label: "<", correct: true }
+      - { id: o2, label: ">" }
+      - { id: o3, label: "=" }
+  - glyph: "9 _ 20"
+    items:
+      - { id: o1, label: "<", correct: true }
+      - { id: o2, label: ">" }
+      - { id: o3, label: "=" }
+  - glyph: "7 _ 26"
+    items:
+      - { id: o1, label: "<", correct: true }
+      - { id: o2, label: ">" }
+      - { id: o3, label: "=" }
+  - glyph: "2 _ 28"
+    items:
+      - { id: o1, label: "<", correct: true }
+      - { id: o2, label: ">" }
+      - { id: o3, label: "=" }
+  - glyph: "23 _ 17"
+    items:
+      - { id: o1, label: ">", correct: true }
+      - { id: o2, label: "<" }
+      - { id: o3, label: "=" }
+  - glyph: "9 _ 2"
+    items:
+      - { id: o1, label: ">", correct: true }
+      - { id: o2, label: "<" }
+      - { id: o3, label: "=" }
+  - glyph: "1 _ 20"
+    items:
+      - { id: o1, label: "<", correct: true }
+      - { id: o2, label: ">" }
+      - { id: o3, label: "=" }
+  - glyph: "9 _ 14"
+    items:
+      - { id: o1, label: "<", correct: true }
+      - { id: o2, label: ">" }
+      - { id: o3, label: "=" }
+  - glyph: "21 _ 11"
+    items:
+      - { id: o1, label: ">", correct: true }
+      - { id: o2, label: "<" }
+      - { id: o3, label: "=" }
+  - glyph: "18 _ 28"
+    items:
+      - { id: o1, label: "<", correct: true }
+      - { id: o2, label: ">" }
+      - { id: o3, label: "=" }
+  - glyph: "30 _ 2"
+    items:
+      - { id: o1, label: ">", correct: true }
+      - { id: o2, label: "<" }
+      - { id: o3, label: "=" }
+  - glyph: "3 _ 28"
+    items:
+      - { id: o1, label: "<", correct: true }
+      - { id: o2, label: ">" }
+      - { id: o3, label: "=" }
+  - glyph: "19 _ 24"
+    items:
+      - { id: o1, label: "<", correct: true }
+      - { id: o2, label: ">" }
+      - { id: o3, label: "=" }
+  - glyph: "3 _ 27"
+    items:
+      - { id: o1, label: "<", correct: true }
+      - { id: o2, label: ">" }
+      - { id: o3, label: "=" }
+  - glyph: "22 _ 22"
+    items:
+      - { id: o1, label: "=", correct: true }
+      - { id: o2, label: "<" }
+      - { id: o3, label: ">" }
+  - glyph: "10 _ 12"
+    items:
+      - { id: o1, label: "<", correct: true }
+      - { id: o2, label: ">" }
+      - { id: o3, label: "=" }
+  - glyph: "23 _ 8"
+    items:
+      - { id: o1, label: ">", correct: true }
+      - { id: o2, label: "<" }
+      - { id: o3, label: "=" }
+  - glyph: "5 _ 29"
+    items:
+      - { id: o1, label: "<", correct: true }
+      - { id: o2, label: ">" }
+      - { id: o3, label: "=" }
+  - glyph: "20 _ 28"
+    items:
+      - { id: o1, label: "<", correct: true }
+      - { id: o2, label: ">" }
+      - { id: o3, label: "=" }
+  - glyph: "22 _ 5"
+    items:
+      - { id: o1, label: ">", correct: true }
+      - { id: o2, label: "<" }
+      - { id: o3, label: "=" }
+  - glyph: "23 _ 3"
+    items:
+      - { id: o1, label: ">", correct: true }
+      - { id: o2, label: "<" }
+      - { id: o3, label: "=" }
+  - glyph: "6 _ 4"
+    items:
+      - { id: o1, label: ">", correct: true }
+      - { id: o2, label: "<" }
+      - { id: o3, label: "=" }
+  - glyph: "4 _ 6"
+    items:
+      - { id: o1, label: "<", correct: true }
+      - { id: o2, label: ">" }
+      - { id: o3, label: "=" }
+  - glyph: "21 _ 28"
+    items:
+      - { id: o1, label: "<", correct: true }
+      - { id: o2, label: ">" }
+      - { id: o3, label: "=" }
+  - glyph: "16 _ 16"
+    items:
+      - { id: o1, label: "=", correct: true }
+      - { id: o2, label: "<" }
+      - { id: o3, label: ">" }
   - glyph: "7 _ 13"
     items:
       - { id: o1, label: "<", correct: true }
       - { id: o2, label: ">" }
+      - { id: o3, label: "=" }
+  - glyph: "19 _ 11"
+    items:
+      - { id: o1, label: ">", correct: true }
+      - { id: o2, label: "<" }
+      - { id: o3, label: "=" }
+  - glyph: "5 _ 2"
+    items:
+      - { id: o1, label: ">", correct: true }
+      - { id: o2, label: "<" }
+      - { id: o3, label: "=" }
+  - glyph: "18 _ 26"
+    items:
+      - { id: o1, label: "<", correct: true }
+      - { id: o2, label: ">" }
+      - { id: o3, label: "=" }
+  - glyph: "13 _ 18"
+    items:
+      - { id: o1, label: "<", correct: true }
+      - { id: o2, label: ">" }
+      - { id: o3, label: "=" }
+  - glyph: "10 _ 30"
+    items:
+      - { id: o1, label: "<", correct: true }
+      - { id: o2, label: ">" }
+      - { id: o3, label: "=" }
+  - glyph: "28 _ 13"
+    items:
+      - { id: o1, label: ">", correct: true }
+      - { id: o2, label: "<" }
+      - { id: o3, label: "=" }
+  - glyph: "14 _ 19"
+    items:
+      - { id: o1, label: "<", correct: true }
+      - { id: o2, label: ">" }
+      - { id: o3, label: "=" }
+  - glyph: "21 _ 2"
+    items:
+      - { id: o1, label: ">", correct: true }
+      - { id: o2, label: "<" }
+      - { id: o3, label: "=" }
+  - glyph: "17 _ 15"
+    items:
+      - { id: o1, label: ">", correct: true }
+      - { id: o2, label: "<" }
+      - { id: o3, label: "=" }
+  - glyph: "17 _ 30"
+    items:
+      - { id: o1, label: "<", correct: true }
+      - { id: o2, label: ">" }
+      - { id: o3, label: "=" }
+  - glyph: "27 _ 9"
+    items:
+      - { id: o1, label: ">", correct: true }
+      - { id: o2, label: "<" }
+      - { id: o3, label: "=" }
+  - glyph: "20 _ 1"
+    items:
+      - { id: o1, label: ">", correct: true }
+      - { id: o2, label: "<" }
       - { id: o3, label: "=" }
 reward: { stars: 3, sfx: ding, effect: confetti }

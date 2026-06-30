@@ -20,6 +20,12 @@ questions:
       - { id: o2, label: "14" }
       - { id: o3, label: "12" }
       - { id: o4, label: "15" }
+  - glyph: "5, 8, 11, ?"
+    items:
+      - { id: o1, label: "14", correct: true }
+      - { id: o2, label: "15" }
+      - { id: o3, label: "13" }
+      - { id: o4, label: "16" }
   - glyph: "6, 9, 12, ?"
     items:
       - { id: o1, label: "15", correct: true }
@@ -32,6 +38,60 @@ questions:
       - { id: o2, label: "17" }
       - { id: o3, label: "15" }
       - { id: o4, label: "18" }
+  - glyph: "8, 11, 14, ?"
+    items:
+      - { id: o1, label: "17", correct: true }
+      - { id: o2, label: "18" }
+      - { id: o3, label: "16" }
+      - { id: o4, label: "19" }
+  - glyph: "9, 12, 15, ?"
+    items:
+      - { id: o1, label: "18", correct: true }
+      - { id: o2, label: "19" }
+      - { id: o3, label: "17" }
+      - { id: o4, label: "20" }
+  - glyph: "10, 13, 16, ?"
+    items:
+      - { id: o1, label: "19", correct: true }
+      - { id: o2, label: "20" }
+      - { id: o3, label: "18" }
+      - { id: o4, label: "21" }
+  - glyph: "11, 14, 17, ?"
+    items:
+      - { id: o1, label: "20", correct: true }
+      - { id: o2, label: "21" }
+      - { id: o3, label: "19" }
+      - { id: o4, label: "22" }
+  - glyph: "12, 15, 18, ?"
+    items:
+      - { id: o1, label: "21", correct: true }
+      - { id: o2, label: "22" }
+      - { id: o3, label: "20" }
+      - { id: o4, label: "23" }
+  - glyph: "13, 16, 19, ?"
+    items:
+      - { id: o1, label: "22", correct: true }
+      - { id: o2, label: "23" }
+      - { id: o3, label: "21" }
+      - { id: o4, label: "24" }
+  - glyph: "14, 17, 20, ?"
+    items:
+      - { id: o1, label: "23", correct: true }
+      - { id: o2, label: "24" }
+      - { id: o3, label: "22" }
+      - { id: o4, label: "25" }
+  - glyph: "15, 18, 21, ?"
+    items:
+      - { id: o1, label: "24", correct: true }
+      - { id: o2, label: "25" }
+      - { id: o3, label: "23" }
+      - { id: o4, label: "26" }
+  - glyph: "16, 19, 22, ?"
+    items:
+      - { id: o1, label: "25", correct: true }
+      - { id: o2, label: "26" }
+      - { id: o3, label: "24" }
+      - { id: o4, label: "27" }
   - glyph: "3, 7, 11, ?"
     items:
       - { id: o1, label: "15", correct: true }
@@ -44,6 +104,12 @@ questions:
       - { id: o2, label: "17" }
       - { id: o3, label: "15" }
       - { id: o4, label: "18" }
+  - glyph: "5, 9, 13, ?"
+    items:
+      - { id: o1, label: "17", correct: true }
+      - { id: o2, label: "18" }
+      - { id: o3, label: "16" }
+      - { id: o4, label: "19" }
   - glyph: "6, 10, 14, ?"
     items:
       - { id: o1, label: "18", correct: true }
@@ -56,6 +122,60 @@ questions:
       - { id: o2, label: "20" }
       - { id: o3, label: "18" }
       - { id: o4, label: "21" }
+  - glyph: "8, 12, 16, ?"
+    items:
+      - { id: o1, label: "20", correct: true }
+      - { id: o2, label: "21" }
+      - { id: o3, label: "19" }
+      - { id: o4, label: "22" }
+  - glyph: "9, 13, 17, ?"
+    items:
+      - { id: o1, label: "21", correct: true }
+      - { id: o2, label: "22" }
+      - { id: o3, label: "20" }
+      - { id: o4, label: "23" }
+  - glyph: "10, 14, 18, ?"
+    items:
+      - { id: o1, label: "22", correct: true }
+      - { id: o2, label: "23" }
+      - { id: o3, label: "21" }
+      - { id: o4, label: "24" }
+  - glyph: "11, 15, 19, ?"
+    items:
+      - { id: o1, label: "23", correct: true }
+      - { id: o2, label: "24" }
+      - { id: o3, label: "22" }
+      - { id: o4, label: "25" }
+  - glyph: "12, 16, 20, ?"
+    items:
+      - { id: o1, label: "24", correct: true }
+      - { id: o2, label: "25" }
+      - { id: o3, label: "23" }
+      - { id: o4, label: "26" }
+  - glyph: "13, 17, 21, ?"
+    items:
+      - { id: o1, label: "25", correct: true }
+      - { id: o2, label: "26" }
+      - { id: o3, label: "24" }
+      - { id: o4, label: "27" }
+  - glyph: "14, 18, 22, ?"
+    items:
+      - { id: o1, label: "26", correct: true }
+      - { id: o2, label: "27" }
+      - { id: o3, label: "25" }
+      - { id: o4, label: "28" }
+  - glyph: "15, 19, 23, ?"
+    items:
+      - { id: o1, label: "27", correct: true }
+      - { id: o2, label: "28" }
+      - { id: o3, label: "26" }
+      - { id: o4, label: "29" }
+  - glyph: "16, 20, 24, ?"
+    items:
+      - { id: o1, label: "28", correct: true }
+      - { id: o2, label: "29" }
+      - { id: o3, label: "27" }
+      - { id: o4, label: "30" }
   - glyph: "3, 9, 15, ?"
     items:
       - { id: o1, label: "21", correct: true }
@@ -68,6 +188,12 @@ questions:
       - { id: o2, label: "23" }
       - { id: o3, label: "21" }
       - { id: o4, label: "24" }
+  - glyph: "5, 11, 17, ?"
+    items:
+      - { id: o1, label: "23", correct: true }
+      - { id: o2, label: "24" }
+      - { id: o3, label: "22" }
+      - { id: o4, label: "25" }
   - glyph: "6, 12, 18, ?"
     items:
       - { id: o1, label: "24", correct: true }
@@ -80,6 +206,60 @@ questions:
       - { id: o2, label: "26" }
       - { id: o3, label: "24" }
       - { id: o4, label: "27" }
+  - glyph: "8, 14, 20, ?"
+    items:
+      - { id: o1, label: "26", correct: true }
+      - { id: o2, label: "27" }
+      - { id: o3, label: "25" }
+      - { id: o4, label: "28" }
+  - glyph: "9, 15, 21, ?"
+    items:
+      - { id: o1, label: "27", correct: true }
+      - { id: o2, label: "28" }
+      - { id: o3, label: "26" }
+      - { id: o4, label: "29" }
+  - glyph: "10, 16, 22, ?"
+    items:
+      - { id: o1, label: "28", correct: true }
+      - { id: o2, label: "29" }
+      - { id: o3, label: "27" }
+      - { id: o4, label: "30" }
+  - glyph: "11, 17, 23, ?"
+    items:
+      - { id: o1, label: "29", correct: true }
+      - { id: o2, label: "30" }
+      - { id: o3, label: "28" }
+      - { id: o4, label: "31" }
+  - glyph: "12, 18, 24, ?"
+    items:
+      - { id: o1, label: "30", correct: true }
+      - { id: o2, label: "31" }
+      - { id: o3, label: "29" }
+      - { id: o4, label: "32" }
+  - glyph: "13, 19, 25, ?"
+    items:
+      - { id: o1, label: "31", correct: true }
+      - { id: o2, label: "32" }
+      - { id: o3, label: "30" }
+      - { id: o4, label: "33" }
+  - glyph: "14, 20, 26, ?"
+    items:
+      - { id: o1, label: "32", correct: true }
+      - { id: o2, label: "33" }
+      - { id: o3, label: "31" }
+      - { id: o4, label: "34" }
+  - glyph: "15, 21, 27, ?"
+    items:
+      - { id: o1, label: "33", correct: true }
+      - { id: o2, label: "34" }
+      - { id: o3, label: "32" }
+      - { id: o4, label: "35" }
+  - glyph: "16, 22, 28, ?"
+    items:
+      - { id: o1, label: "34", correct: true }
+      - { id: o2, label: "35" }
+      - { id: o3, label: "33" }
+      - { id: o4, label: "36" }
   - glyph: "3, 10, 17, ?"
     items:
       - { id: o1, label: "24", correct: true }
@@ -92,6 +272,12 @@ questions:
       - { id: o2, label: "26" }
       - { id: o3, label: "24" }
       - { id: o4, label: "27" }
+  - glyph: "5, 12, 19, ?"
+    items:
+      - { id: o1, label: "26", correct: true }
+      - { id: o2, label: "27" }
+      - { id: o3, label: "25" }
+      - { id: o4, label: "28" }
   - glyph: "6, 13, 20, ?"
     items:
       - { id: o1, label: "27", correct: true }
@@ -104,4 +290,58 @@ questions:
       - { id: o2, label: "29" }
       - { id: o3, label: "27" }
       - { id: o4, label: "30" }
+  - glyph: "8, 15, 22, ?"
+    items:
+      - { id: o1, label: "29", correct: true }
+      - { id: o2, label: "30" }
+      - { id: o3, label: "28" }
+      - { id: o4, label: "31" }
+  - glyph: "9, 16, 23, ?"
+    items:
+      - { id: o1, label: "30", correct: true }
+      - { id: o2, label: "31" }
+      - { id: o3, label: "29" }
+      - { id: o4, label: "32" }
+  - glyph: "10, 17, 24, ?"
+    items:
+      - { id: o1, label: "31", correct: true }
+      - { id: o2, label: "32" }
+      - { id: o3, label: "30" }
+      - { id: o4, label: "33" }
+  - glyph: "11, 18, 25, ?"
+    items:
+      - { id: o1, label: "32", correct: true }
+      - { id: o2, label: "33" }
+      - { id: o3, label: "31" }
+      - { id: o4, label: "34" }
+  - glyph: "12, 19, 26, ?"
+    items:
+      - { id: o1, label: "33", correct: true }
+      - { id: o2, label: "34" }
+      - { id: o3, label: "32" }
+      - { id: o4, label: "35" }
+  - glyph: "13, 20, 27, ?"
+    items:
+      - { id: o1, label: "34", correct: true }
+      - { id: o2, label: "35" }
+      - { id: o3, label: "33" }
+      - { id: o4, label: "36" }
+  - glyph: "14, 21, 28, ?"
+    items:
+      - { id: o1, label: "35", correct: true }
+      - { id: o2, label: "36" }
+      - { id: o3, label: "34" }
+      - { id: o4, label: "37" }
+  - glyph: "15, 22, 29, ?"
+    items:
+      - { id: o1, label: "36", correct: true }
+      - { id: o2, label: "37" }
+      - { id: o3, label: "35" }
+      - { id: o4, label: "38" }
+  - glyph: "16, 23, 30, ?"
+    items:
+      - { id: o1, label: "37", correct: true }
+      - { id: o2, label: "38" }
+      - { id: o3, label: "36" }
+      - { id: o4, label: "39" }
 reward: { stars: 3, sfx: ding, effect: confetti }

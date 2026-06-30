@@ -8,52 +8,304 @@ title: "כַּמָּה יְחִידוֹת?"
 activity: multiple-choice
 prompt_tts: "כַּמָּה יְחִידוֹת יֵשׁ בַּמִּסְפָּר?"
 questions:
-  - glyph: "47"
+  - glyph: "64"
+    items:
+      - { id: o1, label: "4", correct: true }
+      - { id: o2, label: "5" }
+      - { id: o3, label: "3" }
+      - { id: o4, label: "6" }
+  - glyph: "74"
+    items:
+      - { id: o1, label: "4", correct: true }
+      - { id: o2, label: "5" }
+      - { id: o3, label: "3" }
+      - { id: o4, label: "6" }
+  - glyph: "45"
+    items:
+      - { id: o1, label: "5", correct: true }
+      - { id: o2, label: "6" }
+      - { id: o3, label: "4" }
+      - { id: o4, label: "7" }
+  - glyph: "99"
+    items:
+      - { id: o1, label: "9", correct: true }
+      - { id: o2, label: "8" }
+      - { id: o3, label: "7" }
+      - { id: o4, label: "6" }
+  - glyph: "34"
+    items:
+      - { id: o1, label: "4", correct: true }
+      - { id: o2, label: "5" }
+      - { id: o3, label: "3" }
+      - { id: o4, label: "6" }
+  - glyph: "49"
+    items:
+      - { id: o1, label: "9", correct: true }
+      - { id: o2, label: "8" }
+      - { id: o3, label: "7" }
+      - { id: o4, label: "6" }
+  - glyph: "44"
+    items:
+      - { id: o1, label: "4", correct: true }
+      - { id: o2, label: "5" }
+      - { id: o3, label: "3" }
+      - { id: o4, label: "6" }
+  - glyph: "77"
     items:
       - { id: o1, label: "7", correct: true }
       - { id: o2, label: "8" }
       - { id: o3, label: "6" }
       - { id: o4, label: "9" }
+  - glyph: "20"
+    items:
+      - { id: o1, label: "0", correct: true }
+      - { id: o2, label: "1" }
+      - { id: o3, label: "2" }
+      - { id: o4, label: "3" }
+  - glyph: "13"
+    items:
+      - { id: o1, label: "3", correct: true }
+      - { id: o2, label: "4" }
+      - { id: o3, label: "2" }
+      - { id: o4, label: "5" }
+  - glyph: "97"
+    items:
+      - { id: o1, label: "7", correct: true }
+      - { id: o2, label: "8" }
+      - { id: o3, label: "6" }
+      - { id: o4, label: "9" }
+  - glyph: "73"
+    items:
+      - { id: o1, label: "3", correct: true }
+      - { id: o2, label: "4" }
+      - { id: o3, label: "2" }
+      - { id: o4, label: "5" }
+  - glyph: "48"
+    items:
+      - { id: o1, label: "8", correct: true }
+      - { id: o2, label: "9" }
+      - { id: o3, label: "7" }
+      - { id: o4, label: "6" }
+  - glyph: "65"
+    items:
+      - { id: o1, label: "5", correct: true }
+      - { id: o2, label: "6" }
+      - { id: o3, label: "4" }
+      - { id: o4, label: "7" }
   - glyph: "63"
     items:
       - { id: o1, label: "3", correct: true }
       - { id: o2, label: "4" }
       - { id: o3, label: "2" }
       - { id: o4, label: "5" }
-  - glyph: "28"
+  - glyph: "17"
     items:
-      - { id: o1, label: "8", correct: true }
-      - { id: o2, label: "9" }
-      - { id: o3, label: "7" }
-      - { id: o4, label: "6" }
-  - glyph: "91"
+      - { id: o1, label: "7", correct: true }
+      - { id: o2, label: "8" }
+      - { id: o3, label: "6" }
+      - { id: o4, label: "9" }
+  - glyph: "23"
+    items:
+      - { id: o1, label: "3", correct: true }
+      - { id: o2, label: "4" }
+      - { id: o3, label: "2" }
+      - { id: o4, label: "5" }
+  - glyph: "51"
     items:
       - { id: o1, label: "1", correct: true }
       - { id: o2, label: "2" }
       - { id: o3, label: "0" }
       - { id: o4, label: "3" }
-  - glyph: "35"
+  - glyph: "10"
     items:
-      - { id: o1, label: "5", correct: true }
-      - { id: o2, label: "6" }
-      - { id: o3, label: "4" }
-      - { id: o4, label: "7" }
-  - glyph: "72"
+      - { id: o1, label: "0", correct: true }
+      - { id: o2, label: "1" }
+      - { id: o3, label: "2" }
+      - { id: o4, label: "3" }
+  - glyph: "50"
     items:
-      - { id: o1, label: "2", correct: true }
-      - { id: o2, label: "3" }
-      - { id: o3, label: "1" }
-      - { id: o4, label: "4" }
-  - glyph: "56"
+      - { id: o1, label: "0", correct: true }
+      - { id: o2, label: "1" }
+      - { id: o3, label: "2" }
+      - { id: o4, label: "3" }
+  - glyph: "41"
     items:
-      - { id: o1, label: "6", correct: true }
-      - { id: o2, label: "7" }
-      - { id: o3, label: "5" }
-      - { id: o4, label: "8" }
-  - glyph: "84"
+      - { id: o1, label: "1", correct: true }
+      - { id: o2, label: "2" }
+      - { id: o3, label: "0" }
+      - { id: o4, label: "3" }
+  - glyph: "24"
     items:
       - { id: o1, label: "4", correct: true }
       - { id: o2, label: "5" }
       - { id: o3, label: "3" }
       - { id: o4, label: "6" }
+  - glyph: "81"
+    items:
+      - { id: o1, label: "1", correct: true }
+      - { id: o2, label: "2" }
+      - { id: o3, label: "0" }
+      - { id: o4, label: "3" }
+  - glyph: "68"
+    items:
+      - { id: o1, label: "8", correct: true }
+      - { id: o2, label: "9" }
+      - { id: o3, label: "7" }
+      - { id: o4, label: "6" }
+  - glyph: "80"
+    items:
+      - { id: o1, label: "0", correct: true }
+      - { id: o2, label: "1" }
+      - { id: o3, label: "2" }
+      - { id: o4, label: "3" }
+  - glyph: "67"
+    items:
+      - { id: o1, label: "7", correct: true }
+      - { id: o2, label: "8" }
+      - { id: o3, label: "6" }
+      - { id: o4, label: "9" }
+  - glyph: "88"
+    items:
+      - { id: o1, label: "8", correct: true }
+      - { id: o2, label: "9" }
+      - { id: o3, label: "7" }
+      - { id: o4, label: "6" }
+  - glyph: "57"
+    items:
+      - { id: o1, label: "7", correct: true }
+      - { id: o2, label: "8" }
+      - { id: o3, label: "6" }
+      - { id: o4, label: "9" }
+  - glyph: "69"
+    items:
+      - { id: o1, label: "9", correct: true }
+      - { id: o2, label: "8" }
+      - { id: o3, label: "7" }
+      - { id: o4, label: "6" }
+  - glyph: "19"
+    items:
+      - { id: o1, label: "9", correct: true }
+      - { id: o2, label: "8" }
+      - { id: o3, label: "7" }
+      - { id: o4, label: "6" }
+  - glyph: "31"
+    items:
+      - { id: o1, label: "1", correct: true }
+      - { id: o2, label: "2" }
+      - { id: o3, label: "0" }
+      - { id: o4, label: "3" }
+  - glyph: "96"
+    items:
+      - { id: o1, label: "6", correct: true }
+      - { id: o2, label: "7" }
+      - { id: o3, label: "5" }
+      - { id: o4, label: "8" }
+  - glyph: "58"
+    items:
+      - { id: o1, label: "8", correct: true }
+      - { id: o2, label: "9" }
+      - { id: o3, label: "7" }
+      - { id: o4, label: "6" }
+  - glyph: "12"
+    items:
+      - { id: o1, label: "2", correct: true }
+      - { id: o2, label: "3" }
+      - { id: o3, label: "1" }
+      - { id: o4, label: "4" }
+  - glyph: "61"
+    items:
+      - { id: o1, label: "1", correct: true }
+      - { id: o2, label: "2" }
+      - { id: o3, label: "0" }
+      - { id: o4, label: "3" }
+  - glyph: "94"
+    items:
+      - { id: o1, label: "4", correct: true }
+      - { id: o2, label: "5" }
+      - { id: o3, label: "3" }
+      - { id: o4, label: "6" }
+  - glyph: "87"
+    items:
+      - { id: o1, label: "7", correct: true }
+      - { id: o2, label: "8" }
+      - { id: o3, label: "6" }
+      - { id: o4, label: "9" }
+  - glyph: "14"
+    items:
+      - { id: o1, label: "4", correct: true }
+      - { id: o2, label: "5" }
+      - { id: o3, label: "3" }
+      - { id: o4, label: "6" }
+  - glyph: "95"
+    items:
+      - { id: o1, label: "5", correct: true }
+      - { id: o2, label: "6" }
+      - { id: o3, label: "4" }
+      - { id: o4, label: "7" }
+  - glyph: "29"
+    items:
+      - { id: o1, label: "9", correct: true }
+      - { id: o2, label: "8" }
+      - { id: o3, label: "7" }
+      - { id: o4, label: "6" }
+  - glyph: "66"
+    items:
+      - { id: o1, label: "6", correct: true }
+      - { id: o2, label: "7" }
+      - { id: o3, label: "5" }
+      - { id: o4, label: "8" }
+  - glyph: "93"
+    items:
+      - { id: o1, label: "3", correct: true }
+      - { id: o2, label: "4" }
+      - { id: o3, label: "2" }
+      - { id: o4, label: "5" }
+  - glyph: "92"
+    items:
+      - { id: o1, label: "2", correct: true }
+      - { id: o2, label: "3" }
+      - { id: o3, label: "1" }
+      - { id: o4, label: "4" }
+  - glyph: "27"
+    items:
+      - { id: o1, label: "7", correct: true }
+      - { id: o2, label: "8" }
+      - { id: o3, label: "6" }
+      - { id: o4, label: "9" }
+  - glyph: "40"
+    items:
+      - { id: o1, label: "0", correct: true }
+      - { id: o2, label: "1" }
+      - { id: o3, label: "2" }
+      - { id: o4, label: "3" }
+  - glyph: "42"
+    items:
+      - { id: o1, label: "2", correct: true }
+      - { id: o2, label: "3" }
+      - { id: o3, label: "1" }
+      - { id: o4, label: "4" }
+  - glyph: "90"
+    items:
+      - { id: o1, label: "0", correct: true }
+      - { id: o2, label: "1" }
+      - { id: o3, label: "2" }
+      - { id: o4, label: "3" }
+  - glyph: "70"
+    items:
+      - { id: o1, label: "0", correct: true }
+      - { id: o2, label: "1" }
+      - { id: o3, label: "2" }
+      - { id: o4, label: "3" }
+  - glyph: "54"
+    items:
+      - { id: o1, label: "4", correct: true }
+      - { id: o2, label: "5" }
+      - { id: o3, label: "3" }
+      - { id: o4, label: "6" }
+  - glyph: "53"
+    items:
+      - { id: o1, label: "3", correct: true }
+      - { id: o2, label: "4" }
+      - { id: o3, label: "2" }
+      - { id: o4, label: "5" }
 reward: { stars: 3, sfx: ding, effect: confetti }

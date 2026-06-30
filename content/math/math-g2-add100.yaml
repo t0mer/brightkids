@@ -8,28 +8,78 @@ title: "חִבּוּר עַד 100"
 activity: arithmetic
 prompt_tts: "פִּתְרוּ אֶת תַּרְגִּילֵי הַחִבּוּר"
 problems:
-  - { operands: [66, 32], operator: "+", answer: 98 }
-  - { operands: [45, 32], operator: "+", answer: 77 }
+  - { operands: [59, 10], operator: "+", answer: 69 }
+  - { operands: [10, 10], operator: "+", answer: 20 }
+  - { operands: [24, 65], operator: "+", answer: 89 }
   - { operands: [24, 32], operator: "+", answer: 56 }
-  - { operands: [73, 21], operator: "+", answer: 94 }
-  - { operands: [73, 32], operator: "+", answer: 105 }
-  - { operands: [87, 65], operator: "+", answer: 152 }
-  - { operands: [31, 21], operator: "+", answer: 52 }
-  - { operands: [24, 54], operator: "+", answer: 78 }
+  - { operands: [73, 54], operator: "+", answer: 127 }
+  - { operands: [59, 87], operator: "+", answer: 146 }
+  - { operands: [87, 21], operator: "+", answer: 108 }
+  - { operands: [10, 76], operator: "+", answer: 86 }
+  - { operands: [17, 76], operator: "+", answer: 93 }
+  - { operands: [66, 32], operator: "+", answer: 98 }
+  - { operands: [31, 54], operator: "+", answer: 85 }
+  - { operands: [52, 87], operator: "+", answer: 139 }
+  - { operands: [52, 32], operator: "+", answer: 84 }
+  - { operands: [52, 65], operator: "+", answer: 117 }
   - { operands: [66, 10], operator: "+", answer: 76 }
-  - { operands: [80, 87], operator: "+", answer: 167 }
+  - { operands: [45, 21], operator: "+", answer: 66 }
+  - { operands: [87, 32], operator: "+", answer: 119 }
+  - { operands: [45, 10], operator: "+", answer: 55 }
+  - { operands: [73, 10], operator: "+", answer: 83 }
+  - { operands: [17, 65], operator: "+", answer: 82 }
+  - { operands: [38, 21], operator: "+", answer: 59 }
+  - { operands: [59, 54], operator: "+", answer: 113 }
+  - { operands: [87, 54], operator: "+", answer: 141 }
+  - { operands: [45, 43], operator: "+", answer: 88 }
+  - { operands: [66, 54], operator: "+", answer: 120 }
+  - { operands: [66, 76], operator: "+", answer: 142 }
+  - { operands: [10, 87], operator: "+", answer: 97 }
+  - { operands: [24, 43], operator: "+", answer: 67 }
+  - { operands: [59, 65], operator: "+", answer: 124 }
+  - { operands: [31, 43], operator: "+", answer: 74 }
+  - { operands: [45, 65], operator: "+", answer: 110 }
+  - { operands: [52, 10], operator: "+", answer: 62 }
+  - { operands: [10, 21], operator: "+", answer: 31 }
+  - { operands: [59, 32], operator: "+", answer: 91 }
+  - { operands: [38, 43], operator: "+", answer: 81 }
+  - { operands: [80, 65], operator: "+", answer: 145 }
+  - { operands: [38, 87], operator: "+", answer: 125 }
+  - { operands: [10, 43], operator: "+", answer: 53 }
+  - { operands: [10, 32], operator: "+", answer: 42 }
+  - { operands: [87, 43], operator: "+", answer: 130 }
+  - { operands: [87, 76], operator: "+", answer: 163 }
+  - { operands: [73, 76], operator: "+", answer: 149 }
+  - { operands: [66, 87], operator: "+", answer: 153 }
+  - { operands: [24, 54], operator: "+", answer: 78 }
+  - { operands: [38, 76], operator: "+", answer: 114 }
+  - { operands: [80, 32], operator: "+", answer: 112 }
+  - { operands: [45, 87], operator: "+", answer: 132 }
+  - { operands: [31, 21], operator: "+", answer: 52 }
+  - { operands: [17, 43], operator: "+", answer: 60 }
+  - { operands: [59, 21], operator: "+", answer: 80 }
   - { operands: [24, 76], operator: "+", answer: 100 }
   - { operands: [38, 32], operator: "+", answer: 70 }
-  - { operands: [24, 87], operator: "+", answer: 111 }
-  - { operands: [59, 54], operator: "+", answer: 113 }
-  - { operands: [31, 32], operator: "+", answer: 63 }
-  - { operands: [52, 87], operator: "+", answer: 139 }
-  - { operands: [24, 65], operator: "+", answer: 89 }
-  - { operands: [45, 10], operator: "+", answer: 55 }
-  - { operands: [45, 65], operator: "+", answer: 110 }
-  - { operands: [38, 43], operator: "+", answer: 81 }
-  - { operands: [31, 10], operator: "+", answer: 41 }
-  - { operands: [59, 65], operator: "+", answer: 124 }
+  - { operands: [80, 21], operator: "+", answer: 101 }
+  - { operands: [24, 21], operator: "+", answer: 45 }
+  - { operands: [87, 87], operator: "+", answer: 174 }
+  - { operands: [87, 65], operator: "+", answer: 152 }
+  - { operands: [87, 10], operator: "+", answer: 97 }
+  - { operands: [59, 43], operator: "+", answer: 102 }
+  - { operands: [17, 21], operator: "+", answer: 38 }
+  - { operands: [45, 32], operator: "+", answer: 77 }
+  - { operands: [80, 76], operator: "+", answer: 156 }
+  - { operands: [38, 10], operator: "+", answer: 48 }
+  - { operands: [24, 10], operator: "+", answer: 34 }
+  - { operands: [45, 76], operator: "+", answer: 121 }
+  - { operands: [45, 54], operator: "+", answer: 99 }
+  - { operands: [80, 54], operator: "+", answer: 134 }
+  - { operands: [52, 54], operator: "+", answer: 106 }
+  - { operands: [59, 76], operator: "+", answer: 135 }
   - { operands: [17, 87], operator: "+", answer: 104 }
-  - { operands: [66, 76], operator: "+", answer: 142 }
+  - { operands: [73, 43], operator: "+", answer: 116 }
+  - { operands: [80, 43], operator: "+", answer: 123 }
+  - { operands: [52, 76], operator: "+", answer: 128 }
+  - { operands: [52, 43], operator: "+", answer: 95 }
+  - { operands: [31, 87], operator: "+", answer: 118 }
 reward: { stars: 3, sfx: ding, effect: confetti }

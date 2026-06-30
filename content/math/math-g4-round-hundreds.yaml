@@ -8,52 +8,304 @@ title: "עִגּוּל לַמֵּאוֹת"
 activity: multiple-choice
 prompt_tts: "עַגְּלוּ אֶת הַמִּסְפָּר לַמֵּאוֹת"
 questions:
-  - glyph: "278"
+  - glyph: "865"
     items:
-      - { id: o1, label: "300", correct: true }
-      - { id: o2, label: "301" }
-      - { id: o3, label: "299" }
-      - { id: o4, label: "302" }
-  - glyph: "412"
+      - { id: o1, label: "900", correct: true }
+      - { id: o2, label: "901" }
+      - { id: o3, label: "899" }
+      - { id: o4, label: "902" }
+  - glyph: "353"
     items:
       - { id: o1, label: "400", correct: true }
       - { id: o2, label: "401" }
       - { id: o3, label: "399" }
       - { id: o4, label: "402" }
-  - glyph: "650"
-    items:
-      - { id: o1, label: "700", correct: true }
-      - { id: o2, label: "701" }
-      - { id: o3, label: "699" }
-      - { id: o4, label: "702" }
-  - glyph: "189"
-    items:
-      - { id: o1, label: "200", correct: true }
-      - { id: o2, label: "201" }
-      - { id: o3, label: "199" }
-      - { id: o4, label: "202" }
-  - glyph: "530"
-    items:
-      - { id: o1, label: "500", correct: true }
-      - { id: o2, label: "501" }
-      - { id: o3, label: "499" }
-      - { id: o4, label: "502" }
-  - glyph: "333"
+  - glyph: "305"
     items:
       - { id: o1, label: "300", correct: true }
       - { id: o2, label: "301" }
       - { id: o3, label: "299" }
       - { id: o4, label: "302" }
-  - glyph: "720"
+  - glyph: "670"
     items:
       - { id: o1, label: "700", correct: true }
       - { id: o2, label: "701" }
       - { id: o3, label: "699" }
       - { id: o4, label: "702" }
-  - glyph: "845"
+  - glyph: "145"
+    items:
+      - { id: o1, label: "100", correct: true }
+      - { id: o2, label: "101" }
+      - { id: o3, label: "99" }
+      - { id: o4, label: "102" }
+  - glyph: "724"
+    items:
+      - { id: o1, label: "700", correct: true }
+      - { id: o2, label: "701" }
+      - { id: o3, label: "699" }
+      - { id: o4, label: "702" }
+  - glyph: "451"
+    items:
+      - { id: o1, label: "500", correct: true }
+      - { id: o2, label: "501" }
+      - { id: o3, label: "499" }
+      - { id: o4, label: "502" }
+  - glyph: "205"
+    items:
+      - { id: o1, label: "200", correct: true }
+      - { id: o2, label: "201" }
+      - { id: o3, label: "199" }
+      - { id: o4, label: "202" }
+  - glyph: "105"
+    items:
+      - { id: o1, label: "100", correct: true }
+      - { id: o2, label: "101" }
+      - { id: o3, label: "99" }
+      - { id: o4, label: "102" }
+  - glyph: "615"
+    items:
+      - { id: o1, label: "600", correct: true }
+      - { id: o2, label: "601" }
+      - { id: o3, label: "599" }
+      - { id: o4, label: "602" }
+  - glyph: "499"
+    items:
+      - { id: o1, label: "500", correct: true }
+      - { id: o2, label: "501" }
+      - { id: o3, label: "499" }
+      - { id: o4, label: "502" }
+  - glyph: "755"
     items:
       - { id: o1, label: "800", correct: true }
       - { id: o2, label: "801" }
       - { id: o3, label: "799" }
       - { id: o4, label: "802" }
+  - glyph: "327"
+    items:
+      - { id: o1, label: "300", correct: true }
+      - { id: o2, label: "301" }
+      - { id: o3, label: "299" }
+      - { id: o4, label: "302" }
+  - glyph: "957"
+    items:
+      - { id: o1, label: "1000", correct: true }
+      - { id: o2, label: "1001" }
+      - { id: o3, label: "999" }
+      - { id: o4, label: "1002" }
+  - glyph: "744"
+    items:
+      - { id: o1, label: "700", correct: true }
+      - { id: o2, label: "701" }
+      - { id: o3, label: "699" }
+      - { id: o4, label: "702" }
+  - glyph: "782"
+    items:
+      - { id: o1, label: "800", correct: true }
+      - { id: o2, label: "801" }
+      - { id: o3, label: "799" }
+      - { id: o4, label: "802" }
+  - glyph: "377"
+    items:
+      - { id: o1, label: "400", correct: true }
+      - { id: o2, label: "401" }
+      - { id: o3, label: "399" }
+      - { id: o4, label: "402" }
+  - glyph: "460"
+    items:
+      - { id: o1, label: "500", correct: true }
+      - { id: o2, label: "501" }
+      - { id: o3, label: "499" }
+      - { id: o4, label: "502" }
+  - glyph: "482"
+    items:
+      - { id: o1, label: "500", correct: true }
+      - { id: o2, label: "501" }
+      - { id: o3, label: "499" }
+      - { id: o4, label: "502" }
+  - glyph: "310"
+    items:
+      - { id: o1, label: "300", correct: true }
+      - { id: o2, label: "301" }
+      - { id: o3, label: "299" }
+      - { id: o4, label: "302" }
+  - glyph: "509"
+    items:
+      - { id: o1, label: "500", correct: true }
+      - { id: o2, label: "501" }
+      - { id: o3, label: "499" }
+      - { id: o4, label: "502" }
+  - glyph: "418"
+    items:
+      - { id: o1, label: "400", correct: true }
+      - { id: o2, label: "401" }
+      - { id: o3, label: "399" }
+      - { id: o4, label: "402" }
+  - glyph: "759"
+    items:
+      - { id: o1, label: "800", correct: true }
+      - { id: o2, label: "801" }
+      - { id: o3, label: "799" }
+      - { id: o4, label: "802" }
+  - glyph: "665"
+    items:
+      - { id: o1, label: "700", correct: true }
+      - { id: o2, label: "701" }
+      - { id: o3, label: "699" }
+      - { id: o4, label: "702" }
+  - glyph: "867"
+    items:
+      - { id: o1, label: "900", correct: true }
+      - { id: o2, label: "901" }
+      - { id: o3, label: "899" }
+      - { id: o4, label: "902" }
+  - glyph: "683"
+    items:
+      - { id: o1, label: "700", correct: true }
+      - { id: o2, label: "701" }
+      - { id: o3, label: "699" }
+      - { id: o4, label: "702" }
+  - glyph: "855"
+    items:
+      - { id: o1, label: "900", correct: true }
+      - { id: o2, label: "901" }
+      - { id: o3, label: "899" }
+      - { id: o4, label: "902" }
+  - glyph: "641"
+    items:
+      - { id: o1, label: "600", correct: true }
+      - { id: o2, label: "601" }
+      - { id: o3, label: "599" }
+      - { id: o4, label: "602" }
+  - glyph: "807"
+    items:
+      - { id: o1, label: "800", correct: true }
+      - { id: o2, label: "801" }
+      - { id: o3, label: "799" }
+      - { id: o4, label: "802" }
+  - glyph: "814"
+    items:
+      - { id: o1, label: "800", correct: true }
+      - { id: o2, label: "801" }
+      - { id: o3, label: "799" }
+      - { id: o4, label: "802" }
+  - glyph: "221"
+    items:
+      - { id: o1, label: "200", correct: true }
+      - { id: o2, label: "201" }
+      - { id: o3, label: "199" }
+      - { id: o4, label: "202" }
+  - glyph: "977"
+    items:
+      - { id: o1, label: "1000", correct: true }
+      - { id: o2, label: "1001" }
+      - { id: o3, label: "999" }
+      - { id: o4, label: "1002" }
+  - glyph: "648"
+    items:
+      - { id: o1, label: "600", correct: true }
+      - { id: o2, label: "601" }
+      - { id: o3, label: "599" }
+      - { id: o4, label: "602" }
+  - glyph: "199"
+    items:
+      - { id: o1, label: "200", correct: true }
+      - { id: o2, label: "201" }
+      - { id: o3, label: "199" }
+      - { id: o4, label: "202" }
+  - glyph: "376"
+    items:
+      - { id: o1, label: "400", correct: true }
+      - { id: o2, label: "401" }
+      - { id: o3, label: "399" }
+      - { id: o4, label: "402" }
+  - glyph: "739"
+    items:
+      - { id: o1, label: "700", correct: true }
+      - { id: o2, label: "701" }
+      - { id: o3, label: "699" }
+      - { id: o4, label: "702" }
+  - glyph: "246"
+    items:
+      - { id: o1, label: "200", correct: true }
+      - { id: o2, label: "201" }
+      - { id: o3, label: "199" }
+      - { id: o4, label: "202" }
+  - glyph: "970"
+    items:
+      - { id: o1, label: "1000", correct: true }
+      - { id: o2, label: "1001" }
+      - { id: o3, label: "999" }
+      - { id: o4, label: "1002" }
+  - glyph: "290"
+    items:
+      - { id: o1, label: "300", correct: true }
+      - { id: o2, label: "301" }
+      - { id: o3, label: "299" }
+      - { id: o4, label: "302" }
+  - glyph: "848"
+    items:
+      - { id: o1, label: "800", correct: true }
+      - { id: o2, label: "801" }
+      - { id: o3, label: "799" }
+      - { id: o4, label: "802" }
+  - glyph: "853"
+    items:
+      - { id: o1, label: "900", correct: true }
+      - { id: o2, label: "901" }
+      - { id: o3, label: "899" }
+      - { id: o4, label: "902" }
+  - glyph: "130"
+    items:
+      - { id: o1, label: "100", correct: true }
+      - { id: o2, label: "101" }
+      - { id: o3, label: "99" }
+      - { id: o4, label: "102" }
+  - glyph: "773"
+    items:
+      - { id: o1, label: "800", correct: true }
+      - { id: o2, label: "801" }
+      - { id: o3, label: "799" }
+      - { id: o4, label: "802" }
+  - glyph: "438"
+    items:
+      - { id: o1, label: "400", correct: true }
+      - { id: o2, label: "401" }
+      - { id: o3, label: "399" }
+      - { id: o4, label: "402" }
+  - glyph: "662"
+    items:
+      - { id: o1, label: "700", correct: true }
+      - { id: o2, label: "701" }
+      - { id: o3, label: "699" }
+      - { id: o4, label: "702" }
+  - glyph: "339"
+    items:
+      - { id: o1, label: "300", correct: true }
+      - { id: o2, label: "301" }
+      - { id: o3, label: "299" }
+      - { id: o4, label: "302" }
+  - glyph: "575"
+    items:
+      - { id: o1, label: "600", correct: true }
+      - { id: o2, label: "601" }
+      - { id: o3, label: "599" }
+      - { id: o4, label: "602" }
+  - glyph: "542"
+    items:
+      - { id: o1, label: "500", correct: true }
+      - { id: o2, label: "501" }
+      - { id: o3, label: "499" }
+      - { id: o4, label: "502" }
+  - glyph: "994"
+    items:
+      - { id: o1, label: "1000", correct: true }
+      - { id: o2, label: "1001" }
+      - { id: o3, label: "999" }
+      - { id: o4, label: "1002" }
+  - glyph: "435"
+    items:
+      - { id: o1, label: "400", correct: true }
+      - { id: o2, label: "401" }
+      - { id: o3, label: "399" }
+      - { id: o4, label: "402" }
 reward: { stars: 3, sfx: ding, effect: confetti }

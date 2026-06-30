@@ -8,28 +8,227 @@ title: "חִבּוּר שְׁבָרִים"
 activity: multiple-choice
 prompt_tts: "כַּמָּה זֶה?"
 questions:
+  - glyph: "1/5 + 1/5"
+    items:
+      - { id: o1, label: "2/5", correct: true }
+      - { id: o2, label: "2/10" }
+      - { id: o3, label: "3/5" }
+  - glyph: "1/2 + 1/2"
+    items:
+      - { id: o1, label: "1", correct: true }
+      - { id: o2, label: "2/4" }
+      - { id: o3, label: "2/2" }
+      - { id: o4, label: "3/2" }
+  - glyph: "4/6 + 1/6"
+    items:
+      - { id: o1, label: "5/6", correct: true }
+      - { id: o2, label: "5/12" }
+      - { id: o3, label: "1" }
+  - glyph: "1/5 + 4/5"
+    items:
+      - { id: o1, label: "1", correct: true }
+      - { id: o2, label: "5/10" }
+      - { id: o3, label: "5/5" }
+      - { id: o4, label: "6/5" }
+  - glyph: "2/4 + 1/4"
+    items:
+      - { id: o1, label: "3/4", correct: true }
+      - { id: o2, label: "3/8" }
+      - { id: o3, label: "1" }
+  - glyph: "1/3 + 2/3"
+    items:
+      - { id: o1, label: "1", correct: true }
+      - { id: o2, label: "3/6" }
+      - { id: o3, label: "3/3" }
+      - { id: o4, label: "4/3" }
+  - glyph: "2/3 + 1/3"
+    items:
+      - { id: o1, label: "1", correct: true }
+      - { id: o2, label: "3/6" }
+      - { id: o3, label: "3/3" }
+      - { id: o4, label: "4/3" }
+  - glyph: "3/4 + 1/4"
+    items:
+      - { id: o1, label: "1", correct: true }
+      - { id: o2, label: "4/8" }
+      - { id: o3, label: "4/4" }
+      - { id: o4, label: "5/4" }
+  - glyph: "4/8 + 4/8"
+    items:
+      - { id: o1, label: "1", correct: true }
+      - { id: o2, label: "8/16" }
+      - { id: o3, label: "8/8" }
+      - { id: o4, label: "9/8" }
+  - glyph: "1/4 + 3/4"
+    items:
+      - { id: o1, label: "1", correct: true }
+      - { id: o2, label: "4/8" }
+      - { id: o3, label: "4/4" }
+      - { id: o4, label: "5/4" }
+  - glyph: "5/8 + 2/8"
+    items:
+      - { id: o1, label: "7/8", correct: true }
+      - { id: o2, label: "7/16" }
+      - { id: o3, label: "1" }
+  - glyph: "2/8 + 6/8"
+    items:
+      - { id: o1, label: "1", correct: true }
+      - { id: o2, label: "8/16" }
+      - { id: o3, label: "8/8" }
+      - { id: o4, label: "9/8" }
+  - glyph: "2/6 + 3/6"
+    items:
+      - { id: o1, label: "5/6", correct: true }
+      - { id: o2, label: "5/12" }
+      - { id: o3, label: "1" }
+  - glyph: "1/8 + 7/8"
+    items:
+      - { id: o1, label: "1", correct: true }
+      - { id: o2, label: "8/16" }
+      - { id: o3, label: "8/8" }
+      - { id: o4, label: "9/8" }
+  - glyph: "7/8 + 1/8"
+    items:
+      - { id: o1, label: "1", correct: true }
+      - { id: o2, label: "8/16" }
+      - { id: o3, label: "8/8" }
+      - { id: o4, label: "9/8" }
+  - glyph: "1/6 + 5/6"
+    items:
+      - { id: o1, label: "1", correct: true }
+      - { id: o2, label: "6/12" }
+      - { id: o3, label: "6/6" }
+      - { id: o4, label: "7/6" }
+  - glyph: "3/5 + 1/5"
+    items:
+      - { id: o1, label: "4/5", correct: true }
+      - { id: o2, label: "4/10" }
+      - { id: o3, label: "1" }
+  - glyph: "1/6 + 3/6"
+    items:
+      - { id: o1, label: "2/3", correct: true }
+      - { id: o2, label: "4/12" }
+      - { id: o3, label: "4/6" }
+      - { id: o4, label: "5/6" }
   - glyph: "1/4 + 1/4"
     items:
       - { id: o1, label: "1/2", correct: true }
       - { id: o2, label: "2/8" }
-      - { id: o3, label: "1/8" }
-      - { id: o4, label: "2/4" }
+      - { id: o3, label: "2/4" }
+      - { id: o4, label: "3/4" }
+  - glyph: "1/8 + 1/8"
+    items:
+      - { id: o1, label: "1/4", correct: true }
+      - { id: o2, label: "2/16" }
+      - { id: o3, label: "2/8" }
+      - { id: o4, label: "3/8" }
   - glyph: "1/3 + 1/3"
     items:
       - { id: o1, label: "2/3", correct: true }
       - { id: o2, label: "2/6" }
-      - { id: o3, label: "1/6" }
-      - { id: o4, label: "1/3" }
-  - glyph: "1/2 + 1/4"
+      - { id: o3, label: "1" }
+  - glyph: "3/5 + 2/5"
+    items:
+      - { id: o1, label: "1", correct: true }
+      - { id: o2, label: "5/10" }
+      - { id: o3, label: "5/5" }
+      - { id: o4, label: "6/5" }
+  - glyph: "2/5 + 1/5"
+    items:
+      - { id: o1, label: "3/5", correct: true }
+      - { id: o2, label: "3/10" }
+      - { id: o3, label: "4/5" }
+  - glyph: "2/5 + 3/5"
+    items:
+      - { id: o1, label: "1", correct: true }
+      - { id: o2, label: "5/10" }
+      - { id: o3, label: "5/5" }
+      - { id: o4, label: "6/5" }
+  - glyph: "3/8 + 3/8"
     items:
       - { id: o1, label: "3/4", correct: true }
-      - { id: o2, label: "2/6" }
-      - { id: o3, label: "1/8" }
-      - { id: o4, label: "2/4" }
+      - { id: o2, label: "6/16" }
+      - { id: o3, label: "6/8" }
+      - { id: o4, label: "7/8" }
+  - glyph: "2/6 + 4/6"
+    items:
+      - { id: o1, label: "1", correct: true }
+      - { id: o2, label: "6/12" }
+      - { id: o3, label: "6/6" }
+      - { id: o4, label: "7/6" }
+  - glyph: "1/8 + 2/8"
+    items:
+      - { id: o1, label: "3/8", correct: true }
+      - { id: o2, label: "3/16" }
+      - { id: o3, label: "1/2" }
+  - glyph: "4/6 + 2/6"
+    items:
+      - { id: o1, label: "1", correct: true }
+      - { id: o2, label: "6/12" }
+      - { id: o3, label: "6/6" }
+      - { id: o4, label: "7/6" }
+  - glyph: "6/8 + 1/8"
+    items:
+      - { id: o1, label: "7/8", correct: true }
+      - { id: o2, label: "7/16" }
+      - { id: o3, label: "1" }
+  - glyph: "3/8 + 2/8"
+    items:
+      - { id: o1, label: "5/8", correct: true }
+      - { id: o2, label: "5/16" }
+      - { id: o3, label: "3/4" }
+  - glyph: "3/6 + 2/6"
+    items:
+      - { id: o1, label: "5/6", correct: true }
+      - { id: o2, label: "5/12" }
+      - { id: o3, label: "1" }
+  - glyph: "1/6 + 2/6"
+    items:
+      - { id: o1, label: "1/2", correct: true }
+      - { id: o2, label: "3/12" }
+      - { id: o3, label: "3/6" }
+      - { id: o4, label: "2/3" }
+  - glyph: "1/5 + 3/5"
+    items:
+      - { id: o1, label: "4/5", correct: true }
+      - { id: o2, label: "4/10" }
+      - { id: o3, label: "1" }
+  - glyph: "1/4 + 2/4"
+    items:
+      - { id: o1, label: "3/4", correct: true }
+      - { id: o2, label: "3/8" }
+      - { id: o3, label: "1" }
+  - glyph: "2/5 + 2/5"
+    items:
+      - { id: o1, label: "4/5", correct: true }
+      - { id: o2, label: "4/10" }
+      - { id: o3, label: "1" }
+  - glyph: "1/6 + 4/6"
+    items:
+      - { id: o1, label: "5/6", correct: true }
+      - { id: o2, label: "5/12" }
+      - { id: o3, label: "1" }
+  - glyph: "3/6 + 3/6"
+    items:
+      - { id: o1, label: "1", correct: true }
+      - { id: o2, label: "6/12" }
+      - { id: o3, label: "6/6" }
+      - { id: o4, label: "7/6" }
   - glyph: "1/5 + 2/5"
     items:
       - { id: o1, label: "3/5", correct: true }
       - { id: o2, label: "3/10" }
-      - { id: o3, label: "1/5" }
-      - { id: o4, label: "2/5" }
+      - { id: o3, label: "4/5" }
+  - glyph: "4/5 + 1/5"
+    items:
+      - { id: o1, label: "1", correct: true }
+      - { id: o2, label: "5/10" }
+      - { id: o3, label: "5/5" }
+      - { id: o4, label: "6/5" }
+  - glyph: "5/8 + 3/8"
+    items:
+      - { id: o1, label: "1", correct: true }
+      - { id: o2, label: "8/16" }
+      - { id: o3, label: "8/8" }
+      - { id: o4, label: "9/8" }
 reward: { stars: 3, sfx: ding, effect: confetti }

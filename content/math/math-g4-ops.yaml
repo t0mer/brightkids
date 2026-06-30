@@ -8,52 +8,304 @@ title: "סֵדֶר פְּעוּלוֹת"
 activity: multiple-choice
 prompt_tts: "פִּתְרוּ לְפִי סֵדֶר הַפְּעוּלוֹת"
 questions:
-  - glyph: "(4 + 2) × 3"
-    items:
-      - { id: o1, label: "18", correct: true }
-      - { id: o2, label: "10" }
-      - { id: o3, label: "19" }
-      - { id: o4, label: "17" }
-  - glyph: "20 - 3 × 4"
-    items:
-      - { id: o1, label: "8", correct: true }
-      - { id: o2, label: "68" }
-      - { id: o3, label: "9" }
-      - { id: o4, label: "7" }
-  - glyph: "5 × 4 + 2"
-    items:
-      - { id: o1, label: "22", correct: true }
-      - { id: o2, label: "30" }
-      - { id: o3, label: "23" }
-      - { id: o4, label: "21" }
-  - glyph: "2 + 5 × 3"
-    items:
-      - { id: o1, label: "17", correct: true }
-      - { id: o2, label: "21" }
-      - { id: o3, label: "18" }
-      - { id: o4, label: "16" }
-  - glyph: "(6 + 2) × 4"
+  - glyph: "8 + 4 × 6"
     items:
       - { id: o1, label: "32", correct: true }
-      - { id: o2, label: "14" }
+      - { id: o2, label: "72" }
       - { id: o3, label: "33" }
       - { id: o4, label: "31" }
-  - glyph: "30 - 5 × 2"
+  - glyph: "33 - 6 × 5"
+    items:
+      - { id: o1, label: "3", correct: true }
+      - { id: o2, label: "135" }
+      - { id: o3, label: "4" }
+      - { id: o4, label: "2" }
+  - glyph: "3 - 1 × 1"
+    items:
+      - { id: o1, label: "2", correct: true }
+      - { id: o2, label: "3" }
+      - { id: o3, label: "1" }
+      - { id: o4, label: "4" }
+  - glyph: "8 × 8 + 6"
+    items:
+      - { id: o1, label: "70", correct: true }
+      - { id: o2, label: "112" }
+      - { id: o3, label: "71" }
+      - { id: o4, label: "69" }
+  - glyph: "18 × 9 + 1"
+    items:
+      - { id: o1, label: "163", correct: true }
+      - { id: o2, label: "180" }
+      - { id: o3, label: "164" }
+      - { id: o4, label: "162" }
+  - glyph: "(9 + 1) × 2"
     items:
       - { id: o1, label: "20", correct: true }
-      - { id: o2, label: "50" }
+      - { id: o2, label: "11" }
       - { id: o3, label: "21" }
       - { id: o4, label: "19" }
-  - glyph: "3 × 3 + 3"
+  - glyph: "7 × 5 + 4"
     items:
-      - { id: o1, label: "12", correct: true }
-      - { id: o2, label: "18" }
-      - { id: o3, label: "13" }
+      - { id: o1, label: "39", correct: true }
+      - { id: o2, label: "63" }
+      - { id: o3, label: "40" }
+      - { id: o4, label: "38" }
+  - glyph: "6 + 1 × 2"
+    items:
+      - { id: o1, label: "8", correct: true }
+      - { id: o2, label: "14" }
+      - { id: o3, label: "9" }
+      - { id: o4, label: "7" }
+  - glyph: "10 × 6 + 4"
+    items:
+      - { id: o1, label: "64", correct: true }
+      - { id: o2, label: "100" }
+      - { id: o3, label: "65" }
+      - { id: o4, label: "63" }
+  - glyph: "(11 + 9) × 6"
+    items:
+      - { id: o1, label: "120", correct: true }
+      - { id: o2, label: "65" }
+      - { id: o3, label: "121" }
+      - { id: o4, label: "119" }
+  - glyph: "14 × 7 + 4"
+    items:
+      - { id: o1, label: "102", correct: true }
+      - { id: o2, label: "154" }
+      - { id: o3, label: "103" }
+      - { id: o4, label: "101" }
+  - glyph: "10 + 3 × 2"
+    items:
+      - { id: o1, label: "16", correct: true }
+      - { id: o2, label: "26" }
+      - { id: o3, label: "17" }
+      - { id: o4, label: "15" }
+  - glyph: "(3 + 1) × 5"
+    items:
+      - { id: o1, label: "20", correct: true }
+      - { id: o2, label: "8" }
+      - { id: o3, label: "21" }
+      - { id: o4, label: "19" }
+  - glyph: "15 × 9 + 3"
+    items:
+      - { id: o1, label: "138", correct: true }
+      - { id: o2, label: "180" }
+      - { id: o3, label: "139" }
+      - { id: o4, label: "137" }
+  - glyph: "7 - 1 × 6"
+    items:
+      - { id: o1, label: "1", correct: true }
+      - { id: o2, label: "36" }
+      - { id: o3, label: "2" }
+      - { id: o4, label: "0" }
+  - glyph: "(12 + 1) × 4"
+    items:
+      - { id: o1, label: "52", correct: true }
+      - { id: o2, label: "16" }
+      - { id: o3, label: "53" }
+      - { id: o4, label: "51" }
+  - glyph: "7 + 9 × 5"
+    items:
+      - { id: o1, label: "52", correct: true }
+      - { id: o2, label: "80" }
+      - { id: o3, label: "53" }
+      - { id: o4, label: "51" }
+  - glyph: "5 + 4 × 1"
+    items:
+      - { id: o1, label: "9", correct: true }
+      - { id: o2, label: "10" }
+      - { id: o3, label: "8" }
       - { id: o4, label: "11" }
-  - glyph: "8 + 2 × 5"
+  - glyph: "5 × 1 + 1"
     items:
-      - { id: o1, label: "18", correct: true }
-      - { id: o2, label: "50" }
-      - { id: o3, label: "19" }
+      - { id: o1, label: "6", correct: true }
+      - { id: o2, label: "10" }
+      - { id: o3, label: "7" }
+      - { id: o4, label: "5" }
+  - glyph: "34 - 9 × 3"
+    items:
+      - { id: o1, label: "7", correct: true }
+      - { id: o2, label: "75" }
+      - { id: o3, label: "8" }
+      - { id: o4, label: "6" }
+  - glyph: "29 - 7 × 3"
+    items:
+      - { id: o1, label: "8", correct: true }
+      - { id: o2, label: "66" }
+      - { id: o3, label: "9" }
+      - { id: o4, label: "7" }
+  - glyph: "(7 + 1) × 2"
+    items:
+      - { id: o1, label: "16", correct: true }
+      - { id: o2, label: "9" }
+      - { id: o3, label: "17" }
+      - { id: o4, label: "15" }
+  - glyph: "17 - 4 × 2"
+    items:
+      - { id: o1, label: "9", correct: true }
+      - { id: o2, label: "26" }
+      - { id: o3, label: "10" }
+      - { id: o4, label: "8" }
+  - glyph: "(10 + 4) × 4"
+    items:
+      - { id: o1, label: "56", correct: true }
+      - { id: o2, label: "26" }
+      - { id: o3, label: "57" }
+      - { id: o4, label: "55" }
+  - glyph: "6 + 9 × 1"
+    items:
+      - { id: o1, label: "15", correct: true }
+      - { id: o2, label: "16" }
+      - { id: o3, label: "14" }
       - { id: o4, label: "17" }
+  - glyph: "11 × 2 + 2"
+    items:
+      - { id: o1, label: "24", correct: true }
+      - { id: o2, label: "44" }
+      - { id: o3, label: "25" }
+      - { id: o4, label: "23" }
+  - glyph: "(16 + 2) × 5"
+    items:
+      - { id: o1, label: "90", correct: true }
+      - { id: o2, label: "26" }
+      - { id: o3, label: "91" }
+      - { id: o4, label: "89" }
+  - glyph: "18 × 6 + 6"
+    items:
+      - { id: o1, label: "114", correct: true }
+      - { id: o2, label: "216" }
+      - { id: o3, label: "115" }
+      - { id: o4, label: "113" }
+  - glyph: "(2 + 8) × 3"
+    items:
+      - { id: o1, label: "30", correct: true }
+      - { id: o2, label: "26" }
+      - { id: o3, label: "31" }
+      - { id: o4, label: "29" }
+  - glyph: "20 × 7 + 2"
+    items:
+      - { id: o1, label: "142", correct: true }
+      - { id: o2, label: "180" }
+      - { id: o3, label: "143" }
+      - { id: o4, label: "141" }
+  - glyph: "9 - 3 × 2"
+    items:
+      - { id: o1, label: "3", correct: true }
+      - { id: o2, label: "12" }
+      - { id: o3, label: "4" }
+      - { id: o4, label: "2" }
+  - glyph: "7 - 1 × 5"
+    items:
+      - { id: o1, label: "2", correct: true }
+      - { id: o2, label: "30" }
+      - { id: o3, label: "3" }
+      - { id: o4, label: "1" }
+  - glyph: "1 × 3 + 2"
+    items:
+      - { id: o1, label: "5", correct: true }
+      - { id: o2, label: "6" }
+      - { id: o3, label: "4" }
+      - { id: o4, label: "7" }
+  - glyph: "17 - 2 × 5"
+    items:
+      - { id: o1, label: "7", correct: true }
+      - { id: o2, label: "75" }
+      - { id: o3, label: "8" }
+      - { id: o4, label: "6" }
+  - glyph: "50 - 7 × 6"
+    items:
+      - { id: o1, label: "8", correct: true }
+      - { id: o2, label: "258" }
+      - { id: o3, label: "9" }
+      - { id: o4, label: "7" }
+  - glyph: "11 - 5 × 1"
+    items:
+      - { id: o1, label: "6", correct: true }
+      - { id: o2, label: "7" }
+      - { id: o3, label: "5" }
+      - { id: o4, label: "8" }
+  - glyph: "6 × 2 + 3"
+    items:
+      - { id: o1, label: "15", correct: true }
+      - { id: o2, label: "30" }
+      - { id: o3, label: "16" }
+      - { id: o4, label: "14" }
+  - glyph: "(3 + 9) × 4"
+    items:
+      - { id: o1, label: "48", correct: true }
+      - { id: o2, label: "39" }
+      - { id: o3, label: "49" }
+      - { id: o4, label: "47" }
+  - glyph: "(3 + 4) × 2"
+    items:
+      - { id: o1, label: "14", correct: true }
+      - { id: o2, label: "11" }
+      - { id: o3, label: "15" }
+      - { id: o4, label: "13" }
+  - glyph: "(9 + 1) × 5"
+    items:
+      - { id: o1, label: "50", correct: true }
+      - { id: o2, label: "14" }
+      - { id: o3, label: "51" }
+      - { id: o4, label: "49" }
+  - glyph: "3 + 8 × 5"
+    items:
+      - { id: o1, label: "43", correct: true }
+      - { id: o2, label: "55" }
+      - { id: o3, label: "44" }
+      - { id: o4, label: "42" }
+  - glyph: "11 - 3 × 3"
+    items:
+      - { id: o1, label: "2", correct: true }
+      - { id: o2, label: "24" }
+      - { id: o3, label: "3" }
+      - { id: o4, label: "1" }
+  - glyph: "(6 + 4) × 3"
+    items:
+      - { id: o1, label: "30", correct: true }
+      - { id: o2, label: "18" }
+      - { id: o3, label: "31" }
+      - { id: o4, label: "29" }
+  - glyph: "16 × 3 + 3"
+    items:
+      - { id: o1, label: "51", correct: true }
+      - { id: o2, label: "96" }
+      - { id: o3, label: "52" }
+      - { id: o4, label: "50" }
+  - glyph: "17 + 1 × 6"
+    items:
+      - { id: o1, label: "23", correct: true }
+      - { id: o2, label: "108" }
+      - { id: o3, label: "24" }
+      - { id: o4, label: "22" }
+  - glyph: "14 × 4 + 2"
+    items:
+      - { id: o1, label: "58", correct: true }
+      - { id: o2, label: "84" }
+      - { id: o3, label: "59" }
+      - { id: o4, label: "57" }
+  - glyph: "(12 + 4) × 5"
+    items:
+      - { id: o1, label: "80", correct: true }
+      - { id: o2, label: "32" }
+      - { id: o3, label: "81" }
+      - { id: o4, label: "79" }
+  - glyph: "(5 + 8) × 2"
+    items:
+      - { id: o1, label: "26", correct: true }
+      - { id: o2, label: "21" }
+      - { id: o3, label: "27" }
+      - { id: o4, label: "25" }
+  - glyph: "38 - 8 × 4"
+    items:
+      - { id: o1, label: "6", correct: true }
+      - { id: o2, label: "120" }
+      - { id: o3, label: "7" }
+      - { id: o4, label: "5" }
+  - glyph: "10 × 6 + 5"
+    items:
+      - { id: o1, label: "65", correct: true }
+      - { id: o2, label: "110" }
+      - { id: o3, label: "66" }
+      - { id: o4, label: "64" }
 reward: { stars: 3, sfx: ding, effect: confetti }

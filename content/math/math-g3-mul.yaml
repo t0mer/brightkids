@@ -8,28 +8,64 @@ title: "לוּחַ הַכֶּפֶל"
 activity: arithmetic
 prompt_tts: "פִּתְרוּ אֶת תַּרְגִּילֵי הַכֶּפֶל"
 problems:
-  - { operands: [9, 3], operator: "x", answer: 27 }
   - { operands: [6, 7], operator: "x", answer: 42 }
-  - { operands: [4, 6], operator: "x", answer: 24 }
-  - { operands: [8, 8], operator: "x", answer: 64 }
-  - { operands: [4, 4], operator: "x", answer: 16 }
-  - { operands: [3, 3], operator: "x", answer: 9 }
-  - { operands: [3, 7], operator: "x", answer: 21 }
-  - { operands: [7, 7], operator: "x", answer: 49 }
-  - { operands: [9, 6], operator: "x", answer: 54 }
-  - { operands: [3, 8], operator: "x", answer: 24 }
-  - { operands: [7, 6], operator: "x", answer: 42 }
-  - { operands: [6, 6], operator: "x", answer: 36 }
-  - { operands: [6, 4], operator: "x", answer: 24 }
-  - { operands: [6, 8], operator: "x", answer: 48 }
-  - { operands: [4, 8], operator: "x", answer: 32 }
   - { operands: [4, 7], operator: "x", answer: 28 }
-  - { operands: [3, 1], operator: "x", answer: 3 }
-  - { operands: [4, 1], operator: "x", answer: 4 }
+  - { operands: [8, 2], operator: "x", answer: 16 }
+  - { operands: [4, 10], operator: "x", answer: 40 }
+  - { operands: [9, 6], operator: "x", answer: 54 }
+  - { operands: [7, 1], operator: "x", answer: 7 }
+  - { operands: [3, 2], operator: "x", answer: 6 }
   - { operands: [4, 9], operator: "x", answer: 36 }
-  - { operands: [7, 3], operator: "x", answer: 21 }
-  - { operands: [8, 9], operator: "x", answer: 72 }
-  - { operands: [9, 7], operator: "x", answer: 63 }
-  - { operands: [8, 7], operator: "x", answer: 56 }
+  - { operands: [9, 2], operator: "x", answer: 18 }
+  - { operands: [8, 1], operator: "x", answer: 8 }
+  - { operands: [4, 4], operator: "x", answer: 16 }
   - { operands: [3, 5], operator: "x", answer: 15 }
+  - { operands: [3, 9], operator: "x", answer: 27 }
+  - { operands: [4, 3], operator: "x", answer: 12 }
+  - { operands: [4, 1], operator: "x", answer: 4 }
+  - { operands: [7, 7], operator: "x", answer: 49 }
+  - { operands: [8, 3], operator: "x", answer: 24 }
+  - { operands: [9, 9], operator: "x", answer: 81 }
+  - { operands: [4, 8], operator: "x", answer: 32 }
+  - { operands: [8, 4], operator: "x", answer: 32 }
+  - { operands: [9, 10], operator: "x", answer: 90 }
+  - { operands: [7, 3], operator: "x", answer: 21 }
+  - { operands: [6, 1], operator: "x", answer: 6 }
+  - { operands: [9, 1], operator: "x", answer: 9 }
+  - { operands: [7, 5], operator: "x", answer: 35 }
+  - { operands: [6, 9], operator: "x", answer: 54 }
+  - { operands: [6, 2], operator: "x", answer: 12 }
+  - { operands: [3, 6], operator: "x", answer: 18 }
+  - { operands: [6, 10], operator: "x", answer: 60 }
+  - { operands: [6, 4], operator: "x", answer: 24 }
+  - { operands: [9, 3], operator: "x", answer: 27 }
+  - { operands: [4, 2], operator: "x", answer: 8 }
+  - { operands: [9, 7], operator: "x", answer: 63 }
+  - { operands: [6, 8], operator: "x", answer: 48 }
+  - { operands: [8, 8], operator: "x", answer: 64 }
+  - { operands: [7, 2], operator: "x", answer: 14 }
+  - { operands: [3, 1], operator: "x", answer: 3 }
+  - { operands: [6, 5], operator: "x", answer: 30 }
+  - { operands: [3, 4], operator: "x", answer: 12 }
+  - { operands: [8, 5], operator: "x", answer: 40 }
+  - { operands: [8, 9], operator: "x", answer: 72 }
+  - { operands: [3, 7], operator: "x", answer: 21 }
+  - { operands: [8, 6], operator: "x", answer: 48 }
+  - { operands: [7, 6], operator: "x", answer: 42 }
+  - { operands: [9, 8], operator: "x", answer: 72 }
+  - { operands: [9, 4], operator: "x", answer: 36 }
+  - { operands: [7, 9], operator: "x", answer: 63 }
+  - { operands: [7, 4], operator: "x", answer: 28 }
+  - { operands: [8, 7], operator: "x", answer: 56 }
+  - { operands: [6, 3], operator: "x", answer: 18 }
+  - { operands: [4, 5], operator: "x", answer: 20 }
+  - { operands: [4, 6], operator: "x", answer: 24 }
+  - { operands: [3, 10], operator: "x", answer: 30 }
+  - { operands: [9, 5], operator: "x", answer: 45 }
+  - { operands: [8, 10], operator: "x", answer: 80 }
+  - { operands: [7, 10], operator: "x", answer: 70 }
+  - { operands: [7, 8], operator: "x", answer: 56 }
+  - { operands: [3, 8], operator: "x", answer: 24 }
+  - { operands: [3, 3], operator: "x", answer: 9 }
+  - { operands: [6, 6], operator: "x", answer: 36 }
 reward: { stars: 3, sfx: ding, effect: confetti }

@@ -8,28 +8,304 @@ title: "שְׁבָרִים עֶשְׂרוֹנִיִּים"
 activity: multiple-choice
 prompt_tts: "כַּמָּה זֶה?"
 questions:
-  - glyph: "0.3 + 0.4"
+  - glyph: "3.1 + 1.3"
     items:
-      - { id: o1, label: "0.7", correct: true }
-      - { id: o2, label: "0.1" }
-      - { id: o3, label: "0.34" }
-      - { id: o4, label: "7" }
-  - glyph: "1.5 + 0.5"
+      - { id: o1, label: "4.4", correct: true }
+      - { id: o2, label: "5.4" }
+      - { id: o3, label: "3.4" }
+      - { id: o4, label: "4.5" }
+  - glyph: "1.5 + 5"
     items:
-      - { id: o1, label: "2", correct: true }
-      - { id: o2, label: "1.10" }
-      - { id: o3, label: "1" }
-      - { id: o4, label: "2.5" }
-  - glyph: "0.6 + 0.2"
+      - { id: o1, label: "6.5", correct: true }
+      - { id: o2, label: "7.5" }
+      - { id: o3, label: "5.5" }
+      - { id: o4, label: "6.6" }
+  - glyph: "4.3 + 1.9"
     items:
-      - { id: o1, label: "0.8", correct: true }
-      - { id: o2, label: "0.4" }
-      - { id: o3, label: "0.62" }
+      - { id: o1, label: "6.2", correct: true }
+      - { id: o2, label: "7.2" }
+      - { id: o3, label: "5.2" }
+      - { id: o4, label: "6.3" }
+  - glyph: "1.3 + 1.2"
+    items:
+      - { id: o1, label: "2.5", correct: true }
+      - { id: o2, label: "3.5" }
+      - { id: o3, label: "1.5" }
+      - { id: o4, label: "2.6" }
+  - glyph: "3.7 + 5"
+    items:
+      - { id: o1, label: "8.7", correct: true }
+      - { id: o2, label: "9.7" }
+      - { id: o3, label: "7.7" }
+      - { id: o4, label: "8.8" }
+  - glyph: "3.7 + 1.7"
+    items:
+      - { id: o1, label: "5.4", correct: true }
+      - { id: o2, label: "6.4" }
+      - { id: o3, label: "4.4" }
+      - { id: o4, label: "5.5" }
+  - glyph: "3.2 + 2.7"
+    items:
+      - { id: o1, label: "5.9", correct: true }
+      - { id: o2, label: "6.9" }
+      - { id: o3, label: "4.9" }
+      - { id: o4, label: "6" }
+  - glyph: "2.7 + 4.4"
+    items:
+      - { id: o1, label: "7.1", correct: true }
+      - { id: o2, label: "8.1" }
+      - { id: o3, label: "6.1" }
+      - { id: o4, label: "7.2" }
+  - glyph: "1.6 + 3.4"
+    items:
+      - { id: o1, label: "5", correct: true }
+      - { id: o2, label: "6" }
+      - { id: o3, label: "4" }
+      - { id: o4, label: "5.1" }
+  - glyph: "0.2 + 2.7"
+    items:
+      - { id: o1, label: "2.9", correct: true }
+      - { id: o2, label: "3.9" }
+      - { id: o3, label: "1.9" }
+      - { id: o4, label: "3" }
+  - glyph: "3.7 + 4.2"
+    items:
+      - { id: o1, label: "7.9", correct: true }
+      - { id: o2, label: "8.9" }
+      - { id: o3, label: "6.9" }
       - { id: o4, label: "8" }
-  - glyph: "2.0 - 0.5"
+  - glyph: "4.6 + 3"
+    items:
+      - { id: o1, label: "7.6", correct: true }
+      - { id: o2, label: "8.6" }
+      - { id: o3, label: "6.6" }
+      - { id: o4, label: "7.7" }
+  - glyph: "2.9 + 2.1"
+    items:
+      - { id: o1, label: "5", correct: true }
+      - { id: o2, label: "6" }
+      - { id: o3, label: "4" }
+      - { id: o4, label: "5.1" }
+  - glyph: "0.7 + 1.1"
+    items:
+      - { id: o1, label: "1.8", correct: true }
+      - { id: o2, label: "2.8" }
+      - { id: o3, label: "0.8" }
+      - { id: o4, label: "1.9" }
+  - glyph: "0.9 + 4"
+    items:
+      - { id: o1, label: "4.9", correct: true }
+      - { id: o2, label: "5.9" }
+      - { id: o3, label: "3.9" }
+      - { id: o4, label: "5" }
+  - glyph: "4.9 + 1.3"
+    items:
+      - { id: o1, label: "6.2", correct: true }
+      - { id: o2, label: "7.2" }
+      - { id: o3, label: "5.2" }
+      - { id: o4, label: "6.3" }
+  - glyph: "2.4 + 2.3"
+    items:
+      - { id: o1, label: "4.7", correct: true }
+      - { id: o2, label: "5.7" }
+      - { id: o3, label: "3.7" }
+      - { id: o4, label: "4.8" }
+  - glyph: "4.6 + 4"
+    items:
+      - { id: o1, label: "8.6", correct: true }
+      - { id: o2, label: "9.6" }
+      - { id: o3, label: "7.6" }
+      - { id: o4, label: "8.7" }
+  - glyph: "3.6 + 0.1"
+    items:
+      - { id: o1, label: "3.7", correct: true }
+      - { id: o2, label: "4.7" }
+      - { id: o3, label: "2.7" }
+      - { id: o4, label: "3.8" }
+  - glyph: "2.8 + 1.9"
+    items:
+      - { id: o1, label: "4.7", correct: true }
+      - { id: o2, label: "5.7" }
+      - { id: o3, label: "3.7" }
+      - { id: o4, label: "4.8" }
+  - glyph: "4.6 + 3.8"
+    items:
+      - { id: o1, label: "8.4", correct: true }
+      - { id: o2, label: "9.4" }
+      - { id: o3, label: "7.4" }
+      - { id: o4, label: "8.5" }
+  - glyph: "2.6 + 4.3"
+    items:
+      - { id: o1, label: "6.9", correct: true }
+      - { id: o2, label: "7.9" }
+      - { id: o3, label: "5.9" }
+      - { id: o4, label: "7" }
+  - glyph: "2.2 + 3.8"
+    items:
+      - { id: o1, label: "6", correct: true }
+      - { id: o2, label: "7" }
+      - { id: o3, label: "5" }
+      - { id: o4, label: "6.1" }
+  - glyph: "4.2 + 4.8"
+    items:
+      - { id: o1, label: "9", correct: true }
+      - { id: o2, label: "10" }
+      - { id: o3, label: "8" }
+      - { id: o4, label: "9.1" }
+  - glyph: "1 + 2.6"
+    items:
+      - { id: o1, label: "3.6", correct: true }
+      - { id: o2, label: "4.6" }
+      - { id: o3, label: "2.6" }
+      - { id: o4, label: "3.7" }
+  - glyph: "4.7 - 2.2"
+    items:
+      - { id: o1, label: "2.5", correct: true }
+      - { id: o2, label: "3.5" }
+      - { id: o3, label: "1.5" }
+      - { id: o4, label: "2.6" }
+  - glyph: "4.8 - 2.4"
+    items:
+      - { id: o1, label: "2.4", correct: true }
+      - { id: o2, label: "3.4" }
+      - { id: o3, label: "1.4" }
+      - { id: o4, label: "2.5" }
+  - glyph: "3.3 - 2.9"
+    items:
+      - { id: o1, label: "0.4", correct: true }
+      - { id: o2, label: "1.4" }
+      - { id: o3, label: "0.5" }
+      - { id: o4, label: "0.6" }
+  - glyph: "2.5 - 1"
     items:
       - { id: o1, label: "1.5", correct: true }
       - { id: o2, label: "2.5" }
-      - { id: o3, label: "1" }
+      - { id: o3, label: "0.5" }
+      - { id: o4, label: "1.6" }
+  - glyph: "2.4 - 1.3"
+    items:
+      - { id: o1, label: "1.1", correct: true }
+      - { id: o2, label: "2.1" }
+      - { id: o3, label: "0.1" }
+      - { id: o4, label: "1.2" }
+  - glyph: "3.5 - 1.7"
+    items:
+      - { id: o1, label: "1.8", correct: true }
+      - { id: o2, label: "2.8" }
+      - { id: o3, label: "0.8" }
+      - { id: o4, label: "1.9" }
+  - glyph: "3.3 - 1.8"
+    items:
+      - { id: o1, label: "1.5", correct: true }
+      - { id: o2, label: "2.5" }
+      - { id: o3, label: "0.5" }
+      - { id: o4, label: "1.6" }
+  - glyph: "4.2 - 0.5"
+    items:
+      - { id: o1, label: "3.7", correct: true }
+      - { id: o2, label: "4.7" }
+      - { id: o3, label: "2.7" }
+      - { id: o4, label: "3.8" }
+  - glyph: "1.7 - 0.6"
+    items:
+      - { id: o1, label: "1.1", correct: true }
+      - { id: o2, label: "2.1" }
+      - { id: o3, label: "0.1" }
+      - { id: o4, label: "1.2" }
+  - glyph: "3 - 2.7"
+    items:
+      - { id: o1, label: "0.3", correct: true }
+      - { id: o2, label: "1.3" }
+      - { id: o3, label: "0.4" }
       - { id: o4, label: "0.5" }
+  - glyph: "2.3 - 0.1"
+    items:
+      - { id: o1, label: "2.2", correct: true }
+      - { id: o2, label: "3.2" }
+      - { id: o3, label: "1.2" }
+      - { id: o4, label: "2.3" }
+  - glyph: "3.8 - 3.6"
+    items:
+      - { id: o1, label: "0.2", correct: true }
+      - { id: o2, label: "1.2" }
+      - { id: o3, label: "0.3" }
+      - { id: o4, label: "0.4" }
+  - glyph: "3.4 - 3.4"
+    items:
+      - { id: o1, label: "0", correct: true }
+      - { id: o2, label: "1" }
+      - { id: o3, label: "0.1" }
+      - { id: o4, label: "0.2" }
+  - glyph: "3.9 - 3"
+    items:
+      - { id: o1, label: "0.9", correct: true }
+      - { id: o2, label: "1.9" }
+      - { id: o3, label: "1" }
+      - { id: o4, label: "1.1" }
+  - glyph: "2.7 - 1.5"
+    items:
+      - { id: o1, label: "1.2", correct: true }
+      - { id: o2, label: "2.2" }
+      - { id: o3, label: "0.2" }
+      - { id: o4, label: "1.3" }
+  - glyph: "4.8 - 0.7"
+    items:
+      - { id: o1, label: "4.1", correct: true }
+      - { id: o2, label: "5.1" }
+      - { id: o3, label: "3.1" }
+      - { id: o4, label: "4.2" }
+  - glyph: "4 - 1.7"
+    items:
+      - { id: o1, label: "2.3", correct: true }
+      - { id: o2, label: "3.3" }
+      - { id: o3, label: "1.3" }
+      - { id: o4, label: "2.4" }
+  - glyph: "1.8 - 1.4"
+    items:
+      - { id: o1, label: "0.4", correct: true }
+      - { id: o2, label: "1.4" }
+      - { id: o3, label: "0.5" }
+      - { id: o4, label: "0.6" }
+  - glyph: "1.1 - 0.3"
+    items:
+      - { id: o1, label: "0.8", correct: true }
+      - { id: o2, label: "1.8" }
+      - { id: o3, label: "0.9" }
+      - { id: o4, label: "1" }
+  - glyph: "2.5 - 1.1"
+    items:
+      - { id: o1, label: "1.4", correct: true }
+      - { id: o2, label: "2.4" }
+      - { id: o3, label: "0.4" }
+      - { id: o4, label: "1.5" }
+  - glyph: "5 - 1.4"
+    items:
+      - { id: o1, label: "3.6", correct: true }
+      - { id: o2, label: "4.6" }
+      - { id: o3, label: "2.6" }
+      - { id: o4, label: "3.7" }
+  - glyph: "3.4 - 1.9"
+    items:
+      - { id: o1, label: "1.5", correct: true }
+      - { id: o2, label: "2.5" }
+      - { id: o3, label: "0.5" }
+      - { id: o4, label: "1.6" }
+  - glyph: "2.6 - 2.2"
+    items:
+      - { id: o1, label: "0.4", correct: true }
+      - { id: o2, label: "1.4" }
+      - { id: o3, label: "0.5" }
+      - { id: o4, label: "0.6" }
+  - glyph: "4 - 0.7"
+    items:
+      - { id: o1, label: "3.3", correct: true }
+      - { id: o2, label: "4.3" }
+      - { id: o3, label: "2.3" }
+      - { id: o4, label: "3.4" }
+  - glyph: "4.6 - 2.4"
+    items:
+      - { id: o1, label: "2.2", correct: true }
+      - { id: o2, label: "3.2" }
+      - { id: o3, label: "1.2" }
+      - { id: o4, label: "2.3" }
 reward: { stars: 3, sfx: ding, effect: confetti }
