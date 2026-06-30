@@ -32,8 +32,8 @@ func validateLesson(l Lesson) error {
 	if !validSubjects[l.Subject] {
 		return fmt.Errorf("invalid subject %q", l.Subject)
 	}
-	if l.Grade < 1 || l.Grade > 4 {
-		return fmt.Errorf("grade %d out of range 1-4", l.Grade)
+	if l.Grade < 1 || l.Grade > 6 {
+		return fmt.Errorf("grade %d out of range 1-6", l.Grade)
 	}
 	if l.Difficulty < 1 || l.Difficulty > 3 {
 		return fmt.Errorf("difficulty %d out of range 1-3", l.Difficulty)
