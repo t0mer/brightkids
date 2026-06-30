@@ -6,17 +6,25 @@ locale: en-US
 direction: ltr
 title: "Reading: Moki the Cat"
 activity: multiple-choice
-prompt_tts: "Moki is a cat. Moki is black. What color is Moki?"
-instruction: "Moki הוּא חָתוּל. Moki שָׁחֹר. בְּאֵיזֶה צֶבַע Moki?"
-items:
-  - id: black
-    label: "black"
-    correct: true
-    tts: "black"
-  - id: white
-    label: "white"
-    tts: "white"
-  - id: brown
-    label: "brown"
-    tts: "brown"
-reward: { stars: 1, sfx: chime, effect: confetti }
+prompt_tts: "Read about Moki and answer."
+instruction: "קִרְאוּ עַל Moki וְעַנּוּ."
+questions:
+  - prompt: "Moki is a cat. Moki is black. What color is Moki?"
+    prompt_text: "Moki הוּא חָתוּל. Moki שָׁחֹר. בְּאֵיזֶה צֶבַע Moki?"
+    items:
+      - { id: o1, label: "black", correct: true, tts: "black" }
+      - { id: o2, label: "white", tts: "white" }
+      - { id: o3, label: "brown", tts: "brown" }
+  - prompt: "Moki is a cat. Moki likes to sleep. What animal is Moki?"
+    prompt_text: "Moki הוּא חָתוּל. Moki אוֹהֵב לִישֹׁן. אֵיזוֹ חַיָּה הוּא Moki?"
+    items:
+      - { id: o1, label: "a cat", correct: true, tts: "a cat" }
+      - { id: o2, label: "a dog", tts: "a dog" }
+      - { id: o3, label: "a bird", tts: "a bird" }
+  - prompt: "Moki has a ball. The ball is small. What does Moki have?"
+    prompt_text: "לְ-Moki יֵשׁ כַּדּוּר. הַכַּדּוּר קָטָן. מָה יֵשׁ לְ-Moki?"
+    items:
+      - { id: o1, label: "a ball", correct: true, tts: "a ball" }
+      - { id: o2, label: "a box", tts: "a box" }
+      - { id: o3, label: "a hat", tts: "a hat" }
+reward: { stars: 3, sfx: ding, effect: confetti }

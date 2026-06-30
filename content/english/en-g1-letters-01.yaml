@@ -6,20 +6,37 @@ locale: en-US
 direction: ltr
 title: "Find the Letter A"
 activity: letter-recognition
-prompt_tts: "Find the letter A"
-instruction: "מִצְאוּ אֶת הָאוֹת A"
+prompt_tts: "Find the letter"
+instruction: "מִצְאוּ אֶת הָאוֹת"
 items:
-  - id: a
-    label: "A"
-    correct: true
-    tts: "A"
-  - id: b
-    label: "B"
-    tts: "B"
-  - id: c
-    label: "C"
-    tts: "C"
-  - id: d
-    label: "D"
-    tts: "D"
-reward: { stars: 1, sfx: ding, effect: confetti }
+  - { id: o1, label: "A", correct: true, tts: "A" }
+  - { id: o2, label: "B", tts: "B" }
+  - { id: o3, label: "C", tts: "C" }
+  - { id: o4, label: "D", tts: "D" }
+questions:
+  - prompt: "Find the letter A"
+    prompt_text: "מִצְאוּ אֶת הָאוֹת A"
+    items:
+      - { id: o1, label: "A", correct: true, tts: "A" }
+      - { id: o2, label: "B", tts: "B" }
+      - { id: o3, label: "C", tts: "C" }
+      - { id: o4, label: "D", tts: "D" }
+  - prompt: "Find the letter C"
+    prompt_text: "מִצְאוּ אֶת הָאוֹת C"
+    items:
+      - { id: o1, label: "C", correct: true, tts: "C" }
+      - { id: o2, label: "D", tts: "D" }
+      - { id: o3, label: "B", tts: "B" }
+  - prompt: "Find the letter B"
+    prompt_text: "מִצְאוּ אֶת הָאוֹת B"
+    items:
+      - { id: o1, label: "B", correct: true, tts: "B" }
+      - { id: o2, label: "A", tts: "A" }
+      - { id: o3, label: "D", tts: "D" }
+  - prompt: "Find the letter D"
+    prompt_text: "מִצְאוּ אֶת הָאוֹת D"
+    items:
+      - { id: o1, label: "D", correct: true, tts: "D" }
+      - { id: o2, label: "C", tts: "C" }
+      - { id: o3, label: "A", tts: "A" }
+reward: { stars: 3, sfx: ding, effect: confetti }

@@ -1,0 +1,36 @@
+id: en-g3-read-set-01
+subject: english
+grade: 3
+difficulty: 2
+locale: en-US
+direction: ltr
+title: "Reading: Pip the Bird"
+activity: multiple-choice
+prompt_tts: "Read about Pip and answer."
+instruction: "קִרְאוּ עַל Pip וְעַנּוּ."
+questions:
+  - prompt: "Pip is a little bird. What is Pip?"
+    prompt_text: "Pip הִיא צִפּוֹר קְטַנָּה. מָה Pip?"
+    items:
+      - { id: o1, label: "a bird", correct: true, tts: "a bird" }
+      - { id: o2, label: "a cat", tts: "a cat" }
+      - { id: o3, label: "a fish", tts: "a fish" }
+  - prompt: "Pip lives in a tall tree. Where does Pip live?"
+    prompt_text: "Pip גָּרָה בְּעֵץ גָּבוֹהַּ. אֵיפֹה Pip גָּרָה?"
+    items:
+      - { id: o1, label: "in a tree", correct: true, tts: "in a tree" }
+      - { id: o2, label: "in a box", tts: "in a box" }
+      - { id: o3, label: "in a car", tts: "in a car" }
+  - prompt: "Pip sings every morning. When does Pip sing?"
+    prompt_text: "Pip שָׁרָה כָּל בֹּקֶר. מָתַי Pip שָׁרָה?"
+    items:
+      - { id: o1, label: "every morning", correct: true, tts: "every morning" }
+      - { id: o2, label: "every night", tts: "every night" }
+      - { id: o3, label: "never", tts: "never" }
+  - prompt: "Pip is a little bird. Is Pip big or little?"
+    prompt_text: "Pip הִיא צִפּוֹר קְטַנָּה. Pip גְּדוֹלָה אוֹ קְטַנָּה?"
+    items:
+      - { id: o1, label: "little", correct: true, tts: "little" }
+      - { id: o2, label: "big", tts: "big" }
+      - { id: o3, label: "tall", tts: "tall" }
+reward: { stars: 3, sfx: ding, effect: confetti }

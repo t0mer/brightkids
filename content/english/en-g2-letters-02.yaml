@@ -6,20 +6,37 @@ locale: en-US
 direction: ltr
 title: "Find Lowercase m"
 activity: letter-recognition
-prompt_tts: "Find the lowercase letter m"
-instruction: "מִצְאוּ אֶת הָאוֹת הַקְּטַנָּה m"
+prompt_tts: "Find the lowercase letter"
+instruction: "מִצְאוּ אֶת הָאוֹת הַקְּטַנָּה"
 items:
-  - id: m
-    label: "m"
-    correct: true
-    tts: "m"
-  - id: n
-    label: "n"
-    tts: "n"
-  - id: w
-    label: "w"
-    tts: "w"
-  - id: u
-    label: "u"
-    tts: "u"
-reward: { stars: 1, sfx: ding, effect: confetti }
+  - { id: o1, label: "m", correct: true, tts: "m" }
+  - { id: o2, label: "n", tts: "n" }
+  - { id: o3, label: "w", tts: "w" }
+  - { id: o4, label: "u", tts: "u" }
+questions:
+  - prompt: "Find the lowercase letter m"
+    prompt_text: "מִצְאוּ אֶת הָאוֹת הַקְּטַנָּה m"
+    items:
+      - { id: o1, label: "m", correct: true, tts: "m" }
+      - { id: o2, label: "n", tts: "n" }
+      - { id: o3, label: "w", tts: "w" }
+      - { id: o4, label: "u", tts: "u" }
+  - prompt: "Find the lowercase letter n"
+    prompt_text: "מִצְאוּ אֶת הָאוֹת הַקְּטַנָּה n"
+    items:
+      - { id: o1, label: "n", correct: true, tts: "n" }
+      - { id: o2, label: "m", tts: "m" }
+      - { id: o3, label: "u", tts: "u" }
+  - prompt: "Find the lowercase letter w"
+    prompt_text: "מִצְאוּ אֶת הָאוֹת הַקְּטַנָּה w"
+    items:
+      - { id: o1, label: "w", correct: true, tts: "w" }
+      - { id: o2, label: "u", tts: "u" }
+      - { id: o3, label: "m", tts: "m" }
+  - prompt: "Find the lowercase letter u"
+    prompt_text: "מִצְאוּ אֶת הָאוֹת הַקְּטַנָּה u"
+    items:
+      - { id: o1, label: "u", correct: true, tts: "u" }
+      - { id: o2, label: "w", tts: "w" }
+      - { id: o3, label: "n", tts: "n" }
+reward: { stars: 3, sfx: ding, effect: confetti }

@@ -6,17 +6,31 @@ locale: en-US
 direction: ltr
 title: "Pick the Sight Word"
 activity: multiple-choice
-prompt_tts: "Pick the word the"
-instruction: "בַּחֲרוּ אֶת הַמִּלָּה the"
-items:
-  - id: the
-    label: "the"
-    correct: true
-    tts: "the"
-  - id: they
-    label: "they"
-    tts: "they"
-  - id: then
-    label: "then"
-    tts: "then"
-reward: { stars: 1, sfx: chime, effect: sparkle }
+prompt_tts: "Pick the word"
+instruction: "בַּחֲרוּ אֶת הַמִּלָּה"
+questions:
+  - prompt: "Pick the word the"
+    prompt_text: "בַּחֲרוּ אֶת הַמִּלָּה the"
+    items:
+      - { id: o1, label: "the", correct: true, tts: "the" }
+      - { id: o2, label: "they", tts: "they" }
+      - { id: o3, label: "then", tts: "then" }
+  - prompt: "Pick the word and"
+    prompt_text: "בַּחֲרוּ אֶת הַמִּלָּה and"
+    items:
+      - { id: o1, label: "and", correct: true, tts: "and" }
+      - { id: o2, label: "ant", tts: "ant" }
+      - { id: o3, label: "any", tts: "any" }
+  - prompt: "Pick the word you"
+    prompt_text: "בַּחֲרוּ אֶת הַמִּלָּה you"
+    items:
+      - { id: o1, label: "you", correct: true, tts: "you" }
+      - { id: o2, label: "your", tts: "your" }
+      - { id: o3, label: "yes", tts: "yes" }
+  - prompt: "Pick the word said"
+    prompt_text: "בַּחֲרוּ אֶת הַמִּלָּה said"
+    items:
+      - { id: o1, label: "said", correct: true, tts: "said" }
+      - { id: o2, label: "sad", tts: "sad" }
+      - { id: o3, label: "say", tts: "say" }
+reward: { stars: 3, sfx: ding, effect: confetti }

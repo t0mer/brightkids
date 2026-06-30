@@ -6,17 +6,25 @@ locale: en-US
 direction: ltr
 title: "Read and Answer"
 activity: multiple-choice
-prompt_tts: "The dog is red. What color is the dog?"
-instruction: "הַכֶּלֶב אָדֹם. בְּאֵיזֶה צֶבַע הַכֶּלֶב?"
-items:
-  - id: red
-    label: "Red"
-    correct: true
-    tts: "red"
-  - id: blue
-    label: "Blue"
-    tts: "blue"
-  - id: green
-    label: "Green"
-    tts: "green"
-reward: { stars: 1, sfx: ding, effect: confetti }
+prompt_tts: "Read the sentence and answer."
+instruction: "קִרְאוּ אֶת הַמִּשְׁפָּט וְעַנּוּ."
+questions:
+  - prompt: "The dog is red. What color is the dog?"
+    prompt_text: "הַכֶּלֶב אָדֹם. בְּאֵיזֶה צֶבַע הַכֶּלֶב?"
+    items:
+      - { id: o1, label: "Red", correct: true, tts: "red" }
+      - { id: o2, label: "Blue", tts: "blue" }
+      - { id: o3, label: "Green", tts: "green" }
+  - prompt: "The cat is big. How big is the cat?"
+    prompt_text: "הֶחָתוּל גָּדוֹל. כַּמָּה גָּדוֹל הֶחָתוּל?"
+    items:
+      - { id: o1, label: "Big", correct: true, tts: "big" }
+      - { id: o2, label: "Small", tts: "small" }
+      - { id: o3, label: "Old", tts: "old" }
+  - prompt: "The sun is hot. How does the sun feel?"
+    prompt_text: "הַשֶּׁמֶשׁ חַמָּה. אֵיךְ מַרְגִּישָׁה הַשֶּׁמֶשׁ?"
+    items:
+      - { id: o1, label: "Hot", correct: true, tts: "hot" }
+      - { id: o2, label: "Cold", tts: "cold" }
+      - { id: o3, label: "Wet", tts: "wet" }
+reward: { stars: 3, sfx: ding, effect: confetti }

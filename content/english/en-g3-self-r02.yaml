@@ -6,17 +6,25 @@ locale: en-US
 direction: ltr
 title: "About Me: My Age"
 activity: multiple-choice
-prompt_tts: "You are eight years old. Pick the right sentence."
-instruction: "אַתֶּם בְּנֵי שְׁמוֹנֶה. בַּחֲרוּ אֶת הַמִּשְׁפָּט הַנָּכוֹן."
-items:
-  - id: eight
-    label: "I am eight years old."
-    correct: true
-    tts: "I am eight years old."
-  - id: green
-    label: "I am green years old."
-    tts: "I am green years old."
-  - id: cat
-    label: "I am a cat years old."
-    tts: "I am a cat years old."
-reward: { stars: 1, sfx: chime, effect: confetti }
+prompt_tts: "Pick the right sentence."
+instruction: "בַּחֲרוּ אֶת הַמִּשְׁפָּט הַנָּכוֹן."
+questions:
+  - prompt: "You are eight years old. Pick the right sentence."
+    prompt_text: "אַתֶּם בְּנֵי שְׁמוֹנֶה. בַּחֲרוּ אֶת הַמִּשְׁפָּט הַנָּכוֹן."
+    items:
+      - { id: o1, label: "I am eight years old.", correct: true, tts: "I am eight years old." }
+      - { id: o2, label: "I am green years old.", tts: "I am green years old." }
+      - { id: o3, label: "I am a cat years old.", tts: "I am a cat years old." }
+  - prompt: "When is your birthday? Pick the right sentence."
+    prompt_text: "מָתַי יוֹם הַהֻלֶּדֶת שֶׁלָּכֶם? בַּחֲרוּ אֶת הַמִּשְׁפָּט הַנָּכוֹן."
+    items:
+      - { id: o1, label: "My birthday is in May.", correct: true, tts: "My birthday is in May." }
+      - { id: o2, label: "My birthday is in blue.", tts: "My birthday is in blue." }
+      - { id: o3, label: "My birthday is in dog.", tts: "My birthday is in dog." }
+  - prompt: "You want to say you are big. Pick the right sentence."
+    prompt_text: "אַתֶּם רוֹצִים לוֹמַר שֶׁאַתֶּם גְּדוֹלִים. בַּחֲרוּ אֶת הַמִּשְׁפָּט הַנָּכוֹן."
+    items:
+      - { id: o1, label: "I am a big kid.", correct: true, tts: "I am a big kid." }
+      - { id: o2, label: "I am a big seven.", tts: "I am a big seven." }
+      - { id: o3, label: "I am a big red.", tts: "I am a big red." }
+reward: { stars: 3, sfx: ding, effect: confetti }

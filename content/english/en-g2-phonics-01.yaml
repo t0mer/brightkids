@@ -6,20 +6,31 @@ locale: en-US
 direction: ltr
 title: "The /k/ Sound"
 activity: multiple-choice
-prompt_tts: "Which word starts with the /k/ sound?"
-instruction: "אֵיזוֹ מִלָּה מַתְחִילָה בַּצְּלִיל /k/?"
-items:
-  - id: cat
-    label: "Cat"
-    correct: true
-    tts: "cat"
-    emoji: "🐱"
-  - id: dog
-    label: "Dog"
-    tts: "dog"
-    emoji: "🐶"
-  - id: sun
-    label: "Sun"
-    tts: "sun"
-    emoji: "☀️"
-reward: { stars: 1, sfx: ding, effect: confetti }
+prompt_tts: "Which word starts with this sound?"
+instruction: "אֵיזוֹ מִלָּה מַתְחִילָה בַּצְּלִיל הַזֶּה?"
+questions:
+  - prompt: "Which word starts with the /k/ sound?"
+    prompt_text: "אֵיזוֹ מִלָּה מַתְחִילָה בַּצְּלִיל /k/?"
+    items:
+      - { id: o1, label: "Cat", correct: true, tts: "cat", emoji: "🐱" }
+      - { id: o2, label: "Dog", tts: "dog", emoji: "🐶" }
+      - { id: o3, label: "Sun", tts: "sun", emoji: "☀️" }
+  - prompt: "Which word starts with the /d/ sound?"
+    prompt_text: "אֵיזוֹ מִלָּה מַתְחִילָה בַּצְּלִיל /d/?"
+    items:
+      - { id: o1, label: "Dog", correct: true, tts: "dog", emoji: "🐶" }
+      - { id: o2, label: "Cat", tts: "cat", emoji: "🐱" }
+      - { id: o3, label: "Fish", tts: "fish", emoji: "🐟" }
+  - prompt: "Which word starts with the /s/ sound?"
+    prompt_text: "אֵיזוֹ מִלָּה מַתְחִילָה בַּצְּלִיל /s/?"
+    items:
+      - { id: o1, label: "Sun", correct: true, tts: "sun", emoji: "☀️" }
+      - { id: o2, label: "Dog", tts: "dog", emoji: "🐶" }
+      - { id: o3, label: "Ball", tts: "ball", emoji: "⚽" }
+  - prompt: "Which word starts with the /b/ sound?"
+    prompt_text: "אֵיזוֹ מִלָּה מַתְחִילָה בַּצְּלִיל /b/?"
+    items:
+      - { id: o1, label: "Ball", correct: true, tts: "ball", emoji: "⚽" }
+      - { id: o2, label: "Cat", tts: "cat", emoji: "🐱" }
+      - { id: o3, label: "Sun", tts: "sun", emoji: "☀️" }
+reward: { stars: 3, sfx: ding, effect: confetti }

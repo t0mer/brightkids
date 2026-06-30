@@ -1,32 +1,38 @@
-id: en-g2-phonics-r01
+id: en-g2-phonics-set-01
 subject: english
 grade: 2
 difficulty: 2
 locale: en-US
 direction: ltr
-title: "First Sound: Sun"
+title: "First Sounds"
 activity: multiple-choice
 prompt_tts: "What is the first sound in the word?"
 instruction: "מַהוּ הַצְּלִיל הָרִאשׁוֹן בַּמִּלָּה?"
 questions:
-  - prompt: "What is the first sound in the word sun?"
-    prompt_text: "מַהוּ הַצְּלִיל הָרִאשׁוֹן בַּמִּלָּה sun?"
+  - prompt: "What is the first sound in the word cat?"
+    prompt_text: "מַהוּ הַצְּלִיל הָרִאשׁוֹן בַּמִּלָּה cat?"
     items:
-      - { id: o1, label: "s", correct: true, tts: "s says sss" }
+      - { id: o1, label: "c", correct: true, tts: "c says kuh" }
       - { id: o2, label: "m", tts: "m says mmm" }
-      - { id: o3, label: "f", tts: "f says fff" }
-  - prompt: "What is the first sound in the word map?"
-    prompt_text: "מַהוּ הַצְּלִיל הָרִאשׁוֹן בַּמִּלָּה map?"
+      - { id: o3, label: "s", tts: "s says sss" }
+  - prompt: "What is the first sound in the word dog?"
+    prompt_text: "מַהוּ הַצְּלִיל הָרִאשׁוֹן בַּמִּלָּה dog?"
     items:
-      - { id: o1, label: "m", correct: true, tts: "m says mmm" }
-      - { id: o2, label: "s", tts: "s says sss" }
-      - { id: o3, label: "t", tts: "t says tuh" }
+      - { id: o1, label: "d", correct: true, tts: "d says duh" }
+      - { id: o2, label: "t", tts: "t says tuh" }
+      - { id: o3, label: "p", tts: "p says puh" }
   - prompt: "What is the first sound in the word fish?"
     prompt_text: "מַהוּ הַצְּלִיל הָרִאשׁוֹן בַּמִּלָּה fish?"
     items:
       - { id: o1, label: "f", correct: true, tts: "f says fff" }
       - { id: o2, label: "s", tts: "s says sss" }
       - { id: o3, label: "b", tts: "b says buh" }
+  - prompt: "What is the first sound in the word sun?"
+    prompt_text: "מַהוּ הַצְּלִיל הָרִאשׁוֹן בַּמִּלָּה sun?"
+    items:
+      - { id: o1, label: "s", correct: true, tts: "s says sss" }
+      - { id: o2, label: "m", tts: "m says mmm" }
+      - { id: o3, label: "f", tts: "f says fff" }
   - prompt: "What is the first sound in the word ball?"
     prompt_text: "מַהוּ הַצְּלִיל הָרִאשׁוֹן בַּמִּלָּה ball?"
     items:

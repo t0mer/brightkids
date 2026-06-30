@@ -6,17 +6,25 @@ locale: en-US
 direction: ltr
 title: "Reading: Ann Reads"
 activity: multiple-choice
-prompt_tts: "Ann reads a book every night before bed. When does Ann read?"
-instruction: "Ann קוֹרֵאת סֵפֶר כָּל לַיְלָה לִפְנֵי הַשֵּׁנָה. מָתַי Ann קוֹרֵאת?"
-items:
-  - id: night
-    label: "every night"
-    correct: true
-    tts: "every night"
-  - id: morning
-    label: "every morning"
-    tts: "every morning"
-  - id: never
-    label: "she never reads"
-    tts: "she never reads"
-reward: { stars: 1, sfx: chime, effect: confetti }
+prompt_tts: "Read about Ann and answer."
+instruction: "קִרְאוּ עַל Ann וְעַנּוּ."
+questions:
+  - prompt: "Ann reads a book every night before bed. When does Ann read?"
+    prompt_text: "Ann קוֹרֵאת סֵפֶר כָּל לַיְלָה לִפְנֵי הַשֵּׁנָה. מָתַי Ann קוֹרֵאת?"
+    items:
+      - { id: o1, label: "every night", correct: true, tts: "every night" }
+      - { id: o2, label: "every morning", tts: "every morning" }
+      - { id: o3, label: "she never reads", tts: "she never reads" }
+  - prompt: "Ann reads a book every night before bed. What does Ann read?"
+    prompt_text: "Ann קוֹרֵאת סֵפֶר כָּל לַיְלָה לִפְנֵי הַשֵּׁנָה. מָה Ann קוֹרֵאת?"
+    items:
+      - { id: o1, label: "a book", correct: true, tts: "a book" }
+      - { id: o2, label: "a song", tts: "a song" }
+      - { id: o3, label: "a game", tts: "a game" }
+  - prompt: "Ann reads before bed. Does she read in the day or at night?"
+    prompt_text: "Ann קוֹרֵאת לִפְנֵי הַשֵּׁנָה. הִיא קוֹרֵאת בַּיּוֹם אוֹ בַּלַּיְלָה?"
+    items:
+      - { id: o1, label: "at night", correct: true, tts: "at night" }
+      - { id: o2, label: "in the day", tts: "in the day" }
+      - { id: o3, label: "at noon", tts: "at noon" }
+reward: { stars: 3, sfx: ding, effect: confetti }

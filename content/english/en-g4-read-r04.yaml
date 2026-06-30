@@ -6,17 +6,25 @@ locale: en-US
 direction: ltr
 title: "Reading: Fred the Umbrella"
 activity: multiple-choice
-prompt_tts: "Fred is a red umbrella. He keeps the children dry in the rain. When do the children need Fred?"
-instruction: "Fred הוּא מִטְרִיָּה אֲדֻמָּה. הוּא שׁוֹמֵר עַל הַיְלָדִים שֶׁיִּשָּׁאֲרוּ יְבֵשִׁים בַּגֶּשֶׁם. מָתַי הַיְלָדִים צְרִיכִים אֶת Fred?"
-items:
-  - id: rain
-    label: "when it rains"
-    correct: true
-    tts: "when it rains"
-  - id: sunny
-    label: "when it is sunny"
-    tts: "when it is sunny"
-  - id: snow
-    label: "when it snows"
-    tts: "when it snows"
-reward: { stars: 1, sfx: chime, effect: stars }
+prompt_tts: "Read about Fred and answer."
+instruction: "קִרְאוּ עַל Fred וְעַנּוּ."
+questions:
+  - prompt: "Fred is a red umbrella. He keeps the children dry in the rain. When do the children need Fred?"
+    prompt_text: "Fred הוּא מִטְרִיָּה אֲדֻמָּה. הוּא שׁוֹמֵר עַל הַיְלָדִים שֶׁיִּשָּׁאֲרוּ יְבֵשִׁים בַּגֶּשֶׁם. מָתַי הַיְלָדִים צְרִיכִים אֶת Fred?"
+    items:
+      - { id: o1, label: "when it rains", correct: true, tts: "when it rains" }
+      - { id: o2, label: "when it is sunny", tts: "when it is sunny" }
+      - { id: o3, label: "when it snows", tts: "when it snows" }
+  - prompt: "Fred is a red umbrella. What color is Fred?"
+    prompt_text: "Fred הוּא מִטְרִיָּה אֲדֻמָּה. בְּאֵיזֶה צֶבַע Fred?"
+    items:
+      - { id: o1, label: "red", correct: true, tts: "red" }
+      - { id: o2, label: "blue", tts: "blue" }
+      - { id: o3, label: "yellow", tts: "yellow" }
+  - prompt: "Fred keeps the children dry in the rain. What does Fred do?"
+    prompt_text: "Fred שׁוֹמֵר עַל הַיְלָדִים שֶׁיִּשָּׁאֲרוּ יְבֵשִׁים בַּגֶּשֶׁם. מָה Fred עוֹשֶׂה?"
+    items:
+      - { id: o1, label: "keeps them dry", correct: true, tts: "keeps them dry" }
+      - { id: o2, label: "makes them wet", tts: "makes them wet" }
+      - { id: o3, label: "makes them cold", tts: "makes them cold" }
+reward: { stars: 3, sfx: ding, effect: confetti }

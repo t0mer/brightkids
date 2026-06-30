@@ -6,17 +6,25 @@ locale: en-US
 direction: ltr
 title: "Reading: Dan Swims"
 activity: multiple-choice
-prompt_tts: "Dan swims in the sea with his friends on Saturday. Where does Dan swim?"
-instruction: "Dan שׂוֹחֶה בַּיָּם עִם חֲבֵרָיו בְּשַׁבָּת. אֵיפֹה Dan שׂוֹחֶה?"
-items:
-  - id: sea
-    label: "in the sea"
-    correct: true
-    tts: "in the sea"
-  - id: pool
-    label: "in a pool"
-    tts: "in a pool"
-  - id: river
-    label: "in a river"
-    tts: "in a river"
-reward: { stars: 1, sfx: ding, effect: confetti }
+prompt_tts: "Read about Dan and answer."
+instruction: "קִרְאוּ עַל Dan וְעַנּוּ."
+questions:
+  - prompt: "Dan swims in the sea with his friends on Saturday. Where does Dan swim?"
+    prompt_text: "Dan שׂוֹחֶה בַּיָּם עִם חֲבֵרָיו בְּשַׁבָּת. אֵיפֹה Dan שׂוֹחֶה?"
+    items:
+      - { id: o1, label: "in the sea", correct: true, tts: "in the sea" }
+      - { id: o2, label: "in a pool", tts: "in a pool" }
+      - { id: o3, label: "in a river", tts: "in a river" }
+  - prompt: "Dan swims in the sea with his friends on Saturday. Who swims with Dan?"
+    prompt_text: "Dan שׂוֹחֶה בַּיָּם עִם חֲבֵרָיו בְּשַׁבָּת. מִי שׂוֹחֶה עִם Dan?"
+    items:
+      - { id: o1, label: "his friends", correct: true, tts: "his friends" }
+      - { id: o2, label: "his teacher", tts: "his teacher" }
+      - { id: o3, label: "his dog", tts: "his dog" }
+  - prompt: "Dan swims in the sea with his friends on Saturday. When does Dan swim?"
+    prompt_text: "Dan שׂוֹחֶה בַּיָּם עִם חֲבֵרָיו בְּשַׁבָּת. מָתַי Dan שׂוֹחֶה?"
+    items:
+      - { id: o1, label: "on Saturday", correct: true, tts: "on Saturday" }
+      - { id: o2, label: "on Monday", tts: "on Monday" }
+      - { id: o3, label: "every day", tts: "every day" }
+reward: { stars: 3, sfx: ding, effect: confetti }

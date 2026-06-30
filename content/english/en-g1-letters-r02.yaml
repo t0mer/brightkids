@@ -6,17 +6,35 @@ locale: en-US
 direction: ltr
 title: "Which Letter Says /b/?"
 activity: letter-recognition
-prompt_tts: "Which letter makes the sound buh?"
-instruction: "אֵיזוֹ אוֹת מַשְׁמִיעָה אֶת הַצְּלִיל buh?"
+prompt_tts: "Which letter makes the sound"
+instruction: "אֵיזוֹ אוֹת מַשְׁמִיעָה אֶת הַצְּלִיל"
 items:
-  - id: b
-    label: "B"
-    correct: true
-    tts: "B says buh"
-  - id: d
-    label: "D"
-    tts: "D"
-  - id: p
-    label: "P"
-    tts: "P"
-reward: { stars: 1, sfx: ding, effect: confetti }
+  - { id: o1, label: "B", correct: true, tts: "B says buh" }
+  - { id: o2, label: "D", tts: "D" }
+  - { id: o3, label: "P", tts: "P" }
+questions:
+  - prompt: "Which letter makes the sound buh?"
+    prompt_text: "אֵיזוֹ אוֹת מַשְׁמִיעָה אֶת הַצְּלִיל buh?"
+    items:
+      - { id: o1, label: "B", correct: true, tts: "B says buh" }
+      - { id: o2, label: "D", tts: "D" }
+      - { id: o3, label: "P", tts: "P" }
+  - prompt: "Which letter makes the sound duh?"
+    prompt_text: "אֵיזוֹ אוֹת מַשְׁמִיעָה אֶת הַצְּלִיל duh?"
+    items:
+      - { id: o1, label: "D", correct: true, tts: "D says duh" }
+      - { id: o2, label: "B", tts: "B" }
+      - { id: o3, label: "T", tts: "T" }
+  - prompt: "Which letter makes the sound puh?"
+    prompt_text: "אֵיזוֹ אוֹת מַשְׁמִיעָה אֶת הַצְּלִיל puh?"
+    items:
+      - { id: o1, label: "P", correct: true, tts: "P says puh" }
+      - { id: o2, label: "B", tts: "B" }
+      - { id: o3, label: "D", tts: "D" }
+  - prompt: "Which letter makes the sound tuh?"
+    prompt_text: "אֵיזוֹ אוֹת מַשְׁמִיעָה אֶת הַצְּלִיל tuh?"
+    items:
+      - { id: o1, label: "T", correct: true, tts: "T says tuh" }
+      - { id: o2, label: "D", tts: "D" }
+      - { id: o3, label: "P", tts: "P" }
+reward: { stars: 3, sfx: ding, effect: confetti }

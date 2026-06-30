@@ -6,17 +6,25 @@ locale: en-US
 direction: ltr
 title: "About Me: My Name"
 activity: multiple-choice
-prompt_tts: "How do you tell someone your name? Pick the sentence."
-instruction: "אֵיךְ אוֹמְרִים לְמִישֶׁהוּ אֶת הַשֵּׁם שֶׁלָּכֶם? בַּחֲרוּ אֶת הַמִּשְׁפָּט."
-items:
-  - id: my_name
-    label: "My name is Dan."
-    correct: true
-    tts: "My name is Dan."
-  - id: name_color
-    label: "My name is blue."
-    tts: "My name is blue."
-  - id: name_seven
-    label: "My name is seven."
-    tts: "My name is seven."
-reward: { stars: 1, sfx: ding, effect: stars }
+prompt_tts: "Pick the sentence that makes sense."
+instruction: "בַּחֲרוּ אֶת הַמִּשְׁפָּט הַהֶגְיוֹנִי."
+questions:
+  - prompt: "How do you tell someone your name? Pick the sentence."
+    prompt_text: "אֵיךְ אוֹמְרִים לְמִישֶׁהוּ אֶת הַשֵּׁם שֶׁלָּכֶם? בַּחֲרוּ אֶת הַמִּשְׁפָּט."
+    items:
+      - { id: o1, label: "My name is Dan.", correct: true, tts: "My name is Dan." }
+      - { id: o2, label: "My name is blue.", tts: "My name is blue." }
+      - { id: o3, label: "My name is seven.", tts: "My name is seven." }
+  - prompt: "How do you greet a friend? Pick the sentence."
+    prompt_text: "אֵיךְ מְבָרְכִים חָבֵר? בַּחֲרוּ אֶת הַמִּשְׁפָּט."
+    items:
+      - { id: o1, label: "Hello, how are you?", correct: true, tts: "Hello, how are you?" }
+      - { id: o2, label: "Hello, how is green?", tts: "Hello, how is green?" }
+      - { id: o3, label: "Hello, how is five?", tts: "Hello, how is five?" }
+  - prompt: "You want to say what you are. Pick the right sentence."
+    prompt_text: "אַתֶּם רוֹצִים לוֹמַר מָה אַתֶּם. בַּחֲרוּ אֶת הַמִּשְׁפָּט הַנָּכוֹן."
+    items:
+      - { id: o1, label: "I am a boy.", correct: true, tts: "I am a boy." }
+      - { id: o2, label: "I am a apple.", tts: "I am a apple." }
+      - { id: o3, label: "I am a Monday.", tts: "I am a Monday." }
+reward: { stars: 3, sfx: ding, effect: confetti }

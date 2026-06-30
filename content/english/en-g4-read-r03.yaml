@@ -6,17 +6,25 @@ locale: en-US
 direction: ltr
 title: "Reading: Dan the Dog"
 activity: multiple-choice
-prompt_tts: "Dan is a small brown dog. He likes to run and jump in the garden. What does Dan like to do?"
-instruction: "Dan הוּא כֶּלֶב חוּם קָטָן. הוּא אוֹהֵב לָרוּץ וְלִקְפֹּץ בַּגִּנָּה. מָה Dan אוֹהֵב לַעֲשׂוֹת?"
-items:
-  - id: run
-    label: "run and jump"
-    correct: true
-    tts: "run and jump"
-  - id: sleep
-    label: "sleep all day"
-    tts: "sleep all day"
-  - id: swim
-    label: "swim in the sea"
-    tts: "swim in the sea"
-reward: { stars: 1, sfx: pop, effect: confetti }
+prompt_tts: "Read about Dan and answer."
+instruction: "קִרְאוּ עַל Dan וְעַנּוּ."
+questions:
+  - prompt: "Dan is a small brown dog. He likes to run and jump in the garden. What does Dan like to do?"
+    prompt_text: "Dan הוּא כֶּלֶב חוּם קָטָן. הוּא אוֹהֵב לָרוּץ וְלִקְפֹּץ בַּגִּנָּה. מָה Dan אוֹהֵב לַעֲשׂוֹת?"
+    items:
+      - { id: o1, label: "run and jump", correct: true, tts: "run and jump" }
+      - { id: o2, label: "sleep all day", tts: "sleep all day" }
+      - { id: o3, label: "swim in the sea", tts: "swim in the sea" }
+  - prompt: "Dan is a small brown dog. What color is Dan?"
+    prompt_text: "Dan הוּא כֶּלֶב חוּם קָטָן. בְּאֵיזֶה צֶבַע Dan?"
+    items:
+      - { id: o1, label: "brown", correct: true, tts: "brown" }
+      - { id: o2, label: "black", tts: "black" }
+      - { id: o3, label: "white", tts: "white" }
+  - prompt: "Dan likes to run and jump in the garden. Where does Dan play?"
+    prompt_text: "Dan אוֹהֵב לָרוּץ וְלִקְפֹּץ בַּגִּנָּה. אֵיפֹה Dan מְשַׂחֵק?"
+    items:
+      - { id: o1, label: "in the garden", correct: true, tts: "in the garden" }
+      - { id: o2, label: "in the house", tts: "in the house" }
+      - { id: o3, label: "in the car", tts: "in the car" }
+reward: { stars: 3, sfx: ding, effect: confetti }

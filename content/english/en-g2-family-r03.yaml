@@ -6,17 +6,31 @@ locale: en-US
 direction: ltr
 title: "Which Word Rhymes with Dog?"
 activity: multiple-choice
-prompt_tts: "Which word rhymes with dog?"
-instruction: "אֵיזוֹ מִלָּה מִתְחָרֶזֶת עִם dog?"
-items:
-  - id: log
-    label: "log"
-    correct: true
-    tts: "log"
-  - id: cup
-    label: "cup"
-    tts: "cup"
-  - id: pen
-    label: "pen"
-    tts: "pen"
-reward: { stars: 1, sfx: pop, effect: confetti }
+prompt_tts: "Which word rhymes?"
+instruction: "אֵיזוֹ מִלָּה מִתְחָרֶזֶת?"
+questions:
+  - prompt: "Which word rhymes with dog?"
+    prompt_text: "אֵיזוֹ מִלָּה מִתְחָרֶזֶת עִם dog?"
+    items:
+      - { id: o1, label: "log", correct: true, tts: "log" }
+      - { id: o2, label: "cup", tts: "cup" }
+      - { id: o3, label: "pen", tts: "pen" }
+  - prompt: "Which word rhymes with cat?"
+    prompt_text: "אֵיזוֹ מִלָּה מִתְחָרֶזֶת עִם cat?"
+    items:
+      - { id: o1, label: "hat", correct: true, tts: "hat" }
+      - { id: o2, label: "sun", tts: "sun" }
+      - { id: o3, label: "bed", tts: "bed" }
+  - prompt: "Which word rhymes with sun?"
+    prompt_text: "אֵיזוֹ מִלָּה מִתְחָרֶזֶת עִם sun?"
+    items:
+      - { id: o1, label: "fun", correct: true, tts: "fun" }
+      - { id: o2, label: "dog", tts: "dog" }
+      - { id: o3, label: "pen", tts: "pen" }
+  - prompt: "Which word rhymes with bed?"
+    prompt_text: "אֵיזוֹ מִלָּה מִתְחָרֶזֶת עִם bed?"
+    items:
+      - { id: o1, label: "red", correct: true, tts: "red" }
+      - { id: o2, label: "cup", tts: "cup" }
+      - { id: o3, label: "top", tts: "top" }
+reward: { stars: 3, sfx: ding, effect: confetti }

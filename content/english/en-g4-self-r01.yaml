@@ -6,17 +6,25 @@ locale: en-US
 direction: ltr
 title: "Describe Yourself"
 activity: multiple-choice
-prompt_tts: "You want to say where you live. Pick the correct sentence."
-instruction: "אַתֶּם רוֹצִים לוֹמַר אֵיפֹה אַתֶּם גָּרִים. בַּחֲרוּ אֶת הַמִּשְׁפָּט הַנָּכוֹן."
-items:
-  - id: live
-    label: "I live in a small town."
-    correct: true
-    tts: "I live in a small town."
-  - id: like
-    label: "I live a big apple."
-    tts: "I live a big apple."
-  - id: run
-    label: "I live very fast."
-    tts: "I live very fast."
-reward: { stars: 1, sfx: ding, effect: confetti }
+prompt_tts: "Pick the correct sentence."
+instruction: "בַּחֲרוּ אֶת הַמִּשְׁפָּט הַנָּכוֹן."
+questions:
+  - prompt: "You want to say where you live. Pick the correct sentence."
+    prompt_text: "אַתֶּם רוֹצִים לוֹמַר אֵיפֹה אַתֶּם גָּרִים. בַּחֲרוּ אֶת הַמִּשְׁפָּט הַנָּכוֹן."
+    items:
+      - { id: o1, label: "I live in a small town.", correct: true, tts: "I live in a small town." }
+      - { id: o2, label: "I live a big apple.", tts: "I live a big apple." }
+      - { id: o3, label: "I live very fast.", tts: "I live very fast." }
+  - prompt: "You want to say what you like. Pick the correct sentence."
+    prompt_text: "אַתֶּם רוֹצִים לוֹמַר מָה אַתֶּם אוֹהֲבִים. בַּחֲרוּ אֶת הַמִּשְׁפָּט הַנָּכוֹן."
+    items:
+      - { id: o1, label: "I like to play football.", correct: true, tts: "I like to play football." }
+      - { id: o2, label: "I like to play Tuesday.", tts: "I like to play Tuesday." }
+      - { id: o3, label: "I like to play green.", tts: "I like to play green." }
+  - prompt: "You want to say how old you are. Pick the correct sentence."
+    prompt_text: "אַתֶּם רוֹצִים לוֹמַר בְּנֵי כַּמָּה אַתֶּם. בַּחֲרוּ אֶת הַמִּשְׁפָּט הַנָּכוֹן."
+    items:
+      - { id: o1, label: "I am nine years old.", correct: true, tts: "I am nine years old." }
+      - { id: o2, label: "I am nine apples old.", tts: "I am nine apples old." }
+      - { id: o3, label: "I am nine blue old.", tts: "I am nine blue old." }
+reward: { stars: 3, sfx: ding, effect: confetti }

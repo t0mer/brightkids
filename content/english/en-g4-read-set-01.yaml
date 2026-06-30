@@ -1,0 +1,42 @@
+id: en-g4-read-set-01
+subject: english
+grade: 4
+difficulty: 3
+locale: en-US
+direction: ltr
+title: "Reading: The Lost Cat"
+activity: multiple-choice
+prompt_tts: "Read the story and answer."
+instruction: "קִרְאוּ אֶת הַסִּפּוּר וְעַנּוּ."
+questions:
+  - prompt: "Sam has a cat named Lily. What is the cat's name?"
+    prompt_text: "לְ-Sam יֵשׁ חָתוּל בְּשֵׁם Lily. מָה שֵׁם הֶחָתוּל?"
+    items:
+      - { id: o1, label: "Lily", correct: true, tts: "Lily" }
+      - { id: o2, label: "Sam", tts: "Sam" }
+      - { id: o3, label: "Max", tts: "Max" }
+  - prompt: "One day Lily runs away. What does Lily do?"
+    prompt_text: "יוֹם אֶחָד Lily בּוֹרַחַת. מָה Lily עוֹשָׂה?"
+    items:
+      - { id: o1, label: "runs away", correct: true, tts: "runs away" }
+      - { id: o2, label: "goes to sleep", tts: "goes to sleep" }
+      - { id: o3, label: "eats fish", tts: "eats fish" }
+  - prompt: "Sam looks in the garden. Where does Sam look?"
+    prompt_text: "Sam מְחַפֵּשׂ בַּגִּנָּה. אֵיפֹה Sam מְחַפֵּשׂ?"
+    items:
+      - { id: o1, label: "in the garden", correct: true, tts: "in the garden" }
+      - { id: o2, label: "in the house", tts: "in the house" }
+      - { id: o3, label: "at school", tts: "at school" }
+  - prompt: "Sam finds Lily under a tree. Where is Lily?"
+    prompt_text: "Sam מוֹצֵא אֶת Lily מִתַּחַת לְעֵץ. אֵיפֹה Lily?"
+    items:
+      - { id: o1, label: "under a tree", correct: true, tts: "under a tree" }
+      - { id: o2, label: "on the roof", tts: "on the roof" }
+      - { id: o3, label: "in a box", tts: "in a box" }
+  - prompt: "Sam has a cat named Lily. Who has a cat?"
+    prompt_text: "לְ-Sam יֵשׁ חָתוּל בְּשֵׁם Lily. לְמִי יֵשׁ חָתוּל?"
+    items:
+      - { id: o1, label: "Sam", correct: true, tts: "Sam" }
+      - { id: o2, label: "Lily", tts: "Lily" }
+      - { id: o3, label: "Max", tts: "Max" }
+reward: { stars: 3, sfx: ding, effect: confetti }

@@ -6,17 +6,29 @@ locale: en-US
 direction: ltr
 title: "Match the Lowercase a"
 activity: letter-recognition
-prompt_tts: "The big letter is A. Tap the small letter a."
-instruction: "הָאוֹת הַגְּדוֹלָה הִיא A. הַקִּישׁוּ עַל הָאוֹת הַקְּטַנָּה a."
+prompt_tts: "Tap the small letter"
+instruction: "הַקִּישׁוּ עַל הָאוֹת הַקְּטַנָּה"
 items:
-  - id: a_lower
-    label: "a"
-    correct: true
-    tts: "small a"
-  - id: e_lower
-    label: "e"
-    tts: "small e"
-  - id: o_lower
-    label: "o"
-    tts: "small o"
-reward: { stars: 1, sfx: pop, effect: stars }
+  - { id: o1, label: "a", correct: true, tts: "small a" }
+  - { id: o2, label: "e", tts: "small e" }
+  - { id: o3, label: "o", tts: "small o" }
+questions:
+  - prompt: "The big letter is A. Tap the small letter a."
+    prompt_text: "הָאוֹת הַגְּדוֹלָה הִיא A. הַקִּישׁוּ עַל הָאוֹת הַקְּטַנָּה a."
+    items:
+      - { id: o1, label: "a", correct: true, tts: "small a" }
+      - { id: o2, label: "e", tts: "small e" }
+      - { id: o3, label: "o", tts: "small o" }
+  - prompt: "The big letter is E. Tap the small letter e."
+    prompt_text: "הָאוֹת הַגְּדוֹלָה הִיא E. הַקִּישׁוּ עַל הָאוֹת הַקְּטַנָּה e."
+    items:
+      - { id: o1, label: "e", correct: true, tts: "small e" }
+      - { id: o2, label: "a", tts: "small a" }
+      - { id: o3, label: "o", tts: "small o" }
+  - prompt: "The big letter is O. Tap the small letter o."
+    prompt_text: "הָאוֹת הַגְּדוֹלָה הִיא O. הַקִּישׁוּ עַל הָאוֹת הַקְּטַנָּה o."
+    items:
+      - { id: o1, label: "o", correct: true, tts: "small o" }
+      - { id: o2, label: "a", tts: "small a" }
+      - { id: o3, label: "e", tts: "small e" }
+reward: { stars: 3, sfx: ding, effect: confetti }

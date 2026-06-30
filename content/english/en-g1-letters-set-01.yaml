@@ -1,0 +1,46 @@
+id: en-g1-letters-set-01
+subject: english
+grade: 1
+difficulty: 1
+locale: en-US
+direction: ltr
+title: "Letter Hunt"
+activity: letter-recognition
+prompt_tts: "Find the letter"
+instruction: "מִצְאוּ אֶת הָאוֹת"
+items:
+  - { id: o1, label: "E", correct: true, tts: "E" }
+  - { id: o2, label: "F", tts: "F" }
+  - { id: o3, label: "G", tts: "G" }
+questions:
+  - prompt: "Find the letter E"
+    prompt_text: "מִצְאוּ אֶת הָאוֹת E"
+    items:
+      - { id: o1, label: "E", correct: true, tts: "E" }
+      - { id: o2, label: "F", tts: "F" }
+      - { id: o3, label: "G", tts: "G" }
+  - prompt: "Find the letter G"
+    prompt_text: "מִצְאוּ אֶת הָאוֹת G"
+    items:
+      - { id: o1, label: "G", correct: true, tts: "G" }
+      - { id: o2, label: "H", tts: "H" }
+      - { id: o3, label: "E", tts: "E" }
+  - prompt: "Find the letter H"
+    prompt_text: "מִצְאוּ אֶת הָאוֹת H"
+    items:
+      - { id: o1, label: "H", correct: true, tts: "H" }
+      - { id: o2, label: "I", tts: "I" }
+      - { id: o3, label: "F", tts: "F" }
+  - prompt: "Find the letter F"
+    prompt_text: "מִצְאוּ אֶת הָאוֹת F"
+    items:
+      - { id: o1, label: "F", correct: true, tts: "F" }
+      - { id: o2, label: "E", tts: "E" }
+      - { id: o3, label: "G", tts: "G" }
+  - prompt: "Find the letter I"
+    prompt_text: "מִצְאוּ אֶת הָאוֹת I"
+    items:
+      - { id: o1, label: "I", correct: true, tts: "I" }
+      - { id: o2, label: "H", tts: "H" }
+      - { id: o3, label: "G", tts: "G" }
+reward: { stars: 3, sfx: ding, effect: confetti }

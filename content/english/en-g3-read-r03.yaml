@@ -6,17 +6,25 @@ locale: en-US
 direction: ltr
 title: "Reading: Jim Has a Ball"
 activity: multiple-choice
-prompt_tts: "Jim has a big red ball. He plays in the park. What does Jim have?"
-instruction: "לְ-Jim יֵשׁ כַּדּוּר אָדֹם גָּדוֹל. הוּא מְשַׂחֵק בַּפַּארְק. מָה יֵשׁ לְ-Jim?"
-items:
-  - id: ball
-    label: "a red ball"
-    correct: true
-    tts: "a red ball"
-  - id: dog
-    label: "a red dog"
-    tts: "a red dog"
-  - id: hat
-    label: "a red hat"
-    tts: "a red hat"
-reward: { stars: 1, sfx: ding, effect: confetti }
+prompt_tts: "Read about Jim and answer."
+instruction: "קִרְאוּ עַל Jim וְעַנּוּ."
+questions:
+  - prompt: "Jim has a big red ball. He plays in the park. What does Jim have?"
+    prompt_text: "לְ-Jim יֵשׁ כַּדּוּר אָדֹם גָּדוֹל. הוּא מְשַׂחֵק בַּפַּארְק. מָה יֵשׁ לְ-Jim?"
+    items:
+      - { id: o1, label: "a red ball", correct: true, tts: "a red ball" }
+      - { id: o2, label: "a red dog", tts: "a red dog" }
+      - { id: o3, label: "a red hat", tts: "a red hat" }
+  - prompt: "Jim has a big red ball. He plays in the park. Where does Jim play?"
+    prompt_text: "לְ-Jim יֵשׁ כַּדּוּר אָדֹם גָּדוֹל. הוּא מְשַׂחֵק בַּפַּארְק. אֵיפֹה Jim מְשַׂחֵק?"
+    items:
+      - { id: o1, label: "in the park", correct: true, tts: "in the park" }
+      - { id: o2, label: "at home", tts: "at home" }
+      - { id: o3, label: "at school", tts: "at school" }
+  - prompt: "Jim has a big red ball. What color is the ball?"
+    prompt_text: "לְ-Jim יֵשׁ כַּדּוּר אָדֹם גָּדוֹל. בְּאֵיזֶה צֶבַע הַכַּדּוּר?"
+    items:
+      - { id: o1, label: "red", correct: true, tts: "red" }
+      - { id: o2, label: "blue", tts: "blue" }
+      - { id: o3, label: "green", tts: "green" }
+reward: { stars: 3, sfx: ding, effect: confetti }
