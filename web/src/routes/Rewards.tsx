@@ -2,20 +2,22 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Star, Flame } from "lucide-react";
 import { useTranslation } from "react-i18next";
-import { api } from "@/lib/api";
+import { data } from "@/lib/data";
 import type { ProgressSummary } from "@/lib/types";
 import { AppShell } from "@/components/AppShell";
 import { Bibo } from "@/components/Bibo";
 import { useStore } from "@/store/useStore";
+import { useTitle } from "@/lib/useTitle";
 
 export function Rewards() {
   const { t } = useTranslation();
   const profile = useStore((s) => s.profile);
   const [summary, setSummary] = useState<ProgressSummary | null>(null);
+  useTitle(t("rewards.title"));
 
   useEffect(() => {
     if (!profile) return;
-    api.progress(profile.id).then(setSummary).catch(() => setSummary(null));
+    data.progress(profile.id).then(setSummary).catch(() => setSummary(null));
   }, [profile]);
 
   const total = summary?.total_stars ?? 0;

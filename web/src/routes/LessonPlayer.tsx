@@ -4,6 +4,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { Star, Shuffle } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { api } from "@/lib/api";
+import { data } from "@/lib/data";
 import type { Lesson, LessonSummary } from "@/lib/types";
 import { ACTIVITY_RENDERERS } from "@/activities";
 import { AppShell } from "@/components/AppShell";
@@ -14,6 +15,7 @@ import { useStore } from "@/store/useStore";
 import { speak } from "@/lib/tts";
 import { play } from "@/lib/sfx";
 import { bigCelebrate, celebrate } from "@/lib/confetti";
+import { useTitle } from "@/lib/useTitle";
 
 export function LessonPlayer() {
   const { t } = useTranslation();
@@ -31,6 +33,9 @@ export function LessonPlayer() {
   const [round, setRound] = useState(0);
   // The active sub-question's instruction, reported by stepped activities.
   const [prompt, setPrompt] = useState<{ text: string; tts: string } | null>(null);
+
+  // Browser tab title = the lesson's own title (brand-only while it loads).
+  useTitle(lesson?.title);
 
   const reduceMotion = settings?.reduce_motion ?? false;
   const voiceEnabled = settings?.voice_enabled ?? true;
@@ -80,7 +85,8 @@ export function LessonPlayer() {
       celebrate(lesson.reward.effect, reduceMotion);
       bigCelebrate(reduceMotion);
       speak(t("activity.great"), { locale, enabled: voiceEnabled });
-      if (profile) void api.recordProgress(profile.id, lesson.id, stars).catch(() => {});
+      if (profile)
+        void data.recordProgress(profile.id, lesson.id, stars, lesson.subject, lesson.grade).catch(() => {});
     },
     [lesson, solved, reduceMotion, locale, voiceEnabled, profile, t],
   );

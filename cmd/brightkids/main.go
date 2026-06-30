@@ -54,16 +54,22 @@ func run(args []string) error {
 	}
 	log.Info("content loaded", "lessons", lib.Count(), "content_version", lib.Version())
 
-	// Store.
-	st, err := store.Open(cfg.DB.Path)
-	if err != nil {
-		return fmt.Errorf("opening store: %w", err)
-	}
-	defer func() { _ = st.Close() }()
+	// Store. In public mode profiles live in the browser, so the server stays
+	// stateless and opens no database.
+	var st *store.Store
+	if cfg.IsPublic() {
+		log.Info("public mode: profiles stored in the browser (no database)")
+	} else {
+		st, err = store.Open(cfg.DB.Path)
+		if err != nil {
+			return fmt.Errorf("opening store: %w", err)
+		}
+		defer func() { _ = st.Close() }()
 
-	// Guard re-seed bookkeeping on content version change.
-	if err := reconcileContentVersion(st, lib.Version(), log); err != nil {
-		return err
+		// Guard re-seed bookkeeping on content version change.
+		if err := reconcileContentVersion(st, lib.Version(), log); err != nil {
+			return err
+		}
 	}
 
 	// Metrics.
@@ -74,6 +80,7 @@ func run(args []string) error {
 
 	srv, err := server.New(server.Options{
 		Config:  cfg.Server,
+		Mode:    cfg.Mode,
 		Log:     log,
 		Content: lib,
 		Store:   st,

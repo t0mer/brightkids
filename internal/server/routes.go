@@ -32,6 +32,7 @@ func (s *Server) routes() http.Handler {
 
 	h := &handlers.Deps{
 		Log:     s.log,
+		Mode:    s.mode,
 		Content: s.content,
 		Store:   s.store,
 		Metrics: s.metrics,
@@ -41,6 +42,11 @@ func (s *Server) routes() http.Handler {
 	r.Get("/healthz", h.Healthz)
 	r.Get("/readyz", h.Readyz)
 
+	// SEO: auto-generated from the request's own origin (explicit routes so the
+	// SPA fallback doesn't 404 these extensioned paths).
+	r.Get("/robots.txt", h.Robots)
+	r.Get("/sitemap.xml", h.Sitemap)
+
 	// Metrics (optional).
 	if s.metrics != nil {
 		r.Handle("/metrics", promhttp.HandlerFor(s.metrics.Registry, promhttp.HandlerOpts{}))
@@ -48,20 +54,25 @@ func (s *Server) routes() http.Handler {
 
 	// JSON API.
 	r.Route("/api/v1", func(r chi.Router) {
+		r.Get("/config", h.Config)
 		r.Get("/version", h.Version)
 		r.Get("/subjects", h.Subjects)
 		r.Get("/lessons", h.Lessons)
 		r.Get("/lessons/{id}", h.Lesson)
 
-		r.Route("/profiles", func(r chi.Router) {
-			r.Get("/", h.ListProfiles)
-			r.Post("/", h.CreateProfile)
-			r.Delete("/{id}", h.DeleteProfile)
-			r.Get("/{id}/progress", h.GetProgress)
-			r.Post("/{id}/progress", h.RecordProgress)
-			r.Get("/{id}/settings", h.GetSettings)
-			r.Put("/{id}/settings", h.UpdateSettings)
-		})
+		// Profile/progress/settings persistence exists only in private mode;
+		// in public mode the browser owns this data (see GET /api/v1/config).
+		if s.store != nil {
+			r.Route("/profiles", func(r chi.Router) {
+				r.Get("/", h.ListProfiles)
+				r.Post("/", h.CreateProfile)
+				r.Delete("/{id}", h.DeleteProfile)
+				r.Get("/{id}/progress", h.GetProgress)
+				r.Post("/{id}/progress", h.RecordProgress)
+				r.Get("/{id}/settings", h.GetSettings)
+				r.Put("/{id}/settings", h.UpdateSettings)
+			})
+		}
 	})
 
 	// Unknown API routes return JSON 404, not the SPA.

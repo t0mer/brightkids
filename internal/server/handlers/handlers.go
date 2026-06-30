@@ -15,8 +15,12 @@ import (
 
 // Deps carries the dependencies shared by all handlers.
 type Deps struct {
-	Log     *slog.Logger
+	Log *slog.Logger
+	// Mode is the storage mode ("private" or "public"); reported to the client
+	// so it knows whether to persist profiles server-side or in localStorage.
+	Mode    string
 	Content *content.Library
+	// Store is nil in public mode (no server-side persistence).
 	Store   *store.Store
 	Metrics *metrics.Metrics
 }

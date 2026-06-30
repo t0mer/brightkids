@@ -21,6 +21,7 @@ import (
 // Server holds the HTTP server and its dependencies.
 type Server struct {
 	cfg     config.ServerConfig
+	mode    string
 	log     *slog.Logger
 	content *content.Library
 	store   *store.Store
@@ -31,9 +32,12 @@ type Server struct {
 
 // Options bundles the server dependencies.
 type Options struct {
-	Config  config.ServerConfig
+	Config config.ServerConfig
+	// Mode is the storage mode ("private" or "public"). Empty defaults to private.
+	Mode    string
 	Log     *slog.Logger
 	Content *content.Library
+	// Store may be nil in public mode (the server is then stateless).
 	Store   *store.Store
 	Metrics *metrics.Metrics
 	// SPAFS optionally overrides the embedded SPA filesystem (used in tests).
@@ -49,13 +53,26 @@ func New(opts Options) (*Server, error) {
 			return nil, fmt.Errorf("loading embedded SPA: %w", err)
 		}
 	}
+	mode := opts.Mode
+	if mode == "" {
+		mode = config.ModePrivate
+	}
+	// Public mode injects per-page SEO meta into the served HTML so crawlers and
+	// social scrapers (which don't run the SPA) see correct tags. Private mode
+	// serves the plain index.html.
+	var seoTransform func(*http.Request, []byte) []byte
+	if mode == config.ModePublic {
+		lib := opts.Content
+		seoTransform = func(r *http.Request, doc []byte) []byte { return injectSEO(doc, lib, r) }
+	}
 	s := &Server{
 		cfg:     opts.Config,
+		mode:    mode,
 		log:     opts.Log,
 		content: opts.Content,
 		store:   opts.Store,
 		metrics: opts.Metrics,
-		spa:     spaHandler(spaFS),
+		spa:     spaHandler(spaFS, seoTransform),
 	}
 	s.http = &http.Server{
 		Addr:              opts.Config.Addr(),

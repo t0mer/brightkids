@@ -1,22 +1,21 @@
-import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Trash2 } from "lucide-react";
 import { useTranslation } from "react-i18next";
-import { api } from "@/lib/api";
+import { data } from "@/lib/data";
 import type { Settings as SettingsT } from "@/lib/types";
 import { AppShell } from "@/components/AppShell";
 import { Card } from "@/components/ui/card";
 import { Switch } from "@/components/ui/switch";
 import { Button } from "@/components/ui/button";
-import { ParentGate } from "@/components/ParentGate";
 import { useStore } from "@/store/useStore";
 import { setUiDirection } from "@/i18n";
+import { useTitle } from "@/lib/useTitle";
 
 export function Settings() {
   const { t } = useTranslation();
   const navigate = useNavigate();
   const { profile, settings, setSettings, setProfile, uiLang, setUiLang } = useStore();
-  const [unlocked, setUnlocked] = useState(false);
+  useTitle(t("settings.title"));
 
   // No profile at all → back to the start screen.
   if (!profile) {
@@ -33,11 +32,12 @@ export function Settings() {
     );
   }
 
-  // Persist a settings change (gated edits only — the page is unlocked first).
+  // Persist a settings change. Settings are freely editable by the child;
+  // only the destructive "delete profile" action is grown-up gated.
   function patch(p: Partial<SettingsT>) {
     const next = { ...settings!, ...p };
     setSettings(next);
-    void api.updateSettings(next).catch(() => {});
+    void data.updateSettings(next).catch(() => {});
   }
 
   function changeLang(lang: string) {
@@ -47,52 +47,36 @@ export function Settings() {
   }
 
   async function remove() {
-    await api.deleteProfile(profile!.id).catch(() => {});
+    await data.deleteProfile(profile!.id).catch(() => {});
     setProfile(null);
     setSettings(null);
     navigate("/");
   }
 
-  const locked = !unlocked;
-
   return (
     <AppShell back="/subjects" title={t("settings.title")}>
       <div className="mx-auto flex w-full max-w-md flex-col gap-4">
-        {locked && (
-          <Card className="flex items-center justify-between gap-4">
-            <p className="text-ink dark:text-cream">{t("parentGate.title")}</p>
-            <ParentGate
-              trigger={<Button variant="sun">🔓</Button>}
-              onUnlock={() => setUnlocked(true)}
-            />
-          </Card>
-        )}
-
         <Card className="flex flex-col gap-1 text-ink dark:text-cream">
           <Row label={t("settings.sound")}>
             <Switch
-              disabled={locked}
               checked={settings.sound_enabled}
               onCheckedChange={(v) => patch({ sound_enabled: v })}
             />
           </Row>
           <Row label={t("settings.voice")}>
             <Switch
-              disabled={locked}
               checked={settings.voice_enabled}
               onCheckedChange={(v) => patch({ voice_enabled: v })}
             />
           </Row>
           <Row label={t("settings.reduceMotion")}>
             <Switch
-              disabled={locked}
               checked={settings.reduce_motion}
               onCheckedChange={(v) => patch({ reduce_motion: v })}
             />
           </Row>
           <Row label={t("settings.dyslexia")}>
             <Switch
-              disabled={locked}
               checked={settings.dyslexia_font}
               onCheckedChange={(v) => patch({ dyslexia_font: v })}
             />
@@ -102,7 +86,6 @@ export function Settings() {
               {["he", "en"].map((l) => (
                 <button
                   key={l}
-                  disabled={locked}
                   onClick={() => changeLang(l)}
                   className={`tap rounded-2xl px-4 py-2 font-display ${
                     uiLang === l ? "bg-violet text-white" : "bg-black/5 dark:bg-white/10"
@@ -117,14 +100,13 @@ export function Settings() {
 
         <Card className="flex items-center justify-between gap-4">
           <span className="font-display text-ink dark:text-cream">{t("settings.deleteProfile")}</span>
-          <ParentGate
-            trigger={
-              <Button variant="coral" disabled={locked} aria-label={t("settings.deleteProfile")}>
-                <Trash2 className="h-5 w-5" />
-              </Button>
-            }
-            onUnlock={() => void remove()}
-          />
+          <Button
+            variant="coral"
+            aria-label={t("settings.deleteProfile")}
+            onClick={() => void remove()}
+          >
+            <Trash2 className="h-5 w-5" />
+          </Button>
         </Card>
       </div>
     </AppShell>

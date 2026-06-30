@@ -16,12 +16,26 @@ const EnvPrefix = "BRIGHTKIDS"
 
 // Config is the fully-resolved runtime configuration.
 type Config struct {
+	// Mode selects where child profiles, progress, and settings are stored:
+	//   "private" (default, self-hosted) — persisted server-side in SQLite.
+	//   "public"  — stored only in the browser's localStorage; the server is
+	//               stateless and opens no database.
+	Mode    string        `mapstructure:"mode"`
 	Server  ServerConfig  `mapstructure:"server"`
 	DB      DBConfig      `mapstructure:"db"`
 	Log     LogConfig     `mapstructure:"log"`
 	Content ContentConfig `mapstructure:"content"`
 	Metrics MetricsConfig `mapstructure:"metrics"`
 }
+
+// Storage modes.
+const (
+	ModePrivate = "private"
+	ModePublic  = "public"
+)
+
+// IsPublic reports whether profiles live in the browser (no server database).
+func (c *Config) IsPublic() bool { return c.Mode == ModePublic }
 
 // ServerConfig holds HTTP listener settings.
 type ServerConfig struct {
@@ -68,6 +82,7 @@ func Load(args []string) (*Config, bool, error) {
 
 	fs := pflag.NewFlagSet("brightkids", pflag.ContinueOnError)
 	fs.String("config", "", "path to YAML config file")
+	fs.String("mode", v.GetString("mode"), "storage mode: private (DB-backed) | public (browser localStorage)")
 	fs.String("host", v.GetString("server.host"), "HTTP listen host")
 	fs.Int("port", v.GetInt("server.port"), "HTTP listen port")
 	fs.String("db-path", v.GetString("db.path"), "SQLite database path (:memory: allowed)")
@@ -121,6 +136,7 @@ func Load(args []string) (*Config, bool, error) {
 }
 
 func setDefaults(v *viper.Viper) {
+	v.SetDefault("mode", ModePrivate)
 	v.SetDefault("server.host", "0.0.0.0")
 	v.SetDefault("server.port", 8080)
 	v.SetDefault("db.path", "./brightkids.db")
@@ -135,6 +151,7 @@ func setDefaults(v *viper.Viper) {
 // sources.
 func bindChangedFlags(v *viper.Viper, fs *pflag.FlagSet) {
 	flagToKey := map[string]string{
+		"mode":        "mode",
 		"host":        "server.host",
 		"port":        "server.port",
 		"db-path":     "db.path",
@@ -152,6 +169,11 @@ func bindChangedFlags(v *viper.Viper, fs *pflag.FlagSet) {
 
 // Validate checks for obviously-bad configuration values.
 func (c *Config) Validate() error {
+	switch c.Mode {
+	case ModePrivate, ModePublic:
+	default:
+		return fmt.Errorf("mode %q invalid (private|public)", c.Mode)
+	}
 	if c.Server.Port < 1 || c.Server.Port > 65535 {
 		return fmt.Errorf("server.port %d out of range 1-65535", c.Server.Port)
 	}
