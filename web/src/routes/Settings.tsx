@@ -14,7 +14,7 @@ import { useTitle } from "@/lib/useTitle";
 export function Settings() {
   const { t } = useTranslation();
   const navigate = useNavigate();
-  const { profile, settings, setSettings, setProfile, uiLang, setUiLang } = useStore();
+  const { profile, settings, setSettings, setProfile, uiLang, setUiLang, ttsEnabled } = useStore();
   useTitle(t("settings.title"));
 
   // No profile at all → back to the start screen.
@@ -63,12 +63,14 @@ export function Settings() {
               onCheckedChange={(v) => patch({ sound_enabled: v })}
             />
           </Row>
-          <Row label={t("settings.voice")}>
-            <Switch
-              checked={settings.voice_enabled}
-              onCheckedChange={(v) => patch({ voice_enabled: v })}
-            />
-          </Row>
+          {ttsEnabled && (
+            <Row label={t("settings.voice")}>
+              <Switch
+                checked={settings.voice_enabled}
+                onCheckedChange={(v) => patch({ voice_enabled: v })}
+              />
+            </Row>
+          )}
           <Row label={t("settings.reduceMotion")}>
             <Switch
               checked={settings.reduce_motion}

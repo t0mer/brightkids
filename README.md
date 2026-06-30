@@ -100,6 +100,7 @@ Precedence: **flags > env > YAML > defaults**. Copy `config.yaml.example` to
 | `content.dir` | `--content-dir` | `BRIGHTKIDS_CONTENT_DIR` | *(embedded)* | hot-iterate lesson YAML |
 | `metrics.enabled` | `--metrics` | `BRIGHTKIDS_METRICS_ENABLED` | `true` | |
 | `analytics.ga_id` | `--ga-id` | `BRIGHTKIDS_ANALYTICS_GA_ID` | *(off)* | Google Analytics measurement ID (e.g. `G-XXXXXXXXXX`); injects gtag.js into pages when set |
+| `tts.enabled` | `--tts` | `BRIGHTKIDS_TTS_ENABLED` | `false` | enable text-to-speech narration (Listen button + voice); off by default |
 
 `--version` prints build info and exits.
 

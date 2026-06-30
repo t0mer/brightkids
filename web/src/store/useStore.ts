@@ -8,10 +8,13 @@ interface AppState {
   settings: Settings | null;
   uiLang: string;
   theme: "light" | "dark";
+  // Global text-to-speech availability, from server config (not persisted).
+  ttsEnabled: boolean;
 
   setProfile: (p: Profile | null) => void;
   setSettings: (s: Settings | null) => void;
   setUiLang: (l: string) => void;
+  setTtsEnabled: (v: boolean) => void;
   toggleTheme: () => void;
 }
 
@@ -22,6 +25,7 @@ export const useStore = create<AppState>()(
       settings: null,
       uiLang: "he",
       theme: "light",
+      ttsEnabled: false,
 
       setProfile: (p) => set({ profile: p }),
       setSettings: (s) => {
@@ -33,6 +37,7 @@ export const useStore = create<AppState>()(
         set({ settings: s });
       },
       setUiLang: (l) => set({ uiLang: l }),
+      setTtsEnabled: (v) => set({ ttsEnabled: v }),
       toggleTheme: () =>
         set((st) => {
           const theme = st.theme === "dark" ? "light" : "dark";

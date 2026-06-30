@@ -31,11 +31,12 @@ func (s *Server) routes() http.Handler {
 	}))
 
 	h := &handlers.Deps{
-		Log:     s.log,
-		Mode:    s.mode,
-		Content: s.content,
-		Store:   s.store,
-		Metrics: s.metrics,
+		Log:        s.log,
+		Mode:       s.mode,
+		TTSEnabled: s.ttsEnabled,
+		Content:    s.content,
+		Store:      s.store,
+		Metrics:    s.metrics,
 	}
 
 	// Probes.

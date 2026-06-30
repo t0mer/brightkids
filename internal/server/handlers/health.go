@@ -42,7 +42,10 @@ func (d *Deps) Readyz(w http.ResponseWriter, r *http.Request) {
 // The SPA reads `mode` to decide whether profiles persist on the server
 // (private) or in the browser's localStorage (public).
 func (d *Deps) Config(w http.ResponseWriter, r *http.Request) {
-	writeJSON(w, http.StatusOK, map[string]any{"mode": d.storageMode()})
+	writeJSON(w, http.StatusOK, map[string]any{
+		"mode": d.storageMode(),
+		"tts":  d.TTSEnabled,
+	})
 }
 
 // storageMode normalizes the mode, defaulting to private.

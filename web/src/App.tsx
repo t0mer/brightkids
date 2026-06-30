@@ -4,6 +4,7 @@ import { useStore, applyTheme, applyAppearance } from "@/store/useStore";
 import { setUiDirection } from "@/i18n";
 import { setSfxMuted } from "@/lib/sfx";
 import { data } from "@/lib/data";
+import { loadConfig } from "@/lib/appConfig";
 import { Start } from "@/routes/Start";
 import { Subjects } from "@/routes/Subjects";
 import { Grades } from "@/routes/Grades";
@@ -20,7 +21,7 @@ function RequireProfile({ children }: { children: React.ReactNode }) {
 }
 
 export default function App() {
-  const { theme, uiLang, profile, settings, setSettings } = useStore();
+  const { theme, uiLang, profile, settings, setSettings, setTtsEnabled } = useStore();
 
   // Apply persisted appearance/theme/language on first paint, then refresh
   // settings from the server so a reload keeps sound/voice/motion/font in sync.
@@ -37,6 +38,8 @@ export default function App() {
         .then(setSettings)
         .catch(() => {});
     }
+    // Resolve server config (storage mode + whether TTS is enabled).
+    void loadConfig().then((c) => setTtsEnabled(c.tts));
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 

@@ -35,3 +35,9 @@ analytics:
   # disable. When set, the gtag.js snippet is injected into served pages.
   # Override with BRIGHTKIDS_ANALYTICS_GA_ID or --ga-id.
   ga_id: ""
+
+tts:
+  # Text-to-speech narration. Off by default: no Listen button and no narration
+  # on any screen. Set true to enable (he-IL for Hebrew/Math, en-US for English).
+  # Override with BRIGHTKIDS_TTS_ENABLED=true or --tts.
+  enabled: false

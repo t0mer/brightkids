@@ -290,6 +290,49 @@ func TestAnalyticsInjection(t *testing.T) {
 	}
 }
 
+func TestConfigEndpointTTS(t *testing.T) {
+	lib, err := content.Load(fstest.MapFS{
+		"english/a.yaml": &fstest.MapFile{Data: []byte(lessonYAML)},
+	}, "")
+	if err != nil {
+		t.Fatalf("content.Load: %v", err)
+	}
+	cfg := config.Config{Log: config.LogConfig{Level: "error", Format: "text"}}
+	spaFS := fstest.MapFS{"index.html": &fstest.MapFile{Data: []byte("<html><head><title>BK</title></head></html>")}}
+
+	cfgJSON := func(tts bool) (mode string, ttsOut bool) {
+		st, err := store.Open(filepath.Join(t.TempDir(), "t.db"))
+		if err != nil {
+			t.Fatalf("store.Open: %v", err)
+		}
+		t.Cleanup(func() { _ = st.Close() })
+		srv, err := New(Options{
+			Config:     config.ServerConfig{Host: "127.0.0.1", Port: 0},
+			TTSEnabled: tts, Log: cfg.NewLogger(), Content: lib, Store: st, SPAFS: spaFS,
+		})
+		if err != nil {
+			t.Fatalf("New: %v", err)
+		}
+		rec := httptest.NewRecorder()
+		srv.Handler().ServeHTTP(rec, httptest.NewRequest(http.MethodGet, "/api/v1/config", nil))
+		var c struct {
+			Mode string `json:"mode"`
+			TTS  bool   `json:"tts"`
+		}
+		if err := json.Unmarshal(rec.Body.Bytes(), &c); err != nil {
+			t.Fatalf("config json: %v (%s)", err, rec.Body.Bytes())
+		}
+		return c.Mode, c.TTS
+	}
+
+	if _, ttsOut := cfgJSON(false); ttsOut {
+		t.Errorf("tts should default off")
+	}
+	if mode, ttsOut := cfgJSON(true); !ttsOut || mode != "private" {
+		t.Errorf("tts should be on when enabled (mode=%q tts=%v)", mode, ttsOut)
+	}
+}
+
 func get2(t *testing.T, h http.Handler, path string) string {
 	t.Helper()
 	rec := httptest.NewRecorder()

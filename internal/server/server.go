@@ -21,14 +21,15 @@ import (
 
 // Server holds the HTTP server and its dependencies.
 type Server struct {
-	cfg     config.ServerConfig
-	mode    string
-	log     *slog.Logger
-	content *content.Library
-	store   *store.Store
-	metrics *metrics.Metrics
-	spa     http.Handler
-	http    *http.Server
+	cfg        config.ServerConfig
+	mode       string
+	ttsEnabled bool
+	log        *slog.Logger
+	content    *content.Library
+	store      *store.Store
+	metrics    *metrics.Metrics
+	spa        http.Handler
+	http       *http.Server
 }
 
 // Options bundles the server dependencies.
@@ -38,9 +39,11 @@ type Options struct {
 	Mode string
 	// GAID is an optional Google Analytics measurement ID; when set (and valid)
 	// the gtag.js snippet is injected into served pages.
-	GAID    string
-	Log     *slog.Logger
-	Content *content.Library
+	GAID string
+	// TTSEnabled turns on text-to-speech narration in the client (off by default).
+	TTSEnabled bool
+	Log        *slog.Logger
+	Content    *content.Library
 	// Store may be nil in public mode (the server is then stateless).
 	Store   *store.Store
 	Metrics *metrics.Metrics
@@ -87,13 +90,14 @@ func New(opts Options) (*Server, error) {
 		}
 	}
 	s := &Server{
-		cfg:     opts.Config,
-		mode:    mode,
-		log:     opts.Log,
-		content: opts.Content,
-		store:   opts.Store,
-		metrics: opts.Metrics,
-		spa:     spaHandler(spaFS, indexTransform),
+		cfg:        opts.Config,
+		mode:       mode,
+		ttsEnabled: opts.TTSEnabled,
+		log:        opts.Log,
+		content:    opts.Content,
+		store:      opts.Store,
+		metrics:    opts.Metrics,
+		spa:        spaHandler(spaFS, indexTransform),
 	}
 	s.http = &http.Server{
 		Addr:              opts.Config.Addr(),
