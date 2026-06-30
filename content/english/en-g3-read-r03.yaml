@@ -27,4 +27,58 @@ questions:
       - { id: o1, label: "red", correct: true, tts: "red" }
       - { id: o2, label: "blue", tts: "blue" }
       - { id: o3, label: "green", tts: "green" }
+  - prompt: "Jim has a red ball. The ball is round. What shape is the ball?"
+    prompt_text: "לְ-Jim יֵשׁ כַּדּוּר אָדֹם. הַכַּדּוּר עָגֹל. אֵיזוֹ צוּרָה לַכַּדּוּר?"
+    items:
+      - { id: o1, label: "round", correct: true, tts: "round" }
+      - { id: o2, label: "square", tts: "square" }
+      - { id: o3, label: "flat", tts: "flat" }
+  - prompt: "Jim is a boy. He likes to play. What is Jim?"
+    prompt_text: "Jim הוּא יֶלֶד. הוּא אוֹהֵב לְשַׂחֵק. מָה Jim?"
+    items:
+      - { id: o1, label: "a girl", tts: "a girl" }
+      - { id: o2, label: "a boy", correct: true, tts: "a boy" }
+      - { id: o3, label: "a dog", tts: "a dog" }
+  - prompt: "Jim kicks the ball with his foot. What does Jim do to the ball?"
+    prompt_text: "Jim בּוֹעֵט בַּכַּדּוּר עִם הָרֶגֶל. מָה Jim עוֹשֶׂה לַכַּדּוּר?"
+    items:
+      - { id: o1, label: "eats it", tts: "eats it" }
+      - { id: o2, label: "reads it", tts: "reads it" }
+      - { id: o3, label: "kicks it", correct: true, tts: "kicks it" }
+  - prompt: "Jim has a dog named Rex. What is the dog's name?"
+    prompt_text: "לְ-Jim יֵשׁ כֶּלֶב בְּשֵׁם Rex. מָה הַשֵּׁם שֶׁל הַכֶּלֶב?"
+    items:
+      - { id: o1, label: "Rex", correct: true, tts: "Rex" }
+      - { id: o2, label: "Jim", tts: "Jim" }
+      - { id: o3, label: "Pip", tts: "Pip" }
+  - prompt: "Jim has a big red ball. Is the ball big or small?"
+    prompt_text: "לְ-Jim יֵשׁ כַּדּוּר אָדֹם גָּדוֹל. הַכַּדּוּר גָּדוֹל אוֹ קָטָן?"
+    items:
+      - { id: o1, label: "small", tts: "small" }
+      - { id: o2, label: "tiny", tts: "tiny" }
+      - { id: o3, label: "big", correct: true, tts: "big" }
+  - prompt: "Jim plays with his friend Sam. Who does Jim play with?"
+    prompt_text: "Jim מְשַׂחֵק עִם הֶחָבֵר שֶׁלּוֹ Sam. עִם מִי Jim מְשַׂחֵק?"
+    items:
+      - { id: o1, label: "Sam", correct: true, tts: "Sam" }
+      - { id: o2, label: "Rex", tts: "Rex" }
+      - { id: o3, label: "a cat", tts: "a cat" }
+  - prompt: "Jim is happy when he plays. How does Jim feel?"
+    prompt_text: "Jim שָׂמֵחַ כְּשֶׁהוּא מְשַׂחֵק. אֵיךְ Jim מַרְגִּישׁ?"
+    items:
+      - { id: o1, label: "sad", tts: "sad" }
+      - { id: o2, label: "happy", correct: true, tts: "happy" }
+      - { id: o3, label: "angry", tts: "angry" }
+  - prompt: "Jim runs fast in the park. How does Jim run?"
+    prompt_text: "Jim רָץ מַהֵר בַּפַּארְק. אֵיךְ Jim רָץ?"
+    items:
+      - { id: o1, label: "slow", tts: "slow" }
+      - { id: o2, label: "never", tts: "never" }
+      - { id: o3, label: "fast", correct: true, tts: "fast" }
+  - prompt: "Jim plays in the park every day. When does Jim play?"
+    prompt_text: "Jim מְשַׂחֵק בַּפַּארְק כָּל יוֹם. מָתַי Jim מְשַׂחֵק?"
+    items:
+      - { id: o1, label: "every day", correct: true, tts: "every day" }
+      - { id: o2, label: "never", tts: "never" }
+      - { id: o3, label: "last year", tts: "last year" }
 reward: { stars: 3, sfx: ding, effect: confetti }

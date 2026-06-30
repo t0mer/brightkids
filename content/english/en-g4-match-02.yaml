@@ -24,4 +24,49 @@ pairs:
     right: "Bun"
     left_tts: "sun"
     right_tts: "bun"
+  - id: star
+    left: "Star"
+    right: "Car"
+    left_tts: "star"
+    right_tts: "car"
+  - id: tree
+    left: "Tree"
+    right: "Bee"
+    left_tts: "tree"
+    right_tts: "bee"
+  - id: house
+    left: "House"
+    right: "Mouse"
+    left_tts: "house"
+    right_tts: "mouse"
+  - id: cake
+    left: "Cake"
+    right: "Lake"
+    left_tts: "cake"
+    right_tts: "lake"
+  - id: ball
+    left: "Ball"
+    right: "Wall"
+    left_tts: "ball"
+    right_tts: "wall"
+  - id: bear
+    left: "Bear"
+    right: "Chair"
+    left_tts: "bear"
+    right_tts: "chair"
+  - id: snake
+    left: "Snake"
+    right: "Rake"
+    left_tts: "snake"
+    right_tts: "rake"
+  - id: light
+    left: "Light"
+    right: "Night"
+    left_tts: "light"
+    right_tts: "night"
+  - id: frog
+    left: "Frog"
+    right: "Jog"
+    left_tts: "frog"
+    right_tts: "jog"
 reward: { stars: 1, sfx: chime, effect: sparkle }

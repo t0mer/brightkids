@@ -39,4 +39,88 @@ questions:
       - { id: o1, label: "u", correct: true, tts: "u" }
       - { id: o2, label: "w", tts: "w" }
       - { id: o3, label: "n", tts: "n" }
+  - prompt: "Find the lowercase letter b"
+    prompt_text: "מִצְאוּ אֶת הָאוֹת הַקְּטַנָּה b"
+    items:
+      - { id: o1, label: "b", correct: true, tts: "b" }
+      - { id: o2, label: "d", tts: "d" }
+      - { id: o3, label: "p", tts: "p" }
+  - prompt: "Find the lowercase letter d"
+    prompt_text: "מִצְאוּ אֶת הָאוֹת הַקְּטַנָּה d"
+    items:
+      - { id: o1, label: "p", tts: "p" }
+      - { id: o2, label: "d", correct: true, tts: "d" }
+      - { id: o3, label: "q", tts: "q" }
+  - prompt: "Find the lowercase letter p"
+    prompt_text: "מִצְאוּ אֶת הָאוֹת הַקְּטַנָּה p"
+    items:
+      - { id: o1, label: "q", tts: "q" }
+      - { id: o2, label: "b", tts: "b" }
+      - { id: o3, label: "p", correct: true, tts: "p" }
+  - prompt: "Find the lowercase letter q"
+    prompt_text: "מִצְאוּ אֶת הָאוֹת הַקְּטַנָּה q"
+    items:
+      - { id: o1, label: "q", correct: true, tts: "q" }
+      - { id: o2, label: "p", tts: "p" }
+      - { id: o3, label: "g", tts: "g" }
+  - prompt: "Find the lowercase letter a"
+    prompt_text: "מִצְאוּ אֶת הָאוֹת הַקְּטַנָּה a"
+    items:
+      - { id: o1, label: "o", tts: "o" }
+      - { id: o2, label: "a", correct: true, tts: "a" }
+      - { id: o3, label: "e", tts: "e" }
+  - prompt: "Find the lowercase letter c"
+    prompt_text: "מִצְאוּ אֶת הָאוֹת הַקְּטַנָּה c"
+    items:
+      - { id: o1, label: "e", tts: "e" }
+      - { id: o2, label: "o", tts: "o" }
+      - { id: o3, label: "c", correct: true, tts: "c" }
+  - prompt: "Find the lowercase letter e"
+    prompt_text: "מִצְאוּ אֶת הָאוֹת הַקְּטַנָּה e"
+    items:
+      - { id: o1, label: "e", correct: true, tts: "e" }
+      - { id: o2, label: "c", tts: "c" }
+      - { id: o3, label: "o", tts: "o" }
+  - prompt: "Find the lowercase letter o"
+    prompt_text: "מִצְאוּ אֶת הָאוֹת הַקְּטַנָּה o"
+    items:
+      - { id: o1, label: "c", tts: "c" }
+      - { id: o2, label: "o", correct: true, tts: "o" }
+      - { id: o3, label: "a", tts: "a" }
+  - prompt: "Find the lowercase letter g"
+    prompt_text: "מִצְאוּ אֶת הָאוֹת הַקְּטַנָּה g"
+    items:
+      - { id: o1, label: "q", tts: "q" }
+      - { id: o2, label: "p", tts: "p" }
+      - { id: o3, label: "g", correct: true, tts: "g" }
+  - prompt: "Find the lowercase letter h"
+    prompt_text: "מִצְאוּ אֶת הָאוֹת הַקְּטַנָּה h"
+    items:
+      - { id: o1, label: "h", correct: true, tts: "h" }
+      - { id: o2, label: "n", tts: "n" }
+      - { id: o3, label: "b", tts: "b" }
+  - prompt: "Find the lowercase letter k"
+    prompt_text: "מִצְאוּ אֶת הָאוֹת הַקְּטַנָּה k"
+    items:
+      - { id: o1, label: "x", tts: "x" }
+      - { id: o2, label: "k", correct: true, tts: "k" }
+      - { id: o3, label: "h", tts: "h" }
+  - prompt: "Find the lowercase letter l"
+    prompt_text: "מִצְאוּ אֶת הָאוֹת הַקְּטַנָּה l"
+    items:
+      - { id: o1, label: "i", tts: "i" }
+      - { id: o2, label: "j", tts: "j" }
+      - { id: o3, label: "l", correct: true, tts: "l" }
+  - prompt: "Find the lowercase letter r"
+    prompt_text: "מִצְאוּ אֶת הָאוֹת הַקְּטַנָּה r"
+    items:
+      - { id: o1, label: "r", correct: true, tts: "r" }
+      - { id: o2, label: "n", tts: "n" }
+      - { id: o3, label: "m", tts: "m" }
+  - prompt: "Find the lowercase letter t"
+    prompt_text: "מִצְאוּ אֶת הָאוֹת הַקְּטַנָּה t"
+    items:
+      - { id: o1, label: "f", tts: "f" }
+      - { id: o2, label: "t", correct: true, tts: "t" }
+      - { id: o3, label: "l", tts: "l" }
 reward: { stars: 3, sfx: ding, effect: confetti }

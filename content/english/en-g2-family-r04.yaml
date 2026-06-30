@@ -25,4 +25,36 @@ pairs:
     left: "fan"
     left_tts: "fan"
     emoji: "🪭"
+  - id: can
+    left: "can"
+    left_tts: "can"
+    emoji: "🥫"
+  - id: ran
+    left: "ran"
+    left_tts: "ran"
+    emoji: "🏃"
+  - id: plan
+    left: "plan"
+    left_tts: "plan"
+    emoji: "📋"
+  - id: scan
+    left: "scan"
+    left_tts: "scan"
+    emoji: "📠"
+  - id: ban
+    left: "ban"
+    left_tts: "ban"
+    emoji: "🚫"
+  - id: nan
+    left: "nan"
+    left_tts: "nan"
+    emoji: "🫓"
+  - id: tan
+    left: "tan"
+    left_tts: "tan"
+    emoji: "🏖️"
+  - id: bran
+    left: "bran"
+    left_tts: "bran"
+    emoji: "🥣"
 reward: { stars: 1, sfx: ding, effect: stars }

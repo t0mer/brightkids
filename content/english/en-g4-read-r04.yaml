@@ -27,4 +27,58 @@ questions:
       - { id: o1, label: "keeps them dry", correct: true, tts: "keeps them dry" }
       - { id: o2, label: "makes them wet", tts: "makes them wet" }
       - { id: o3, label: "makes them cold", tts: "makes them cold" }
+  - prompt: "Fred lives in a basket by the front door. Where does Fred live?"
+    prompt_text: "Fred גָּר בְּסַל לְיַד דֶּלֶת הַכְּנִיסָה. אֵיפֹה Fred גָּר?"
+    items:
+      - { id: o1, label: "on the roof", tts: "on the roof" }
+      - { id: o2, label: "in a basket by the door", correct: true, tts: "in a basket by the door" }
+      - { id: o3, label: "under the bed", tts: "under the bed" }
+  - prompt: "When the sky is grey, Fred knows it is time to work. How does Fred know it is time to work?"
+    prompt_text: "כְּשֶׁהַשָּׁמַיִם אֲפֹרִים, Fred יוֹדֵעַ שֶׁהִגִּיעַ הַזְּמַן לַעֲבֹד. אֵיךְ Fred יוֹדֵעַ שֶׁהִגִּיעַ הַזְּמַן לַעֲבֹד?"
+    items:
+      - { id: o1, label: "the sky is grey", correct: true, tts: "the sky is grey" }
+      - { id: o2, label: "the sun is bright", tts: "the sun is bright" }
+      - { id: o3, label: "the birds sing", tts: "the birds sing" }
+  - prompt: "Fred is big enough to cover two children at once. How many children can Fred cover?"
+    prompt_text: "Fred גָּדוֹל מַסְפִּיק כְּדֵי לְכַסּוֹת שְׁנֵי יְלָדִים בְּבַת אַחַת. כַּמָּה יְלָדִים Fred יָכוֹל לְכַסּוֹת?"
+    items:
+      - { id: o1, label: "two children", correct: true, tts: "two children" }
+      - { id: o2, label: "ten children", tts: "ten children" }
+      - { id: o3, label: "no children", tts: "no children" }
+  - prompt: "The children love Fred because he keeps them safe from the rain. Why do the children love Fred?"
+    prompt_text: "הַיְלָדִים אוֹהֲבִים אֶת Fred כִּי הוּא שׁוֹמֵר עֲלֵיהֶם מֵהַגֶּשֶׁם. לָמָּה הַיְלָדִים אוֹהֲבִים אֶת Fred?"
+    items:
+      - { id: o1, label: "he gives them candy", tts: "he gives them candy" }
+      - { id: o2, label: "he keeps them safe from rain", correct: true, tts: "he keeps them safe from rain" }
+      - { id: o3, label: "he tells them jokes", tts: "he tells them jokes" }
+  - prompt: "When the rain stops, the children close Fred and put him away. What do the children do when the rain stops?"
+    prompt_text: "כְּשֶׁהַגֶּשֶׁם נִפְסָק, הַיְלָדִים סוֹגְרִים אֶת Fred וּמַנִּיחִים אוֹתוֹ בַּצַּד. מָה הַיְלָדִים עוֹשִׂים כְּשֶׁהַגֶּשֶׁם נִפְסָק?"
+    items:
+      - { id: o1, label: "they close Fred", correct: true, tts: "they close Fred" }
+      - { id: o2, label: "they open Fred wider", tts: "they open Fred wider" }
+      - { id: o3, label: "they wash Fred", tts: "they wash Fred" }
+  - prompt: "Fred has a long wooden handle that is easy to hold. What does Fred have?"
+    prompt_text: "לְ-Fred יֵשׁ יָדִית עֵץ אֲרֻכָּה שֶׁקַּל לֶאֱחֹז בָּהּ. מָה יֵשׁ לְ-Fred?"
+    items:
+      - { id: o1, label: "a long wooden handle", correct: true, tts: "a long wooden handle" }
+      - { id: o2, label: "two big wheels", tts: "two big wheels" }
+      - { id: o3, label: "a soft pillow", tts: "a soft pillow" }
+  - prompt: "Fred feels sad on sunny days because no one needs him. How does Fred feel on sunny days?"
+    prompt_text: "Fred מַרְגִּישׁ עָצוּב בַּיָּמִים הַשְּׁמְשִׁיִּים כִּי אַף אֶחָד לֹא צָרִיךְ אוֹתוֹ. אֵיךְ Fred מַרְגִּישׁ בַּיָּמִים הַשְּׁמְשִׁיִּים?"
+    items:
+      - { id: o1, label: "sad", correct: true, tts: "sad" }
+      - { id: o2, label: "happy", tts: "happy" }
+      - { id: o3, label: "angry", tts: "angry" }
+  - prompt: "One windy day Fred almost flew away, but the children held him tight. What did the children do on the windy day?"
+    prompt_text: "בְּיוֹם סוֹעֵר אֶחָד Fred כִּמְעַט עָף, אֲבָל הַיְלָדִים אָחֲזוּ בּוֹ חָזָק. מָה הַיְלָדִים עָשׂוּ בַּיּוֹם הַסּוֹעֵר?"
+    items:
+      - { id: o1, label: "they let him go", tts: "they let him go" }
+      - { id: o2, label: "they held him tight", correct: true, tts: "they held him tight" }
+      - { id: o3, label: "they ran away", tts: "they ran away" }
+  - prompt: "Fred is happiest when the rain falls and the children stay dry. When is Fred happiest?"
+    prompt_text: "Fred הֲכִי שָׂמֵחַ כְּשֶׁהַגֶּשֶׁם יוֹרֵד וְהַיְלָדִים נִשְׁאָרִים יְבֵשִׁים. מָתַי Fred הֲכִי שָׂמֵחַ?"
+    items:
+      - { id: o1, label: "when it snows", tts: "when it snows" }
+      - { id: o2, label: "when the rain falls", correct: true, tts: "when the rain falls" }
+      - { id: o3, label: "when the sun shines", tts: "when the sun shines" }
 reward: { stars: 3, sfx: ding, effect: confetti }

@@ -27,4 +27,58 @@ questions:
       - { id: o1, label: "I am nine years old.", correct: true, tts: "I am nine years old." }
       - { id: o2, label: "I am nine apples old.", tts: "I am nine apples old." }
       - { id: o3, label: "I am nine blue old.", tts: "I am nine blue old." }
+  - prompt: "You want to say your name. Pick the correct sentence."
+    prompt_text: "אַתֶּם רוֹצִים לוֹמַר אֶת הַשֵּׁם שֶׁלָּכֶם. בַּחֲרוּ אֶת הַמִּשְׁפָּט הַנָּכוֹן."
+    items:
+      - { id: o1, label: "My name jumps high.", tts: "My name jumps high." }
+      - { id: o2, label: "My name is David.", correct: true, tts: "My name is David." }
+      - { id: o3, label: "My name eats lunch.", tts: "My name eats lunch." }
+  - prompt: "You want to talk about your family. Pick the correct sentence."
+    prompt_text: "אַתֶּם רוֹצִים לְדַבֵּר עַל הַמִּשְׁפָּחָה שֶׁלָּכֶם. בַּחֲרוּ אֶת הַמִּשְׁפָּט הַנָּכוֹן."
+    items:
+      - { id: o1, label: "I have a sister and a brother.", correct: true, tts: "I have a sister and a brother." }
+      - { id: o2, label: "I have a Monday and a green.", tts: "I have a Monday and a green." }
+      - { id: o3, label: "I have a run and a fast.", tts: "I have a run and a fast." }
+  - prompt: "You want to say your favorite color. Pick the correct sentence."
+    prompt_text: "אַתֶּם רוֹצִים לוֹמַר אֶת הַצֶּבַע הָאָהוּב עֲלֵיכֶם. בַּחֲרוּ אֶת הַמִּשְׁפָּט הַנָּכוֹן."
+    items:
+      - { id: o1, label: "My favorite color runs fast.", tts: "My favorite color runs fast." }
+      - { id: o2, label: "My favorite color eats cake.", tts: "My favorite color eats cake." }
+      - { id: o3, label: "My favorite color is blue.", correct: true, tts: "My favorite color is blue." }
+  - prompt: "You want to say what food you like. Pick the correct sentence."
+    prompt_text: "אַתֶּם רוֹצִים לוֹמַר אֵיזֶה אֹכֶל אַתֶּם אוֹהֲבִים. בַּחֲרוּ אֶת הַמִּשְׁפָּט הַנָּכוֹן."
+    items:
+      - { id: o1, label: "I like to eat pizza.", correct: true, tts: "I like to eat pizza." }
+      - { id: o2, label: "I like to eat Sunday.", tts: "I like to eat Sunday." }
+      - { id: o3, label: "I like to eat purple.", tts: "I like to eat purple." }
+  - prompt: "You want to say where you go to school. Pick the correct sentence."
+    prompt_text: "אַתֶּם רוֹצִים לוֹמַר אֵיפֹה אַתֶּם לוֹמְדִים. בַּחֲרוּ אֶת הַמִּשְׁפָּט הַנָּכוֹן."
+    items:
+      - { id: o1, label: "I go to a big window.", tts: "I go to a big window." }
+      - { id: o2, label: "I go to a school in my town.", correct: true, tts: "I go to a school in my town." }
+      - { id: o3, label: "I go to a fast color.", tts: "I go to a fast color." }
+  - prompt: "You want to say what pet you have. Pick the correct sentence."
+    prompt_text: "אַתֶּם רוֹצִים לוֹמַר אֵיזֶה חַיַּת מַחְמָד יֵשׁ לָכֶם. בַּחֲרוּ אֶת הַמִּשְׁפָּט הַנָּכוֹן."
+    items:
+      - { id: o1, label: "I have a little brown dog.", correct: true, tts: "I have a little brown dog." }
+      - { id: o2, label: "I have a little brown Tuesday.", tts: "I have a little brown Tuesday." }
+      - { id: o3, label: "I have a little brown run.", tts: "I have a little brown run." }
+  - prompt: "You want to say how you feel today. Pick the correct sentence."
+    prompt_text: "אַתֶּם רוֹצִים לוֹמַר אֵיךְ אַתֶּם מַרְגִּישִׁים הַיּוֹם. בַּחֲרוּ אֶת הַמִּשְׁפָּט הַנָּכוֹן."
+    items:
+      - { id: o1, label: "Today I feel a green chair.", tts: "Today I feel a green chair." }
+      - { id: o2, label: "Today I feel very happy.", correct: true, tts: "Today I feel very happy." }
+      - { id: o3, label: "Today I feel a fast bus.", tts: "Today I feel a fast bus." }
+  - prompt: "You want to talk about your hobby. Pick the correct sentence."
+    prompt_text: "אַתֶּם רוֹצִים לְדַבֵּר עַל הַתַּחְבִּיב שֶׁלָּכֶם. בַּחֲרוּ אֶת הַמִּשְׁפָּט הַנָּכוֹן."
+    items:
+      - { id: o1, label: "I like to draw pictures.", correct: true, tts: "I like to draw pictures." }
+      - { id: o2, label: "I like to draw Monday.", tts: "I like to draw Monday." }
+      - { id: o3, label: "I like to draw seven.", tts: "I like to draw seven." }
+  - prompt: "You want to say what you want to be. Pick the correct sentence."
+    prompt_text: "אַתֶּם רוֹצִים לוֹמַר מָה אַתֶּם רוֹצִים לִהְיוֹת. בַּחֲרוּ אֶת הַמִּשְׁפָּט הַנָּכוֹן."
+    items:
+      - { id: o1, label: "I want to be a slow color.", tts: "I want to be a slow color." }
+      - { id: o2, label: "I want to be a green Tuesday.", tts: "I want to be a green Tuesday." }
+      - { id: o3, label: "I want to be a doctor.", correct: true, tts: "I want to be a doctor." }
 reward: { stars: 3, sfx: ding, effect: confetti }

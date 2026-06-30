@@ -33,4 +33,70 @@ questions:
       - { id: o1, label: "said", correct: true, tts: "said" }
       - { id: o2, label: "sad", tts: "sad" }
       - { id: o3, label: "say", tts: "say" }
+  - prompt: "Pick the word was"
+    prompt_text: "בַּחֲרוּ אֶת הַמִּלָּה was"
+    items:
+      - { id: o1, label: "saw", tts: "saw" }
+      - { id: o2, label: "was", correct: true, tts: "was" }
+      - { id: o3, label: "way", tts: "way" }
+  - prompt: "Pick the word with"
+    prompt_text: "בַּחֲרוּ אֶת הַמִּלָּה with"
+    items:
+      - { id: o1, label: "wish", tts: "wish" }
+      - { id: o2, label: "will", tts: "will" }
+      - { id: o3, label: "with", correct: true, tts: "with" }
+  - prompt: "Pick the word they"
+    prompt_text: "בַּחֲרוּ אֶת הַמִּלָּה they"
+    items:
+      - { id: o1, label: "they", correct: true, tts: "they" }
+      - { id: o2, label: "them", tts: "them" }
+      - { id: o3, label: "that", tts: "that" }
+  - prompt: "Pick the word have"
+    prompt_text: "בַּחֲרוּ אֶת הַמִּלָּה have"
+    items:
+      - { id: o1, label: "gave", tts: "gave" }
+      - { id: o2, label: "have", correct: true, tts: "have" }
+      - { id: o3, label: "hive", tts: "hive" }
+  - prompt: "Pick the word that"
+    prompt_text: "בַּחֲרוּ אֶת הַמִּלָּה that"
+    items:
+      - { id: o1, label: "chat", tts: "chat" }
+      - { id: o2, label: "than", tts: "than" }
+      - { id: o3, label: "that", correct: true, tts: "that" }
+  - prompt: "Pick the word this"
+    prompt_text: "בַּחֲרוּ אֶת הַמִּלָּה this"
+    items:
+      - { id: o1, label: "this", correct: true, tts: "this" }
+      - { id: o2, label: "thus", tts: "thus" }
+      - { id: o3, label: "miss", tts: "miss" }
+  - prompt: "Pick the word from"
+    prompt_text: "בַּחֲרוּ אֶת הַמִּלָּה from"
+    items:
+      - { id: o1, label: "form", tts: "form" }
+      - { id: o2, label: "from", correct: true, tts: "from" }
+      - { id: o3, label: "farm", tts: "farm" }
+  - prompt: "Pick the word were"
+    prompt_text: "בַּחֲרוּ אֶת הַמִּלָּה were"
+    items:
+      - { id: o1, label: "where", tts: "where" }
+      - { id: o2, label: "here", tts: "here" }
+      - { id: o3, label: "were", correct: true, tts: "were" }
+  - prompt: "Pick the word what"
+    prompt_text: "בַּחֲרוּ אֶת הַמִּלָּה what"
+    items:
+      - { id: o1, label: "what", correct: true, tts: "what" }
+      - { id: o2, label: "want", tts: "want" }
+      - { id: o3, label: "chat", tts: "chat" }
+  - prompt: "Pick the word come"
+    prompt_text: "בַּחֲרוּ אֶת הַמִּלָּה come"
+    items:
+      - { id: o1, label: "came", tts: "came" }
+      - { id: o2, label: "some", tts: "some" }
+      - { id: o3, label: "come", correct: true, tts: "come" }
+  - prompt: "Pick the word play"
+    prompt_text: "בַּחֲרוּ אֶת הַמִּלָּה play"
+    items:
+      - { id: o1, label: "play", correct: true, tts: "play" }
+      - { id: o2, label: "pray", tts: "pray" }
+      - { id: o3, label: "clay", tts: "clay" }
 reward: { stars: 3, sfx: ding, effect: confetti }

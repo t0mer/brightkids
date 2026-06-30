@@ -27,4 +27,58 @@ questions:
       - { id: o1, label: "I am a boy.", correct: true, tts: "I am a boy." }
       - { id: o2, label: "I am a apple.", tts: "I am a apple." }
       - { id: o3, label: "I am a Monday.", tts: "I am a Monday." }
+  - prompt: "How do you ask a friend's name? Pick the sentence."
+    prompt_text: "אֵיךְ שׁוֹאֲלִים חָבֵר מָה הַשֵּׁם שֶׁלּוֹ? בַּחֲרוּ אֶת הַמִּשְׁפָּט."
+    items:
+      - { id: o1, label: "What is your blue?", tts: "What is your blue?" }
+      - { id: o2, label: "What is your name?", correct: true, tts: "What is your name?" }
+      - { id: o3, label: "What is your seven?", tts: "What is your seven?" }
+  - prompt: "You want to say where you are from. Pick the sentence."
+    prompt_text: "אַתֶּם רוֹצִים לוֹמַר מֵאַיִן אַתֶּם. בַּחֲרוּ אֶת הַמִּשְׁפָּט."
+    items:
+      - { id: o1, label: "I am from Israel.", correct: true, tts: "I am from Israel." }
+      - { id: o2, label: "I am from green.", tts: "I am from green." }
+      - { id: o3, label: "I am from ten.", tts: "I am from ten." }
+  - prompt: "How do you say goodbye? Pick the sentence."
+    prompt_text: "אֵיךְ אוֹמְרִים לְהִתְרָאוֹת? בַּחֲרוּ אֶת הַמִּשְׁפָּט."
+    items:
+      - { id: o1, label: "Goodbye, see you blue!", tts: "Goodbye, see you blue!" }
+      - { id: o2, label: "Goodbye, see you four!", tts: "Goodbye, see you four!" }
+      - { id: o3, label: "Goodbye, see you soon!", correct: true, tts: "Goodbye, see you soon!" }
+  - prompt: "You want to say you are a girl. Pick the sentence."
+    prompt_text: "אַתֶּם רוֹצִים לוֹמַר שֶׁאַתֶּן יַלְדָּה. בַּחֲרוּ אֶת הַמִּשְׁפָּט."
+    items:
+      - { id: o1, label: "I am a girl.", correct: true, tts: "I am a girl." }
+      - { id: o2, label: "I am a banana.", tts: "I am a banana." }
+      - { id: o3, label: "I am a Friday.", tts: "I am a Friday." }
+  - prompt: "How do you say nice to meet you? Pick the sentence."
+    prompt_text: "אֵיךְ אוֹמְרִים נָעִים לְהַכִּיר? בַּחֲרוּ אֶת הַמִּשְׁפָּט."
+    items:
+      - { id: o1, label: "Nice to meet blue.", tts: "Nice to meet blue." }
+      - { id: o2, label: "Nice to meet you.", correct: true, tts: "Nice to meet you." }
+      - { id: o3, label: "Nice to meet six.", tts: "Nice to meet six." }
+  - prompt: "You want to spell your name. Pick the sentence."
+    prompt_text: "אַתֶּם רוֹצִים לְאַיֵּת אֶת הַשֵּׁם שֶׁלָּכֶם. בַּחֲרוּ אֶת הַמִּשְׁפָּט."
+    items:
+      - { id: o1, label: "My name starts with red.", tts: "My name starts with red." }
+      - { id: o2, label: "My name starts with nine.", tts: "My name starts with nine." }
+      - { id: o3, label: "My name starts with D.", correct: true, tts: "My name starts with D." }
+  - prompt: "Someone asks how you are. Pick the sentence."
+    prompt_text: "מִישֶׁהוּ שׁוֹאֵל מָה שְׁלוֹמְכֶם. בַּחֲרוּ אֶת הַמִּשְׁפָּט."
+    items:
+      - { id: o1, label: "I am fine, thank you.", correct: true, tts: "I am fine, thank you." }
+      - { id: o2, label: "I am fine, thank green.", tts: "I am fine, thank green." }
+      - { id: o3, label: "I am fine, thank eight.", tts: "I am fine, thank eight." }
+  - prompt: "You want to introduce your friend. Pick the sentence."
+    prompt_text: "אַתֶּם רוֹצִים לְהַצִּיג אֶת הֶחָבֵר שֶׁלָּכֶם. בַּחֲרוּ אֶת הַמִּשְׁפָּט."
+    items:
+      - { id: o1, label: "This is my friend purple.", tts: "This is my friend purple." }
+      - { id: o2, label: "This is my friend Sam.", correct: true, tts: "This is my friend Sam." }
+      - { id: o3, label: "This is my friend three.", tts: "This is my friend three." }
+  - prompt: "You want to say you are happy. Pick the sentence."
+    prompt_text: "אַתֶּם רוֹצִים לוֹמַר שֶׁאַתֶּם שְׂמֵחִים. בַּחֲרוּ אֶת הַמִּשְׁפָּט."
+    items:
+      - { id: o1, label: "I am happy potato.", tts: "I am happy potato." }
+      - { id: o2, label: "I am happy Tuesday.", tts: "I am happy Tuesday." }
+      - { id: o3, label: "I am happy today.", correct: true, tts: "I am happy today." }
 reward: { stars: 3, sfx: ding, effect: confetti }

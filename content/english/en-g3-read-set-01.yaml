@@ -33,4 +33,52 @@ questions:
       - { id: o1, label: "little", correct: true, tts: "little" }
       - { id: o2, label: "big", tts: "big" }
       - { id: o3, label: "tall", tts: "tall" }
+  - prompt: "Pip has blue feathers. What color are Pip's feathers?"
+    prompt_text: "לְ-Pip יֵשׁ נוֹצוֹת כְּחֻלּוֹת. בְּאֵיזֶה צֶבַע הַנּוֹצוֹת שֶׁל Pip?"
+    items:
+      - { id: o1, label: "blue", correct: true, tts: "blue" }
+      - { id: o2, label: "red", tts: "red" }
+      - { id: o3, label: "green", tts: "green" }
+  - prompt: "Pip flies high in the sky. Where does Pip fly?"
+    prompt_text: "Pip עָפָה גָּבוֹהַּ בַּשָּׁמַיִם. אֵיפֹה Pip עָפָה?"
+    items:
+      - { id: o1, label: "in the sea", tts: "in the sea" }
+      - { id: o2, label: "high in the sky", correct: true, tts: "high in the sky" }
+      - { id: o3, label: "under the ground", tts: "under the ground" }
+  - prompt: "Pip eats little seeds. What does Pip eat?"
+    prompt_text: "Pip אוֹכֶלֶת זְרָעִים קְטַנִּים. מָה Pip אוֹכֶלֶת?"
+    items:
+      - { id: o1, label: "fish", tts: "fish" }
+      - { id: o2, label: "cake", tts: "cake" }
+      - { id: o3, label: "seeds", correct: true, tts: "seeds" }
+  - prompt: "Pip has small wings. What does Pip use to fly?"
+    prompt_text: "לְ-Pip יֵשׁ כְּנָפַיִם קְטַנּוֹת. בְּמָה Pip מִשְׁתַּמֶּשֶׁת כְּדֵי לָעוּף?"
+    items:
+      - { id: o1, label: "her wings", correct: true, tts: "her wings" }
+      - { id: o2, label: "her feet", tts: "her feet" }
+      - { id: o3, label: "her tail", tts: "her tail" }
+  - prompt: "Pip builds a nest in the tree. What does Pip build?"
+    prompt_text: "Pip בּוֹנָה קֵן בָּעֵץ. מָה Pip בּוֹנָה?"
+    items:
+      - { id: o1, label: "a house", tts: "a house" }
+      - { id: o2, label: "a nest", correct: true, tts: "a nest" }
+      - { id: o3, label: "a box", tts: "a box" }
+  - prompt: "Pip has two baby birds. How many babies does Pip have?"
+    prompt_text: "לְ-Pip יֵשׁ שְׁנֵי גּוֹזָלִים. כַּמָּה גּוֹזָלִים יֵשׁ לְ-Pip?"
+    items:
+      - { id: o1, label: "two", correct: true, tts: "two" }
+      - { id: o2, label: "five", tts: "five" }
+      - { id: o3, label: "ten", tts: "ten" }
+  - prompt: "Pip drinks water from the lake. What does Pip drink?"
+    prompt_text: "Pip שׁוֹתָה מַיִם מִן הָאֲגַם. מָה Pip שׁוֹתָה?"
+    items:
+      - { id: o1, label: "milk", tts: "milk" }
+      - { id: o2, label: "juice", tts: "juice" }
+      - { id: o3, label: "water", correct: true, tts: "water" }
+  - prompt: "Pip sings a happy song. What kind of song does Pip sing?"
+    prompt_text: "Pip שָׁרָה שִׁיר שָׂמֵחַ. אֵיזֶה שִׁיר Pip שָׁרָה?"
+    items:
+      - { id: o1, label: "a happy song", correct: true, tts: "a happy song" }
+      - { id: o2, label: "a sad song", tts: "a sad song" }
+      - { id: o3, label: "no song", tts: "no song" }
 reward: { stars: 3, sfx: ding, effect: confetti }

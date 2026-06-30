@@ -27,4 +27,58 @@ questions:
       - { id: o1, label: "a ball", correct: true, tts: "a ball" }
       - { id: o2, label: "a box", tts: "a box" }
       - { id: o3, label: "a hat", tts: "a hat" }
+  - prompt: "Moki is a cat. Moki has a long tail. What does Moki have?"
+    prompt_text: "Moki הוּא חָתוּל. לְ-Moki יֵשׁ זָנָב אָרֹךְ. מָה יֵשׁ לְ-Moki?"
+    items:
+      - { id: o1, label: "a long nose", tts: "a long nose" }
+      - { id: o2, label: "a long tail", correct: true, tts: "a long tail" }
+      - { id: o3, label: "a long ear", tts: "a long ear" }
+  - prompt: "Moki has green eyes. What color are Moki's eyes?"
+    prompt_text: "לְ-Moki יֵשׁ עֵינַיִם יְרֻקּוֹת. בְּאֵיזֶה צֶבַע הָעֵינַיִם שֶׁל Moki?"
+    items:
+      - { id: o1, label: "green", correct: true, tts: "green" }
+      - { id: o2, label: "blue", tts: "blue" }
+      - { id: o3, label: "red", tts: "red" }
+  - prompt: "Moki drinks milk. What does Moki drink?"
+    prompt_text: "Moki שׁוֹתֶה חָלָב. מָה Moki שׁוֹתֶה?"
+    items:
+      - { id: o1, label: "juice", tts: "juice" }
+      - { id: o2, label: "water", tts: "water" }
+      - { id: o3, label: "milk", correct: true, tts: "milk" }
+  - prompt: "Moki lives in a house. Where does Moki live?"
+    prompt_text: "Moki גָּר בְּבַיִת. אֵיפֹה Moki גָּר?"
+    items:
+      - { id: o1, label: "in a house", correct: true, tts: "in a house" }
+      - { id: o2, label: "in a tree", tts: "in a tree" }
+      - { id: o3, label: "in a box", tts: "in a box" }
+  - prompt: "Moki has soft fur. What is Moki's fur like?"
+    prompt_text: "לְ-Moki יֵשׁ פַּרְוָה רַכָּה. אֵיךְ הַפַּרְוָה שֶׁל Moki?"
+    items:
+      - { id: o1, label: "hard", tts: "hard" }
+      - { id: o2, label: "soft", correct: true, tts: "soft" }
+      - { id: o3, label: "wet", tts: "wet" }
+  - prompt: "Moki eats fish. What does Moki eat?"
+    prompt_text: "Moki אוֹכֵל דָּג. מָה Moki אוֹכֵל?"
+    items:
+      - { id: o1, label: "cake", tts: "cake" }
+      - { id: o2, label: "bread", tts: "bread" }
+      - { id: o3, label: "fish", correct: true, tts: "fish" }
+  - prompt: "Moki has four legs. How many legs does Moki have?"
+    prompt_text: "לְ-Moki יֵשׁ אַרְבַּע רַגְלַיִם. כַּמָּה רַגְלַיִם יֵשׁ לְ-Moki?"
+    items:
+      - { id: o1, label: "two", tts: "two" }
+      - { id: o2, label: "four", correct: true, tts: "four" }
+      - { id: o3, label: "six", tts: "six" }
+  - prompt: "Moki likes to sleep all day. What does Moki like to do?"
+    prompt_text: "Moki אוֹהֵב לִישֹׁן כָּל הַיּוֹם. מָה Moki אוֹהֵב לַעֲשׂוֹת?"
+    items:
+      - { id: o1, label: "sleep", correct: true, tts: "sleep" }
+      - { id: o2, label: "swim", tts: "swim" }
+      - { id: o3, label: "fly", tts: "fly" }
+  - prompt: "Moki is a small cat. Is Moki big or small?"
+    prompt_text: "Moki הוּא חָתוּל קָטָן. Moki גָּדוֹל אוֹ קָטָן?"
+    items:
+      - { id: o1, label: "big", tts: "big" }
+      - { id: o2, label: "tall", tts: "tall" }
+      - { id: o3, label: "small", correct: true, tts: "small" }
 reward: { stars: 3, sfx: ding, effect: confetti }

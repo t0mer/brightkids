@@ -39,4 +39,82 @@ questions:
       - { id: o1, label: "b", correct: true, tts: "b says buh" }
       - { id: o2, label: "d", tts: "d says duh" }
       - { id: o3, label: "p", tts: "p says puh" }
+  - prompt: "What is the first sound in the word map?"
+    prompt_text: "מַהוּ הַצְּלִיל הָרִאשׁוֹן בַּמִּלָּה map?"
+    items:
+      - { id: o1, label: "m", correct: true, tts: "m says mmm" }
+      - { id: o2, label: "s", tts: "s says sss" }
+      - { id: o3, label: "t", tts: "t says tuh" }
+  - prompt: "What is the first sound in the word top?"
+    prompt_text: "מַהוּ הַצְּלִיל הָרִאשׁוֹן בַּמִּלָּה top?"
+    items:
+      - { id: o1, label: "d", tts: "d says duh" }
+      - { id: o2, label: "t", correct: true, tts: "t says tuh" }
+      - { id: o3, label: "p", tts: "p says puh" }
+  - prompt: "What is the first sound in the word pen?"
+    prompt_text: "מַהוּ הַצְּלִיל הָרִאשׁוֹן בַּמִּלָּה pen?"
+    items:
+      - { id: o1, label: "b", tts: "b says buh" }
+      - { id: o2, label: "m", tts: "m says mmm" }
+      - { id: o3, label: "p", correct: true, tts: "p says puh" }
+  - prompt: "What is the first sound in the word hat?"
+    prompt_text: "מַהוּ הַצְּלִיל הָרִאשׁוֹן בַּמִּלָּה hat?"
+    items:
+      - { id: o1, label: "h", correct: true, tts: "h says huh" }
+      - { id: o2, label: "f", tts: "f says fff" }
+      - { id: o3, label: "s", tts: "s says sss" }
+  - prompt: "What is the first sound in the word leg?"
+    prompt_text: "מַהוּ הַצְּלִיל הָרִאשׁוֹן בַּמִּלָּה leg?"
+    items:
+      - { id: o1, label: "r", tts: "r says rrr" }
+      - { id: o2, label: "l", correct: true, tts: "l says lll" }
+      - { id: o3, label: "n", tts: "n says nnn" }
+  - prompt: "What is the first sound in the word net?"
+    prompt_text: "מַהוּ הַצְּלִיל הָרִאשׁוֹן בַּמִּלָּה net?"
+    items:
+      - { id: o1, label: "m", tts: "m says mmm" }
+      - { id: o2, label: "l", tts: "l says lll" }
+      - { id: o3, label: "n", correct: true, tts: "n says nnn" }
+  - prompt: "What is the first sound in the word red?"
+    prompt_text: "מַהוּ הַצְּלִיל הָרִאשׁוֹן בַּמִּלָּה red?"
+    items:
+      - { id: o1, label: "r", correct: true, tts: "r says rrr" }
+      - { id: o2, label: "n", tts: "n says nnn" }
+      - { id: o3, label: "l", tts: "l says lll" }
+  - prompt: "What is the first sound in the word van?"
+    prompt_text: "מַהוּ הַצְּלִיל הָרִאשׁוֹן בַּמִּלָּה van?"
+    items:
+      - { id: o1, label: "f", tts: "f says fff" }
+      - { id: o2, label: "v", correct: true, tts: "v says vvv" }
+      - { id: o3, label: "b", tts: "b says buh" }
+  - prompt: "What is the first sound in the word web?"
+    prompt_text: "מַהוּ הַצְּלִיל הָרִאשׁוֹן בַּמִּלָּה web?"
+    items:
+      - { id: o1, label: "m", tts: "m says mmm" }
+      - { id: o2, label: "v", tts: "v says vvv" }
+      - { id: o3, label: "w", correct: true, tts: "w says wuh" }
+  - prompt: "What is the first sound in the word zip?"
+    prompt_text: "מַהוּ הַצְּלִיל הָרִאשׁוֹן בַּמִּלָּה zip?"
+    items:
+      - { id: o1, label: "z", correct: true, tts: "z says zzz" }
+      - { id: o2, label: "s", tts: "s says sss" }
+      - { id: o3, label: "j", tts: "j says juh" }
+  - prompt: "What is the first sound in the word jam?"
+    prompt_text: "מַהוּ הַצְּלִיל הָרִאשׁוֹן בַּמִּלָּה jam?"
+    items:
+      - { id: o1, label: "g", tts: "g says guh" }
+      - { id: o2, label: "j", correct: true, tts: "j says juh" }
+      - { id: o3, label: "d", tts: "d says duh" }
+  - prompt: "What is the first sound in the word king?"
+    prompt_text: "מַהוּ הַצְּלִיל הָרִאשׁוֹן בַּמִּלָּה king?"
+    items:
+      - { id: o1, label: "g", tts: "g says guh" }
+      - { id: o2, label: "t", tts: "t says tuh" }
+      - { id: o3, label: "k", correct: true, tts: "k says kuh" }
+  - prompt: "What is the first sound in the word yak?"
+    prompt_text: "מַהוּ הַצְּלִיל הָרִאשׁוֹן בַּמִּלָּה yak?"
+    items:
+      - { id: o1, label: "y", correct: true, tts: "y says yuh" }
+      - { id: o2, label: "w", tts: "w says wuh" }
+      - { id: o3, label: "l", tts: "l says lll" }
 reward: { stars: 3, sfx: ding, effect: confetti }

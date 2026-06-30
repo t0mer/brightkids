@@ -25,4 +25,48 @@ pairs:
     left: "cow"
     left_tts: "cow"
     emoji: "🐮"
+  - id: pig
+    left: "pig"
+    left_tts: "pig"
+    emoji: "🐷"
+  - id: duck
+    left: "duck"
+    left_tts: "duck"
+    emoji: "🦆"
+  - id: horse
+    left: "horse"
+    left_tts: "horse"
+    emoji: "🐴"
+  - id: sheep
+    left: "sheep"
+    left_tts: "sheep"
+    emoji: "🐑"
+  - id: frog
+    left: "frog"
+    left_tts: "frog"
+    emoji: "🐸"
+  - id: bird
+    left: "bird"
+    left_tts: "bird"
+    emoji: "🐦"
+  - id: lion
+    left: "lion"
+    left_tts: "lion"
+    emoji: "🦁"
+  - id: bear
+    left: "bear"
+    left_tts: "bear"
+    emoji: "🐻"
+  - id: monkey
+    left: "monkey"
+    left_tts: "monkey"
+    emoji: "🐵"
+  - id: rabbit
+    left: "rabbit"
+    left_tts: "rabbit"
+    emoji: "🐰"
+  - id: elephant
+    left: "elephant"
+    left_tts: "elephant"
+    emoji: "🐘"
 reward: { stars: 1, sfx: ding, effect: confetti }

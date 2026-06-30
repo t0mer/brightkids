@@ -39,4 +39,88 @@ questions:
       - { id: o1, label: "D", correct: true, tts: "D" }
       - { id: o2, label: "C", tts: "C" }
       - { id: o3, label: "A", tts: "A" }
+  - prompt: "Find the letter E"
+    prompt_text: "מִצְאוּ אֶת הָאוֹת E"
+    items:
+      - { id: o1, label: "F", tts: "F" }
+      - { id: o2, label: "E", correct: true, tts: "E" }
+      - { id: o3, label: "B", tts: "B" }
+  - prompt: "Find the letter F"
+    prompt_text: "מִצְאוּ אֶת הָאוֹת F"
+    items:
+      - { id: o1, label: "E", tts: "E" }
+      - { id: o2, label: "T", tts: "T" }
+      - { id: o3, label: "F", correct: true, tts: "F" }
+  - prompt: "Find the letter G"
+    prompt_text: "מִצְאוּ אֶת הָאוֹת G"
+    items:
+      - { id: o1, label: "G", correct: true, tts: "G" }
+      - { id: o2, label: "C", tts: "C" }
+      - { id: o3, label: "Q", tts: "Q" }
+  - prompt: "Find the letter H"
+    prompt_text: "מִצְאוּ אֶת הָאוֹת H"
+    items:
+      - { id: o1, label: "N", tts: "N" }
+      - { id: o2, label: "H", correct: true, tts: "H" }
+      - { id: o3, label: "K", tts: "K" }
+  - prompt: "Find the letter J"
+    prompt_text: "מִצְאוּ אֶת הָאוֹת J"
+    items:
+      - { id: o1, label: "I", tts: "I" }
+      - { id: o2, label: "L", tts: "L" }
+      - { id: o3, label: "J", correct: true, tts: "J" }
+  - prompt: "Find the letter L"
+    prompt_text: "מִצְאוּ אֶת הָאוֹת L"
+    items:
+      - { id: o1, label: "L", correct: true, tts: "L" }
+      - { id: o2, label: "I", tts: "I" }
+      - { id: o3, label: "J", tts: "J" }
+  - prompt: "Find the letter N"
+    prompt_text: "מִצְאוּ אֶת הָאוֹת N"
+    items:
+      - { id: o1, label: "M", tts: "M" }
+      - { id: o2, label: "N", correct: true, tts: "N" }
+      - { id: o3, label: "H", tts: "H" }
+  - prompt: "Find the letter P"
+    prompt_text: "מִצְאוּ אֶת הָאוֹת P"
+    items:
+      - { id: o1, label: "R", tts: "R" }
+      - { id: o2, label: "B", tts: "B" }
+      - { id: o3, label: "P", correct: true, tts: "P" }
+  - prompt: "Find the letter R"
+    prompt_text: "מִצְאוּ אֶת הָאוֹת R"
+    items:
+      - { id: o1, label: "R", correct: true, tts: "R" }
+      - { id: o2, label: "P", tts: "P" }
+      - { id: o3, label: "B", tts: "B" }
+  - prompt: "Find the letter S"
+    prompt_text: "מִצְאוּ אֶת הָאוֹת S"
+    items:
+      - { id: o1, label: "Z", tts: "Z" }
+      - { id: o2, label: "S", correct: true, tts: "S" }
+      - { id: o3, label: "C", tts: "C" }
+  - prompt: "Find the letter T"
+    prompt_text: "מִצְאוּ אֶת הָאוֹת T"
+    items:
+      - { id: o1, label: "F", tts: "F" }
+      - { id: o2, label: "I", tts: "I" }
+      - { id: o3, label: "T", correct: true, tts: "T" }
+  - prompt: "Find the letter V"
+    prompt_text: "מִצְאוּ אֶת הָאוֹת V"
+    items:
+      - { id: o1, label: "V", correct: true, tts: "V" }
+      - { id: o2, label: "W", tts: "W" }
+      - { id: o3, label: "Y", tts: "Y" }
+  - prompt: "Find the letter X"
+    prompt_text: "מִצְאוּ אֶת הָאוֹת X"
+    items:
+      - { id: o1, label: "Y", tts: "Y" }
+      - { id: o2, label: "X", correct: true, tts: "X" }
+      - { id: o3, label: "K", tts: "K" }
+  - prompt: "Find the letter Z"
+    prompt_text: "מִצְאוּ אֶת הָאוֹת Z"
+    items:
+      - { id: o1, label: "N", tts: "N" }
+      - { id: o2, label: "S", tts: "S" }
+      - { id: o3, label: "Z", correct: true, tts: "Z" }
 reward: { stars: 3, sfx: ding, effect: confetti }

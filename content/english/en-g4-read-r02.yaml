@@ -27,4 +27,58 @@ questions:
       - { id: o1, label: "on Saturday", correct: true, tts: "on Saturday" }
       - { id: o2, label: "on Monday", tts: "on Monday" }
       - { id: o3, label: "every day", tts: "every day" }
+  - prompt: "Dan swims very well because he practices a lot. Why does Dan swim well?"
+    prompt_text: "Dan שׂוֹחֶה טוֹב מְאוֹד כִּי הוּא מִתְאַמֵּן הַרְבֵּה. לָמָּה Dan שׂוֹחֶה טוֹב?"
+    items:
+      - { id: o1, label: "he practices a lot", correct: true, tts: "he practices a lot" }
+      - { id: o2, label: "he is very tall", tts: "he is very tall" }
+      - { id: o3, label: "he has a boat", tts: "he has a boat" }
+  - prompt: "Before he swims, Dan puts on his blue goggles. What does Dan put on before he swims?"
+    prompt_text: "לִפְנֵי שֶׁהוּא שׂוֹחֶה, Dan שָׂם אֶת מִשְׁקְפֵי הַשְּׂחִיָּה הַכְּחֻלִּים שֶׁלּוֹ. מָה Dan שָׂם לִפְנֵי שֶׁהוּא שׂוֹחֶה?"
+    items:
+      - { id: o1, label: "his shoes", tts: "his shoes" }
+      - { id: o2, label: "his blue goggles", correct: true, tts: "his blue goggles" }
+      - { id: o3, label: "his hat", tts: "his hat" }
+  - prompt: "Dan likes to swim because the cool water makes him feel happy. How does the water make Dan feel?"
+    prompt_text: "Dan אוֹהֵב לִשְׂחוֹת כִּי הַמַּיִם הַקְּרִירִים גּוֹרְמִים לוֹ לְהַרְגִּישׁ שָׂמֵחַ. אֵיךְ הַמַּיִם גּוֹרְמִים לְ-Dan לְהַרְגִּישׁ?"
+    items:
+      - { id: o1, label: "happy", correct: true, tts: "happy" }
+      - { id: o2, label: "scared", tts: "scared" }
+      - { id: o3, label: "angry", tts: "angry" }
+  - prompt: "After swimming, Dan eats a big sandwich on the beach. What does Dan eat after swimming?"
+    prompt_text: "אַחֲרֵי הַשְּׂחִיָּה, Dan אוֹכֵל כָּרִיךְ גָּדוֹל עַל הַחוֹף. מָה Dan אוֹכֵל אַחֲרֵי הַשְּׂחִיָּה?"
+    items:
+      - { id: o1, label: "a big sandwich", correct: true, tts: "a big sandwich" }
+      - { id: o2, label: "an ice cream", tts: "an ice cream" }
+      - { id: o3, label: "a hot soup", tts: "a hot soup" }
+  - prompt: "Dan's best friend Tom always swims next to him. Who swims next to Dan?"
+    prompt_text: "הֶחָבֵר הֲכִי טוֹב שֶׁל Dan, Tom, תָּמִיד שׂוֹחֶה לְיָדוֹ. מִי שׂוֹחֶה לְיַד Dan?"
+    items:
+      - { id: o1, label: "his brother", tts: "his brother" }
+      - { id: o2, label: "his friend Tom", correct: true, tts: "his friend Tom" }
+      - { id: o3, label: "his father", tts: "his father" }
+  - prompt: "The sea is calm and blue when Dan swims. How is the sea when Dan swims?"
+    prompt_text: "הַיָּם רָגוּעַ וְכָחֹל כְּשֶׁ-Dan שׂוֹחֶה. אֵיךְ הַיָּם כְּשֶׁ-Dan שׂוֹחֶה?"
+    items:
+      - { id: o1, label: "calm and blue", correct: true, tts: "calm and blue" }
+      - { id: o2, label: "cold and grey", tts: "cold and grey" }
+      - { id: o3, label: "wild and dark", tts: "wild and dark" }
+  - prompt: "Dan wants to be a swimming teacher when he grows up. What does Dan want to be?"
+    prompt_text: "Dan רוֹצֶה לִהְיוֹת מוֹרֶה לִשְׂחִיָּה כְּשֶׁיִּגְדַּל. מָה Dan רוֹצֶה לִהְיוֹת?"
+    items:
+      - { id: o1, label: "a pilot", tts: "a pilot" }
+      - { id: o2, label: "a swimming teacher", correct: true, tts: "a swimming teacher" }
+      - { id: o3, label: "a baker", tts: "a baker" }
+  - prompt: "Dan stays near the shore so he is always safe. Why does Dan stay near the shore?"
+    prompt_text: "Dan נִשְׁאָר קָרוֹב לַחוֹף כְּדֵי שֶׁתָּמִיד יִהְיֶה בָּטוּחַ. לָמָּה Dan נִשְׁאָר קָרוֹב לַחוֹף?"
+    items:
+      - { id: o1, label: "to stay safe", correct: true, tts: "to stay safe" }
+      - { id: o2, label: "to find fish", tts: "to find fish" }
+      - { id: o3, label: "to be cold", tts: "to be cold" }
+  - prompt: "Dan and his friends swim all morning until lunchtime. How long do they swim?"
+    prompt_text: "Dan וַחֲבֵרָיו שׂוֹחִים כָּל הַבֹּקֶר עַד שְׁעַת הַצָּהֳרַיִם. כַּמָּה זְמַן הֵם שׂוֹחִים?"
+    items:
+      - { id: o1, label: "for one minute", tts: "for one minute" }
+      - { id: o2, label: "all morning", correct: true, tts: "all morning" }
+      - { id: o3, label: "all night", tts: "all night" }
 reward: { stars: 3, sfx: ding, effect: confetti }

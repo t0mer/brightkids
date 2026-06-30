@@ -39,4 +39,46 @@ questions:
       - { id: o1, label: "Sam", correct: true, tts: "Sam" }
       - { id: o2, label: "Lily", tts: "Lily" }
       - { id: o3, label: "Max", tts: "Max" }
+  - prompt: "Lily is a small white cat with green eyes. What color is Lily?"
+    prompt_text: "Lily הִיא חֲתוּלָה לְבָנָה קְטַנָּה עִם עֵינַיִם יְרֻקּוֹת. בְּאֵיזֶה צֶבַע Lily?"
+    items:
+      - { id: o1, label: "black", tts: "black" }
+      - { id: o2, label: "white", correct: true, tts: "white" }
+      - { id: o3, label: "orange", tts: "orange" }
+  - prompt: "Sam is very sad when he can not find Lily. How does Sam feel when Lily is lost?"
+    prompt_text: "Sam מְאוֹד עָצוּב כְּשֶׁהוּא לֹא מוֹצֵא אֶת Lily. אֵיךְ Sam מַרְגִּישׁ כְּשֶׁ-Lily אֲבוּדָה?"
+    items:
+      - { id: o1, label: "sad", correct: true, tts: "sad" }
+      - { id: o2, label: "happy", tts: "happy" }
+      - { id: o3, label: "angry", tts: "angry" }
+  - prompt: "Sam calls Lily's name again and again. What does Sam call?"
+    prompt_text: "Sam קוֹרֵא בְּשֵׁם Lily שׁוּב וָשׁוּב. אֶת מָה Sam קוֹרֵא?"
+    items:
+      - { id: o1, label: "his own name", tts: "his own name" }
+      - { id: o2, label: "Lily's name", correct: true, tts: "Lily's name" }
+      - { id: o3, label: "the dog's name", tts: "the dog's name" }
+  - prompt: "Lily ran away because she saw a yellow butterfly. Why did Lily run away?"
+    prompt_text: "Lily בָּרְחָה כִּי הִיא רָאֲתָה פַּרְפַּר צָהֹב. לָמָּה Lily בָּרְחָה?"
+    items:
+      - { id: o1, label: "she was hungry", tts: "she was hungry" }
+      - { id: o2, label: "she saw a butterfly", correct: true, tts: "she saw a butterfly" }
+      - { id: o3, label: "she heard a noise", tts: "she heard a noise" }
+  - prompt: "When Sam finds Lily, he gives her a big warm hug. What does Sam do when he finds Lily?"
+    prompt_text: "כְּשֶׁ-Sam מוֹצֵא אֶת Lily, הוּא נוֹתֵן לָהּ חִבּוּק גָּדוֹל וְחַם. מָה Sam עוֹשֶׂה כְּשֶׁהוּא מוֹצֵא אֶת Lily?"
+    items:
+      - { id: o1, label: "he gives her a hug", correct: true, tts: "he gives her a hug" }
+      - { id: o2, label: "he runs away", tts: "he runs away" }
+      - { id: o3, label: "he closes the door", tts: "he closes the door" }
+  - prompt: "After the hug, Sam and Lily go home for dinner. Where do Sam and Lily go?"
+    prompt_text: "אַחֲרֵי הַחִבּוּק, Sam וְ-Lily הוֹלְכִים הַבַּיְתָה לַאֲרוּחַת עֶרֶב. לְאָן Sam וְ-Lily הוֹלְכִים?"
+    items:
+      - { id: o1, label: "to school", tts: "to school" }
+      - { id: o2, label: "to the shop", tts: "to the shop" }
+      - { id: o3, label: "home", correct: true, tts: "home" }
+  - prompt: "Now Sam keeps the garden gate closed so Lily can not run away again. Why does Sam keep the gate closed?"
+    prompt_text: "עַכְשָׁו Sam מַשְׁאִיר אֶת שַׁעַר הַגִּנָּה סָגוּר כְּדֵי שֶׁ-Lily לֹא תּוּכַל לִבְרֹחַ שׁוּב. לָמָּה Sam מַשְׁאִיר אֶת הַשַּׁעַר סָגוּר?"
+    items:
+      - { id: o1, label: "so Lily can not run away", correct: true, tts: "so Lily can not run away" }
+      - { id: o2, label: "so the sun stays out", tts: "so the sun stays out" }
+      - { id: o3, label: "so the rain comes in", tts: "so the rain comes in" }
 reward: { stars: 3, sfx: ding, effect: confetti }

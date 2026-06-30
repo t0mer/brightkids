@@ -21,4 +21,36 @@ pairs:
     left: "orange"
     left_tts: "orange"
     emoji: "🟠"
+  - id: red
+    left: "red"
+    left_tts: "red"
+    emoji: "🔴"
+  - id: blue
+    left: "blue"
+    left_tts: "blue"
+    emoji: "🔵"
+  - id: green
+    left: "green"
+    left_tts: "green"
+    emoji: "🟢"
+  - id: brown
+    left: "brown"
+    left_tts: "brown"
+    emoji: "🟤"
+  - id: black
+    left: "black"
+    left_tts: "black"
+    emoji: "⚫"
+  - id: white
+    left: "white"
+    left_tts: "white"
+    emoji: "⚪"
+  - id: pink
+    left: "pink"
+    left_tts: "pink"
+    emoji: "🩷"
+  - id: gray
+    left: "gray"
+    left_tts: "gray"
+    emoji: "🩶"
 reward: { stars: 1, sfx: chime, effect: stars }

@@ -25,4 +25,48 @@ pairs:
     left: "read"
     left_tts: "read"
     emoji: "📖"
+  - id: jump
+    left: "jump"
+    left_tts: "jump"
+    emoji: "🤸"
+  - id: swim
+    left: "swim"
+    left_tts: "swim"
+    emoji: "🏊"
+  - id: write
+    left: "write"
+    left_tts: "write"
+    emoji: "✍️"
+  - id: drink
+    left: "drink"
+    left_tts: "drink"
+    emoji: "🥤"
+  - id: dance
+    left: "dance"
+    left_tts: "dance"
+    emoji: "💃"
+  - id: sing
+    left: "sing"
+    left_tts: "sing"
+    emoji: "🎤"
+  - id: walk
+    left: "walk"
+    left_tts: "walk"
+    emoji: "🚶"
+  - id: cook
+    left: "cook"
+    left_tts: "cook"
+    emoji: "🍳"
+  - id: cry
+    left: "cry"
+    left_tts: "cry"
+    emoji: "😢"
+  - id: think
+    left: "think"
+    left_tts: "think"
+    emoji: "🤔"
+  - id: paint
+    left: "paint"
+    left_tts: "paint"
+    emoji: "🎨"
 reward: { stars: 1, sfx: chime, effect: stars }

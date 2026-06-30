@@ -33,4 +33,70 @@ questions:
       - { id: o1, label: "red", correct: true, tts: "red" }
       - { id: o2, label: "cup", tts: "cup" }
       - { id: o3, label: "top", tts: "top" }
+  - prompt: "Which word rhymes with hat?"
+    prompt_text: "אֵיזוֹ מִלָּה מִתְחָרֶזֶת עִם hat?"
+    items:
+      - { id: o1, label: "pen", tts: "pen" }
+      - { id: o2, label: "cat", correct: true, tts: "cat" }
+      - { id: o3, label: "sun", tts: "sun" }
+  - prompt: "Which word rhymes with car?"
+    prompt_text: "אֵיזוֹ מִלָּה מִתְחָרֶזֶת עִם car?"
+    items:
+      - { id: o1, label: "book", tts: "book" }
+      - { id: o2, label: "fish", tts: "fish" }
+      - { id: o3, label: "star", correct: true, tts: "star" }
+  - prompt: "Which word rhymes with bee?"
+    prompt_text: "אֵיזוֹ מִלָּה מִתְחָרֶזֶת עִם bee?"
+    items:
+      - { id: o1, label: "tree", correct: true, tts: "tree" }
+      - { id: o2, label: "dog", tts: "dog" }
+      - { id: o3, label: "hat", tts: "hat" }
+  - prompt: "Which word rhymes with cake?"
+    prompt_text: "אֵיזוֹ מִלָּה מִתְחָרֶזֶת עִם cake?"
+    items:
+      - { id: o1, label: "sun", tts: "sun" }
+      - { id: o2, label: "lake", correct: true, tts: "lake" }
+      - { id: o3, label: "pen", tts: "pen" }
+  - prompt: "Which word rhymes with ball?"
+    prompt_text: "אֵיזוֹ מִלָּה מִתְחָרֶזֶת עִם ball?"
+    items:
+      - { id: o1, label: "cat", tts: "cat" }
+      - { id: o2, label: "dog", tts: "dog" }
+      - { id: o3, label: "wall", correct: true, tts: "wall" }
+  - prompt: "Which word rhymes with night?"
+    prompt_text: "אֵיזוֹ מִלָּה מִתְחָרֶזֶת עִם night?"
+    items:
+      - { id: o1, label: "light", correct: true, tts: "light" }
+      - { id: o2, label: "bed", tts: "bed" }
+      - { id: o3, label: "cup", tts: "cup" }
+  - prompt: "Which word rhymes with hop?"
+    prompt_text: "אֵיזוֹ מִלָּה מִתְחָרֶזֶת עִם hop?"
+    items:
+      - { id: o1, label: "man", tts: "man" }
+      - { id: o2, label: "top", correct: true, tts: "top" }
+      - { id: o3, label: "sun", tts: "sun" }
+  - prompt: "Which word rhymes with king?"
+    prompt_text: "אֵיזוֹ מִלָּה מִתְחָרֶזֶת עִם king?"
+    items:
+      - { id: o1, label: "hat", tts: "hat" }
+      - { id: o2, label: "dog", tts: "dog" }
+      - { id: o3, label: "ring", correct: true, tts: "ring" }
+  - prompt: "Which word rhymes with mouse?"
+    prompt_text: "אֵיזוֹ מִלָּה מִתְחָרֶזֶת עִם mouse?"
+    items:
+      - { id: o1, label: "house", correct: true, tts: "house" }
+      - { id: o2, label: "cat", tts: "cat" }
+      - { id: o3, label: "pen", tts: "pen" }
+  - prompt: "Which word rhymes with snake?"
+    prompt_text: "אֵיזוֹ מִלָּה מִתְחָרֶזֶת עִם snake?"
+    items:
+      - { id: o1, label: "dog", tts: "dog" }
+      - { id: o2, label: "cake", correct: true, tts: "cake" }
+      - { id: o3, label: "sun", tts: "sun" }
+  - prompt: "Which word rhymes with rain?"
+    prompt_text: "אֵיזוֹ מִלָּה מִתְחָרֶזֶת עִם rain?"
+    items:
+      - { id: o1, label: "hat", tts: "hat" }
+      - { id: o2, label: "bed", tts: "bed" }
+      - { id: o3, label: "train", correct: true, tts: "train" }
 reward: { stars: 3, sfx: ding, effect: confetti }

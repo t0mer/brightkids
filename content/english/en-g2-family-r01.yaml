@@ -21,4 +21,40 @@ pairs:
     left: "bat"
     left_tts: "bat"
     emoji: "🦇"
+  - id: rat
+    left: "rat"
+    left_tts: "rat"
+    emoji: "🐀"
+  - id: mat
+    left: "mat"
+    left_tts: "mat"
+    emoji: "🧘"
+  - id: sat
+    left: "sat"
+    left_tts: "sat"
+    emoji: "🪑"
+  - id: pat
+    left: "pat"
+    left_tts: "pat"
+    emoji: "🤚"
+  - id: fat
+    left: "fat"
+    left_tts: "fat"
+    emoji: "🍔"
+  - id: vat
+    left: "vat"
+    left_tts: "vat"
+    emoji: "🛢️"
+  - id: gnat
+    left: "gnat"
+    left_tts: "gnat"
+    emoji: "🦟"
+  - id: flat
+    left: "flat"
+    left_tts: "flat"
+    emoji: "🏢"
+  - id: chat
+    left: "chat"
+    left_tts: "chat"
+    emoji: "💬"
 reward: { stars: 1, sfx: ding, effect: confetti }

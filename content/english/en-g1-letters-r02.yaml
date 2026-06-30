@@ -37,4 +37,70 @@ questions:
       - { id: o1, label: "T", correct: true, tts: "T says tuh" }
       - { id: o2, label: "D", tts: "D" }
       - { id: o3, label: "P", tts: "P" }
+  - prompt: "Which letter makes the sound muh?"
+    prompt_text: "אֵיזוֹ אוֹת מַשְׁמִיעָה אֶת הַצְּלִיל muh?"
+    items:
+      - { id: o1, label: "N", tts: "N" }
+      - { id: o2, label: "M", correct: true, tts: "M says muh" }
+      - { id: o3, label: "W", tts: "W" }
+  - prompt: "Which letter makes the sound nuh?"
+    prompt_text: "אֵיזוֹ אוֹת מַשְׁמִיעָה אֶת הַצְּלִיל nuh?"
+    items:
+      - { id: o1, label: "M", tts: "M" }
+      - { id: o2, label: "H", tts: "H" }
+      - { id: o3, label: "N", correct: true, tts: "N says nuh" }
+  - prompt: "Which letter makes the sound fuh?"
+    prompt_text: "אֵיזוֹ אוֹת מַשְׁמִיעָה אֶת הַצְּלִיל fuh?"
+    items:
+      - { id: o1, label: "F", correct: true, tts: "F says fuh" }
+      - { id: o2, label: "V", tts: "V" }
+      - { id: o3, label: "S", tts: "S" }
+  - prompt: "Which letter makes the sound vuh?"
+    prompt_text: "אֵיזוֹ אוֹת מַשְׁמִיעָה אֶת הַצְּלִיל vuh?"
+    items:
+      - { id: o1, label: "F", tts: "F" }
+      - { id: o2, label: "V", correct: true, tts: "V says vuh" }
+      - { id: o3, label: "W", tts: "W" }
+  - prompt: "Which letter makes the sound sss?"
+    prompt_text: "אֵיזוֹ אוֹת מַשְׁמִיעָה אֶת הַצְּלִיל sss?"
+    items:
+      - { id: o1, label: "Z", tts: "Z" }
+      - { id: o2, label: "C", tts: "C" }
+      - { id: o3, label: "S", correct: true, tts: "S says sss" }
+  - prompt: "Which letter makes the sound zzz?"
+    prompt_text: "אֵיזוֹ אוֹת מַשְׁמִיעָה אֶת הַצְּלִיל zzz?"
+    items:
+      - { id: o1, label: "Z", correct: true, tts: "Z says zzz" }
+      - { id: o2, label: "S", tts: "S" }
+      - { id: o3, label: "X", tts: "X" }
+  - prompt: "Which letter makes the sound luh?"
+    prompt_text: "אֵיזוֹ אוֹת מַשְׁמִיעָה אֶת הַצְּלִיל luh?"
+    items:
+      - { id: o1, label: "I", tts: "I" }
+      - { id: o2, label: "L", correct: true, tts: "L says luh" }
+      - { id: o3, label: "R", tts: "R" }
+  - prompt: "Which letter makes the sound ruh?"
+    prompt_text: "אֵיזוֹ אוֹת מַשְׁמִיעָה אֶת הַצְּלִיל ruh?"
+    items:
+      - { id: o1, label: "L", tts: "L" }
+      - { id: o2, label: "W", tts: "W" }
+      - { id: o3, label: "R", correct: true, tts: "R says ruh" }
+  - prompt: "Which letter makes the sound kuh?"
+    prompt_text: "אֵיזוֹ אוֹת מַשְׁמִיעָה אֶת הַצְּלִיל kuh?"
+    items:
+      - { id: o1, label: "K", correct: true, tts: "K says kuh" }
+      - { id: o2, label: "G", tts: "G" }
+      - { id: o3, label: "C", tts: "C" }
+  - prompt: "Which letter makes the sound guh?"
+    prompt_text: "אֵיזוֹ אוֹת מַשְׁמִיעָה אֶת הַצְּלִיל guh?"
+    items:
+      - { id: o1, label: "C", tts: "C" }
+      - { id: o2, label: "G", correct: true, tts: "G says guh" }
+      - { id: o3, label: "K", tts: "K" }
+  - prompt: "Which letter makes the sound huh?"
+    prompt_text: "אֵיזוֹ אוֹת מַשְׁמִיעָה אֶת הַצְּלִיל huh?"
+    items:
+      - { id: o1, label: "N", tts: "N" }
+      - { id: o2, label: "K", tts: "K" }
+      - { id: o3, label: "H", correct: true, tts: "H says huh" }
 reward: { stars: 3, sfx: ding, effect: confetti }

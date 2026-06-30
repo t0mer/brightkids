@@ -31,4 +31,94 @@ questions:
       - { id: o1, label: "o", correct: true, tts: "small o" }
       - { id: o2, label: "a", tts: "small a" }
       - { id: o3, label: "e", tts: "small e" }
+  - prompt: "The big letter is B. Tap the small letter b."
+    prompt_text: "הָאוֹת הַגְּדוֹלָה הִיא B. הַקִּישׁוּ עַל הָאוֹת הַקְּטַנָּה b."
+    items:
+      - { id: o1, label: "d", tts: "small d" }
+      - { id: o2, label: "b", correct: true, tts: "small b" }
+      - { id: o3, label: "p", tts: "small p" }
+  - prompt: "The big letter is C. Tap the small letter c."
+    prompt_text: "הָאוֹת הַגְּדוֹלָה הִיא C. הַקִּישׁוּ עַל הָאוֹת הַקְּטַנָּה c."
+    items:
+      - { id: o1, label: "o", tts: "small o" }
+      - { id: o2, label: "e", tts: "small e" }
+      - { id: o3, label: "c", correct: true, tts: "small c" }
+  - prompt: "The big letter is D. Tap the small letter d."
+    prompt_text: "הָאוֹת הַגְּדוֹלָה הִיא D. הַקִּישׁוּ עַל הָאוֹת הַקְּטַנָּה d."
+    items:
+      - { id: o1, label: "d", correct: true, tts: "small d" }
+      - { id: o2, label: "b", tts: "small b" }
+      - { id: o3, label: "p", tts: "small p" }
+  - prompt: "The big letter is F. Tap the small letter f."
+    prompt_text: "הָאוֹת הַגְּדוֹלָה הִיא F. הַקִּישׁוּ עַל הָאוֹת הַקְּטַנָּה f."
+    items:
+      - { id: o1, label: "t", tts: "small t" }
+      - { id: o2, label: "f", correct: true, tts: "small f" }
+      - { id: o3, label: "l", tts: "small l" }
+  - prompt: "The big letter is G. Tap the small letter g."
+    prompt_text: "הָאוֹת הַגְּדוֹלָה הִיא G. הַקִּישׁוּ עַל הָאוֹת הַקְּטַנָּה g."
+    items:
+      - { id: o1, label: "q", tts: "small q" }
+      - { id: o2, label: "y", tts: "small y" }
+      - { id: o3, label: "g", correct: true, tts: "small g" }
+  - prompt: "The big letter is H. Tap the small letter h."
+    prompt_text: "הָאוֹת הַגְּדוֹלָה הִיא H. הַקִּישׁוּ עַל הָאוֹת הַקְּטַנָּה h."
+    items:
+      - { id: o1, label: "h", correct: true, tts: "small h" }
+      - { id: o2, label: "n", tts: "small n" }
+      - { id: o3, label: "b", tts: "small b" }
+  - prompt: "The big letter is I. Tap the small letter i."
+    prompt_text: "הָאוֹת הַגְּדוֹלָה הִיא I. הַקִּישׁוּ עַל הָאוֹת הַקְּטַנָּה i."
+    items:
+      - { id: o1, label: "l", tts: "small l" }
+      - { id: o2, label: "i", correct: true, tts: "small i" }
+      - { id: o3, label: "j", tts: "small j" }
+  - prompt: "The big letter is J. Tap the small letter j."
+    prompt_text: "הָאוֹת הַגְּדוֹלָה הִיא J. הַקִּישׁוּ עַל הָאוֹת הַקְּטַנָּה j."
+    items:
+      - { id: o1, label: "i", tts: "small i" }
+      - { id: o2, label: "g", tts: "small g" }
+      - { id: o3, label: "j", correct: true, tts: "small j" }
+  - prompt: "The big letter is K. Tap the small letter k."
+    prompt_text: "הָאוֹת הַגְּדוֹלָה הִיא K. הַקִּישׁוּ עַל הָאוֹת הַקְּטַנָּה k."
+    items:
+      - { id: o1, label: "k", correct: true, tts: "small k" }
+      - { id: o2, label: "h", tts: "small h" }
+      - { id: o3, label: "x", tts: "small x" }
+  - prompt: "The big letter is L. Tap the small letter l."
+    prompt_text: "הָאוֹת הַגְּדוֹלָה הִיא L. הַקִּישׁוּ עַל הָאוֹת הַקְּטַנָּה l."
+    items:
+      - { id: o1, label: "i", tts: "small i" }
+      - { id: o2, label: "l", correct: true, tts: "small l" }
+      - { id: o3, label: "t", tts: "small t" }
+  - prompt: "The big letter is M. Tap the small letter m."
+    prompt_text: "הָאוֹת הַגְּדוֹלָה הִיא M. הַקִּישׁוּ עַל הָאוֹת הַקְּטַנָּה m."
+    items:
+      - { id: o1, label: "n", tts: "small n" }
+      - { id: o2, label: "w", tts: "small w" }
+      - { id: o3, label: "m", correct: true, tts: "small m" }
+  - prompt: "The big letter is N. Tap the small letter n."
+    prompt_text: "הָאוֹת הַגְּדוֹלָה הִיא N. הַקִּישׁוּ עַל הָאוֹת הַקְּטַנָּה n."
+    items:
+      - { id: o1, label: "n", correct: true, tts: "small n" }
+      - { id: o2, label: "m", tts: "small m" }
+      - { id: o3, label: "h", tts: "small h" }
+  - prompt: "The big letter is P. Tap the small letter p."
+    prompt_text: "הָאוֹת הַגְּדוֹלָה הִיא P. הַקִּישׁוּ עַל הָאוֹת הַקְּטַנָּה p."
+    items:
+      - { id: o1, label: "q", tts: "small q" }
+      - { id: o2, label: "p", correct: true, tts: "small p" }
+      - { id: o3, label: "b", tts: "small b" }
+  - prompt: "The big letter is R. Tap the small letter r."
+    prompt_text: "הָאוֹת הַגְּדוֹלָה הִיא R. הַקִּישׁוּ עַל הָאוֹת הַקְּטַנָּה r."
+    items:
+      - { id: o1, label: "n", tts: "small n" }
+      - { id: o2, label: "r", correct: true, tts: "small r" }
+      - { id: o3, label: "v", tts: "small v" }
+  - prompt: "The big letter is S. Tap the small letter s."
+    prompt_text: "הָאוֹת הַגְּדוֹלָה הִיא S. הַקִּישׁוּ עַל הָאוֹת הַקְּטַנָּה s."
+    items:
+      - { id: o1, label: "z", tts: "small z" }
+      - { id: o2, label: "c", tts: "small c" }
+      - { id: o3, label: "s", correct: true, tts: "small s" }
 reward: { stars: 3, sfx: ding, effect: confetti }

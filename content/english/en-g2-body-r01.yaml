@@ -25,4 +25,48 @@ pairs:
     left: "ear"
     left_tts: "ear"
     emoji: "👂"
+  - id: nose
+    left: "nose"
+    left_tts: "nose"
+    emoji: "👃"
+  - id: mouth
+    left: "mouth"
+    left_tts: "mouth"
+    emoji: "👄"
+  - id: tooth
+    left: "tooth"
+    left_tts: "tooth"
+    emoji: "🦷"
+  - id: tongue
+    left: "tongue"
+    left_tts: "tongue"
+    emoji: "👅"
+  - id: arm
+    left: "arm"
+    left_tts: "arm"
+    emoji: "💪"
+  - id: leg
+    left: "leg"
+    left_tts: "leg"
+    emoji: "🦵"
+  - id: brain
+    left: "brain"
+    left_tts: "brain"
+    emoji: "🧠"
+  - id: bone
+    left: "bone"
+    left_tts: "bone"
+    emoji: "🦴"
+  - id: lips
+    left: "lips"
+    left_tts: "lips"
+    emoji: "💋"
+  - id: heart
+    left: "heart"
+    left_tts: "heart"
+    emoji: "❤️"
+  - id: nail
+    left: "nail"
+    left_tts: "nail"
+    emoji: "💅"
 reward: { stars: 1, sfx: ding, effect: confetti }

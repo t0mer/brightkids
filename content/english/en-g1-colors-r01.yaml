@@ -33,4 +33,52 @@ questions:
       - { id: o1, label: "yellow", correct: true, tts: "yellow" }
       - { id: o2, label: "red", tts: "red" }
       - { id: o3, label: "blue", tts: "blue" }
+  - prompt: "This balloon is purple. Tap the word purple."
+    prompt_text: "הַבָּלוֹן הַזֶּה סָגֹל. הַקִּישׁוּ עַל הַמִּלָּה purple."
+    items:
+      - { id: o1, label: "green", tts: "green" }
+      - { id: o2, label: "purple", correct: true, tts: "purple" }
+      - { id: o3, label: "yellow", tts: "yellow" }
+  - prompt: "This balloon is orange. Tap the word orange."
+    prompt_text: "הַבָּלוֹן הַזֶּה כָּתֹם. הַקִּישׁוּ עַל הַמִּלָּה orange."
+    items:
+      - { id: o1, label: "yellow", tts: "yellow" }
+      - { id: o2, label: "orange", correct: true, tts: "orange" }
+      - { id: o3, label: "red", tts: "red" }
+  - prompt: "This balloon is pink. Tap the word pink."
+    prompt_text: "הַבָּלוֹן הַזֶּה וָרֹד. הַקִּישׁוּ עַל הַמִּלָּה pink."
+    items:
+      - { id: o1, label: "purple", tts: "purple" }
+      - { id: o2, label: "red", tts: "red" }
+      - { id: o3, label: "pink", correct: true, tts: "pink" }
+  - prompt: "This balloon is brown. Tap the word brown."
+    prompt_text: "הַבָּלוֹן הַזֶּה חוּם. הַקִּישׁוּ עַל הַמִּלָּה brown."
+    items:
+      - { id: o1, label: "brown", correct: true, tts: "brown" }
+      - { id: o2, label: "orange", tts: "orange" }
+      - { id: o3, label: "black", tts: "black" }
+  - prompt: "This balloon is black. Tap the word black."
+    prompt_text: "הַבָּלוֹן הַזֶּה שָׁחֹר. הַקִּישׁוּ עַל הַמִּלָּה black."
+    items:
+      - { id: o1, label: "white", tts: "white" }
+      - { id: o2, label: "black", correct: true, tts: "black" }
+      - { id: o3, label: "brown", tts: "brown" }
+  - prompt: "This balloon is white. Tap the word white."
+    prompt_text: "הַבָּלוֹן הַזֶּה לָבָן. הַקִּישׁוּ עַל הַמִּלָּה white."
+    items:
+      - { id: o1, label: "black", tts: "black" }
+      - { id: o2, label: "gray", tts: "gray" }
+      - { id: o3, label: "white", correct: true, tts: "white" }
+  - prompt: "This balloon is gray. Tap the word gray."
+    prompt_text: "הַבָּלוֹן הַזֶּה אָפֹר. הַקִּישׁוּ עַל הַמִּלָּה gray."
+    items:
+      - { id: o1, label: "gray", correct: true, tts: "gray" }
+      - { id: o2, label: "white", tts: "white" }
+      - { id: o3, label: "black", tts: "black" }
+  - prompt: "This balloon is gold. Tap the word gold."
+    prompt_text: "הַבָּלוֹן הַזֶּה זָהֹב. הַקִּישׁוּ עַל הַמִּלָּה gold."
+    items:
+      - { id: o1, label: "yellow", tts: "yellow" }
+      - { id: o2, label: "gold", correct: true, tts: "gold" }
+      - { id: o3, label: "orange", tts: "orange" }
 reward: { stars: 3, sfx: ding, effect: confetti }

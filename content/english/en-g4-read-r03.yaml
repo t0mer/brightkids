@@ -27,4 +27,58 @@ questions:
       - { id: o1, label: "in the garden", correct: true, tts: "in the garden" }
       - { id: o2, label: "in the house", tts: "in the house" }
       - { id: o3, label: "in the car", tts: "in the car" }
+  - prompt: "Dan loves to eat meat and chew on his bone. What does Dan love to eat?"
+    prompt_text: "Dan אוֹהֵב לֶאֱכֹל בָּשָׂר וְלִכְרְסֵם אֶת הָעֶצֶם שֶׁלּוֹ. מָה Dan אוֹהֵב לֶאֱכֹל?"
+    items:
+      - { id: o1, label: "cake and candy", tts: "cake and candy" }
+      - { id: o2, label: "meat and his bone", correct: true, tts: "meat and his bone" }
+      - { id: o3, label: "apples and grass", tts: "apples and grass" }
+  - prompt: "At night Dan sleeps in a soft basket near the door. Where does Dan sleep?"
+    prompt_text: "בַּלַּיְלָה Dan יָשֵׁן בְּסַלְסִלָּה רַכָּה לְיַד הַדֶּלֶת. אֵיפֹה Dan יָשֵׁן?"
+    items:
+      - { id: o1, label: "in a soft basket", correct: true, tts: "in a soft basket" }
+      - { id: o2, label: "on the table", tts: "on the table" }
+      - { id: o3, label: "in the bath", tts: "in the bath" }
+  - prompt: "Dan barks loudly when someone comes to the door. What does Dan do when someone comes?"
+    prompt_text: "Dan נוֹבֵחַ בְּקוֹל רָם כְּשֶׁמִּישֶׁהוּ מַגִּיעַ לַדֶּלֶת. מָה Dan עוֹשֶׂה כְּשֶׁמִּישֶׁהוּ מַגִּיעַ?"
+    items:
+      - { id: o1, label: "he hides", tts: "he hides" }
+      - { id: o2, label: "he sleeps", tts: "he sleeps" }
+      - { id: o3, label: "he barks loudly", correct: true, tts: "he barks loudly" }
+  - prompt: "Dan belongs to a boy named Tom who plays with him every day. Who does Dan belong to?"
+    prompt_text: "Dan שַׁיָּךְ לְיֶלֶד בְּשֵׁם Tom שֶׁמְּשַׂחֵק אִתּוֹ כָּל יוֹם. לְמִי Dan שַׁיָּךְ?"
+    items:
+      - { id: o1, label: "a boy named Tom", correct: true, tts: "a boy named Tom" }
+      - { id: o2, label: "a girl named Sue", tts: "a girl named Sue" }
+      - { id: o3, label: "no one", tts: "no one" }
+  - prompt: "Tom takes Dan for a walk in the park every afternoon. When does Tom walk Dan?"
+    prompt_text: "Tom לוֹקֵחַ אֶת Dan לְטִיּוּל בַּפַּארְק כָּל אַחַר צָהֳרַיִם. מָתַי Tom מְטַיֵּל עִם Dan?"
+    items:
+      - { id: o1, label: "every afternoon", correct: true, tts: "every afternoon" }
+      - { id: o2, label: "every midnight", tts: "every midnight" }
+      - { id: o3, label: "once a year", tts: "once a year" }
+  - prompt: "Dan is happy and wags his tail when Tom comes home. What does Dan do when Tom comes home?"
+    prompt_text: "Dan שָׂמֵחַ וּמְכַשְׁכֵּשׁ בִּזְנָבוֹ כְּשֶׁ-Tom חוֹזֵר הַבַּיְתָה. מָה Dan עוֹשֶׂה כְּשֶׁ-Tom חוֹזֵר הַבַּיְתָה?"
+    items:
+      - { id: o1, label: "he runs away", tts: "he runs away" }
+      - { id: o2, label: "he wags his tail", correct: true, tts: "he wags his tail" }
+      - { id: o3, label: "he cries", tts: "he cries" }
+  - prompt: "Dan is small, so he can not jump over the high fence. Why can Dan not jump the fence?"
+    prompt_text: "Dan קָטָן, אָז הוּא לֹא יָכוֹל לִקְפֹּץ מֵעַל הַגָּדֵר הַגְּבוֹהָה. לָמָּה Dan לֹא יָכוֹל לִקְפֹּץ מֵעַל הַגָּדֵר?"
+    items:
+      - { id: o1, label: "he is small", correct: true, tts: "he is small" }
+      - { id: o2, label: "he is tired", tts: "he is tired" }
+      - { id: o3, label: "he is afraid", tts: "he is afraid" }
+  - prompt: "On hot days Dan likes to rest under a big tree. Where does Dan rest on hot days?"
+    prompt_text: "בַּיָּמִים הַחַמִּים Dan אוֹהֵב לָנוּחַ מִתַּחַת לְעֵץ גָּדוֹל. אֵיפֹה Dan נָח בַּיָּמִים הַחַמִּים?"
+    items:
+      - { id: o1, label: "in the sun", tts: "in the sun" }
+      - { id: o2, label: "under a big tree", correct: true, tts: "under a big tree" }
+      - { id: o3, label: "in the water", tts: "in the water" }
+  - prompt: "Dan has two long ears and a short tail. What does Dan have?"
+    prompt_text: "לְ-Dan יֵשׁ שְׁתֵּי אָזְנַיִם אֲרֻכּוֹת וְזָנָב קָצָר. מָה יֵשׁ לְ-Dan?"
+    items:
+      - { id: o1, label: "two long ears", correct: true, tts: "two long ears" }
+      - { id: o2, label: "three short legs", tts: "three short legs" }
+      - { id: o3, label: "big wings", tts: "big wings" }
 reward: { stars: 3, sfx: ding, effect: confetti }

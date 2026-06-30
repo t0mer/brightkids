@@ -29,4 +29,44 @@ pairs:
     left_tts: "When"
     right: "a time"
     right_tts: "a time"
+  - id: why
+    left: "Why"
+    left_tts: "Why"
+    right: "a reason"
+    right_tts: "a reason"
+  - id: how
+    left: "How"
+    left_tts: "How"
+    right: "a way"
+    right_tts: "a way"
+  - id: which
+    left: "Which"
+    left_tts: "Which"
+    right: "a choice"
+    right_tts: "a choice"
+  - id: whose
+    left: "Whose"
+    left_tts: "Whose"
+    right: "an owner"
+    right_tts: "an owner"
+  - id: howmany
+    left: "How many"
+    left_tts: "How many"
+    right: "a number"
+    right_tts: "a number"
+  - id: howold
+    left: "How old"
+    left_tts: "How old"
+    right: "an age"
+    right_tts: "an age"
+  - id: whatcolor
+    left: "What color"
+    left_tts: "What color"
+    right: "a color"
+    right_tts: "a color"
+  - id: howmuch
+    left: "How much"
+    left_tts: "How much"
+    right: "an amount"
+    right_tts: "an amount"
 reward: { stars: 1, sfx: ding, effect: stars }

@@ -25,4 +25,48 @@ pairs:
     left: "corn"
     left_tts: "corn"
     emoji: "🌽"
+  - id: grapes
+    left: "grapes"
+    left_tts: "grapes"
+    emoji: "🍇"
+  - id: orange
+    left: "orange"
+    left_tts: "orange"
+    emoji: "🍊"
+  - id: strawberry
+    left: "strawberry"
+    left_tts: "strawberry"
+    emoji: "🍓"
+  - id: watermelon
+    left: "watermelon"
+    left_tts: "watermelon"
+    emoji: "🍉"
+  - id: lemon
+    left: "lemon"
+    left_tts: "lemon"
+    emoji: "🍋"
+  - id: pear
+    left: "pear"
+    left_tts: "pear"
+    emoji: "🍐"
+  - id: peach
+    left: "peach"
+    left_tts: "peach"
+    emoji: "🍑"
+  - id: cherry
+    left: "cherry"
+    left_tts: "cherry"
+    emoji: "🍒"
+  - id: tomato
+    left: "tomato"
+    left_tts: "tomato"
+    emoji: "🍅"
+  - id: potato
+    left: "potato"
+    left_tts: "potato"
+    emoji: "🥔"
+  - id: broccoli
+    left: "broccoli"
+    left_tts: "broccoli"
+    emoji: "🥦"
 reward: { stars: 1, sfx: chime, effect: stars }

@@ -25,4 +25,48 @@ pairs:
     left: "ruler"
     left_tts: "ruler"
     emoji: "📏"
+  - id: pen
+    left: "pen"
+    left_tts: "pen"
+    emoji: "🖊️"
+  - id: scissors
+    left: "scissors"
+    left_tts: "scissors"
+    emoji: "✂️"
+  - id: crayon
+    left: "crayon"
+    left_tts: "crayon"
+    emoji: "🖍️"
+  - id: notebook
+    left: "notebook"
+    left_tts: "notebook"
+    emoji: "📓"
+  - id: paint
+    left: "paint"
+    left_tts: "paint"
+    emoji: "🎨"
+  - id: clock
+    left: "clock"
+    left_tts: "clock"
+    emoji: "🕐"
+  - id: globe
+    left: "globe"
+    left_tts: "globe"
+    emoji: "🌍"
+  - id: chair
+    left: "chair"
+    left_tts: "chair"
+    emoji: "🪑"
+  - id: clip
+    left: "paper clip"
+    left_tts: "paper clip"
+    emoji: "📎"
+  - id: folder
+    left: "folder"
+    left_tts: "folder"
+    emoji: "📁"
+  - id: calendar
+    left: "calendar"
+    left_tts: "calendar"
+    emoji: "📅"
 reward: { stars: 1, sfx: pop, effect: confetti }
