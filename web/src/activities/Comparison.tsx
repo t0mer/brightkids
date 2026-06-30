@@ -2,14 +2,17 @@ import { useMemo, useState } from "react";
 import { motion } from "framer-motion";
 import type { Comparison as Cmp } from "@/lib/types";
 import type { ActivityProps } from "./types";
-import { cn } from "@/lib/utils";
+import { cn, sample } from "@/lib/utils";
 import { play } from "@/lib/sfx";
+
+// How many comparisons from the pool to present per play.
+const SAMPLE = 8;
 
 // Comparison — the "who is bigger?" game from the original app. Two number cards;
 // the child taps the larger one. Steps through a set with a progress bar and
 // completes only once every pair is answered. Numbers render LTR.
 export function Comparison({ lesson, onCorrect, onWrong, solved }: ActivityProps) {
-  const pairs = useMemo<Cmp[]>(() => lesson.comparisons ?? [], [lesson.id]);
+  const pairs = useMemo<Cmp[]>(() => sample(lesson.comparisons ?? [], SAMPLE), [lesson.id]);
 
   const [index, setIndex] = useState(0);
   const [wrongSide, setWrongSide] = useState<"left" | "right" | null>(null);

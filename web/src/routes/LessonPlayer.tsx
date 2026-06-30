@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
-import { Star } from "lucide-react";
+import { Star, Shuffle } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { api } from "@/lib/api";
 import type { Lesson, LessonSummary } from "@/lib/types";
@@ -27,6 +27,8 @@ export function LessonPlayer() {
   const [earned, setEarned] = useState(0);
   const [mood, setMood] = useState<BiboMood>("idle");
   const [almost, setAlmost] = useState(false);
+  // Bumping `round` remounts the activity, which draws a fresh random sample.
+  const [round, setRound] = useState(0);
   // The active sub-question's instruction, reported by stepped activities.
   const [prompt, setPrompt] = useState<{ text: string; tts: string } | null>(null);
 
@@ -51,6 +53,17 @@ export function LessonPlayer() {
 
   // No auto-narration — the prompt is only spoken when the child taps Listen.
   const onPrompt = useCallback((p: { text: string; tts: string }) => setPrompt(p), []);
+
+  // Shuffle: draw a new random sample of the same lesson, without navigating.
+  const reshuffle = useCallback(() => {
+    play("pop");
+    setSolved(false);
+    setEarned(0);
+    setMood("idle");
+    setPrompt(null);
+    setAlmost(false);
+    setRound((r) => r + 1);
+  }, []);
 
   // Shown instruction text and spoken text: the active question overrides the
   // lesson-level instruction when a set reports one.
@@ -93,6 +106,15 @@ export function LessonPlayer() {
   const idx = siblings.findIndex((s) => s.id === lesson.id);
   const next = idx >= 0 && idx < siblings.length - 1 ? siblings[idx + 1] : null;
   const lessonsPath = `/subject/${lesson.subject}/grade/${lesson.grade}`;
+  // Lessons with a pool (questions/pairs/problems/comparisons) can be reshuffled
+  // for a fresh random sample.
+  const poolSize =
+    (lesson.questions?.length ?? 0) +
+    (lesson.pairs?.length ?? 0) +
+    (lesson.problems?.length ?? 0) +
+    (lesson.comparisons?.length ?? 0) +
+    (lesson.sentences?.length ?? 0);
+  const samplable = poolSize > 1;
 
   return (
     <AppShell back={lessonsPath}>
@@ -111,7 +133,19 @@ export function LessonPlayer() {
           {instructionText}
         </p>
 
-        <ListenButton text={spokenText} locale={locale} />
+        <div className="flex items-center gap-3">
+          <ListenButton text={spokenText} locale={locale} />
+          {samplable && (
+            <button
+              onClick={reshuffle}
+              aria-label={t("app.shuffle")}
+              className="tap inline-flex items-center gap-2 rounded-blob bg-white/10 px-5 py-3 font-display font-semibold text-cream hover:bg-white/20"
+            >
+              <Shuffle className="h-6 w-6" />
+              {t("app.shuffle")}
+            </button>
+          )}
+        </div>
 
         {/* "Almost!" gentle nudge */}
         <AnimatePresence>
@@ -131,6 +165,7 @@ export function LessonPlayer() {
         <div className="flex w-full flex-1 items-center justify-center py-2">
           {Renderer ? (
             <Renderer
+              key={`${lesson.id}-${round}`}
               lesson={lesson}
               locale={locale}
               onCorrect={onCorrect}
@@ -158,7 +193,13 @@ export function LessonPlayer() {
                   />
                 ))}
               </div>
-              <div className="flex gap-3">
+              <div className="flex flex-wrap items-center justify-center gap-3">
+                {samplable && (
+                  <Button size="lg" variant="sun" onClick={reshuffle}>
+                    <Shuffle className="h-6 w-6" />
+                    {t("app.shuffle")}
+                  </Button>
+                )}
                 {next ? (
                   <Button
                     size="lg"

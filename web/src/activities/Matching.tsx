@@ -2,19 +2,23 @@ import { useMemo, useState } from "react";
 import { motion } from "framer-motion";
 import type { Pair } from "@/lib/types";
 import type { ActivityProps } from "./types";
-import { cn, shuffle } from "@/lib/utils";
+import { cn, shuffle, sample } from "@/lib/utils";
 import { speak } from "@/lib/tts";
 import { play } from "@/lib/sfx";
 import { useStore } from "@/store/useStore";
 
 type Side = "left" | "right";
 
+// How many pairs from the pool to present per play.
+const SAMPLE = 5;
+
 // Matching: tap a tile on the left, then its partner on the right. Correct pairs
 // lock in with a mint ring; mismatches give a gentle nudge and reset.
 export function Matching({ lesson, locale, onCorrect, onWrong, solved }: ActivityProps) {
-  const pairs = lesson.pairs ?? [];
   const voiceEnabled = useStore((s) => s.settings?.voice_enabled ?? true);
 
+  // A random sample of the lesson's pair pool for this play.
+  const pairs = useMemo(() => sample(lesson.pairs ?? [], SAMPLE), [lesson.id]);
   const leftCards = useMemo(() => shuffle(pairs), [lesson.id]);
   const rightCards = useMemo(() => shuffle(pairs), [lesson.id]);
 

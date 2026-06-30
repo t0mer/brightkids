@@ -4,8 +4,11 @@ import { Delete } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import type { Problem } from "@/lib/types";
 import type { ActivityProps } from "./types";
-import { cn } from "@/lib/utils";
+import { cn, sample } from "@/lib/utils";
 import { play } from "@/lib/sfx";
+
+// How many problems from the pool to present per play.
+const SAMPLE = 8;
 
 const OP_LABEL: Record<string, string> = {
   "+": "+",
@@ -23,10 +26,10 @@ const OP_LABEL: Record<string, string> = {
 export function Arithmetic({ lesson, onCorrect, onWrong, solved }: ActivityProps) {
   const { t } = useTranslation();
 
-  const problems = useMemo<Problem[]>(
-    () => (lesson.problems?.length ? lesson.problems : lesson.problem ? [lesson.problem] : []),
-    [lesson.id],
-  );
+  const problems = useMemo<Problem[]>(() => {
+    const pool = lesson.problems?.length ? lesson.problems : lesson.problem ? [lesson.problem] : [];
+    return sample(pool, SAMPLE);
+  }, [lesson.id]);
 
   const [index, setIndex] = useState(0);
   const [entry, setEntry] = useState("");

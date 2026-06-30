@@ -2,7 +2,10 @@ import { useEffect, useMemo, useState } from "react";
 import { motion } from "framer-motion";
 import type { Item, Question } from "@/lib/types";
 import type { ActivityProps } from "./types";
-import { shuffle, cn } from "@/lib/utils";
+import { shuffle, sample, cn } from "@/lib/utils";
+
+// How many questions from the pool to present per play.
+const SAMPLE = 5;
 import { speak } from "@/lib/tts";
 import { play } from "@/lib/sfx";
 import { useStore } from "@/store/useStore";
@@ -21,7 +24,7 @@ export function Choice({ lesson, locale, onCorrect, onWrong, solved, onPrompt }:
       lesson.questions && lesson.questions.length > 0
         ? lesson.questions
         : [{ glyph: lesson.glyph, items: lesson.items ?? [] }];
-    return shuffle(qs);
+    return sample(qs, SAMPLE);
   }, [lesson.id]);
 
   const [index, setIndex] = useState(0);

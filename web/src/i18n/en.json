@@ -9,7 +9,8 @@
     "tryAgain": "Try again",
     "listen": "Listen",
     "next": "Next",
-    "done": "I'm done"
+    "done": "I'm done",
+    "shuffle": "Shuffle"
   },
   "profiles": {
     "who": "Who's playing today?",

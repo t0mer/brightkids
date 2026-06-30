@@ -2,23 +2,42 @@ import { useMemo, useState } from "react";
 import { motion } from "framer-motion";
 import type { Item } from "@/lib/types";
 import type { ActivityProps } from "./types";
-import { cn, shuffle } from "@/lib/utils";
+import { cn, shuffle, sample } from "@/lib/utils";
 import { speak } from "@/lib/tts";
 import { play } from "@/lib/sfx";
 import { useStore } from "@/store/useStore";
 
-// DragDrop: arrange tokens into the correct order. Implemented as tap-to-build
-// (tap a token to place it in the next slot, tap a placed token to return it) —
-// far more reliable than HTML5 drag on small touch devices.
-export function DragDrop({ lesson, locale, onCorrect, onWrong, solved }: ActivityProps) {
-  const items = lesson.items ?? [];
-  const solution = lesson.solution ?? [];
-  const voiceEnabled = useStore((s) => s.settings?.voice_enabled ?? true);
-  const byId = useMemo(() => new Map(items.map((i) => [i.id, i])), [lesson.id]);
+// How many sentences from the pool to present per play.
+const SAMPLE = 4;
 
-  const pool = useMemo(() => shuffle(items), [lesson.id]);
+type Round = { items: Item[]; solution: string[] };
+
+// DragDrop: arrange tokens into the correct order (tap-to-build). A lesson may
+// carry a single items+solution, or a `sentences` pool ("רצף המשפט") — a random
+// sample of which is stepped through, scrambled, one sentence at a time.
+export function DragDrop({ lesson, locale, onCorrect, onWrong, solved }: ActivityProps) {
+  const voiceEnabled = useStore((s) => s.settings?.voice_enabled ?? true);
+
+  // Build the rounds for this play: a sample of sentences, or the single set.
+  const rounds = useMemo<Round[]>(() => {
+    if (lesson.sentences && lesson.sentences.length > 0) {
+      return sample(lesson.sentences, SAMPLE).map((words) => ({
+        items: words.map((w, k) => ({ id: `w${k}`, label: w })),
+        solution: words.map((_, k) => `w${k}`),
+      }));
+    }
+    return [{ items: lesson.items ?? [], solution: lesson.solution ?? [] }];
+  }, [lesson.id]);
+
+  const [index, setIndex] = useState(0);
   const [placed, setPlaced] = useState<string[]>([]);
   const [shake, setShake] = useState(false);
+
+  const round = rounds[index];
+  const byId = useMemo(() => new Map(round.items.map((i) => [i.id, i])), [lesson.id, index]);
+  const pool = useMemo(() => shuffle(round.items), [lesson.id, index]);
+  const isLast = index === rounds.length - 1;
+  const showProgress = rounds.length > 1;
 
   const available = pool.filter((i) => !placed.includes(i.id));
 
@@ -46,14 +65,20 @@ export function DragDrop({ lesson, locale, onCorrect, onWrong, solved }: Activit
     if (item.label || item.tts) speak(item.tts || item.label || "", { locale, enabled: voiceEnabled });
     const next = [...placed, item.id];
     setPlaced(next);
-    if (next.length === solution.length) check(next);
+    if (next.length === round.solution.length) check(next);
   }
 
   function check(next: string[]) {
-    const correct = next.every((id, i) => id === solution[i]);
+    const correct = next.every((id, i) => id === round.solution[i]);
     if (correct) {
-      play("ding");
-      onCorrect(lesson.reward.stars);
+      if (isLast) {
+        play("ding");
+        onCorrect(lesson.reward.stars);
+      } else {
+        play("pop");
+        setIndex((i) => i + 1);
+        setPlaced([]);
+      }
     } else {
       play("wrong");
       setShake(true);
@@ -72,7 +97,21 @@ export function DragDrop({ lesson, locale, onCorrect, onWrong, solved }: Activit
   }
 
   return (
-    <div dir={lesson.direction} className="flex w-full flex-col items-center gap-8">
+    <div dir={lesson.direction} className="flex w-full flex-col items-center gap-6">
+      {showProgress && (
+        <div className="flex w-full max-w-xs flex-col gap-1">
+          <span className="ltr-num text-center text-sm text-cream/70">
+            {index + (solved ? 1 : 0)} / {rounds.length}
+          </span>
+          <div className="h-2 w-full overflow-hidden rounded-full bg-white/15">
+            <div
+              className="h-full rounded-full bg-mint transition-all"
+              style={{ width: `${((index + (solved ? 1 : 0)) / rounds.length) * 100}%` }}
+            />
+          </div>
+        </div>
+      )}
+
       {/* Slots */}
       <motion.div
         animate={shake ? { x: [0, -10, 10, -6, 0] } : {}}

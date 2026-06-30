@@ -16,6 +16,12 @@ export function shuffle<T>(arr: readonly T[]): T[] {
   return out;
 }
 
+/** sample returns up to n random items from arr (shuffled). A lesson holds a
+ *  large pool; each play shows a fresh random sample. */
+export function sample<T>(arr: readonly T[], n: number): T[] {
+  return shuffle(arr).slice(0, Math.max(1, Math.min(n, arr.length)));
+}
+
 // Israeli school grades are written as Hebrew-letter ordinals (כיתה א׳, ב׳, …).
 const GRADE_LETTERS = ["א", "ב", "ג", "ד", "ה", "ו", "ז", "ח"];
 
