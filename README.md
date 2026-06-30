@@ -16,12 +16,14 @@ BrightKids is audio-first, mobile-first, and zero-PII: profiles are just a name 
 - **Seven activity types** — letter recognition, multiple choice, counting, arithmetic, matching, drag-to-order, and finger **tracing** (canvas with mask-coverage scoring).
 - **Curriculum-based exercises** — built from a real graded worksheet curriculum. Math (g1–6) spans counting, comparison ("Who is bigger?"), number sense, place value, the four operations, sequences, even/odd, fractions, decimals, order of operations, rounding, word problems, and clock reading. Hebrew (g1–5) covers vowels, reading comprehension, synonyms/opposites, verbs, and sentence ordering; English (g1–4) covers ABC, phonics, word families, and graded reading. Math & Hebrew narrate in Hebrew; English in English.
 - **Randomized practice** — pick a subject then a grade; every lesson holds a large pool and samples a fresh set each play, with a **shuffle** button to redraw for endless variety.
-- **Audio-first** — tap-to-hear narration on every prompt via the Web Speech API (he-IL / en-US), so pre-readers can play. Narration is on-demand (no auto-play), so the screen stays calm.
+- **Optional narration** — text-to-speech is **off by default**; enable it with `BRIGHTKIDS_TTS_ENABLED` for a tap-to-hear **Listen** button (he-IL for Hebrew/Math, en-US for English). No auto-play, so the screen stays calm.
 - **Playful rewards** — confetti, synthesized sound effects, Bibo reactions, stars, and a daily streak. Mistakes get a gentle "try again," never a shaming buzzer.
-- **Accessible** — 48px tap targets, `prefers-reduced-motion` honored, OpenDyslexic toggle, dark mode, high-contrast palette.
+- **Accessible** — 48px tap targets, `prefers-reduced-motion` honored, OpenDyslexic font, high-contrast palette, and picture/visual-first activities so pre-readers can play.
+- **Self-hosted or public** — one binary, two modes via `BRIGHTKIDS_MODE`: **private** (profiles/progress in pure-Go SQLite) or **public** (stateless — no database; profiles live in the browser's localStorage).
+- **SEO-ready** (public mode) — auto-generated `robots.txt` and `sitemap.xml`, per-page browser titles, and per-page Open Graph / Twitter meta with a branded social image. Optional Google Analytics via `BRIGHTKIDS_ANALYTICS_GA_ID`.
 - **Installable PWA** — works offline; lessons and assets (including Hebrew fonts) are precached.
-- **Single binary** — Go serves the embedded SPA, a small JSON API, Prometheus metrics, and health probes. Pure-Go SQLite (no CGO) for local profiles and progress.
-- **Zero PII** — no accounts, no analytics, no per-child identifiers in metrics.
+- **Single binary** — Go serves the embedded SPA, a small JSON API, Prometheus metrics, and health probes.
+- **Zero PII** — no accounts, no per-child identifiers in metrics; analytics is opt-in and off by default.
 
 ## Screenshots
 
@@ -29,7 +31,7 @@ BrightKids is audio-first, mobile-first, and zero-PII: profiles are just a name 
 |---|---|---|---|
 | ![Subjects](assets/screenshots/subjects.png) | ![Grades](assets/screenshots/grades.png) | ![Lessons](assets/screenshots/lessons.png) | ![Rewards](assets/screenshots/rewards.png) |
 
-| Hear it, pick the letter | Match the pairs | Build a sentence | Trace the letters |
+| Picture → first letter | Match the pairs | Build a sentence | Trace the letters |
 |---|---|---|---|
 | ![First sound](assets/screenshots/lesson-letter.png) | ![Matching](assets/screenshots/lesson-match.png) | ![Sentence](assets/screenshots/lesson-sentence.png) | ![Tracing](assets/screenshots/lesson-trace.png) |
 
@@ -37,9 +39,13 @@ BrightKids is audio-first, mobile-first, and zero-PII: profiles are just a name 
 |---|---|---|---|
 | ![Order of operations](assets/screenshots/lesson-math-concept.png) | ![Arithmetic](assets/screenshots/lesson-math-set.png) | ![Compare](assets/screenshots/lesson-compare.png) | ![Word problems](assets/screenshots/lesson-math.png) |
 
-| Settings (parent-gated) | Dark mode | OpenDyslexic |
-|---|---|---|
-| ![Settings](assets/screenshots/settings.png) | ![Dark mode](assets/screenshots/subjects-dark.png) | ![OpenDyslexic](assets/screenshots/lesson-dyslexic.png) |
+| Settings | OpenDyslexic font |
+|---|---|
+| ![Settings](assets/screenshots/settings.png) | ![OpenDyslexic](assets/screenshots/lesson-dyslexic.png) |
+
+Social preview (the Open Graph image served in public mode):
+
+![Social preview](web/public/og-image.png)
 
 ## Quick start
 
