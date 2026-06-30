@@ -1,8 +1,9 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Eraser } from "lucide-react";
 import type { ActivityProps } from "./types";
 import { play } from "@/lib/sfx";
+import { sample } from "@/lib/utils";
 
 const SIZE = 320; // internal canvas resolution (square)
 const CELL = 10; // coverage grid cell size
@@ -22,7 +23,13 @@ export function Tracing({ lesson, onCorrect, solved }: ActivityProps) {
   const last = useRef<{ x: number; y: number } | null>(null);
   const [progress, setProgress] = useState(0);
 
-  const glyph = lesson.glyph ?? "?";
+  // A lesson may carry a single `glyph` or a `glyphs` pool; pick one per play
+  // (re-rolled on shuffle, which remounts this component).
+  const glyph = useMemo(() => {
+    if (lesson.glyphs && lesson.glyphs.length > 0) return sample(lesson.glyphs, 1)[0];
+    return lesson.glyph ?? "?";
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [lesson.id]);
 
   function drawGuide(ctx: CanvasRenderingContext2D) {
     ctx.clearRect(0, 0, SIZE, SIZE);

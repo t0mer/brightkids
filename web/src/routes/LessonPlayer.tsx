@@ -113,7 +113,8 @@ export function LessonPlayer() {
     (lesson.pairs?.length ?? 0) +
     (lesson.problems?.length ?? 0) +
     (lesson.comparisons?.length ?? 0) +
-    (lesson.sentences?.length ?? 0);
+    (lesson.sentences?.length ?? 0) +
+    (lesson.glyphs?.length ?? 0);
   const samplable = poolSize > 1;
 
   return (

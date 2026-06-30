@@ -69,7 +69,11 @@ export function DragDrop({ lesson, locale, onCorrect, onWrong, solved }: Activit
   }
 
   function check(next: string[]) {
-    const correct = next.every((id, i) => id === round.solution[i]);
+    // Compare by label so repeated tokens (e.g. the two א in אִמָּא) are
+    // interchangeable: any arrangement that reads correctly is accepted.
+    const correct = next.every(
+      (id, i) => byId.get(id)?.label === byId.get(round.solution[i])?.label,
+    );
     if (correct) {
       if (isLast) {
         play("ding");

@@ -95,6 +95,7 @@ export interface Lesson {
   comparisons?: Comparison[];
   questions?: Question[];
   glyph?: string;
+  glyphs?: string[];
   solution?: string[];
   sentences?: string[][];
   reward: Reward;
