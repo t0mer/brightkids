@@ -6,20 +6,17 @@ locale: en-US
 direction: ltr
 title: "Build the Sentence"
 activity: drag-drop
-prompt_tts: "Drag the words to make the sentence The cat is big"
-instruction: "גִּרְרוּ אֶת הַמִּלִּים כְּדֵי לִבְנוֹת אֶת הַמִּשְׁפָּט The cat is big"
-items:
-  - id: w1
-    label: "The"
-    tts: "the"
-  - id: w2
-    label: "cat"
-    tts: "cat"
-  - id: w3
-    label: "is"
-    tts: "is"
-  - id: w4
-    label: "big"
-    tts: "big"
-solution: [w1, w2, w3, w4]
+prompt_tts: "Put the words in order to make a sentence"
+instruction: "סַדְּרוּ אֶת הַמִּלִּים כְּדֵי לִבְנוֹת מִשְׁפָּט"
+sentences:
+  - ["The", "cat", "is", "big"]
+  - ["I", "like", "to", "play", "outside"]
+  - ["The", "dog", "runs", "very", "fast"]
+  - ["We", "go", "to", "school", "today"]
+  - ["The", "bird", "can", "fly", "high"]
+  - ["She", "reads", "a", "long", "book"]
+  - ["My", "friend", "has", "a", "cat"]
+  - ["The", "sun", "is", "bright", "today"]
+  - ["He", "likes", "to", "eat", "apples"]
+  - ["The", "fish", "swims", "in", "the", "sea"]
 reward: { stars: 1, sfx: pop, effect: stars }

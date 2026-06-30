@@ -4,22 +4,19 @@ grade: 3
 difficulty: 2
 locale: en-US
 direction: ltr
-title: "Build the Word FROG"
+title: "Build a Sentence"
 activity: drag-drop
-prompt_tts: "Put the letters in order to spell frog"
-instruction: "סַדְּרוּ אֶת הָאוֹתִיּוֹת כְּדֵי לְאַיֵּת אֶת frog"
-items:
-  - id: f
-    label: "f"
-    tts: "f"
-  - id: r
-    label: "r"
-    tts: "r"
-  - id: o
-    label: "o"
-    tts: "o"
-  - id: g
-    label: "g"
-    tts: "g"
-solution: [f, r, o, g]
+prompt_tts: "Put the words in order to make a sentence"
+instruction: "סַדְּרוּ אֶת הַמִּלִּים כְּדֵי לִבְנוֹת מִשְׁפָּט"
+sentences:
+  - ["The", "frog", "is", "green"]
+  - ["A", "bird", "sits", "in", "the", "tree"]
+  - ["My", "dog", "likes", "to", "run"]
+  - ["The", "sun", "is", "very", "hot"]
+  - ["I", "read", "a", "good", "book"]
+  - ["The", "fish", "swims", "in", "water"]
+  - ["We", "play", "in", "the", "park"]
+  - ["The", "cat", "sleeps", "all", "day"]
+  - ["She", "has", "a", "red", "ball"]
+  - ["The", "boy", "rides", "a", "bike"]
 reward: { stars: 2, sfx: chime, effect: sparkle }

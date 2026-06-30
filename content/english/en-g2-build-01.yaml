@@ -4,19 +4,19 @@ grade: 2
 difficulty: 2
 locale: en-US
 direction: ltr
-title: "Build the Word CAT"
+title: "Build a Sentence"
 activity: drag-drop
-prompt_tts: "Drag the letters to spell the word cat"
-instruction: "גִּרְרוּ אֶת הָאוֹתִיּוֹת כְּדֵי לְאַיֵּת אֶת הַמִּלָּה cat"
-items:
-  - id: c1
-    label: "C"
-    tts: "C"
-  - id: c2
-    label: "A"
-    tts: "A"
-  - id: c3
-    label: "T"
-    tts: "T"
-solution: [c1, c2, c3]
+prompt_tts: "Put the words in order to make a sentence"
+instruction: "סַדְּרוּ אֶת הַמִּלִּים כְּדֵי לִבְנוֹת מִשְׁפָּט"
+sentences:
+  - ["The", "cat", "runs"]
+  - ["I", "see", "a", "dog"]
+  - ["The", "sun", "is", "hot"]
+  - ["A", "bird", "can", "fly"]
+  - ["The", "dog", "is", "big"]
+  - ["I", "like", "my", "cat"]
+  - ["The", "fish", "can", "swim"]
+  - ["We", "play", "with", "a", "ball"]
+  - ["The", "cow", "is", "brown"]
+  - ["I", "have", "a", "hat"]
 reward: { stars: 1, sfx: pop, effect: stars }

@@ -6,20 +6,17 @@ locale: en-US
 direction: ltr
 title: "Build a Sentence"
 activity: drag-drop
-prompt_tts: "Put the words in order to make a sentence: I like to read"
-instruction: "סַדְּרוּ אֶת הַמִּלִּים כְּדֵי לִבְנוֹת מִשְׁפָּט: I like to read"
-items:
-  - id: i
-    label: "I"
-    tts: "I"
-  - id: like
-    label: "like"
-    tts: "like"
-  - id: to
-    label: "to"
-    tts: "to"
-  - id: read
-    label: "read"
-    tts: "read"
-solution: [i, like, to, read]
+prompt_tts: "Put the words in order to make a sentence"
+instruction: "סַדְּרוּ אֶת הַמִּלִּים כְּדֵי לִבְנוֹת מִשְׁפָּט"
+sentences:
+  - ["I", "like", "to", "read"]
+  - ["The", "rain", "falls", "from", "the", "sky"]
+  - ["We", "play", "games", "after", "school"]
+  - ["My", "mom", "makes", "good", "food"]
+  - ["The", "tree", "is", "tall", "and", "green"]
+  - ["She", "sings", "a", "happy", "song"]
+  - ["The", "baby", "is", "fast", "asleep"]
+  - ["I", "have", "two", "little", "dogs"]
+  - ["The", "car", "is", "fast", "and", "red"]
+  - ["We", "see", "many", "stars", "at", "night"]
 reward: { stars: 2, sfx: chime, effect: sparkle }

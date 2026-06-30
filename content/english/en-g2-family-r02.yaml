@@ -4,19 +4,19 @@ grade: 2
 difficulty: 2
 locale: en-US
 direction: ltr
-title: "Build the Word CAT"
+title: "Word Family Sentences"
 activity: drag-drop
-prompt_tts: "Put the letters in order to spell cat"
-instruction: "סַדְּרוּ אֶת הָאוֹתִיּוֹת כְּדֵי לְאַיֵּת אֶת cat"
-items:
-  - id: c
-    label: "c"
-    tts: "c"
-  - id: a
-    label: "a"
-    tts: "a"
-  - id: t
-    label: "t"
-    tts: "t"
-solution: [c, a, t]
+prompt_tts: "Put the words in order to make a sentence"
+instruction: "סַדְּרוּ אֶת הַמִּלִּים כְּדֵי לִבְנוֹת מִשְׁפָּט"
+sentences:
+  - ["The", "cat", "sat", "down"]
+  - ["A", "rat", "ran", "fast"]
+  - ["The", "man", "has", "a", "hat"]
+  - ["I", "can", "see", "a", "bat"]
+  - ["The", "fan", "is", "on"]
+  - ["A", "pan", "is", "hot"]
+  - ["The", "cat", "ran", "fast"]
+  - ["I", "pat", "the", "cat"]
+  - ["The", "van", "is", "tan"]
+  - ["A", "man", "can", "run"]
 reward: { stars: 2, sfx: chime, effect: sparkle }

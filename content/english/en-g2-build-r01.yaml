@@ -4,19 +4,19 @@ grade: 2
 difficulty: 2
 locale: en-US
 direction: ltr
-title: "Build the Word SUN"
+title: "Make a Sentence"
 activity: drag-drop
-prompt_tts: "Put the letters in order to spell sun"
-instruction: "סַדְּרוּ אֶת הָאוֹתִיּוֹת כְּדֵי לְאַיֵּת אֶת sun"
-items:
-  - id: s
-    label: "s"
-    tts: "s"
-  - id: u
-    label: "u"
-    tts: "u"
-  - id: n
-    label: "n"
-    tts: "n"
-solution: [s, u, n]
+prompt_tts: "Put the words in order to make a sentence"
+instruction: "סַדְּרוּ אֶת הַמִּלִּים כְּדֵי לִבְנוֹת מִשְׁפָּט"
+sentences:
+  - ["The", "frog", "jumps"]
+  - ["I", "see", "the", "sun"]
+  - ["A", "cat", "sat", "down"]
+  - ["The", "bus", "is", "red"]
+  - ["My", "dog", "can", "run"]
+  - ["The", "duck", "is", "yellow"]
+  - ["I", "like", "to", "play"]
+  - ["The", "pig", "is", "pink"]
+  - ["We", "see", "a", "bug"]
+  - ["The", "ball", "is", "round"]
 reward: { stars: 2, sfx: pop, effect: sparkle }
