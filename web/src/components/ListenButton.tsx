@@ -12,11 +12,15 @@ interface ListenButtonProps {
   big?: boolean;
 }
 
-// ListenButton narrates a prompt on demand. Present on every activity so a
-// pre-reader can always hear the instruction (respects the voice toggle).
+// ListenButton narrates a prompt on demand. Only rendered when text-to-speech
+// is enabled via server config; otherwise it's hidden entirely. Respects the
+// per-profile voice toggle.
 export function ListenButton({ text, locale, className, big }: ListenButtonProps) {
   const { t } = useTranslation();
+  const ttsEnabled = useStore((s) => s.ttsEnabled);
   const voiceEnabled = useStore((s) => s.settings?.voice_enabled ?? true);
+
+  if (!ttsEnabled) return null;
 
   return (
     <button

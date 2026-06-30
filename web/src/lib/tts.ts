@@ -1,6 +1,8 @@
 // Text-to-speech via the Web Speech API, with locale-aware voice selection.
 // A pre-recorded audio fallback can be layered later via Lesson.audio paths.
 
+import { ttsEnabled } from "./appConfig";
+
 let voicesCache: SpeechSynthesisVoice[] = [];
 
 function loadVoices(): SpeechSynthesisVoice[] {
@@ -31,11 +33,12 @@ export interface SpeakOptions {
   rate?: number;
 }
 
-/** speak narrates text in the requested locale. No-op when disabled or
- *  unsupported, so callers never need to guard. */
+/** speak narrates text in the requested locale. No-op when text-to-speech is
+ *  disabled (globally via config, or per-profile), or unsupported, so callers
+ *  never need to guard. */
 export function speak(text: string, opts: SpeakOptions = {}): void {
   const { locale = "he-IL", enabled = true, rate = 0.92 } = opts;
-  if (!enabled || !text) return;
+  if (!ttsEnabled() || !enabled || !text) return; // off by default unless enabled by config
   if (typeof window === "undefined" || !window.speechSynthesis) return;
 
   window.speechSynthesis.cancel();

@@ -5,21 +5,14 @@
 
 import { api } from "./api";
 import * as local from "./localData";
+import { loadConfig, type AppMode } from "./appConfig";
 import type { Profile, ProgressSummary, Settings, Subject } from "./types";
 
-export type AppMode = "public" | "private";
-
-let modePromise: Promise<AppMode> | null = null;
+export type { AppMode };
 
 /** appMode resolves (and caches) the server's storage mode, defaulting to private. */
-export function appMode(): Promise<AppMode> {
-  if (!modePromise) {
-    modePromise = fetch("/api/v1/config")
-      .then((r) => (r.ok ? (r.json() as Promise<{ mode?: string }>) : { mode: "private" }))
-      .then((c) => (c.mode === "public" ? "public" : "private"))
-      .catch(() => "private" as AppMode);
-  }
-  return modePromise;
+export async function appMode(): Promise<AppMode> {
+  return (await loadConfig()).mode;
 }
 
 async function isPublic(): Promise<boolean> {
