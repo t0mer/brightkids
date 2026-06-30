@@ -8,5 +8,5 @@ title: "Trace the Letters"
 activity: tracing
 prompt_tts: "Trace the letter"
 instruction: "עִקְבוּ אַחֲרֵי הָאוֹת"
-glyphs: ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M"]
+glyphs: ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m"]
 reward: { stars: 1, sfx: pop, effect: stars }

@@ -4,10 +4,10 @@ grade: 3
 difficulty: 2
 locale: en-US
 direction: ltr
-title: "Reading: Moki the Cat"
+title: "Reading"
 activity: multiple-choice
-prompt_tts: "Read about Moki and answer."
-instruction: "קִרְאוּ עַל Moki וְעַנּוּ."
+prompt_tts: "Read and answer."
+instruction: "קִרְאוּ וְעַנּוּ."
 questions:
   - prompt: "Moki is a cat. Moki is black. What color is Moki?"
     prompt_text: "Moki הוּא חָתוּל. Moki שָׁחֹר. בְּאֵיזֶה צֶבַע Moki?"
@@ -81,4 +81,220 @@ questions:
       - { id: o1, label: "big", tts: "big" }
       - { id: o2, label: "tall", tts: "tall" }
       - { id: o3, label: "small", correct: true, tts: "small" }
+  - prompt: "Moki runs to the box. Where does Moki run?"
+    prompt_text: "Moki רָץ אֶל הַקֻּפְסָה. לְאָן Moki רָץ?"
+    items:
+      - { id: o1, label: "to the box", correct: true, tts: "to the box" }
+      - { id: o2, label: "to the tree", tts: "to the tree" }
+      - { id: o3, label: "to the car", tts: "to the car" }
+  - prompt: "Moki jumps on the bed. What does Moki jump on?"
+    prompt_text: "Moki קוֹפֵץ עַל הַמִּטָּה. עַל מָה Moki קוֹפֵץ?"
+    items:
+      - { id: o1, label: "the bed", correct: true, tts: "the bed" }
+      - { id: o2, label: "the chair", tts: "the chair" }
+      - { id: o3, label: "the table", tts: "the table" }
+  - prompt: "Moki sees a bird. What does Moki see?"
+    prompt_text: "Moki רוֹאֶה צִפּוֹר. מָה Moki רוֹאֶה?"
+    items:
+      - { id: o1, label: "a bird", correct: true, tts: "a bird" }
+      - { id: o2, label: "a fish", tts: "a fish" }
+      - { id: o3, label: "a frog", tts: "a frog" }
+  - prompt: "Moki runs very fast. How does Moki run?"
+    prompt_text: "Moki רָץ מַהֵר מְאוֹד. אֵיךְ Moki רָץ?"
+    items:
+      - { id: o1, label: "fast", correct: true, tts: "fast" }
+      - { id: o2, label: "slow", tts: "slow" }
+      - { id: o3, label: "soft", tts: "soft" }
+  - prompt: "Moki climbs a tall tree. What does Moki climb?"
+    prompt_text: "Moki מְטַפֵּס עַל עֵץ גָּבוֹהַּ. עַל מָה Moki מְטַפֵּס?"
+    items:
+      - { id: o1, label: "a wall", tts: "a wall" }
+      - { id: o2, label: "a tree", correct: true, tts: "a tree" }
+      - { id: o3, label: "a hill", tts: "a hill" }
+  - prompt: "Moki plays with a ball. What does Moki play with?"
+    prompt_text: "Moki מְשַׂחֵק עִם כַּדּוּר. עִם מָה Moki מְשַׂחֵק?"
+    items:
+      - { id: o1, label: "a stick", tts: "a stick" }
+      - { id: o2, label: "a book", tts: "a book" }
+      - { id: o3, label: "a ball", correct: true, tts: "a ball" }
+  - prompt: "Moki hides under the table. Where does Moki hide?"
+    prompt_text: "Moki מִתְחַבֵּא מִתַּחַת לַשֻּׁלְחָן. אֵיפֹה Moki מִתְחַבֵּא?"
+    items:
+      - { id: o1, label: "under the table", correct: true, tts: "under the table" }
+      - { id: o2, label: "under the bed", tts: "under the bed" }
+      - { id: o3, label: "under the car", tts: "under the car" }
+  - prompt: "Moki sits on a soft mat. Where does Moki sit?"
+    prompt_text: "Moki יוֹשֵׁב עַל מַחְצֶלֶת רַכָּה. אֵיפֹה Moki יוֹשֵׁב?"
+    items:
+      - { id: o1, label: "on a box", tts: "on a box" }
+      - { id: o2, label: "on a mat", correct: true, tts: "on a mat" }
+      - { id: o3, label: "on a hat", tts: "on a hat" }
+  - prompt: "Moki runs in the morning. When does Moki run?"
+    prompt_text: "Moki רָץ בַּבֹּקֶר. מָתַי Moki רָץ?"
+    items:
+      - { id: o1, label: "at night", tts: "at night" }
+      - { id: o2, label: "never", tts: "never" }
+      - { id: o3, label: "in the morning", correct: true, tts: "in the morning" }
+  - prompt: "Moki runs to Dan. Who does Moki run to?"
+    prompt_text: "Moki רָץ אֶל Dan. אֶל מִי Moki רָץ?"
+    items:
+      - { id: o1, label: "Dan", correct: true, tts: "Dan" }
+      - { id: o2, label: "the dog", tts: "the dog" }
+      - { id: o3, label: "the bird", tts: "the bird" }
+  - prompt: "Moki catches the ball. What does Moki catch?"
+    prompt_text: "Moki תּוֹפֵס אֶת הַכַּדּוּר. מָה Moki תּוֹפֵס?"
+    items:
+      - { id: o1, label: "the bird", tts: "the bird" }
+      - { id: o2, label: "the ball", correct: true, tts: "the ball" }
+      - { id: o3, label: "the fish", tts: "the fish" }
+  - prompt: "Moki runs to the garden. Where does Moki run?"
+    prompt_text: "Moki רָץ אֶל הַגִּנָּה. לְאָן Moki רָץ?"
+    items:
+      - { id: o1, label: "to the shop", tts: "to the shop" }
+      - { id: o2, label: "to the school", tts: "to the school" }
+      - { id: o3, label: "to the garden", correct: true, tts: "to the garden" }
+  - prompt: "Jim has a big red ball. He plays in the park. What does Jim have?"
+    prompt_text: "לְ-Jim יֵשׁ כַּדּוּר אָדֹם גָּדוֹל. הוּא מְשַׂחֵק בַּפַּארְק. מָה יֵשׁ לְ-Jim?"
+    items:
+      - { id: o1, label: "a red ball", correct: true, tts: "a red ball" }
+      - { id: o2, label: "a red dog", tts: "a red dog" }
+      - { id: o3, label: "a red hat", tts: "a red hat" }
+  - prompt: "Jim has a big red ball. He plays in the park. Where does Jim play?"
+    prompt_text: "לְ-Jim יֵשׁ כַּדּוּר אָדֹם גָּדוֹל. הוּא מְשַׂחֵק בַּפַּארְק. אֵיפֹה Jim מְשַׂחֵק?"
+    items:
+      - { id: o1, label: "in the park", correct: true, tts: "in the park" }
+      - { id: o2, label: "at home", tts: "at home" }
+      - { id: o3, label: "at school", tts: "at school" }
+  - prompt: "Jim has a big red ball. What color is the ball?"
+    prompt_text: "לְ-Jim יֵשׁ כַּדּוּר אָדֹם גָּדוֹל. בְּאֵיזֶה צֶבַע הַכַּדּוּר?"
+    items:
+      - { id: o1, label: "red", correct: true, tts: "red" }
+      - { id: o2, label: "blue", tts: "blue" }
+      - { id: o3, label: "green", tts: "green" }
+  - prompt: "Jim has a red ball. The ball is round. What shape is the ball?"
+    prompt_text: "לְ-Jim יֵשׁ כַּדּוּר אָדֹם. הַכַּדּוּר עָגֹל. אֵיזוֹ צוּרָה לַכַּדּוּר?"
+    items:
+      - { id: o1, label: "round", correct: true, tts: "round" }
+      - { id: o2, label: "square", tts: "square" }
+      - { id: o3, label: "flat", tts: "flat" }
+  - prompt: "Jim is a boy. He likes to play. What is Jim?"
+    prompt_text: "Jim הוּא יֶלֶד. הוּא אוֹהֵב לְשַׂחֵק. מָה Jim?"
+    items:
+      - { id: o1, label: "a girl", tts: "a girl" }
+      - { id: o2, label: "a boy", correct: true, tts: "a boy" }
+      - { id: o3, label: "a dog", tts: "a dog" }
+  - prompt: "Jim kicks the ball with his foot. What does Jim do to the ball?"
+    prompt_text: "Jim בּוֹעֵט בַּכַּדּוּר עִם הָרֶגֶל. מָה Jim עוֹשֶׂה לַכַּדּוּר?"
+    items:
+      - { id: o1, label: "eats it", tts: "eats it" }
+      - { id: o2, label: "reads it", tts: "reads it" }
+      - { id: o3, label: "kicks it", correct: true, tts: "kicks it" }
+  - prompt: "Jim has a dog named Rex. What is the dog's name?"
+    prompt_text: "לְ-Jim יֵשׁ כֶּלֶב בְּשֵׁם Rex. מָה הַשֵּׁם שֶׁל הַכֶּלֶב?"
+    items:
+      - { id: o1, label: "Rex", correct: true, tts: "Rex" }
+      - { id: o2, label: "Jim", tts: "Jim" }
+      - { id: o3, label: "Pip", tts: "Pip" }
+  - prompt: "Jim has a big red ball. Is the ball big or small?"
+    prompt_text: "לְ-Jim יֵשׁ כַּדּוּר אָדֹם גָּדוֹל. הַכַּדּוּר גָּדוֹל אוֹ קָטָן?"
+    items:
+      - { id: o1, label: "small", tts: "small" }
+      - { id: o2, label: "tiny", tts: "tiny" }
+      - { id: o3, label: "big", correct: true, tts: "big" }
+  - prompt: "Jim plays with his friend Sam. Who does Jim play with?"
+    prompt_text: "Jim מְשַׂחֵק עִם הֶחָבֵר שֶׁלּוֹ Sam. עִם מִי Jim מְשַׂחֵק?"
+    items:
+      - { id: o1, label: "Sam", correct: true, tts: "Sam" }
+      - { id: o2, label: "Rex", tts: "Rex" }
+      - { id: o3, label: "a cat", tts: "a cat" }
+  - prompt: "Jim is happy when he plays. How does Jim feel?"
+    prompt_text: "Jim שָׂמֵחַ כְּשֶׁהוּא מְשַׂחֵק. אֵיךְ Jim מַרְגִּישׁ?"
+    items:
+      - { id: o1, label: "sad", tts: "sad" }
+      - { id: o2, label: "happy", correct: true, tts: "happy" }
+      - { id: o3, label: "angry", tts: "angry" }
+  - prompt: "Jim runs fast in the park. How does Jim run?"
+    prompt_text: "Jim רָץ מַהֵר בַּפַּארְק. אֵיךְ Jim רָץ?"
+    items:
+      - { id: o1, label: "slow", tts: "slow" }
+      - { id: o2, label: "never", tts: "never" }
+      - { id: o3, label: "fast", correct: true, tts: "fast" }
+  - prompt: "Jim plays in the park every day. When does Jim play?"
+    prompt_text: "Jim מְשַׂחֵק בַּפַּארְק כָּל יוֹם. מָתַי Jim מְשַׂחֵק?"
+    items:
+      - { id: o1, label: "every day", correct: true, tts: "every day" }
+      - { id: o2, label: "never", tts: "never" }
+      - { id: o3, label: "last year", tts: "last year" }
+  - prompt: "Pip is a little bird. What is Pip?"
+    prompt_text: "Pip הִיא צִפּוֹר קְטַנָּה. מָה Pip?"
+    items:
+      - { id: o1, label: "a bird", correct: true, tts: "a bird" }
+      - { id: o2, label: "a cat", tts: "a cat" }
+      - { id: o3, label: "a fish", tts: "a fish" }
+  - prompt: "Pip lives in a tall tree. Where does Pip live?"
+    prompt_text: "Pip גָּרָה בְּעֵץ גָּבוֹהַּ. אֵיפֹה Pip גָּרָה?"
+    items:
+      - { id: o1, label: "in a tree", correct: true, tts: "in a tree" }
+      - { id: o2, label: "in a box", tts: "in a box" }
+      - { id: o3, label: "in a car", tts: "in a car" }
+  - prompt: "Pip sings every morning. When does Pip sing?"
+    prompt_text: "Pip שָׁרָה כָּל בֹּקֶר. מָתַי Pip שָׁרָה?"
+    items:
+      - { id: o1, label: "every morning", correct: true, tts: "every morning" }
+      - { id: o2, label: "every night", tts: "every night" }
+      - { id: o3, label: "never", tts: "never" }
+  - prompt: "Pip is a little bird. Is Pip big or little?"
+    prompt_text: "Pip הִיא צִפּוֹר קְטַנָּה. Pip גְּדוֹלָה אוֹ קְטַנָּה?"
+    items:
+      - { id: o1, label: "little", correct: true, tts: "little" }
+      - { id: o2, label: "big", tts: "big" }
+      - { id: o3, label: "tall", tts: "tall" }
+  - prompt: "Pip has blue feathers. What color are Pip's feathers?"
+    prompt_text: "לְ-Pip יֵשׁ נוֹצוֹת כְּחֻלּוֹת. בְּאֵיזֶה צֶבַע הַנּוֹצוֹת שֶׁל Pip?"
+    items:
+      - { id: o1, label: "blue", correct: true, tts: "blue" }
+      - { id: o2, label: "red", tts: "red" }
+      - { id: o3, label: "green", tts: "green" }
+  - prompt: "Pip flies high in the sky. Where does Pip fly?"
+    prompt_text: "Pip עָפָה גָּבוֹהַּ בַּשָּׁמַיִם. אֵיפֹה Pip עָפָה?"
+    items:
+      - { id: o1, label: "in the sea", tts: "in the sea" }
+      - { id: o2, label: "high in the sky", correct: true, tts: "high in the sky" }
+      - { id: o3, label: "under the ground", tts: "under the ground" }
+  - prompt: "Pip eats little seeds. What does Pip eat?"
+    prompt_text: "Pip אוֹכֶלֶת זְרָעִים קְטַנִּים. מָה Pip אוֹכֶלֶת?"
+    items:
+      - { id: o1, label: "fish", tts: "fish" }
+      - { id: o2, label: "cake", tts: "cake" }
+      - { id: o3, label: "seeds", correct: true, tts: "seeds" }
+  - prompt: "Pip has small wings. What does Pip use to fly?"
+    prompt_text: "לְ-Pip יֵשׁ כְּנָפַיִם קְטַנּוֹת. בְּמָה Pip מִשְׁתַּמֶּשֶׁת כְּדֵי לָעוּף?"
+    items:
+      - { id: o1, label: "her wings", correct: true, tts: "her wings" }
+      - { id: o2, label: "her feet", tts: "her feet" }
+      - { id: o3, label: "her tail", tts: "her tail" }
+  - prompt: "Pip builds a nest in the tree. What does Pip build?"
+    prompt_text: "Pip בּוֹנָה קֵן בָּעֵץ. מָה Pip בּוֹנָה?"
+    items:
+      - { id: o1, label: "a house", tts: "a house" }
+      - { id: o2, label: "a nest", correct: true, tts: "a nest" }
+      - { id: o3, label: "a box", tts: "a box" }
+  - prompt: "Pip has two baby birds. How many babies does Pip have?"
+    prompt_text: "לְ-Pip יֵשׁ שְׁנֵי גּוֹזָלִים. כַּמָּה גּוֹזָלִים יֵשׁ לְ-Pip?"
+    items:
+      - { id: o1, label: "two", correct: true, tts: "two" }
+      - { id: o2, label: "five", tts: "five" }
+      - { id: o3, label: "ten", tts: "ten" }
+  - prompt: "Pip drinks water from the lake. What does Pip drink?"
+    prompt_text: "Pip שׁוֹתָה מַיִם מִן הָאֲגַם. מָה Pip שׁוֹתָה?"
+    items:
+      - { id: o1, label: "milk", tts: "milk" }
+      - { id: o2, label: "juice", tts: "juice" }
+      - { id: o3, label: "water", correct: true, tts: "water" }
+  - prompt: "Pip sings a happy song. What kind of song does Pip sing?"
+    prompt_text: "Pip שָׁרָה שִׁיר שָׂמֵחַ. אֵיזֶה שִׁיר Pip שָׁרָה?"
+    items:
+      - { id: o1, label: "a happy song", correct: true, tts: "a happy song" }
+      - { id: o2, label: "a sad song", tts: "a sad song" }
+      - { id: o3, label: "no song", tts: "no song" }
 reward: { stars: 3, sfx: ding, effect: confetti }

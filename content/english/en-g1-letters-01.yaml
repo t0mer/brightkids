@@ -4,7 +4,7 @@ grade: 1
 difficulty: 1
 locale: en-US
 direction: ltr
-title: "Find the Letter A"
+title: "Find the Letter"
 activity: letter-recognition
 prompt_tts: "Find the letter"
 instruction: "מִצְאוּ אֶת הָאוֹת"
@@ -123,4 +123,40 @@ questions:
       - { id: o1, label: "N", tts: "N" }
       - { id: o2, label: "S", tts: "S" }
       - { id: o3, label: "Z", correct: true, tts: "Z" }
+  - prompt: "Find the letter M"
+    prompt_text: "מִצְאוּ אֶת הָאוֹת M"
+    items:
+      - { id: o1, label: "M", correct: true, tts: "M" }
+      - { id: o2, label: "A", tts: "A" }
+      - { id: o3, label: "S", tts: "S" }
+  - prompt: "Find the letter I"
+    prompt_text: "מִצְאוּ אֶת הָאוֹת I"
+    items:
+      - { id: o1, label: "L", tts: "L" }
+      - { id: o2, label: "J", tts: "J" }
+      - { id: o3, label: "I", correct: true, tts: "I" }
+  - prompt: "Find the letter O"
+    prompt_text: "מִצְאוּ אֶת הָאוֹת O"
+    items:
+      - { id: o1, label: "Q", tts: "Q" }
+      - { id: o2, label: "C", tts: "C" }
+      - { id: o3, label: "O", correct: true, tts: "O" }
+  - prompt: "Find the letter U"
+    prompt_text: "מִצְאוּ אֶת הָאוֹת U"
+    items:
+      - { id: o1, label: "V", tts: "V" }
+      - { id: o2, label: "W", tts: "W" }
+      - { id: o3, label: "U", correct: true, tts: "U" }
+  - prompt: "Find the letter K"
+    prompt_text: "מִצְאוּ אֶת הָאוֹת K"
+    items:
+      - { id: o1, label: "K", correct: true, tts: "K" }
+      - { id: o2, label: "H", tts: "H" }
+      - { id: o3, label: "X", tts: "X" }
+  - prompt: "Find the letter Q"
+    prompt_text: "מִצְאוּ אֶת הָאוֹת Q"
+    items:
+      - { id: o1, label: "Q", correct: true, tts: "Q" }
+      - { id: o2, label: "O", tts: "O" }
+      - { id: o3, label: "G", tts: "G" }
 reward: { stars: 3, sfx: ding, effect: confetti }

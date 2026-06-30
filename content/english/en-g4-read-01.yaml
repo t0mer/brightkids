@@ -4,10 +4,10 @@ grade: 4
 difficulty: 3
 locale: en-US
 direction: ltr
-title: "Read and Answer"
+title: "Reading"
 activity: multiple-choice
-prompt_tts: "Read the sentence and answer."
-instruction: "קִרְאוּ אֶת הַמִּשְׁפָּט וְעַנּוּ."
+prompt_tts: "Read and answer."
+instruction: "קִרְאוּ וְעַנּוּ."
 questions:
   - prompt: "The dog is red. What color is the dog?"
     prompt_text: "הַכֶּלֶב אָדֹם. בְּאֵיזֶה צֶבַע הַכֶּלֶב?"
@@ -81,4 +81,364 @@ questions:
       - { id: o1, label: "Short", tts: "short" }
       - { id: o2, label: "Tall", correct: true, tts: "tall" }
       - { id: o3, label: "Wide", tts: "wide" }
+  - prompt: "Ann reads a book every night before bed. When does Ann read?"
+    prompt_text: "Ann קוֹרֵאת סֵפֶר כָּל לַיְלָה לִפְנֵי הַשֵּׁנָה. מָתַי Ann קוֹרֵאת?"
+    items:
+      - { id: o1, label: "every night", correct: true, tts: "every night" }
+      - { id: o2, label: "every morning", tts: "every morning" }
+      - { id: o3, label: "she never reads", tts: "she never reads" }
+  - prompt: "Ann reads a book every night before bed. What does Ann read?"
+    prompt_text: "Ann קוֹרֵאת סֵפֶר כָּל לַיְלָה לִפְנֵי הַשֵּׁנָה. מָה Ann קוֹרֵאת?"
+    items:
+      - { id: o1, label: "a book", correct: true, tts: "a book" }
+      - { id: o2, label: "a song", tts: "a song" }
+      - { id: o3, label: "a game", tts: "a game" }
+  - prompt: "Ann reads before bed. Does she read in the day or at night?"
+    prompt_text: "Ann קוֹרֵאת לִפְנֵי הַשֵּׁנָה. הִיא קוֹרֵאת בַּיּוֹם אוֹ בַּלַּיְלָה?"
+    items:
+      - { id: o1, label: "at night", correct: true, tts: "at night" }
+      - { id: o2, label: "in the day", tts: "in the day" }
+      - { id: o3, label: "at noon", tts: "at noon" }
+  - prompt: "Ann loves stories about animals. Her favorite book is about a brave lion. What is Ann's favorite book about?"
+    prompt_text: "Ann אוֹהֶבֶת סִפּוּרִים עַל חַיּוֹת. הַסֵּפֶר הָאָהוּב עָלֶיהָ הוּא עַל אַרְיֵה אַמִּיץ. עַל מָה הַסֵּפֶר הָאָהוּב עַל Ann?"
+    items:
+      - { id: o1, label: "a brave lion", correct: true, tts: "a brave lion" }
+      - { id: o2, label: "a fast car", tts: "a fast car" }
+      - { id: o3, label: "a big city", tts: "a big city" }
+  - prompt: "Ann gets her books from the library near her school. Where does Ann get her books?"
+    prompt_text: "Ann מְקַבֶּלֶת אֶת הַסְּפָרִים שֶׁלָּהּ מֵהַסִּפְרִיָּה לְיַד בֵּית הַסֵּפֶר. מֵאֵיפֹה Ann מְקַבֶּלֶת אֶת הַסְּפָרִים?"
+    items:
+      - { id: o1, label: "from the shop", tts: "from the shop" }
+      - { id: o2, label: "from the library", correct: true, tts: "from the library" }
+      - { id: o3, label: "from the park", tts: "from the park" }
+  - prompt: "Ann reads with her little sister every evening. Who reads with Ann?"
+    prompt_text: "Ann קוֹרֵאת עִם אֲחוֹתָהּ הַקְּטַנָּה כָּל עֶרֶב. מִי קוֹרֵא עִם Ann?"
+    items:
+      - { id: o1, label: "her teacher", tts: "her teacher" }
+      - { id: o2, label: "her little sister", correct: true, tts: "her little sister" }
+      - { id: o3, label: "her dog", tts: "her dog" }
+  - prompt: "After she reads, Ann writes the story in her notebook. What does Ann do after she reads?"
+    prompt_text: "אַחֲרֵי שֶׁהִיא קוֹרֵאת, Ann כּוֹתֶבֶת אֶת הַסִּפּוּר בַּמַּחְבֶּרֶת שֶׁלָּהּ. מָה Ann עוֹשָׂה אַחֲרֵי שֶׁהִיא קוֹרֵאת?"
+    items:
+      - { id: o1, label: "she writes the story", correct: true, tts: "she writes the story" }
+      - { id: o2, label: "she eats dinner", tts: "she eats dinner" }
+      - { id: o3, label: "she goes outside", tts: "she goes outside" }
+  - prompt: "Ann reads in her cozy chair by the window. Where does Ann sit to read?"
+    prompt_text: "Ann קוֹרֵאת בַּכֻּרְסָה הַנּוֹחָה שֶׁלָּהּ לְיַד הַחַלּוֹן. אֵיפֹה Ann יוֹשֶׁבֶת כְּדֵי לִקְרֹא?"
+    items:
+      - { id: o1, label: "on the floor", tts: "on the floor" }
+      - { id: o2, label: "in her cozy chair", correct: true, tts: "in her cozy chair" }
+      - { id: o3, label: "in the car", tts: "in the car" }
+  - prompt: "Ann reads one new book each week. How many books does Ann read each week?"
+    prompt_text: "Ann קוֹרֵאת סֵפֶר חָדָשׁ אֶחָד כָּל שָׁבוּעַ. כַּמָּה סְפָרִים Ann קוֹרֵאת כָּל שָׁבוּעַ?"
+    items:
+      - { id: o1, label: "five books", tts: "five books" }
+      - { id: o2, label: "ten books", tts: "ten books" }
+      - { id: o3, label: "one book", correct: true, tts: "one book" }
+  - prompt: "Ann reads because it makes her feel happy and calm. Why does Ann read?"
+    prompt_text: "Ann קוֹרֵאת כִּי זֶה גּוֹרֵם לָהּ לְהַרְגִּישׁ שְׂמֵחָה וּרְגוּעָה. לָמָּה Ann קוֹרֵאת?"
+    items:
+      - { id: o1, label: "it makes her happy and calm", correct: true, tts: "it makes her happy and calm" }
+      - { id: o2, label: "it makes her tired", tts: "it makes her tired" }
+      - { id: o3, label: "it makes her hungry", tts: "it makes her hungry" }
+  - prompt: "When Ann finishes a book, she tells her friends about it. What does Ann do when she finishes a book?"
+    prompt_text: "כְּשֶׁ-Ann מְסַיֶּמֶת סֵפֶר, הִיא מְסַפֶּרֶת לַחֲבֵרִים שֶׁלָּהּ עָלָיו. מָה Ann עוֹשָׂה כְּשֶׁהִיא מְסַיֶּמֶת סֵפֶר?"
+    items:
+      - { id: o1, label: "she hides it", tts: "she hides it" }
+      - { id: o2, label: "she tells her friends", correct: true, tts: "she tells her friends" }
+      - { id: o3, label: "she throws it away", tts: "she throws it away" }
+  - prompt: "Ann keeps all her books on a tall blue shelf. Where does Ann keep her books?"
+    prompt_text: "Ann שׁוֹמֶרֶת אֶת כָּל הַסְּפָרִים שֶׁלָּהּ עַל מַדָּף כָּחֹל גָּבוֹהַּ. אֵיפֹה Ann שׁוֹמֶרֶת אֶת הַסְּפָרִים?"
+    items:
+      - { id: o1, label: "on a tall blue shelf", correct: true, tts: "on a tall blue shelf" }
+      - { id: o2, label: "under her bed", tts: "under her bed" }
+      - { id: o3, label: "in the kitchen", tts: "in the kitchen" }
+  - prompt: "Dan swims in the sea with his friends on Saturday. Where does Dan swim?"
+    prompt_text: "Dan שׂוֹחֶה בַּיָּם עִם חֲבֵרָיו בְּשַׁבָּת. אֵיפֹה Dan שׂוֹחֶה?"
+    items:
+      - { id: o1, label: "in the sea", correct: true, tts: "in the sea" }
+      - { id: o2, label: "in a pool", tts: "in a pool" }
+      - { id: o3, label: "in a river", tts: "in a river" }
+  - prompt: "Dan swims in the sea with his friends on Saturday. Who swims with Dan?"
+    prompt_text: "Dan שׂוֹחֶה בַּיָּם עִם חֲבֵרָיו בְּשַׁבָּת. מִי שׂוֹחֶה עִם Dan?"
+    items:
+      - { id: o1, label: "his friends", correct: true, tts: "his friends" }
+      - { id: o2, label: "his teacher", tts: "his teacher" }
+      - { id: o3, label: "his dog", tts: "his dog" }
+  - prompt: "Dan swims in the sea with his friends on Saturday. When does Dan swim?"
+    prompt_text: "Dan שׂוֹחֶה בַּיָּם עִם חֲבֵרָיו בְּשַׁבָּת. מָתַי Dan שׂוֹחֶה?"
+    items:
+      - { id: o1, label: "on Saturday", correct: true, tts: "on Saturday" }
+      - { id: o2, label: "on Monday", tts: "on Monday" }
+      - { id: o3, label: "every day", tts: "every day" }
+  - prompt: "Dan swims very well because he practices a lot. Why does Dan swim well?"
+    prompt_text: "Dan שׂוֹחֶה טוֹב מְאוֹד כִּי הוּא מִתְאַמֵּן הַרְבֵּה. לָמָּה Dan שׂוֹחֶה טוֹב?"
+    items:
+      - { id: o1, label: "he practices a lot", correct: true, tts: "he practices a lot" }
+      - { id: o2, label: "he is very tall", tts: "he is very tall" }
+      - { id: o3, label: "he has a boat", tts: "he has a boat" }
+  - prompt: "Before he swims, Dan puts on his blue goggles. What does Dan put on before he swims?"
+    prompt_text: "לִפְנֵי שֶׁהוּא שׂוֹחֶה, Dan שָׂם אֶת מִשְׁקְפֵי הַשְּׂחִיָּה הַכְּחֻלִּים שֶׁלּוֹ. מָה Dan שָׂם לִפְנֵי שֶׁהוּא שׂוֹחֶה?"
+    items:
+      - { id: o1, label: "his shoes", tts: "his shoes" }
+      - { id: o2, label: "his blue goggles", correct: true, tts: "his blue goggles" }
+      - { id: o3, label: "his hat", tts: "his hat" }
+  - prompt: "Dan likes to swim because the cool water makes him feel happy. How does the water make Dan feel?"
+    prompt_text: "Dan אוֹהֵב לִשְׂחוֹת כִּי הַמַּיִם הַקְּרִירִים גּוֹרְמִים לוֹ לְהַרְגִּישׁ שָׂמֵחַ. אֵיךְ הַמַּיִם גּוֹרְמִים לְ-Dan לְהַרְגִּישׁ?"
+    items:
+      - { id: o1, label: "happy", correct: true, tts: "happy" }
+      - { id: o2, label: "scared", tts: "scared" }
+      - { id: o3, label: "angry", tts: "angry" }
+  - prompt: "After swimming, Dan eats a big sandwich on the beach. What does Dan eat after swimming?"
+    prompt_text: "אַחֲרֵי הַשְּׂחִיָּה, Dan אוֹכֵל כָּרִיךְ גָּדוֹל עַל הַחוֹף. מָה Dan אוֹכֵל אַחֲרֵי הַשְּׂחִיָּה?"
+    items:
+      - { id: o1, label: "a big sandwich", correct: true, tts: "a big sandwich" }
+      - { id: o2, label: "an ice cream", tts: "an ice cream" }
+      - { id: o3, label: "a hot soup", tts: "a hot soup" }
+  - prompt: "Dan's best friend Tom always swims next to him. Who swims next to Dan?"
+    prompt_text: "הֶחָבֵר הֲכִי טוֹב שֶׁל Dan, Tom, תָּמִיד שׂוֹחֶה לְיָדוֹ. מִי שׂוֹחֶה לְיַד Dan?"
+    items:
+      - { id: o1, label: "his brother", tts: "his brother" }
+      - { id: o2, label: "his friend Tom", correct: true, tts: "his friend Tom" }
+      - { id: o3, label: "his father", tts: "his father" }
+  - prompt: "The sea is calm and blue when Dan swims. How is the sea when Dan swims?"
+    prompt_text: "הַיָּם רָגוּעַ וְכָחֹל כְּשֶׁ-Dan שׂוֹחֶה. אֵיךְ הַיָּם כְּשֶׁ-Dan שׂוֹחֶה?"
+    items:
+      - { id: o1, label: "calm and blue", correct: true, tts: "calm and blue" }
+      - { id: o2, label: "cold and grey", tts: "cold and grey" }
+      - { id: o3, label: "wild and dark", tts: "wild and dark" }
+  - prompt: "Dan wants to be a swimming teacher when he grows up. What does Dan want to be?"
+    prompt_text: "Dan רוֹצֶה לִהְיוֹת מוֹרֶה לִשְׂחִיָּה כְּשֶׁיִּגְדַּל. מָה Dan רוֹצֶה לִהְיוֹת?"
+    items:
+      - { id: o1, label: "a pilot", tts: "a pilot" }
+      - { id: o2, label: "a swimming teacher", correct: true, tts: "a swimming teacher" }
+      - { id: o3, label: "a baker", tts: "a baker" }
+  - prompt: "Dan stays near the shore so he is always safe. Why does Dan stay near the shore?"
+    prompt_text: "Dan נִשְׁאָר קָרוֹב לַחוֹף כְּדֵי שֶׁתָּמִיד יִהְיֶה בָּטוּחַ. לָמָּה Dan נִשְׁאָר קָרוֹב לַחוֹף?"
+    items:
+      - { id: o1, label: "to stay safe", correct: true, tts: "to stay safe" }
+      - { id: o2, label: "to find fish", tts: "to find fish" }
+      - { id: o3, label: "to be cold", tts: "to be cold" }
+  - prompt: "Dan and his friends swim all morning until lunchtime. How long do they swim?"
+    prompt_text: "Dan וַחֲבֵרָיו שׂוֹחִים כָּל הַבֹּקֶר עַד שְׁעַת הַצָּהֳרַיִם. כַּמָּה זְמַן הֵם שׂוֹחִים?"
+    items:
+      - { id: o1, label: "for one minute", tts: "for one minute" }
+      - { id: o2, label: "all morning", correct: true, tts: "all morning" }
+      - { id: o3, label: "all night", tts: "all night" }
+  - prompt: "Dan is a small brown dog. He likes to run and jump in the garden. What does Dan like to do?"
+    prompt_text: "Dan הוּא כֶּלֶב חוּם קָטָן. הוּא אוֹהֵב לָרוּץ וְלִקְפֹּץ בַּגִּנָּה. מָה Dan אוֹהֵב לַעֲשׂוֹת?"
+    items:
+      - { id: o1, label: "run and jump", correct: true, tts: "run and jump" }
+      - { id: o2, label: "sleep all day", tts: "sleep all day" }
+      - { id: o3, label: "swim in the sea", tts: "swim in the sea" }
+  - prompt: "Dan is a small brown dog. What color is Dan?"
+    prompt_text: "Dan הוּא כֶּלֶב חוּם קָטָן. בְּאֵיזֶה צֶבַע Dan?"
+    items:
+      - { id: o1, label: "brown", correct: true, tts: "brown" }
+      - { id: o2, label: "black", tts: "black" }
+      - { id: o3, label: "white", tts: "white" }
+  - prompt: "Dan likes to run and jump in the garden. Where does Dan play?"
+    prompt_text: "Dan אוֹהֵב לָרוּץ וְלִקְפֹּץ בַּגִּנָּה. אֵיפֹה Dan מְשַׂחֵק?"
+    items:
+      - { id: o1, label: "in the garden", correct: true, tts: "in the garden" }
+      - { id: o2, label: "in the house", tts: "in the house" }
+      - { id: o3, label: "in the car", tts: "in the car" }
+  - prompt: "Dan loves to eat meat and chew on his bone. What does Dan love to eat?"
+    prompt_text: "Dan אוֹהֵב לֶאֱכֹל בָּשָׂר וְלִכְרְסֵם אֶת הָעֶצֶם שֶׁלּוֹ. מָה Dan אוֹהֵב לֶאֱכֹל?"
+    items:
+      - { id: o1, label: "cake and candy", tts: "cake and candy" }
+      - { id: o2, label: "meat and his bone", correct: true, tts: "meat and his bone" }
+      - { id: o3, label: "apples and grass", tts: "apples and grass" }
+  - prompt: "At night Dan sleeps in a soft basket near the door. Where does Dan sleep?"
+    prompt_text: "בַּלַּיְלָה Dan יָשֵׁן בְּסַלְסִלָּה רַכָּה לְיַד הַדֶּלֶת. אֵיפֹה Dan יָשֵׁן?"
+    items:
+      - { id: o1, label: "in a soft basket", correct: true, tts: "in a soft basket" }
+      - { id: o2, label: "on the table", tts: "on the table" }
+      - { id: o3, label: "in the bath", tts: "in the bath" }
+  - prompt: "Dan barks loudly when someone comes to the door. What does Dan do when someone comes?"
+    prompt_text: "Dan נוֹבֵחַ בְּקוֹל רָם כְּשֶׁמִּישֶׁהוּ מַגִּיעַ לַדֶּלֶת. מָה Dan עוֹשֶׂה כְּשֶׁמִּישֶׁהוּ מַגִּיעַ?"
+    items:
+      - { id: o1, label: "he hides", tts: "he hides" }
+      - { id: o2, label: "he sleeps", tts: "he sleeps" }
+      - { id: o3, label: "he barks loudly", correct: true, tts: "he barks loudly" }
+  - prompt: "Dan belongs to a boy named Tom who plays with him every day. Who does Dan belong to?"
+    prompt_text: "Dan שַׁיָּךְ לְיֶלֶד בְּשֵׁם Tom שֶׁמְּשַׂחֵק אִתּוֹ כָּל יוֹם. לְמִי Dan שַׁיָּךְ?"
+    items:
+      - { id: o1, label: "a boy named Tom", correct: true, tts: "a boy named Tom" }
+      - { id: o2, label: "a girl named Sue", tts: "a girl named Sue" }
+      - { id: o3, label: "no one", tts: "no one" }
+  - prompt: "Tom takes Dan for a walk in the park every afternoon. When does Tom walk Dan?"
+    prompt_text: "Tom לוֹקֵחַ אֶת Dan לְטִיּוּל בַּפַּארְק כָּל אַחַר צָהֳרַיִם. מָתַי Tom מְטַיֵּל עִם Dan?"
+    items:
+      - { id: o1, label: "every afternoon", correct: true, tts: "every afternoon" }
+      - { id: o2, label: "every midnight", tts: "every midnight" }
+      - { id: o3, label: "once a year", tts: "once a year" }
+  - prompt: "Dan is happy and wags his tail when Tom comes home. What does Dan do when Tom comes home?"
+    prompt_text: "Dan שָׂמֵחַ וּמְכַשְׁכֵּשׁ בִּזְנָבוֹ כְּשֶׁ-Tom חוֹזֵר הַבַּיְתָה. מָה Dan עוֹשֶׂה כְּשֶׁ-Tom חוֹזֵר הַבַּיְתָה?"
+    items:
+      - { id: o1, label: "he runs away", tts: "he runs away" }
+      - { id: o2, label: "he wags his tail", correct: true, tts: "he wags his tail" }
+      - { id: o3, label: "he cries", tts: "he cries" }
+  - prompt: "Dan is small, so he can not jump over the high fence. Why can Dan not jump the fence?"
+    prompt_text: "Dan קָטָן, אָז הוּא לֹא יָכוֹל לִקְפֹּץ מֵעַל הַגָּדֵר הַגְּבוֹהָה. לָמָּה Dan לֹא יָכוֹל לִקְפֹּץ מֵעַל הַגָּדֵר?"
+    items:
+      - { id: o1, label: "he is small", correct: true, tts: "he is small" }
+      - { id: o2, label: "he is tired", tts: "he is tired" }
+      - { id: o3, label: "he is afraid", tts: "he is afraid" }
+  - prompt: "On hot days Dan likes to rest under a big tree. Where does Dan rest on hot days?"
+    prompt_text: "בַּיָּמִים הַחַמִּים Dan אוֹהֵב לָנוּחַ מִתַּחַת לְעֵץ גָּדוֹל. אֵיפֹה Dan נָח בַּיָּמִים הַחַמִּים?"
+    items:
+      - { id: o1, label: "in the sun", tts: "in the sun" }
+      - { id: o2, label: "under a big tree", correct: true, tts: "under a big tree" }
+      - { id: o3, label: "in the water", tts: "in the water" }
+  - prompt: "Dan has two long ears and a short tail. What does Dan have?"
+    prompt_text: "לְ-Dan יֵשׁ שְׁתֵּי אָזְנַיִם אֲרֻכּוֹת וְזָנָב קָצָר. מָה יֵשׁ לְ-Dan?"
+    items:
+      - { id: o1, label: "two long ears", correct: true, tts: "two long ears" }
+      - { id: o2, label: "three short legs", tts: "three short legs" }
+      - { id: o3, label: "big wings", tts: "big wings" }
+  - prompt: "Fred is a red umbrella. He keeps the children dry in the rain. When do the children need Fred?"
+    prompt_text: "Fred הוּא מִטְרִיָּה אֲדֻמָּה. הוּא שׁוֹמֵר עַל הַיְלָדִים שֶׁיִּשָּׁאֲרוּ יְבֵשִׁים בַּגֶּשֶׁם. מָתַי הַיְלָדִים צְרִיכִים אֶת Fred?"
+    items:
+      - { id: o1, label: "when it rains", correct: true, tts: "when it rains" }
+      - { id: o2, label: "when it is sunny", tts: "when it is sunny" }
+      - { id: o3, label: "when it snows", tts: "when it snows" }
+  - prompt: "Fred is a red umbrella. What color is Fred?"
+    prompt_text: "Fred הוּא מִטְרִיָּה אֲדֻמָּה. בְּאֵיזֶה צֶבַע Fred?"
+    items:
+      - { id: o1, label: "red", correct: true, tts: "red" }
+      - { id: o2, label: "blue", tts: "blue" }
+      - { id: o3, label: "yellow", tts: "yellow" }
+  - prompt: "Fred keeps the children dry in the rain. What does Fred do?"
+    prompt_text: "Fred שׁוֹמֵר עַל הַיְלָדִים שֶׁיִּשָּׁאֲרוּ יְבֵשִׁים בַּגֶּשֶׁם. מָה Fred עוֹשֶׂה?"
+    items:
+      - { id: o1, label: "keeps them dry", correct: true, tts: "keeps them dry" }
+      - { id: o2, label: "makes them wet", tts: "makes them wet" }
+      - { id: o3, label: "makes them cold", tts: "makes them cold" }
+  - prompt: "Fred lives in a basket by the front door. Where does Fred live?"
+    prompt_text: "Fred גָּר בְּסַל לְיַד דֶּלֶת הַכְּנִיסָה. אֵיפֹה Fred גָּר?"
+    items:
+      - { id: o1, label: "on the roof", tts: "on the roof" }
+      - { id: o2, label: "in a basket by the door", correct: true, tts: "in a basket by the door" }
+      - { id: o3, label: "under the bed", tts: "under the bed" }
+  - prompt: "When the sky is grey, Fred knows it is time to work. How does Fred know it is time to work?"
+    prompt_text: "כְּשֶׁהַשָּׁמַיִם אֲפֹרִים, Fred יוֹדֵעַ שֶׁהִגִּיעַ הַזְּמַן לַעֲבֹד. אֵיךְ Fred יוֹדֵעַ שֶׁהִגִּיעַ הַזְּמַן לַעֲבֹד?"
+    items:
+      - { id: o1, label: "the sky is grey", correct: true, tts: "the sky is grey" }
+      - { id: o2, label: "the sun is bright", tts: "the sun is bright" }
+      - { id: o3, label: "the birds sing", tts: "the birds sing" }
+  - prompt: "Fred is big enough to cover two children at once. How many children can Fred cover?"
+    prompt_text: "Fred גָּדוֹל מַסְפִּיק כְּדֵי לְכַסּוֹת שְׁנֵי יְלָדִים בְּבַת אַחַת. כַּמָּה יְלָדִים Fred יָכוֹל לְכַסּוֹת?"
+    items:
+      - { id: o1, label: "two children", correct: true, tts: "two children" }
+      - { id: o2, label: "ten children", tts: "ten children" }
+      - { id: o3, label: "no children", tts: "no children" }
+  - prompt: "The children love Fred because he keeps them safe from the rain. Why do the children love Fred?"
+    prompt_text: "הַיְלָדִים אוֹהֲבִים אֶת Fred כִּי הוּא שׁוֹמֵר עֲלֵיהֶם מֵהַגֶּשֶׁם. לָמָּה הַיְלָדִים אוֹהֲבִים אֶת Fred?"
+    items:
+      - { id: o1, label: "he gives them candy", tts: "he gives them candy" }
+      - { id: o2, label: "he keeps them safe from rain", correct: true, tts: "he keeps them safe from rain" }
+      - { id: o3, label: "he tells them jokes", tts: "he tells them jokes" }
+  - prompt: "When the rain stops, the children close Fred and put him away. What do the children do when the rain stops?"
+    prompt_text: "כְּשֶׁהַגֶּשֶׁם נִפְסָק, הַיְלָדִים סוֹגְרִים אֶת Fred וּמַנִּיחִים אוֹתוֹ בַּצַּד. מָה הַיְלָדִים עוֹשִׂים כְּשֶׁהַגֶּשֶׁם נִפְסָק?"
+    items:
+      - { id: o1, label: "they close Fred", correct: true, tts: "they close Fred" }
+      - { id: o2, label: "they open Fred wider", tts: "they open Fred wider" }
+      - { id: o3, label: "they wash Fred", tts: "they wash Fred" }
+  - prompt: "Fred has a long wooden handle that is easy to hold. What does Fred have?"
+    prompt_text: "לְ-Fred יֵשׁ יָדִית עֵץ אֲרֻכָּה שֶׁקַּל לֶאֱחֹז בָּהּ. מָה יֵשׁ לְ-Fred?"
+    items:
+      - { id: o1, label: "a long wooden handle", correct: true, tts: "a long wooden handle" }
+      - { id: o2, label: "two big wheels", tts: "two big wheels" }
+      - { id: o3, label: "a soft pillow", tts: "a soft pillow" }
+  - prompt: "Fred feels sad on sunny days because no one needs him. How does Fred feel on sunny days?"
+    prompt_text: "Fred מַרְגִּישׁ עָצוּב בַּיָּמִים הַשְּׁמְשִׁיִּים כִּי אַף אֶחָד לֹא צָרִיךְ אוֹתוֹ. אֵיךְ Fred מַרְגִּישׁ בַּיָּמִים הַשְּׁמְשִׁיִּים?"
+    items:
+      - { id: o1, label: "sad", correct: true, tts: "sad" }
+      - { id: o2, label: "happy", tts: "happy" }
+      - { id: o3, label: "angry", tts: "angry" }
+  - prompt: "One windy day Fred almost flew away, but the children held him tight. What did the children do on the windy day?"
+    prompt_text: "בְּיוֹם סוֹעֵר אֶחָד Fred כִּמְעַט עָף, אֲבָל הַיְלָדִים אָחֲזוּ בּוֹ חָזָק. מָה הַיְלָדִים עָשׂוּ בַּיּוֹם הַסּוֹעֵר?"
+    items:
+      - { id: o1, label: "they let him go", tts: "they let him go" }
+      - { id: o2, label: "they held him tight", correct: true, tts: "they held him tight" }
+      - { id: o3, label: "they ran away", tts: "they ran away" }
+  - prompt: "Fred is happiest when the rain falls and the children stay dry. When is Fred happiest?"
+    prompt_text: "Fred הֲכִי שָׂמֵחַ כְּשֶׁהַגֶּשֶׁם יוֹרֵד וְהַיְלָדִים נִשְׁאָרִים יְבֵשִׁים. מָתַי Fred הֲכִי שָׂמֵחַ?"
+    items:
+      - { id: o1, label: "when it snows", tts: "when it snows" }
+      - { id: o2, label: "when the rain falls", correct: true, tts: "when the rain falls" }
+      - { id: o3, label: "when the sun shines", tts: "when the sun shines" }
+  - prompt: "Sam has a cat named Lily. What is the cat's name?"
+    prompt_text: "לְ-Sam יֵשׁ חָתוּל בְּשֵׁם Lily. מָה שֵׁם הֶחָתוּל?"
+    items:
+      - { id: o1, label: "Lily", correct: true, tts: "Lily" }
+      - { id: o2, label: "Sam", tts: "Sam" }
+      - { id: o3, label: "Max", tts: "Max" }
+  - prompt: "One day Lily runs away. What does Lily do?"
+    prompt_text: "יוֹם אֶחָד Lily בּוֹרַחַת. מָה Lily עוֹשָׂה?"
+    items:
+      - { id: o1, label: "runs away", correct: true, tts: "runs away" }
+      - { id: o2, label: "goes to sleep", tts: "goes to sleep" }
+      - { id: o3, label: "eats fish", tts: "eats fish" }
+  - prompt: "Sam looks in the garden. Where does Sam look?"
+    prompt_text: "Sam מְחַפֵּשׂ בַּגִּנָּה. אֵיפֹה Sam מְחַפֵּשׂ?"
+    items:
+      - { id: o1, label: "in the garden", correct: true, tts: "in the garden" }
+      - { id: o2, label: "in the house", tts: "in the house" }
+      - { id: o3, label: "at school", tts: "at school" }
+  - prompt: "Sam finds Lily under a tree. Where is Lily?"
+    prompt_text: "Sam מוֹצֵא אֶת Lily מִתַּחַת לְעֵץ. אֵיפֹה Lily?"
+    items:
+      - { id: o1, label: "under a tree", correct: true, tts: "under a tree" }
+      - { id: o2, label: "on the roof", tts: "on the roof" }
+      - { id: o3, label: "in a box", tts: "in a box" }
+  - prompt: "Sam has a cat named Lily. Who has a cat?"
+    prompt_text: "לְ-Sam יֵשׁ חָתוּל בְּשֵׁם Lily. לְמִי יֵשׁ חָתוּל?"
+    items:
+      - { id: o1, label: "Sam", correct: true, tts: "Sam" }
+      - { id: o2, label: "Lily", tts: "Lily" }
+      - { id: o3, label: "Max", tts: "Max" }
+  - prompt: "Lily is a small white cat with green eyes. What color is Lily?"
+    prompt_text: "Lily הִיא חֲתוּלָה לְבָנָה קְטַנָּה עִם עֵינַיִם יְרֻקּוֹת. בְּאֵיזֶה צֶבַע Lily?"
+    items:
+      - { id: o1, label: "black", tts: "black" }
+      - { id: o2, label: "white", correct: true, tts: "white" }
+      - { id: o3, label: "orange", tts: "orange" }
+  - prompt: "Sam is very sad when he can not find Lily. How does Sam feel when Lily is lost?"
+    prompt_text: "Sam מְאוֹד עָצוּב כְּשֶׁהוּא לֹא מוֹצֵא אֶת Lily. אֵיךְ Sam מַרְגִּישׁ כְּשֶׁ-Lily אֲבוּדָה?"
+    items:
+      - { id: o1, label: "sad", correct: true, tts: "sad" }
+      - { id: o2, label: "happy", tts: "happy" }
+      - { id: o3, label: "angry", tts: "angry" }
+  - prompt: "Sam calls Lily's name again and again. What does Sam call?"
+    prompt_text: "Sam קוֹרֵא בְּשֵׁם Lily שׁוּב וָשׁוּב. אֶת מָה Sam קוֹרֵא?"
+    items:
+      - { id: o1, label: "his own name", tts: "his own name" }
+      - { id: o2, label: "Lily's name", correct: true, tts: "Lily's name" }
+      - { id: o3, label: "the dog's name", tts: "the dog's name" }
+  - prompt: "Lily ran away because she saw a yellow butterfly. Why did Lily run away?"
+    prompt_text: "Lily בָּרְחָה כִּי הִיא רָאֲתָה פַּרְפַּר צָהֹב. לָמָּה Lily בָּרְחָה?"
+    items:
+      - { id: o1, label: "she was hungry", tts: "she was hungry" }
+      - { id: o2, label: "she saw a butterfly", correct: true, tts: "she saw a butterfly" }
+      - { id: o3, label: "she heard a noise", tts: "she heard a noise" }
+  - prompt: "When Sam finds Lily, he gives her a big warm hug. What does Sam do when he finds Lily?"
+    prompt_text: "כְּשֶׁ-Sam מוֹצֵא אֶת Lily, הוּא נוֹתֵן לָהּ חִבּוּק גָּדוֹל וְחַם. מָה Sam עוֹשֶׂה כְּשֶׁהוּא מוֹצֵא אֶת Lily?"
+    items:
+      - { id: o1, label: "he gives her a hug", correct: true, tts: "he gives her a hug" }
+      - { id: o2, label: "he runs away", tts: "he runs away" }
+      - { id: o3, label: "he closes the door", tts: "he closes the door" }
+  - prompt: "After the hug, Sam and Lily go home for dinner. Where do Sam and Lily go?"
+    prompt_text: "אַחֲרֵי הַחִבּוּק, Sam וְ-Lily הוֹלְכִים הַבַּיְתָה לַאֲרוּחַת עֶרֶב. לְאָן Sam וְ-Lily הוֹלְכִים?"
+    items:
+      - { id: o1, label: "to school", tts: "to school" }
+      - { id: o2, label: "to the shop", tts: "to the shop" }
+      - { id: o3, label: "home", correct: true, tts: "home" }
+  - prompt: "Now Sam keeps the garden gate closed so Lily can not run away again. Why does Sam keep the gate closed?"
+    prompt_text: "עַכְשָׁו Sam מַשְׁאִיר אֶת שַׁעַר הַגִּנָּה סָגוּר כְּדֵי שֶׁ-Lily לֹא תּוּכַל לִבְרֹחַ שׁוּב. לָמָּה Sam מַשְׁאִיר אֶת הַשַּׁעַר סָגוּר?"
+    items:
+      - { id: o1, label: "so Lily can not run away", correct: true, tts: "so Lily can not run away" }
+      - { id: o2, label: "so the sun stays out", tts: "so the sun stays out" }
+      - { id: o3, label: "so the rain comes in", tts: "so the rain comes in" }
 reward: { stars: 3, sfx: ding, effect: confetti }

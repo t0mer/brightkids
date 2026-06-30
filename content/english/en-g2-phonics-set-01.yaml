@@ -117,4 +117,94 @@ questions:
       - { id: o1, label: "y", correct: true, tts: "y says yuh" }
       - { id: o2, label: "w", tts: "w says wuh" }
       - { id: o3, label: "l", tts: "l says lll" }
+  - prompt: "Which word starts with the /k/ sound?"
+    prompt_text: "אֵיזוֹ מִלָּה מַתְחִילָה בַּצְּלִיל /k/?"
+    items:
+      - { id: o1, label: "Cat", correct: true, tts: "cat", emoji: "🐱" }
+      - { id: o2, label: "Dog", tts: "dog", emoji: "🐶" }
+      - { id: o3, label: "Sun", tts: "sun", emoji: "☀️" }
+  - prompt: "Which word starts with the /d/ sound?"
+    prompt_text: "אֵיזוֹ מִלָּה מַתְחִילָה בַּצְּלִיל /d/?"
+    items:
+      - { id: o1, label: "Dog", correct: true, tts: "dog", emoji: "🐶" }
+      - { id: o2, label: "Cat", tts: "cat", emoji: "🐱" }
+      - { id: o3, label: "Fish", tts: "fish", emoji: "🐟" }
+  - prompt: "Which word starts with the /s/ sound?"
+    prompt_text: "אֵיזוֹ מִלָּה מַתְחִילָה בַּצְּלִיל /s/?"
+    items:
+      - { id: o1, label: "Sun", correct: true, tts: "sun", emoji: "☀️" }
+      - { id: o2, label: "Dog", tts: "dog", emoji: "🐶" }
+      - { id: o3, label: "Ball", tts: "ball", emoji: "⚽" }
+  - prompt: "Which word starts with the /b/ sound?"
+    prompt_text: "אֵיזוֹ מִלָּה מַתְחִילָה בַּצְּלִיל /b/?"
+    items:
+      - { id: o1, label: "Ball", correct: true, tts: "ball", emoji: "⚽" }
+      - { id: o2, label: "Cat", tts: "cat", emoji: "🐱" }
+      - { id: o3, label: "Sun", tts: "sun", emoji: "☀️" }
+  - prompt: "Which word starts with the /f/ sound?"
+    prompt_text: "אֵיזוֹ מִלָּה מַתְחִילָה בַּצְּלִיל /f/?"
+    items:
+      - { id: o1, label: "Cat", tts: "cat", emoji: "🐱" }
+      - { id: o2, label: "Fish", correct: true, tts: "fish", emoji: "🐟" }
+      - { id: o3, label: "Dog", tts: "dog", emoji: "🐶" }
+  - prompt: "Which word starts with the /m/ sound?"
+    prompt_text: "אֵיזוֹ מִלָּה מַתְחִילָה בַּצְּלִיל /m/?"
+    items:
+      - { id: o1, label: "Tree", tts: "tree", emoji: "🌳" }
+      - { id: o2, label: "Star", tts: "star", emoji: "⭐" }
+      - { id: o3, label: "Moon", correct: true, tts: "moon", emoji: "🌙" }
+  - prompt: "Which word starts with the /t/ sound?"
+    prompt_text: "אֵיזוֹ מִלָּה מַתְחִילָה בַּצְּלִיל /t/?"
+    items:
+      - { id: o1, label: "Tree", correct: true, tts: "tree", emoji: "🌳" }
+      - { id: o2, label: "Ball", tts: "ball", emoji: "⚽" }
+      - { id: o3, label: "Fish", tts: "fish", emoji: "🐟" }
+  - prompt: "Which word starts with the /p/ sound?"
+    prompt_text: "אֵיזוֹ מִלָּה מַתְחִילָה בַּצְּלִיל /p/?"
+    items:
+      - { id: o1, label: "Sun", tts: "sun", emoji: "☀️" }
+      - { id: o2, label: "Pig", correct: true, tts: "pig", emoji: "🐷" }
+      - { id: o3, label: "Dog", tts: "dog", emoji: "🐶" }
+  - prompt: "Which word starts with the /l/ sound?"
+    prompt_text: "אֵיזוֹ מִלָּה מַתְחִילָה בַּצְּלִיל /l/?"
+    items:
+      - { id: o1, label: "Cat", tts: "cat", emoji: "🐱" }
+      - { id: o2, label: "Moon", tts: "moon", emoji: "🌙" }
+      - { id: o3, label: "Lion", correct: true, tts: "lion", emoji: "🦁" }
+  - prompt: "Which word starts with the /h/ sound?"
+    prompt_text: "אֵיזוֹ מִלָּה מַתְחִילָה בַּצְּלִיל /h/?"
+    items:
+      - { id: o1, label: "Hat", correct: true, tts: "hat", emoji: "🎩" }
+      - { id: o2, label: "Egg", tts: "egg", emoji: "🥚" }
+      - { id: o3, label: "Fish", tts: "fish", emoji: "🐟" }
+  - prompt: "Which word starts with the /r/ sound?"
+    prompt_text: "אֵיזוֹ מִלָּה מַתְחִילָה בַּצְּלִיל /r/?"
+    items:
+      - { id: o1, label: "Sun", tts: "sun", emoji: "☀️" }
+      - { id: o2, label: "Rabbit", correct: true, tts: "rabbit", emoji: "🐰" }
+      - { id: o3, label: "Dog", tts: "dog", emoji: "🐶" }
+  - prompt: "Which word starts with the /g/ sound?"
+    prompt_text: "אֵיזוֹ מִלָּה מַתְחִילָה בַּצְּלִיל /g/?"
+    items:
+      - { id: o1, label: "Cat", tts: "cat", emoji: "🐱" }
+      - { id: o2, label: "Ball", tts: "ball", emoji: "⚽" }
+      - { id: o3, label: "Goat", correct: true, tts: "goat", emoji: "🐐" }
+  - prompt: "Which word starts with the /e/ sound?"
+    prompt_text: "אֵיזוֹ מִלָּה מַתְחִילָה בַּצְּלִיל /e/?"
+    items:
+      - { id: o1, label: "Egg", correct: true, tts: "egg", emoji: "🥚" }
+      - { id: o2, label: "Pig", tts: "pig", emoji: "🐷" }
+      - { id: o3, label: "Sun", tts: "sun", emoji: "☀️" }
+  - prompt: "Which word starts with the /n/ sound?"
+    prompt_text: "אֵיזוֹ מִלָּה מַתְחִילָה בַּצְּלִיל /n/?"
+    items:
+      - { id: o1, label: "Dog", tts: "dog", emoji: "🐶" }
+      - { id: o2, label: "Nest", correct: true, tts: "nest", emoji: "🪺" }
+      - { id: o3, label: "Cat", tts: "cat", emoji: "🐱" }
+  - prompt: "Which word starts with the /a/ sound?"
+    prompt_text: "אֵיזוֹ מִלָּה מַתְחִילָה בַּצְּלִיל /a/?"
+    items:
+      - { id: o1, label: "Dog", tts: "dog", emoji: "🐶" }
+      - { id: o2, label: "Apple", correct: true, tts: "apple", emoji: "🍎" }
+      - { id: o3, label: "Sun", tts: "sun", emoji: "☀️" }
 reward: { stars: 3, sfx: ding, effect: confetti }

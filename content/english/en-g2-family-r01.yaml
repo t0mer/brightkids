@@ -4,10 +4,10 @@ grade: 2
 difficulty: 1
 locale: en-US
 direction: ltr
-title: "The -at Word Family"
+title: "Word Families"
 activity: matching
-prompt_tts: "These words rhyme. Match each -at word to its picture."
-instruction: "הַמִּלִּים הָאֵלֶּה מִתְחָרְזוֹת. הַתְאִימוּ כָּל מִלָּה בְּ-at לַתְּמוּנָה שֶׁלָּהּ."
+prompt_tts: "Match each word to its picture"
+instruction: "הַתְאִימוּ כָּל מִלָּה לַתְּמוּנָה שֶׁלָּהּ"
 pairs:
   - id: cat
     left: "cat"
@@ -57,4 +57,52 @@ pairs:
     left: "chat"
     left_tts: "chat"
     emoji: "💬"
+  - id: man
+    left: "man"
+    left_tts: "man"
+    emoji: "👨"
+  - id: pan
+    left: "pan"
+    left_tts: "pan"
+    emoji: "🍳"
+  - id: van
+    left: "van"
+    left_tts: "van"
+    emoji: "🚐"
+  - id: fan
+    left: "fan"
+    left_tts: "fan"
+    emoji: "🪭"
+  - id: can
+    left: "can"
+    left_tts: "can"
+    emoji: "🥫"
+  - id: ran
+    left: "ran"
+    left_tts: "ran"
+    emoji: "🏃"
+  - id: plan
+    left: "plan"
+    left_tts: "plan"
+    emoji: "📋"
+  - id: scan
+    left: "scan"
+    left_tts: "scan"
+    emoji: "📠"
+  - id: ban
+    left: "ban"
+    left_tts: "ban"
+    emoji: "🚫"
+  - id: nan
+    left: "nan"
+    left_tts: "nan"
+    emoji: "🫓"
+  - id: tan
+    left: "tan"
+    left_tts: "tan"
+    emoji: "🏖️"
+  - id: bran
+    left: "bran"
+    left_tts: "bran"
+    emoji: "🥣"
 reward: { stars: 1, sfx: ding, effect: confetti }
