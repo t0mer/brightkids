@@ -50,15 +50,22 @@ docker run -p 8080:8080 techblog/brightkids:latest
 # open http://localhost:8080
 ```
 
-### docker-compose (with persistent profiles)
+### docker-compose
 
 ```bash
-docker compose -f deployments/docker-compose.yml up -d
+docker compose up -d
+# open http://localhost:8080
 ```
 
-The named `brightkids-data` volume holds the SQLite database so profiles and
-progress survive restarts. The image runs as a non-root user; use the named
-volume (not a host bind mount) so `/data` ownership is correct.
+The bundled [`docker-compose.yml`](docker-compose.yml) runs **private** mode by
+default: the named `brightkids-data` volume holds the SQLite database so
+profiles and progress survive restarts. The image runs as a non-root user, so
+use the named volume (not a host bind mount) for correct `/data` ownership.
+
+For a **public** deployment, set `BRIGHTKIDS_MODE: public` and drop the volume —
+the server is stateless and stores nothing (profiles live in the browser). To
+enable analytics, uncomment `BRIGHTKIDS_ANALYTICS_GA_ID` with your Google
+measurement ID.
 
 ### From source
 
