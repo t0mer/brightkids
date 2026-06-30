@@ -79,13 +79,14 @@ func run(args []string) error {
 	}
 
 	srv, err := server.New(server.Options{
-		Config:  cfg.Server,
-		Mode:    cfg.Mode,
-		GAID:    cfg.Analytics.GAID,
-		Log:     log,
-		Content: lib,
-		Store:   st,
-		Metrics: m,
+		Config:     cfg.Server,
+		Mode:       cfg.Mode,
+		GAID:       cfg.Analytics.GAID,
+		TTSEnabled: cfg.TTS.Enabled,
+		Log:        log,
+		Content:    lib,
+		Store:      st,
+		Metrics:    m,
 	})
 	if err != nil {
 		return err

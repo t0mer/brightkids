@@ -27,6 +27,13 @@ type Config struct {
 	Content   ContentConfig   `mapstructure:"content"`
 	Metrics   MetricsConfig   `mapstructure:"metrics"`
 	Analytics AnalyticsConfig `mapstructure:"analytics"`
+	TTS       TTSConfig       `mapstructure:"tts"`
+}
+
+// TTSConfig toggles text-to-speech narration. Off by default — when disabled
+// the Listen button is hidden and no narration plays on any screen.
+type TTSConfig struct {
+	Enabled bool `mapstructure:"enabled"`
 }
 
 // AnalyticsConfig configures optional Google Analytics. When GAID is set, the
@@ -98,6 +105,7 @@ func Load(args []string) (*Config, bool, error) {
 	fs.String("content-dir", v.GetString("content.dir"), "override embedded content with a directory")
 	fs.Bool("metrics", v.GetBool("metrics.enabled"), "enable Prometheus /metrics endpoint")
 	fs.String("ga-id", v.GetString("analytics.ga_id"), "Google Analytics measurement ID (e.g. G-XXXXXXXXXX); enables analytics when set")
+	fs.Bool("tts", v.GetBool("tts.enabled"), "enable text-to-speech narration (off by default)")
 	showVersion := fs.Bool("version", false, "print version and exit")
 
 	if err := fs.Parse(args); err != nil {
@@ -153,6 +161,7 @@ func setDefaults(v *viper.Viper) {
 	v.SetDefault("content.dir", "")
 	v.SetDefault("metrics.enabled", true)
 	v.SetDefault("analytics.ga_id", "")
+	v.SetDefault("tts.enabled", false)
 }
 
 // bindChangedFlags maps explicitly-set CLI flags onto config keys so they win
@@ -169,6 +178,7 @@ func bindChangedFlags(v *viper.Viper, fs *pflag.FlagSet) {
 		"content-dir": "content.dir",
 		"metrics":     "metrics.enabled",
 		"ga-id":       "analytics.ga_id",
+		"tts":         "tts.enabled",
 	}
 	fs.Visit(func(f *pflag.Flag) {
 		if key, ok := flagToKey[f.Name]; ok {

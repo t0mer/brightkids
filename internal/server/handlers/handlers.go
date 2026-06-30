@@ -18,8 +18,11 @@ type Deps struct {
 	Log *slog.Logger
 	// Mode is the storage mode ("private" or "public"); reported to the client
 	// so it knows whether to persist profiles server-side or in localStorage.
-	Mode    string
-	Content *content.Library
+	Mode string
+	// TTSEnabled reports whether text-to-speech narration is enabled; the client
+	// hides the Listen button and skips narration when false.
+	TTSEnabled bool
+	Content    *content.Library
 	// Store is nil in public mode (no server-side persistence).
 	Store   *store.Store
 	Metrics *metrics.Metrics
