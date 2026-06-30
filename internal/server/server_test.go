@@ -10,6 +10,7 @@ import (
 	"net/http"
 	"net/http/httptest"
 	"path/filepath"
+	"strings"
 	"testing"
 	"testing/fstest"
 
@@ -184,6 +185,71 @@ func TestSEO(t *testing.T) {
 	if !bytes.Contains(rec.Body.Bytes(), []byte("https://brightkids.example.org/lesson/en-g1-letters-01")) {
 		t.Fatalf("sitemap did not honor forwarded headers: %s", rec.Body.Bytes())
 	}
+}
+
+func TestSEOInjectionPublicMode(t *testing.T) {
+	lib, err := content.Load(fstest.MapFS{
+		"english/a.yaml": &fstest.MapFile{Data: []byte(lessonYAML)},
+	}, "")
+	if err != nil {
+		t.Fatalf("content.Load: %v", err)
+	}
+	cfg := config.Config{Log: config.LogConfig{Level: "error", Format: "text"}}
+	spaFS := fstest.MapFS{
+		"index.html": &fstest.MapFile{Data: []byte("<!doctype html><html><head><title>BrightKids</title></head><body></body></html>")},
+	}
+	srv, err := New(Options{
+		Config:  config.ServerConfig{Host: "127.0.0.1", Port: 0},
+		Mode:    config.ModePublic,
+		Log:     cfg.NewLogger(),
+		Content: lib,
+		SPAFS:   spaFS,
+	})
+	if err != nil {
+		t.Fatalf("New: %v", err)
+	}
+	h := srv.Handler()
+
+	get := func(path string) string {
+		rec := httptest.NewRecorder()
+		h.ServeHTTP(rec, httptest.NewRequest(http.MethodGet, path, nil))
+		return rec.Body.String()
+	}
+
+	home := get("/")
+	for _, want := range []string{
+		`<title>BrightKids - אקדמיית החלל ללמידה</title>`,
+		`name="description"`, `name="keywords"`, `name="author" content="Tomer Klein (תומר קליין)"`,
+		`property="og:title"`, `property="og:image"`,
+		`property="og:image:width" content="1200"`, `property="og:image:height" content="630"`,
+		`property="og:url" content="http://example.com/"`,
+		`name="twitter:card" content="summary_large_image"`,
+	} {
+		if !strings.Contains(home, want) {
+			t.Errorf("home SEO missing %q", want)
+		}
+	}
+
+	lesson := get("/lesson/en-g1-letters-01")
+	if !strings.Contains(lesson, `property="og:type" content="article"`) {
+		t.Errorf("lesson page should be og:type article")
+	}
+	if !strings.Contains(lesson, "The Letter A") {
+		t.Errorf("lesson SEO should include the lesson title")
+	}
+
+	// Private mode serves the plain HTML — no injection.
+	priv := get2(t, newTestServer(t), "/")
+	if strings.Contains(priv, "og:image") || strings.Contains(priv, "Tomer Klein") {
+		t.Errorf("private mode must not inject SEO meta")
+	}
+}
+
+func get2(t *testing.T, h http.Handler, path string) string {
+	t.Helper()
+	rec := httptest.NewRecorder()
+	h.ServeHTTP(rec, httptest.NewRequest(http.MethodGet, path, nil))
+	return rec.Body.String()
 }
 
 func TestProfileProgressFlow(t *testing.T) {

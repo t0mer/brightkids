@@ -9,10 +9,10 @@ import (
 	"strings"
 )
 
-// requestBaseURL derives the public origin (scheme://host) from the incoming
+// RequestBaseURL derives the public origin (scheme://host) from the incoming
 // request, honoring reverse-proxy headers so generated absolute URLs match the
 // address the browser actually used.
-func requestBaseURL(r *http.Request) string {
+func RequestBaseURL(r *http.Request) string {
 	scheme := "http"
 	if r.TLS != nil {
 		scheme = "https"
@@ -31,7 +31,7 @@ func requestBaseURL(r *http.Request) string {
 // keeps bots out of the per-child utility routes and the JSON API, and points
 // to the sitemap on the same origin the request arrived on.
 func (d *Deps) Robots(w http.ResponseWriter, r *http.Request) {
-	base := requestBaseURL(r)
+	base := RequestBaseURL(r)
 	body := strings.Join([]string{
 		"User-agent: *",
 		"Allow: /",
@@ -63,7 +63,7 @@ type sitemapURLSet struct {
 // home, the subject pickers, each subject/grade list, and every lesson — as
 // absolute URLs rooted at the request's own origin.
 func (d *Deps) Sitemap(w http.ResponseWriter, r *http.Request) {
-	base := requestBaseURL(r)
+	base := RequestBaseURL(r)
 	set := sitemapURLSet{Xmlns: "http://www.sitemaps.org/schemas/sitemap/0.9"}
 	add := func(path, freq, prio string) {
 		set.URLs = append(set.URLs, sitemapURL{Loc: base + path, ChangeFreq: freq, Priority: prio})

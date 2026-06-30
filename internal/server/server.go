@@ -57,6 +57,14 @@ func New(opts Options) (*Server, error) {
 	if mode == "" {
 		mode = config.ModePrivate
 	}
+	// Public mode injects per-page SEO meta into the served HTML so crawlers and
+	// social scrapers (which don't run the SPA) see correct tags. Private mode
+	// serves the plain index.html.
+	var seoTransform func(*http.Request, []byte) []byte
+	if mode == config.ModePublic {
+		lib := opts.Content
+		seoTransform = func(r *http.Request, doc []byte) []byte { return injectSEO(doc, lib, r) }
+	}
 	s := &Server{
 		cfg:     opts.Config,
 		mode:    mode,
@@ -64,7 +72,7 @@ func New(opts Options) (*Server, error) {
 		content: opts.Content,
 		store:   opts.Store,
 		metrics: opts.Metrics,
-		spa:     spaHandler(spaFS),
+		spa:     spaHandler(spaFS, seoTransform),
 	}
 	s.http = &http.Server{
 		Addr:              opts.Config.Addr(),
