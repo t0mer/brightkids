@@ -209,6 +209,20 @@ func validateProblem(p Problem) error {
 }
 
 func validateDragDrop(l Lesson) error {
+	// A sentence-ordering set: each sentence needs at least 2 words.
+	if len(l.Sentences) > 0 {
+		for i, s := range l.Sentences {
+			if len(s) < 2 {
+				return fmt.Errorf("sentences[%d] needs at least 2 words", i)
+			}
+			for j, w := range s {
+				if w == "" {
+					return fmt.Errorf("sentences[%d][%d] is empty", i, j)
+				}
+			}
+		}
+		return nil
+	}
 	if len(l.Items) < 2 {
 		return fmt.Errorf("drag-drop needs at least 2 items")
 	}

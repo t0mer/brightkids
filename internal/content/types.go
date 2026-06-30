@@ -61,6 +61,9 @@ type Lesson struct {
 	Glyph string `yaml:"glyph,omitempty" json:"glyph,omitempty"`
 	// Solution: drag-drop ordered list of item IDs forming the correct answer.
 	Solution []string `yaml:"solution,omitempty" json:"solution,omitempty"`
+	// Sentences: a drag-drop "order the words" set — each entry is the words of a
+	// sentence in correct order; the activity samples a few and scrambles them.
+	Sentences [][]string `yaml:"sentences,omitempty" json:"sentences,omitempty"`
 
 	Reward Reward `yaml:"reward" json:"reward"`
 }
