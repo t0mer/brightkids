@@ -3,6 +3,13 @@
 # Every key can be overridden by an env var prefixed BRIGHTKIDS_, e.g.
 #   BRIGHTKIDS_SERVER_PORT=9000  BRIGHTKIDS_LOG_LEVEL=debug
 
+# Storage mode for child profiles, progress, and settings:
+#   private (default) — self-hosted; persisted server-side in SQLite (db.path).
+#   public            — stored only in the browser's localStorage; the server
+#                       is stateless and opens no database (db.path is ignored).
+# Override with BRIGHTKIDS_MODE=public  or  --mode public.
+mode: "private"
+
 server:
   host: "0.0.0.0"
   port: 8080
