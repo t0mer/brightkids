@@ -4,8 +4,9 @@ grade: 2
 difficulty: 2
 locale: he-IL
 direction: rtl
-title: "כְּתָב רָהוּט: הָאוֹת נ"
+title: "כְּתָב רָהוּט: אוֹתִיּוֹת"
 activity: tracing
-prompt_tts: "עִקְבוּ אַחֲרֵי הָאוֹת נוּן בִּכְתָב רָהוּט"
-glyph: "נ"
+prompt_tts: "עִקְבוּ אַחֲרֵי הָאוֹת בִּכְתָב רָהוּט"
+instruction: "עִקְבוּ אַחֲרֵי הָאוֹת"
+glyphs: ["ק", "ר", "ש", "ת", "ב", "כ", "פ", "מ"]
 reward: { stars: 1, sfx: chime, effect: sparkle }

@@ -7,18 +7,12 @@ direction: rtl
 title: "סֵדֶר הָאוֹתִיּוֹת"
 activity: drag-drop
 prompt_tts: "סַדְּרוּ אֶת הָאוֹתִיּוֹת לְפִי סֵדֶר הָאָלֶף בֵּית"
-items:
-  - id: alef
-    label: "א"
-    tts: "אָלֶף"
-  - id: bet
-    label: "ב"
-    tts: "בֵּית"
-  - id: gimel
-    label: "ג"
-    tts: "גִּימֶל"
-  - id: dalet
-    label: "ד"
-    tts: "דָּלֶת"
-solution: [alef, bet, gimel, dalet]
+instruction: "סַדְּרוּ אֶת הָאוֹתִיּוֹת לְפִי סֵדֶר הָאָלֶף בֵּית"
+sentences:
+  - ["א", "ב", "ג", "ד", "ה"]
+  - ["ה", "ו", "ז", "ח", "ט"]
+  - ["ט", "י", "כ", "ל", "מ"]
+  - ["מ", "נ", "ס", "ע", "פ"]
+  - ["פ", "צ", "ק", "ר", "ש"]
+  - ["ק", "ר", "ש", "ת"]
 reward: { stars: 1, sfx: chime, effect: stars }

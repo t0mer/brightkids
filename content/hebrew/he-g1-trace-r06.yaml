@@ -4,8 +4,9 @@ grade: 1
 difficulty: 1
 locale: he-IL
 direction: rtl
-title: "כּוֹתְבִים אֶת הָאוֹת חֵית"
+title: "כּוֹתְבִים אוֹתִיּוֹת"
 activity: tracing
-prompt_tts: "עִקְבוּ עִם הָאֶצְבַּע אַחֲרֵי הָאוֹת חֵית"
-glyph: "ח"
+prompt_tts: "עִקְבוּ עִם הָאֶצְבַּע אַחֲרֵי הָאוֹת"
+instruction: "עִקְבוּ עִם הָאֶצְבַּע אַחֲרֵי הָאוֹת"
+glyphs: ["כ", "ל", "מ", "נ", "ס", "ע", "פ", "צ"]
 reward: { stars: 1, sfx: chime, effect: sparkle }

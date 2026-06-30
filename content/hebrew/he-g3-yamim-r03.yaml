@@ -7,6 +7,7 @@ direction: rtl
 title: "יְמֵי הַשָּׁבוּעַ"
 activity: drag-drop
 prompt_tts: "סַדְּרוּ אֶת יְמֵי הַשָּׁבוּעַ לְפִי הַסֵּדֶר הַנָּכוֹן"
+instruction: "סַדְּרוּ אֶת יְמֵי הַשָּׁבוּעַ לְפִי הַסֵּדֶר הַנָּכוֹן"
 items:
   - id: rishon
     label: "רִאשׁוֹן"
@@ -20,5 +21,14 @@ items:
   - id: revii
     label: "רְבִיעִי"
     tts: "יוֹם רְבִיעִי"
-solution: [rishon, sheni, shlishi, revii]
+  - id: chamishi
+    label: "חֲמִישִׁי"
+    tts: "יוֹם חֲמִישִׁי"
+  - id: shishi
+    label: "שִׁישִׁי"
+    tts: "יוֹם שִׁישִׁי"
+  - id: shabat
+    label: "שַׁבָּת"
+    tts: "שַׁבָּת"
+solution: [rishon, sheni, shlishi, revii, chamishi, shishi, shabat]
 reward: { stars: 1, sfx: chime, effect: stars }
