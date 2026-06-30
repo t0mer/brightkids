@@ -140,8 +140,13 @@ func validateQuestionSet(l Lesson) error {
 }
 
 func validateTracing(l Lesson) error {
-	if l.Glyph == "" {
-		return fmt.Errorf("tracing needs a glyph")
+	if l.Glyph == "" && len(l.Glyphs) == 0 {
+		return fmt.Errorf("tracing needs a glyph or glyphs")
+	}
+	for i, g := range l.Glyphs {
+		if g == "" {
+			return fmt.Errorf("glyphs[%d] is empty", i)
+		}
 	}
 	return nil
 }

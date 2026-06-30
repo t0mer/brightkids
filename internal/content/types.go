@@ -59,6 +59,9 @@ type Lesson struct {
 	Comparisons []Comparison `yaml:"comparisons,omitempty" json:"comparisons,omitempty"`
 	// Glyph: tracing (the character) and counting (the object emoji to render).
 	Glyph string `yaml:"glyph,omitempty" json:"glyph,omitempty"`
+	// Glyphs: a tracing pool — the activity picks one character at random per
+	// play (and on shuffle), so a single lesson practises a whole letter set.
+	Glyphs []string `yaml:"glyphs,omitempty" json:"glyphs,omitempty"`
 	// Solution: drag-drop ordered list of item IDs forming the correct answer.
 	Solution []string `yaml:"solution,omitempty" json:"solution,omitempty"`
 	// Sentences: a drag-drop "order the words" set — each entry is the words of a
