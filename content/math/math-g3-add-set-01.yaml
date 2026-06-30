@@ -8,16 +8,16 @@ title: "חִבּוּר תְּלַת־סִפְרָתִי — סֵט 1"
 activity: arithmetic
 prompt_tts: "פִּתְרוּ אֶת תַּרְגִּילֵי הַחִבּוּר"
 problems:
-  - { operands: [674, 661], operator: "+", answer: 1335 }
-  - { operands: [849, 628], operator: "+", answer: 1477 }
-  - { operands: [681, 474], operator: "+", answer: 1155 }
-  - { operands: [380, 166], operator: "+", answer: 546 }
-  - { operands: [142, 793], operator: "+", answer: 935 }
-  - { operands: [359, 408], operator: "+", answer: 767 }
-  - { operands: [121, 705], operator: "+", answer: 826 }
-  - { operands: [849, 650], operator: "+", answer: 1499 }
-  - { operands: [492, 826], operator: "+", answer: 1318 }
-  - { operands: [632, 749], operator: "+", answer: 1381 }
-  - { operands: [331, 507], operator: "+", answer: 838 }
-  - { operands: [289, 859], operator: "+", answer: 1148 }
+  - { operands: [226, 771], operator: "+", answer: 997 }
+  - { operands: [471, 232], operator: "+", answer: 703 }
+  - { operands: [429, 815], operator: "+", answer: 1244 }
+  - { operands: [219, 716], operator: "+", answer: 935 }
+  - { operands: [632, 386], operator: "+", answer: 1018 }
+  - { operands: [261, 474], operator: "+", answer: 735 }
+  - { operands: [597, 727], operator: "+", answer: 1324 }
+  - { operands: [107, 463], operator: "+", answer: 570 }
+  - { operands: [870, 254], operator: "+", answer: 1124 }
+  - { operands: [198, 584], operator: "+", answer: 782 }
+  - { operands: [772, 782], operator: "+", answer: 1554 }
+  - { operands: [744, 155], operator: "+", answer: 899 }
 reward: { stars: 3, sfx: ding, effect: confetti }

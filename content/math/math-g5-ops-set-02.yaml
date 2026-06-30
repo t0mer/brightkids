@@ -1,0 +1,34 @@
+id: math-g5-ops-set-02
+subject: math
+grade: 5
+difficulty: 3
+locale: he-IL
+direction: ltr
+title: "סֵדֶר פְּעוּלוֹת"
+activity: multiple-choice
+prompt_tts: "פִּתְרוּ לְפִי סֵדֶר הַפְּעוּלוֹת"
+questions:
+  - glyph: "20 - 3 × 4"
+    items:
+      - { id: o1, label: "8", correct: true }
+      - { id: o2, label: "68" }
+      - { id: o3, label: "9" }
+      - { id: o4, label: "7" }
+  - glyph: "(5 + 5) × 3"
+    items:
+      - { id: o1, label: "30", correct: true }
+      - { id: o2, label: "20" }
+      - { id: o3, label: "31" }
+      - { id: o4, label: "29" }
+  - glyph: "10 - 2 × 6"
+    items:
+      - { id: o1, label: "-2", correct: true }
+      - { id: o2, label: "48" }
+      - { id: o3, label: "0" }
+  - glyph: "8 + 3 × 2"
+    items:
+      - { id: o1, label: "14", correct: true }
+      - { id: o2, label: "22" }
+      - { id: o3, label: "15" }
+      - { id: o4, label: "13" }
+reward: { stars: 3, sfx: ding, effect: confetti }

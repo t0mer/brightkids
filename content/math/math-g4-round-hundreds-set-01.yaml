@@ -1,0 +1,35 @@
+id: math-g4-round-hundreds-set-01
+subject: math
+grade: 4
+difficulty: 3
+locale: he-IL
+direction: ltr
+title: "עִגּוּל לַמֵּאוֹת"
+activity: multiple-choice
+prompt_tts: "עַגְּלוּ אֶת הַמִּסְפָּר לַמֵּאוֹת"
+questions:
+  - glyph: "278"
+    items:
+      - { id: o1, label: "300", correct: true }
+      - { id: o2, label: "301" }
+      - { id: o3, label: "299" }
+      - { id: o4, label: "302" }
+  - glyph: "650"
+    items:
+      - { id: o1, label: "700", correct: true }
+      - { id: o2, label: "701" }
+      - { id: o3, label: "699" }
+      - { id: o4, label: "702" }
+  - glyph: "412"
+    items:
+      - { id: o1, label: "400", correct: true }
+      - { id: o2, label: "401" }
+      - { id: o3, label: "399" }
+      - { id: o4, label: "402" }
+  - glyph: "720"
+    items:
+      - { id: o1, label: "700", correct: true }
+      - { id: o2, label: "701" }
+      - { id: o3, label: "699" }
+      - { id: o4, label: "702" }
+reward: { stars: 3, sfx: ding, effect: confetti }

@@ -1,0 +1,32 @@
+id: math-g5-word-set-01
+subject: math
+grade: 5
+difficulty: 3
+locale: he-IL
+direction: ltr
+title: "בְּעָיוֹת מִלּוּלִיּוֹת"
+activity: multiple-choice
+prompt_tts: "פִּתְרוּ אֶת הַבְּעָיוֹת"
+questions:
+  - prompt: "בְּחֲנוּת 250 בַּקְבּוּקִים, מָכְרוּ 175. כַּמָּה נִשְׁאֲרוּ?"
+    prompt_text: "בְּחֲנוּת 250 בַּקְבּוּקִים, מָכְרוּ 175. כַּמָּה נִשְׁאֲרוּ?"
+    items:
+      - { id: o1, label: "75", correct: true }
+      - { id: o2, label: "125" }
+      - { id: o3, label: "85" }
+      - { id: o4, label: "425" }
+  - prompt: "מְכוֹנִית נוֹסַעַת 60 קילוֹמֶטֶר בְּשָׁעָה. כַּמָּה תִּסַּע בְּ-3 שָׁעוֹת?"
+    prompt_text: "מְכוֹנִית נוֹסַעַת 60 קילוֹמֶטֶר בְּשָׁעָה. כַּמָּה תִּסַּע בְּ-3 שָׁעוֹת?"
+    items:
+      - { id: o1, label: "180", correct: true }
+      - { id: o2, label: "63" }
+      - { id: o3, label: "120" }
+      - { id: o4, label: "20" }
+  - prompt: "7 קֻפְסָאוֹת שֶׁל 8 עֵטִים. כַּמָּה עֵטִים?"
+    prompt_text: "7 קֻפְסָאוֹת שֶׁל 8 עֵטִים. כַּמָּה עֵטִים?"
+    items:
+      - { id: o1, label: "56", correct: true }
+      - { id: o2, label: "15" }
+      - { id: o3, label: "48" }
+      - { id: o4, label: "64" }
+reward: { stars: 3, sfx: ding, effect: confetti }

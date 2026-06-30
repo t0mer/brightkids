@@ -1,0 +1,35 @@
+id: math-g1-clock-set-02
+subject: math
+grade: 1
+difficulty: 2
+locale: he-IL
+direction: ltr
+title: "מָה הַשָּׁעָה?"
+activity: multiple-choice
+prompt_tts: "מָה הַשָּׁעָה?"
+questions:
+  - glyph: "🕚"
+    items:
+      - { id: o1, label: "11", correct: true }
+      - { id: o2, label: "12" }
+      - { id: o3, label: "10" }
+      - { id: o4, label: "9" }
+  - glyph: "🕒"
+    items:
+      - { id: o1, label: "3", correct: true }
+      - { id: o2, label: "4" }
+      - { id: o3, label: "2" }
+      - { id: o4, label: "5" }
+  - glyph: "🕕"
+    items:
+      - { id: o1, label: "6", correct: true }
+      - { id: o2, label: "7" }
+      - { id: o3, label: "5" }
+      - { id: o4, label: "8" }
+  - glyph: "🕓"
+    items:
+      - { id: o1, label: "4", correct: true }
+      - { id: o2, label: "5" }
+      - { id: o3, label: "3" }
+      - { id: o4, label: "6" }
+reward: { stars: 3, sfx: ding, effect: confetti }

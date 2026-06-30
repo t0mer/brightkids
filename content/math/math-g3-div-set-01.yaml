@@ -8,16 +8,16 @@ title: "חִלּוּק — סֵט 1"
 activity: arithmetic
 prompt_tts: "פִּתְרוּ אֶת תַּרְגִּילֵי הַחִלּוּק"
 problems:
-  - { operands: [24, 4], operator: "/", answer: 6 }
-  - { operands: [9, 3], operator: "/", answer: 3 }
-  - { operands: [40, 4], operator: "/", answer: 10 }
-  - { operands: [30, 5], operator: "/", answer: 6 }
-  - { operands: [16, 2], operator: "/", answer: 8 }
-  - { operands: [3, 3], operator: "/", answer: 1 }
+  - { operands: [4, 2], operator: "/", answer: 2 }
+  - { operands: [12, 3], operator: "/", answer: 4 }
+  - { operands: [20, 2], operator: "/", answer: 10 }
+  - { operands: [4, 4], operator: "/", answer: 1 }
+  - { operands: [6, 2], operator: "/", answer: 3 }
+  - { operands: [15, 5], operator: "/", answer: 3 }
+  - { operands: [18, 2], operator: "/", answer: 9 }
+  - { operands: [6, 3], operator: "/", answer: 2 }
   - { operands: [10, 5], operator: "/", answer: 2 }
-  - { operands: [27, 3], operator: "/", answer: 9 }
-  - { operands: [12, 4], operator: "/", answer: 3 }
-  - { operands: [30, 3], operator: "/", answer: 10 }
+  - { operands: [30, 5], operator: "/", answer: 6 }
   - { operands: [24, 3], operator: "/", answer: 8 }
-  - { operands: [32, 4], operator: "/", answer: 8 }
+  - { operands: [30, 3], operator: "/", answer: 10 }
 reward: { stars: 3, sfx: ding, effect: confetti }

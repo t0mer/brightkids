@@ -1,0 +1,35 @@
+id: math-g1-pred-set-01
+subject: math
+grade: 1
+difficulty: 1
+locale: he-IL
+direction: ltr
+title: "הַמִּסְפָּר הַקּוֹדֵם"
+activity: multiple-choice
+prompt_tts: "אֵיזֶה מִסְפָּר בָּא לִפְנֵי הַמִּסְפָּר?"
+questions:
+  - glyph: "15"
+    items:
+      - { id: o1, label: "14", correct: true }
+      - { id: o2, label: "15" }
+      - { id: o3, label: "13" }
+      - { id: o4, label: "16" }
+  - glyph: "19"
+    items:
+      - { id: o1, label: "18", correct: true }
+      - { id: o2, label: "19" }
+      - { id: o3, label: "17" }
+      - { id: o4, label: "20" }
+  - glyph: "10"
+    items:
+      - { id: o1, label: "9", correct: true }
+      - { id: o2, label: "10" }
+      - { id: o3, label: "8" }
+      - { id: o4, label: "11" }
+  - glyph: "6"
+    items:
+      - { id: o1, label: "5", correct: true }
+      - { id: o2, label: "6" }
+      - { id: o3, label: "4" }
+      - { id: o4, label: "7" }
+reward: { stars: 3, sfx: ding, effect: confetti }

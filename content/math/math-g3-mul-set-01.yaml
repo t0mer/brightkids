@@ -8,16 +8,16 @@ title: "לוּחַ הַכֶּפֶל — סֵט 1"
 activity: arithmetic
 prompt_tts: "פִּתְרוּ אֶת תַּרְגִּילֵי הַכֶּפֶל"
 problems:
-  - { operands: [4, 2], operator: "x", answer: 8 }
-  - { operands: [3, 6], operator: "x", answer: 18 }
-  - { operands: [3, 3], operator: "x", answer: 9 }
-  - { operands: [3, 10], operator: "x", answer: 30 }
-  - { operands: [4, 6], operator: "x", answer: 24 }
-  - { operands: [3, 5], operator: "x", answer: 15 }
-  - { operands: [3, 1], operator: "x", answer: 3 }
-  - { operands: [6, 2], operator: "x", answer: 12 }
-  - { operands: [4, 9], operator: "x", answer: 36 }
+  - { operands: [3, 4], operator: "x", answer: 12 }
+  - { operands: [3, 8], operator: "x", answer: 24 }
+  - { operands: [6, 7], operator: "x", answer: 42 }
   - { operands: [4, 4], operator: "x", answer: 16 }
-  - { operands: [6, 6], operator: "x", answer: 36 }
   - { operands: [6, 1], operator: "x", answer: 6 }
+  - { operands: [3, 5], operator: "x", answer: 15 }
+  - { operands: [4, 9], operator: "x", answer: 36 }
+  - { operands: [3, 3], operator: "x", answer: 9 }
+  - { operands: [3, 9], operator: "x", answer: 27 }
+  - { operands: [4, 8], operator: "x", answer: 32 }
+  - { operands: [4, 2], operator: "x", answer: 8 }
+  - { operands: [4, 7], operator: "x", answer: 28 }
 reward: { stars: 3, sfx: ding, effect: confetti }

@@ -1,0 +1,35 @@
+id: math-g4-quarter-set-01
+subject: math
+grade: 4
+difficulty: 3
+locale: he-IL
+direction: ltr
+title: "רֶבַע"
+activity: multiple-choice
+prompt_tts: "כַּמָּה זֶה רֶבַע?"
+questions:
+  - glyph: "¼ מ-100"
+    items:
+      - { id: o1, label: "25", correct: true }
+      - { id: o2, label: "26" }
+      - { id: o3, label: "24" }
+      - { id: o4, label: "27" }
+  - glyph: "¼ מ-20"
+    items:
+      - { id: o1, label: "5", correct: true }
+      - { id: o2, label: "6" }
+      - { id: o3, label: "4" }
+      - { id: o4, label: "7" }
+  - glyph: "¼ מ-16"
+    items:
+      - { id: o1, label: "4", correct: true }
+      - { id: o2, label: "5" }
+      - { id: o3, label: "3" }
+      - { id: o4, label: "6" }
+  - glyph: "¼ מ-40"
+    items:
+      - { id: o1, label: "10", correct: true }
+      - { id: o2, label: "11" }
+      - { id: o3, label: "9" }
+      - { id: o4, label: "12" }
+reward: { stars: 3, sfx: ding, effect: confetti }

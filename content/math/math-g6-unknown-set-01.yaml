@@ -1,0 +1,35 @@
+id: math-g6-unknown-set-01
+subject: math
+grade: 6
+difficulty: 3
+locale: he-IL
+direction: ltr
+title: "מַהוּ הַנֶּעְלָם?"
+activity: multiple-choice
+prompt_tts: "אֵיזֶה מִסְפָּר מַשְׁלִים אֶת הַתַּרְגִּיל?"
+questions:
+  - glyph: "3 × ? = 21"
+    items:
+      - { id: o1, label: "7", correct: true }
+      - { id: o2, label: "18" }
+      - { id: o3, label: "24" }
+      - { id: o4, label: "63" }
+  - glyph: "? - 5 = 12"
+    items:
+      - { id: o1, label: "17", correct: true }
+      - { id: o2, label: "7" }
+      - { id: o3, label: "60" }
+      - { id: o4, label: "18" }
+  - glyph: "? / 4 = 6"
+    items:
+      - { id: o1, label: "24", correct: true }
+      - { id: o2, label: "10" }
+      - { id: o3, label: "2" }
+      - { id: o4, label: "12" }
+  - glyph: "? + 7 = 15"
+    items:
+      - { id: o1, label: "8", correct: true }
+      - { id: o2, label: "22" }
+      - { id: o3, label: "7" }
+      - { id: o4, label: "9" }
+reward: { stars: 3, sfx: ding, effect: confetti }

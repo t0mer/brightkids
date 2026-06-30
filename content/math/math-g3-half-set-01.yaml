@@ -1,0 +1,35 @@
+id: math-g3-half-set-01
+subject: math
+grade: 3
+difficulty: 2
+locale: he-IL
+direction: ltr
+title: "חֲצִי"
+activity: multiple-choice
+prompt_tts: "כַּמָּה זֶה חֲצִי?"
+questions:
+  - glyph: "½ מ-40"
+    items:
+      - { id: o1, label: "20", correct: true }
+      - { id: o2, label: "21" }
+      - { id: o3, label: "19" }
+      - { id: o4, label: "22" }
+  - glyph: "½ מ-20"
+    items:
+      - { id: o1, label: "10", correct: true }
+      - { id: o2, label: "11" }
+      - { id: o3, label: "9" }
+      - { id: o4, label: "12" }
+  - glyph: "½ מ-24"
+    items:
+      - { id: o1, label: "12", correct: true }
+      - { id: o2, label: "13" }
+      - { id: o3, label: "11" }
+      - { id: o4, label: "14" }
+  - glyph: "½ מ-30"
+    items:
+      - { id: o1, label: "15", correct: true }
+      - { id: o2, label: "16" }
+      - { id: o3, label: "14" }
+      - { id: o4, label: "17" }
+reward: { stars: 3, sfx: ding, effect: confetti }

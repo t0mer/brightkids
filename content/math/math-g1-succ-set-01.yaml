@@ -1,0 +1,35 @@
+id: math-g1-succ-set-01
+subject: math
+grade: 1
+difficulty: 1
+locale: he-IL
+direction: ltr
+title: "הַמִּסְפָּר הַבָּא"
+activity: multiple-choice
+prompt_tts: "אֵיזֶה מִסְפָּר בָּא אַחֲרֵי הַמִּסְפָּר?"
+questions:
+  - glyph: "3"
+    items:
+      - { id: o1, label: "4", correct: true }
+      - { id: o2, label: "5" }
+      - { id: o3, label: "3" }
+      - { id: o4, label: "6" }
+  - glyph: "12"
+    items:
+      - { id: o1, label: "13", correct: true }
+      - { id: o2, label: "14" }
+      - { id: o3, label: "12" }
+      - { id: o4, label: "15" }
+  - glyph: "2"
+    items:
+      - { id: o1, label: "3", correct: true }
+      - { id: o2, label: "4" }
+      - { id: o3, label: "2" }
+      - { id: o4, label: "5" }
+  - glyph: "13"
+    items:
+      - { id: o1, label: "14", correct: true }
+      - { id: o2, label: "15" }
+      - { id: o3, label: "13" }
+      - { id: o4, label: "16" }
+reward: { stars: 3, sfx: ding, effect: confetti }

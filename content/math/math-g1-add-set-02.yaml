@@ -8,16 +8,16 @@ title: "חִבּוּר עַד 10 — סֵט 2"
 activity: arithmetic
 prompt_tts: "פִּתְרוּ אֶת תַּרְגִּילֵי הַחִבּוּר"
 problems:
-  - { operands: [1, 6], operator: "+", answer: 7 }
-  - { operands: [5, 2], operator: "+", answer: 7 }
-  - { operands: [1, 4], operator: "+", answer: 5 }
-  - { operands: [2, 6], operator: "+", answer: 8 }
-  - { operands: [1, 2], operator: "+", answer: 3 }
-  - { operands: [6, 1], operator: "+", answer: 7 }
-  - { operands: [2, 5], operator: "+", answer: 7 }
-  - { operands: [6, 3], operator: "+", answer: 9 }
+  - { operands: [5, 4], operator: "+", answer: 9 }
   - { operands: [3, 2], operator: "+", answer: 5 }
-  - { operands: [4, 5], operator: "+", answer: 9 }
-  - { operands: [1, 7], operator: "+", answer: 8 }
-  - { operands: [3, 3], operator: "+", answer: 6 }
+  - { operands: [1, 5], operator: "+", answer: 6 }
+  - { operands: [2, 6], operator: "+", answer: 8 }
+  - { operands: [2, 2], operator: "+", answer: 4 }
+  - { operands: [6, 1], operator: "+", answer: 7 }
+  - { operands: [7, 2], operator: "+", answer: 9 }
+  - { operands: [1, 3], operator: "+", answer: 4 }
+  - { operands: [4, 2], operator: "+", answer: 6 }
+  - { operands: [2, 4], operator: "+", answer: 6 }
+  - { operands: [2, 5], operator: "+", answer: 7 }
+  - { operands: [5, 1], operator: "+", answer: 6 }
 reward: { stars: 3, sfx: ding, effect: confetti }

@@ -8,16 +8,16 @@ title: "כֶּפֶל גָּדוֹל — סֵט 1"
 activity: arithmetic
 prompt_tts: "פִּתְרוּ אֶת תַּרְגִּילֵי הַכֶּפֶל"
 problems:
-  - { operands: [19, 6], operator: "x", answer: 114 }
-  - { operands: [16, 7], operator: "x", answer: 112 }
-  - { operands: [20, 4], operator: "x", answer: 80 }
+  - { operands: [18, 1], operator: "x", answer: 18 }
+  - { operands: [19, 9], operator: "x", answer: 171 }
+  - { operands: [11, 3], operator: "x", answer: 33 }
+  - { operands: [13, 8], operator: "x", answer: 104 }
+  - { operands: [13, 2], operator: "x", answer: 26 }
   - { operands: [19, 2], operator: "x", answer: 38 }
-  - { operands: [16, 6], operator: "x", answer: 96 }
-  - { operands: [14, 4], operator: "x", answer: 56 }
-  - { operands: [11, 8], operator: "x", answer: 88 }
-  - { operands: [18, 3], operator: "x", answer: 54 }
   - { operands: [15, 3], operator: "x", answer: 45 }
-  - { operands: [14, 6], operator: "x", answer: 84 }
-  - { operands: [17, 7], operator: "x", answer: 119 }
-  - { operands: [20, 5], operator: "x", answer: 100 }
+  - { operands: [17, 4], operator: "x", answer: 68 }
+  - { operands: [15, 2], operator: "x", answer: 30 }
+  - { operands: [19, 6], operator: "x", answer: 114 }
+  - { operands: [17, 2], operator: "x", answer: 34 }
+  - { operands: [14, 2], operator: "x", answer: 28 }
 reward: { stars: 3, sfx: ding, effect: confetti }

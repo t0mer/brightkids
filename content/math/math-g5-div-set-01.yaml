@@ -8,16 +8,16 @@ title: "חִלּוּק — סֵט 1"
 activity: arithmetic
 prompt_tts: "פִּתְרוּ אֶת תַּרְגִּילֵי הַחִלּוּק"
 problems:
-  - { operands: [72, 6], operator: "/", answer: 12 }
-  - { operands: [63, 7], operator: "/", answer: 9 }
-  - { operands: [120, 10], operator: "/", answer: 12 }
-  - { operands: [72, 12], operator: "/", answer: 6 }
-  - { operands: [72, 9], operator: "/", answer: 8 }
-  - { operands: [70, 10], operator: "/", answer: 7 }
-  - { operands: [21, 7], operator: "/", answer: 3 }
-  - { operands: [84, 12], operator: "/", answer: 7 }
   - { operands: [56, 8], operator: "/", answer: 7 }
-  - { operands: [8, 8], operator: "/", answer: 1 }
-  - { operands: [70, 7], operator: "/", answer: 10 }
-  - { operands: [7, 7], operator: "/", answer: 1 }
+  - { operands: [66, 11], operator: "/", answer: 6 }
+  - { operands: [33, 11], operator: "/", answer: 3 }
+  - { operands: [40, 10], operator: "/", answer: 4 }
+  - { operands: [44, 11], operator: "/", answer: 4 }
+  - { operands: [50, 10], operator: "/", answer: 5 }
+  - { operands: [81, 9], operator: "/", answer: 9 }
+  - { operands: [12, 6], operator: "/", answer: 2 }
+  - { operands: [90, 9], operator: "/", answer: 10 }
+  - { operands: [24, 8], operator: "/", answer: 3 }
+  - { operands: [12, 12], operator: "/", answer: 1 }
+  - { operands: [18, 6], operator: "/", answer: 3 }
 reward: { stars: 3, sfx: ding, effect: confetti }

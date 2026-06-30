@@ -8,16 +8,16 @@ title: "חִסּוּר עַד 100 — סֵט 1"
 activity: arithmetic
 prompt_tts: "פִּתְרוּ אֶת תַּרְגִּילֵי הַחִסּוּר"
 problems:
-  - { operands: [90, 81], operator: "-", answer: 9 }
-  - { operands: [34, 6], operator: "-", answer: 28 }
-  - { operands: [41, 21], operator: "-", answer: 20 }
-  - { operands: [83, 61], operator: "-", answer: 22 }
+  - { operands: [55, 1], operator: "-", answer: 54 }
+  - { operands: [76, 56], operator: "-", answer: 20 }
+  - { operands: [90, 71], operator: "-", answer: 19 }
+  - { operands: [97, 66], operator: "-", answer: 31 }
+  - { operands: [48, 6], operator: "-", answer: 42 }
   - { operands: [55, 41], operator: "-", answer: 14 }
-  - { operands: [55, 36], operator: "-", answer: 19 }
-  - { operands: [76, 71], operator: "-", answer: 5 }
-  - { operands: [48, 16], operator: "-", answer: 32 }
-  - { operands: [55, 26], operator: "-", answer: 29 }
+  - { operands: [34, 6], operator: "-", answer: 28 }
+  - { operands: [97, 26], operator: "-", answer: 71 }
+  - { operands: [83, 61], operator: "-", answer: 22 }
+  - { operands: [83, 66], operator: "-", answer: 17 }
   - { operands: [27, 6], operator: "-", answer: 21 }
-  - { operands: [62, 21], operator: "-", answer: 41 }
-  - { operands: [69, 41], operator: "-", answer: 28 }
+  - { operands: [90, 41], operator: "-", answer: 49 }
 reward: { stars: 3, sfx: ding, effect: confetti }

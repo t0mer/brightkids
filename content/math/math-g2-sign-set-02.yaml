@@ -1,0 +1,31 @@
+id: math-g2-sign-set-02
+subject: math
+grade: 2
+difficulty: 2
+locale: he-IL
+direction: ltr
+title: "אֵיזֶה סִימָן מַתְאִים?"
+activity: multiple-choice
+prompt_tts: "אֵיזֶה סִימָן מַתְאִים בֵּין הַמִּסְפָּרִים?"
+questions:
+  - glyph: "4 _ 7"
+    items:
+      - { id: o1, label: "<", correct: true }
+      - { id: o2, label: ">" }
+      - { id: o3, label: "=" }
+  - glyph: "10 _ 10"
+    items:
+      - { id: o1, label: "=", correct: true }
+      - { id: o2, label: "<" }
+      - { id: o3, label: ">" }
+  - glyph: "12 _ 8"
+    items:
+      - { id: o1, label: ">", correct: true }
+      - { id: o2, label: "<" }
+      - { id: o3, label: "=" }
+  - glyph: "7 _ 13"
+    items:
+      - { id: o1, label: "<", correct: true }
+      - { id: o2, label: ">" }
+      - { id: o3, label: "=" }
+reward: { stars: 3, sfx: ding, effect: confetti }

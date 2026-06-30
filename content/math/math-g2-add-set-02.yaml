@@ -8,16 +8,16 @@ title: "חִבּוּר עַד 100 — סֵט 1"
 activity: arithmetic
 prompt_tts: "פִּתְרוּ אֶת תַּרְגִּילֵי הַחִבּוּר"
 problems:
-  - { operands: [31, 76], operator: "+", answer: 107 }
-  - { operands: [73, 32], operator: "+", answer: 105 }
-  - { operands: [73, 76], operator: "+", answer: 149 }
-  - { operands: [24, 21], operator: "+", answer: 45 }
-  - { operands: [38, 65], operator: "+", answer: 103 }
-  - { operands: [87, 65], operator: "+", answer: 152 }
-  - { operands: [66, 87], operator: "+", answer: 153 }
-  - { operands: [80, 65], operator: "+", answer: 145 }
-  - { operands: [17, 21], operator: "+", answer: 38 }
-  - { operands: [10, 76], operator: "+", answer: 86 }
-  - { operands: [87, 54], operator: "+", answer: 141 }
+  - { operands: [24, 54], operator: "+", answer: 78 }
+  - { operands: [87, 10], operator: "+", answer: 97 }
+  - { operands: [59, 76], operator: "+", answer: 135 }
   - { operands: [66, 21], operator: "+", answer: 87 }
+  - { operands: [38, 32], operator: "+", answer: 70 }
+  - { operands: [80, 65], operator: "+", answer: 145 }
+  - { operands: [66, 76], operator: "+", answer: 142 }
+  - { operands: [80, 87], operator: "+", answer: 167 }
+  - { operands: [52, 10], operator: "+", answer: 62 }
+  - { operands: [10, 54], operator: "+", answer: 64 }
+  - { operands: [31, 10], operator: "+", answer: 41 }
+  - { operands: [59, 87], operator: "+", answer: 146 }
 reward: { stars: 3, sfx: ding, effect: confetti }

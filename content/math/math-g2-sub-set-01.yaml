@@ -8,16 +8,16 @@ title: "חִסּוּר עַד 20 — סֵט 1"
 activity: arithmetic
 prompt_tts: "פִּתְרוּ אֶת תַּרְגִּילֵי הַחִסּוּר"
 problems:
-  - { operands: [20, 4], operator: "-", answer: 16 }
-  - { operands: [16, 12], operator: "-", answer: 4 }
-  - { operands: [15, 5], operator: "-", answer: 10 }
-  - { operands: [14, 11], operator: "-", answer: 3 }
-  - { operands: [12, 9], operator: "-", answer: 3 }
-  - { operands: [13, 1], operator: "-", answer: 12 }
-  - { operands: [20, 9], operator: "-", answer: 11 }
-  - { operands: [18, 7], operator: "-", answer: 11 }
-  - { operands: [20, 1], operator: "-", answer: 19 }
-  - { operands: [17, 5], operator: "-", answer: 12 }
-  - { operands: [18, 17], operator: "-", answer: 1 }
-  - { operands: [16, 13], operator: "-", answer: 3 }
+  - { operands: [11, 9], operator: "-", answer: 2 }
+  - { operands: [20, 11], operator: "-", answer: 9 }
+  - { operands: [18, 5], operator: "-", answer: 13 }
+  - { operands: [16, 3], operator: "-", answer: 13 }
+  - { operands: [19, 4], operator: "-", answer: 15 }
+  - { operands: [18, 1], operator: "-", answer: 17 }
+  - { operands: [15, 6], operator: "-", answer: 9 }
+  - { operands: [15, 4], operator: "-", answer: 11 }
+  - { operands: [19, 7], operator: "-", answer: 12 }
+  - { operands: [17, 6], operator: "-", answer: 11 }
+  - { operands: [20, 12], operator: "-", answer: 8 }
+  - { operands: [12, 10], operator: "-", answer: 2 }
 reward: { stars: 3, sfx: ding, effect: confetti }

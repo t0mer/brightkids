@@ -8,16 +8,16 @@ title: "מִי גָּדוֹל יוֹתֵר? — סֵט 1"
 activity: comparison
 prompt_tts: "הַקִּישׁוּ עַל הַמִּסְפָּר הַגָּדוֹל יוֹתֵר"
 comparisons:
-  - { left: 10, right: 4 }
-  - { left: 5, right: 9 }
-  - { left: 6, right: 4 }
-  - { left: 1, right: 8 }
-  - { left: 10, right: 9 }
-  - { left: 5, right: 10 }
-  - { left: 7, right: 3 }
-  - { left: 5, right: 4 }
-  - { left: 8, right: 9 }
-  - { left: 7, right: 8 }
-  - { left: 5, right: 1 }
+  - { left: 8, right: 3 }
+  - { left: 1, right: 6 }
+  - { left: 2, right: 6 }
+  - { left: 2, right: 9 }
+  - { left: 10, right: 3 }
+  - { left: 8, right: 10 }
+  - { left: 10, right: 6 }
+  - { left: 8, right: 7 }
+  - { left: 7, right: 10 }
+  - { left: 9, right: 10 }
+  - { left: 9, right: 5 }
   - { left: 4, right: 3 }
 reward: { stars: 3, sfx: ding, effect: confetti }

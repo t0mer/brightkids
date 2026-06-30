@@ -1,0 +1,27 @@
+id: math-g1-even-set-02
+subject: math
+grade: 1
+difficulty: 2
+locale: he-IL
+direction: ltr
+title: "זוּגִי אוֹ אִי־זוּגִי?"
+activity: multiple-choice
+prompt_tts: "הַאִם הַמִּסְפָּר זוּגִי אוֹ אִי־זוּגִי?"
+questions:
+  - glyph: "6"
+    items:
+      - { id: o1, label: "זוּגִי", correct: true }
+      - { id: o2, label: "אִי־זוּגִי" }
+  - glyph: "5"
+    items:
+      - { id: o1, label: "אִי־זוּגִי", correct: true }
+      - { id: o2, label: "זוּגִי" }
+  - glyph: "8"
+    items:
+      - { id: o1, label: "זוּגִי", correct: true }
+      - { id: o2, label: "אִי־זוּגִי" }
+  - glyph: "7"
+    items:
+      - { id: o1, label: "אִי־זוּגִי", correct: true }
+      - { id: o2, label: "זוּגִי" }
+reward: { stars: 3, sfx: ding, effect: confetti }

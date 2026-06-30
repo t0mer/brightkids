@@ -1,0 +1,27 @@
+id: math-g6-frac-cmp-set-01
+subject: math
+grade: 6
+difficulty: 3
+locale: he-IL
+direction: ltr
+title: "הַשְׁווּ שְׁבָרִים"
+activity: multiple-choice
+prompt_tts: "אֵיזֶה שֶׁבֶר גָּדוֹל יוֹתֵר?"
+questions:
+  - glyph: "7/8 ? 3/4"
+    items:
+      - { id: o1, label: "7/8", correct: true }
+      - { id: o2, label: "3/4" }
+  - glyph: "3/4 ? 2/3"
+    items:
+      - { id: o1, label: "3/4", correct: true }
+      - { id: o2, label: "2/3" }
+  - glyph: "2/5 ? 1/2"
+    items:
+      - { id: o1, label: "1/2", correct: true }
+      - { id: o2, label: "2/5" }
+  - glyph: "5/6 ? 2/3"
+    items:
+      - { id: o1, label: "5/6", correct: true }
+      - { id: o2, label: "2/3" }
+reward: { stars: 3, sfx: ding, effect: confetti }
