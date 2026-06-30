@@ -15,7 +15,8 @@ BrightKids is audio-first, mobile-first, and zero-PII: profiles are just a name 
 - **Trilingual content** — Hebrew (RTL, grades 1–5), English (LTR, grades 1–4), and Math (grades 1–6), with proper BiDi isolation for mixed Hebrew/digit text.
 - **Seven activity types** — letter recognition, multiple choice, counting, arithmetic, matching, drag-to-order, and finger **tracing** (canvas with mask-coverage scoring).
 - **Curriculum-based exercises** — built from a real graded worksheet curriculum. Math (g1–6) spans counting, comparison ("Who is bigger?"), number sense, place value, the four operations, sequences, even/odd, fractions, decimals, order of operations, rounding, word problems, and clock reading. Hebrew (g1–5) covers vowels, reading comprehension, synonyms/opposites, verbs, and sentence ordering; English (g1–4) covers ABC, phonics, word families, and graded reading. Math & Hebrew narrate in Hebrew; English in English.
-- **Audio-first** — tap-to-hear on every prompt plus auto-narration on load via the Web Speech API (he-IL / en-US), so pre-readers can play.
+- **Randomized practice** — pick a subject then a grade; every lesson holds a large pool and samples a fresh set each play, with a **shuffle** button to redraw for endless variety.
+- **Audio-first** — tap-to-hear narration on every prompt via the Web Speech API (he-IL / en-US), so pre-readers can play. Narration is on-demand (no auto-play), so the screen stays calm.
 - **Playful rewards** — confetti, synthesized sound effects, Bibo reactions, stars, and a daily streak. Mistakes get a gentle "try again," never a shaming buzzer.
 - **Accessible** — 48px tap targets, `prefers-reduced-motion` honored, OpenDyslexic toggle, dark mode, high-contrast palette.
 - **Installable PWA** — works offline; lessons and assets (including Hebrew fonts) are precached.
@@ -24,17 +25,21 @@ BrightKids is audio-first, mobile-first, and zero-PII: profiles are just a name 
 
 ## Screenshots
 
-| Choose a subject | A lesson | Tracing |
+| Choose a subject | Choose a grade | Lesson list | Stars & streak |
+|---|---|---|---|
+| ![Subjects](assets/screenshots/subjects.png) | ![Grades](assets/screenshots/grades.png) | ![Lessons](assets/screenshots/lessons.png) | ![Rewards](assets/screenshots/rewards.png) |
+
+| Hear it, pick the letter | Match the pairs | Build a sentence | Trace the letters |
+|---|---|---|---|
+| ![First sound](assets/screenshots/lesson-letter.png) | ![Matching](assets/screenshots/lesson-match.png) | ![Sentence](assets/screenshots/lesson-sentence.png) | ![Tracing](assets/screenshots/lesson-trace.png) |
+
+| Order of operations | Times tables | Who is bigger? | Word problems |
+|---|---|---|---|
+| ![Order of operations](assets/screenshots/lesson-math-concept.png) | ![Arithmetic](assets/screenshots/lesson-math-set.png) | ![Compare](assets/screenshots/lesson-compare.png) | ![Word problems](assets/screenshots/lesson-math.png) |
+
+| Settings (parent-gated) | Dark mode | OpenDyslexic |
 |---|---|---|
-| ![Subjects](assets/screenshots/subjects.png) | ![Letter lesson](assets/screenshots/lesson-letter.png) | ![Tracing](assets/screenshots/lesson-trace.png) |
-
-| Math concepts | Math practice set | Who is bigger? | Rewards |
-|---|---|---|---|
-| ![Math concept](assets/screenshots/lesson-math-concept.png) | ![Math set](assets/screenshots/lesson-math-set.png) | ![Compare](assets/screenshots/lesson-compare.png) | ![Rewards](assets/screenshots/rewards.png) |
-
-| Settings (parent-gated) | Lesson list | Dark mode | OpenDyslexic |
-|---|---|---|---|
-| ![Settings](assets/screenshots/settings.png) | ![Lessons](assets/screenshots/lessons.png) | ![Dark mode](assets/screenshots/subjects-dark.png) | ![OpenDyslexic](assets/screenshots/lesson-dyslexic.png) |
+| ![Settings](assets/screenshots/settings.png) | ![Dark mode](assets/screenshots/subjects-dark.png) | ![OpenDyslexic](assets/screenshots/lesson-dyslexic.png) |
 
 ## Quick start
 
