@@ -10,6 +10,7 @@ import (
 	"io/fs"
 	"log/slog"
 	"net/http"
+	"strings"
 	"time"
 
 	"github.com/t0mer/brightkids/internal/config"
@@ -34,7 +35,10 @@ type Server struct {
 type Options struct {
 	Config config.ServerConfig
 	// Mode is the storage mode ("private" or "public"). Empty defaults to private.
-	Mode    string
+	Mode string
+	// GAID is an optional Google Analytics measurement ID; when set (and valid)
+	// the gtag.js snippet is injected into served pages.
+	GAID    string
 	Log     *slog.Logger
 	Content *content.Library
 	// Store may be nil in public mode (the server is then stateless).
@@ -57,13 +61,30 @@ func New(opts Options) (*Server, error) {
 	if mode == "" {
 		mode = config.ModePrivate
 	}
-	// Public mode injects per-page SEO meta into the served HTML so crawlers and
-	// social scrapers (which don't run the SPA) see correct tags. Private mode
-	// serves the plain index.html.
-	var seoTransform func(*http.Request, []byte) []byte
-	if mode == config.ModePublic {
+	// The served HTML is transformed per request: public mode injects per-page
+	// SEO meta (so crawlers/scrapers that don't run the SPA see correct tags),
+	// and a configured Google Analytics id injects the gtag.js snippet (any
+	// mode). Private mode with no GA id serves the plain index.html.
+	gaID := strings.TrimSpace(opts.GAID)
+	if gaID != "" && !validGAID(gaID) {
+		opts.Log.Warn("ignoring invalid analytics ga_id", "ga_id", gaID)
+		gaID = ""
+	}
+	if gaID != "" {
+		opts.Log.Info("google analytics enabled", "ga_id", gaID)
+	}
+	var indexTransform func(*http.Request, []byte) []byte
+	if mode == config.ModePublic || gaID != "" {
 		lib := opts.Content
-		seoTransform = func(r *http.Request, doc []byte) []byte { return injectSEO(doc, lib, r) }
+		indexTransform = func(r *http.Request, doc []byte) []byte {
+			if mode == config.ModePublic {
+				doc = injectSEO(doc, lib, r)
+			}
+			if gaID != "" {
+				doc = injectGA(doc, gaID)
+			}
+			return doc
+		}
 	}
 	s := &Server{
 		cfg:     opts.Config,
@@ -72,7 +93,7 @@ func New(opts Options) (*Server, error) {
 		content: opts.Content,
 		store:   opts.Store,
 		metrics: opts.Metrics,
-		spa:     spaHandler(spaFS, seoTransform),
+		spa:     spaHandler(spaFS, indexTransform),
 	}
 	s.http = &http.Server{
 		Addr:              opts.Config.Addr(),

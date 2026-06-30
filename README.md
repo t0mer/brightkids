@@ -92,6 +92,7 @@ Precedence: **flags > env > YAML > defaults**. Copy `config.yaml.example` to
 | `log.format` | `--log-format` | `BRIGHTKIDS_LOG_FORMAT` | `json` | `text` for dev |
 | `content.dir` | `--content-dir` | `BRIGHTKIDS_CONTENT_DIR` | *(embedded)* | hot-iterate lesson YAML |
 | `metrics.enabled` | `--metrics` | `BRIGHTKIDS_METRICS_ENABLED` | `true` | |
+| `analytics.ga_id` | `--ga-id` | `BRIGHTKIDS_ANALYTICS_GA_ID` | *(off)* | Google Analytics measurement ID (e.g. `G-XXXXXXXXXX`); injects gtag.js into pages when set |
 
 `--version` prints build info and exits.
 

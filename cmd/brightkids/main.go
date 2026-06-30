@@ -81,6 +81,7 @@ func run(args []string) error {
 	srv, err := server.New(server.Options{
 		Config:  cfg.Server,
 		Mode:    cfg.Mode,
+		GAID:    cfg.Analytics.GAID,
 		Log:     log,
 		Content: lib,
 		Store:   st,
