@@ -4,21 +4,28 @@ grade: 3
 difficulty: 2
 locale: he-IL
 direction: rtl
-title: "קוֹרְאִים אֶת הַמִּילָּה בַּיִת"
+title: "קוֹרְאִים מִילָּה וּבוֹחֲרִים תְּמוּנָה"
 activity: multiple-choice
-prompt_tts: "קִרְאוּ אֶת הַמִּילָּה בַּיִת וּבַחֲרוּ אֶת הַתְּמוּנָה הַמַּתְאִימָה"
-items:
-  - id: bayit
-    label: ""
-    correct: true
-    tts: "בַּיִת"
-    emoji: "🏠"
-  - id: chatul
-    label: ""
-    tts: "חָתוּל"
-    emoji: "🐱"
-  - id: tapuach
-    label: ""
-    tts: "תַּפּוּחַ"
-    emoji: "🍎"
-reward: { stars: 1, sfx: pop, effect: confetti }
+prompt_tts: "קִרְאוּ אֶת הַמִּילָּה וּבַחֲרוּ אֶת הַתְּמוּנָה הַמַּתְאִימָה"
+questions:
+  - prompt: "קִרְאוּ אֶת הַמִּילָּה בַּיִת וּבַחֲרוּ אֶת הַתְּמוּנָה הַמַּתְאִימָה"
+    items:
+      - { id: o1, label: "", correct: true, tts: "בַּיִת", emoji: "🏠" }
+      - { id: o2, label: "", tts: "חָתוּל", emoji: "🐱" }
+      - { id: o3, label: "", tts: "תַּפּוּחַ", emoji: "🍎" }
+  - prompt: "קִרְאוּ אֶת הַמִּילָּה חָתוּל וּבַחֲרוּ אֶת הַתְּמוּנָה הַמַּתְאִימָה"
+    items:
+      - { id: o1, label: "", correct: true, tts: "חָתוּל", emoji: "🐱" }
+      - { id: o2, label: "", tts: "בַּיִת", emoji: "🏠" }
+      - { id: o3, label: "", tts: "תַּפּוּחַ", emoji: "🍎" }
+  - prompt: "קִרְאוּ אֶת הַמִּילָּה תַּפּוּחַ וּבַחֲרוּ אֶת הַתְּמוּנָה הַמַּתְאִימָה"
+    items:
+      - { id: o1, label: "", correct: true, tts: "תַּפּוּחַ", emoji: "🍎" }
+      - { id: o2, label: "", tts: "כֶּלֶב", emoji: "🐶" }
+      - { id: o3, label: "", tts: "עֵץ", emoji: "🌳" }
+  - prompt: "קִרְאוּ אֶת הַמִּילָּה שֶׁמֶשׁ וּבַחֲרוּ אֶת הַתְּמוּנָה הַמַּתְאִימָה"
+    items:
+      - { id: o1, label: "", correct: true, tts: "שֶׁמֶשׁ", emoji: "☀️" }
+      - { id: o2, label: "", tts: "יָרֵחַ", emoji: "🌙" }
+      - { id: o3, label: "", tts: "כּוֹכָב", emoji: "⭐" }
+reward: { stars: 3, sfx: pop, effect: confetti }

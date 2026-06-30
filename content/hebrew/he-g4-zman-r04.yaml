@@ -6,16 +6,26 @@ locale: he-IL
 direction: rtl
 title: "מוּשָּׂגֵי זְמַן"
 activity: multiple-choice
-prompt_tts: "הַיּוֹם יוֹם שְׁלִישִׁי. אֵיזֶה יוֹם יִהְיֶה מָחָר?"
-items:
-  - id: revii
-    label: "יוֹם רְבִיעִי"
-    correct: true
-    tts: "יוֹם רְבִיעִי"
-  - id: sheni
-    label: "יוֹם שֵׁנִי"
-    tts: "יוֹם שֵׁנִי"
-  - id: shishi
-    label: "יוֹם שִׁישִּׁי"
-    tts: "יוֹם שִׁישִּׁי"
-reward: { stars: 1, sfx: pop, effect: confetti }
+prompt_tts: "הַקְשִׁיבוּ לַשְּׁאֵלָה וּבַחֲרוּ אֶת הַתְּשׁוּבָה הַנְּכוֹנָה"
+questions:
+  - prompt: "הַיּוֹם יוֹם שְׁלִישִׁי. אֵיזֶה יוֹם יִהְיֶה מָחָר?"
+    items:
+      - { id: o1, label: "יוֹם רְבִיעִי", correct: true }
+      - { id: o2, label: "יוֹם שֵׁנִי" }
+      - { id: o3, label: "יוֹם שִׁישִּׁי" }
+  - prompt: "הַיּוֹם יוֹם שִׁישִּׁי. אֵיזֶה יוֹם הָיָה אֶתְמוֹל?"
+    items:
+      - { id: o1, label: "יוֹם חֲמִישִׁי", correct: true }
+      - { id: o2, label: "יוֹם רִאשׁוֹן" }
+      - { id: o3, label: "יוֹם שַׁבָּת" }
+  - prompt: "אֵיזוֹ עוֹנָה מַגִּיעָה אַחֲרֵי הַחֹרֶף?"
+    items:
+      - { id: o1, label: "הָאָבִיב", correct: true }
+      - { id: o2, label: "הַקַּיִץ" }
+      - { id: o3, label: "הַסְּתָו" }
+  - prompt: "כַּמָּה חֳדָשִׁים יֵשׁ בְּשָׁנָה אַחַת?"
+    items:
+      - { id: o1, label: "שְׁנֵים עָשָׂר", correct: true }
+      - { id: o2, label: "שִׁבְעָה" }
+      - { id: o3, label: "שְׁלוֹשִׁים" }
+reward: { stars: 3, sfx: pop, effect: confetti }

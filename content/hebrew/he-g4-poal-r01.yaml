@@ -6,16 +6,26 @@ locale: he-IL
 direction: rtl
 title: "פֹּעַל לְפִי גּוּף וּזְמַן"
 activity: multiple-choice
-prompt_tts: "מָחָר אֲנַחְנוּ ___ לְטִיּוּל. אֵיזֶה פֹּעַל מַתְאִים לִזְמַן עָתִיד וּלְגוּף רַבִּים?"
-items:
-  - id: nelech
-    label: "נֵלֵךְ"
-    correct: true
-    tts: "נֵלֵךְ"
-  - id: halachnu
-    label: "הָלַכְנוּ"
-    tts: "הָלַכְנוּ"
-  - id: holech
-    label: "הוֹלֵךְ"
-    tts: "הוֹלֵךְ"
-reward: { stars: 1, sfx: pop, effect: confetti }
+prompt_tts: "בַּחֲרוּ אֶת הַפֹּעַל הַמַּתְאִים לַגּוּף וְלַזְּמַן"
+questions:
+  - prompt: "מָחָר אֲנַחְנוּ ___ לְטִיּוּל. אֵיזֶה פֹּעַל מַתְאִים לִזְמַן עָתִיד וּלְגוּף רַבִּים?"
+    items:
+      - { id: o1, label: "נֵלֵךְ", correct: true }
+      - { id: o2, label: "הָלַכְנוּ" }
+      - { id: o3, label: "הוֹלֵךְ" }
+  - prompt: "אֶתְמוֹל הֵם ___ הַבַּיְתָה. אֵיזֶה פֹּעַל מַתְאִים לֶעָבָר רַבִּים?"
+    items:
+      - { id: o1, label: "חָזְרוּ", correct: true }
+      - { id: o2, label: "חוֹזְרִים" }
+      - { id: o3, label: "יַחְזְרוּ" }
+  - prompt: "עַכְשָׁו אֲנִי ___ סֵפֶר. אֵיזֶה פֹּעַל מַתְאִים לַהֹוֶה יָחִיד?"
+    items:
+      - { id: o1, label: "קוֹרֵא", correct: true }
+      - { id: o2, label: "קָרָאתִי" }
+      - { id: o3, label: "אֶקְרָא" }
+  - prompt: "מָחָר אַתְּ ___ אֶת הַשִּׁיר. אֵיזֶה פֹּעַל מַתְאִים לֶעָתִיד נְקֵבָה?"
+    items:
+      - { id: o1, label: "תָּשִׁירִי", correct: true }
+      - { id: o2, label: "שָׁרְתְּ" }
+      - { id: o3, label: "שָׁרָה" }
+reward: { stars: 3, sfx: pop, effect: confetti }

@@ -6,19 +6,30 @@ locale: he-IL
 direction: rtl
 title: "מִשְׁפְּחוֹת מִילִּים לְפִי שׁוֹרֶשׁ"
 activity: multiple-choice
-prompt_tts: "אֵיזוֹ מִילָּה אֵינָהּ שַׁיֶּכֶת לַמִּשְׁפָּחָה שֶׁל הַשּׁוֹרֶשׁ ל-מ-ד?"
-items:
-  - id: limon
-    label: "לִימוֹן"
-    correct: true
-    tts: "לִימוֹן"
-  - id: talmid
-    label: "תַּלְמִיד"
-    tts: "תַּלְמִיד"
-  - id: limud
-    label: "לִימּוּד"
-    tts: "לִימּוּד"
-  - id: melamed
-    label: "מְלַמֵּד"
-    tts: "מְלַמֵּד"
-reward: { stars: 1, sfx: pop, effect: confetti }
+prompt_tts: "בַּחֲרוּ אֶת הַמִּילָּה שֶׁאֵינָהּ שַׁיֶּכֶת לַמִּשְׁפָּחָה"
+questions:
+  - prompt: "אֵיזוֹ מִילָּה אֵינָהּ שַׁיֶּכֶת לַמִּשְׁפָּחָה שֶׁל הַשּׁוֹרֶשׁ ל-מ-ד?"
+    items:
+      - { id: o1, label: "לִימוֹן", correct: true }
+      - { id: o2, label: "תַּלְמִיד" }
+      - { id: o3, label: "לִימּוּד" }
+      - { id: o4, label: "מְלַמֵּד" }
+  - prompt: "אֵיזוֹ מִילָּה אֵינָהּ שַׁיֶּכֶת לַמִּשְׁפָּחָה שֶׁל הַשּׁוֹרֶשׁ כ-ת-ב?"
+    items:
+      - { id: o1, label: "כֻּתֹּנֶת", correct: true }
+      - { id: o2, label: "מִכְתָּב" }
+      - { id: o3, label: "כְּתִיבָה" }
+      - { id: o4, label: "כַּתָּב" }
+  - prompt: "אֵיזוֹ מִילָּה אֵינָהּ שַׁיֶּכֶת לַמִּשְׁפָּחָה שֶׁל הַשּׁוֹרֶשׁ א-כ-ל?"
+    items:
+      - { id: o1, label: "אֶקְדָּח", correct: true }
+      - { id: o2, label: "אֹכֶל" }
+      - { id: o3, label: "מַאֲכָל" }
+      - { id: o4, label: "אוֹכֵל" }
+  - prompt: "אֵיזוֹ מִילָּה אֵינָהּ שַׁיֶּכֶת לַמִּשְׁפָּחָה שֶׁל הַשּׁוֹרֶשׁ ש-מ-ר?"
+    items:
+      - { id: o1, label: "שָׁמַיִם", correct: true }
+      - { id: o2, label: "שׁוֹמֵר" }
+      - { id: o3, label: "מִשְׁמָר" }
+      - { id: o4, label: "שְׁמִירָה" }
+reward: { stars: 3, sfx: pop, effect: confetti }

@@ -1,0 +1,31 @@
+id: he-g5-poal-atid-set-01
+subject: hebrew
+grade: 5
+difficulty: 3
+locale: he-IL
+direction: rtl
+title: "נִיתּוּחַ פְּעָלִים: זְמַן הֶעָתִיד"
+activity: multiple-choice
+prompt_tts: "בַּחֲרוּ אֶת הַפֹּעַל הַכָּתוּב בִּזְמַן עָתִיד"
+questions:
+  - prompt: "אֵיזֶה פֹּעַל כָּתוּב בִּזְמַן עָתִיד?"
+    items:
+      - { id: o1, label: "יִשְׁמוֹר", correct: true }
+      - { id: o2, label: "שָׁמַר" }
+      - { id: o3, label: "שׁוֹמֵר" }
+  - prompt: "אֵיזֶה פֹּעַל כָּתוּב בִּזְמַן עָתִיד?"
+    items:
+      - { id: o1, label: "יִכְתֹּב", correct: true }
+      - { id: o2, label: "כָּתַב" }
+      - { id: o3, label: "כּוֹתֵב" }
+  - prompt: "אֵיזֶה פֹּעַל כָּתוּב בִּזְמַן עָתִיד?"
+    items:
+      - { id: o1, label: "יֵלֵךְ", correct: true }
+      - { id: o2, label: "הָלַךְ" }
+      - { id: o3, label: "הוֹלֵךְ" }
+  - prompt: "אֵיזֶה פֹּעַל כָּתוּב בִּזְמַן עָתִיד?"
+    items:
+      - { id: o1, label: "יֹאכַל", correct: true }
+      - { id: o2, label: "אָכַל" }
+      - { id: o3, label: "אוֹכֵל" }
+reward: { stars: 3, sfx: ding, effect: confetti }

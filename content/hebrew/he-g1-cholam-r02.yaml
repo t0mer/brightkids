@@ -6,16 +6,26 @@ locale: he-IL
 direction: rtl
 title: "חוֹלָם וְשׁוּרוּק"
 activity: multiple-choice
-prompt_tts: "בַּחֲרוּ אֶת הַמִּילָּה שֶׁנִּקְרֵאת סוּס"
-items:
-  - id: sus
-    label: "סוּס"
-    correct: true
-    tts: "סוּס"
-  - id: sos
-    label: "סוֹס"
-    tts: "סוֹס"
-  - id: sas
-    label: "סַס"
-    tts: "סַס"
-reward: { stars: 1, sfx: ding, effect: confetti }
+prompt_tts: "בַּחֲרוּ אֶת הַמִּילָּה הַנְּכוֹנָה"
+questions:
+  - prompt: "בַּחֲרוּ אֶת הַמִּילָּה שֶׁנִּקְרֵאת סוּס"
+    items:
+      - { id: o1, label: "סוּס", correct: true }
+      - { id: o2, label: "סוֹס" }
+      - { id: o3, label: "סַס" }
+  - prompt: "בַּחֲרוּ אֶת הַמִּילָּה שֶׁנִּקְרֵאת אוֹר"
+    items:
+      - { id: o1, label: "אוֹר", correct: true }
+      - { id: o2, label: "אוּר" }
+      - { id: o3, label: "אַר" }
+  - prompt: "בַּחֲרוּ אֶת הַמִּילָּה שֶׁנִּקְרֵאת דּוֹב"
+    items:
+      - { id: o1, label: "דּוֹב", correct: true }
+      - { id: o2, label: "דּוּב" }
+      - { id: o3, label: "דַּב" }
+  - prompt: "בַּחֲרוּ אֶת הַמִּילָּה שֶׁנִּקְרֵאת כּוֹס"
+    items:
+      - { id: o1, label: "כּוֹס", correct: true }
+      - { id: o2, label: "כּוּס" }
+      - { id: o3, label: "כַּס" }
+reward: { stars: 3, sfx: ding, effect: confetti }

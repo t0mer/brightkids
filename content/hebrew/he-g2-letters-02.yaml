@@ -6,19 +6,38 @@ locale: he-IL
 direction: rtl
 title: "מֵם סוֹפִית"
 activity: letter-recognition
-prompt_tts: "מִצְאוּ אֶת הַמֵּם הַסּוֹפִית"
+prompt_tts: "מִצְאוּ אֶת הָאוֹת הַסּוֹפִית שֶׁאַתֶּם שׁוֹמְעִים"
 items:
-  - id: mem-sofit
-    label: "ם"
-    correct: true
-    tts: "מֵם סוֹפִית"
-  - id: nun
-    label: "נ"
-    tts: "נוּן"
-  - id: lamed
-    label: "ל"
-    tts: "לָמֶד"
-  - id: samech
-    label: "ס"
-    tts: "סָמֶךְ"
-reward: { stars: 1, sfx: ding, effect: confetti }
+  - { id: mem-sofit, label: "ם", correct: true, tts: "מֵם סוֹפִית" }
+  - { id: nun, label: "נ", tts: "נוּן" }
+  - { id: lamed, label: "ל", tts: "לָמֶד" }
+  - { id: samech, label: "ס", tts: "סָמֶךְ" }
+questions:
+  - prompt: "מִצְאוּ אֶת הַמֵּם הַסּוֹפִית"
+    items:
+      - { id: o1, label: "ם", correct: true, tts: "מֵם סוֹפִית" }
+      - { id: o2, label: "נ", tts: "נוּן" }
+      - { id: o3, label: "ל", tts: "לָמֶד" }
+      - { id: o4, label: "ס", tts: "סָמֶךְ" }
+  - prompt: "מִצְאוּ אֶת הַנּוּן הַסּוֹפִית"
+    items:
+      - { id: o1, label: "ן", correct: true, tts: "נוּן סוֹפִית" }
+      - { id: o2, label: "ז", tts: "זַיִן" }
+      - { id: o3, label: "ו", tts: "וָו" }
+      - { id: o4, label: "ר", tts: "רֵישׁ" }
+  - prompt: "מִצְאוּ אֶת הַכַּף הַסּוֹפִית"
+    items:
+      - { id: o1, label: "ך", correct: true, tts: "כַף סוֹפִית" }
+      - { id: o2, label: "כ", tts: "כַף" }
+      - { id: o3, label: "ד", tts: "דָּלֶת" }
+  - prompt: "מִצְאוּ אֶת הַפֵּא הַסּוֹפִית"
+    items:
+      - { id: o1, label: "ף", correct: true, tts: "פֵא סוֹפִית" }
+      - { id: o2, label: "פ", tts: "פֵא" }
+      - { id: o3, label: "ק", tts: "קוֹף" }
+  - prompt: "מִצְאוּ אֶת הַצַּדִי הַסּוֹפִית"
+    items:
+      - { id: o1, label: "ץ", correct: true, tts: "צַדִי סוֹפִית" }
+      - { id: o2, label: "צ", tts: "צַדִי" }
+      - { id: o3, label: "ע", tts: "עַיִן" }
+reward: { stars: 3, sfx: ding, effect: confetti }

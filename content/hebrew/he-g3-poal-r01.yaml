@@ -6,16 +6,26 @@ locale: he-IL
 direction: rtl
 title: "הַפֹּעַל וּזְמַנּוֹ"
 activity: multiple-choice
-prompt_tts: "אֶתְמוֹל אֲנִי ___ סֵפֶר. אֵיזֶה פֹּעַל מַתְאִים לֶעָבָר?"
-items:
-  - id: karati
-    label: "קָרָאתִי"
-    correct: true
-    tts: "קָרָאתִי"
-  - id: ekra
-    label: "אֶקְרָא"
-    tts: "אֶקְרָא"
-  - id: kore
-    label: "קוֹרֵא"
-    tts: "קוֹרֵא"
-reward: { stars: 1, sfx: pop, effect: confetti }
+prompt_tts: "בַּחֲרוּ אֶת הַפֹּעַל הַמַּתְאִים לִזְמַן עָבָר"
+questions:
+  - prompt: "אֶתְמוֹל אֲנִי ___ סֵפֶר. אֵיזֶה פֹּעַל מַתְאִים לֶעָבָר?"
+    items:
+      - { id: o1, label: "קָרָאתִי", correct: true }
+      - { id: o2, label: "אֶקְרָא" }
+      - { id: o3, label: "קוֹרֵא" }
+  - prompt: "אֶתְמוֹל הַיֶּלֶד ___ בַּגַּן. אֵיזֶה פֹּעַל מַתְאִים לֶעָבָר?"
+    items:
+      - { id: o1, label: "שִׂיחֵק", correct: true }
+      - { id: o2, label: "מְשַׂחֵק" }
+      - { id: o3, label: "יְשַׂחֵק" }
+  - prompt: "אֶתְמוֹל אֲנַחְנוּ ___ אֶל הַיָּם. אֵיזֶה פֹּעַל מַתְאִים לֶעָבָר?"
+    items:
+      - { id: o1, label: "נָסַעְנוּ", correct: true }
+      - { id: o2, label: "נוֹסְעִים" }
+      - { id: o3, label: "נִיסַּע" }
+  - prompt: "אֶתְמוֹל הִיא ___ עוּגָה. אֵיזֶה פֹּעַל מַתְאִים לֶעָבָר?"
+    items:
+      - { id: o1, label: "אָפְתָה", correct: true }
+      - { id: o2, label: "אוֹפָה" }
+      - { id: o3, label: "תֹּאפֶה" }
+reward: { stars: 3, sfx: pop, effect: confetti }

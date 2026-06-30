@@ -6,16 +6,26 @@ locale: he-IL
 direction: rtl
 title: "הֲבָנַת הַנִּקְרָא: הֶחָתוּל"
 activity: multiple-choice
-prompt_tts: "הֶחָתוּל יָשַׁן עַל הַכִּסֵּא. אֵיפֹה יָשַׁן הֶחָתוּל?"
-items:
-  - id: kise
-    label: "עַל הַכִּסֵּא"
-    correct: true
-    tts: "עַל הַכִּסֵּא"
-  - id: shulchan
-    label: "עַל הַשֻּׁלְחָן"
-    tts: "עַל הַשֻּׁלְחָן"
-  - id: mita
-    label: "עַל הַמִּטָּה"
-    tts: "עַל הַמִּטָּה"
-reward: { stars: 1, sfx: pop, effect: confetti }
+prompt_tts: "הַקְשִׁיבוּ לַמִּשְׁפָּט וּבַחֲרוּ אֶת הַתְּשׁוּבָה הַנְּכוֹנָה"
+questions:
+  - prompt: "הֶחָתוּל יָשַׁן עַל הַכִּסֵּא. אֵיפֹה יָשַׁן הֶחָתוּל?"
+    items:
+      - { id: o1, label: "עַל הַכִּסֵּא", correct: true }
+      - { id: o2, label: "עַל הַשֻּׁלְחָן" }
+      - { id: o3, label: "עַל הַמִּטָּה" }
+  - prompt: "הַכֶּלֶב אָכַל עֶצֶם. מָה אָכַל הַכֶּלֶב?"
+    items:
+      - { id: o1, label: "עֶצֶם", correct: true }
+      - { id: o2, label: "תַּפּוּחַ" }
+      - { id: o3, label: "לֶחֶם" }
+  - prompt: "רוּתִי חָבְשָׁה כּוֹבַע אָדֹם. אֵיזֶה צֶבַע הַכּוֹבַע?"
+    items:
+      - { id: o1, label: "אָדֹם", correct: true }
+      - { id: o2, label: "כָּחֹל" }
+      - { id: o3, label: "יָרֹק" }
+  - prompt: "הַיֶּלֶד שָׁתָה מַיִם. מָה שָׁתָה הַיֶּלֶד?"
+    items:
+      - { id: o1, label: "מַיִם", correct: true }
+      - { id: o2, label: "חָלָב" }
+      - { id: o3, label: "מִיץ" }
+reward: { stars: 3, sfx: pop, effect: confetti }

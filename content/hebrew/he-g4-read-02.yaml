@@ -6,19 +6,26 @@ locale: he-IL
 direction: rtl
 title: "קְרִיאָה וַהֲבָנָה"
 activity: multiple-choice
-prompt_tts: "אֵיזֶה בַּעַל חַיִּים אוֹמֵר מִיאוּ?"
-items:
-  - id: chatul
-    label: "חָתוּל"
-    correct: true
-    tts: "חָתוּל"
-    emoji: "🐱"
-  - id: kelev
-    label: "כֶּלֶב"
-    tts: "כֶּלֶב"
-    emoji: "🐶"
-  - id: parpar
-    label: "פַּרְפַּר"
-    tts: "פַּרְפַּר"
-    emoji: "🦋"
-reward: { stars: 1, sfx: pop, effect: confetti }
+prompt_tts: "בַּחֲרוּ אֶת בַּעַל הַחַיִּים הַמַּתְאִים"
+questions:
+  - prompt: "אֵיזֶה בַּעַל חַיִּים אוֹמֵר מִיאוּ?"
+    items:
+      - { id: o1, label: "חָתוּל", correct: true, emoji: "🐱" }
+      - { id: o2, label: "כֶּלֶב", emoji: "🐶" }
+      - { id: o3, label: "פַּרְפַּר", emoji: "🦋" }
+  - prompt: "אֵיזֶה בַּעַל חַיִּים אוֹמֵר הַב הַב?"
+    items:
+      - { id: o1, label: "כֶּלֶב", correct: true, emoji: "🐶" }
+      - { id: o2, label: "פָּרָה", emoji: "🐮" }
+      - { id: o3, label: "צִיפּוֹר", emoji: "🐦" }
+  - prompt: "אֵיזֶה בַּעַל חַיִּים אוֹמֵר מוּ?"
+    items:
+      - { id: o1, label: "פָּרָה", correct: true, emoji: "🐮" }
+      - { id: o2, label: "סוּס", emoji: "🐴" }
+      - { id: o3, label: "כִּבְשָׂה", emoji: "🐑" }
+  - prompt: "אֵיזֶה בַּעַל חַיִּים אוֹמֵר קוּקוּרִיקוּ?"
+    items:
+      - { id: o1, label: "תַּרְנְגוֹל", correct: true, emoji: "🐓" }
+      - { id: o2, label: "בַּרְוָז", emoji: "🦆" }
+      - { id: o3, label: "חֲזִיר", emoji: "🐷" }
+reward: { stars: 3, sfx: pop, effect: confetti }

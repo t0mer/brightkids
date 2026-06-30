@@ -1,0 +1,31 @@
+id: he-g4-nirdafot-set-01
+subject: hebrew
+grade: 4
+difficulty: 3
+locale: he-IL
+direction: rtl
+title: "מִילִּים נִרְדָּפוֹת"
+activity: multiple-choice
+prompt_tts: "בַּחֲרוּ אֶת הַמִּילָּה הַדּוֹמָה בְּמַשְׁמָעוּתָהּ"
+questions:
+  - prompt: "אֵיזוֹ מִילָּה דּוֹמָה בְּמַשְׁמָעוּתָהּ לַמִּילָּה יָפֶה?"
+    items:
+      - { id: o1, label: "נֶהְדָּר", correct: true }
+      - { id: o2, label: "מְכֹעָר" }
+      - { id: o3, label: "גָּדוֹל" }
+  - prompt: "אֵיזוֹ מִילָּה דּוֹמָה בְּמַשְׁמָעוּתָהּ לַמִּילָּה שָׂמֵחַ?"
+    items:
+      - { id: o1, label: "מְאֻשָּׁר", correct: true }
+      - { id: o2, label: "עָצוּב" }
+      - { id: o3, label: "כּוֹעֵס" }
+  - prompt: "אֵיזוֹ מִילָּה דּוֹמָה בְּמַשְׁמָעוּתָהּ לַמִּילָּה מַהֵר?"
+    items:
+      - { id: o1, label: "חִישׁ", correct: true }
+      - { id: o2, label: "לְאַט" }
+      - { id: o3, label: "בְּשֶׁקֶט" }
+  - prompt: "אֵיזוֹ מִילָּה דּוֹמָה בְּמַשְׁמָעוּתָהּ לַמִּילָּה דֶּרֶךְ?"
+    items:
+      - { id: o1, label: "שְׁבִיל", correct: true }
+      - { id: o2, label: "בַּיִת" }
+      - { id: o3, label: "גָּדֵר" }
+reward: { stars: 3, sfx: ding, effect: confetti }

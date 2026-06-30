@@ -1,0 +1,31 @@
+id: he-g1-first-sound-set-01
+subject: hebrew
+grade: 1
+difficulty: 1
+locale: he-IL
+direction: rtl
+title: "בְּאֵיזוֹ אוֹת מַתְחִילָה הַמִּילָּה?"
+activity: multiple-choice
+prompt_tts: "בַּחֲרוּ אֶת הָאוֹת שֶׁבָּהּ מַתְחִילָה הַמִּילָּה"
+questions:
+  - prompt: "בְּאֵיזוֹ אוֹת מַתְחִילָה הַמִּילָּה אַרְיֵה?"
+    items:
+      - { id: o1, label: "א", correct: true }
+      - { id: o2, label: "ר" }
+      - { id: o3, label: "מ" }
+  - prompt: "בְּאֵיזוֹ אוֹת מַתְחִילָה הַמִּילָּה דָּג?"
+    items:
+      - { id: o1, label: "ד", correct: true }
+      - { id: o2, label: "ג" }
+      - { id: o3, label: "ב" }
+  - prompt: "בְּאֵיזוֹ אוֹת מַתְחִילָה הַמִּילָּה מַיִם?"
+    items:
+      - { id: o1, label: "מ", correct: true }
+      - { id: o2, label: "י" }
+      - { id: o3, label: "נ" }
+  - prompt: "בְּאֵיזוֹ אוֹת מַתְחִילָה הַמִּילָּה שֶׁמֶשׁ?"
+    items:
+      - { id: o1, label: "ש", correct: true }
+      - { id: o2, label: "ס" }
+      - { id: o3, label: "ז" }
+reward: { stars: 3, sfx: ding, effect: confetti }

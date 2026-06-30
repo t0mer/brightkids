@@ -6,16 +6,26 @@ locale: he-IL
 direction: rtl
 title: "נִיתּוּחַ פְּעָלִים: זְמַן הֶעָבָר"
 activity: multiple-choice
-prompt_tts: "אֵיזֶה פֹּעַל כָּתוּב בִּזְמַן עָבָר?"
-items:
-  - id: shamar
-    label: "שָׁמַר"
-    correct: true
-    tts: "שָׁמַר"
-  - id: shomer
-    label: "שׁוֹמֵר"
-    tts: "שׁוֹמֵר"
-  - id: yishmor
-    label: "יִשְׁמוֹר"
-    tts: "יִשְׁמוֹר"
-reward: { stars: 1, sfx: ding, effect: confetti }
+prompt_tts: "בַּחֲרוּ אֶת הַפֹּעַל הַכָּתוּב בִּזְמַן עָבָר"
+questions:
+  - prompt: "אֵיזֶה פֹּעַל כָּתוּב בִּזְמַן עָבָר?"
+    items:
+      - { id: o1, label: "שָׁמַר", correct: true }
+      - { id: o2, label: "שׁוֹמֵר" }
+      - { id: o3, label: "יִשְׁמוֹר" }
+  - prompt: "אֵיזֶה פֹּעַל כָּתוּב בִּזְמַן עָבָר?"
+    items:
+      - { id: o1, label: "כָּתַב", correct: true }
+      - { id: o2, label: "כּוֹתֵב" }
+      - { id: o3, label: "יִכְתֹּב" }
+  - prompt: "אֵיזֶה פֹּעַל כָּתוּב בִּזְמַן עָבָר?"
+    items:
+      - { id: o1, label: "הָלַךְ", correct: true }
+      - { id: o2, label: "הוֹלֵךְ" }
+      - { id: o3, label: "יֵלֵךְ" }
+  - prompt: "אֵיזֶה פֹּעַל כָּתוּב בִּזְמַן עָבָר?"
+    items:
+      - { id: o1, label: "אָכַל", correct: true }
+      - { id: o2, label: "אוֹכֵל" }
+      - { id: o3, label: "יֹאכַל" }
+reward: { stars: 3, sfx: ding, effect: confetti }

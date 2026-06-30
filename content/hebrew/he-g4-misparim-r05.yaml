@@ -6,16 +6,26 @@ locale: he-IL
 direction: rtl
 title: "מִסְפָּרִים בְּזָכָר וּנְקֵבָה"
 activity: multiple-choice
-prompt_tts: "כֵּיצַד נֹאמַר שָׁלוֹשׁ עִם הַמִּילָּה יְלָדוֹת?"
-items:
-  - id: shalosh
-    label: "שָׁלוֹשׁ יְלָדוֹת"
-    correct: true
-    tts: "שָׁלוֹשׁ יְלָדוֹת"
-  - id: shlosha
-    label: "שְׁלוֹשָׁה יְלָדוֹת"
-    tts: "שְׁלוֹשָׁה יְלָדוֹת"
-  - id: shlishi
-    label: "שְׁלִישִׁי יְלָדוֹת"
-    tts: "שְׁלִישִׁי יְלָדוֹת"
-reward: { stars: 1, sfx: ding, effect: confetti }
+prompt_tts: "בַּחֲרוּ אֶת צוּרַת הַמִּסְפָּר הַנְּכוֹנָה"
+questions:
+  - prompt: "כֵּיצַד נֹאמַר שָׁלוֹשׁ עִם הַמִּילָּה יְלָדוֹת?"
+    items:
+      - { id: o1, label: "שָׁלוֹשׁ יְלָדוֹת", correct: true }
+      - { id: o2, label: "שְׁלוֹשָׁה יְלָדוֹת" }
+      - { id: o3, label: "שְׁלִישִׁי יְלָדוֹת" }
+  - prompt: "כֵּיצַד נֹאמַר חֲמִשָּׁה עִם הַמִּילָּה יְלָדִים?"
+    items:
+      - { id: o1, label: "חֲמִשָּׁה יְלָדִים", correct: true }
+      - { id: o2, label: "חָמֵשׁ יְלָדִים" }
+      - { id: o3, label: "חֲמִישִׁי יְלָדִים" }
+  - prompt: "כֵּיצַד נֹאמַר שְׁתַּיִם עִם הַמִּילָּה בָּנוֹת?"
+    items:
+      - { id: o1, label: "שְׁתֵּי בָּנוֹת", correct: true }
+      - { id: o2, label: "שְׁנֵי בָּנוֹת" }
+      - { id: o3, label: "שֵׁנִי בָּנוֹת" }
+  - prompt: "כֵּיצַד נֹאמַר אַרְבָּעָה עִם הַמִּילָּה כְּלָבִים?"
+    items:
+      - { id: o1, label: "אַרְבָּעָה כְּלָבִים", correct: true }
+      - { id: o2, label: "אַרְבַּע כְּלָבִים" }
+      - { id: o3, label: "רְבִיעִי כְּלָבִים" }
+reward: { stars: 3, sfx: ding, effect: confetti }

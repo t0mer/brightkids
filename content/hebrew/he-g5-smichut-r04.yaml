@@ -6,16 +6,26 @@ locale: he-IL
 direction: rtl
 title: "סְמִיכוּת"
 activity: multiple-choice
-prompt_tts: "אֵיזֶה צֵירוּף הוּא סְמִיכוּת תְּקִינָה לְבֵית שֶׁל סֵפֶר?"
-items:
-  - id: bet-sefer
-    label: "בֵּית סֵפֶר"
-    correct: true
-    tts: "בֵּית סֵפֶר"
-  - id: bait-sefer
-    label: "בַּיִת סֵפֶר"
-    tts: "בַּיִת סֵפֶר"
-  - id: sefer-bait
-    label: "סֵפֶר בַּיִת"
-    tts: "סֵפֶר בַּיִת"
-reward: { stars: 1, sfx: pop, effect: confetti }
+prompt_tts: "בַּחֲרוּ אֶת צֵירוּף הַסְּמִיכוּת הַתָּקִין"
+questions:
+  - prompt: "אֵיזֶה צֵירוּף הוּא סְמִיכוּת תְּקִינָה לְבַיִת שֶׁל סֵפֶר?"
+    items:
+      - { id: o1, label: "בֵּית סֵפֶר", correct: true }
+      - { id: o2, label: "בַּיִת סֵפֶר" }
+      - { id: o3, label: "סֵפֶר בַּיִת" }
+  - prompt: "אֵיזֶה צֵירוּף הוּא סְמִיכוּת תְּקִינָה לְעוּגָה שֶׁל יוֹם הֻלֶּדֶת?"
+    items:
+      - { id: o1, label: "עוּגַת יוֹם הֻלֶּדֶת", correct: true }
+      - { id: o2, label: "עוּגָה יוֹם הֻלֶּדֶת" }
+      - { id: o3, label: "יוֹם הֻלֶּדֶת עוּגָה" }
+  - prompt: "אֵיזֶה צֵירוּף הוּא סְמִיכוּת תְּקִינָה לְשַׁעַר שֶׁל הַגַּן?"
+    items:
+      - { id: o1, label: "שַׁעַר הַגַּן", correct: true }
+      - { id: o2, label: "שַׁעַר גַּן הַ" }
+      - { id: o3, label: "גַּן הַשַּׁעַר" }
+  - prompt: "אֵיזֶה צֵירוּף הוּא סְמִיכוּת תְּקִינָה לְחֶדֶר שֶׁל אֹכֶל?"
+    items:
+      - { id: o1, label: "חֲדַר אֹכֶל", correct: true }
+      - { id: o2, label: "חֶדֶר אֹכֶל" }
+      - { id: o3, label: "אֹכֶל חֶדֶר" }
+reward: { stars: 3, sfx: pop, effect: confetti }

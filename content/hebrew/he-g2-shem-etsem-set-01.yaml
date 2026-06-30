@@ -1,0 +1,31 @@
+id: he-g2-shem-etsem-set-01
+subject: hebrew
+grade: 2
+difficulty: 2
+locale: he-IL
+direction: rtl
+title: "שֵׁם הָעֶצֶם בַּמִּשְׁפָּט"
+activity: multiple-choice
+prompt_tts: "בַּחֲרוּ אֶת הַמִּילָּה שֶׁהִיא שֵׁם עֶצֶם"
+questions:
+  - prompt: "אֵיזוֹ מִילָּה הִיא שֵׁם עֶצֶם?"
+    items:
+      - { id: o1, label: "שֻׁלְחָן", correct: true }
+      - { id: o2, label: "רָץ" }
+      - { id: o3, label: "יָפֶה" }
+  - prompt: "אֵיזוֹ מִילָּה הִיא שֵׁם עֶצֶם?"
+    items:
+      - { id: o1, label: "כֶּלֶב", correct: true }
+      - { id: o2, label: "אוֹכֵל" }
+      - { id: o3, label: "גָּדוֹל" }
+  - prompt: "אֵיזוֹ מִילָּה הִיא שֵׁם עֶצֶם?"
+    items:
+      - { id: o1, label: "עֵץ", correct: true }
+      - { id: o2, label: "קוֹפֵץ" }
+      - { id: o3, label: "יָרֹק" }
+  - prompt: "אֵיזוֹ מִילָּה הִיא שֵׁם עֶצֶם?"
+    items:
+      - { id: o1, label: "יֶלֶד", correct: true }
+      - { id: o2, label: "שָׁר" }
+      - { id: o3, label: "מָהִיר" }
+reward: { stars: 3, sfx: ding, effect: confetti }

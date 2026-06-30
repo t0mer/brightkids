@@ -6,16 +6,26 @@ locale: he-IL
 direction: rtl
 title: "הַפֹּעַל בַּמִּשְׁפָּט"
 activity: multiple-choice
-prompt_tts: "הַיַּלְדָּה ___ בַּגַּן. אֵיזוֹ מִילָּה הִיא פֹּעַל?"
-items:
-  - id: mesacheket
-    label: "מְשַׂחֶקֶת"
-    correct: true
-    tts: "מְשַׂחֶקֶת"
-  - id: kise
-    label: "כִּסֵּא"
-    tts: "כִּסֵּא"
-  - id: yafa
-    label: "יָפָה"
-    tts: "יָפָה"
-reward: { stars: 1, sfx: pop, effect: confetti }
+prompt_tts: "בַּחֲרוּ אֶת הַמִּילָּה שֶׁהִיא פֹּעַל"
+questions:
+  - prompt: "הַיַּלְדָּה ___ בַּגַּן. אֵיזוֹ מִילָּה הִיא פֹּעַל?"
+    items:
+      - { id: o1, label: "מְשַׂחֶקֶת", correct: true }
+      - { id: o2, label: "כִּסֵּא" }
+      - { id: o3, label: "יָפָה" }
+  - prompt: "הַיֶּלֶד ___ מַהֵר. אֵיזוֹ מִילָּה הִיא פֹּעַל?"
+    items:
+      - { id: o1, label: "רָץ", correct: true }
+      - { id: o2, label: "שֻׁלְחָן" }
+      - { id: o3, label: "גָּדוֹל" }
+  - prompt: "אַבָּא ___ תַּפּוּחַ. אֵיזוֹ מִילָּה הִיא פֹּעַל?"
+    items:
+      - { id: o1, label: "אוֹכֵל", correct: true }
+      - { id: o2, label: "תַּפּוּחַ" }
+      - { id: o3, label: "מָתוֹק" }
+  - prompt: "הַקּוֹף ___ עַל הָעֵץ. אֵיזוֹ מִילָּה הִיא פֹּעַל?"
+    items:
+      - { id: o1, label: "קוֹפֵץ", correct: true }
+      - { id: o2, label: "חָתוּל" }
+      - { id: o3, label: "קָטָן" }
+reward: { stars: 3, sfx: pop, effect: confetti }
