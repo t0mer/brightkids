@@ -37,8 +37,16 @@ export function Choice({ lesson, locale, onCorrect, onWrong, solved }: ActivityP
   const textSize = hasWords ? "text-2xl sm:text-3xl" : "text-6xl sm:text-7xl";
 
   return (
-    <div dir={lesson.direction} className="grid w-full grid-cols-2 gap-4">
-      {items.map((item) => (
+    <div className="flex w-full flex-col items-center gap-6">
+      {/* Optional visible prompt (a number, sequence, or expression). Always LTR
+          so math reads correctly even inside an RTL screen. */}
+      {lesson.glyph && (
+        <div className="ltr-num rounded-blob bg-white/95 px-8 py-5 font-display text-5xl text-ink shadow-tile dark:bg-nebula dark:text-cream">
+          {lesson.glyph}
+        </div>
+      )}
+      <div dir={lesson.direction} className="grid w-full grid-cols-2 gap-4">
+        {items.map((item) => (
         <motion.button
           key={item.id}
           whileTap={{ scale: 0.94 }}
@@ -52,13 +60,14 @@ export function Choice({ lesson, locale, onCorrect, onWrong, solved }: ActivityP
             item.correct && solved && "ring-4 ring-mint",
           )}
         >
-          {item.emoji ? (
-            <span className="text-6xl sm:text-7xl">{item.emoji}</span>
-          ) : (
-            <span className="font-display leading-tight break-words">{item.label}</span>
-          )}
-        </motion.button>
-      ))}
+            {item.emoji ? (
+              <span className="text-6xl sm:text-7xl">{item.emoji}</span>
+            ) : (
+              <span className="font-display leading-tight break-words">{item.label}</span>
+            )}
+          </motion.button>
+        ))}
+      </div>
     </div>
   );
 }
