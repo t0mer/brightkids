@@ -8,54 +8,54 @@ title: "זָכָר וּנְקֵבָה בְּבַעֲלֵי חַיִּים"
 activity: matching
 prompt_tts: "חַבְּרוּ כָּל זָכָר לַנְּקֵבָה הַמַּתְאִימָה"
 pairs:
-  - id: arie
-    left: "אַרְיֵה"
-    right: "לְבִיאָה"
-    left_tts: "אַרְיֵה"
-    right_tts: "לְבִיאָה"
-  - id: tarnegol
-    left: "תַּרְנְגוֹל"
-    right: "תַּרְנְגֹלֶת"
-    left_tts: "תַּרְנְגוֹל"
-    right_tts: "תַּרְנְגֹלֶת"
-  - id: par
-    left: "פַּר"
-    right: "פָּרָה"
-    left_tts: "פַּר"
-    right_tts: "פָּרָה"
-  - id: kelev
-    left: "כֶּלֶב"
-    right: "כַּלְבָּה"
-    left_tts: "כֶּלֶב"
-    right_tts: "כַּלְבָּה"
-  - id: chatul
-    left: "חָתוּל"
-    right: "חֲתוּלָה"
-    left_tts: "חָתוּל"
-    right_tts: "חֲתוּלָה"
-  - id: sus
-    left: "סוּס"
-    right: "סוּסָה"
-    left_tts: "סוּס"
-    right_tts: "סוּסָה"
-  - id: dov
-    left: "דֹּב"
-    right: "דֻּבָּה"
-    left_tts: "דֹּב"
-    right_tts: "דֻּבָּה"
-  - id: tayish
-    left: "תַּיִשׁ"
-    right: "עֵז"
-    left_tts: "תַּיִשׁ"
-    right_tts: "עֵז"
-  - id: chamor
-    left: "חֲמוֹר"
-    right: "אָתוֹן"
-    left_tts: "חֲמוֹר"
-    right_tts: "אָתוֹן"
-  - id: tsvi
-    left: "צְבִי"
-    right: "צְבִיָּה"
-    left_tts: "צְבִי"
-    right_tts: "צְבִיָּה"
+  - { id: arie, left: "אַרְיֵה", right: "לְבִיאָה", left_tts: "אַרְיֵה", right_tts: "לְבִיאָה" }
+  - { id: tarnegol, left: "תַּרְנְגוֹל", right: "תַּרְנְגֹלֶת", left_tts: "תַּרְנְגוֹל", right_tts: "תַּרְנְגֹלֶת" }
+  - { id: par, left: "פַּר", right: "פָּרָה", left_tts: "פַּר", right_tts: "פָּרָה" }
+  - { id: kelev, left: "כֶּלֶב", right: "כַּלְבָּה", left_tts: "כֶּלֶב", right_tts: "כַּלְבָּה" }
+  - { id: chatul, left: "חָתוּל", right: "חֲתוּלָה", left_tts: "חָתוּל", right_tts: "חֲתוּלָה" }
+  - { id: sus, left: "סוּס", right: "סוּסָה", left_tts: "סוּס", right_tts: "סוּסָה" }
+  - { id: dov, left: "דֹּב", right: "דֻּבָּה", left_tts: "דֹּב", right_tts: "דֻּבָּה" }
+  - { id: tayish, left: "תַּיִשׁ", right: "עֵז", left_tts: "תַּיִשׁ", right_tts: "עֵז" }
+  - { id: chamor, left: "חֲמוֹר", right: "אָתוֹן", left_tts: "חֲמוֹר", right_tts: "אָתוֹן" }
+  - { id: tsvi, left: "צְבִי", right: "צְבִיָּה", left_tts: "צְבִי", right_tts: "צְבִיָּה" }
+  - { id: ayal, left: "אַיָּל", right: "אַיָּלָה", left_tts: "אַיָּל", right_tts: "אַיָּלָה" }
+  - { id: pil, left: "פִּיל", right: "פִּילָה", left_tts: "פִּיל", right_tts: "פִּילָה" }
+  - { id: namer, left: "נָמֵר", right: "נְמֵרָה", left_tts: "נָמֵר", right_tts: "נְמֵרָה" }
+  - { id: zeev, left: "זְאֵב", right: "זְאֵבָה", left_tts: "זְאֵב", right_tts: "זְאֵבָה" }
+  - { id: shual, left: "שׁוּעָל", right: "שׁוּעָלָה", left_tts: "שׁוּעָל", right_tts: "שׁוּעָלָה" }
+  - { id: gamal, left: "גָּמָל", right: "נָאקָה", left_tts: "גָּמָל", right_tts: "נָאקָה" }
+  - { id: egel, left: "עֵגֶל", right: "עֶגְלָה", left_tts: "עֵגֶל", right_tts: "עֶגְלָה" }
+  - { id: ayil, left: "אַיִל", right: "רָחֵל", left_tts: "אַיִל", right_tts: "רָחֵל" }
+  - { id: gdi, left: "גְּדִי", right: "גְּדִיָּה", left_tts: "גְּדִי", right_tts: "גְּדִיָּה" }
+  - { id: keves, left: "כֶּבֶשׂ", right: "כִּבְשָׂה", left_tts: "כֶּבֶשׂ", right_tts: "כִּבְשָׂה" }
+  - { id: chazir, left: "חֲזִיר", right: "חֲזִירָה", left_tts: "חֲזִיר", right_tts: "חֲזִירָה" }
+  - { id: arnav, left: "אַרְנָב", right: "אַרְנֶבֶת", left_tts: "אַרְנָב", right_tts: "אַרְנֶבֶת" }
+  - { id: achbar, left: "עַכְבָּר", right: "עַכְבָּרָה", left_tts: "עַכְבָּר", right_tts: "עַכְבָּרָה" }
+  - { id: kof, left: "קוֹף", right: "קוֹפָה", left_tts: "קוֹף", right_tts: "קוֹפָה" }
+  - { id: snai, left: "סְנָאִי", right: "סְנָאִית", left_tts: "סְנָאִי", right_tts: "סְנָאִית" }
+  - { id: kipod, left: "קִיפּוֹד", right: "קִיפּוֹדָה", left_tts: "קִיפּוֹד", right_tts: "קִיפּוֹדָה" }
+  - { id: dolfin, left: "דּוֹלְפִין", right: "דּוֹלְפִינָה", left_tts: "דּוֹלְפִין", right_tts: "דּוֹלְפִינָה" }
+  - { id: barvaz, left: "בַּרְוָז", right: "בַּרְוָזָה", left_tts: "בַּרְוָז", right_tts: "בַּרְוָזָה" }
+  - { id: avaz, left: "אֲוָז", right: "אֲוָזָה", left_tts: "אֲוָז", right_tts: "אֲוָזָה" }
+  - { id: tuki, left: "תֻּכִּי", right: "תֻּכִּיָּה", left_tts: "תֻּכִּי", right_tts: "תֻּכִּיָּה" }
+  - { id: tavas, left: "טַוָּס", right: "טַוָּסָה", left_tts: "טַוָּס", right_tts: "טַוָּסָה" }
+  - { id: hodu, left: "תַּרְנְגוֹל הוֹדוּ", right: "תַּרְנְגֹלֶת הוֹדוּ", left_tts: "תַּרְנְגוֹל הוֹדוּ", right_tts: "תַּרְנְגֹלֶת הוֹדוּ" }
+  - { id: tsav, left: "צָב", right: "צָבָה", left_tts: "צָב", right_tts: "צָבָה" }
+  - { id: dag, left: "דָּג", right: "דָּגָה", left_tts: "דָּג", right_tts: "דָּגָה" }
+  - { id: tanin, left: "תַּנִּין", right: "תַּנִּינָה", left_tts: "תַּנִּין", right_tts: "תַּנִּינָה" }
+  - { id: zvuv, left: "זְבוּב", right: "זְבוּבָה", left_tts: "זְבוּב", right_tts: "זְבוּבָה" }
+  - { id: yatush, left: "יַתּוּשׁ", right: "יַתּוּשָׁה", left_tts: "יַתּוּשׁ", right_tts: "יַתּוּשָׁה" }
+  - { id: baz, left: "בַּז", right: "בַּזָּה", left_tts: "בַּז", right_tts: "בַּזָּה" }
+  - { id: orev, left: "עוֹרֵב", right: "עוֹרְבָה", left_tts: "עוֹרֵב", right_tts: "עוֹרְבָה" }
+  - { id: yanshuf, left: "יַנְשׁוּף", right: "יַנְשׁוּפָה", left_tts: "יַנְשׁוּף", right_tts: "יַנְשׁוּפָה" }
+  - { id: barbur, left: "בַּרְבּוּר", right: "בַּרְבּוּרָה", left_tts: "בַּרְבּוּר", right_tts: "בַּרְבּוּרָה" }
+  - { id: pingvin, left: "פִּינְגְּוִין", right: "פִּינְגְּוִינָה", left_tts: "פִּינְגְּוִין", right_tts: "פִּינְגְּוִינָה" }
+  - { id: karish, left: "כְּרִישׁ", right: "כְּרִישָׁה", left_tts: "כְּרִישׁ", right_tts: "כְּרִישָׁה" }
+  - { id: livyatan, left: "לִוְיָתָן", right: "לִוְיְתָנָה", left_tts: "לִוְיָתָן", right_tts: "לִוְיְתָנָה" }
+  - { id: akrav, left: "עַקְרָב", right: "עַקְרַבָּה", left_tts: "עַקְרָב", right_tts: "עַקְרַבָּה" }
+  - { id: akavish, left: "עַכָּבִישׁ", right: "עַכָּבִישָׁה", left_tts: "עַכָּבִישׁ", right_tts: "עַכָּבִישָׁה" }
+  - { id: karnaf, left: "קַרְנָף", right: "קַרְנַפָּה", left_tts: "קַרְנָף", right_tts: "קַרְנַפָּה" }
+  - { id: ofer, left: "עֹפֶר", right: "עָפְרָה", left_tts: "עֹפֶר", right_tts: "עָפְרָה" }
+  - { id: shafan, left: "שָׁפָן", right: "שְׁפַנָּה", left_tts: "שָׁפָן", right_tts: "שְׁפַנָּה" }
+  - { id: tan, left: "תַּן", right: "תַּנָּה", left_tts: "תַּן", right_tts: "תַּנָּה" }
 reward: { stars: 1, sfx: ding, effect: sparkle }
