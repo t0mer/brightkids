@@ -9,53 +9,87 @@ activity: multiple-choice
 prompt_tts: "בַּחֲרוּ אֶת הָאוֹת שֶׁבָּהּ מַתְחִילָה הַמִּילָּה"
 questions:
   - prompt: "בְּאֵיזוֹ אוֹת מַתְחִילָה הַמִּילָּה אַרְיֵה?"
+    prompt_text: "בְּאֵיזוֹ אוֹת מַתְחִילָה הַמִּילָּה?"
+    glyph: "🦁"
     items:
       - { id: o1, label: "א", correct: true }
-      - { id: o2, label: "ר" }
-      - { id: o3, label: "מ" }
+      - { id: o2, label: "ע" }
+      - { id: o3, label: "ה" }
   - prompt: "בְּאֵיזוֹ אוֹת מַתְחִילָה הַמִּילָּה דָּג?"
+    prompt_text: "בְּאֵיזוֹ אוֹת מַתְחִילָה הַמִּילָּה?"
+    glyph: "🐟"
     items:
       - { id: o1, label: "ד", correct: true }
-      - { id: o2, label: "ג" }
-      - { id: o3, label: "ב" }
-  - prompt: "בְּאֵיזוֹ אוֹת מַתְחִילָה הַמִּילָּה מַיִם?"
-    items:
-      - { id: o1, label: "מ", correct: true }
-      - { id: o2, label: "י" }
-      - { id: o3, label: "נ" }
+      - { id: o2, label: "ר" }
+      - { id: o3, label: "ג" }
   - prompt: "בְּאֵיזוֹ אוֹת מַתְחִילָה הַמִּילָּה שֶׁמֶשׁ?"
+    prompt_text: "בְּאֵיזוֹ אוֹת מַתְחִילָה הַמִּילָּה?"
+    glyph: "☀️"
     items:
       - { id: o1, label: "ש", correct: true }
       - { id: o2, label: "ס" }
-      - { id: o3, label: "ז" }
-  - prompt: "בְּאֵיזוֹ אוֹת מַתְחִילָה הַמִּילָּה תַּפּוּחַ?"
-    items:
-      - { id: o1, label: "ט" }
-      - { id: o2, label: "ת", correct: true }
-      - { id: o3, label: "ד" }
+      - { id: o3, label: "צ" }
   - prompt: "בְּאֵיזוֹ אוֹת מַתְחִילָה הַמִּילָּה כֶּלֶב?"
+    prompt_text: "בְּאֵיזוֹ אוֹת מַתְחִילָה הַמִּילָּה?"
+    glyph: "🐶"
     items:
-      - { id: o1, label: "ג" }
-      - { id: o2, label: "ק" }
-      - { id: o3, label: "כ", correct: true }
-  - prompt: "בְּאֵיזוֹ אוֹת מַתְחִילָה הַמִּילָּה נָחָשׁ?"
+      - { id: o1, label: "כ", correct: true }
+      - { id: o2, label: "ב" }
+      - { id: o3, label: "נ" }
+  - prompt: "בְּאֵיזוֹ אוֹת מַתְחִילָה הַמִּילָּה פִּיל?"
+    prompt_text: "בְּאֵיזוֹ אוֹת מַתְחִילָה הַמִּילָּה?"
+    glyph: "🐘"
     items:
-      - { id: o1, label: "נ", correct: true }
-      - { id: o2, label: "מ" }
-      - { id: o3, label: "ל" }
-  - prompt: "בְּאֵיזוֹ אוֹת מַתְחִילָה הַמִּילָּה סֵפֶר?"
+      - { id: o1, label: "פ", correct: true }
+      - { id: o2, label: "ב" }
+      - { id: o3, label: "כ" }
+  - prompt: "בְּאֵיזוֹ אוֹת מַתְחִילָה הַמִּילָּה תַּפּוּחַ?"
+    prompt_text: "בְּאֵיזוֹ אוֹת מַתְחִילָה הַמִּילָּה?"
+    glyph: "🍎"
     items:
-      - { id: o1, label: "ש" }
-      - { id: o2, label: "ס", correct: true }
-      - { id: o3, label: "ז" }
+      - { id: o1, label: "ת", correct: true }
+      - { id: o2, label: "ט" }
+      - { id: o3, label: "ח" }
+  - prompt: "בְּאֵיזוֹ אוֹת מַתְחִילָה הַמִּילָּה בַּיִת?"
+    prompt_text: "בְּאֵיזוֹ אוֹת מַתְחִילָה הַמִּילָּה?"
+    glyph: "🏠"
+    items:
+      - { id: o1, label: "ב", correct: true }
+      - { id: o2, label: "כ" }
+      - { id: o3, label: "פ" }
   - prompt: "בְּאֵיזוֹ אוֹת מַתְחִילָה הַמִּילָּה עֵץ?"
+    prompt_text: "בְּאֵיזוֹ אוֹת מַתְחִילָה הַמִּילָּה?"
+    glyph: "🌳"
     items:
-      - { id: o1, label: "א" }
-      - { id: o2, label: "ח" }
-      - { id: o3, label: "ע", correct: true }
-  - prompt: "בְּאֵיזוֹ אוֹת מַתְחִילָה הַמִּילָּה רַכֶּבֶת?"
+      - { id: o1, label: "ע", correct: true }
+      - { id: o2, label: "א" }
+      - { id: o3, label: "צ" }
+  - prompt: "בְּאֵיזוֹ אוֹת מַתְחִילָה הַמִּילָּה סוּס?"
+    prompt_text: "בְּאֵיזוֹ אוֹת מַתְחִילָה הַמִּילָּה?"
+    glyph: "🐴"
     items:
-      - { id: o1, label: "ר", correct: true }
-      - { id: o2, label: "ד" }
-      - { id: o3, label: "ו" }
+      - { id: o1, label: "ס", correct: true }
+      - { id: o2, label: "ש" }
+      - { id: o3, label: "ז" }
+  - prompt: "בְּאֵיזוֹ אוֹת מַתְחִילָה הַמִּילָּה חָתוּל?"
+    prompt_text: "בְּאֵיזוֹ אוֹת מַתְחִילָה הַמִּילָּה?"
+    glyph: "🐱"
+    items:
+      - { id: o1, label: "ח", correct: true }
+      - { id: o2, label: "ה" }
+      - { id: o3, label: "כ" }
+  - prompt: "בְּאֵיזוֹ אוֹת מַתְחִילָה הַמִּילָּה יָד?"
+    prompt_text: "בְּאֵיזוֹ אוֹת מַתְחִילָה הַמִּילָּה?"
+    glyph: "✋"
+    items:
+      - { id: o1, label: "י", correct: true }
+      - { id: o2, label: "ו" }
+      - { id: o3, label: "ל" }
+  - prompt: "בְּאֵיזוֹ אוֹת מַתְחִילָה הַמִּילָּה גֶּזֶר?"
+    prompt_text: "בְּאֵיזוֹ אוֹת מַתְחִילָה הַמִּילָּה?"
+    glyph: "🥕"
+    items:
+      - { id: o1, label: "ג", correct: true }
+      - { id: o2, label: "נ" }
+      - { id: o3, label: "ד" }
 reward: { stars: 3, sfx: ding, effect: confetti }
