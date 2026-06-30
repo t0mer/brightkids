@@ -58,4 +58,44 @@ questions:
       - { id: o1, label: "כִּסֵּא" }
       - { id: o2, label: "כִּיסּוּי" }
       - { id: o3, label: "כִּסְאוֹת", correct: true }
+  - prompt: "מַהִי צוּרַת הָרַבִּים שֶׁל הַמִּילָּה שֻׁלְחָן?"
+    items:
+      - { id: o1, label: "שֻׁלְחָנוֹת", correct: true }
+      - { id: o2, label: "שֻׁלְחָן" }
+      - { id: o3, label: "שֻׁלְחָנִית" }
+  - prompt: "מַהִי צוּרַת הָרַבִּים שֶׁל הַמִּילָּה כּוֹס?"
+    items:
+      - { id: o1, label: "כּוֹס" }
+      - { id: o2, label: "כּוֹסוֹת", correct: true }
+      - { id: o3, label: "כּוֹסִית" }
+  - prompt: "מַהִי צוּרַת הָרַבִּים שֶׁל הַמִּילָּה צִיּוּר?"
+    items:
+      - { id: o1, label: "צִיּוּר" }
+      - { id: o2, label: "צַיָּיר" }
+      - { id: o3, label: "צִיּוּרִים", correct: true }
+  - prompt: "מַהִי צוּרַת הָרַבִּים שֶׁל הַמִּילָּה דֶּגֶל?"
+    items:
+      - { id: o1, label: "דְּגָלִים", correct: true }
+      - { id: o2, label: "דֶּגֶל" }
+      - { id: o3, label: "דַּגְלָן" }
+  - prompt: "מַהִי צוּרַת הָרַבִּים שֶׁל הַמִּילָּה נַעַל?"
+    items:
+      - { id: o1, label: "נַעַל" }
+      - { id: o2, label: "נַעֲלַיִם", correct: true }
+      - { id: o3, label: "נַעֲלִי" }
+  - prompt: "מַהִי צוּרַת הָרַבִּים שֶׁל הַמִּילָּה חֻלְצָה?"
+    items:
+      - { id: o1, label: "חֻלְצָה" }
+      - { id: o2, label: "חֻלְצָנִית" }
+      - { id: o3, label: "חֻלְצוֹת", correct: true }
+  - prompt: "מַהִי צוּרַת הָרַבִּים שֶׁל הַמִּילָּה בַּלּוֹן?"
+    items:
+      - { id: o1, label: "בַּלּוֹנִים", correct: true }
+      - { id: o2, label: "בַּלּוֹן" }
+      - { id: o3, label: "בַּלּוֹנִית" }
+  - prompt: "מַהִי צוּרַת הָרַבִּים שֶׁל הַמִּילָּה שָׁעוֹן?"
+    items:
+      - { id: o1, label: "שָׁעוֹן" }
+      - { id: o2, label: "שְׁעוֹנִים", correct: true }
+      - { id: o3, label: "שָׁעוֹנִי" }
 reward: { stars: 3, sfx: ding, effect: confetti }

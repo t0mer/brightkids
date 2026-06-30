@@ -58,4 +58,44 @@ questions:
       - { id: o1, label: "סִיֵּם" }
       - { id: o2, label: "עָצַר" }
       - { id: o3, label: "פָּתַח", correct: true }
+  - prompt: "אֵיזוֹ מִילָּה דּוֹמָה בְּמַשְׁמָעוּתָהּ לַמִּילָּה קָטָן?"
+    items:
+      - { id: o1, label: "זָעִיר", correct: true }
+      - { id: o2, label: "עָנָק" }
+      - { id: o3, label: "רָחָב" }
+  - prompt: "אֵיזוֹ מִילָּה דּוֹמָה בְּמַשְׁמָעוּתָהּ לַמִּילָּה עָצוּב?"
+    items:
+      - { id: o1, label: "שָׂמֵחַ" }
+      - { id: o2, label: "נוּגֶה", correct: true }
+      - { id: o3, label: "גֵּאֶה" }
+  - prompt: "אֵיזוֹ מִילָּה דּוֹמָה בְּמַשְׁמָעוּתָהּ לַמִּילָּה רָץ?"
+    items:
+      - { id: o1, label: "הָלַךְ" }
+      - { id: o2, label: "עָמַד" }
+      - { id: o3, label: "דָּהַר", correct: true }
+  - prompt: "אֵיזוֹ מִילָּה דּוֹמָה בְּמַשְׁמָעוּתָהּ לַמִּילָּה אָמַר?"
+    items:
+      - { id: o1, label: "דִּיבֵּר", correct: true }
+      - { id: o2, label: "שָׁתַק" }
+      - { id: o3, label: "שָׁמַע" }
+  - prompt: "אֵיזוֹ מִילָּה דּוֹמָה בְּמַשְׁמָעוּתָהּ לַמִּילָּה חָזָק?"
+    items:
+      - { id: o1, label: "חַלָּשׁ" }
+      - { id: o2, label: "אֵיתָן", correct: true }
+      - { id: o3, label: "רַךְ" }
+  - prompt: "אֵיזוֹ מִילָּה דּוֹמָה בְּמַשְׁמָעוּתָהּ לַמִּילָּה יַעַר?"
+    items:
+      - { id: o1, label: "מִדְבָּר" }
+      - { id: o2, label: "יָם" }
+      - { id: o3, label: "חֹרֶשׁ", correct: true }
+  - prompt: "אֵיזוֹ מִילָּה דּוֹמָה בְּמַשְׁמָעוּתָהּ לַמִּילָּה כָּעַס?"
+    items:
+      - { id: o1, label: "רָגַז", correct: true }
+      - { id: o2, label: "צָחַק" }
+      - { id: o3, label: "נָח" }
+  - prompt: "אֵיזוֹ מִילָּה דּוֹמָה בְּמַשְׁמָעוּתָהּ לַמִּילָּה מָצָא?"
+    items:
+      - { id: o1, label: "אִיבֵּד" }
+      - { id: o2, label: "גִּילָּה", correct: true }
+      - { id: o3, label: "חִיפֵּשׂ" }
 reward: { stars: 3, sfx: ding, effect: confetti }
