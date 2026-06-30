@@ -1,0 +1,35 @@
+id: math-g3-add
+subject: math
+grade: 3
+difficulty: 2
+locale: he-IL
+direction: ltr
+title: "חִבּוּר תְּלַת־סִפְרָתִי"
+activity: arithmetic
+prompt_tts: "פִּתְרוּ אֶת תַּרְגִּילֵי הַחִבּוּר"
+problems:
+  - { operands: [597, 672], operator: "+", answer: 1269 }
+  - { operands: [443, 705], operator: "+", answer: 1148 }
+  - { operands: [450, 243], operator: "+", answer: 693 }
+  - { operands: [317, 254], operator: "+", answer: 571 }
+  - { operands: [443, 650], operator: "+", answer: 1093 }
+  - { operands: [534, 892], operator: "+", answer: 1426 }
+  - { operands: [261, 188], operator: "+", answer: 449 }
+  - { operands: [338, 628], operator: "+", answer: 966 }
+  - { operands: [639, 683], operator: "+", answer: 1322 }
+  - { operands: [226, 496], operator: "+", answer: 722 }
+  - { operands: [674, 837], operator: "+", answer: 1511 }
+  - { operands: [681, 408], operator: "+", answer: 1089 }
+  - { operands: [135, 749], operator: "+", answer: 884 }
+  - { operands: [219, 760], operator: "+", answer: 979 }
+  - { operands: [667, 232], operator: "+", answer: 899 }
+  - { operands: [590, 628], operator: "+", answer: 1218 }
+  - { operands: [625, 221], operator: "+", answer: 846 }
+  - { operands: [464, 210], operator: "+", answer: 674 }
+  - { operands: [261, 540], operator: "+", answer: 801 }
+  - { operands: [478, 386], operator: "+", answer: 864 }
+  - { operands: [695, 760], operator: "+", answer: 1455 }
+  - { operands: [597, 122], operator: "+", answer: 719 }
+  - { operands: [478, 584], operator: "+", answer: 1062 }
+  - { operands: [716, 870], operator: "+", answer: 1586 }
+reward: { stars: 3, sfx: ding, effect: confetti }

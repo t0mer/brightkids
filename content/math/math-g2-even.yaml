@@ -1,0 +1,95 @@
+id: math-g2-even
+subject: math
+grade: 2
+difficulty: 2
+locale: he-IL
+direction: ltr
+title: "זוּגִי אוֹ אִי־זוּגִי?"
+activity: multiple-choice
+prompt_tts: "הַאִם הַמִּסְפָּר זוּגִי אוֹ אִי־זוּגִי?"
+questions:
+  - glyph: "10"
+    items:
+      - { id: o1, label: "זוּגִי", correct: true }
+      - { id: o2, label: "אִי־זוּגִי" }
+  - glyph: "11"
+    items:
+      - { id: o1, label: "אִי־זוּגִי", correct: true }
+      - { id: o2, label: "זוּגִי" }
+  - glyph: "12"
+    items:
+      - { id: o1, label: "זוּגִי", correct: true }
+      - { id: o2, label: "אִי־זוּגִי" }
+  - glyph: "13"
+    items:
+      - { id: o1, label: "אִי־זוּגִי", correct: true }
+      - { id: o2, label: "זוּגִי" }
+  - glyph: "14"
+    items:
+      - { id: o1, label: "זוּגִי", correct: true }
+      - { id: o2, label: "אִי־זוּגִי" }
+  - glyph: "15"
+    items:
+      - { id: o1, label: "אִי־זוּגִי", correct: true }
+      - { id: o2, label: "זוּגִי" }
+  - glyph: "16"
+    items:
+      - { id: o1, label: "זוּגִי", correct: true }
+      - { id: o2, label: "אִי־זוּגִי" }
+  - glyph: "17"
+    items:
+      - { id: o1, label: "אִי־זוּגִי", correct: true }
+      - { id: o2, label: "זוּגִי" }
+  - glyph: "18"
+    items:
+      - { id: o1, label: "זוּגִי", correct: true }
+      - { id: o2, label: "אִי־זוּגִי" }
+  - glyph: "19"
+    items:
+      - { id: o1, label: "אִי־זוּגִי", correct: true }
+      - { id: o2, label: "זוּגִי" }
+  - glyph: "20"
+    items:
+      - { id: o1, label: "זוּגִי", correct: true }
+      - { id: o2, label: "אִי־זוּגִי" }
+  - glyph: "21"
+    items:
+      - { id: o1, label: "אִי־זוּגִי", correct: true }
+      - { id: o2, label: "זוּגִי" }
+  - glyph: "22"
+    items:
+      - { id: o1, label: "זוּגִי", correct: true }
+      - { id: o2, label: "אִי־זוּגִי" }
+  - glyph: "23"
+    items:
+      - { id: o1, label: "אִי־זוּגִי", correct: true }
+      - { id: o2, label: "זוּגִי" }
+  - glyph: "24"
+    items:
+      - { id: o1, label: "זוּגִי", correct: true }
+      - { id: o2, label: "אִי־זוּגִי" }
+  - glyph: "25"
+    items:
+      - { id: o1, label: "אִי־זוּגִי", correct: true }
+      - { id: o2, label: "זוּגִי" }
+  - glyph: "26"
+    items:
+      - { id: o1, label: "זוּגִי", correct: true }
+      - { id: o2, label: "אִי־זוּגִי" }
+  - glyph: "27"
+    items:
+      - { id: o1, label: "אִי־זוּגִי", correct: true }
+      - { id: o2, label: "זוּגִי" }
+  - glyph: "28"
+    items:
+      - { id: o1, label: "זוּגִי", correct: true }
+      - { id: o2, label: "אִי־זוּגִי" }
+  - glyph: "29"
+    items:
+      - { id: o1, label: "אִי־זוּגִי", correct: true }
+      - { id: o2, label: "זוּגִי" }
+  - glyph: "30"
+    items:
+      - { id: o1, label: "זוּגִי", correct: true }
+      - { id: o2, label: "אִי־זוּגִי" }
+reward: { stars: 3, sfx: ding, effect: confetti }

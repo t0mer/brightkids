@@ -1,0 +1,35 @@
+id: math-g3-div
+subject: math
+grade: 3
+difficulty: 2
+locale: he-IL
+direction: ltr
+title: "חִלּוּק"
+activity: arithmetic
+prompt_tts: "פִּתְרוּ אֶת תַּרְגִּילֵי הַחִלּוּק"
+problems:
+  - { operands: [48, 8], operator: "/", answer: 6 }
+  - { operands: [72, 8], operator: "/", answer: 9 }
+  - { operands: [30, 6], operator: "/", answer: 5 }
+  - { operands: [50, 5], operator: "/", answer: 10 }
+  - { operands: [6, 6], operator: "/", answer: 1 }
+  - { operands: [21, 3], operator: "/", answer: 7 }
+  - { operands: [14, 2], operator: "/", answer: 7 }
+  - { operands: [10, 10], operator: "/", answer: 1 }
+  - { operands: [70, 10], operator: "/", answer: 7 }
+  - { operands: [7, 7], operator: "/", answer: 1 }
+  - { operands: [8, 2], operator: "/", answer: 4 }
+  - { operands: [40, 4], operator: "/", answer: 10 }
+  - { operands: [42, 7], operator: "/", answer: 6 }
+  - { operands: [35, 7], operator: "/", answer: 5 }
+  - { operands: [3, 3], operator: "/", answer: 1 }
+  - { operands: [80, 10], operator: "/", answer: 8 }
+  - { operands: [9, 3], operator: "/", answer: 3 }
+  - { operands: [24, 8], operator: "/", answer: 3 }
+  - { operands: [56, 8], operator: "/", answer: 7 }
+  - { operands: [24, 4], operator: "/", answer: 6 }
+  - { operands: [36, 4], operator: "/", answer: 9 }
+  - { operands: [10, 5], operator: "/", answer: 2 }
+  - { operands: [32, 4], operator: "/", answer: 8 }
+  - { operands: [27, 3], operator: "/", answer: 9 }
+reward: { stars: 3, sfx: ding, effect: confetti }

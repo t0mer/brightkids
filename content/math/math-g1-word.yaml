@@ -1,0 +1,39 @@
+id: math-g1-word
+subject: math
+grade: 1
+difficulty: 2
+locale: he-IL
+direction: ltr
+title: "בְּעָיוֹת מִלּוּלִיּוֹת"
+activity: multiple-choice
+prompt_tts: "פִּתְרוּ אֶת הַבְּעָיוֹת"
+questions:
+  - prompt: "בַּגִּנָּה הָיוּ 4 פְּרָחִים וְצָמְחוּ עוֹד 3. כַּמָּה פְּרָחִים יֵשׁ עַכְשָׁיו?"
+    prompt_text: "בַּגִּנָּה הָיוּ 4 פְּרָחִים וְצָמְחוּ עוֹד 3. כַּמָּה פְּרָחִים יֵשׁ עַכְשָׁיו?"
+    items:
+      - { id: o1, label: "7", correct: true }
+      - { id: o2, label: "6" }
+      - { id: o3, label: "8" }
+      - { id: o4, label: "5" }
+  - prompt: "לְדָנָה הָיוּ 9 בָּלוֹנִים וְ-2 הִתְפּוֹצְצוּ. כַּמָּה נִשְׁאֲרוּ?"
+    prompt_text: "לְדָנָה הָיוּ 9 בָּלוֹנִים וְ-2 הִתְפּוֹצְצוּ. כַּמָּה נִשְׁאֲרוּ?"
+    items:
+      - { id: o1, label: "7", correct: true }
+      - { id: o2, label: "8" }
+      - { id: o3, label: "6" }
+      - { id: o4, label: "11" }
+  - prompt: "עַל הָעֵץ יֵשׁ 5 צִפּוֹרִים וְהִגִּיעוּ עוֹד 4. כַּמָּה צִפּוֹרִים עַל הָעֵץ?"
+    prompt_text: "עַל הָעֵץ יֵשׁ 5 צִפּוֹרִים וְהִגִּיעוּ עוֹד 4. כַּמָּה צִפּוֹרִים עַל הָעֵץ?"
+    items:
+      - { id: o1, label: "9", correct: true }
+      - { id: o2, label: "8" }
+      - { id: o3, label: "10" }
+      - { id: o4, label: "1" }
+  - prompt: "הָיוּ 8 עוּגִיּוֹת וְאָכַלְתִּי 3. כַּמָּה נִשְׁאֲרוּ?"
+    prompt_text: "הָיוּ 8 עוּגִיּוֹת וְאָכַלְתִּי 3. כַּמָּה נִשְׁאֲרוּ?"
+    items:
+      - { id: o1, label: "5", correct: true }
+      - { id: o2, label: "4" }
+      - { id: o3, label: "6" }
+      - { id: o4, label: "11" }
+reward: { stars: 3, sfx: ding, effect: confetti }

@@ -1,0 +1,39 @@
+id: math-g2-word
+subject: math
+grade: 2
+difficulty: 2
+locale: he-IL
+direction: ltr
+title: "בְּעָיוֹת מִלּוּלִיּוֹת"
+activity: multiple-choice
+prompt_tts: "פִּתְרוּ אֶת הַבְּעָיוֹת"
+questions:
+  - prompt: "בְּכִתָּה יֵשׁ 5 שֻׁלְחָנוֹת וְעַל כָּל אֶחָד 2 סְפָרִים. כַּמָּה סְפָרִים בְּסַךְ הַכֹּל?"
+    prompt_text: "בְּכִתָּה יֵשׁ 5 שֻׁלְחָנוֹת וְעַל כָּל אֶחָד 2 סְפָרִים. כַּמָּה סְפָרִים בְּסַךְ הַכֹּל?"
+    items:
+      - { id: o1, label: "10", correct: true }
+      - { id: o2, label: "7" }
+      - { id: o3, label: "12" }
+      - { id: o4, label: "8" }
+  - prompt: "הָיוּ 18 עוּגִיּוֹת וְאָכְלוּ 6. כַּמָּה נִשְׁאֲרוּ?"
+    prompt_text: "הָיוּ 18 עוּגִיּוֹת וְאָכְלוּ 6. כַּמָּה נִשְׁאֲרוּ?"
+    items:
+      - { id: o1, label: "12", correct: true }
+      - { id: o2, label: "11" }
+      - { id: o3, label: "13" }
+      - { id: o4, label: "24" }
+  - prompt: "לְכָל יֶלֶד יֵשׁ 5 גְּלִילוֹת וְיֵשׁ 4 יְלָדִים. כַּמָּה גְּלִילוֹת בְּסַךְ הַכֹּל?"
+    prompt_text: "לְכָל יֶלֶד יֵשׁ 5 גְּלִילוֹת וְיֵשׁ 4 יְלָדִים. כַּמָּה גְּלִילוֹת בְּסַךְ הַכֹּל?"
+    items:
+      - { id: o1, label: "20", correct: true }
+      - { id: o2, label: "9" }
+      - { id: o3, label: "16" }
+      - { id: o4, label: "25" }
+  - prompt: "בַּחֲנוּת הָיוּ 30 תַּפּוּחִים וּמָכְרוּ 12. כַּמָּה נִשְׁאֲרוּ?"
+    prompt_text: "בַּחֲנוּת הָיוּ 30 תַּפּוּחִים וּמָכְרוּ 12. כַּמָּה נִשְׁאֲרוּ?"
+    items:
+      - { id: o1, label: "18", correct: true }
+      - { id: o2, label: "22" }
+      - { id: o3, label: "17" }
+      - { id: o4, label: "42" }
+reward: { stars: 3, sfx: ding, effect: confetti }

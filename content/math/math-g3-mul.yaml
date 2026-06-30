@@ -1,0 +1,35 @@
+id: math-g3-mul
+subject: math
+grade: 3
+difficulty: 2
+locale: he-IL
+direction: ltr
+title: "לוּחַ הַכֶּפֶל"
+activity: arithmetic
+prompt_tts: "פִּתְרוּ אֶת תַּרְגִּילֵי הַכֶּפֶל"
+problems:
+  - { operands: [9, 3], operator: "x", answer: 27 }
+  - { operands: [6, 7], operator: "x", answer: 42 }
+  - { operands: [4, 6], operator: "x", answer: 24 }
+  - { operands: [8, 8], operator: "x", answer: 64 }
+  - { operands: [4, 4], operator: "x", answer: 16 }
+  - { operands: [3, 3], operator: "x", answer: 9 }
+  - { operands: [3, 7], operator: "x", answer: 21 }
+  - { operands: [7, 7], operator: "x", answer: 49 }
+  - { operands: [9, 6], operator: "x", answer: 54 }
+  - { operands: [3, 8], operator: "x", answer: 24 }
+  - { operands: [7, 6], operator: "x", answer: 42 }
+  - { operands: [6, 6], operator: "x", answer: 36 }
+  - { operands: [6, 4], operator: "x", answer: 24 }
+  - { operands: [6, 8], operator: "x", answer: 48 }
+  - { operands: [4, 8], operator: "x", answer: 32 }
+  - { operands: [4, 7], operator: "x", answer: 28 }
+  - { operands: [3, 1], operator: "x", answer: 3 }
+  - { operands: [4, 1], operator: "x", answer: 4 }
+  - { operands: [4, 9], operator: "x", answer: 36 }
+  - { operands: [7, 3], operator: "x", answer: 21 }
+  - { operands: [8, 9], operator: "x", answer: 72 }
+  - { operands: [9, 7], operator: "x", answer: 63 }
+  - { operands: [8, 7], operator: "x", answer: 56 }
+  - { operands: [3, 5], operator: "x", answer: 15 }
+reward: { stars: 3, sfx: ding, effect: confetti }

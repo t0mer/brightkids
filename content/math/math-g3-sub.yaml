@@ -1,0 +1,35 @@
+id: math-g3-sub
+subject: math
+grade: 3
+difficulty: 2
+locale: he-IL
+direction: ltr
+title: "חִסּוּר דּוּ־סִפְרָתִי"
+activity: arithmetic
+prompt_tts: "פִּתְרוּ אֶת תַּרְגִּילֵי הַחִסּוּר"
+problems:
+  - { operands: [40, 15], operator: "-", answer: 25 }
+  - { operands: [85, 29], operator: "-", answer: 56 }
+  - { operands: [85, 1], operator: "-", answer: 84 }
+  - { operands: [65, 15], operator: "-", answer: 50 }
+  - { operands: [95, 22], operator: "-", answer: 73 }
+  - { operands: [65, 1], operator: "-", answer: 64 }
+  - { operands: [45, 43], operator: "-", answer: 2 }
+  - { operands: [75, 43], operator: "-", answer: 32 }
+  - { operands: [35, 15], operator: "-", answer: 20 }
+  - { operands: [85, 15], operator: "-", answer: 70 }
+  - { operands: [85, 57], operator: "-", answer: 28 }
+  - { operands: [55, 1], operator: "-", answer: 54 }
+  - { operands: [50, 15], operator: "-", answer: 35 }
+  - { operands: [70, 8], operator: "-", answer: 62 }
+  - { operands: [55, 29], operator: "-", answer: 26 }
+  - { operands: [95, 85], operator: "-", answer: 10 }
+  - { operands: [30, 22], operator: "-", answer: 8 }
+  - { operands: [75, 29], operator: "-", answer: 46 }
+  - { operands: [35, 22], operator: "-", answer: 13 }
+  - { operands: [65, 50], operator: "-", answer: 15 }
+  - { operands: [55, 15], operator: "-", answer: 40 }
+  - { operands: [95, 71], operator: "-", answer: 24 }
+  - { operands: [95, 36], operator: "-", answer: 59 }
+  - { operands: [80, 22], operator: "-", answer: 58 }
+reward: { stars: 3, sfx: ding, effect: confetti }

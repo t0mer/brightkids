@@ -1,0 +1,83 @@
+id: math-g1-seq
+subject: math
+grade: 1
+difficulty: 2
+locale: he-IL
+direction: ltr
+title: "מָה מַמְשִׁיךְ אֶת הַסִּדְרָה?"
+activity: multiple-choice
+prompt_tts: "אֵיזֶה מִסְפָּר מַמְשִׁיךְ אֶת הַסִּדְרָה?"
+questions:
+  - glyph: "1, 3, 5, ?"
+    items:
+      - { id: o1, label: "7", correct: true }
+      - { id: o2, label: "8" }
+      - { id: o3, label: "6" }
+      - { id: o4, label: "9" }
+  - glyph: "2, 4, 6, ?"
+    items:
+      - { id: o1, label: "8", correct: true }
+      - { id: o2, label: "9" }
+      - { id: o3, label: "7" }
+      - { id: o4, label: "10" }
+  - glyph: "3, 5, 7, ?"
+    items:
+      - { id: o1, label: "9", correct: true }
+      - { id: o2, label: "10" }
+      - { id: o3, label: "8" }
+      - { id: o4, label: "11" }
+  - glyph: "4, 6, 8, ?"
+    items:
+      - { id: o1, label: "10", correct: true }
+      - { id: o2, label: "11" }
+      - { id: o3, label: "9" }
+      - { id: o4, label: "12" }
+  - glyph: "1, 6, 11, ?"
+    items:
+      - { id: o1, label: "16", correct: true }
+      - { id: o2, label: "17" }
+      - { id: o3, label: "15" }
+      - { id: o4, label: "18" }
+  - glyph: "2, 7, 12, ?"
+    items:
+      - { id: o1, label: "17", correct: true }
+      - { id: o2, label: "18" }
+      - { id: o3, label: "16" }
+      - { id: o4, label: "19" }
+  - glyph: "3, 8, 13, ?"
+    items:
+      - { id: o1, label: "18", correct: true }
+      - { id: o2, label: "19" }
+      - { id: o3, label: "17" }
+      - { id: o4, label: "20" }
+  - glyph: "4, 9, 14, ?"
+    items:
+      - { id: o1, label: "19", correct: true }
+      - { id: o2, label: "20" }
+      - { id: o3, label: "18" }
+      - { id: o4, label: "21" }
+  - glyph: "1, 11, 21, ?"
+    items:
+      - { id: o1, label: "31", correct: true }
+      - { id: o2, label: "32" }
+      - { id: o3, label: "30" }
+      - { id: o4, label: "33" }
+  - glyph: "2, 12, 22, ?"
+    items:
+      - { id: o1, label: "32", correct: true }
+      - { id: o2, label: "33" }
+      - { id: o3, label: "31" }
+      - { id: o4, label: "34" }
+  - glyph: "3, 13, 23, ?"
+    items:
+      - { id: o1, label: "33", correct: true }
+      - { id: o2, label: "34" }
+      - { id: o3, label: "32" }
+      - { id: o4, label: "35" }
+  - glyph: "4, 14, 24, ?"
+    items:
+      - { id: o1, label: "34", correct: true }
+      - { id: o2, label: "35" }
+      - { id: o3, label: "33" }
+      - { id: o4, label: "36" }
+reward: { stars: 3, sfx: ding, effect: confetti }

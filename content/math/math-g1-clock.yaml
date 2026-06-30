@@ -1,0 +1,83 @@
+id: math-g1-clock
+subject: math
+grade: 1
+difficulty: 2
+locale: he-IL
+direction: ltr
+title: "מָה הַשָּׁעָה?"
+activity: multiple-choice
+prompt_tts: "מָה הַשָּׁעָה?"
+questions:
+  - glyph: "🕐"
+    items:
+      - { id: o1, label: "1", correct: true }
+      - { id: o2, label: "2" }
+      - { id: o3, label: "3" }
+      - { id: o4, label: "4" }
+  - glyph: "🕑"
+    items:
+      - { id: o1, label: "2", correct: true }
+      - { id: o2, label: "3" }
+      - { id: o3, label: "1" }
+      - { id: o4, label: "4" }
+  - glyph: "🕒"
+    items:
+      - { id: o1, label: "3", correct: true }
+      - { id: o2, label: "4" }
+      - { id: o3, label: "2" }
+      - { id: o4, label: "5" }
+  - glyph: "🕓"
+    items:
+      - { id: o1, label: "4", correct: true }
+      - { id: o2, label: "5" }
+      - { id: o3, label: "3" }
+      - { id: o4, label: "6" }
+  - glyph: "🕔"
+    items:
+      - { id: o1, label: "5", correct: true }
+      - { id: o2, label: "6" }
+      - { id: o3, label: "4" }
+      - { id: o4, label: "7" }
+  - glyph: "🕕"
+    items:
+      - { id: o1, label: "6", correct: true }
+      - { id: o2, label: "7" }
+      - { id: o3, label: "5" }
+      - { id: o4, label: "8" }
+  - glyph: "🕖"
+    items:
+      - { id: o1, label: "7", correct: true }
+      - { id: o2, label: "8" }
+      - { id: o3, label: "6" }
+      - { id: o4, label: "9" }
+  - glyph: "🕗"
+    items:
+      - { id: o1, label: "8", correct: true }
+      - { id: o2, label: "9" }
+      - { id: o3, label: "7" }
+      - { id: o4, label: "10" }
+  - glyph: "🕘"
+    items:
+      - { id: o1, label: "9", correct: true }
+      - { id: o2, label: "10" }
+      - { id: o3, label: "8" }
+      - { id: o4, label: "11" }
+  - glyph: "🕙"
+    items:
+      - { id: o1, label: "10", correct: true }
+      - { id: o2, label: "11" }
+      - { id: o3, label: "9" }
+      - { id: o4, label: "12" }
+  - glyph: "🕚"
+    items:
+      - { id: o1, label: "11", correct: true }
+      - { id: o2, label: "12" }
+      - { id: o3, label: "10" }
+      - { id: o4, label: "9" }
+  - glyph: "🕛"
+    items:
+      - { id: o1, label: "12", correct: true }
+      - { id: o2, label: "11" }
+      - { id: o3, label: "10" }
+      - { id: o4, label: "9" }
+reward: { stars: 3, sfx: ding, effect: confetti }

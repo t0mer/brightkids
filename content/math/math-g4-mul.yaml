@@ -1,0 +1,35 @@
+id: math-g4-mul
+subject: math
+grade: 4
+difficulty: 3
+locale: he-IL
+direction: ltr
+title: "כֶּפֶל עַד 12"
+activity: arithmetic
+prompt_tts: "פִּתְרוּ אֶת תַּרְגִּילֵי הַכֶּפֶל"
+problems:
+  - { operands: [5, 9], operator: "x", answer: 45 }
+  - { operands: [2, 4], operator: "x", answer: 8 }
+  - { operands: [9, 1], operator: "x", answer: 9 }
+  - { operands: [10, 9], operator: "x", answer: 90 }
+  - { operands: [12, 7], operator: "x", answer: 84 }
+  - { operands: [5, 7], operator: "x", answer: 35 }
+  - { operands: [11, 2], operator: "x", answer: 22 }
+  - { operands: [9, 5], operator: "x", answer: 45 }
+  - { operands: [6, 3], operator: "x", answer: 18 }
+  - { operands: [10, 5], operator: "x", answer: 50 }
+  - { operands: [2, 10], operator: "x", answer: 20 }
+  - { operands: [9, 12], operator: "x", answer: 108 }
+  - { operands: [10, 3], operator: "x", answer: 30 }
+  - { operands: [10, 2], operator: "x", answer: 20 }
+  - { operands: [3, 9], operator: "x", answer: 27 }
+  - { operands: [6, 2], operator: "x", answer: 12 }
+  - { operands: [11, 12], operator: "x", answer: 132 }
+  - { operands: [7, 1], operator: "x", answer: 7 }
+  - { operands: [8, 9], operator: "x", answer: 72 }
+  - { operands: [12, 10], operator: "x", answer: 120 }
+  - { operands: [2, 11], operator: "x", answer: 22 }
+  - { operands: [11, 1], operator: "x", answer: 11 }
+  - { operands: [10, 1], operator: "x", answer: 10 }
+  - { operands: [3, 8], operator: "x", answer: 24 }
+reward: { stars: 3, sfx: ding, effect: confetti }

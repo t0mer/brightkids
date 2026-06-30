@@ -1,0 +1,35 @@
+id: math-g5-mul
+subject: math
+grade: 5
+difficulty: 3
+locale: he-IL
+direction: ltr
+title: "כֶּפֶל גָּדוֹל"
+activity: arithmetic
+prompt_tts: "פִּתְרוּ אֶת תַּרְגִּילֵי הַכֶּפֶל"
+problems:
+  - { operands: [16, 1], operator: "x", answer: 16 }
+  - { operands: [12, 9], operator: "x", answer: 108 }
+  - { operands: [17, 6], operator: "x", answer: 102 }
+  - { operands: [11, 1], operator: "x", answer: 11 }
+  - { operands: [15, 1], operator: "x", answer: 15 }
+  - { operands: [17, 9], operator: "x", answer: 153 }
+  - { operands: [16, 2], operator: "x", answer: 32 }
+  - { operands: [14, 8], operator: "x", answer: 112 }
+  - { operands: [15, 6], operator: "x", answer: 90 }
+  - { operands: [11, 7], operator: "x", answer: 77 }
+  - { operands: [14, 2], operator: "x", answer: 28 }
+  - { operands: [19, 6], operator: "x", answer: 114 }
+  - { operands: [14, 5], operator: "x", answer: 70 }
+  - { operands: [14, 7], operator: "x", answer: 98 }
+  - { operands: [17, 1], operator: "x", answer: 17 }
+  - { operands: [11, 8], operator: "x", answer: 88 }
+  - { operands: [12, 2], operator: "x", answer: 24 }
+  - { operands: [16, 6], operator: "x", answer: 96 }
+  - { operands: [18, 5], operator: "x", answer: 90 }
+  - { operands: [17, 3], operator: "x", answer: 51 }
+  - { operands: [14, 4], operator: "x", answer: 56 }
+  - { operands: [18, 8], operator: "x", answer: 144 }
+  - { operands: [19, 3], operator: "x", answer: 57 }
+  - { operands: [15, 3], operator: "x", answer: 45 }
+reward: { stars: 3, sfx: ding, effect: confetti }

@@ -1,0 +1,35 @@
+id: math-g1-add
+subject: math
+grade: 1
+difficulty: 1
+locale: he-IL
+direction: ltr
+title: "חִבּוּר עַד 10"
+activity: arithmetic
+prompt_tts: "פִּתְרוּ אֶת תַּרְגִּילֵי הַחִבּוּר"
+problems:
+  - { operands: [3, 6], operator: "+", answer: 9 }
+  - { operands: [2, 3], operator: "+", answer: 5 }
+  - { operands: [1, 2], operator: "+", answer: 3 }
+  - { operands: [1, 4], operator: "+", answer: 5 }
+  - { operands: [7, 3], operator: "+", answer: 10 }
+  - { operands: [2, 1], operator: "+", answer: 3 }
+  - { operands: [2, 2], operator: "+", answer: 4 }
+  - { operands: [3, 5], operator: "+", answer: 8 }
+  - { operands: [8, 1], operator: "+", answer: 9 }
+  - { operands: [4, 1], operator: "+", answer: 5 }
+  - { operands: [1, 7], operator: "+", answer: 8 }
+  - { operands: [4, 4], operator: "+", answer: 8 }
+  - { operands: [6, 4], operator: "+", answer: 10 }
+  - { operands: [2, 6], operator: "+", answer: 8 }
+  - { operands: [3, 1], operator: "+", answer: 4 }
+  - { operands: [5, 4], operator: "+", answer: 9 }
+  - { operands: [2, 8], operator: "+", answer: 10 }
+  - { operands: [2, 5], operator: "+", answer: 7 }
+  - { operands: [7, 2], operator: "+", answer: 9 }
+  - { operands: [6, 1], operator: "+", answer: 7 }
+  - { operands: [4, 6], operator: "+", answer: 10 }
+  - { operands: [3, 4], operator: "+", answer: 7 }
+  - { operands: [3, 3], operator: "+", answer: 6 }
+  - { operands: [4, 2], operator: "+", answer: 6 }
+reward: { stars: 3, sfx: ding, effect: confetti }

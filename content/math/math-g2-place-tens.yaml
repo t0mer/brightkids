@@ -1,0 +1,59 @@
+id: math-g2-place-tens
+subject: math
+grade: 2
+difficulty: 2
+locale: he-IL
+direction: ltr
+title: "כַּמָּה עֲשָׂרוֹת?"
+activity: multiple-choice
+prompt_tts: "כַּמָּה עֲשָׂרוֹת יֵשׁ בַּמִּסְפָּר?"
+questions:
+  - glyph: "47"
+    items:
+      - { id: o1, label: "4", correct: true }
+      - { id: o2, label: "5" }
+      - { id: o3, label: "3" }
+      - { id: o4, label: "6" }
+  - glyph: "63"
+    items:
+      - { id: o1, label: "6", correct: true }
+      - { id: o2, label: "7" }
+      - { id: o3, label: "5" }
+      - { id: o4, label: "8" }
+  - glyph: "28"
+    items:
+      - { id: o1, label: "2", correct: true }
+      - { id: o2, label: "3" }
+      - { id: o3, label: "1" }
+      - { id: o4, label: "4" }
+  - glyph: "91"
+    items:
+      - { id: o1, label: "9", correct: true }
+      - { id: o2, label: "8" }
+      - { id: o3, label: "7" }
+      - { id: o4, label: "6" }
+  - glyph: "35"
+    items:
+      - { id: o1, label: "3", correct: true }
+      - { id: o2, label: "4" }
+      - { id: o3, label: "2" }
+      - { id: o4, label: "5" }
+  - glyph: "72"
+    items:
+      - { id: o1, label: "7", correct: true }
+      - { id: o2, label: "8" }
+      - { id: o3, label: "6" }
+      - { id: o4, label: "9" }
+  - glyph: "56"
+    items:
+      - { id: o1, label: "5", correct: true }
+      - { id: o2, label: "6" }
+      - { id: o3, label: "4" }
+      - { id: o4, label: "7" }
+  - glyph: "84"
+    items:
+      - { id: o1, label: "8", correct: true }
+      - { id: o2, label: "9" }
+      - { id: o3, label: "7" }
+      - { id: o4, label: "6" }
+reward: { stars: 3, sfx: ding, effect: confetti }

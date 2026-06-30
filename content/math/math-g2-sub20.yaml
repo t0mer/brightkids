@@ -1,0 +1,35 @@
+id: math-g2-sub20
+subject: math
+grade: 2
+difficulty: 2
+locale: he-IL
+direction: ltr
+title: "חִסּוּר עַד 20"
+activity: arithmetic
+prompt_tts: "פִּתְרוּ אֶת תַּרְגִּילֵי הַחִסּוּר"
+problems:
+  - { operands: [19, 15], operator: "-", answer: 4 }
+  - { operands: [14, 4], operator: "-", answer: 10 }
+  - { operands: [20, 16], operator: "-", answer: 4 }
+  - { operands: [14, 6], operator: "-", answer: 8 }
+  - { operands: [12, 11], operator: "-", answer: 1 }
+  - { operands: [15, 12], operator: "-", answer: 3 }
+  - { operands: [12, 4], operator: "-", answer: 8 }
+  - { operands: [11, 4], operator: "-", answer: 7 }
+  - { operands: [12, 5], operator: "-", answer: 7 }
+  - { operands: [12, 1], operator: "-", answer: 11 }
+  - { operands: [19, 11], operator: "-", answer: 8 }
+  - { operands: [11, 6], operator: "-", answer: 5 }
+  - { operands: [17, 6], operator: "-", answer: 11 }
+  - { operands: [20, 15], operator: "-", answer: 5 }
+  - { operands: [19, 2], operator: "-", answer: 17 }
+  - { operands: [11, 5], operator: "-", answer: 6 }
+  - { operands: [16, 10], operator: "-", answer: 6 }
+  - { operands: [18, 3], operator: "-", answer: 15 }
+  - { operands: [14, 12], operator: "-", answer: 2 }
+  - { operands: [16, 6], operator: "-", answer: 10 }
+  - { operands: [17, 13], operator: "-", answer: 4 }
+  - { operands: [18, 13], operator: "-", answer: 5 }
+  - { operands: [13, 10], operator: "-", answer: 3 }
+  - { operands: [19, 16], operator: "-", answer: 3 }
+reward: { stars: 3, sfx: ding, effect: confetti }

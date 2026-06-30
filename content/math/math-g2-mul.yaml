@@ -1,0 +1,35 @@
+id: math-g2-mul
+subject: math
+grade: 2
+difficulty: 2
+locale: he-IL
+direction: ltr
+title: "כֶּפֶל בְּ-2, 5, 10"
+activity: arithmetic
+prompt_tts: "פִּתְרוּ אֶת תַּרְגִּילֵי הַכֶּפֶל"
+problems:
+  - { operands: [5, 7], operator: "x", answer: 35 }
+  - { operands: [2, 7], operator: "x", answer: 14 }
+  - { operands: [10, 2], operator: "x", answer: 20 }
+  - { operands: [10, 9], operator: "x", answer: 90 }
+  - { operands: [5, 5], operator: "x", answer: 25 }
+  - { operands: [2, 8], operator: "x", answer: 16 }
+  - { operands: [2, 10], operator: "x", answer: 20 }
+  - { operands: [2, 4], operator: "x", answer: 8 }
+  - { operands: [10, 3], operator: "x", answer: 30 }
+  - { operands: [10, 5], operator: "x", answer: 50 }
+  - { operands: [10, 1], operator: "x", answer: 10 }
+  - { operands: [5, 2], operator: "x", answer: 10 }
+  - { operands: [5, 1], operator: "x", answer: 5 }
+  - { operands: [10, 7], operator: "x", answer: 70 }
+  - { operands: [2, 3], operator: "x", answer: 6 }
+  - { operands: [2, 5], operator: "x", answer: 10 }
+  - { operands: [2, 9], operator: "x", answer: 18 }
+  - { operands: [2, 1], operator: "x", answer: 2 }
+  - { operands: [10, 6], operator: "x", answer: 60 }
+  - { operands: [2, 6], operator: "x", answer: 12 }
+  - { operands: [10, 10], operator: "x", answer: 100 }
+  - { operands: [10, 8], operator: "x", answer: 80 }
+  - { operands: [5, 8], operator: "x", answer: 40 }
+  - { operands: [10, 4], operator: "x", answer: 40 }
+reward: { stars: 3, sfx: ding, effect: confetti }

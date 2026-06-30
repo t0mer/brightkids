@@ -1,0 +1,35 @@
+id: math-g2-sub100
+subject: math
+grade: 2
+difficulty: 2
+locale: he-IL
+direction: ltr
+title: "חִסּוּר עַד 100"
+activity: arithmetic
+prompt_tts: "פִּתְרוּ אֶת תַּרְגִּילֵי הַחִסּוּר"
+problems:
+  - { operands: [90, 86], operator: "-", answer: 4 }
+  - { operands: [97, 16], operator: "-", answer: 81 }
+  - { operands: [90, 6], operator: "-", answer: 84 }
+  - { operands: [41, 11], operator: "-", answer: 30 }
+  - { operands: [90, 76], operator: "-", answer: 14 }
+  - { operands: [34, 6], operator: "-", answer: 28 }
+  - { operands: [55, 11], operator: "-", answer: 44 }
+  - { operands: [83, 41], operator: "-", answer: 42 }
+  - { operands: [76, 31], operator: "-", answer: 45 }
+  - { operands: [76, 51], operator: "-", answer: 25 }
+  - { operands: [90, 56], operator: "-", answer: 34 }
+  - { operands: [90, 61], operator: "-", answer: 29 }
+  - { operands: [48, 1], operator: "-", answer: 47 }
+  - { operands: [62, 56], operator: "-", answer: 6 }
+  - { operands: [69, 51], operator: "-", answer: 18 }
+  - { operands: [41, 16], operator: "-", answer: 25 }
+  - { operands: [48, 46], operator: "-", answer: 2 }
+  - { operands: [27, 26], operator: "-", answer: 1 }
+  - { operands: [90, 81], operator: "-", answer: 9 }
+  - { operands: [83, 76], operator: "-", answer: 7 }
+  - { operands: [41, 36], operator: "-", answer: 5 }
+  - { operands: [55, 26], operator: "-", answer: 29 }
+  - { operands: [90, 36], operator: "-", answer: 54 }
+  - { operands: [83, 61], operator: "-", answer: 22 }
+reward: { stars: 3, sfx: ding, effect: confetti }
