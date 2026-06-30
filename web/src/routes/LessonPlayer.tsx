@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
 import { Star } from "lucide-react";
@@ -27,7 +27,6 @@ export function LessonPlayer() {
   const [earned, setEarned] = useState(0);
   const [mood, setMood] = useState<BiboMood>("idle");
   const [almost, setAlmost] = useState(false);
-  const narratedFor = useRef<string>("");
 
   const reduceMotion = settings?.reduce_motion ?? false;
   const voiceEnabled = settings?.voice_enabled ?? true;
@@ -47,13 +46,7 @@ export function LessonPlayer() {
     });
   }, [id]);
 
-  // Auto-narrate the prompt once per lesson when it loads.
-  useEffect(() => {
-    if (lesson && narratedFor.current !== lesson.id) {
-      narratedFor.current = lesson.id;
-      speak(lesson.prompt_tts, { locale, enabled: voiceEnabled });
-    }
-  }, [lesson, locale, voiceEnabled]);
+  // No auto-narration — the prompt is only spoken when the child taps Listen.
 
   const onCorrect = useCallback(
     (stars: number) => {
