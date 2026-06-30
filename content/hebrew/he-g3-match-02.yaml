@@ -48,4 +48,36 @@ pairs:
     left: "סֵפֶר"
     left_tts: "סֵפֶר"
     emoji: "📖"
+  - id: p-yareach
+    left: "יָרֵחַ"
+    left_tts: "יָרֵחַ"
+    emoji: "🌙"
+  - id: p-banana
+    left: "בָּנָנָה"
+    left_tts: "בָּנָנָה"
+    emoji: "🍌"
+  - id: p-uga
+    left: "עוּגָה"
+    left_tts: "עוּגָה"
+    emoji: "🍰"
+  - id: p-arye
+    left: "אַרְיֵה"
+    left_tts: "אַרְיֵה"
+    emoji: "🦁"
+  - id: p-pil
+    left: "פִּיל"
+    left_tts: "פִּיל"
+    emoji: "🐘"
+  - id: p-tzipor
+    left: "צִפּוֹר"
+    left_tts: "צִפּוֹר"
+    emoji: "🐦"
+  - id: p-gezer
+    left: "גֶּזֶר"
+    left_tts: "גֶּזֶר"
+    emoji: "🥕"
+  - id: p-anavim
+    left: "עֲנָבִים"
+    left_tts: "עֲנָבִים"
+    emoji: "🍇"
 reward: { stars: 1, sfx: ding, effect: sparkle }
