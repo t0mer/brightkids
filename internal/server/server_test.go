@@ -245,6 +245,51 @@ func TestSEOInjectionPublicMode(t *testing.T) {
 	}
 }
 
+func TestAnalyticsInjection(t *testing.T) {
+	lib, err := content.Load(fstest.MapFS{
+		"english/a.yaml": &fstest.MapFile{Data: []byte(lessonYAML)},
+	}, "")
+	if err != nil {
+		t.Fatalf("content.Load: %v", err)
+	}
+	cfg := config.Config{Log: config.LogConfig{Level: "error", Format: "text"}}
+	spaFS := fstest.MapFS{
+		"index.html": &fstest.MapFile{Data: []byte("<!doctype html><html><head><title>BrightKids</title></head><body></body></html>")},
+	}
+	homeBody := func(mode, ga string) string {
+		st, err := store.Open(filepath.Join(t.TempDir(), "t.db"))
+		if err != nil {
+			t.Fatalf("store.Open: %v", err)
+		}
+		t.Cleanup(func() { _ = st.Close() })
+		srv, err := New(Options{
+			Config: config.ServerConfig{Host: "127.0.0.1", Port: 0},
+			Mode:   mode, GAID: ga, Log: cfg.NewLogger(), Content: lib, Store: st, SPAFS: spaFS,
+		})
+		if err != nil {
+			t.Fatalf("New: %v", err)
+		}
+		rec := httptest.NewRecorder()
+		srv.Handler().ServeHTTP(rec, httptest.NewRequest(http.MethodGet, "/", nil))
+		return rec.Body.String()
+	}
+
+	// Enabled — works in any mode, including private.
+	on := homeBody(config.ModePrivate, "G-ABC123XYZ")
+	if !strings.Contains(on, "googletagmanager.com/gtag/js?id=G-ABC123XYZ") ||
+		!strings.Contains(on, "gtag('config', 'G-ABC123XYZ')") {
+		t.Errorf("GA snippet missing when enabled:\n%s", on)
+	}
+	// Disabled (no id) — no analytics.
+	if off := homeBody(config.ModePrivate, ""); strings.Contains(off, "googletagmanager.com") {
+		t.Errorf("GA snippet present when disabled")
+	}
+	// Invalid id — ignored (no injection of an unsafe value).
+	if bad := homeBody(config.ModePrivate, `x"></script><script>alert(1)`); strings.Contains(bad, "googletagmanager.com") || strings.Contains(bad, "alert(1)") {
+		t.Errorf("invalid GA id should be ignored")
+	}
+}
+
 func get2(t *testing.T, h http.Handler, path string) string {
 	t.Helper()
 	rec := httptest.NewRecorder()

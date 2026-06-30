@@ -20,12 +20,19 @@ type Config struct {
 	//   "private" (default, self-hosted) — persisted server-side in SQLite.
 	//   "public"  — stored only in the browser's localStorage; the server is
 	//               stateless and opens no database.
-	Mode    string        `mapstructure:"mode"`
-	Server  ServerConfig  `mapstructure:"server"`
-	DB      DBConfig      `mapstructure:"db"`
-	Log     LogConfig     `mapstructure:"log"`
-	Content ContentConfig `mapstructure:"content"`
-	Metrics MetricsConfig `mapstructure:"metrics"`
+	Mode      string          `mapstructure:"mode"`
+	Server    ServerConfig    `mapstructure:"server"`
+	DB        DBConfig        `mapstructure:"db"`
+	Log       LogConfig       `mapstructure:"log"`
+	Content   ContentConfig   `mapstructure:"content"`
+	Metrics   MetricsConfig   `mapstructure:"metrics"`
+	Analytics AnalyticsConfig `mapstructure:"analytics"`
+}
+
+// AnalyticsConfig configures optional Google Analytics. When GAID is set, the
+// gtag.js snippet is injected into served pages; empty disables analytics.
+type AnalyticsConfig struct {
+	GAID string `mapstructure:"ga_id"`
 }
 
 // Storage modes.
@@ -90,6 +97,7 @@ func Load(args []string) (*Config, bool, error) {
 	fs.String("log-format", v.GetString("log.format"), "log format: json|text")
 	fs.String("content-dir", v.GetString("content.dir"), "override embedded content with a directory")
 	fs.Bool("metrics", v.GetBool("metrics.enabled"), "enable Prometheus /metrics endpoint")
+	fs.String("ga-id", v.GetString("analytics.ga_id"), "Google Analytics measurement ID (e.g. G-XXXXXXXXXX); enables analytics when set")
 	showVersion := fs.Bool("version", false, "print version and exit")
 
 	if err := fs.Parse(args); err != nil {
@@ -144,6 +152,7 @@ func setDefaults(v *viper.Viper) {
 	v.SetDefault("log.format", "json")
 	v.SetDefault("content.dir", "")
 	v.SetDefault("metrics.enabled", true)
+	v.SetDefault("analytics.ga_id", "")
 }
 
 // bindChangedFlags maps explicitly-set CLI flags onto config keys so they win
@@ -159,6 +168,7 @@ func bindChangedFlags(v *viper.Viper, fs *pflag.FlagSet) {
 		"log-format":  "log.format",
 		"content-dir": "content.dir",
 		"metrics":     "metrics.enabled",
+		"ga-id":       "analytics.ga_id",
 	}
 	fs.Visit(func(f *pflag.Flag) {
 		if key, ok := flagToKey[f.Name]; ok {

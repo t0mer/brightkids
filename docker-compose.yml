@@ -1,0 +1,39 @@
+# BrightKids — single-binary learning PWA.
+#
+#   docker compose up -d
+#   open http://localhost:8080
+#
+# Private mode (default): child profiles, progress, and settings persist in
+# SQLite on the named volume. Public mode (BRIGHTKIDS_MODE=public): the server
+# is stateless and opens no database — profiles live in the browser, so you can
+# drop the volume entirely.
+services:
+  brightkids:
+    image: techblog/brightkids:latest
+    container_name: brightkids
+    ports:
+      - "8080:8080"
+    environment:
+      # Storage mode: "private" (DB-backed, default) or "public" (browser-only).
+      BRIGHTKIDS_MODE: private
+      BRIGHTKIDS_LOG_LEVEL: info
+      BRIGHTKIDS_LOG_FORMAT: json
+      BRIGHTKIDS_DB_PATH: /data/brightkids.db
+      BRIGHTKIDS_METRICS_ENABLED: "true"
+      # Optional Google Analytics — set your measurement ID to enable gtag.js.
+      # BRIGHTKIDS_ANALYTICS_GA_ID: "G-XXXXXXXXXX"
+    # Named volume (not a host bind mount): inherits the image's /data ownership
+    # (non-root 65534) and keeps the SQLite DB across restarts. Not needed in
+    # public mode — the server writes nothing.
+    volumes:
+      - brightkids-data:/data
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "/brightkids", "--version"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+
+volumes:
+  brightkids-data:
