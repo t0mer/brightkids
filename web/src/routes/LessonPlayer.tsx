@@ -103,6 +103,12 @@ export function LessonPlayer() {
           </h2>
         </div>
 
+        {/* Instruction text — always Hebrew (RTL). Spoken narration may differ
+            (English for English lessons); the text guides in Hebrew for all. */}
+        <p dir="rtl" className="max-w-prose px-2 text-center text-lg text-cream/90">
+          {lesson.instruction || lesson.prompt_tts}
+        </p>
+
         <ListenButton text={lesson.prompt_tts} locale={locale} />
 
         {/* "Almost!" gentle nudge */}

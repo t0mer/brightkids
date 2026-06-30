@@ -75,6 +75,8 @@ export interface Lesson {
   title: string;
   activity: Activity;
   prompt_tts: string;
+  /** On-screen instruction text, always Hebrew. Falls back to prompt_tts. */
+  instruction?: string;
   audio?: string;
   items?: Item[];
   pairs?: Pair[];

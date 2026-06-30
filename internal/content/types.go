@@ -34,8 +34,15 @@ type Lesson struct {
 	Direction  string `yaml:"direction" json:"direction"`
 	Title      string `yaml:"title" json:"title"`
 	Activity   string `yaml:"activity" json:"activity"`
-	PromptTTS  string `yaml:"prompt_tts" json:"prompt_tts"`
-	Audio      string `yaml:"audio,omitempty" json:"audio,omitempty"`
+	// PromptTTS is the spoken instruction, in the lesson's own language (Hebrew
+	// for hebrew/math, English for english).
+	PromptTTS string `yaml:"prompt_tts" json:"prompt_tts"`
+	// Instruction is the on-screen instruction text, always in Hebrew. When
+	// empty the UI falls back to PromptTTS (which is already Hebrew for
+	// hebrew/math lessons); English lessons set it so the displayed text stays
+	// Hebrew while narration stays English.
+	Instruction string `yaml:"instruction,omitempty" json:"instruction,omitempty"`
+	Audio       string `yaml:"audio,omitempty" json:"audio,omitempty"`
 
 	// Items: choices/tokens/objects depending on the activity.
 	Items []Item `yaml:"items,omitempty" json:"items,omitempty"`
