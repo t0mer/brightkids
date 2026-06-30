@@ -1,0 +1,121 @@
+id: he-g1-letters
+subject: hebrew
+grade: 1
+difficulty: 1
+locale: he-IL
+direction: rtl
+title: "מְזַהִים אוֹתִיּוֹת"
+activity: letter-recognition
+prompt_tts: "מִצְאוּ אֶת הָאוֹת"
+questions:
+  - prompt: "מִצְאוּ אֶת הָאוֹת אָלֶף"
+    items:
+      - { id: o1, label: "א", correct: true }
+      - { id: o2, label: "ג" }
+      - { id: o3, label: "ל" }
+  - prompt: "מִצְאוּ אֶת הָאוֹת בֵּית"
+    items:
+      - { id: o1, label: "ב", correct: true }
+      - { id: o2, label: "ש" }
+      - { id: o3, label: "ו" }
+  - prompt: "מִצְאוּ אֶת הָאוֹת גִּימֶל"
+    items:
+      - { id: o1, label: "ג", correct: true }
+      - { id: o2, label: "ל" }
+      - { id: o3, label: "ט" }
+  - prompt: "מִצְאוּ אֶת הָאוֹת דָּלֶת"
+    items:
+      - { id: o1, label: "ד", correct: true }
+      - { id: o2, label: "צ" }
+      - { id: o3, label: "ט" }
+  - prompt: "מִצְאוּ אֶת הָאוֹת הֵא"
+    items:
+      - { id: o1, label: "ה", correct: true }
+      - { id: o2, label: "ר" }
+      - { id: o3, label: "ת" }
+  - prompt: "מִצְאוּ אֶת הָאוֹת וָו"
+    items:
+      - { id: o1, label: "ו", correct: true }
+      - { id: o2, label: "פ" }
+      - { id: o3, label: "ע" }
+  - prompt: "מִצְאוּ אֶת הָאוֹת זַיִן"
+    items:
+      - { id: o1, label: "ז", correct: true }
+      - { id: o2, label: "ו" }
+      - { id: o3, label: "ת" }
+  - prompt: "מִצְאוּ אֶת הָאוֹת חֵית"
+    items:
+      - { id: o1, label: "ח", correct: true }
+      - { id: o2, label: "א" }
+      - { id: o3, label: "נ" }
+  - prompt: "מִצְאוּ אֶת הָאוֹת טֵית"
+    items:
+      - { id: o1, label: "ט", correct: true }
+      - { id: o2, label: "ת" }
+      - { id: o3, label: "ק" }
+  - prompt: "מִצְאוּ אֶת הָאוֹת יוֹד"
+    items:
+      - { id: o1, label: "י", correct: true }
+      - { id: o2, label: "א" }
+      - { id: o3, label: "ד" }
+  - prompt: "מִצְאוּ אֶת הָאוֹת כַּף"
+    items:
+      - { id: o1, label: "כ", correct: true }
+      - { id: o2, label: "א" }
+      - { id: o3, label: "נ" }
+  - prompt: "מִצְאוּ אֶת הָאוֹת לָמֶד"
+    items:
+      - { id: o1, label: "ל", correct: true }
+      - { id: o2, label: "ש" }
+      - { id: o3, label: "ה" }
+  - prompt: "מִצְאוּ אֶת הָאוֹת מֵם"
+    items:
+      - { id: o1, label: "מ", correct: true }
+      - { id: o2, label: "ש" }
+      - { id: o3, label: "ב" }
+  - prompt: "מִצְאוּ אֶת הָאוֹת נוּן"
+    items:
+      - { id: o1, label: "נ", correct: true }
+      - { id: o2, label: "כ" }
+      - { id: o3, label: "י" }
+  - prompt: "מִצְאוּ אֶת הָאוֹת סָמֶךְ"
+    items:
+      - { id: o1, label: "ס", correct: true }
+      - { id: o2, label: "ל" }
+      - { id: o3, label: "מ" }
+  - prompt: "מִצְאוּ אֶת הָאוֹת עַיִן"
+    items:
+      - { id: o1, label: "ע", correct: true }
+      - { id: o2, label: "מ" }
+      - { id: o3, label: "כ" }
+  - prompt: "מִצְאוּ אֶת הָאוֹת פֵּא"
+    items:
+      - { id: o1, label: "פ", correct: true }
+      - { id: o2, label: "ש" }
+      - { id: o3, label: "ט" }
+  - prompt: "מִצְאוּ אֶת הָאוֹת צַדִּי"
+    items:
+      - { id: o1, label: "צ", correct: true }
+      - { id: o2, label: "ע" }
+      - { id: o3, label: "ד" }
+  - prompt: "מִצְאוּ אֶת הָאוֹת קוֹף"
+    items:
+      - { id: o1, label: "ק", correct: true }
+      - { id: o2, label: "י" }
+      - { id: o3, label: "ב" }
+  - prompt: "מִצְאוּ אֶת הָאוֹת רֵישׁ"
+    items:
+      - { id: o1, label: "ר", correct: true }
+      - { id: o2, label: "ש" }
+      - { id: o3, label: "ל" }
+  - prompt: "מִצְאוּ אֶת הָאוֹת שִׁין"
+    items:
+      - { id: o1, label: "ש", correct: true }
+      - { id: o2, label: "ג" }
+      - { id: o3, label: "ר" }
+  - prompt: "מִצְאוּ אֶת הָאוֹת תָּו"
+    items:
+      - { id: o1, label: "ת", correct: true }
+      - { id: o2, label: "ה" }
+      - { id: o3, label: "ח" }
+reward: { stars: 3, sfx: ding, effect: confetti }

@@ -1,0 +1,121 @@
+id: he-g1-lettername
+subject: hebrew
+grade: 1
+difficulty: 1
+locale: he-IL
+direction: rtl
+title: "מַתְאִימִים אוֹת לְשֵׁם"
+activity: matching
+prompt_tts: "הַתְאִימוּ כָּל אוֹת לַשֵּׁם שֶׁלָּהּ"
+pairs:
+  - id: p1
+    left: "א"
+    right: "אָלֶף"
+    left_tts: "אָלֶף"
+    right_tts: "אָלֶף"
+  - id: p2
+    left: "ב"
+    right: "בֵּית"
+    left_tts: "בֵּית"
+    right_tts: "בֵּית"
+  - id: p3
+    left: "ג"
+    right: "גִּימֶל"
+    left_tts: "גִּימֶל"
+    right_tts: "גִּימֶל"
+  - id: p4
+    left: "ד"
+    right: "דָּלֶת"
+    left_tts: "דָּלֶת"
+    right_tts: "דָּלֶת"
+  - id: p5
+    left: "ה"
+    right: "הֵא"
+    left_tts: "הֵא"
+    right_tts: "הֵא"
+  - id: p6
+    left: "ו"
+    right: "וָו"
+    left_tts: "וָו"
+    right_tts: "וָו"
+  - id: p7
+    left: "ז"
+    right: "זַיִן"
+    left_tts: "זַיִן"
+    right_tts: "זַיִן"
+  - id: p8
+    left: "ח"
+    right: "חֵית"
+    left_tts: "חֵית"
+    right_tts: "חֵית"
+  - id: p9
+    left: "ט"
+    right: "טֵית"
+    left_tts: "טֵית"
+    right_tts: "טֵית"
+  - id: p10
+    left: "י"
+    right: "יוֹד"
+    left_tts: "יוֹד"
+    right_tts: "יוֹד"
+  - id: p11
+    left: "כ"
+    right: "כַּף"
+    left_tts: "כַּף"
+    right_tts: "כַּף"
+  - id: p12
+    left: "ל"
+    right: "לָמֶד"
+    left_tts: "לָמֶד"
+    right_tts: "לָמֶד"
+  - id: p13
+    left: "מ"
+    right: "מֵם"
+    left_tts: "מֵם"
+    right_tts: "מֵם"
+  - id: p14
+    left: "נ"
+    right: "נוּן"
+    left_tts: "נוּן"
+    right_tts: "נוּן"
+  - id: p15
+    left: "ס"
+    right: "סָמֶךְ"
+    left_tts: "סָמֶךְ"
+    right_tts: "סָמֶךְ"
+  - id: p16
+    left: "ע"
+    right: "עַיִן"
+    left_tts: "עַיִן"
+    right_tts: "עַיִן"
+  - id: p17
+    left: "פ"
+    right: "פֵּא"
+    left_tts: "פֵּא"
+    right_tts: "פֵּא"
+  - id: p18
+    left: "צ"
+    right: "צַדִּי"
+    left_tts: "צַדִּי"
+    right_tts: "צַדִּי"
+  - id: p19
+    left: "ק"
+    right: "קוֹף"
+    left_tts: "קוֹף"
+    right_tts: "קוֹף"
+  - id: p20
+    left: "ר"
+    right: "רֵישׁ"
+    left_tts: "רֵישׁ"
+    right_tts: "רֵישׁ"
+  - id: p21
+    left: "ש"
+    right: "שִׁין"
+    left_tts: "שִׁין"
+    right_tts: "שִׁין"
+  - id: p22
+    left: "ת"
+    right: "תָּו"
+    left_tts: "תָּו"
+    right_tts: "תָּו"
+reward: { stars: 3, sfx: chime, effect: stars }
