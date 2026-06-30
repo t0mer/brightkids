@@ -6,8 +6,8 @@ locale: he-IL
 direction: ltr
 title: "עֵרֶךְ הַסִּפְרָה"
 activity: multiple-choice
-prompt_tts: "מָה עֵרֶךְ הַסִּפְרָה הַמֻּדְגֶּשֶׁת?"
-glyph: "3 5 2 (מֵאוֹת)"
+prompt_tts: "מָה עֵרֶךְ סִפְרַת הַמֵּאוֹת?"
+glyph: "352"
 items:
   - { id: o1, label: "300", correct: true }
   - { id: o2, label: "30" }

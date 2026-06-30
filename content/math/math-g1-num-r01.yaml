@@ -4,9 +4,9 @@ grade: 1
 difficulty: 1
 locale: he-IL
 direction: ltr
-title: "מָצְאוּ אֶת הַמִּסְפָּר"
+title: "מִצְאוּ אֶת הַמִּסְפָּר"
 activity: multiple-choice
-prompt_tts: "מָצְאוּ אֶת הַמִּסְפָּר 3"
+prompt_tts: "מִצְאוּ אֶת הַמִּסְפָּר 3"
 items:
   - { id: o1, label: "4" }
   - { id: o2, label: "5" }

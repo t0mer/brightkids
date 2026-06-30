@@ -4,9 +4,9 @@ grade: 3
 difficulty: 3
 locale: he-IL
 direction: ltr
-title: "עִגּוּל לַעֲשָׂרֶת"
+title: "עִגּוּל לַעֲשָׂרוֹת"
 activity: multiple-choice
-prompt_tts: "לְאֵיזוֹ עֲשָׂרֶת הֲכִי קָרוֹב הַמִּסְפָּר?"
+prompt_tts: "עַגְּלוּ אֶת הַמִּסְפָּר לָעֲשָׂרוֹת"
 glyph: "47"
 items:
   - { id: o1, label: "60" }

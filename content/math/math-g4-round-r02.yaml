@@ -6,7 +6,7 @@ locale: he-IL
 direction: ltr
 title: "אֹמֶד"
 activity: multiple-choice
-prompt_tts: "מָה הָאֹמֶד הֲכִי קָרוֹב?"
+prompt_tts: "בְּעֵרֶךְ, כַּמָּה זֶה?"
 glyph: "39 + 41"
 items:
   - { id: o1, label: "70" }
