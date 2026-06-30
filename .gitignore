@@ -34,6 +34,9 @@ internal/server/dist/*
 # Security scan reports
 /scans/
 
+# Local reference material / source assets — not tracked
+/resources/
+
 # Design / AI docs — never commit
 CLAUDE.md
 /docs/design/
