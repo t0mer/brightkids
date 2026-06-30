@@ -4,9 +4,9 @@ grade: 1
 difficulty: 1
 locale: en-US
 direction: ltr
-title: "Trace the Letter B"
+title: "Trace the Letters"
 activity: tracing
-prompt_tts: "Trace the letter B"
-instruction: "עִקְבוּ אַחֲרֵי הָאוֹת B"
-glyph: "B"
+prompt_tts: "Trace the letter"
+instruction: "עִקְבוּ אַחֲרֵי הָאוֹת"
+glyphs: ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M"]
 reward: { stars: 1, sfx: pop, effect: stars }

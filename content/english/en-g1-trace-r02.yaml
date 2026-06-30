@@ -4,9 +4,9 @@ grade: 1
 difficulty: 1
 locale: en-US
 direction: ltr
-title: "Trace the Letter S"
+title: "Trace the Lowercase Letters"
 activity: tracing
-prompt_tts: "Trace the letter S"
-instruction: "עִקְבוּ אַחֲרֵי הָאוֹת S"
-glyph: "S"
+prompt_tts: "Trace the lowercase letter"
+instruction: "עִקְבוּ אַחֲרֵי הָאוֹת הַקְּטַנָּה"
+glyphs: ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m"]
 reward: { stars: 1, sfx: chime, effect: sparkle }

@@ -4,9 +4,9 @@ grade: 3
 difficulty: 2
 locale: en-US
 direction: ltr
-title: "Trace the Letter g"
+title: "Trace the Lowercase Letters"
 activity: tracing
-prompt_tts: "Trace the lowercase letter g"
-instruction: "עִקְבוּ אַחֲרֵי הָאוֹת הַקְּטַנָּה g"
-glyph: "g"
+prompt_tts: "Trace the lowercase letter"
+instruction: "עִקְבוּ אַחֲרֵי הָאוֹת הַקְּטַנָּה"
+glyphs: ["n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
 reward: { stars: 1, sfx: pop, effect: stars }
