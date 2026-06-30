@@ -16,6 +16,14 @@ export function shuffle<T>(arr: readonly T[]): T[] {
   return out;
 }
 
+// Israeli school grades are written as Hebrew-letter ordinals (כיתה א׳, ב׳, …).
+const GRADE_LETTERS = ["א", "ב", "ג", "ד", "ה", "ו", "ז", "ח"];
+
+/** gradeLetter maps a grade number (1-based) to its Hebrew-letter label. */
+export function gradeLetter(n: number): string {
+  return GRADE_LETTERS[n - 1] ?? String(n);
+}
+
 /** subjectColor maps a subject to its identity Tailwind color token. */
 export function subjectColor(subject: string): string {
   switch (subject) {

@@ -8,6 +8,7 @@ import type { SubjectSummary } from "@/lib/types";
 import { AppShell } from "@/components/AppShell";
 import { useStore } from "@/store/useStore";
 import { play } from "@/lib/sfx";
+import { gradeLetter } from "@/lib/utils";
 
 const SUBJECT_META: Record<string, { glyph: string; ring: string; chip: string }> = {
   hebrew: { glyph: "א", ring: "shadow-glow", chip: "bg-violet" },
@@ -79,8 +80,8 @@ export function Subjects() {
                 {s.grades.length > 0 && (
                   <span className="text-cream/70">
                     {t("subjects.gradeRange", {
-                      from: Math.min(...s.grades),
-                      to: Math.max(...s.grades),
+                      from: gradeLetter(Math.min(...s.grades)),
+                      to: gradeLetter(Math.max(...s.grades)),
                     })}
                   </span>
                 )}

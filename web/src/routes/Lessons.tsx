@@ -8,6 +8,7 @@ import type { LessonSummary } from "@/lib/types";
 import { AppShell } from "@/components/AppShell";
 import { useStore } from "@/store/useStore";
 import { play } from "@/lib/sfx";
+import { gradeLetter } from "@/lib/utils";
 
 const ACTIVITY_ICON: Record<string, string> = {
   "letter-recognition": "🔤",
@@ -72,7 +73,7 @@ export function Lessons() {
         <div className="flex flex-col gap-6">
           {byGrade.map(([grade, items]) => (
             <section key={grade} className="flex flex-col gap-3">
-              <h2 className="font-display text-lg text-cream/70">{t("grades.grade", { n: grade })}</h2>
+              <h2 className="font-display text-lg text-cream/70">{t("grades.grade", { n: gradeLetter(grade) })}</h2>
               {items.map((l, idx) => {
                 const dir = l.locale.startsWith("he") ? "rtl" : "ltr";
                 return (
