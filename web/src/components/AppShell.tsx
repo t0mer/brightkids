@@ -1,7 +1,6 @@
 import { useNavigate } from "react-router-dom";
-import { Moon, Sun, ArrowLeft, ArrowRight } from "lucide-react";
+import { ArrowLeft, ArrowRight } from "lucide-react";
 import { useTranslation } from "react-i18next";
-import { useStore } from "@/store/useStore";
 import { cn } from "@/lib/utils";
 
 interface AppShellProps {
@@ -17,7 +16,6 @@ interface AppShellProps {
 export function AppShell({ children, back, title, right, className }: AppShellProps) {
   const navigate = useNavigate();
   const { t, i18n } = useTranslation();
-  const { theme, toggleTheme } = useStore();
   const isRtl = i18n.language === "he";
   const BackIcon = isRtl ? ArrowRight : ArrowLeft;
 
@@ -38,16 +36,7 @@ export function AppShell({ children, back, title, right, className }: AppShellPr
             )}
             {title && <h1 className="font-display text-2xl sm:text-3xl">{title}</h1>}
           </div>
-          <div className="flex items-center gap-2">
-            {right}
-            <button
-              onClick={toggleTheme}
-              aria-label={t("settings.theme")}
-              className="tap grid place-items-center rounded-full bg-white/10 hover:bg-white/20"
-            >
-              {theme === "dark" ? <Sun className="h-6 w-6" /> : <Moon className="h-6 w-6" />}
-            </button>
-          </div>
+          <div className="flex items-center gap-2">{right}</div>
         </header>
         <main className={cn("flex flex-1 flex-col px-4 pb-8", className)}>{children}</main>
       </div>
