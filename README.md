@@ -137,6 +137,13 @@ profile/progress/settings endpoints exist **only in `private` mode**; in
 | `PUT` | `/api/v1/profiles/{id}/settings` | update settings |
 | `GET` | `/healthz` · `/readyz` | liveness · readiness |
 | `GET` | `/metrics` | Prometheus metrics |
+| `GET` | `/robots.txt` · `/sitemap.xml` | auto-generated SEO, rooted at the request's origin |
+
+`robots.txt` and `sitemap.xml` are generated on the fly: the sitemap lists every
+page (home, subject pickers, each subject/grade list, and all lessons) as
+absolute URLs built from the request's own scheme/host (honoring
+`X-Forwarded-Proto`/`X-Forwarded-Host`), so the same binary serves correct URLs
+behind any domain or reverse proxy.
 
 ## Architecture
 
