@@ -1,0 +1,23 @@
+id: math-g2-mul-set-01
+subject: math
+grade: 2
+difficulty: 2
+locale: he-IL
+direction: ltr
+title: "כֶּפֶל בְּ-2, 5, 10 — סֵט 1"
+activity: arithmetic
+prompt_tts: "פִּתְרוּ אֶת תַּרְגִּילֵי הַכֶּפֶל"
+problems:
+  - { operands: [5, 10], operator: "x", answer: 50 }
+  - { operands: [10, 8], operator: "x", answer: 80 }
+  - { operands: [10, 4], operator: "x", answer: 40 }
+  - { operands: [10, 6], operator: "x", answer: 60 }
+  - { operands: [5, 3], operator: "x", answer: 15 }
+  - { operands: [10, 10], operator: "x", answer: 100 }
+  - { operands: [5, 1], operator: "x", answer: 5 }
+  - { operands: [5, 9], operator: "x", answer: 45 }
+  - { operands: [2, 9], operator: "x", answer: 18 }
+  - { operands: [2, 8], operator: "x", answer: 16 }
+  - { operands: [2, 2], operator: "x", answer: 4 }
+  - { operands: [2, 7], operator: "x", answer: 14 }
+reward: { stars: 3, sfx: ding, effect: confetti }

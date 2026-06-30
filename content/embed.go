@@ -7,7 +7,9 @@ package content
 
 import "embed"
 
-// FS holds every lesson YAML, organised by subject directory.
+// FS holds every lesson YAML, organised by subject directory. The `all:` prefix
+// includes the .gitkeep placeholder so an empty subject directory (e.g. math,
+// when its content is cleared) still compiles; the loader only reads *.yaml.
 //
-//go:embed hebrew english math
+//go:embed all:hebrew all:english all:math
 var FS embed.FS

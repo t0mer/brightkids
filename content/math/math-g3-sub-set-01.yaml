@@ -8,16 +8,16 @@ title: "חִסּוּר דּוּ־סִפְרָתִי — סֵט 1"
 activity: arithmetic
 prompt_tts: "פִּתְרוּ אֶת תַּרְגִּילֵי הַחִסּוּר"
 problems:
-  - { operands: [65, 60], operator: "-", answer: 5 }
-  - { operands: [96, 57], operator: "-", answer: 39 }
-  - { operands: [73, 18], operator: "-", answer: 55 }
-  - { operands: [39, 35], operator: "-", answer: 4 }
-  - { operands: [52, 2], operator: "-", answer: 50 }
-  - { operands: [27, 25], operator: "-", answer: 2 }
-  - { operands: [96, 60], operator: "-", answer: 36 }
-  - { operands: [38, 15], operator: "-", answer: 23 }
-  - { operands: [81, 11], operator: "-", answer: 70 }
-  - { operands: [51, 20], operator: "-", answer: 31 }
-  - { operands: [31, 1], operator: "-", answer: 30 }
-  - { operands: [84, 3], operator: "-", answer: 81 }
+  - { operands: [40, 8], operator: "-", answer: 32 }
+  - { operands: [60, 1], operator: "-", answer: 59 }
+  - { operands: [85, 1], operator: "-", answer: 84 }
+  - { operands: [85, 29], operator: "-", answer: 56 }
+  - { operands: [95, 43], operator: "-", answer: 52 }
+  - { operands: [50, 22], operator: "-", answer: 28 }
+  - { operands: [45, 1], operator: "-", answer: 44 }
+  - { operands: [80, 22], operator: "-", answer: 58 }
+  - { operands: [50, 29], operator: "-", answer: 21 }
+  - { operands: [85, 64], operator: "-", answer: 21 }
+  - { operands: [85, 22], operator: "-", answer: 63 }
+  - { operands: [90, 22], operator: "-", answer: 68 }
 reward: { stars: 3, sfx: ding, effect: confetti }

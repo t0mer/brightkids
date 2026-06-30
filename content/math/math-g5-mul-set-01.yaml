@@ -1,0 +1,23 @@
+id: math-g5-mul-set-01
+subject: math
+grade: 5
+difficulty: 3
+locale: he-IL
+direction: ltr
+title: "כֶּפֶל גָּדוֹל — סֵט 1"
+activity: arithmetic
+prompt_tts: "פִּתְרוּ אֶת תַּרְגִּילֵי הַכֶּפֶל"
+problems:
+  - { operands: [19, 6], operator: "x", answer: 114 }
+  - { operands: [16, 7], operator: "x", answer: 112 }
+  - { operands: [20, 4], operator: "x", answer: 80 }
+  - { operands: [19, 2], operator: "x", answer: 38 }
+  - { operands: [16, 6], operator: "x", answer: 96 }
+  - { operands: [14, 4], operator: "x", answer: 56 }
+  - { operands: [11, 8], operator: "x", answer: 88 }
+  - { operands: [18, 3], operator: "x", answer: 54 }
+  - { operands: [15, 3], operator: "x", answer: 45 }
+  - { operands: [14, 6], operator: "x", answer: 84 }
+  - { operands: [17, 7], operator: "x", answer: 119 }
+  - { operands: [20, 5], operator: "x", answer: 100 }
+reward: { stars: 3, sfx: ding, effect: confetti }

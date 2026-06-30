@@ -1,0 +1,14 @@
+id: math-g1-count-r03
+subject: math
+grade: 1
+difficulty: 1
+locale: he-IL
+direction: ltr
+title: "כַּמָּה דָּגִים?"
+activity: counting
+prompt_tts: "כַּמָּה דָּגִים אַתֶּם רוֹאִים?"
+glyph: "🐠"
+problem:
+  operator: count
+  answer: 7
+reward: { stars: 1, sfx: ding, effect: confetti }

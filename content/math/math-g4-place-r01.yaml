@@ -1,0 +1,16 @@
+id: math-g4-place-r01
+subject: math
+grade: 4
+difficulty: 3
+locale: he-IL
+direction: ltr
+title: "עֵרֶךְ הַסִּפְרָה"
+activity: multiple-choice
+prompt_tts: "מָה עֵרֶךְ הַסִּפְרָה הַמֻּדְגֶּשֶׁת?"
+glyph: "3 5 2 (מֵאוֹת)"
+items:
+  - { id: o1, label: "300", correct: true }
+  - { id: o2, label: "30" }
+  - { id: o3, label: "3000" }
+  - { id: o4, label: "3" }
+reward: { stars: 1, sfx: ding, effect: confetti }

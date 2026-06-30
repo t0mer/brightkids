@@ -1,0 +1,16 @@
+id: math-g3-ops-r01
+subject: math
+grade: 3
+difficulty: 3
+locale: he-IL
+direction: ltr
+title: "סֵדֶר פְּעוּלוֹת"
+activity: multiple-choice
+prompt_tts: "פִּתְרוּ אֶת הַתַּרְגִּיל לְפִי סֵדֶר הַפְּעוּלוֹת"
+glyph: "2 + 3 × 4"
+items:
+  - { id: o1, label: "20" }
+  - { id: o2, label: "24" }
+  - { id: o3, label: "9" }
+  - { id: o4, label: "14", correct: true }
+reward: { stars: 1, sfx: ding, effect: confetti }

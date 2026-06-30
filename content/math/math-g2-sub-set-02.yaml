@@ -4,20 +4,20 @@ grade: 2
 difficulty: 2
 locale: he-IL
 direction: ltr
-title: "חִסּוּר עַד 20 — סֵט 2"
+title: "חִסּוּר עַד 100 — סֵט 1"
 activity: arithmetic
 prompt_tts: "פִּתְרוּ אֶת תַּרְגִּילֵי הַחִסּוּר"
 problems:
-  - { operands: [14, 11], operator: "-", answer: 3 }
-  - { operands: [14, 3], operator: "-", answer: 11 }
-  - { operands: [19, 1], operator: "-", answer: 18 }
-  - { operands: [12, 5], operator: "-", answer: 7 }
-  - { operands: [18, 7], operator: "-", answer: 11 }
-  - { operands: [17, 13], operator: "-", answer: 4 }
-  - { operands: [17, 14], operator: "-", answer: 3 }
-  - { operands: [14, 4], operator: "-", answer: 10 }
-  - { operands: [16, 10], operator: "-", answer: 6 }
-  - { operands: [18, 14], operator: "-", answer: 4 }
-  - { operands: [11, 2], operator: "-", answer: 9 }
-  - { operands: [16, 1], operator: "-", answer: 15 }
+  - { operands: [90, 81], operator: "-", answer: 9 }
+  - { operands: [34, 6], operator: "-", answer: 28 }
+  - { operands: [41, 21], operator: "-", answer: 20 }
+  - { operands: [83, 61], operator: "-", answer: 22 }
+  - { operands: [55, 41], operator: "-", answer: 14 }
+  - { operands: [55, 36], operator: "-", answer: 19 }
+  - { operands: [76, 71], operator: "-", answer: 5 }
+  - { operands: [48, 16], operator: "-", answer: 32 }
+  - { operands: [55, 26], operator: "-", answer: 29 }
+  - { operands: [27, 6], operator: "-", answer: 21 }
+  - { operands: [62, 21], operator: "-", answer: 41 }
+  - { operands: [69, 41], operator: "-", answer: 28 }
 reward: { stars: 3, sfx: ding, effect: confetti }

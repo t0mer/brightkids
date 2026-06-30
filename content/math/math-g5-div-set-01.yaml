@@ -1,0 +1,23 @@
+id: math-g5-div-set-01
+subject: math
+grade: 5
+difficulty: 3
+locale: he-IL
+direction: ltr
+title: "חִלּוּק — סֵט 1"
+activity: arithmetic
+prompt_tts: "פִּתְרוּ אֶת תַּרְגִּילֵי הַחִלּוּק"
+problems:
+  - { operands: [72, 6], operator: "/", answer: 12 }
+  - { operands: [63, 7], operator: "/", answer: 9 }
+  - { operands: [120, 10], operator: "/", answer: 12 }
+  - { operands: [72, 12], operator: "/", answer: 6 }
+  - { operands: [72, 9], operator: "/", answer: 8 }
+  - { operands: [70, 10], operator: "/", answer: 7 }
+  - { operands: [21, 7], operator: "/", answer: 3 }
+  - { operands: [84, 12], operator: "/", answer: 7 }
+  - { operands: [56, 8], operator: "/", answer: 7 }
+  - { operands: [8, 8], operator: "/", answer: 1 }
+  - { operands: [70, 7], operator: "/", answer: 10 }
+  - { operands: [7, 7], operator: "/", answer: 1 }
+reward: { stars: 3, sfx: ding, effect: confetti }

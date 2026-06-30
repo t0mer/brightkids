@@ -8,16 +8,16 @@ title: "חִסּוּר עַד 10 — סֵט 1"
 activity: arithmetic
 prompt_tts: "פִּתְרוּ אֶת תַּרְגִּילֵי הַחִסּוּר"
 problems:
-  - { operands: [6, 4], operator: "-", answer: 2 }
-  - { operands: [10, 4], operator: "-", answer: 6 }
-  - { operands: [8, 2], operator: "-", answer: 6 }
-  - { operands: [9, 2], operator: "-", answer: 7 }
-  - { operands: [6, 1], operator: "-", answer: 5 }
-  - { operands: [5, 2], operator: "-", answer: 3 }
-  - { operands: [9, 3], operator: "-", answer: 6 }
-  - { operands: [8, 4], operator: "-", answer: 4 }
-  - { operands: [7, 1], operator: "-", answer: 6 }
-  - { operands: [10, 5], operator: "-", answer: 5 }
-  - { operands: [7, 5], operator: "-", answer: 2 }
   - { operands: [6, 2], operator: "-", answer: 4 }
+  - { operands: [7, 2], operator: "-", answer: 5 }
+  - { operands: [6, 1], operator: "-", answer: 5 }
+  - { operands: [5, 3], operator: "-", answer: 2 }
+  - { operands: [10, 7], operator: "-", answer: 3 }
+  - { operands: [6, 3], operator: "-", answer: 3 }
+  - { operands: [8, 4], operator: "-", answer: 4 }
+  - { operands: [9, 7], operator: "-", answer: 2 }
+  - { operands: [6, 5], operator: "-", answer: 1 }
+  - { operands: [9, 4], operator: "-", answer: 5 }
+  - { operands: [4, 1], operator: "-", answer: 3 }
+  - { operands: [9, 3], operator: "-", answer: 6 }
 reward: { stars: 3, sfx: ding, effect: confetti }

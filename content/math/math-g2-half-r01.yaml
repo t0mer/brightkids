@@ -1,0 +1,16 @@
+id: math-g2-half-r01
+subject: math
+grade: 2
+difficulty: 2
+locale: he-IL
+direction: ltr
+title: "חֲצִי"
+activity: multiple-choice
+prompt_tts: "כַּמָּה זֶה חֲצִי?"
+glyph: "½ מ-8"
+items:
+  - { id: o1, label: "4", correct: true }
+  - { id: o2, label: "6" }
+  - { id: o3, label: "3" }
+  - { id: o4, label: "2" }
+reward: { stars: 1, sfx: ding, effect: confetti }

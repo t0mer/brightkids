@@ -1,0 +1,15 @@
+id: math-g1-num-r01
+subject: math
+grade: 1
+difficulty: 1
+locale: he-IL
+direction: ltr
+title: "מָצְאוּ אֶת הַמִּסְפָּר"
+activity: multiple-choice
+prompt_tts: "מָצְאוּ אֶת הַמִּסְפָּר 3"
+items:
+  - { id: o1, label: "4" }
+  - { id: o2, label: "5" }
+  - { id: o3, label: "3", correct: true }
+  - { id: o4, label: "2" }
+reward: { stars: 1, sfx: ding, effect: confetti }

@@ -1,0 +1,16 @@
+id: math-g5-ops-r01
+subject: math
+grade: 5
+difficulty: 3
+locale: he-IL
+direction: ltr
+title: "סֵדֶר פְּעוּלוֹת"
+activity: multiple-choice
+prompt_tts: "פִּתְרוּ לְפִי סֵדֶר הַפְּעוּלוֹת"
+glyph: "20 - 3 × 4 + 2"
+items:
+  - { id: o1, label: "70" }
+  - { id: o2, label: "8" }
+  - { id: o3, label: "10", correct: true }
+  - { id: o4, label: "14" }
+reward: { stars: 1, sfx: ding, effect: confetti }

@@ -1,0 +1,23 @@
+id: math-g2-cmp-01
+subject: math
+grade: 2
+difficulty: 2
+locale: he-IL
+direction: ltr
+title: "מִי גָּדוֹל יוֹתֵר? — סֵט 1"
+activity: comparison
+prompt_tts: "הַקִּישׁוּ עַל הַמִּסְפָּר הַגָּדוֹל יוֹתֵר"
+comparisons:
+  - { left: 14, right: 16 }
+  - { left: 2, right: 11 }
+  - { left: 5, right: 19 }
+  - { left: 16, right: 2 }
+  - { left: 14, right: 15 }
+  - { left: 6, right: 11 }
+  - { left: 8, right: 15 }
+  - { left: 4, right: 15 }
+  - { left: 5, right: 7 }
+  - { left: 10, right: 14 }
+  - { left: 9, right: 18 }
+  - { left: 5, right: 11 }
+reward: { stars: 3, sfx: ding, effect: confetti }

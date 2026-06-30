@@ -4,20 +4,20 @@ grade: 4
 difficulty: 3
 locale: he-IL
 direction: ltr
-title: "לוּחַ הַכֶּפֶל עַד 12 — סֵט 2"
+title: "כֶּפֶל עַד 12 — סֵט 2"
 activity: arithmetic
 prompt_tts: "פִּתְרוּ אֶת תַּרְגִּילֵי הַכֶּפֶל"
 problems:
-  - { operands: [10, 5], operator: "x", answer: 50 }
-  - { operands: [8, 4], operator: "x", answer: 32 }
-  - { operands: [4, 12], operator: "x", answer: 48 }
-  - { operands: [7, 8], operator: "x", answer: 56 }
-  - { operands: [11, 6], operator: "x", answer: 66 }
-  - { operands: [8, 1], operator: "x", answer: 8 }
-  - { operands: [5, 9], operator: "x", answer: 45 }
-  - { operands: [2, 7], operator: "x", answer: 14 }
-  - { operands: [3, 7], operator: "x", answer: 21 }
-  - { operands: [8, 9], operator: "x", answer: 72 }
-  - { operands: [12, 6], operator: "x", answer: 72 }
-  - { operands: [2, 6], operator: "x", answer: 12 }
+  - { operands: [8, 2], operator: "x", answer: 16 }
+  - { operands: [9, 3], operator: "x", answer: 27 }
+  - { operands: [9, 10], operator: "x", answer: 90 }
+  - { operands: [4, 7], operator: "x", answer: 28 }
+  - { operands: [9, 11], operator: "x", answer: 99 }
+  - { operands: [10, 4], operator: "x", answer: 40 }
+  - { operands: [10, 1], operator: "x", answer: 10 }
+  - { operands: [10, 10], operator: "x", answer: 100 }
+  - { operands: [6, 10], operator: "x", answer: 60 }
+  - { operands: [11, 10], operator: "x", answer: 110 }
+  - { operands: [4, 11], operator: "x", answer: 44 }
+  - { operands: [3, 10], operator: "x", answer: 30 }
 reward: { stars: 3, sfx: ding, effect: confetti }

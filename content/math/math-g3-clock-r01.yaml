@@ -1,0 +1,16 @@
+id: math-g3-clock-r01
+subject: math
+grade: 3
+difficulty: 2
+locale: he-IL
+direction: ltr
+title: "מָה הַשָּׁעָה?"
+activity: multiple-choice
+prompt_tts: "מָה הַשָּׁעָה?"
+glyph: "🕕"
+items:
+  - { id: o1, label: "6", correct: true }
+  - { id: o2, label: "7" }
+  - { id: o3, label: "5" }
+  - { id: o4, label: "12" }
+reward: { stars: 1, sfx: ding, effect: confetti }

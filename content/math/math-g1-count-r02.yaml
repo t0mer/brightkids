@@ -1,0 +1,14 @@
+id: math-g1-count-r02
+subject: math
+grade: 1
+difficulty: 1
+locale: he-IL
+direction: ltr
+title: "כַּמָּה כּוֹכָבִים?"
+activity: counting
+prompt_tts: "כַּמָּה כּוֹכָבִים אַתֶּם רוֹאִים?"
+glyph: "⭐"
+problem:
+  operator: count
+  answer: 5
+reward: { stars: 1, sfx: ding, effect: confetti }

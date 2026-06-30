@@ -1,0 +1,16 @@
+id: math-g4-round-r01
+subject: math
+grade: 4
+difficulty: 3
+locale: he-IL
+direction: ltr
+title: "עִגּוּל לַמֵּאָה"
+activity: multiple-choice
+prompt_tts: "לְאֵיזוֹ מֵאָה הֲכִי קָרוֹב הַמִּסְפָּר?"
+glyph: "278"
+items:
+  - { id: o1, label: "300", correct: true }
+  - { id: o2, label: "200" }
+  - { id: o3, label: "280" }
+  - { id: o4, label: "270" }
+reward: { stars: 1, sfx: ding, effect: confetti }

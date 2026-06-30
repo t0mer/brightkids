@@ -1,0 +1,14 @@
+id: math-g1-count-r01
+subject: math
+grade: 1
+difficulty: 1
+locale: he-IL
+direction: ltr
+title: "כַּמָּה תַּפּוּחִים?"
+activity: counting
+prompt_tts: "כַּמָּה תַּפּוּחִים אַתֶּם רוֹאִים?"
+glyph: "🍎"
+problem:
+  operator: count
+  answer: 3
+reward: { stars: 1, sfx: ding, effect: confetti }

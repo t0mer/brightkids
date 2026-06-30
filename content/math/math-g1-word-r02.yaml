@@ -1,0 +1,15 @@
+id: math-g1-word-r02
+subject: math
+grade: 1
+difficulty: 2
+locale: he-IL
+direction: ltr
+title: "בְּעָיָה מִלּוּלִית"
+activity: multiple-choice
+prompt_tts: "לְדָנָה הָיוּ 9 בָּלוֹנִים וְ-2 הִתְפּוֹצְצוּ. כַּמָּה נִשְׁאֲרוּ?"
+items:
+  - { id: o1, label: "8" }
+  - { id: o2, label: "7", correct: true }
+  - { id: o3, label: "6" }
+  - { id: o4, label: "11" }
+reward: { stars: 1, sfx: ding, effect: confetti }

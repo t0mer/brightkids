@@ -1,0 +1,16 @@
+id: math-g4-frac-r01
+subject: math
+grade: 4
+difficulty: 3
+locale: he-IL
+direction: ltr
+title: "שֶׁבֶר"
+activity: multiple-choice
+prompt_tts: "כַּמָּה זֶה רֶבַע?"
+glyph: "¼ מ-12"
+items:
+  - { id: o1, label: "2" }
+  - { id: o2, label: "4" }
+  - { id: o3, label: "3", correct: true }
+  - { id: o4, label: "6" }
+reward: { stars: 1, sfx: ding, effect: confetti }

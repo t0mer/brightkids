@@ -1,0 +1,16 @@
+id: math-g2-place-r01
+subject: math
+grade: 2
+difficulty: 2
+locale: he-IL
+direction: ltr
+title: "כַּמָּה עֲשָׂרוֹת?"
+activity: multiple-choice
+prompt_tts: "כַּמָּה עֲשָׂרוֹת יֵשׁ בַּמִּסְפָּר?"
+glyph: "47"
+items:
+  - { id: o1, label: "7" }
+  - { id: o2, label: "5" }
+  - { id: o3, label: "3" }
+  - { id: o4, label: "4", correct: true }
+reward: { stars: 1, sfx: ding, effect: confetti }

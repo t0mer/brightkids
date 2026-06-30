@@ -4,20 +4,20 @@ grade: 2
 difficulty: 2
 locale: he-IL
 direction: ltr
-title: "חִבּוּר עַד 20 — סֵט 2"
+title: "חִבּוּר עַד 100 — סֵט 1"
 activity: arithmetic
 prompt_tts: "פִּתְרוּ אֶת תַּרְגִּילֵי הַחִבּוּר"
 problems:
-  - { operands: [3, 3], operator: "+", answer: 6 }
-  - { operands: [4, 10], operator: "+", answer: 14 }
-  - { operands: [7, 4], operator: "+", answer: 11 }
-  - { operands: [4, 6], operator: "+", answer: 10 }
-  - { operands: [6, 8], operator: "+", answer: 14 }
-  - { operands: [6, 3], operator: "+", answer: 9 }
-  - { operands: [8, 9], operator: "+", answer: 17 }
-  - { operands: [8, 10], operator: "+", answer: 18 }
-  - { operands: [11, 7], operator: "+", answer: 18 }
-  - { operands: [8, 5], operator: "+", answer: 13 }
-  - { operands: [13, 5], operator: "+", answer: 18 }
-  - { operands: [10, 3], operator: "+", answer: 13 }
+  - { operands: [31, 76], operator: "+", answer: 107 }
+  - { operands: [73, 32], operator: "+", answer: 105 }
+  - { operands: [73, 76], operator: "+", answer: 149 }
+  - { operands: [24, 21], operator: "+", answer: 45 }
+  - { operands: [38, 65], operator: "+", answer: 103 }
+  - { operands: [87, 65], operator: "+", answer: 152 }
+  - { operands: [66, 87], operator: "+", answer: 153 }
+  - { operands: [80, 65], operator: "+", answer: 145 }
+  - { operands: [17, 21], operator: "+", answer: 38 }
+  - { operands: [10, 76], operator: "+", answer: 86 }
+  - { operands: [87, 54], operator: "+", answer: 141 }
+  - { operands: [66, 21], operator: "+", answer: 87 }
 reward: { stars: 3, sfx: ding, effect: confetti }
