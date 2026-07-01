@@ -25,11 +25,11 @@
     "hebrew": "Hebrew",
     "english": "English",
     "math": "Math",
-    "gradeRange": "Grades {{from}}–{{to}}"
+    "gradeRange": "Stages {{from}}–{{to}}"
   },
   "grades": {
-    "choose": "Which grade?",
-    "grade": "Grade {{n}}"
+    "choose": "Which stage?",
+    "grade": "Stage {{n}}"
   },
   "lessons": {
     "choose": "Pick a lesson",
