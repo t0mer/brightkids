@@ -111,7 +111,9 @@ export function LessonPlayer() {
   const Renderer = ACTIVITY_RENDERERS[lesson.activity];
   const idx = siblings.findIndex((s) => s.id === lesson.id);
   const next = idx >= 0 && idx < siblings.length - 1 ? siblings[idx + 1] : null;
-  const lessonsPath = `/subject/${lesson.subject}/grade/${lesson.grade}`;
+  // Hidden games (e.g. the flag game) are launched from the subjects screen and
+  // have no stage list to return to.
+  const lessonsPath = lesson.hidden ? "/subjects" : `/subject/${lesson.subject}/grade/${lesson.grade}`;
   // Lessons with a pool (questions/pairs/problems/comparisons) can be reshuffled
   // for a fresh random sample.
   const poolSize =

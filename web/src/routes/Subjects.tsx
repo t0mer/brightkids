@@ -91,6 +91,28 @@ export function Subjects() {
             </motion.button>
           );
         })}
+
+        {/* Top-level game, peer of the subjects — launches directly. */}
+        <motion.button
+          key="flags"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: subjects.length * 0.08 }}
+          whileTap={{ scale: 0.97 }}
+          onClick={() => {
+            play("pop");
+            navigate("/lesson/flags");
+          }}
+          className="tap flex items-center gap-5 rounded-blob bg-white/10 p-6 text-start hover:bg-white/15 shadow-glow"
+        >
+          <span className="grid h-20 w-20 shrink-0 place-items-center rounded-blob bg-sun text-4xl">
+            🌍
+          </span>
+          <span className="flex-1">
+            <span className="block font-display text-3xl">{t("subjects.flags")}</span>
+            <span className="text-cream/70">{t("subjects.flagsSub")}</span>
+          </span>
+        </motion.button>
       </div>
     </AppShell>
   );

@@ -1,0 +1,553 @@
+id: flags
+subject: hebrew
+grade: 1
+difficulty: 2
+locale: he-IL
+direction: rtl
+title: "מִי הַמְּדִינָה?"
+activity: multiple-choice
+prompt_tts: "בַּחֲרוּ אֶת הַמְּדִינָה שֶׁל הַדֶּגֶל"
+sample: 10
+hidden: true
+questions:
+  - image: "/flags/il.svg"
+    items:
+      - { id: o1, label: "ישראל", correct: true }
+      - { id: o2, label: "הודו" }
+      - { id: o3, label: "מרוקו" }
+      - { id: o4, label: "עיראק" }
+  - image: "/flags/us.svg"
+    items:
+      - { id: o1, label: "ארצות הברית", correct: true }
+      - { id: o2, label: "ניגריה" }
+      - { id: o3, label: "בוליביה" }
+      - { id: o4, label: "לוב" }
+  - image: "/flags/gb.svg"
+    items:
+      - { id: o1, label: "בריטניה", correct: true }
+      - { id: o2, label: "פורטוגל" }
+      - { id: o3, label: "קניה" }
+      - { id: o4, label: "פנמה" }
+  - image: "/flags/fr.svg"
+    items:
+      - { id: o1, label: "צרפת", correct: true }
+      - { id: o2, label: "טייוואן" }
+      - { id: o3, label: "סלובניה" }
+      - { id: o4, label: "גרמניה" }
+  - image: "/flags/de.svg"
+    items:
+      - { id: o1, label: "גרמניה", correct: true }
+      - { id: o2, label: "מרוקו" }
+      - { id: o3, label: "ג׳מייקה" }
+      - { id: o4, label: "קרואטיה" }
+  - image: "/flags/it.svg"
+    items:
+      - { id: o1, label: "איטליה", correct: true }
+      - { id: o2, label: "אקוודור" }
+      - { id: o3, label: "מצרים" }
+      - { id: o4, label: "דרום קוריאה" }
+  - image: "/flags/es.svg"
+    items:
+      - { id: o1, label: "ספרד", correct: true }
+      - { id: o2, label: "אורוגוואי" }
+      - { id: o3, label: "צ׳ילה" }
+      - { id: o4, label: "אסטוניה" }
+  - image: "/flags/pt.svg"
+    items:
+      - { id: o1, label: "פורטוגל", correct: true }
+      - { id: o2, label: "דרום אפריקה" }
+      - { id: o3, label: "ירדן" }
+      - { id: o4, label: "בחריין" }
+  - image: "/flags/nl.svg"
+    items:
+      - { id: o1, label: "הולנד", correct: true }
+      - { id: o2, label: "בולגריה" }
+      - { id: o3, label: "מקסיקו" }
+      - { id: o4, label: "אוקראינה" }
+  - image: "/flags/be.svg"
+    items:
+      - { id: o1, label: "בלגיה", correct: true }
+      - { id: o2, label: "ברזיל" }
+      - { id: o3, label: "מלזיה" }
+      - { id: o4, label: "איסלנד" }
+  - image: "/flags/ch.svg"
+    items:
+      - { id: o1, label: "שווייץ", correct: true }
+      - { id: o2, label: "פרו" }
+      - { id: o3, label: "איראן" }
+      - { id: o4, label: "קנדה" }
+  - image: "/flags/at.svg"
+    items:
+      - { id: o1, label: "אוסטריה", correct: true }
+      - { id: o2, label: "סלובניה" }
+      - { id: o3, label: "סינגפור" }
+      - { id: o4, label: "צרפת" }
+  - image: "/flags/se.svg"
+    items:
+      - { id: o1, label: "שוודיה", correct: true }
+      - { id: o2, label: "סוריה" }
+      - { id: o3, label: "ירדן" }
+      - { id: o4, label: "ניו זילנד" }
+  - image: "/flags/no.svg"
+    items:
+      - { id: o1, label: "נורווגיה", correct: true }
+      - { id: o2, label: "רוסיה" }
+      - { id: o3, label: "פולין" }
+      - { id: o4, label: "סינגפור" }
+  - image: "/flags/dk.svg"
+    items:
+      - { id: o1, label: "דנמרק", correct: true }
+      - { id: o2, label: "גאנה" }
+      - { id: o3, label: "טורקיה" }
+      - { id: o4, label: "פקיסטן" }
+  - image: "/flags/fi.svg"
+    items:
+      - { id: o1, label: "פינלנד", correct: true }
+      - { id: o2, label: "לוקסמבורג" }
+      - { id: o3, label: "מרוקו" }
+      - { id: o4, label: "בוליביה" }
+  - image: "/flags/ie.svg"
+    items:
+      - { id: o1, label: "אירלנד", correct: true }
+      - { id: o2, label: "צרפת" }
+      - { id: o3, label: "קרואטיה" }
+      - { id: o4, label: "סרביה" }
+  - image: "/flags/is.svg"
+    items:
+      - { id: o1, label: "איסלנד", correct: true }
+      - { id: o2, label: "פקיסטן" }
+      - { id: o3, label: "מלזיה" }
+      - { id: o4, label: "נורווגיה" }
+  - image: "/flags/pl.svg"
+    items:
+      - { id: o1, label: "פולין", correct: true }
+      - { id: o2, label: "מלטה" }
+      - { id: o3, label: "ישראל" }
+      - { id: o4, label: "וייטנאם" }
+  - image: "/flags/cz.svg"
+    items:
+      - { id: o1, label: "צ׳כיה", correct: true }
+      - { id: o2, label: "עיראק" }
+      - { id: o3, label: "דרום אפריקה" }
+      - { id: o4, label: "אקוודור" }
+  - image: "/flags/hu.svg"
+    items:
+      - { id: o1, label: "הונגריה", correct: true }
+      - { id: o2, label: "איטליה" }
+      - { id: o3, label: "גואטמלה" }
+      - { id: o4, label: "וייטנאם" }
+  - image: "/flags/gr.svg"
+    items:
+      - { id: o1, label: "יוון", correct: true }
+      - { id: o2, label: "דרום קוריאה" }
+      - { id: o3, label: "צ׳כיה" }
+      - { id: o4, label: "סינגפור" }
+  - image: "/flags/ru.svg"
+    items:
+      - { id: o1, label: "רוסיה", correct: true }
+      - { id: o2, label: "פולין" }
+      - { id: o3, label: "ברזיל" }
+      - { id: o4, label: "צ׳ילה" }
+  - image: "/flags/ua.svg"
+    items:
+      - { id: o1, label: "אוקראינה", correct: true }
+      - { id: o2, label: "קובה" }
+      - { id: o3, label: "ספרד" }
+      - { id: o4, label: "מצרים" }
+  - image: "/flags/ro.svg"
+    items:
+      - { id: o1, label: "רומניה", correct: true }
+      - { id: o2, label: "הודו" }
+      - { id: o3, label: "אסטוניה" }
+      - { id: o4, label: "כווית" }
+  - image: "/flags/tr.svg"
+    items:
+      - { id: o1, label: "טורקיה", correct: true }
+      - { id: o2, label: "בריטניה" }
+      - { id: o3, label: "אקוודור" }
+      - { id: o4, label: "דרום קוריאה" }
+  - image: "/flags/eg.svg"
+    items:
+      - { id: o1, label: "מצרים", correct: true }
+      - { id: o2, label: "צ׳כיה" }
+      - { id: o3, label: "קולומביה" }
+      - { id: o4, label: "קרואטיה" }
+  - image: "/flags/jo.svg"
+    items:
+      - { id: o1, label: "ירדן", correct: true }
+      - { id: o2, label: "לטביה" }
+      - { id: o3, label: "מקסיקו" }
+      - { id: o4, label: "פורטוגל" }
+  - image: "/flags/lb.svg"
+    items:
+      - { id: o1, label: "לבנון", correct: true }
+      - { id: o2, label: "בוליביה" }
+      - { id: o3, label: "וייטנאם" }
+      - { id: o4, label: "נורווגיה" }
+  - image: "/flags/sa.svg"
+    items:
+      - { id: o1, label: "ערב הסעודית", correct: true }
+      - { id: o2, label: "מרוקו" }
+      - { id: o3, label: "לבנון" }
+      - { id: o4, label: "קניה" }
+  - image: "/flags/ae.svg"
+    items:
+      - { id: o1, label: "איחוד האמירויות", correct: true }
+      - { id: o2, label: "גאנה" }
+      - { id: o3, label: "שוודיה" }
+      - { id: o4, label: "פקיסטן" }
+  - image: "/flags/iq.svg"
+    items:
+      - { id: o1, label: "עיראק", correct: true }
+      - { id: o2, label: "פנמה" }
+      - { id: o3, label: "קרואטיה" }
+      - { id: o4, label: "צרפת" }
+  - image: "/flags/ir.svg"
+    items:
+      - { id: o1, label: "איראן", correct: true }
+      - { id: o2, label: "לבנון" }
+      - { id: o3, label: "קנדה" }
+      - { id: o4, label: "גואטמלה" }
+  - image: "/flags/sy.svg"
+    items:
+      - { id: o1, label: "סוריה", correct: true }
+      - { id: o2, label: "פנמה" }
+      - { id: o3, label: "מרוקו" }
+      - { id: o4, label: "בוליביה" }
+  - image: "/flags/ma.svg"
+    items:
+      - { id: o1, label: "מרוקו", correct: true }
+      - { id: o2, label: "מלטה" }
+      - { id: o3, label: "סין" }
+      - { id: o4, label: "אוקראינה" }
+  - image: "/flags/tn.svg"
+    items:
+      - { id: o1, label: "תוניסיה", correct: true }
+      - { id: o2, label: "קובה" }
+      - { id: o3, label: "פורטוגל" }
+      - { id: o4, label: "גואטמלה" }
+  - image: "/flags/dz.svg"
+    items:
+      - { id: o1, label: "אלג׳יריה", correct: true }
+      - { id: o2, label: "לוב" }
+      - { id: o3, label: "קרואטיה" }
+      - { id: o4, label: "עיראק" }
+  - image: "/flags/ly.svg"
+    items:
+      - { id: o1, label: "לוב", correct: true }
+      - { id: o2, label: "קוסטה ריקה" }
+      - { id: o3, label: "מרוקו" }
+      - { id: o4, label: "לטביה" }
+  - image: "/flags/za.svg"
+    items:
+      - { id: o1, label: "דרום אפריקה", correct: true }
+      - { id: o2, label: "שווייץ" }
+      - { id: o3, label: "קרואטיה" }
+      - { id: o4, label: "פרו" }
+  - image: "/flags/ng.svg"
+    items:
+      - { id: o1, label: "ניגריה", correct: true }
+      - { id: o2, label: "תאילנד" }
+      - { id: o3, label: "פרו" }
+      - { id: o4, label: "אורוגוואי" }
+  - image: "/flags/ke.svg"
+    items:
+      - { id: o1, label: "קניה", correct: true }
+      - { id: o2, label: "צ׳ילה" }
+      - { id: o3, label: "פינלנד" }
+      - { id: o4, label: "לוקסמבורג" }
+  - image: "/flags/et.svg"
+    items:
+      - { id: o1, label: "אתיופיה", correct: true }
+      - { id: o2, label: "סלובקיה" }
+      - { id: o3, label: "יוון" }
+      - { id: o4, label: "צ׳ילה" }
+  - image: "/flags/gh.svg"
+    items:
+      - { id: o1, label: "גאנה", correct: true }
+      - { id: o2, label: "פקיסטן" }
+      - { id: o3, label: "שווייץ" }
+      - { id: o4, label: "טייוואן" }
+  - image: "/flags/cn.svg"
+    items:
+      - { id: o1, label: "סין", correct: true }
+      - { id: o2, label: "בולגריה" }
+      - { id: o3, label: "סלובניה" }
+      - { id: o4, label: "גרמניה" }
+  - image: "/flags/jp.svg"
+    items:
+      - { id: o1, label: "יפן", correct: true }
+      - { id: o2, label: "סין" }
+      - { id: o3, label: "אירלנד" }
+      - { id: o4, label: "דרום קוריאה" }
+  - image: "/flags/kr.svg"
+    items:
+      - { id: o1, label: "דרום קוריאה", correct: true }
+      - { id: o2, label: "גרמניה" }
+      - { id: o3, label: "מצרים" }
+      - { id: o4, label: "סין" }
+  - image: "/flags/in.svg"
+    items:
+      - { id: o1, label: "הודו", correct: true }
+      - { id: o2, label: "בנגלדש" }
+      - { id: o3, label: "פרו" }
+      - { id: o4, label: "כווית" }
+  - image: "/flags/th.svg"
+    items:
+      - { id: o1, label: "תאילנד", correct: true }
+      - { id: o2, label: "איחוד האמירויות" }
+      - { id: o3, label: "פקיסטן" }
+      - { id: o4, label: "אוסטריה" }
+  - image: "/flags/vn.svg"
+    items:
+      - { id: o1, label: "וייטנאם", correct: true }
+      - { id: o2, label: "סין" }
+      - { id: o3, label: "מרוקו" }
+      - { id: o4, label: "ישראל" }
+  - image: "/flags/ph.svg"
+    items:
+      - { id: o1, label: "הפיליפינים", correct: true }
+      - { id: o2, label: "דנמרק" }
+      - { id: o3, label: "פינלנד" }
+      - { id: o4, label: "פולין" }
+  - image: "/flags/id.svg"
+    items:
+      - { id: o1, label: "אינדונזיה", correct: true }
+      - { id: o2, label: "הודו" }
+      - { id: o3, label: "איסלנד" }
+      - { id: o4, label: "קטאר" }
+  - image: "/flags/my.svg"
+    items:
+      - { id: o1, label: "מלזיה", correct: true }
+      - { id: o2, label: "אתיופיה" }
+      - { id: o3, label: "מצרים" }
+      - { id: o4, label: "אלג׳יריה" }
+  - image: "/flags/sg.svg"
+    items:
+      - { id: o1, label: "סינגפור", correct: true }
+      - { id: o2, label: "רוסיה" }
+      - { id: o3, label: "ירדן" }
+      - { id: o4, label: "אוזבקיסטן" }
+  - image: "/flags/pk.svg"
+    items:
+      - { id: o1, label: "פקיסטן", correct: true }
+      - { id: o2, label: "סין" }
+      - { id: o3, label: "צ׳כיה" }
+      - { id: o4, label: "פנמה" }
+  - image: "/flags/bd.svg"
+    items:
+      - { id: o1, label: "בנגלדש", correct: true }
+      - { id: o2, label: "סלובניה" }
+      - { id: o3, label: "ירדן" }
+      - { id: o4, label: "יפן" }
+  - image: "/flags/au.svg"
+    items:
+      - { id: o1, label: "אוסטרליה", correct: true }
+      - { id: o2, label: "רוסיה" }
+      - { id: o3, label: "ליטא" }
+      - { id: o4, label: "בחריין" }
+  - image: "/flags/nz.svg"
+    items:
+      - { id: o1, label: "ניו זילנד", correct: true }
+      - { id: o2, label: "פולין" }
+      - { id: o3, label: "קנדה" }
+      - { id: o4, label: "רוסיה" }
+  - image: "/flags/ca.svg"
+    items:
+      - { id: o1, label: "קנדה", correct: true }
+      - { id: o2, label: "עומאן" }
+      - { id: o3, label: "טורקיה" }
+      - { id: o4, label: "סרביה" }
+  - image: "/flags/mx.svg"
+    items:
+      - { id: o1, label: "מקסיקו", correct: true }
+      - { id: o2, label: "מצרים" }
+      - { id: o3, label: "אלג׳יריה" }
+      - { id: o4, label: "פרו" }
+  - image: "/flags/br.svg"
+    items:
+      - { id: o1, label: "ברזיל", correct: true }
+      - { id: o2, label: "סוריה" }
+      - { id: o3, label: "פורטוגל" }
+      - { id: o4, label: "ישראל" }
+  - image: "/flags/ar.svg"
+    items:
+      - { id: o1, label: "ארגנטינה", correct: true }
+      - { id: o2, label: "פקיסטן" }
+      - { id: o3, label: "לטביה" }
+      - { id: o4, label: "סרביה" }
+  - image: "/flags/cl.svg"
+    items:
+      - { id: o1, label: "צ׳ילה", correct: true }
+      - { id: o2, label: "הונגריה" }
+      - { id: o3, label: "בריטניה" }
+      - { id: o4, label: "בחריין" }
+  - image: "/flags/co.svg"
+    items:
+      - { id: o1, label: "קולומביה", correct: true }
+      - { id: o2, label: "ונצואלה" }
+      - { id: o3, label: "אינדונזיה" }
+      - { id: o4, label: "הולנד" }
+  - image: "/flags/pe.svg"
+    items:
+      - { id: o1, label: "פרו", correct: true }
+      - { id: o2, label: "דנמרק" }
+      - { id: o3, label: "מלזיה" }
+      - { id: o4, label: "שווייץ" }
+  - image: "/flags/ve.svg"
+    items:
+      - { id: o1, label: "ונצואלה", correct: true }
+      - { id: o2, label: "צ׳כיה" }
+      - { id: o3, label: "אקוודור" }
+      - { id: o4, label: "סינגפור" }
+  - image: "/flags/uy.svg"
+    items:
+      - { id: o1, label: "אורוגוואי", correct: true }
+      - { id: o2, label: "צ׳כיה" }
+      - { id: o3, label: "סלובקיה" }
+      - { id: o4, label: "אסטוניה" }
+  - image: "/flags/bo.svg"
+    items:
+      - { id: o1, label: "בוליביה", correct: true }
+      - { id: o2, label: "שווייץ" }
+      - { id: o3, label: "ג׳מייקה" }
+      - { id: o4, label: "מרוקו" }
+  - image: "/flags/ec.svg"
+    items:
+      - { id: o1, label: "אקוודור", correct: true }
+      - { id: o2, label: "תאילנד" }
+      - { id: o3, label: "איסלנד" }
+      - { id: o4, label: "יוון" }
+  - image: "/flags/cu.svg"
+    items:
+      - { id: o1, label: "קובה", correct: true }
+      - { id: o2, label: "אירלנד" }
+      - { id: o3, label: "בולגריה" }
+      - { id: o4, label: "בלגיה" }
+  - image: "/flags/jm.svg"
+    items:
+      - { id: o1, label: "ג׳מייקה", correct: true }
+      - { id: o2, label: "אוקראינה" }
+      - { id: o3, label: "מלטה" }
+      - { id: o4, label: "שוודיה" }
+  - image: "/flags/pa.svg"
+    items:
+      - { id: o1, label: "פנמה", correct: true }
+      - { id: o2, label: "עומאן" }
+      - { id: o3, label: "טורקיה" }
+      - { id: o4, label: "ליטא" }
+  - image: "/flags/cr.svg"
+    items:
+      - { id: o1, label: "קוסטה ריקה", correct: true }
+      - { id: o2, label: "אסטוניה" }
+      - { id: o3, label: "אירלנד" }
+      - { id: o4, label: "אוסטרליה" }
+  - image: "/flags/gt.svg"
+    items:
+      - { id: o1, label: "גואטמלה", correct: true }
+      - { id: o2, label: "גאנה" }
+      - { id: o3, label: "ארצות הברית" }
+      - { id: o4, label: "שווייץ" }
+  - image: "/flags/sk.svg"
+    items:
+      - { id: o1, label: "סלובקיה", correct: true }
+      - { id: o2, label: "טורקיה" }
+      - { id: o3, label: "לוב" }
+      - { id: o4, label: "ישראל" }
+  - image: "/flags/hr.svg"
+    items:
+      - { id: o1, label: "קרואטיה", correct: true }
+      - { id: o2, label: "אקוודור" }
+      - { id: o3, label: "פולין" }
+      - { id: o4, label: "אתיופיה" }
+  - image: "/flags/rs.svg"
+    items:
+      - { id: o1, label: "סרביה", correct: true }
+      - { id: o2, label: "פנמה" }
+      - { id: o3, label: "אוסטרליה" }
+      - { id: o4, label: "הולנד" }
+  - image: "/flags/bg.svg"
+    items:
+      - { id: o1, label: "בולגריה", correct: true }
+      - { id: o2, label: "נורווגיה" }
+      - { id: o3, label: "מרוקו" }
+      - { id: o4, label: "יפן" }
+  - image: "/flags/si.svg"
+    items:
+      - { id: o1, label: "סלובניה", correct: true }
+      - { id: o2, label: "איטליה" }
+      - { id: o3, label: "אוקראינה" }
+      - { id: o4, label: "קובה" }
+  - image: "/flags/lt.svg"
+    items:
+      - { id: o1, label: "ליטא", correct: true }
+      - { id: o2, label: "מצרים" }
+      - { id: o3, label: "רומניה" }
+      - { id: o4, label: "לבנון" }
+  - image: "/flags/lv.svg"
+    items:
+      - { id: o1, label: "לטביה", correct: true }
+      - { id: o2, label: "בריטניה" }
+      - { id: o3, label: "שוודיה" }
+      - { id: o4, label: "איראן" }
+  - image: "/flags/ee.svg"
+    items:
+      - { id: o1, label: "אסטוניה", correct: true }
+      - { id: o2, label: "מקסיקו" }
+      - { id: o3, label: "יפן" }
+      - { id: o4, label: "איסלנד" }
+  - image: "/flags/cy.svg"
+    items:
+      - { id: o1, label: "קפריסין", correct: true }
+      - { id: o2, label: "ישראל" }
+      - { id: o3, label: "פרו" }
+      - { id: o4, label: "הונגריה" }
+  - image: "/flags/mt.svg"
+    items:
+      - { id: o1, label: "מלטה", correct: true }
+      - { id: o2, label: "דנמרק" }
+      - { id: o3, label: "צ׳כיה" }
+      - { id: o4, label: "פנמה" }
+  - image: "/flags/lu.svg"
+    items:
+      - { id: o1, label: "לוקסמבורג", correct: true }
+      - { id: o2, label: "תאילנד" }
+      - { id: o3, label: "כווית" }
+      - { id: o4, label: "לבנון" }
+  - image: "/flags/qa.svg"
+    items:
+      - { id: o1, label: "קטאר", correct: true }
+      - { id: o2, label: "עומאן" }
+      - { id: o3, label: "יוון" }
+      - { id: o4, label: "מלטה" }
+  - image: "/flags/kw.svg"
+    items:
+      - { id: o1, label: "כווית", correct: true }
+      - { id: o2, label: "מרוקו" }
+      - { id: o3, label: "אוקראינה" }
+      - { id: o4, label: "טייוואן" }
+  - image: "/flags/om.svg"
+    items:
+      - { id: o1, label: "עומאן", correct: true }
+      - { id: o2, label: "ספרד" }
+      - { id: o3, label: "אוסטרליה" }
+      - { id: o4, label: "הונגריה" }
+  - image: "/flags/bh.svg"
+    items:
+      - { id: o1, label: "בחריין", correct: true }
+      - { id: o2, label: "איראן" }
+      - { id: o3, label: "וייטנאם" }
+      - { id: o4, label: "הולנד" }
+  - image: "/flags/tw.svg"
+    items:
+      - { id: o1, label: "טייוואן", correct: true }
+      - { id: o2, label: "איחוד האמירויות" }
+      - { id: o3, label: "יפן" }
+      - { id: o4, label: "קטאר" }
+  - image: "/flags/uz.svg"
+    items:
+      - { id: o1, label: "אוזבקיסטן", correct: true }
+      - { id: o2, label: "אורוגוואי" }
+      - { id: o3, label: "אוקראינה" }
+      - { id: o4, label: "פרו" }
+reward: { stars: 3, sfx: ding, effect: confetti }
