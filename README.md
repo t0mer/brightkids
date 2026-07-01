@@ -16,6 +16,7 @@ BrightKids is audio-first, mobile-first, and zero-PII: profiles are just a name 
 - **Seven activity types** — letter recognition, multiple choice, counting, arithmetic, matching, drag-to-order, and finger **tracing** (canvas with mask-coverage scoring).
 - **Curriculum-based exercises** — built from a real graded worksheet curriculum. Math (g1–6) spans counting, comparison ("Who is bigger?"), number sense, place value, the four operations, sequences, even/odd, fractions, decimals, order of operations, rounding, word problems, and clock reading. Hebrew (g1–5) covers vowels, reading comprehension, synonyms/opposites, verbs, and sentence ordering; English (g1–4) covers ABC, phonics, word families, and graded reading. Math & Hebrew narrate in Hebrew; English in English.
 - **Randomized practice** — pick a subject then a stage; every lesson holds a large pool and samples a fresh set each play, with a **shuffle** button to redraw for endless variety.
+- **Flag game — מִי הַמְּדִינָה?** — a top-level game beside the subjects: spot the country behind the flag from 4 Hebrew options. 90 countries (incl. Israel) with bundled SVG flags (no emoji fallbacks), 10 per round, and shuffle to keep going — competition style.
 - **Optional narration** — text-to-speech is **off by default**; enable it with `BRIGHTKIDS_TTS_ENABLED` for a tap-to-hear **Listen** button (he-IL for Hebrew/Math, en-US for English). No auto-play, so the screen stays calm.
 - **Playful rewards** — confetti, synthesized sound effects, Bibo reactions, stars, and a daily streak. Mistakes get a gentle "try again," never a shaming buzzer.
 - **Accessible** — 48px tap targets, `prefers-reduced-motion` honored, OpenDyslexic font, high-contrast palette, and picture/visual-first activities so pre-readers can play.
@@ -39,9 +40,9 @@ BrightKids is audio-first, mobile-first, and zero-PII: profiles are just a name 
 |---|---|---|---|
 | ![Order of operations](assets/screenshots/lesson-math-concept.png) | ![Arithmetic](assets/screenshots/lesson-math-set.png) | ![Compare](assets/screenshots/lesson-compare.png) | ![Word problems](assets/screenshots/lesson-math.png) |
 
-| Settings | OpenDyslexic font |
-|---|---|
-| ![Settings](assets/screenshots/settings.png) | ![OpenDyslexic](assets/screenshots/lesson-dyslexic.png) |
+| Settings | OpenDyslexic font | Flag game (מי המדינה?) |
+|---|---|---|
+| ![Settings](assets/screenshots/settings.png) | ![OpenDyslexic](assets/screenshots/lesson-dyslexic.png) | ![Flag game](assets/screenshots/lesson-flags.png) |
 
 Social preview (the Open Graph image served in public mode):
 
