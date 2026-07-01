@@ -6,97 +6,67 @@ locale: en-US
 direction: ltr
 title: "Describe the Picture"
 activity: multiple-choice
-prompt_tts: "Look at the picture and answer."
-instruction: "הִסְתַּכְּלוּ עַל הַתְּמוּנָה וְעַנּוּ."
+prompt_tts: "What is happening in the picture?"
+instruction: "מָה קוֹרֶה בַּתְּמוּנָה?"
 questions:
-  - prompt: "Look at the picture. A girl is riding a bike. What is the girl doing?"
-    prompt_text: "הִסְתַּכְּלוּ עַל הַתְּמוּנָה. יַלְדָּה רוֹכֶבֶת עַל אוֹפַנַּיִם. מָה הַיַּלְדָּה עוֹשָׂה?"
+  - glyph: "🚴"
     items:
-      - { id: o1, label: "She is riding a bike.", correct: true, tts: "She is riding a bike." }
-      - { id: o2, label: "She is eating an apple.", tts: "She is eating an apple." }
-      - { id: o3, label: "She is sleeping in bed.", tts: "She is sleeping in bed." }
-  - prompt: "Look at the picture. A boy is kicking a ball. What is the boy doing?"
-    prompt_text: "הִסְתַּכְּלוּ עַל הַתְּמוּנָה. יֶלֶד בּוֹעֵט בְּכַדּוּר. מָה הַיֶּלֶד עוֹשֶׂה?"
+      - { id: o1, label: "Riding a bike", correct: true, tts: "Riding a bike" }
+      - { id: o2, label: "Eating an apple", tts: "Eating an apple" }
+      - { id: o3, label: "Sleeping", tts: "Sleeping" }
+  - glyph: "🏊"
     items:
-      - { id: o1, label: "He is kicking a ball.", correct: true, tts: "He is kicking a ball." }
-      - { id: o2, label: "He is reading a book.", tts: "He is reading a book." }
-      - { id: o3, label: "He is drinking milk.", tts: "He is drinking milk." }
-  - prompt: "Look at the picture. A dog is running in the park. What is the dog doing?"
-    prompt_text: "הִסְתַּכְּלוּ עַל הַתְּמוּנָה. כֶּלֶב רָץ בַּפַּארְק. מָה הַכֶּלֶב עוֹשֶׂה?"
+      - { id: o1, label: "Swimming", correct: true, tts: "Swimming" }
+      - { id: o2, label: "Reading a book", tts: "Reading a book" }
+      - { id: o3, label: "Running", tts: "Running" }
+  - glyph: "🏃"
     items:
-      - { id: o1, label: "It is running in the park.", correct: true, tts: "It is running in the park." }
-      - { id: o2, label: "It is eating a bone.", tts: "It is eating a bone." }
-      - { id: o3, label: "It is sleeping.", tts: "It is sleeping." }
-  - prompt: "Look at the picture. A woman is reading a book. What is the woman doing?"
-    prompt_text: "הִסְתַּכְּלוּ עַל הַתְּמוּנָה. אִשָּׁה קוֹרֵאת סֵפֶר. מָה הָאִשָּׁה עוֹשָׂה?"
+      - { id: o1, label: "Running", correct: true, tts: "Running" }
+      - { id: o2, label: "Sleeping", tts: "Sleeping" }
+      - { id: o3, label: "Cooking", tts: "Cooking" }
+  - glyph: "📖"
     items:
-      - { id: o1, label: "She is cooking dinner.", tts: "She is cooking dinner." }
-      - { id: o2, label: "She is reading a book.", correct: true, tts: "She is reading a book." }
-      - { id: o3, label: "She is washing the car.", tts: "She is washing the car." }
-  - prompt: "Look at the picture. A man is cooking food in the kitchen. What is the man doing?"
-    prompt_text: "הִסְתַּכְּלוּ עַל הַתְּמוּנָה. אִישׁ מְבַשֵּׁל אֹכֶל בַּמִּטְבָּח. מָה הָאִישׁ עוֹשֶׂה?"
+      - { id: o1, label: "Reading a book", correct: true, tts: "Reading a book" }
+      - { id: o2, label: "Swimming", tts: "Swimming" }
+      - { id: o3, label: "Dancing", tts: "Dancing" }
+  - glyph: "😴"
     items:
-      - { id: o1, label: "He is painting a wall.", tts: "He is painting a wall." }
-      - { id: o2, label: "He is singing a song.", tts: "He is singing a song." }
-      - { id: o3, label: "He is cooking food.", correct: true, tts: "He is cooking food." }
-  - prompt: "Look at the picture. A bird is flying in the sky. What is the bird doing?"
-    prompt_text: "הִסְתַּכְּלוּ עַל הַתְּמוּנָה. צִפּוֹר עָפָה בַּשָּׁמַיִם. מָה הַצִּפּוֹר עוֹשָׂה?"
+      - { id: o1, label: "Sleeping", correct: true, tts: "Sleeping" }
+      - { id: o2, label: "Running", tts: "Running" }
+      - { id: o3, label: "Eating", tts: "Eating" }
+  - glyph: "🍳"
     items:
-      - { id: o1, label: "It is flying in the sky.", correct: true, tts: "It is flying in the sky." }
-      - { id: o2, label: "It is swimming in a lake.", tts: "It is swimming in a lake." }
-      - { id: o3, label: "It is hiding in a box.", tts: "It is hiding in a box." }
-  - prompt: "Look at the picture. Two children are playing with a ball. What are the children doing?"
-    prompt_text: "הִסְתַּכְּלוּ עַל הַתְּמוּנָה. שְׁנֵי יְלָדִים מְשַׂחֲקִים בְּכַדּוּר. מָה הַיְלָדִים עוֹשִׂים?"
+      - { id: o1, label: "Cooking", correct: true, tts: "Cooking" }
+      - { id: o2, label: "Painting", tts: "Painting" }
+      - { id: o3, label: "Singing", tts: "Singing" }
+  - glyph: "🎨"
     items:
-      - { id: o1, label: "They are washing dishes.", tts: "They are washing dishes." }
-      - { id: o2, label: "They are playing with a ball.", correct: true, tts: "They are playing with a ball." }
-      - { id: o3, label: "They are drawing a picture.", tts: "They are drawing a picture." }
-  - prompt: "Look at the picture. A boy is drinking water. What is the boy doing?"
-    prompt_text: "הִסְתַּכְּלוּ עַל הַתְּמוּנָה. יֶלֶד שׁוֹתֶה מַיִם. מָה הַיֶּלֶד עוֹשֶׂה?"
+      - { id: o1, label: "Painting", correct: true, tts: "Painting" }
+      - { id: o2, label: "Cooking", tts: "Cooking" }
+      - { id: o3, label: "Swimming", tts: "Swimming" }
+  - glyph: "💃"
     items:
-      - { id: o1, label: "He is jumping high.", tts: "He is jumping high." }
-      - { id: o2, label: "He is drinking water.", correct: true, tts: "He is drinking water." }
-      - { id: o3, label: "He is climbing a tree.", tts: "He is climbing a tree." }
-  - prompt: "Look at the picture. A girl is painting a picture. What is the girl doing?"
-    prompt_text: "הִסְתַּכְּלוּ עַל הַתְּמוּנָה. יַלְדָּה מְצַיֶּרֶת תְּמוּנָה. מָה הַיַּלְדָּה עוֹשָׂה?"
+      - { id: o1, label: "Dancing", correct: true, tts: "Dancing" }
+      - { id: o2, label: "Reading a book", tts: "Reading a book" }
+      - { id: o3, label: "Sleeping", tts: "Sleeping" }
+  - glyph: "🎤"
     items:
-      - { id: o1, label: "She is painting a picture.", correct: true, tts: "She is painting a picture." }
-      - { id: o2, label: "She is riding a horse.", tts: "She is riding a horse." }
-      - { id: o3, label: "She is brushing her teeth.", tts: "She is brushing her teeth." }
-  - prompt: "Look at the picture. A cat is climbing a tree. What is the cat doing?"
-    prompt_text: "הִסְתַּכְּלוּ עַל הַתְּמוּנָה. חָתוּל מְטַפֵּס עַל עֵץ. מָה הֶחָתוּל עוֹשֶׂה?"
+      - { id: o1, label: "Singing", correct: true, tts: "Singing" }
+      - { id: o2, label: "Running", tts: "Running" }
+      - { id: o3, label: "Cooking", tts: "Cooking" }
+  - glyph: "⚽"
     items:
-      - { id: o1, label: "It is drinking milk.", tts: "It is drinking milk." }
-      - { id: o2, label: "It is chasing a mouse.", tts: "It is chasing a mouse." }
-      - { id: o3, label: "It is climbing a tree.", correct: true, tts: "It is climbing a tree." }
-  - prompt: "Look at the picture. A teacher is writing on the board. What is the teacher doing?"
-    prompt_text: "הִסְתַּכְּלוּ עַל הַתְּמוּנָה. מוֹרָה כּוֹתֶבֶת עַל הַלּוּחַ. מָה הַמּוֹרָה עוֹשָׂה?"
+      - { id: o1, label: "Playing football", correct: true, tts: "Playing football" }
+      - { id: o2, label: "Reading a book", tts: "Reading a book" }
+      - { id: o3, label: "Sleeping", tts: "Sleeping" }
+  - glyph: "🧹"
     items:
-      - { id: o1, label: "She is writing on the board.", correct: true, tts: "She is writing on the board." }
-      - { id: o2, label: "She is eating lunch.", tts: "She is eating lunch." }
-      - { id: o3, label: "She is sleeping at her desk.", tts: "She is sleeping at her desk." }
-  - prompt: "Look at the picture. A baby is sleeping in bed. What is the baby doing?"
-    prompt_text: "הִסְתַּכְּלוּ עַל הַתְּמוּנָה. תִּינוֹק יָשֵׁן בַּמִּטָּה. מָה הַתִּינוֹק עוֹשֶׂה?"
+      - { id: o1, label: "Cleaning", correct: true, tts: "Cleaning" }
+      - { id: o2, label: "Eating", tts: "Eating" }
+      - { id: o3, label: "Dancing", tts: "Dancing" }
+  - glyph: "🚗"
     items:
-      - { id: o1, label: "It is running fast.", tts: "It is running fast." }
-      - { id: o2, label: "It is sleeping in bed.", correct: true, tts: "It is sleeping in bed." }
-      - { id: o3, label: "It is reading a book.", tts: "It is reading a book." }
-  - prompt: "Look at the picture. A man is washing his car. What is the man doing?"
-    prompt_text: "הִסְתַּכְּלוּ עַל הַתְּמוּנָה. אִישׁ שׁוֹטֵף אֶת הַמְּכוֹנִית שֶׁלּוֹ. מָה הָאִישׁ עוֹשֶׂה?"
-    items:
-      - { id: o1, label: "He is flying a kite.", tts: "He is flying a kite." }
-      - { id: o2, label: "He is dancing.", tts: "He is dancing." }
-      - { id: o3, label: "He is washing his car.", correct: true, tts: "He is washing his car." }
-  - prompt: "Look at the picture. A girl is dancing on the stage. What is the girl doing?"
-    prompt_text: "הִסְתַּכְּלוּ עַל הַתְּמוּנָה. יַלְדָּה רוֹקֶדֶת עַל הַבָּמָה. מָה הַיַּלְדָּה עוֹשָׂה?"
-    items:
-      - { id: o1, label: "She is dancing on the stage.", correct: true, tts: "She is dancing on the stage." }
-      - { id: o2, label: "She is buying bread.", tts: "She is buying bread." }
-      - { id: o3, label: "She is feeding a fish.", tts: "She is feeding a fish." }
-  - prompt: "Look at the picture. A boy is riding a horse. What is the boy doing?"
-    prompt_text: "הִסְתַּכְּלוּ עַל הַתְּמוּנָה. יֶלֶד רוֹכֵב עַל סוּס. מָה הַיֶּלֶד עוֹשֶׂה?"
-    items:
-      - { id: o1, label: "He is eating soup.", tts: "He is eating soup." }
-      - { id: o2, label: "He is riding a horse.", correct: true, tts: "He is riding a horse." }
-      - { id: o3, label: "He is closing the door.", tts: "He is closing the door." }
+      - { id: o1, label: "Driving a car", correct: true, tts: "Driving a car" }
+      - { id: o2, label: "Flying", tts: "Flying" }
+      - { id: o3, label: "Swimming", tts: "Swimming" }
 reward: { stars: 3, sfx: ding, effect: confetti }
