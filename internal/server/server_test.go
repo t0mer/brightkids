@@ -238,6 +238,14 @@ func TestSEOInjectionPublicMode(t *testing.T) {
 		t.Errorf("lesson SEO should include the lesson title")
 	}
 
+	// The flag game has dedicated SEO (path-based, not the generic lesson case).
+	flags := get("/lesson/flags")
+	for _, want := range []string{"משחק דגלים", "flag game", `name="keywords"`, `property="og:image"`} {
+		if !strings.Contains(flags, want) {
+			t.Errorf("flag-game SEO missing %q", want)
+		}
+	}
+
 	// Private mode serves the plain HTML — no injection.
 	priv := get2(t, newTestServer(t), "/")
 	if strings.Contains(priv, "og:image") || strings.Contains(priv, "Tomer Klein") {

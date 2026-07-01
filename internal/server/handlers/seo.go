@@ -81,6 +81,10 @@ func (d *Deps) Sitemap(w http.ResponseWriter, r *http.Request) {
 				}
 			}
 		}
+		// Top-level hidden games (e.g. the flag game) are public pages too.
+		for _, lesson := range d.Content.HiddenLessons() {
+			add("/lesson/"+lesson.ID, "weekly", "0.7")
+		}
 	}
 
 	w.Header().Set("Content-Type", "application/xml; charset=utf-8")
