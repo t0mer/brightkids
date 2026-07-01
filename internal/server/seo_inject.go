@@ -81,6 +81,15 @@ func seoFor(lib *content.Library, p string) pageSEO {
 		return pageSEO{title: "הכוכבים שלי | " + seoBrand, desc: "הכוכבים, הרצף וההישגים שלי בברייטקידס. | My stars, streak and achievements in BrightKids.", keywords: keywords, ogType: "website", noindex: true}
 	case p == "/settings":
 		return pageSEO{title: "הגדרות | " + seoBrand, desc: "הגדרות ברייטקידס. | BrightKids settings.", keywords: keywords, ogType: "website", noindex: true}
+	case p == "/lesson/flags":
+		return pageSEO{
+			title: "מי המדינה? משחק דגלים | " + seoBrand,
+			desc: "מי המדינה? משחק דגלים לילדים: זהו את המדינה לפי הדגל, מתוך 90 מדינות כולל ישראל. | " +
+				"Which Country? A flags game for kids — spot the country by its flag, from 90 countries including Israel.",
+			keywords: "מי המדינה, דגלים, משחק דגלים, דגלי העולם, מדינות, גאוגרפיה, לימוד לילדים, ברייטקידס, תומר קליין, " +
+				"flags, flag game, world flags, countries, geography, kids learning, BrightKids, Tomer Klein",
+			ogType: "website",
+		}
 	case len(seg) == 4 && seg[0] == "subject" && seg[2] == "grade":
 		sub, grade := seg[1], seg[3]
 		nameHe, nameEn := subjectNameHe[sub], subjectNameEn[sub]

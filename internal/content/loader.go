@@ -23,6 +23,7 @@ type Library struct {
 	subjects  []SubjectSummary
 	version   string // content hash, used to guard re-seed
 	lessonIDs []string
+	hiddenIDs []string // hidden lessons (excluded from lists, still public pages)
 }
 
 // Load builds a Library from the embedded FS, or from overrideDir when non-empty
@@ -92,7 +93,8 @@ func isYAML(p string) bool {
 func (l *Library) add(lesson Lesson) {
 	l.lessons[lesson.ID] = lesson
 	if lesson.Hidden {
-		return // loadable by id, but excluded from subject/grade listings
+		l.hiddenIDs = append(l.hiddenIDs, lesson.ID) // still a public page (sitemap/SEO)
+		return                                       // but excluded from subject/grade listings
 	}
 	if l.byGrade[lesson.Subject] == nil {
 		l.byGrade[lesson.Subject] = make(map[int][]string)
@@ -157,6 +159,16 @@ func (l *Library) Lessons(subject string, grade int) []LessonSummary {
 			continue
 		}
 		out = append(out, ls.Summary())
+	}
+	return out
+}
+
+// HiddenLessons returns summaries of lessons kept out of the stage lists but
+// still reachable as public pages (e.g. the flag game) — used for the sitemap.
+func (l *Library) HiddenLessons() []LessonSummary {
+	out := make([]LessonSummary, 0, len(l.hiddenIDs))
+	for _, id := range l.hiddenIDs {
+		out = append(out, l.lessons[id].Summary())
 	}
 	return out
 }
