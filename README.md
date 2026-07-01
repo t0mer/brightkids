@@ -1,6 +1,6 @@
 # BrightKids
 
-> A kid-friendly web app that teaches **Hebrew**, **English**, and **Math** to children in **grades 1–6** — shipped as a single Go binary serving an embedded, offline-capable PWA.
+> A kid-friendly web app that teaches **Hebrew**, **English**, and **Math** to children across **stages 1–6** — shipped as a single Go binary serving an embedded, offline-capable PWA.
 
 BrightKids is audio-first, mobile-first, and zero-PII: profiles are just a name and a buddy a child picks, stored locally. No accounts, no tracking, no external calls from the child's device. A friendly droid guide named **Bibo** narrates prompts and cheers every correct answer.
 
@@ -12,10 +12,10 @@ BrightKids is audio-first, mobile-first, and zero-PII: profiles are just a name 
 
 ## Features
 
-- **Trilingual content** — Hebrew (RTL, grades 1–5), English (LTR, grades 1–4), and Math (grades 1–6), with proper BiDi isolation for mixed Hebrew/digit text.
+- **Trilingual content** — Hebrew (RTL, stages 1–5), English (LTR, stages 1–4), and Math (stages 1–6), with proper BiDi isolation for mixed Hebrew/digit text.
 - **Seven activity types** — letter recognition, multiple choice, counting, arithmetic, matching, drag-to-order, and finger **tracing** (canvas with mask-coverage scoring).
 - **Curriculum-based exercises** — built from a real graded worksheet curriculum. Math (g1–6) spans counting, comparison ("Who is bigger?"), number sense, place value, the four operations, sequences, even/odd, fractions, decimals, order of operations, rounding, word problems, and clock reading. Hebrew (g1–5) covers vowels, reading comprehension, synonyms/opposites, verbs, and sentence ordering; English (g1–4) covers ABC, phonics, word families, and graded reading. Math & Hebrew narrate in Hebrew; English in English.
-- **Randomized practice** — pick a subject then a grade; every lesson holds a large pool and samples a fresh set each play, with a **shuffle** button to redraw for endless variety.
+- **Randomized practice** — pick a subject then a stage; every lesson holds a large pool and samples a fresh set each play, with a **shuffle** button to redraw for endless variety.
 - **Optional narration** — text-to-speech is **off by default**; enable it with `BRIGHTKIDS_TTS_ENABLED` for a tap-to-hear **Listen** button (he-IL for Hebrew/Math, en-US for English). No auto-play, so the screen stays calm.
 - **Playful rewards** — confetti, synthesized sound effects, Bibo reactions, stars, and a daily streak. Mistakes get a gentle "try again," never a shaming buzzer.
 - **Accessible** — 48px tap targets, `prefers-reduced-motion` honored, OpenDyslexic font, high-contrast palette, and picture/visual-first activities so pre-readers can play.
@@ -27,7 +27,7 @@ BrightKids is audio-first, mobile-first, and zero-PII: profiles are just a name 
 
 ## Screenshots
 
-| Choose a subject | Choose a grade | Lesson list | Stars & streak |
+| Choose a subject | Choose a stage | Lesson list | Stars & streak |
 |---|---|---|---|
 | ![Subjects](assets/screenshots/subjects.png) | ![Grades](assets/screenshots/grades.png) | ![Lessons](assets/screenshots/lessons.png) | ![Rewards](assets/screenshots/rewards.png) |
 
