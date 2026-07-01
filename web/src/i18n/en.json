@@ -25,6 +25,8 @@
     "hebrew": "Hebrew",
     "english": "English",
     "math": "Math",
+    "flags": "Which Country?",
+    "flagsSub": "The flags game",
     "gradeRange": "Stages {{from}}–{{to}}"
   },
   "grades": {

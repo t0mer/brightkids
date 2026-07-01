@@ -66,6 +66,8 @@ export interface Question {
   prompt_text?: string;
   /** Visible expression (number, sequence, equation). */
   glyph?: string;
+  /** Visible picture (e.g. a flag SVG path) shown above the options. */
+  image?: string;
   items: Item[];
 }
 
@@ -96,6 +98,8 @@ export interface Lesson {
   questions?: Question[];
   glyph?: string;
   glyphs?: string[];
+  sample?: number;
+  hidden?: boolean;
   solution?: string[];
   sentences?: string[][];
   reward: Reward;

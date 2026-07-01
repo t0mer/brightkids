@@ -91,6 +91,9 @@ func isYAML(p string) bool {
 
 func (l *Library) add(lesson Lesson) {
 	l.lessons[lesson.ID] = lesson
+	if lesson.Hidden {
+		return // loadable by id, but excluded from subject/grade listings
+	}
 	if l.byGrade[lesson.Subject] == nil {
 		l.byGrade[lesson.Subject] = make(map[int][]string)
 	}
