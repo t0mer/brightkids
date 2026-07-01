@@ -22,7 +22,7 @@ export function sample<T>(arr: readonly T[], n: number): T[] {
   return shuffle(arr).slice(0, Math.max(1, Math.min(n, arr.length)));
 }
 
-// Israeli school grades are written as Hebrew-letter ordinals (כיתה א׳, ב׳, …).
+// Stages/levels are labelled with Hebrew-letter ordinals (שלב א׳, ב׳, …).
 const GRADE_LETTERS = ["א", "ב", "ג", "ד", "ה", "ו", "ז", "ח"];
 
 /** gradeLetter maps a grade number (1-based) to its Hebrew-letter label. */

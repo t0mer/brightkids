@@ -25,7 +25,7 @@ const (
 	ogImageW      = "1200"
 	ogImageH      = "630"
 	seoKeywordsHe = "ברייטקידס, לימוד לילדים, משחקים חינוכיים, עברית, אנגלית, חשבון, " +
-		"כיתה א, כיתה ב, כיתה ג, כיתה ד, אותיות, ניקוד, קריאה, פונטיקה, " +
+		"שלב א, שלב ב, שלב ג, שלב ד, אותיות, ניקוד, קריאה, פונטיקה, " +
 		"חיבור, חיסור, כפל, חילוק, שברים, תומר קליין"
 	seoKeywordsEn = "BrightKids, kids learning, educational games, Hebrew, English, Math, " +
 		"grade 1, grade 2, phonics, letters, reading, addition, subtraction, " +
@@ -88,8 +88,8 @@ func seoFor(lib *content.Library, p string) pageSEO {
 			break
 		}
 		return pageSEO{
-			title:    fmt.Sprintf("%s לכיתה %s | %s", nameHe, grade, seoBrand),
-			desc:     fmt.Sprintf("%s לכיתה %s: תרגול אינטראקטיבי עם משוב מיידי. | %s for grade %s: interactive practice with instant feedback.", nameHe, grade, nameEn, grade),
+			title:    fmt.Sprintf("%s לשלב %s | %s", nameHe, grade, seoBrand),
+			desc:     fmt.Sprintf("%s לשלב %s: תרגול אינטראקטיבי עם משוב מיידי. | %s for stage %s: interactive practice with instant feedback.", nameHe, grade, nameEn, grade),
 			keywords: keywords,
 			ogType:   "website",
 		}
