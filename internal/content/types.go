@@ -67,6 +67,13 @@ type Lesson struct {
 	// Sentences: a drag-drop "order the words" set — each entry is the words of a
 	// sentence in correct order; the activity samples a few and scrambles them.
 	Sentences [][]string `yaml:"sentences,omitempty" json:"sentences,omitempty"`
+	// Sample overrides how many questions a multiple-choice set presents per play
+	// (default is a small handful); e.g. the flag game presents 10.
+	Sample int `yaml:"sample,omitempty" json:"sample,omitempty"`
+	// Hidden keeps a lesson out of the subject/grade lists (and subject index)
+	// while remaining loadable by id — used for top-level games like the flag
+	// game that are launched from a dedicated tile rather than a stage list.
+	Hidden bool `yaml:"hidden,omitempty" json:"hidden,omitempty"`
 
 	Reward Reward `yaml:"reward" json:"reward"`
 }
@@ -102,7 +109,10 @@ type Question struct {
 	Prompt     string `yaml:"prompt,omitempty" json:"prompt,omitempty"`
 	PromptText string `yaml:"prompt_text,omitempty" json:"prompt_text,omitempty"`
 	Glyph      string `yaml:"glyph,omitempty" json:"glyph,omitempty"`
-	Items      []Item `yaml:"items" json:"items"`
+	// Image is an optional picture (URL/path) shown above the options — e.g. a
+	// flag SVG for the "which country?" game (more reliable than flag emoji).
+	Image string `yaml:"image,omitempty" json:"image,omitempty"`
+	Items []Item `yaml:"items" json:"items"`
 }
 
 // Comparison is one "who is bigger?" pair. The two numbers are distinct; the

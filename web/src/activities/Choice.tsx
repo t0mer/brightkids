@@ -24,7 +24,7 @@ export function Choice({ lesson, locale, onCorrect, onWrong, solved, onPrompt }:
       lesson.questions && lesson.questions.length > 0
         ? lesson.questions
         : [{ glyph: lesson.glyph, items: lesson.items ?? [] }];
-    return sample(qs, SAMPLE);
+    return sample(qs, lesson.sample && lesson.sample > 0 ? lesson.sample : SAMPLE);
   }, [lesson.id]);
 
   const [index, setIndex] = useState(0);
@@ -87,11 +87,18 @@ export function Choice({ lesson, locale, onCorrect, onWrong, solved, onPrompt }:
         </div>
       )}
 
-      {/* Optional visible prompt: a number, sequence, or expression (LTR). */}
-      {q.glyph && (
-        <div className="ltr-num rounded-blob bg-white/95 px-8 py-5 font-display text-5xl text-ink shadow-tile dark:bg-nebula dark:text-cream">
-          {q.glyph}
+      {/* Optional visible prompt: an image (e.g. a flag) or a glyph
+          (number, sequence, expression — LTR). */}
+      {q.image ? (
+        <div className="rounded-blob bg-white/95 p-3 shadow-tile">
+          <img src={q.image} alt="" className="h-28 w-44 rounded-xl2 object-contain" />
         </div>
+      ) : (
+        q.glyph && (
+          <div className="ltr-num rounded-blob bg-white/95 px-8 py-5 font-display text-5xl text-ink shadow-tile dark:bg-nebula dark:text-cream">
+            {q.glyph}
+          </div>
+        )
       )}
 
       <div dir={lesson.direction} className="grid w-full grid-cols-2 gap-4">
