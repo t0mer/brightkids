@@ -5,7 +5,7 @@
 BrightKids is audio-first, mobile-first, and zero-PII: profiles are just a name and a buddy a child picks, stored locally. No accounts, no tracking, no external calls from the child's device. A friendly droid guide named **Bibo** narrates prompts and cheers every correct answer.
 
 <p align="center">
-  <img src="assets/screenshots/start.png" alt="BrightKids start screen with Bibo the droid" width="280" />
+  <img src="https://raw.githubusercontent.com/t0mer/brightkids/main/assets/screenshots/start.png" alt="BrightKids start screen with Bibo the droid" width="280" />
 </p>
 
 ---
@@ -30,23 +30,23 @@ BrightKids is audio-first, mobile-first, and zero-PII: profiles are just a name 
 
 | Choose a subject | Choose a stage | Lesson list | Stars & streak |
 |---|---|---|---|
-| ![Subjects](assets/screenshots/subjects.png) | ![Grades](assets/screenshots/grades.png) | ![Lessons](assets/screenshots/lessons.png) | ![Rewards](assets/screenshots/rewards.png) |
+| ![Subjects](https://raw.githubusercontent.com/t0mer/brightkids/main/assets/screenshots/subjects.png) | ![Grades](https://raw.githubusercontent.com/t0mer/brightkids/main/assets/screenshots/grades.png) | ![Lessons](https://raw.githubusercontent.com/t0mer/brightkids/main/assets/screenshots/lessons.png) | ![Rewards](https://raw.githubusercontent.com/t0mer/brightkids/main/assets/screenshots/rewards.png) |
 
 | Picture → first letter | Match the pairs | Build a sentence | Trace the letters |
 |---|---|---|---|
-| ![First sound](assets/screenshots/lesson-letter.png) | ![Matching](assets/screenshots/lesson-match.png) | ![Sentence](assets/screenshots/lesson-sentence.png) | ![Tracing](assets/screenshots/lesson-trace.png) |
+| ![First sound](https://raw.githubusercontent.com/t0mer/brightkids/main/assets/screenshots/lesson-letter.png) | ![Matching](https://raw.githubusercontent.com/t0mer/brightkids/main/assets/screenshots/lesson-match.png) | ![Sentence](https://raw.githubusercontent.com/t0mer/brightkids/main/assets/screenshots/lesson-sentence.png) | ![Tracing](https://raw.githubusercontent.com/t0mer/brightkids/main/assets/screenshots/lesson-trace.png) |
 
 | Order of operations | Times tables | Who is bigger? | Word problems |
 |---|---|---|---|
-| ![Order of operations](assets/screenshots/lesson-math-concept.png) | ![Arithmetic](assets/screenshots/lesson-math-set.png) | ![Compare](assets/screenshots/lesson-compare.png) | ![Word problems](assets/screenshots/lesson-math.png) |
+| ![Order of operations](https://raw.githubusercontent.com/t0mer/brightkids/main/assets/screenshots/lesson-math-concept.png) | ![Arithmetic](https://raw.githubusercontent.com/t0mer/brightkids/main/assets/screenshots/lesson-math-set.png) | ![Compare](https://raw.githubusercontent.com/t0mer/brightkids/main/assets/screenshots/lesson-compare.png) | ![Word problems](https://raw.githubusercontent.com/t0mer/brightkids/main/assets/screenshots/lesson-math.png) |
 
 | Settings | OpenDyslexic font | Flag game (מי המדינה?) |
 |---|---|---|
-| ![Settings](assets/screenshots/settings.png) | ![OpenDyslexic](assets/screenshots/lesson-dyslexic.png) | ![Flag game](assets/screenshots/lesson-flags.png) |
+| ![Settings](https://raw.githubusercontent.com/t0mer/brightkids/main/assets/screenshots/settings.png) | ![OpenDyslexic](https://raw.githubusercontent.com/t0mer/brightkids/main/assets/screenshots/lesson-dyslexic.png) | ![Flag game](https://raw.githubusercontent.com/t0mer/brightkids/main/assets/screenshots/lesson-flags.png) |
 
 Social preview (the Open Graph image served in public mode):
 
-![Social preview](web/public/og-image.png)
+![Social preview](https://raw.githubusercontent.com/t0mer/brightkids/main/web/public/og-image.png)
 
 ## Quick start
 
